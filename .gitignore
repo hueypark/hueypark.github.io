@@ -1,2 +1,5 @@
 /.idea
 /env
+_site
+.sass-cache
+.jekyll-metadata
