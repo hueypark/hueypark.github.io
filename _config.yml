@@ -84,3 +84,9 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# collection for tags
+collection:
+  my_tags:
+    output: true
+    permalink: /blog/tag/:name/
