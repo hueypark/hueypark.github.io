@@ -1,4 +1,0 @@
----
-slug: restful
-name: RESTful
----
