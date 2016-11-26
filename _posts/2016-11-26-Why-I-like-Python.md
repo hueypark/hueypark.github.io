@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 내가 Python을 좋아하는 이유
-tags: python
 ---
 
 내가 Python을 좋아하는 이유를 열거합니다
