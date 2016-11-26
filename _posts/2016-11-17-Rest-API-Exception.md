@@ -1,7 +1,6 @@
 ---
 layout: post
 title: RESTful API 예외
-tags: restful
 ---
 
 RESTful API를 작성하다 보면 예외적인 처리를 필요로 할 때가 있습니다
