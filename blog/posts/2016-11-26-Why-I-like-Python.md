@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 내가 Python을 좋아하는 이유
 ---
 

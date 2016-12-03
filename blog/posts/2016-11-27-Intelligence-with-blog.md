@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 블로그로 지식을 만들기
 ---
 

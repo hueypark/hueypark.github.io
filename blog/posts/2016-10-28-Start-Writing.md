@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 글쓰기 시작
 ---
 

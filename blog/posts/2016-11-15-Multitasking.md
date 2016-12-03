@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 두 가지 일을 동시에 하기
 ---
 

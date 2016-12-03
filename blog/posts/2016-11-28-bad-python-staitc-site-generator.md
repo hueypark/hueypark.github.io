@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 나쁜 Python 정적 사이트 생성기
 ---
 
