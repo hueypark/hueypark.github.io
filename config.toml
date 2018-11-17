@@ -1,0 +1,48 @@
+baseurl = "https://hueypark.gitlab.io/"
+contentdir    = "content"
+layoutdir     = "layouts"
+publishdir    = "public"
+title = "Huey's legionary"
+canonifyurls  = true
+
+DefaultContentLanguage = "en"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsUseClasses = true
+pygmentCodeFences = true
+disqusShortname = "https-hueypark-gitlab-io"
+googleAnalytics = "UA-121966234-1"
+
+[Params]
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  comments = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
+
+[Author]
+  name = "hueypark"
+  email = "jaewan.huey.park@gmail.com"
+  gitlab = "hueypark"
+  linkedin = "hueypark"
+  twitter = "jaewanHueyPark"
+
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 3
