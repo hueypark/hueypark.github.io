@@ -9,7 +9,7 @@ categories: cockroachdb go
 
 Written by [Andy Kimball](https://www.cockroachlabs.com/author/andy-kimball/) on Nov 8, 2018
 
-![](/assets/2018-11-18-building-cost-based-sql-optimizer/cloud-formation-by-lisk-feng.jpg)
+![](/assets/post/2018-11-18-building-cost-based-sql-optimizer/cloud-formation-by-lisk-feng.jpg)
 
 Cockroach 연구소는 성능과 확정성 향상에 지속적으로 주력하고 있습니다. 이를 위해, 2.1 릴리즈에는 새로운 비용기반 SQL 옵티마이저가 포함되었습니다. 먼저 연관된 서브쿼리에 대해 기능이 적용되었고, 다음 릴리즈에서 보고된 더 복잡한 쿼리에 대해 상당한 성능향상을 할 수 있도록 유연한 최적화 프레임워크를 준비했습니다. 더 빨라질 필요가 있는 쿼리가 있으면 우리에게 알려주십시오! 우리는 옵티마이저 최적화 작업을 위한 라이브러리를 작성하고 이후 작업의 우선순위를 정하는 중입니다.
 
@@ -128,7 +128,7 @@ group                    |             |
 
 옵티마이저는 한 번에 전체 계획 트리를 생성하지 않습니다. 대신 초기 트리에서 시작하여 일련의 증분 변환을 수행하여 대체 트리를 생성합니다. 각각의 개별 변환은 비교적 단순하며, 복잡한 최적화 과제를 할 수 있는 많은 변환의 조합입니다. 여러분이 개별적인 변환을 이해한다고 해도, 그것은 종종 예상치 못한 놀라운 계획을 만들어내며, 마법처럼 보일 수 있습니다. 위요 표시된 비교적 간단한 쿼리의 경우에도 옵티마이저는 최종 계획에 도달하기 위해 12번의 변환을 적용합니다. 아래 다이어그램은 4가지 주요 변환 내용을 보여줍니다.
 
-![](/assets/2018-11-18-building-cost-based-sql-optimizer/cost-based-optimizer.png)
+![](/assets/post/2018-11-18-building-cost-based-sql-optimizer/cost-based-optimizer.png)
 
 최대 성능을 위해 필터가 조인 안으로 이동하고 스캔의 일부가 되는 것을 볼 수 있습니다. 최종 변환 중 옵티마이저는 보조 인덱스로 룩업조인을 하도록 결정합니다.
 
@@ -158,7 +158,7 @@ group                    |             |
 
 `memo`는 `memo` 그룹이라고 하는 클래스 집합을 정의하여 이 문제를 해결합니다. 여기서 각 그룹은 논리적으로 동등한 표현식을 포함합니다.
 
-![](/assets/2018-11-18-building-cost-based-sql-optimizer/cost-based-optimizer-memo.png)
+![](/assets/post/2018-11-18-building-cost-based-sql-optimizer/cost-based-optimizer-memo.png)
 
 계획을 작성하려면 그룹1에서 명령어를 선택한 후 그룹2와 3에서 입력을 선택합니다. 어떤 것을 선택하든 같은 그룹의 명령어는 논리적으로 동일합니다. 간단한 산수는 12(3 * 2 * 2)개의 가능한 계획이 `memo`에 저장되 있음을 보여줍니다. 이제 6종류의 조인, 복잡한 통계, 다양한 필터 조건이 포함된 쿼리를 상상해보십시오. 계획 수가 수천 개에 달할 수 있지만 `memo` 구조를 사용한다면 훨씬 적은 공간이 사용됩니다.
 
