@@ -7,7 +7,16 @@ tags: ["Go", "multithread"]
 
 원문: https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html
 
-<!--more-->
+---
+
+### 프렐류드
+
+Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 Go 스케줄러에 중점을 둡니다.
+
+세 시리즈의 인덱스:
+1. [(번역) Go 스케줄링 파트 3 - OS 스케줄러](/2018/10/02/scheduling-in-go-part1.html)
+2. [(번역) Go 스케줄링 파트 3 - Go 스케줄러](/2018/10/03/scheduling-in-go-part2.html)
+3. [(번역) Go 스케줄링 파트 3 - 동시성](/2018/12/08/scheduling-in-go-part3.html)
 
 ### 서론
 
