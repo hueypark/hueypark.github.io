@@ -5,15 +5,6 @@ jaewan.huey.park@gmail.com
 
 ---
 
-## 내용
-
-- CockroachDB
-- ??게임 사례
-- 데이터베이스 연대기
-- 가능성과 제약사항
-
----
-
 ## CockroachDB
 
 ![](/assets/slide/distributed-sql-database-cockroachdb/cockroachdb.png)
