@@ -9,6 +9,14 @@ layout: default
 
 {{content}}
 
+<script src="https://utteranc.es/client.js"
+        repo="hueypark/hueypark.github.io"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
 {% if page.tags %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
 {% endif %}
