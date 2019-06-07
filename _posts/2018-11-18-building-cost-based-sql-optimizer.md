@@ -2,7 +2,7 @@
 layout: post
 title:  "(번역) CockroachDB blog / 비용기반 SQL 옵티마이저는 어떻게 만들어졌나"
 date:   2018-11-18 08:00:00 +0900
-categories: cockroachdb go
+tags: cockroachdb
 ---
 
 원문: https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/
