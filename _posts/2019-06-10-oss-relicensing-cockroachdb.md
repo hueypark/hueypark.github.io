@@ -19,7 +19,7 @@ Written by [Peter Mattis](https://www.cockroachlabs.com/blog/author/peter-mattis
 
 경쟁 업체는 합법적으로 다른 회사의 오픈소스 제품을 서비스로 제공할 수 있습니다. 그리고 그것이 실제로 일어나고 있습니다. 우리는 자신들의 특수한 위치를 사용하여 오픈소스 제품의 "서비스" 버전을 제공하는 고도로 통합된 공급자들을 목격하고 있습니다. 그리고 이러한 통합의 결과로 뛰어난 사용자 경험이 제공됩니다. 우리는 최근에 아마존의 ElasticSearch 포크 버전에서 이런 일이 일어난 것을 보았습니다. Salil Deshpande는 [테크크런치에서](https://techcrunch.com/2019/05/30/lack-of-leadership-in-open-source-results-in-source-available-licenses/) "이기적이고 계산적" 이라고 깔끔하게 묘사했습니다.
 
-이러한 경재자들의 행동에 대응하기 위해, 우리는 소프트웨어 라이센스를 변경하고자 합니다. 자세한 내용은 아래와 [깃헙](https://github.com/cockroachdb/cockroach/blob/8acfe8ffd0028ce1d81a9b1148f7e9ba2673bf95/licenses/BSL.txt#L8-L16)에서 확안가능하며, 짧은 버전은 이것입니다.
+이러한 경재자들의 행동에 대응하기 위해, 우리는 소프트웨어 라이센스를 변경하고자 합니다. 자세한 내용은 아래와 [깃헙](https://github.com/cockroachdb/cockroach/blob/8acfe8ffd0028ce1d81a9b1148f7e9ba2673bf95/licenses/BSL.txt#L8-L16)에서 확인가능하며, 짧은 버전은 이것입니다.
 
 > 오늘, 비즈니스 소스 라이센스(BSL)에 매우 엄격한 버전을 채택했습니다. 칵로치디비 사용자는 제한없이 노드를 확장할 수 있습니다. 또 칵로치디비를 애플리케이션에서 사용하거나 임베드할 수 있습니다(고객에게 애플리케이션을 제공하거나 서비스로 실행할 경우 모두). 또 내부 서비스로 실행되어도 좋습니다. **단 하나뿐인 제약사항은 라이센스를 구매하지 않고 상용 버전의 칵로치디비를 서비스로 제공하는 일입니다.**
 
