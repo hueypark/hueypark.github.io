@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) CockroachDB blog / Go 테스트 코드 의존성 압도적으로 관리하기"
 date: 2018-12-15 00:00:00 +0900
-categories: cockroachdb, test
+tags: cockroachdb, test
 ---
 
 원문: https://www.cockroachlabs.com/blog/outsmarting-go-dependencies-testing-code/
