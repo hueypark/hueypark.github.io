@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (번역) CockroachDB blog / CockroachDB의 분산처리, 아토믹 트랜잭션은 어떻게 동작하는가
+title: (번역) 칵로치디비(CockroachDB) 블로그 / CockroachDB의 분산처리, 아토믹 트랜잭션은 어떻게 동작하는가
 date: 2018-10-17
 tags: ["Go", "CockroachDB"]
 ---

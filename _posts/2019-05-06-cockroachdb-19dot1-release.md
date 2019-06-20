@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(번역) CockroachDB blog / CockroachDB 19.1 소개"
+title: "(번역) 칵로치디비(CockroachDB) 블로그 / CockroachDB 19.1 소개"
 date: 2019-05-06
 tags: cockroachdb
 ---
