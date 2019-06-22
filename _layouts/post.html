@@ -9,6 +9,10 @@ layout: default
 
 {{content}}
 
+{% if page.tags %}
+	<small>tags: {%for tag in page.tags %}<a href="/tags/{{ tag }}/">{{ tag }}</a> {% endfor%}</small>
+{% endif %}
+
 <script src="https://utteranc.es/client.js"
         repo="hueypark/hueypark.github.io"
         issue-term="pathname"
@@ -16,7 +20,3 @@ layout: default
         crossorigin="anonymous"
         async>
 </script>
-
-{% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}

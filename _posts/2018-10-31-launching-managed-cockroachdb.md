@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) 칵로치디비(CockroachDB) 블로그 / 관리형 CockroachDB 출시: The Geo-Distributed Database as a Service"
 date: 2018-10-31
-tags: ["Go", "CockroachDB"]
+tags: ["cockroachdb"]
 ---
 
 원문: https://www.cockroachlabs.com/blog/launching-managed-cockroachdb

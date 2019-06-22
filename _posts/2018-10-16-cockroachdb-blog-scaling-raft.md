@@ -2,7 +2,7 @@
 layout: post
 title: (번역) 칵로치디비(CockroachDB) 블로그 / Raft를 스케일링하기
 date: 2018-10-16
-tags: ["Go", "CockroachDB"]
+tags: ["cockroachdb"]
 ---
 
 원문: https://www.cockroachlabs.com/blog/scaling-raft/

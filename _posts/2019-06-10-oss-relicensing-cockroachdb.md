@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) 칵로치디비(CockroachDB) 블로그 / 왜 우리는 칵로치디비 라이센스를 변경했는가"
 date: 2019-06-10
-tags: cockroachdb
+tags: [cockroachdb]
 ---
 
 원문: [Why We’re Relicensing CockroachDB](https://www.cockroachlabs.com/blog/oss-relicensing-cockroachdb/)

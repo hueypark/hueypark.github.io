@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) 칵로치디비(CockroachDB) 블로그 / CockroachDB에서의 SQL: 테이블 데이터를 키밸류 저장소에 매핑시키기"
 date: 2018-10-19
-tags: ["Go", "CockroachDB"]
+tags: ["cockroachdb"]
 ---
 
 원문: https://www.cockroachlabs.com/blog/sql-in-cockroachdb-mapping-table-data-to-key-value-storage/

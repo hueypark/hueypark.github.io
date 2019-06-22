@@ -2,7 +2,7 @@
 layout: post
 title: (번역) 칵로치디비(CockroachDB) 블로그 / CockroachDB의 분산처리, 아토믹 트랜잭션은 어떻게 동작하는가
 date: 2018-10-17
-tags: ["Go", "CockroachDB"]
+tags: ["cockroachdb"]
 ---
 
 원문: https://www.cockroachlabs.com/blog/how-cockroachdb-distributes-atomic-transactions/

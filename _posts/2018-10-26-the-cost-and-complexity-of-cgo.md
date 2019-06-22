@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) 칵로치디비(CockroachDB) 블로그 / cgo의 비용과 복잡성"
 date: 2018-10-26
-tags: ["Go", "CockroachDB"]
+tags: ["go", "cockroachdb"]
 ---
 
 원문: https://www.cockroachlabs.com/blog/the-cost-and-complexity-of-cgo/

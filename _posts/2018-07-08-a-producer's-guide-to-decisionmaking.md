@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) 의사결정을 위한 게임 프로듀서의 도움말"
 date: 2018-07-08 00:00:00 +0900
-tags: decisionmaking game producer
+tags: [decisionmaking, game, producer]
 ---
 
 원문: https://gamasutra.com/view/news/320800/A_producers_guide_to_decisionmaking.php

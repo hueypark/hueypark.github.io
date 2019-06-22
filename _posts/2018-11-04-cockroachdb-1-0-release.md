@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) 칵로치디비(CockroachDB) 블로그 / CockroachDB 1.0 제품준비 완료"
 date: 2018-11-04
-tags: ["Go", "CockroachDB"]
+tags: ["cockroachdb"]
 ---
 
 원문: https://www.cockroachlabs.com/blog/cockroachdb-1-0-release

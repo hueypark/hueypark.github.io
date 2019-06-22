@@ -2,7 +2,7 @@
 layout: post
 title: (번역) Go 작업훔치기 스케줄러
 date: 2018-10-13
-tags: ["Go", "scheduler"]
+tags: ["go", "scheduler"]
 ---
 
 원문: https://rakyll.org/scheduler/

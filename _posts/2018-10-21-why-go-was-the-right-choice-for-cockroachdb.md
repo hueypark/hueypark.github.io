@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) 칵로치디비(CockroachDB) 블로그 / 왜 Go가 CockroachDB에 올바른 선택인가"
 date: 2018-10-21
-tags: ["Go", "CockroachDB"]
+tags: ["go", "cockroachdb"]
 ---
 
 원문: https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/

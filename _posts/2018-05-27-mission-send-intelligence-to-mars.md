@@ -2,7 +2,7 @@
 layout: post
 title: "Mission: Sends intelligence to Mars"
 date: 2018-05-27 00:00:00 +0900
-tags: mission intelligence Mars
+tags: [mission, intelligence, mars]
 ---
 
 ### Why?

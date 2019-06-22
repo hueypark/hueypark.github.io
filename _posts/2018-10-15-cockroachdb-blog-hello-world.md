@@ -2,7 +2,7 @@
 layout: post
 title: (번역) 칵로치디비(CockroachDB) 블로그 / Hello World
 date: 2018-10-15
-tags: ["Go", "CockroachDB"]
+tags: ["cockroachdb"]
 ---
 
 원문: https://www.cockroachlabs.com/blog/hello-world/

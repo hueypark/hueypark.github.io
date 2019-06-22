@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) 칵로치디비(CockroachDB) 블로그 / CockroachDB의 온라인 스키마 변경 원리"
 date: 2018-10-26
-tags: ["Go", "CockroachDB"]
+tags: ["cockroachdb"]
 ---
 
 원문: https://www.cockroachlabs.com/blog/how-online-schema-changes-are-possible-in-cockroachdb/

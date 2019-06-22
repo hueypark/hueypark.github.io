@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) 칵로치디비(CockroachDB) 블로그 / 지역 파티셔닝을 사용해 성능을 향상시키는 방법"
 date: 2019-06-08
-tags: cockroachdb
+tags: [cockroachdb]
 ---
 
 원문: [How to Improve Performance using Geo-Partitioning](https://www.cockroachlabs.com/blog/geo-partitioning/)

@@ -6,3 +6,13 @@ theme: jekyll-theme-hacker
 author: Jaewan Park
 kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
+collections:
+  tags:
+    output: true
+    permalink: /tags/:path/
+defaults:
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag

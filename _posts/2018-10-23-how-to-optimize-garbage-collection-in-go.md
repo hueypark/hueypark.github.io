@@ -2,7 +2,7 @@
 layout: post
 title: "(번역) 칵로치디비(CockroachDB) 블로그 / Go에서 가비지 컬렉션을 최적화하는 방법"
 date: 2018-10-23
-tags: ["Go", "CockroachDB"]
+tags: ["go", "cockroachdb"]
 ---
 
 원문: https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/

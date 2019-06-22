@@ -2,7 +2,7 @@
 layout: post
 title: "Visual Studio Code debug speed up on Windows"
 date: 2018-05-14 00:00:00 +0900
-categories: go vscode windows
+tags: [go, vscode, windows]
 ---
 
 On `Visual Studio Code`, `Go` debugging is very slow because that always rebuild everything.

@@ -2,7 +2,7 @@
 layout: post
 title: (번역) Go 스케줄링 파트 3
 date: 2018-12-08
-tags: ["Go", "multithread"]
+tags: ["go", "multithread"]
 ---
 
 원문: https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html
