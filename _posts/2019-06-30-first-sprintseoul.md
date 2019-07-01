@@ -33,4 +33,4 @@ tags: [cockroachdb, sprintseoul]
 
 - [한국 칵로치디비 사용자 그룹](https://www.facebook.com/groups/cockroachdb.kr/) 가입해주세요! 칵로치디비 관련 정보와 이후에 진행될 한글화 진행상황을 공유하고자 합니다.
 - 앞으로 번역에는 [Muchtrans](https://muchtrans.com/)를 사용해 볼까 고민중입니다.
-- 파이콘 2019 스프린트는 진행자 신청기간이 종료되어 참하하지 못하는 것이 안타깝습니다.
+- 파이콘 2019 스프린트는 진행자 신청기간이 종료되어 참가하지 못하는 것이 안타깝습니다.
