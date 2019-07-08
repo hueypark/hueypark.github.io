@@ -4,9 +4,9 @@ title: Issues
 permalink: /issues/
 ---
 
-## 칵로치디비 이슈
+## 카크로치디비 이슈
 
-스프린트에서 해결할 칵로치디비 이슈를 정리했습니다. 이미 [good first issue](https://github.com/cockroachdb/cockroach/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22), [E-easy](https://github.com/cockroachdb/cockroach/issues?q=is%3Aopen+is%3Aissue+label%3AE-easy), [E-starter](https://github.com/cockroachdb/cockroach/issues?q=is%3Aissue+is%3Aopen+label%3AE-starter) 등의 태그가 있지만, 너무 오래되어 의미가 없어지거나, 프로젝트에 대한 이해가 적은 상태에서 해결하기 힘든 이슈를 제외하고 간단한 설명을 추가했습니다.
+스프린트에서 해결할 카크로치디비 이슈를 정리했습니다. 이미 [good first issue](https://github.com/cockroachdb/cockroach/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22), [E-easy](https://github.com/cockroachdb/cockroach/issues?q=is%3Aopen+is%3Aissue+label%3AE-easy), [E-starter](https://github.com/cockroachdb/cockroach/issues?q=is%3Aissue+is%3Aopen+label%3AE-starter) 등의 태그가 있지만, 너무 오래되어 의미가 없어지거나, 프로젝트에 대한 이해가 적은 상태에서 해결하기 힘든 이슈를 제외하고 간단한 설명을 추가했습니다.
 
 - sql: review slow tests [#37028](https://github.com/cockroachdb/cockroach/issues/37028)
 	- 느린 테스트 리뷰하여 시간단축 또는 제거

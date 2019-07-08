@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "칵로치디비(CockroachDB) 윈도우(WSL2)에서 빌드"
+title: "카크로치디비(CockroachDB) 윈도우(WSL2)에서 빌드"
 date: 2019-07-02
 tags: [cockroachdb, windows, wsl2]
 ---
@@ -11,4 +11,4 @@ tags: [cockroachdb, windows, wsl2]
 
 마침 WSL 2가 윈도우즈 인사이더에 [릴리즈](https://devblogs.microsoft.com/commandline/wsl-2-is-now-available-in-windows-insiders/) 되었다고 하기에 실험체가 되어보기로 했다.
 
-18922.1000을 설치하고 얼마 후... 칵로치디비 빌드에 성공!! 앞으로 [WSL 2 태그](https://marsettler.com/tags/wsl2/)에 사용기를 꾸준히 업데이트 할 예정이니 WSL 2의 현재상태가 궁금한 분들은 한 번씩 찾아와 주시기 바랍니다.
+18922.1000을 설치하고 얼마 후... 카크로치디비 빌드에 성공!! 앞으로 [WSL 2 태그](https://marsettler.com/tags/wsl2/)에 사용기를 꾸준히 업데이트 할 예정이니 WSL 2의 현재상태가 궁금한 분들은 한 번씩 찾아와 주시기 바랍니다.

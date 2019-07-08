@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(번역) 칵로치디비(CockroachDB) 블로그 / 관리형 CockroachDB 출시: The Geo-Distributed Database as a Service"
+title: "(번역) 카크로치디비(CockroachDB) 블로그 / 관리형 CockroachDB 출시: The Geo-Distributed Database as a Service"
 date: 2018-10-31
 tags: ["cockroachdb"]
 ---

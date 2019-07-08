@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (번역) 칵로치디비(CockroachDB) 블로그 / Hello World
+title: (번역) 카크로치디비(CockroachDB) 블로그 / Hello World
 date: 2018-10-15
 tags: ["cockroachdb"]
 ---

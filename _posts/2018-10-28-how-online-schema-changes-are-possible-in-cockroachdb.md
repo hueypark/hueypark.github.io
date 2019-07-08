@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(번역) 칵로치디비(CockroachDB) 블로그 / CockroachDB의 온라인 스키마 변경 원리"
+title: "(번역) 카크로치디비(CockroachDB) 블로그 / CockroachDB의 온라인 스키마 변경 원리"
 date: 2018-10-26
 tags: ["cockroachdb"]
 ---

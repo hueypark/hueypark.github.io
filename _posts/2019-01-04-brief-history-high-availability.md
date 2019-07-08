@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(번역) 칵로치디비(CockroachDB) 블로그 / 고가용성의 역사"
+title: "(번역) 카크로치디비(CockroachDB) 블로그 / 고가용성의 역사"
 date: 2019-01-04
 tags: [cockroachdb]
 slide: "distributed-sql-database-cockroachdb"

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(번역) 칵로치디비(CockroachDB) 블로그 / CAP 이론의 한계"
+title: "(번역) 카크로치디비(CockroachDB) 블로그 / CAP 이론의 한계"
 date: 2018-11-07
 tags: ["cockroachdb"]
 ---

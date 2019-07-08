@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(번역) 칵로치디비(CockroachDB) 블로그 / cgo의 비용과 복잡성"
+title: "(번역) 카크로치디비(CockroachDB) 블로그 / cgo의 비용과 복잡성"
 date: 2018-10-26
 tags: ["go", "cockroachdb"]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(번역) 칵로치디비(CockroachDB) 블로그 / Go 테스트 코드 의존성 압도적으로 관리하기"
+title: "(번역) 카크로치디비(CockroachDB) 블로그 / Go 테스트 코드 의존성 압도적으로 관리하기"
 date: 2018-12-15 00:00:00 +0900
 tags: [cockroachdb, test]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (번역) 칵로치디비(CockroachDB) 블로그 / Raft를 스케일링하기
+title: (번역) 카크로치디비(CockroachDB) 블로그 / Raft를 스케일링하기
 date: 2018-10-16
 tags: ["cockroachdb"]
 ---

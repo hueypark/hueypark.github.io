@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "(번역) 칵로치디비(CockroachDB) 블로그 / 지역 파티셔닝을 사용해 성능을 향상시키는 방법"
+title: "(번역) 카크로치디비(CockroachDB) 블로그 / 지역 파티셔닝을 사용해 성능을 향상시키는 방법"
 date: 2019-06-08
 tags: [cockroachdb]
 ---
@@ -13,9 +13,9 @@ Written by [Dan Kelly](https://www.cockroachlabs.com/blog/author/dan-kelly/) on 
 
 ---
 
-분산 SQL의 가장 흥미로운 기능 중 하나는 데이터를 특정 지역에 고정시키는 기능이며 칵로치디비는 지역 파티셔닝 기능을 통해 이를 제공합니다. 만약 이 기능에 익숙하지 않다면 우리가 최근에 공개한 [비디오 데모](https://www.youtube.com/watch?time_continue=4&v=TgnQwOOk9Js)와 [튜토리얼](https://www.cockroachlabs.com/docs/v19.1/demo-geo-partitioning.html)를 통해 동작방식을 확인하실 수 있습니다. 하지만 먼저, 지역 파티셔닝에 대한 설명을 드리겠습니다:
+분산 SQL의 가장 흥미로운 기능 중 하나는 데이터를 특정 지역에 고정시키는 기능이며 카크로치디비는 지역 파티셔닝 기능을 통해 이를 제공합니다. 만약 이 기능에 익숙하지 않다면 우리가 최근에 공개한 [비디오 데모](https://www.youtube.com/watch?time_continue=4&v=TgnQwOOk9Js)와 [튜토리얼](https://www.cockroachlabs.com/docs/v19.1/demo-geo-partitioning.html)를 통해 동작방식을 확인하실 수 있습니다. 하지만 먼저, 지역 파티셔닝에 대한 설명을 드리겠습니다:
 
-지역 파티셔닝은 데이터(행 수준에서)를 지역에 고정할 수 있는 기능입니다. 이를 통해 수동 스키마 변경과 복잡하고 다루기 힘든 애플리케이션 로직 없이, 데이터베이스 데이터의 지역성을 보장할 수 있습니다. 지역 파티셔닝은 데이터의 값을 테이터베이스의 물리적인 구현과 결합하기 때문에 일반적인 파티셔닝과는 확연히 다릅니다. [분산 SQL 데이터베이스](https://www.cockroachlabs.com/blog/what-is-distributed-sql/)에서 각 노드는 서로 다른 물리적 장소에서 실행됩니다. 칵로치디비는 이 정보를 사용하여 데이터의 지역 파티셔닝을 적용하는 유일한 데이터베이스입니다.
+지역 파티셔닝은 데이터(행 수준에서)를 지역에 고정할 수 있는 기능입니다. 이를 통해 수동 스키마 변경과 복잡하고 다루기 힘든 애플리케이션 로직 없이, 데이터베이스 데이터의 지역성을 보장할 수 있습니다. 지역 파티셔닝은 데이터의 값을 테이터베이스의 물리적인 구현과 결합하기 때문에 일반적인 파티셔닝과는 확연히 다릅니다. [분산 SQL 데이터베이스](https://www.cockroachlabs.com/blog/what-is-distributed-sql/)에서 각 노드는 서로 다른 물리적 장소에서 실행됩니다. 카크로치디비는 이 정보를 사용하여 데이터의 지역 파티셔닝을 적용하는 유일한 데이터베이스입니다.
 
 지역 파티셔닝은 종종 [데이터 현지화](https://www.cockroachlabs.com/guides/data-localization/)([마크 주커버그와 유발 하라리의 대화를 통해 매우 중요한 주제가 되었음](https://techcrunch.com/2019/04/26/facebook-data-localization/))의 맥락에서 논의됩니다. 고객 데이터를 특정위치에 고정시키는 기능은 해당 지역에 데이터가 있어야 하는 국가에서 비즈니스 기준을 준수할 수 있게 도와줍니다.
 
