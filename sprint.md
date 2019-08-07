@@ -14,6 +14,10 @@ permalink: /sprint/
 	- [CONTRIBUTING.md](https://github.com/cockroachdb/cockroach/blob/master/CONTRIBUTING.md)와 [문서](https://marsettler.com/docs/stable/ko/contribute-to-cockroachdb.html)를 참고하십시오.
 - [아키텍처 개요](https://marsettler.com/docs/stable/ko/architecture/overview.html)를 읽어보십시오.
 
+## 궁금한 점이 있다면?
+
+- [카크로치디비 스프린트 채팅방](https://gitter.im/koreacockroach/sprint)을 개설했습니다. 무엇이든 편하게 물어보십시오.
+
 ## 첫 PR을 위해 도전할 만한 이슈
 
 스프린트에서 해결할 카크로치디비 이슈를 정리했습니다. 이미 [good first issue](https://github.com/cockroachdb/cockroach/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22), [E-easy](https://github.com/cockroachdb/cockroach/issues?q=is%3Aopen+is%3Aissue+label%3AE-easy), [E-starter](https://github.com/cockroachdb/cockroach/issues?q=is%3Aissue+is%3Aopen+label%3AE-starter) 등의 태그가 있지만, 너무 오래되어 의미가 없어지거나, 프로젝트에 대한 이해가 적은 상태에서 해결하기 힘든 이슈를 제외한 후, 간단한 설명을 추가했습니다.
