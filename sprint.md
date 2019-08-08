@@ -8,15 +8,16 @@ permalink: /sprint/
 
 안녕하세요. 카크로치디비 스프린트에 참가하신 여러분을 환영합니다. 오픈소스 프로젝트를 함께 개발하는 과정에서 새로운 동료를 만나고, 경험과 지식을 나누길 희망합니다.
 
-## 미리 알아야 할 내용
+## 미리 준비해야 할 것
 
+- [설문조사](https://app.sli.do/event/2f6dv2wk/live/polls)에 응답해 주십시오. 스프린트 내용 결정에 도움이 됩니다.
 - 개발환경을 미리 준비해 주십시오.(당일 준비하기에는 꽤 오랜 시간이 걸립니다.)
 	- [CONTRIBUTING.md](https://github.com/cockroachdb/cockroach/blob/master/CONTRIBUTING.md)와 [문서](https://marsettler.com/docs/stable/ko/contribute-to-cockroachdb.html)를 참고하십시오.
 - [아키텍처 개요](https://marsettler.com/docs/stable/ko/architecture/overview.html)를 읽어보십시오.
 
 ## 궁금한 점이 있다면?
 
-- [카크로치디비 스프린트 채팅방](https://gitter.im/koreacockroach/sprint)을 개설했습니다. 무엇이든 편하게 물어보십시오.
+- [카크로치디비 스프린트 채팅방](https://gitter.im/koreacockroachdb/community)을 개설했습니다. 무엇이든 편하게 물어보십시오.
 
 ## 첫 PR을 위해 도전할 만한 이슈
 
