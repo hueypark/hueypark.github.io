@@ -10,7 +10,6 @@ permalink: /sprint/
 
 ## 미리 준비해야 할 것
 
-- [설문조사](https://app.sli.do/event/2f6dv2wk/live/polls)에 응답해 주십시오. 스프린트 내용 결정에 도움이 됩니다.
 - 개발환경을 미리 준비해 주십시오.(당일 준비하기에는 꽤 오랜 시간이 걸립니다.)
 	- [CONTRIBUTING.md](https://github.com/cockroachdb/cockroach/blob/master/CONTRIBUTING.md)와 [문서](https://marsettler.com/docs/stable/ko/contribute-to-cockroachdb.html)를 참고하십시오.
 - [아키텍처 개요](https://marsettler.com/docs/stable/ko/architecture/overview.html)를 읽어보십시오.
@@ -18,6 +17,9 @@ permalink: /sprint/
 ## 궁금한 점이 있다면?
 
 - [카크로치디비 스프린트 채팅방](https://gitter.im/koreacockroachdb/community)을 개설했습니다. 무엇이든 편하게 물어보십시오.
+
+## 다음은...?
+- 추가 [설문조사](https://app.sli.do/event/2f6dv2wk/live/polls)에 응답해 주십시오. 다음 스프린트 내용 결정에 도움이 됩니다.
 
 ## 첫 PR을 위해 도전할 만한 이슈
 
@@ -33,3 +35,11 @@ permalink: /sprint/
 	- 업데이트가 필요한 컴퓨티드 컬럼만 업데이트하게 변경
 - sql: implement computed indexes [#9682](https://github.com/cockroachdb/cockroach/issues/9682)
 	- 컴퓨티드 인덱스 구현
+
+## 설문조사 결과
+
+- 스프린트에 얼마나 익숙하신가요?(12명 응답)
+	- GitHub을 사용한 컨트리뷰팅에 익숙합니다(42%)
+	- Git 사용에 익숙합니다(25%)
+	- 전혀 익숙하지 않습니다(25%)
+	- 카크로치디비 컨트리뷰팅에 익숙합니다(8%)
