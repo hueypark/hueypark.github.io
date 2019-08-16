@@ -28,7 +28,7 @@ permalink: /sprint/
 - sql: replace all map[sqlbase.ColumnID]int types with util.FastIntMap [#37801](https://github.com/cockroachdb/cockroach/issues/37801)
 	- map 자료형 변경
 - sql: normalization should convert mistyped constants in comparisons [#21143](https://github.com/cockroachdb/cockroach/issues/21143)
-	- 암시적 형변환 허용(int와 float)
+	- ~~암시적 형변환 허용(int와 float)~~
 - sql: better error messaging around CURSORs [#35878](https://github.com/cockroachdb/cockroach/issues/35878)
 	- CURSOR 관련 더 좋은 에러 메시지 적용
 - sql: only update computed columns that need updating [#23523](https://github.com/cockroachdb/cockroach/issues/23523)
