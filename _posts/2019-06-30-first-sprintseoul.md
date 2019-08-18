@@ -2,7 +2,7 @@
 layout: post
 title: "스프린트서울 첫 참가"
 date: 2019-06-30
-tags: [cockroachdb, sprintseoul]
+tags: [cockroachdb, sprint]
 ---
 
 작년 11월부터 카크로치디비에 [기여](https://github.com/cockroachdb/cockroach/pulls?q=is%3Apr+author%3Ahueypark)하고 있습니다. 한국에는 관련 커뮤니티나 정보가 부족해 답답해 하고 있었는데, [스프린트서울](https://www.sprintseoul.org/)이라는 행사를 알게되어 참가했습니다.

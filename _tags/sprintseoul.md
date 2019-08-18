@@ -1,4 +1,0 @@
----
-name: sprintseoul
-title: SprintSeoul
----
