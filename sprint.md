@@ -18,9 +18,6 @@ permalink: /sprint/
 
 - [카크로치디비 스프린트 채팅방](https://gitter.im/koreacockroachdb/community)을 개설했습니다. 무엇이든 편하게 물어보십시오.
 
-## 다음은...?
-- 추가 [설문조사](https://app.sli.do/event/2f6dv2wk/live/polls)에 응답해 주십시오. 다음 스프린트 내용 결정에 도움이 됩니다.
-
 ## 첫 PR을 위해 도전할 만한 이슈
 
 스프린트에서 해결할 카크로치디비 이슈를 정리했습니다. 이미 [good first issue](https://github.com/cockroachdb/cockroach/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22), [E-easy](https://github.com/cockroachdb/cockroach/issues?q=is%3Aopen+is%3Aissue+label%3AE-easy), [E-starter](https://github.com/cockroachdb/cockroach/issues?q=is%3Aissue+is%3Aopen+label%3AE-starter) 등의 태그가 있지만, 너무 오래되어 의미가 없어지거나, 프로젝트에 대한 이해가 적은 상태에서 해결하기 힘든 이슈를 제외한 후, 간단한 설명을 추가했습니다.
@@ -35,11 +32,3 @@ permalink: /sprint/
 	- 업데이트가 필요한 컴퓨티드 컬럼만 업데이트하게 변경
 - sql: implement computed indexes [#9682](https://github.com/cockroachdb/cockroach/issues/9682)
 	- 컴퓨티드 인덱스 구현
-
-## 설문조사 결과
-
-- 스프린트에 얼마나 익숙하신가요?(12명 응답)
-	- GitHub을 사용한 컨트리뷰팅에 익숙합니다(42%)
-	- Git 사용에 익숙합니다(25%)
-	- 전혀 익숙하지 않습니다(25%)
-	- 카크로치디비 컨트리뷰팅에 익숙합니다(8%)
