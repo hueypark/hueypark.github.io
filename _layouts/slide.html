@@ -7,8 +7,8 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			{% assign slide = page.url | replace_first: '/', '' | replace: '/', '-'  | replace: '.html', '/slide.md' %}
-			<section data-markdown="/assets/post/{{ slide }}" data-separator="---">
+			{% assign slide = page.url | replace_first: '/', '' | replace: '/', '-'  | replace: '.html', '/' %}
+			<section data-markdown="/assets/post/{{ slide }}{{ page.slide }}.md" data-separator="---">
 			</section>
 		</div>
 	</div>
