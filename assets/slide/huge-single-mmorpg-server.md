@@ -159,7 +159,7 @@
 
 ### 거대한 단일 MMORPG 서버는
 
-궁극적으로 우리는 <span style="color:LightSkyBlue">스케일 아웃</span>을 필요로 함
+궁극적으로 <span style="color:LightSkyBlue">스케일 아웃</span>을 필요로 함
 
 ---
 
