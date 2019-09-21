@@ -48,7 +48,7 @@
 
 ### 일반적인 MMORPG는
 
-성능 한계를 해소를 위해 물리적으로 격리된 서버를 운영
+성능한계 해소를 위해 물리적으로 격리된 서버를 운영
 
 <span class="fragment" style="color:LightSkyBlue">서로 다른 서버의 유저는 상호작용할 수 없음</span>
 
