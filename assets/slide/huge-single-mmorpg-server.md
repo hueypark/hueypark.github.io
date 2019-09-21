@@ -215,7 +215,7 @@
 
 ### 이미 많은 경험을 쌓음
 
-#### <span class="fragment" style="color:LightSkyBlue">인게임</sp
+#### <span class="fragment" style="color:LightSkyBlue">인게임</span>
 #### <span class="fragment" style="color:LightSkyBlue">아웃게임</span>
 
 ---
@@ -235,7 +235,7 @@
 
 ### 게임의 특성에 따라 달라지지만
 
-### 일반적으로 두가지 중 하나를 선택해야 함
+### 일반적으로 둘 중 하나를 선택해야 함
 
 1. 특정 서버가 다운되면 유저 플레이 불가
 2. 한 유저가 동시에 두 지역에 있는 것을 허용
