@@ -301,7 +301,8 @@ https://github.com/hueypark/marsettler/tree/0.1
 
 ---
 
-## 4. 데이터베이스 고려사항과 해법
+## 4. 데이터베이스
+## 고려사항과 해법
 
 ---
 
