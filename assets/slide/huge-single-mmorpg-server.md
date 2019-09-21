@@ -20,9 +20,9 @@
 
 ---
 
-### MMORPG 서버를 먼저 정의해 봅시다
+### MMORPG를 먼저 정의해 봅시다
 
-#### 대규모 다중 사용자 온라인 롤플레잉 게임
+#### <span class="fragment">대규모 다중 사용자 온라인 롤플레잉 게임</span>
 
 <span class="fragment">World of Warcraft,</span> <span class="fragment">EVE Online,</span> <span class="fragment">듀랑고,</span> <span class="fragment">검은사막,</span> <span class="fragment">...</span>
 
