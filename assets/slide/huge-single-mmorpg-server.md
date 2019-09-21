@@ -98,11 +98,13 @@
 
 ---
 
-### 거대한 단일 MMORPG 서버를
+### 이 사례 모두를
 
-개발할 때 일반적으로 생기는 <span style="color:LightSkyBlue">고려사항</span>과
+#### 거대한 단일 MMORPG 서버로 정의하고
 
-그 <span style="color:LightSkyBlue">해결법</span>들을 이야기
+#### 개발할 때 일반적으로 생기는 <span style="color:LightSkyBlue">고려사항</span>과
+
+#### 그 <span style="color:LightSkyBlue">해결법</span>들을 알아보겠습니다.
 
 ---
 
