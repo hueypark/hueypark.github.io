@@ -464,7 +464,7 @@ https://github.com/cockroachdb/cockroach
 
 ### 마무리하며
 
-1. 거댄한 단일 MMORPG 서버
+1. 거대한 단일 MMORPG 서버
 2. 기획 고려사항
 3. 서버 고려사항과 해법
 4. 데이터베이스 고려사항과 해법
