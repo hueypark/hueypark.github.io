@@ -152,7 +152,7 @@
 
 ### 서버를 확장할 때 선택지
 
-- 스케일 업<span class="fragment"> (단일장비 성능 개선 / 물리적 한계 명확함)</span>
+- 스케일 업<span class="fragment"> (단일장비 성능 개선 / 물리적 한계 명확)</span>
 - 스케일 아웃<span class="fragment" style="color:LightSkyBlue"> (여러 장비를 사용해서 부하분산)</span>
 
 ---
