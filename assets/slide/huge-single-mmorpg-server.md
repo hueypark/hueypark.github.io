@@ -215,8 +215,8 @@
 
 ### 이미 많은 경험을 쌓음
 
-#### <span class="fragment" style="color:LightSkyBlue">인게임</span>				<a href="/tags/" class="btn"></span>Tags</a>
-#### <span class="fragment" style="color:LightSkyBlue">아웃게임</span>				<a href="/tags/" class="btn"></span>Tags</a>n>
+#### <span class="fragment" style="color:LightSkyBlue">인게임</sp
+#### <span class="fragment" style="color:LightSkyBlue">아웃게임</span>
 
 ---
 
