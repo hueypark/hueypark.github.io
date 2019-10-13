@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "초보다 정밀한 단위에 대한 `EXTRACT` 명령이 postgres와 다르개 동작함(CockroachDB issue #40683)"
+title: "초보다 정밀한 단위에 대한 `EXTRACT` 명령이 postgres와 다르게 동작함(CockroachDB issue #40683)"
 date: 2019-10-13
 tags: [cockroachdb, go, sprint]
 ---
