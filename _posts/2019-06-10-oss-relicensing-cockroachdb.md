@@ -7,6 +7,8 @@ tags: [cockroachdb]
 
 원문: [Why We’re Relicensing CockroachDB](https://www.cockroachlabs.com/blog/oss-relicensing-cockroachdb/)
 
+<!--more-->
+
 Written by [Peter Mattis](https://www.cockroachlabs.com/blog/author/peter-mattis/), [Ben Darnell](https://www.cockroachlabs.com/blog/author/ben-darnell/) and [Spencer Kimball](https://www.cockroachlabs.com/blog/author/spencer-kimball/) on June 4, 2019
 
 ![](/assets/post/2019-06-10-oss-relicensing-cockroachdb/BSL-hero.jpg)

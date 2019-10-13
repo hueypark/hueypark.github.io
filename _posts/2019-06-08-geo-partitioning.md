@@ -7,6 +7,8 @@ tags: [cockroachdb]
 
 원문: [How to Improve Performance using Geo-Partitioning](https://www.cockroachlabs.com/blog/geo-partitioning/)
 
+<!--more-->
+
 Written by [Dan Kelly](https://www.cockroachlabs.com/blog/author/dan-kelly/) on May 2, 2019
 
 ![](/assets/post/2019-06-08-geo-partitioning/Geo-Partitioning-2-by-Lea-Heinrich.jpg)

@@ -8,6 +8,8 @@ slide: "distributed-sql-database-cockroachdb"
 
 원문: https://www.cockroachlabs.com/blog/brief-history-high-availability/
 
+<!--more-->
+
 Written by [Sean Loiselle](https://www.cockroachlabs.com/author/sean-loiselle/) on Oct 4, 2018
 
 ![](/assets/post/2019-01-04-brief-history-high-availability/datareplication_christinachung.jpg)

@@ -7,9 +7,9 @@ tags: ["cockroachdb"]
 
 원문: https://www.cockroachlabs.com/blog/how-cockroachdb-distributes-atomic-transactions/
 
-Written by [Matt Tracy](https://www.cockroachlabs.com/author/matt-tracy/) on Sep 2, 2015
-
 <!--more-->
+
+Written by [Matt Tracy](https://www.cockroachlabs.com/author/matt-tracy/) on Sep 2, 2015
 
 CockroachDB의 주요기능 중 하나는 분산 데이터베이스의 임의의 키에서 [ACID 트랜잭션](https://en.wikipedia.org/wiki/ACID_(computer_science))을 완벽하게 지원하는 것입니다. CockroachDB 트랜잭션은 핵심속성을 유지하면서(원자성, 일관성, 격리성, 지속성) 데이터베이스에 일련의 작업을 합니다. 이 글에서는 CockroachDB가 잠금을 사용하지 않고 **원자** 트랙잭션을 수행하는 방법에 대해 알아보겠습니다.
 

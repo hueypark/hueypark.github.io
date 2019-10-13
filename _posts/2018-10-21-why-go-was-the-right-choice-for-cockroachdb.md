@@ -7,11 +7,11 @@ tags: ["go", "cockroachdb"]
 
 원문: https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/
 
+<!--more-->
+
 Written by [Jessica Edwards](https://www.cockroachlabs.com/author/jessica-edwards/) on Nov 3, 2015
 
 ![](/assets/post/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/cockroach_gopher_flag_sticker.png)
-
-<!--more-->
 
 많은 개발자들이 우리게게 묻는 첫 번째 질문은, 가비지 컬렉터가 있는 Go언어로 분산 데이터베이스를 작성하는 것에 대한 경험입니다. JVM 가비지 컬렉션은 꽤 비싼데, Go로 만드는 것은 CockroachDB의 성능을 위험에 처하게 할 수 있지 않은가요?
 

@@ -7,11 +7,11 @@ tags: ["cockroachdb"]
 
 원문: https://www.cockroachlabs.com/blog/scaling-raft/
 
+<!--more-->
+
 Written by [Ben Darnell](https://www.cockroachlabs.com/author/ben-darnell/) on Jun 11, 2015
 
 ![](/assets/post/2018-10-16-cockroachdb-blog-scaling-raft/multinode3.png)
-
-<!--more-->
 
 [CockroachDB](https://github.com/cockroachdb/cockroach)는 [Raft consensus algorithm](https://raft.github.io/)을 사용하여 장비가 고장났을 때도 데이터가 일관성을 유지하게 합니다. [etcd](https://github.com/etcd-io/etcd)나 [Consul](https://www.consul.io/)과 같이 Raft를 사용하는 대부분의 시스템에서, 전체 시스템은 하나의 Raft consensus 그룹으로 이루어집니다. 하지만 CockroachDB에서는, `Range`들로 데이터가 나늬며, 개별 Raft consensus 그룹을 가집니다. 즉, 각 노드가 수십만 개의 Raft consensus 그룹으로 나누어 질 수 있습니다. 이것은 몇가지 독특한 도전과제를 만들어내며, 우리는 [MultiRaft](https://github.com/cockroachdb/cockroach/tree/master/multiraft)라고 부르는 계층을 Raft 위에 도입하여 해결했습니다.
 

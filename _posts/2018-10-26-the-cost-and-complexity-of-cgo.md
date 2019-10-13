@@ -7,9 +7,9 @@ tags: ["go", "cockroachdb"]
 
 원문: https://www.cockroachlabs.com/blog/the-cost-and-complexity-of-cgo/
 
-Written by [Tobias Schottdorf](https://www.cockroachlabs.com/author/tobias-schottdorf/) on Dec 9, 2015
-
 <!--more-->
+
+Written by [Tobias Schottdorf](https://www.cockroachlabs.com/author/tobias-schottdorf/) on Dec 9, 2015
 
 [Cgo](https://blog.golang.org/c-go-cgo)는 [Go](https://golang.org/)에서 매주 중요한 부분입니다. 이것으로 Go가 아닌 부분(정확하게는 C 바인딩이 있는 부분)을 호출할 수 있습니다.
 

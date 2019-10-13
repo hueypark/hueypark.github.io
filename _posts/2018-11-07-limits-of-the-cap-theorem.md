@@ -7,13 +7,11 @@ tags: ["cockroachdb"]
 
 원문: https://www.cockroachlabs.com/blog/limits-of-the-cap-theorem
 
----
+<!--more-->
 
 Written by [Ben Darnell](https://www.cockroachlabs.com/author/ben-darnell) on Jun 27, 2017
 
 ![](/assets/post/2018-11-07-limits-of-the-cap-theorem/cap-theorem2.jpg)
-
-<!--more-->
 
 [CAP 이론](https://en.wikipedia.org/wiki/CAP_theorem)은 분산 시스템 이론의 중요한 부분입니다. 분할(네트워크 장애) 상황에 빠진다면 시스템은 일관성과 가용성을 동시에 유지할 수 없으며 둘 중 하나를 선택해야 합니다.
 

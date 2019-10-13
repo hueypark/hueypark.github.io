@@ -7,6 +7,8 @@ tags: [cockroachdb, sprint]
 
 작년 11월부터 카크로치디비에 [기여](https://github.com/cockroachdb/cockroach/pulls?q=is%3Apr+author%3Ahueypark)하고 있습니다. 한국에는 관련 커뮤니티나 정보가 부족해 답답해 하고 있었는데, [스프린트서울](https://www.sprintseoul.org/)이라는 행사를 알게되어 참가했습니다.
 
+<!--more-->
+
 스프린트서울은 스프린트를 아래처럼 정의하고 있습니다.
 > 스프린트는 오픈소스 프로젝트의 작성자 또는 기여자와 함께 짧은 시간 동안 함께 문제를 찾고 해결하며, 해당 오픈소스 프로젝트에 대해 보다 깊게 알아가는 행사입니다.
 

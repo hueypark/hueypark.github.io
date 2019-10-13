@@ -12,6 +12,8 @@ It's reasonable mission for entire my life.
 - Too much(space conquest)
 - Too small(house buying without a mortgage)
 
+<!--more-->
+
 ### What exactly I do?
 
 Create artificial intelligence robot that can explore, expand, exploit for harsh environment.

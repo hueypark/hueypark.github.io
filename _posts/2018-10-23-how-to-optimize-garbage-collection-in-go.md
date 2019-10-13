@@ -7,11 +7,11 @@ tags: ["go", "cockroachdb"]
 
 원문: https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/
 
+<!--more-->
+
 Written by [Jessica Edwards](https://www.cockroachlabs.com/author/jessica-edwards/) on Nov 23, 2015
 
 ![](/assets/post/2018-10-23-how-to-optimize-garbage-collection-in-go/gc.jpg)
-
-<!--more-->
 
 몇 주 전 CockroachDB에서 Go를 선택한 이유에 대한 [글](/assets/post/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/)을 공유했을 때, Go의 알려진 문제(성능, 가비지 컬렉션, 데드락)를 처리하는 방법에 대한 여러 가지 질문을 받았습니다.
 

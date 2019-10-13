@@ -7,12 +7,11 @@ tags: ["cockroachdb"]
 
 원문: https://www.cockroachlabs.com/blog/launching-managed-cockroachdb
 
+<!--more-->
+
 Written by [Spencer Kimball](https://www.cockroachlabs.com/author/spencer-kimball/) on Oct 30, 2018
 
-![](/assets/post/2018-10-31-launching-managed-cockroachdb
-/evolve-business-by-zach-meyers.jpg)
-
-<!--more-->
+![](/assets/post/2018-10-31-launching-managed-cockroachdb/evolve-business-by-zach-meyers.jpg)
 
 이번 주에 우리는 관리형 CockroachDB를 출시하였습니다. 이는 Cockroach 연구소에서 호스팅하고 관리되며 배포, 확장, 관리를 쉽게 할 수 있습니다. 관리형 CockroachDB는 클라우드에 구애받지 않으며 AWS, GCP를 모두 지원합니다. 목표는 단순합니다: 개발팀이 인프라 운영에 대한 걱정 없이, 확장성이 뛰어난 애플리케이션을 만드는데 집중할 수 있게 돕습니다.
 

@@ -7,6 +7,8 @@ tags: [cockroachdb]
 
 원문: https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/
 
+<!--more-->
+
 Written by [Andy Kimball](https://www.cockroachlabs.com/author/andy-kimball/) on Nov 8, 2018
 
 ![](/assets/post/2018-11-18-building-cost-based-sql-optimizer/cloud-formation-by-lisk-feng.jpg)

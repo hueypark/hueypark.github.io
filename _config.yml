@@ -10,6 +10,7 @@ collections:
   tags:
     output: true
     permalink: /tags/:path/
+excerpt_separator: <!--more-->
 defaults:
   - scope:
       path: ''

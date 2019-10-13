@@ -7,11 +7,11 @@ tags: ["cockroachdb"]
 
 원문: https://www.cockroachlabs.com/blog/hello-world/
 
+<!--more-->
+
 Written by [Spencer Kimball](https://www.cockroachlabs.com/author/spencer-kimball/) on Jun 4, 2015
 
 ![](/assets/post/2018-10-15-cockroachdb-blog-hello-world/image-01.png)
-
-<!--more-->
 
 데이터베이스는 전 세계 모든 비즈니스의 심장부이며, 스프레스시트에서 수천개의 슈퍼컴퓨터로 연결된 광대한 서버에 이르기까지 다양합니다. 또한 그들은 빠르게 진화해왔습니다. Cockroach 연구소에 있는 우리는 그 진화를 지켜보았고, 때떄로 자신의 역량을 넘어서는 직무가 주어질 때에도 그 한계를 극복하기 위해 적극적으로 노력해왔습니다.
 

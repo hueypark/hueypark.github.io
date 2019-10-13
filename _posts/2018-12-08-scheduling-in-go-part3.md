@@ -13,6 +13,8 @@ tags: ["go", "multithread"]
 
 Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 동시성에 중점을 둡니다.
 
+<!--more-->
+
 세 시리즈의 인덱스:
 1. [(번역) Go 스케줄링 파트 3 - OS 스케줄러](/2018/10/02/scheduling-in-go-part1.html)
 2. [(번역) Go 스케줄링 파트 3 - Go 스케줄러](/2018/10/03/scheduling-in-go-part2.html)

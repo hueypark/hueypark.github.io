@@ -7,9 +7,9 @@ tags: ["cockroachdb"]
 
 원문: https://www.cockroachlabs.com/blog/how-online-schema-changes-are-possible-in-cockroachdb/
 
-Written by [Vivek Menezes](https://www.cockroachlabs.com/author/vivek-menezes/) on Jan 20, 2016
-
 <!--more-->
+
+Written by [Vivek Menezes](https://www.cockroachlabs.com/author/vivek-menezes/) on Jan 20, 2016
 
 > 저에게는 정기적인 테이블 변경이 필요한데 대부분의 경우 컬럼 추가입니다. 명령 자체는 간단하지만 테이블에는 4천만 개의 로우가 있고 빠르게 증가 중입니다. 그래서 테이블 변경에는 수 시간이 걸립니다. 아마존 RDS를 사용하기 때문에 슬레이브를 이용해 작업한 후 마스터로 승격하는 방법도 사용할 수 없습니다. 다운타임을 최소화할 방법이 없을까요? 사용자가 데이터베이스를 이용할 수만 있다면 작업에 며칠이 걸려도 상관없습니다...
 > -- `스택 오버플로우` `1`

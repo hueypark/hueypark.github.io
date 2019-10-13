@@ -7,6 +7,8 @@ tags: [cockroachdb]
 
 원문: https://www.cockroachlabs.com/blog/cockroachdb-19dot1-release/
 
+<!--more-->
+
 Written by [The Cockroach Labs Team](https://www.cockroachlabs.com/author/the-cockroach-labs-team/) on Apr 30, 2019
 
 ![](/assets/post/2019-05-06-cockroachdb-19dot1-release/19.1_release_fa.png)

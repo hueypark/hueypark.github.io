@@ -9,13 +9,13 @@ tags: ["cockroachdb"]
 
 > 2017년 5월에 작성된 CockroachDB 1.0 제품준비 완료 소식입니다. 이어서 최신 버전인  2.0, 2.1 소식도 전해드리겠습니다.
 
+<!--more-->
+
 ---
 
 Written by [Spencer Kimball](https://www.cockroachlabs.com/author/spencer-kimball) on May 10, 2017
 
 ![](/assets/post/2018-11-04-cockroachdb-1-0-release/cockroachdb-1dot0.png)
-
-<!--more-->
 
 오늘, 최초의 오픈소스 클라우드 네이티브 SQL 데이터베이스인 CockroachDB 1.0의 출시를 발표하게 되어 기쁩니다. 추가로 우리는 비전을 공유하는 투자자들로부터 시리즈 B 펀딩을 받게 되었습니다. 1.0 버전의 출시는 베타버전이 종료되고, 스타트업부터 엔터프라이즈까지 어떤 규모의 비즈니스에도 대응할 수 있는 데이터베이스가 준비되었음을 의미합니다.
 

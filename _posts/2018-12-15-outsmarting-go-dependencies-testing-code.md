@@ -7,6 +7,8 @@ tags: [cockroachdb, test]
 
 원문: https://www.cockroachlabs.com/blog/outsmarting-go-dependencies-testing-code/
 
+<!--more-->
+
 ---
 
 읽는 시간: 9분
