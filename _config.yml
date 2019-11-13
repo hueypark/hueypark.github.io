@@ -1,9 +1,9 @@
 title: Marsettler
-description: Jaewan Park
+description: Jaewan Park's blog
 show_downloads: false
 google_analytics: UA-121966234-1
 theme: jekyll-theme-hacker
-author: Jaewan Park
+author: 박재완
 kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
 collections:
