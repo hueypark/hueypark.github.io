@@ -5,11 +5,11 @@ date: 2018-10-19
 tags: ["cockroachdb"]
 ---
 
-원문: https://www.cockroachlabs.com/blog/sql-in-cockroachdb-mapping-table-data-to-key-value-storage/
+원문: [https://www.cockroachlabs.com/blog/sql-in-cockroachdb-mapping-table-data-to-key-value-storage/](https://www.cockroachlabs.com/blog/sql-in-cockroachdb-mapping-table-data-to-key-value-storage/)
 
 <!--more-->
 
-Written by [Peter Mattis](https://www.cockroachlabs.com/author/peter-mattis/), [Tamir Duberstein](https://www.cockroachlabs.com/author/tamir-duberstein/) on Sep 16, 2015
+Written by [Peter Mattis](https://www.cockroachlabs.com/blog/author/peter-mattis/), [Tamir Duberstein](https://www.cockroachlabs.com/blog/author/tamir-duberstein/) on Sep 16, 2015
 
 SQL? CockroachDB는 키밸류 저장소가 아닌가요?!?
 
