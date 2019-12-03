@@ -5,11 +5,11 @@ date: 2018-10-16
 tags: ["cockroachdb"]
 ---
 
-원문: https://www.cockroachlabs.com/blog/scaling-raft/
+원문: [https://www.cockroachlabs.com/blog/scaling-raft/](https://www.cockroachlabs.com/blog/scaling-raft/)
 
 <!--more-->
 
-Written by [Ben Darnell](https://www.cockroachlabs.com/author/ben-darnell/) on Jun 11, 2015
+Written by [Ben Darnell](https://www.cockroachlabs.com/blog/author/ben-darnell/) on Jun 11, 2015
 
 ![](/assets/post/2018-10-16-cockroachdb-blog-scaling-raft/multinode3.png)
 
@@ -17,15 +17,15 @@ Written by [Ben Darnell](https://www.cockroachlabs.com/author/ben-darnell/) on J
 
 단일 `Range`에서 3개 또는 5개 노드 중의 하나가 리더로 선출되고, 주기적으로 팔로워에게 허트비트를 보냅니다.
 
-<img src="/post/2018-10-16-cockroachdb-blog-scaling-raft/multinode1.png" width="300" height="216">
+![](/assets/post/2018-10-16-cockroachdb-blog-scaling-raft/multinode1.png)
 
 시스템이 커지고 더 많은 `Range`들을 가지게 되면, 허트비트를 처리하기 위한 트래픽 양도 들어납니다.
 
-<img src="/post/2018-10-16-cockroachdb-blog-scaling-raft/multinode2.png" width="300" height="216">
+![](/assets/post/2018-10-16-cockroachdb-blog-scaling-raft/multinode2.png)
 
 `Range` 수가 노드 수보다 훨씬 많아지면(`Range`를 작게 유지하면 노드가 실패시 복구시간이 향상됩니다.), 중복되는 `Range`가 많아집니다. 이 때 `MultiRaft`가 필요합니다. 각 `Range`에서 개별적으로 Raft를 처리하는 대신, 전체 노드의 `Range`를 하나의 그룹으로 관리합니다. 아무리 많은 `Range`가 있더라도, 각 노드 쌍은 틱마다 한 번만 허트비트를 교환하면 됩니다.
 
-<img src="/post/2018-10-16-cockroachdb-blog-scaling-raft/multinode3.png" width="300" height="216">
+![](/assets/post/2018-10-16-cockroachdb-blog-scaling-raft/multinode3.png)
 
 허트비트 네트워크 트래픽을 줄이는 것 외에도, MultiRaft는 다른 영역들에서 효율성을 향상시킵니다. 예를 들어, MultiRaft는 `Range`별 고루틴 대신 정해진 작은 수의 고루틴만(현재는 3)을 요구합니다.
 
