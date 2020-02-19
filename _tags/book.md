@@ -1,0 +1,4 @@
+---
+name: book
+title: Book
+---
