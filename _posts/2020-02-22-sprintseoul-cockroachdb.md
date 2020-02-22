@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "스프린트서울은 위한 카크로치디비(CockroachDB) 소개"
+title: "스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB) 소개"
 date: "2020-02-20"
 tags: [cockroachdb, sprint]
 ---
 
 안녕하세요.
 
-스프린트서울을 참가자분들응 위해 카크로치디비(CockroachDB) 소개드립니다.
+스프린트서울을 참가자분들을 위한 카크로치디비(CockroachDB) 소개입니다.
 
 <!--more-->
 
