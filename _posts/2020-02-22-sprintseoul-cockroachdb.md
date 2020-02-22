@@ -21,6 +21,6 @@ tags: [cockroachdb, sprint]
 
 * [#41274 sql: Support aggregate functions for statistics](/2020/02/20/vgfi-sql-support-aggregate-functions-for-statistics.html)
 
-* [#44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE](https://github.com/cockroachdb/cockroach/issues/44135)
+* [#44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE](/2020/02/20/sql-add-support-for-comment(more).html)
 
 감사합니다.
