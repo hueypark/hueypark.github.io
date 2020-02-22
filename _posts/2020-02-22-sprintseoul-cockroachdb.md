@@ -15,9 +15,9 @@ tags: [cockroachdb, sprint]
 
 주 사용언어는 `Go`로 `C++`을 주로 사용한 저는 매우 쾌적한 개발환경을 경험했습니다.
 
-오늘 저는 `Good first issue` 중 작업방향이 분명한 이슈를 모아 간략한 설명을 추가해 `Very good first issue` 로 만들어보려고 합니다.
+오늘 저는 `Good first issue` 중 작업방향이 분명한 이슈를 모으고, 간략한 설명을 추가해 `Very good first issue` 를 만들어보려고 합니다.
 
-Very good first issues.
+### Very good first issues.
 
 * [#41274 sql: Support aggregate functions for statistics](https://github.com/cockroachdb/cockroach/issues/41274)
 
