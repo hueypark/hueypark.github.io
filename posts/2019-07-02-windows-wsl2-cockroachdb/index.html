@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/posts/2019-07-02-windows-wsl2-cockroachdb/">
+<meta property="og:title" content="카크로치디비(CockroachDB) 윈도우(WSL2)에서 빌드" />
+<meta property="og:description" content="
+스프린트서울 참가하면 가장 불편했던 일은 개발환경 설정이었다. 평소에는 집에 있는 리눅스(데스크탑) 환경에서 개발하였는데, 윈도우즈(노트북)을 사용하게 되었기 때문이다. 급한대로 VirtualBox를 사용했는데 성능 차이도 있었고, 직접 손봐야 할 부분이 많았다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/posts/2019-07-02-windows-wsl2-cockroachdb/" />
+<meta property="article:published_time" content="2019-07-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-07-02T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="카크로치디비(CockroachDB) 윈도우(WSL2)에서 빌드"/>
+<meta name="twitter:description" content="
+스프린트서울 참가하면 가장 불편했던 일은 개발환경 설정이었다. 평소에는 집에 있는 리눅스(데스크탑) 환경에서 개발하였는데, 윈도우즈(노트북)을 사용하게 되었기 때문이다. 급한대로 VirtualBox를 사용했는데 성능 차이도 있었고, 직접 손봐야 할 부분이 많았다."/>
+
+
+<meta itemprop="name" content="카크로치디비(CockroachDB) 윈도우(WSL2)에서 빌드">
+<meta itemprop="description" content="
+스프린트서울 참가하면 가장 불편했던 일은 개발환경 설정이었다. 평소에는 집에 있는 리눅스(데스크탑) 환경에서 개발하였는데, 윈도우즈(노트북)을 사용하게 되었기 때문이다. 급한대로 VirtualBox를 사용했는데 성능 차이도 있었고, 직접 손봐야 할 부분이 많았다.">
+<meta itemprop="datePublished" content="2019-07-02T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-07-02T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="65">
+
+
+
+<meta itemprop="keywords" content="cockroachdb,windows,wsl2," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+
+<title>
+
+
+     카크로치디비(CockroachDB) 윈도우(WSL2)에서 빌드 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> 카크로치디비(CockroachDB) 윈도우(WSL2)에서 빌드 </h1>
+    <div class="content"> <p><img src="/post/2019-07-02-windows-wsl2-cockroachdb/cockroachdb-on-windows.png" alt=""></p>
+<p><a href="/2019/06/30/first-sprintseoul.html">스프린트서울</a> 참가하면 가장 불편했던 일은 개발환경 설정이었다. 평소에는 집에 있는 리눅스(데스크탑) 환경에서 개발하였는데, 윈도우즈(노트북)을 사용하게 되었기 때문이다. 급한대로 VirtualBox를 사용했는데 성능 차이도 있었고, 직접 손봐야 할 부분이 많았다.</p>
+<p>마침 WSL 2가 윈도우즈 인사이더에 <a href="https://devblogs.microsoft.com/commandline/wsl-2-is-now-available-in-windows-insiders/">릴리즈</a> 되었다고 하기에 실험체가 되어보기로 했다.</p>
+<p>18922.1000을 설치하고 얼마 후&hellip; 카크로치디비 빌드에 성공!! 앞으로 <a href="https://marsettler.com/tags/wsl2/">WSL 2 태그</a>에 사용기를 꾸준히 업데이트 할 예정이니 WSL 2의 현재상태가 궁금한 분들은 한 번씩 찾아와 주시기 바랍니다.</p> </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/windows">#windows</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/wsl2">#wsl2</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date"> 2019-07-02 </div>
+    
+  </div>
+</footer>
+
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

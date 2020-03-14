@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go on Marsettler</title>
+    <link>https://marsettler.com/tags/go/</link>
+    <description>Recent content in go on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>sql: COMMENT ON INDEX 지원(CockroachDB issue #41316)</title>
+      <link>https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/</guid>
+      <description>&lt;p&gt;이슈: &lt;a href=&#34;https://github.com/cockroachdb/cockroach/issues/41316&#34;&gt;sql: add support for COMMENT ON INDEX #41316&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;sql: COMMENT ON INDEX 지원 작업을 했습니다. 이번에는 이슈 등록자가 저에게 먼저 연락을 하는 새로운 경험을 했습니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>삭제될 WAL, MANIFEST, sstable을 보관하는 기능 제공 (Pebble issue #284)</title>
+      <link>https://marsettler.com/posts/2019-10-15-pebble-issue-284/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-10-15-pebble-issue-284/</guid>
+      <description>&lt;h2 id=&#34;heading&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;이슈: &lt;a href=&#34;https://github.com/cockroachdb/pebble/issues/284&#34;&gt;&lt;a href=&#34;https://github.com/cockroachdb/pebble/issues/284&#34;&gt;https://github.com/cockroachdb/pebble/issues/284&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;이번에는 Pebble에서 아무에게도 할당되지 않은 이슈를 선택해 수정했습니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>초보다 정밀한 단위에 대한 `EXTRACT` 명령이 postgres와 다르게 동작함(CockroachDB issue #40683)</title>
+      <link>https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/</guid>
+      <description>&lt;h2 id=&#34;heading&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;이번에는 간단하게 해결할 수 있는 이슈를 수정했습니다. 이 정도의 이슈는 처음 스프린트에 참여하는 분도 해결할 수 있을 것으로 기대합니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>db: SingleDelete 구현(Pebble issue #222)</title>
+      <link>https://marsettler.com/posts/2019-08-19-pebble-issue-222/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-08-19-pebble-issue-222/</guid>
+      <description>&lt;h2 id=&#34;heading&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cockroachdb/pebble&#34;&gt;Pebble&lt;/a&gt;은 LevelDB/RocksDB에서 영감을 받은 카크로치디비용 키-밸류 저장소입니다. 현재(2019년 8월)는 개발 진행중인 상태이며, 2020년 카크로치디비 적용을 &lt;a href=&#34;https://github.com/petermattis/pebble/issues/233&#34;&gt;계획&lt;/a&gt;하고 있습니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(번역) Go 스케줄링 파트 3</title>
+      <link>https://marsettler.com/posts/2018-12-08-scheduling-in-go-part3/</link>
+      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2018-12-08-scheduling-in-go-part3/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html&#34;&gt;https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;heading&#34;&gt;프렐류드&lt;/h3&gt;
+&lt;p&gt;Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 동시성에 중점을 둡니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / cgo의 비용과 복잡성</title>
+      <link>https://marsettler.com/posts/2018-10-26-the-cost-and-complexity-of-cgo/</link>
+      <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2018-10-26-the-cost-and-complexity-of-cgo/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/the-cost-and-complexity-of-cgo/&#34;&gt;https://www.cockroachlabs.com/blog/the-cost-and-complexity-of-cgo/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / Go에서 가비지 컬렉션을 최적화하는 방법</title>
+      <link>https://marsettler.com/posts/2018-10-23-how-to-optimize-garbage-collection-in-go/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2018-10-23-how-to-optimize-garbage-collection-in-go/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/&#34;&gt;https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / 왜 Go가 CockroachDB에 올바른 선택인가</title>
+      <link>https://marsettler.com/posts/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/&#34;&gt;https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(번역) Go 작업훔치기 스케줄러</title>
+      <link>https://marsettler.com/posts/2018-10-13-go-work-stealing-scheduler/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2018-10-13-go-work-stealing-scheduler/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://rakyll.org/scheduler/&#34;&gt;https://rakyll.org/scheduler/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(번역) Go 스케줄링 파트 2</title>
+      <link>https://marsettler.com/posts/2018-10-03-scheduling-in-go-part2/</link>
+      <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2018-10-03-scheduling-in-go-part2/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html&#34;&gt;https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;heading&#34;&gt;프렐류드&lt;/h3&gt;
+&lt;p&gt;Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 Go 스케줄러에 중점을 둡니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(번역) Go 스케줄링 파트 1</title>
+      <link>https://marsettler.com/posts/2018-10-02-scheduling-in-go-part1/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2018-10-02-scheduling-in-go-part1/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html&#34;&gt;https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;heading&#34;&gt;프렐류드&lt;/h3&gt;
+&lt;p&gt;Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 OS 스케줄러에 중점을 둡니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio Code debug speed up on Windows</title>
+      <link>https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/</guid>
+      <description>&lt;p&gt;On &lt;code&gt;Visual Studio Code&lt;/code&gt;, &lt;code&gt;Go&lt;/code&gt; debugging is very slow because that always rebuild everything.&lt;/p&gt;
+&lt;p&gt;If you set following settings on your &lt;code&gt;.vscode&lt;/code&gt; folder &lt;code&gt;Visual Studio Code&lt;/code&gt; will only build when changed.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

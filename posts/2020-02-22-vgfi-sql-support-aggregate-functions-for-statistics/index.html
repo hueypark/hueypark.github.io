@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/posts/2020-02-22-vgfi-sql-support-aggregate-functions-for-statistics/">
+<meta property="og:title" content="(very good first issue) #41274 sql: Support aggregate functions for statistics" />
+<meta property="og:description" content="카크로치디비 이슈 #41274 sql: Support aggregate functions for statistics
+개요
+이슈 #41274는 PostgreSQL에서 지원하는 aggregate function들의 구현을 요구하며, 대상은 아래와 같습니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/posts/2020-02-22-vgfi-sql-support-aggregate-functions-for-statistics/" />
+<meta property="article:published_time" content="2020-02-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-20T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="(very good first issue) #41274 sql: Support aggregate functions for statistics"/>
+<meta name="twitter:description" content="카크로치디비 이슈 #41274 sql: Support aggregate functions for statistics
+개요
+이슈 #41274는 PostgreSQL에서 지원하는 aggregate function들의 구현을 요구하며, 대상은 아래와 같습니다."/>
+
+
+<meta itemprop="name" content="(very good first issue) #41274 sql: Support aggregate functions for statistics">
+<meta itemprop="description" content="카크로치디비 이슈 #41274 sql: Support aggregate functions for statistics
+개요
+이슈 #41274는 PostgreSQL에서 지원하는 aggregate function들의 구현을 요구하며, 대상은 아래와 같습니다.">
+<meta itemprop="datePublished" content="2020-02-20T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-20T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="141">
+
+
+
+<meta itemprop="keywords" content="cockroachdb,sprint," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+
+<title>
+
+
+     (very good first issue) #41274 sql: Support aggregate functions for statistics 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> (very good first issue) #41274 sql: Support aggregate functions for statistics </h1>
+    <div class="content"> <p><a href="https://github.com/cockroachdb/cockroach/issues/41274">카크로치디비 이슈 #41274</a> sql: Support aggregate functions for statistics</p>
+<h3 id="heading">개요</h3>
+<p>이슈 #41274는 <code>PostgreSQL</code>에서 지원하는 <a href="https://www.postgresql.org/docs/9.1/functions-aggregate.html">aggregate function</a>들의 구현을 요구하며, 대상은 아래와 같습니다.</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox">corr()</li>
+<li><input disabled="" type="checkbox">covar_pop()</li>
+<li><input disabled="" type="checkbox">covar_samp()</li>
+<li><input disabled="" type="checkbox">regr_avgx()</li>
+<li><input disabled="" type="checkbox">regr_avgy()</li>
+<li><input disabled="" type="checkbox">regr_count()</li>
+<li><input disabled="" type="checkbox">regr_intercept()</li>
+<li><input disabled="" type="checkbox">regr_r2()</li>
+<li><input disabled="" type="checkbox">regr_slope()</li>
+<li><input disabled="" type="checkbox">regr_sxx()</li>
+<li><input disabled="" type="checkbox">regr_syy()</li>
+<li><input disabled="" type="checkbox">regr_sxy()</li>
+</ul>
+<hr>
+<h3 id="-">구현 가이드</h3>
+<ol>
+<li><code>scalar.opt</code>에 함수를 추가합니다.</li>
+<li><code>operator.go</code>의 <code>AggregateOpReverseMap</code>에 추가된 함수를 등록하고, 필요에 따라 <code>BoolOperatorRequiresNotNullArgs</code>, <code>AggregateIgnoresNulls</code>, <code>AggregateIsNullOnEmpty</code>를 적절히 수정합니다.</li>
+<li><code>groupby.go</code>의 <code>constructAggregate</code> 분기에 추가된 함수를 등록합니다.</li>
+<li><code>aggregate_builtins.go</code> 에서 구현 부분을 작성합니다. PostgreSQL 구현체를 참고하면 많은 도움이 됩니다.(<code>corr</code> 같은 경우는 SQL:2003 스펙에 따라 구현되었음).</li>
+<li>분산 SQL 처리를 위해 <code>processors_sql.proto</code>의 <code>AggregatorSpec.Func</code>에 함수를 추가합니다.</li>
+<li>아래 항목에 대한 테스트를 추가합니다.
+<ul>
+<li><code>pkg/sql/logictest/testdata/logic_test/aggregate</code></li>
+<li><code>pkg/sql/logictest/testdata/logic_test/distsql_agg</code></li>
+<li><code>pkg/sql/opt/exec/execbuilder/testdata/distsql_agg</code></li>
+<li><code>pkg/sql/opt/exec/execbuilder/testdata/explain</code></li>
+<li><code>pkg/sql/opt/norm/testdata/rules/agg</code></li>
+<li><code>pkg/sql/opt/optbuilder/testdata/aggregate</code></li>
+</ul>
+</li>
+<li>vim syntax를 위해 <code>crlogictest.vim</code>에 추가된 함수를 등록합니다.</li>
+</ol>
+<hr>
+<h3 id="heading1">팁</h3>
+<ul>
+<li><code>corr()</code> 함수를 구현한 <a href="https://github.com/cockroachdb/cockroach/commit/865e011bb3d54989e4b46b046462af9d327091d1">커밋 sql: support <code>corr()</code></a>을 참고하시기 바랍니다.</li>
+<li>몇 가지 유용한 테스트 방법을 공유드립니다.
+<ul>
+<li><code>make test PKG=./pkg/sql/opt/norm</code> 특정 패키지만 테스트합니다.</li>
+<li><code>make test FILES=aggregate</code> 특정 파일만 테스트 합니다.</li>
+<li><code>make test TESTFLAGS=-rewrite</code> 변경된 테스트 결과를 자동으로 변경합니다.</li>
+<li><code>make testlogic</code> SQL 로직만 테스트합니다.</li>
+</ul>
+</li>
+</ul> </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/sprint">#sprint</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date"> 2020-02-20 </div>
+    
+  </div>
+</footer>
+
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

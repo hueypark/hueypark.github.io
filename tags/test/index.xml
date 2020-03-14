@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test on Marsettler</title>
+    <link>https://marsettler.com/tags/test/</link>
+    <description>Recent content in test on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Dec 2018 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / Go 테스트 코드 의존성 압도적으로 관리하기</title>
+      <link>https://marsettler.com/posts/2018-12-15-outsmarting-go-dependencies-testing-code/</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://marsettler.com/posts/2018-12-15-outsmarting-go-dependencies-testing-code/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/outsmarting-go-dependencies-testing-code/&#34;&gt;https://www.cockroachlabs.com/blog/outsmarting-go-dependencies-testing-code/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

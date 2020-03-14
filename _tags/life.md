@@ -1,4 +1,0 @@
----
-name: life
-title: Life
----

@@ -1,4 +1,0 @@
----
-name: go
-title: Go
----

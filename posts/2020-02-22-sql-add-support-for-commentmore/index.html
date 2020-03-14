@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/posts/2020-02-22-sql-add-support-for-commentmore/">
+<meta property="og:title" content="(very good first issue) #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE" />
+<meta property="og:description" content="카크로치디비 이슈 #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE
+개요
+이슈 #44135 PostgreSQL에서 지원하는 COMMENT ON 문법의 VIEW, SEQUENCE에 대한 지원을 요구합니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/posts/2020-02-22-sql-add-support-for-commentmore/" />
+<meta property="article:published_time" content="2020-02-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-20T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="(very good first issue) #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE"/>
+<meta name="twitter:description" content="카크로치디비 이슈 #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE
+개요
+이슈 #44135 PostgreSQL에서 지원하는 COMMENT ON 문법의 VIEW, SEQUENCE에 대한 지원을 요구합니다."/>
+
+
+<meta itemprop="name" content="(very good first issue) #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE">
+<meta itemprop="description" content="카크로치디비 이슈 #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE
+개요
+이슈 #44135 PostgreSQL에서 지원하는 COMMENT ON 문법의 VIEW, SEQUENCE에 대한 지원을 요구합니다.">
+<meta itemprop="datePublished" content="2020-02-20T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-20T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="150">
+
+
+
+<meta itemprop="keywords" content="cockroachdb,sprint," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+
+<title>
+
+
+     (very good first issue) #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> (very good first issue) #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE </h1>
+    <div class="content"> <p><a href="https://github.com/cockroachdb/cockroach/issues/44135">카크로치디비 이슈 #44135</a> sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE</p>
+<h3 id="heading">개요</h3>
+<p>이슈 #44135 <code>PostgreSQL</code>에서 지원하는 <a href="https://www.postgresql.org/docs/9.1/functions-aggregate.html">COMMENT ON</a> 문법의 <code>VIEW</code>, <code>SEQUENCE</code>에 대한 지원을 요구합니다.</p>
+<hr>
+<h3 id="-">구현 가이드</h3>
+<p>마지막으로 작업(2019년 12월 31일) 이후로 많은 것이 변경되었습니다. 그 점을 고려하고 아래 가이드를 참고해주십시오.</p>
+<ol>
+<li>먼저 새로운 SQL 문법 추가에 관련된 <a href="https://github.com/cockroachdb/cockroach/blob/master/docs/codelabs/01-sql-statement.md">문서</a>를 읽어보시길 권장드립니다.</li>
+<li><code>sql.y</code>에서 새로운 SQL 문법을 정의합니다.</li>
+<li><code>constants.go</code>에 새로운 <code>COMMENT</code>에 관련된 타입을 정의합니다.</li>
+<li><code>/pkg/sql/sem/tree/comment_on_column.go</code>의 <code>CommentOnColumn</code>과 같은 새 <code>tree.Statement</code>를 추가합니다.</li>
+<li><code>/pkg/sql/comment_on_column.go</code>의 <code>commentOnColumnNode</code>처럼 새로운 노드를 구현합니다.</li>
+<li><code>event_log.go</code>에 로그를 정의하고 적절한 시점에 남깁니다.</li>
+<li>다음 파일의 적절한 지검에 분기처리를 해줍니다(2020년 2월 22일 기준으로 의미없는 부분이 있을 수 있음).
+<ul>
+<li><code>expand_plan.go</code>, <code>opt_filters.go</code>, <code>opt_limits.go</code>, <code>opt_needed.go</code>, <code>plan.go</code>, <code>walk.go</code></li>
+</ul>
+</li>
+<li>테스트를 추가합니다. 대부분 <code>pkg/sql/logictest/testdata/</code>의 관계된 파일에 추가하고, 필요시 <code>comment_on_column_test.go</code>처럼 해당 기능에 특화된 테스트를 작성합니다.</li>
+<li>파싱관련 테스트는 <code>parse_test.go</code>에 별도로 추가합니다.</li>
+</ol>
+<hr>
+<h3 id="heading1">팁</h3>
+<ul>
+<li>한 PR에 하나의 문법(<code>VIEW</code> 또는 <code>SEQUENCE</code>)에 대한 작업만 하면 복잡도를 줄일 수 있습니다.</li>
+<li>관련된 몇 가지 커밋을 참고하시기 바랍니다.
+<ul>
+<li><a href="https://github.com/cockroachdb/cockroach/commit/52fa9cb3f9edc175fa953f2eb8c323fe6acafe4e">sql: support <code>COMMENT ON COLUMN</code></a></li>
+<li><a href="https://github.com/cockroachdb/cockroach/commit/08be7c42415af6009836da5444889eb43382103e">sql: print comments in SHOW CREATE TABLE</a></li>
+</ul>
+</li>
+</ul> </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/sprint">#sprint</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date"> 2020-02-20 </div>
+    
+  </div>
+</footer>
+
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

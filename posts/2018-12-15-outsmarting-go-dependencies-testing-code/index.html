@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/posts/2018-12-15-outsmarting-go-dependencies-testing-code/">
+<meta property="og:title" content="(번역) 카크로치디비(CockroachDB) 블로그 / Go 테스트 코드 의존성 압도적으로 관리하기" />
+<meta property="og:description" content="원문: https://www.cockroachlabs.com/blog/outsmarting-go-dependencies-testing-code/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/posts/2018-12-15-outsmarting-go-dependencies-testing-code/" />
+<meta property="article:published_time" content="2018-12-15T00:00:00+09:00" />
+<meta property="article:modified_time" content="2018-12-15T00:00:00+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="(번역) 카크로치디비(CockroachDB) 블로그 / Go 테스트 코드 의존성 압도적으로 관리하기"/>
+<meta name="twitter:description" content="원문: https://www.cockroachlabs.com/blog/outsmarting-go-dependencies-testing-code/"/>
+
+
+<meta itemprop="name" content="(번역) 카크로치디비(CockroachDB) 블로그 / Go 테스트 코드 의존성 압도적으로 관리하기">
+<meta itemprop="description" content="원문: https://www.cockroachlabs.com/blog/outsmarting-go-dependencies-testing-code/">
+<meta itemprop="datePublished" content="2018-12-15T00:00:00&#43;09:00" />
+<meta itemprop="dateModified" content="2018-12-15T00:00:00&#43;09:00" />
+<meta itemprop="wordCount" content="677">
+
+
+
+<meta itemprop="keywords" content="cockroachdb,test," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+
+<title>
+
+
+     (번역) 카크로치디비(CockroachDB) 블로그 / Go 테스트 코드 의존성 압도적으로 관리하기 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> (번역) 카크로치디비(CockroachDB) 블로그 / Go 테스트 코드 의존성 압도적으로 관리하기 </h1>
+    <div class="content"> <p>원문: <a href="https://www.cockroachlabs.com/blog/outsmarting-go-dependencies-testing-code/">https://www.cockroachlabs.com/blog/outsmarting-go-dependencies-testing-code/</a></p>
+<hr>
+<p>읽는 시간: 9분</p>
+<p>시스템이 자주 변경될 때 좋은 테스트를 작성하는 것은 까다롭습니다. Go의 테스트 인프라를 여러 모듈에서 사용하면 컴파일러에서 허용하지 않는 종속성 사이클을 유발할 수 있습니다. 이 글에서 이러한 종속성 사이클을 깨기 위해 만들어진 기술을 살펴보겠습니다.</p>
+<h2 id="heading">배경지식</h2>
+<p>CockroachDB <code>go</code> 코드 기반은 다양한 패키지로 나뉩니다. 주요 패키지는 다음과 같습니다.</p>
+<ul>
+<li><code>storage</code>: 로컬 저장소 인터페이스</li>
+<li><code>kv</code>: 키밸류 저장소</li>
+<li><code>sql</code>: SQL 계층(키밸류 상단에 있음)</li>
+<li><code>server</code>: 네트워크 포트에 PostgreSQL 인터페이스를 노출하는 CockroachDB 노드 설정을 위한 고레벨 코드. 노드는 <code>kv</code>와 <code>sql</code> 서버를 포함합니다.</li>
+</ul>
+<p><img src="/post/2018-12-15-outsmarting-go-dependencies-testing-code/img1.png" alt=""></p>
+<p>우리는 <code>sql</code>과 <code>server</code> 패키지에 집중할 것입니다. <code>server</code> 패키지는 CockroachDB 노드의 SQL 서버 부분을 구성하기 때문에 <code>sql</code> 패키지에 의존합니다.</p>
+<p>대부분의 <code>sql</code> 테스트는 테스트 서버를 만들어 일부 SQL 문을 실행하며 잠재적으로 내부 구현을 확인할 수 있습니다. 테스트 서버를 시작하기 위해 우리는 <code>server</code>의 코드를 활용하길 원합니다. 그러나 <code>sql</code> 패키지 테스트는 순환 종속성을 생성하므로 <code>server</code> 패키지에 의존할 수 없습니다.</p>
+<p>이 문제는 CockroachDB에만 국한되지 않습니다. 테스트는 논리적인 경계를 넘나드는 경향이 있으므로 많은 대형 코드베이스는 이 문제를 마주할 수 있습니다. 아무튼, 사랑과 전쟁 그리고 테스트 코드에서는 모든 수단이 정당합니다.</p>
+<h2 id="-">첫 솔루션</h2>
+<p>첫 번째 솔루션은 블랙박스 테스팅을 위해 <code>Go</code>의 기능을 사용하는 것이었습니다(테스팅은 public 인터페이스에 대해서만 가능). <code>Go</code>에서 <code>sql</code> 패키지의 테스트를 <code>sql_test</code> 패키지의 일부로 선언 가능합니다. 의존성에 관한 한 별개의 패키지이므로 종속성 순환이 깨져서 <code>server</code>를 가져올 수 있습니다. 단점은 이 패키지에서 <code>sql</code> 내부에 접근할 수 없는 것입니다. 그래서 우리는 오직 테스트를 위해 내부 구조를 외부로 노출시키거나 <code>sql_test</code> 코드의 일부분을 분리하여 <code>sql</code> 테스트 코드로 옮겼습니다.</p>
+<p>시간이 지날수록 이것은 점점 더 성가시게 되었습니다. 분산 SQL 구현을 위한 새 <code>distsql</code> 패키지에 대한 작업을 시작했을 때 우리는 테스트를 위해 많은 패키지 내부구조를 다시 노출해야 했습니다. 더 나은 솔루션이 필요해졌습니다.</p>
+<h2 id="---">더 나은 솔루션을 향하여</h2>
+<p>우리는 <code>sql</code> 패키지 내부에 직접 접근할 수 있는 곳에서 <code>sql</code> 테스트를 작성하는 것을 원했습니다. 테스트 서버를 인스턴싱하기 위해 <code>server</code> 코드를 호출하는 유일한 방법은 <code>sql</code>이나 <code>server</code>에 의존하지 않지만 그들 사이에 간접적으로 인터페이싱하는데 사용할 수 있는 심 계층을 사용하는 것입니다.</p>
+<p><img src="/post/2018-12-15-outsmarting-go-dependencies-testing-code/img2.png" alt=""></p>
+<p>우리는 그 개념을 사용하는 간단한 <a href="https://github.com/RaduBerinde/playground/tree/777beb8/test_dep_prototype">개념증명</a>을 했습니다. <a href="https://github.com/RaduBerinde/playground/tree/777beb8/test_dep_prototype/server">server</a>와 <a href="https://github.com/RaduBerinde/playground/tree/777beb8/test_dep_prototype/sql">sql</a> 패키지는 지금까지 설명한 실제 패키지를 나타냅니다. <a href="https://github.com/RaduBerinde/playground/blob/777beb80c7e5933f89ee1fd28216717f93e0a856/test_dep_prototype/server/testingshim/testserver.go">testingshim</a>은 <code>sql</code> 테스트를 통해 접근하고자 하는 <code>server</code> 기능을 위한 인터페이스를 정의합니다. 그러나 실제로 <code>server</code> 또는 <code>sql</code>에 의존하지 않습니다. <code>sql</code>에 정의된 타입을 사용하거나 반환해야 하는 메소드는 <code>interface{}</code>를 사용하여 간접적으로 표현할 수 있습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">testingshim</span>
+
+<span style="color:#75715e">// TestServerInterface defines test server functionality that tests need.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">TestServerInterface</span> <span style="color:#66d9ef">interface</span> {
+  <span style="color:#a6e22e">SQLSrv</span>() <span style="color:#66d9ef">interface</span>{}
+  <span style="color:#75715e">// Other needed stuff goes here.
+</span><span style="color:#75715e"></span>}
+
+<span style="color:#75715e">// TestServerFactory encompasses the actual implementation of the shim
+</span><span style="color:#75715e"></span><span style="color:#75715e">// service.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">TestServerFactory</span> <span style="color:#66d9ef">interface</span> {
+  <span style="color:#75715e">// New instantiates a test server instance.
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">New</span>() <span style="color:#a6e22e">TestServerInterface</span>
+}
+</code></pre></div><p>이 계층은 핵심은 전역 상태입니다. <code>serviceImpl</code>은 <code>InitTestServerFactory</code>를 통해 인터페이스의 외부 에서 설정될 수 있습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">serviceImpl</span> <span style="color:#a6e22e">TestServerFactory</span>
+
+<span style="color:#75715e">// InitTestServerFactory should be called once to provide the implementation
+</span><span style="color:#75715e"></span><span style="color:#75715e">// of the service. It will be called from a xx_test package that can import the
+</span><span style="color:#75715e"></span><span style="color:#75715e">// server package.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">InitTestServerFactory</span>(<span style="color:#a6e22e">impl</span> <span style="color:#a6e22e">TestServerFactory</span>) {
+  <span style="color:#a6e22e">serviceImpl</span> = <span style="color:#a6e22e">impl</span>
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">NewTestServer</span>() <span style="color:#a6e22e">TestServerInterface</span> {
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">serviceImpl</span>.<span style="color:#a6e22e">New</span>()
+}
+</code></pre></div><p>이 아이디어는 <code>sever</code>가 <code>TestServerFactory</code>를 구현하고, <code>server</code>와 <code>testingshim</code> 모두에 접근할 수 있는 것이 <code>InitTestServerFactory</code>를 호출하여 <code>NewTestServer</code>와 같은 함수를 호출하는 <code>sql</code> 테스트를 허용합니다. &ldquo;이 방법&quot;을 우리는 한동안 사용했습니다. 하지만&hellip;</p>
+<h2 id="heading1">핵</h2>
+<p>퍼즐의 마지막 조각은 <code>sql_test</code> 패키지를 허용하는 블랙박스 테스팅 기능을 중심으로 하지만 더 독착정인 방법입니다. <code>go test</code> <a href="https://golang.org/cmd/go/#hdr-Test_packages">문서</a>는 다음과 같이 설명합니다.</p>
+<blockquote>
+<p>접미사 &ldquo;_test&quot;가 있는 패키지를 선언한 테스트 파일은 별도의 패키지로 컴파일된 다음 기본 테스트 바이너리와 링크되어 실행됩니다.</p>
+</blockquote>
+<p>그러므로 우리가 <code>server</code>를 사용하는 <code>sql_test</code> 코드를 가진다면, <code>server</code> 코드 또한 테스트에 포함됩니다. <code>Go</code>는 단지 <code>sql</code>의 일부로 된 테스트에서만 접근을 막습니다. 여기서 &ldquo;아하!&ldquo;는 <code>TestMain()</code>입니다. <code>TestMain</code>은 테스트하기 전에 추가 설정을 수행하는데 사용할 수 있는 선택적 기능입니다. <code>TestMain</code>은 <code>sql</code> 또는 <code>sql_test</code> 패키지 중 하나에 있을 수 있습니다. <code>sql</code>에 넣으면 <code>sql</code> 테스트를 실행하기 전에 <code>server</code>에 접근하는 초기화 코드를 실행할 수 있습니다!</p>
+<ul>
+<li>참고: <code>TestMain</code>의 대안은 <code>sql_test</code> 파일에서 <code>init()</code> 함수를 사용하는 것입니다.</li>
+</ul>
+<p>이것은 <a href="https://github.com/RaduBerinde/playground/tree/777beb8/test_dep_prototype">개념증명</a>으로 다시 설명됩니다. <code>sql_test</code> 패키지에서 <a href="https://github.com/RaduBerinde/playground/blob/777beb8/test_dep_prototype/sql/sql_test.go#L18">TestMain</a>은 <code>server</code>와 <code>testingshim</code>에 동시에 접근합니다. <code>TestSrvInstance</code> 글로벌을 <code>server</code>에 의해 구현된 타입으로 초기화 할 수 있습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">TestMain</span>(<span style="color:#a6e22e">m</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">M</span>) {
+  ..
+  <span style="color:#a6e22e">testingshim</span>.<span style="color:#a6e22e">InitTestServerFactory</span>(<span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">TestServerFactory</span>)
+  ..
+}
+</code></pre></div><p>그리고 <code>sql</code> <a href="https://github.com/RaduBerinde/playground/blob/777beb8/test_dep_prototype/sql/foo_test.go">테스트</a>가 <code>testingshim.NewTestServer()</code>을 사용합니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">sql</span>
+..
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">TestFoo</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
+   <span style="color:#a6e22e">testingshim</span>.<span style="color:#a6e22e">NewTestServer</span>().<span style="color:#a6e22e">SQLSrv</span>().(<span style="color:#f92672">*</span><span style="color:#a6e22e">SQLServer</span>).<span style="color:#a6e22e">Woof</span>()
+}
+</code></pre></div><p>의존성 그래프는 아래와 같습니다.</p>
+<p><img src="/post/2018-12-15-outsmarting-go-dependencies-testing-code/img3.png" alt=""></p>
+<p><a href="https://github.com/cockroachdb/cockroach/pull/6473">본격적인 변화</a>는 더 복잡하지만, 이 간단한 원칙을 따릅니다. 의존성 없는 <code>testingshim</code> 패키지를 만드는 한 번의 노력은 앞으로 테스트를 쉽게 작성하게 하는 가치가 있습니다. 특히 우리는 <a href="https://github.com/cockroachdb/cockroach/pull/6561/files#diff-dbca7145ea6bc0b0e6eac8de3e536d2f">다른 패키지</a>에서 같은 프레임워크를 쉽게 사용할 수 있었습니다.</p>
+<p><code>Go</code> 코더 여러분 - 같은 문제에 마주쳤을 때 이 트릭이 유용하다면 우리에게 알려주십시오!</p> </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/test">#test</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date"> 2018-12-15 </div>
+    
+  </div>
+</footer>
+
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

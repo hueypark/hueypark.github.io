@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://marsettler.com/posts/2020-02-20-bpf-performance-tools/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2020-02-22-vgfi-sql-support-aggregate-functions-for-statistics/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2020-02-22-sql-add-support-for-commentmore/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/book/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/cockroachdb/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/sprint/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2020-02-22-sprintseoul-cockroachdb/</loc>
+    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/life/</loc>
+    <lastmod>2020-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2020-02-10-interior/</loc>
+    <lastmod>2020-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2020-02-01-diary-2020-02/</loc>
+    <lastmod>2020-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/diary/</loc>
+    <lastmod>2020-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-11-13-guide-with-heart-cockroachdb-19dot2-release/</loc>
+    <lastmod>2019-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/guide/</loc>
+    <lastmod>2019-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/go/</loc>
+    <lastmod>2019-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/</loc>
+    <lastmod>2019-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-10-15-pebble-issue-284/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/mmorpg_server/</loc>
+    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/slide/</loc>
+    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-09-01-huge-single-mmorpg-server/</loc>
+    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-08-19-pebble-issue-222/</loc>
+    <lastmod>2019-08-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/pebble/</loc>
+    <lastmod>2019-08-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-08-18-sprint-on-pyconkr-2019-with-cockroachdb/</loc>
+    <lastmod>2019-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/windows/</loc>
+    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/wsl2/</loc>
+    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-07-02-windows-wsl2-cockroachdb/</loc>
+    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-06-30-first-sprintseoul/</loc>
+    <lastmod>2019-06-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-06-10-oss-relicensing-cockroachdb/</loc>
+    <lastmod>2019-06-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-06-08-geo-partitioning/</loc>
+    <lastmod>2019-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-05-06-cockroachdb-19dot1-release/</loc>
+    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2019-01-04-brief-history-high-availability/</loc>
+    <lastmod>2019-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-12-26-distributed-sql-database-cockroachdb/</loc>
+    <lastmod>2018-12-26T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-12-15-outsmarting-go-dependencies-testing-code/</loc>
+    <lastmod>2018-12-15T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/test/</loc>
+    <lastmod>2018-12-15T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-12-08-scheduling-in-go-part3/</loc>
+    <lastmod>2018-12-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/multithread/</loc>
+    <lastmod>2018-12-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-12-03-acid-rain/</loc>
+    <lastmod>2018-12-03T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-11-18-building-cost-based-sql-optimizer/</loc>
+    <lastmod>2018-11-18T08:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-11-07-limits-of-the-cap-theorem/</loc>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-11-04-cockroachdb-1-0-release/</loc>
+    <lastmod>2018-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-10-31-launching-managed-cockroachdb/</loc>
+    <lastmod>2018-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-10-26-the-cost-and-complexity-of-cgo/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-10-28-how-online-schema-changes-are-possible-in-cockroachdb/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-10-23-how-to-optimize-garbage-collection-in-go/</loc>
+    <lastmod>2018-10-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/</loc>
+    <lastmod>2018-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-10-19-sql-in-cockroachdb-mapping-table-data-to-key-value-storage/</loc>
+    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-10-17-how-cockroachdb-distributes-atomic-transactions/</loc>
+    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-10-16-cockroachdb-blog-scaling-raft/</loc>
+    <lastmod>2018-10-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-10-15-cockroachdb-blog-hello-world/</loc>
+    <lastmod>2018-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-10-13-go-work-stealing-scheduler/</loc>
+    <lastmod>2018-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/scheduler/</loc>
+    <lastmod>2018-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-10-03-scheduling-in-go-part2/</loc>
+    <lastmod>2018-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-10-02-scheduling-in-go-part1/</loc>
+    <lastmod>2018-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/c&#43;&#43;/</loc>
+    <lastmod>2018-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-09-03-shared-ptr-is-not-thread-safe/</loc>
+    <lastmod>2018-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-07-08-a-producers-guide-to-decisionmaking/</loc>
+    <lastmod>2018-07-08T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/decisionmaking/</loc>
+    <lastmod>2018-07-08T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/game/</loc>
+    <lastmod>2018-07-08T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/producer/</loc>
+    <lastmod>2018-07-08T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/intelligence/</loc>
+    <lastmod>2018-05-27T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/mars/</loc>
+    <lastmod>2018-05-27T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/mission/</loc>
+    <lastmod>2018-05-27T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-05-27-mission-send-intelligence-to-mars/</loc>
+    <lastmod>2018-05-27T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/</loc>
+    <lastmod>2018-05-14T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/vscode/</loc>
+    <lastmod>2018-05-14T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/categories/</loc>
+  </url>
+  
+</urlset>

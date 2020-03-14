@@ -1,4 +1,0 @@
----
-name: pebble
-title: Pebble
----

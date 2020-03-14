@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mmorpg_server on Marsettler</title>
+    <link>https://marsettler.com/tags/mmorpg_server/</link>
+    <description>Recent content in mmorpg_server on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/mmorpg_server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>거대한 단일 MMORPG 서버</title>
+      <link>https://marsettler.com/posts/2019-09-01-huge-single-mmorpg-server/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-09-01-huge-single-mmorpg-server/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>life on Marsettler</title>
+    <link>https://marsettler.com/tags/life/</link>
+    <description>Recent content in life on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>인테리어</title>
+      <link>https://marsettler.com/posts/2020-02-10-interior/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2020-02-10-interior/</guid>
+      <description>&lt;p&gt;인테리어와 관련된 내용을 기록합니다.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/posts/2018-10-16-cockroachdb-blog-scaling-raft/">
+<meta property="og:title" content="(번역) 카크로치디비(CockroachDB) 블로그 / Raft를 스케일링하기" />
+<meta property="og:description" content="원문: https://www.cockroachlabs.com/blog/scaling-raft/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/posts/2018-10-16-cockroachdb-blog-scaling-raft/" />
+<meta property="article:published_time" content="2018-10-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-10-16T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="(번역) 카크로치디비(CockroachDB) 블로그 / Raft를 스케일링하기"/>
+<meta name="twitter:description" content="원문: https://www.cockroachlabs.com/blog/scaling-raft/"/>
+
+
+<meta itemprop="name" content="(번역) 카크로치디비(CockroachDB) 블로그 / Raft를 스케일링하기">
+<meta itemprop="description" content="원문: https://www.cockroachlabs.com/blog/scaling-raft/">
+<meta itemprop="datePublished" content="2018-10-16T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-10-16T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="202">
+
+
+
+<meta itemprop="keywords" content="cockroachdb," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+
+<title>
+
+
+     (번역) 카크로치디비(CockroachDB) 블로그 / Raft를 스케일링하기 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> (번역) 카크로치디비(CockroachDB) 블로그 / Raft를 스케일링하기 </h1>
+    <div class="content"> <p>원문: <a href="https://www.cockroachlabs.com/blog/scaling-raft/"><a href="https://www.cockroachlabs.com/blog/scaling-raft/">https://www.cockroachlabs.com/blog/scaling-raft/</a></a></p>
+<p>Written by <a href="https://www.cockroachlabs.com/blog/author/ben-darnell/">Ben Darnell</a> on Jun 11, 2015</p>
+<p><img src="/post/2018-10-16-cockroachdb-blog-scaling-raft/multinode3.png" alt=""></p>
+<p><a href="https://github.com/cockroachdb/cockroach">CockroachDB</a>는 <a href="https://raft.github.io/">Raft consensus algorithm</a>을 사용하여 장비가 고장났을 때도 데이터가 일관성을 유지하게 합니다. <a href="https://github.com/etcd-io/etcd">etcd</a>나 <a href="https://www.consul.io/">Consul</a>과 같이 Raft를 사용하는 대부분의 시스템에서, 전체 시스템은 하나의 Raft consensus 그룹으로 이루어집니다. 하지만 CockroachDB에서는, <code>Range</code>들로 데이터가 나늬며, 개별 Raft consensus 그룹을 가집니다. 즉, 각 노드가 수십만 개의 Raft consensus 그룹으로 나누어 질 수 있습니다. 이것은 몇가지 독특한 도전과제를 만들어내며, 우리는 <a href="https://github.com/cockroachdb/cockroach/tree/master/multiraft">MultiRaft</a>라고 부르는 계층을 Raft 위에 도입하여 해결했습니다.</p>
+<p>단일 <code>Range</code>에서 3개 또는 5개 노드 중의 하나가 리더로 선출되고, 주기적으로 팔로워에게 허트비트를 보냅니다.</p>
+<p><img src="/post/2018-10-16-cockroachdb-blog-scaling-raft/multinode1.png" alt=""></p>
+<p>시스템이 커지고 더 많은 <code>Range</code>들을 가지게 되면, 허트비트를 처리하기 위한 트래픽 양도 들어납니다.</p>
+<p><img src="/post/2018-10-16-cockroachdb-blog-scaling-raft/multinode2.png" alt=""></p>
+<p><code>Range</code> 수가 노드 수보다 훨씬 많아지면(<code>Range</code>를 작게 유지하면 노드가 실패시 복구시간이 향상됩니다.), 중복되는 <code>Range</code>가 많아집니다. 이 때 <code>MultiRaft</code>가 필요합니다. 각 <code>Range</code>에서 개별적으로 Raft를 처리하는 대신, 전체 노드의 <code>Range</code>를 하나의 그룹으로 관리합니다. 아무리 많은 <code>Range</code>가 있더라도, 각 노드 쌍은 틱마다 한 번만 허트비트를 교환하면 됩니다.</p>
+<p><img src="/post/2018-10-16-cockroachdb-blog-scaling-raft/multinode3.png" alt=""></p>
+<p>허트비트 네트워크 트래픽을 줄이는 것 외에도, MultiRaft는 다른 영역들에서 효율성을 향상시킵니다. 예를 들어, MultiRaft는 <code>Range</code>별 고루틴 대신 정해진 작은 수의 고루틴만(현재는 3)을 요구합니다.</p>
+<p>Raft를 처음부터 구현하고 테스트하는 것은 어려운 일이므로, 처음부터 만드는 대신 CoreOS의 etcd 팀과 긴밀하게 협력하고 있습니다.</p>
+<p><a href="https://github.com/etcd-io/etcd/tree/master/raft">etcd에서 Raft 구현</a>은 특별한 요구사항에 쉽게 적용할 수 있는, 깔끔한 추상화를 토대로 구축되었으며, 우리는 etcd와 커뮤니티를 개선하는 데 기여할 수 있었습니다.</p> </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date"> 2018-10-16 </div>
+    
+  </div>
+</footer>
+
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/posts/2020-02-01-diary-2020-02/">
+<meta property="og:title" content="2020-02 일지" />
+<meta property="og:description" content="2020년 2월 일지입니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/posts/2020-02-01-diary-2020-02/" />
+<meta property="article:published_time" content="2020-02-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-01T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="2020-02 일지"/>
+<meta name="twitter:description" content="2020년 2월 일지입니다."/>
+
+
+<meta itemprop="name" content="2020-02 일지">
+<meta itemprop="description" content="2020년 2월 일지입니다.">
+<meta itemprop="datePublished" content="2020-02-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-01T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="321">
+
+
+
+<meta itemprop="keywords" content="diary," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+
+<title>
+
+
+     2020-02 일지 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> 2020-02 일지 </h1>
+    <div class="content"> <p>2020년 2월 일지입니다.</p>
+<h2 id="20200222">2020-02-22</h2>
+<h3 id="cockroachdb">CockroachDB</h3>
+<p>GoLand에서 Settings-&gt;Tools-&gt;File Watchers에 <code>https://github.com/cockroachdb/crlfmt</code>를 등록하면 스타일 가이드를 더 쉽게 유지할 수 있습니다.</p>
+<h2 id="20200213">2020-02-13</h2>
+<h3 id="cockroachdb--41274httpsgithubcomcockroachdbcockroachissues41274--sql-support-aggregate-functions-for-statistics">CockroachDB 이슈 <a href="https://github.com/cockroachdb/cockroach/issues/41274">#41274</a> / sql: Support aggregate functions for statistics</h3>
+<p>rewrite 플래그를 사용하여 테스트 결과를 자동으로 갱신할 수 있습니다. 결과를 덮어써 버리기 때문에 갱신된 내용을 유심히 살펴보아야 합니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#e6db74">`</span>make testlogic TESTFLAGS<span style="color:#f92672">=</span>-rewrite<span style="color:#e6db74">`</span>
+</code></pre></div><h2 id="20200209">2020-02-09</h2>
+<h3 id="cockroachdb--41274httpsgithubcomcockroachdbcockroachissues41274--sql-support-aggregate-functions-for-statistics1">CockroachDB 이슈 <a href="https://github.com/cockroachdb/cockroach/issues/41274">#41274</a> / sql: Support aggregate functions for statistics</h3>
+<p>예상보다 예외 상황이 많아 작업시간이 오래 걸렸습니다. 먼저 <code>DISTINCT</code>, <code>FILTER</code>, &hellip; 등과 관련된 테스트를 다수 추가했습니다.</p>
+<p><code>DISTINCT</code> 와 <code>ORDER BY</code>를 함께 쓰는 이슈는 공통이슈 <a href="https://github.com/cockroachdb/cockroach/issues/43237">#43237</a>이기때문에 이번에 수정하지 않을 생각입니다.</p>
+<p>TODO: <code>aggTestSpec</code>의 <code>colIdx</code>와 <code>message Aggregation</code>의 <code>col_idx</code>, <code>filter_col_idx</code>는 복수형으로 변경하는 것이 좋아 보입니다. 이번 작업과는 무관하기에 다른 PR로 수정 예정입니다.</p>
+<p>추후 작업에 대한 좋은 템플릿을 만들기 위해 PR을 두개로 나누어달라는 <a href="https://github.com/cockroachdb/cockroach/pull/44628#issuecomment-583808288">요청</a>이 있어 나눌 생각입니다.</p>
+<hr>
+<h2 id="20200205">2020-02-05</h2>
+<h3 id="cockroachdb--41274httpsgithubcomcockroachdbcockroachissues41274--sql-support-aggregate-functions-for-statistics2">CockroachDB 이슈 <a href="https://github.com/cockroachdb/cockroach/issues/41274">#41274</a> / sql: Support aggregate functions for statistics</h3>
+<p><a href="https://github.com/cockroachdb/cockroach/pull/44628">PR #44628</a>에 코멘트가 다수 추가되었습니다.
+하나씩 수정해봅니다.</p>
+<p>TODO: 작업 중 아래 에러의 의미가 모호해져서 새로운 이슈를 등록할 예정입니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">return</span> <span style="color:#a6e22e">unimplemented</span>.<span style="color:#a6e22e">NewWithIssue</span>(<span style="color:#ae81ff">28417</span>,
+				<span style="color:#e6db74">&#34;aggregate functions with multiple non-constant expressions are not supported&#34;</span>,
+</code></pre></div><hr>
+<h2 id="20200204">2020-02-04</h2>
+<h3 id="cockroachdb--41274httpsgithubcomcockroachdbcockroachissues41274--sql-support-aggregate-functions-for-statistics3">CockroachDB 이슈 <a href="https://github.com/cockroachdb/cockroach/issues/41274">#41274</a> / sql: Support aggregate functions for statistics</h3>
+<p>아래 명령어를 사용하면 aggregate 관련 기능만 빠르게 테스트할 수 있습니다. <code>make test</code>는 너무 오래 걸립니다.</p>
+<pre><code>make testlogic FILES=aggregate
+</code></pre><hr>
+<h2 id="20200203">2020-02-03</h2>
+<h3 id="cockroachdb--41274httpsgithubcomcockroachdbcockroachissues41274--sql-support-aggregate-functions-for-statistics4">CockroachDB 이슈 <a href="https://github.com/cockroachdb/cockroach/issues/41274">#41274</a> / sql: Support aggregate functions for statistics</h3>
+<p>아침에 일어나니 생각보다 빠르게 리뷰가 되어 있었습니다. 하지만 수정할 부분이 없다고 생각되어 세부적인 내용을 다시 물어보는 <a href="https://github.com/cockroachdb/cockroach/pull/44628#issuecomment-581178584">댓글</a>을 남겼습니다. <code>Thank you for the review!</code>는 뭔가 자동완성 같은 느낌이 듭니다.</p>
+<hr>
+<h2 id="20200202">2020-02-02</h2>
+<h3 id="cockroachdb--41274httpsgithubcomcockroachdbcockroachissues41274--sql-support-aggregate-functions-for-statistics5">CockroachDB 이슈 <a href="https://github.com/cockroachdb/cockroach/issues/41274">#41274</a> / sql: Support aggregate functions for statistics</h3>
+<p>테스트 작성 중 64비트 float 자료형에서 소수점 끝 두 자리가 잘려서 실패하는 이슈를 확인했습니다. 정확한 원인은 못 찾았지만 일반 컬럼으로 테스트 해본 결과 동일했으며, 테스트 환경에서만 발생했습니다. 의심가는 부분은 <a href="https://github.com/lib/pq">go PostgreSQL 클라이언트</a>이지만 추가적인 확인은 하지 않았고, <code>::decimal</code> 을 사용해 우회했습니다. 나중에 시간이 나면 살펴볼 만한 이슈입니다.</p>
+<hr>
+<h2 id="20200201">2020-02-01</h2>
+<h3 id="cockroachdb--41274httpsgithubcomcockroachdbcockroachissues41274--sql-support-aggregate-functions-for-statistics6">CockroachDB 이슈 <a href="https://github.com/cockroachdb/cockroach/issues/41274">#41274</a> / sql: Support aggregate functions for statistics</h3>
+<p>2019년 10월 스프린트 서울에 처음 참가하신 분들께 수정해보시길 권한 이슈입니다. 시간이 조금 흘러도 PR이 제출되지 않아 여러 함수 중 <code>corr()</code>을 직접 작성해보기로 했습니다.</p> </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/diary">#diary</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date"> 2020-02-01 </div>
+    
+  </div>
+</footer>
+
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

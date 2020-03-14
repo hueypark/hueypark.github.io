@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/posts/2018-10-23-how-to-optimize-garbage-collection-in-go/">
+<meta property="og:title" content="(번역) 카크로치디비(CockroachDB) 블로그 / Go에서 가비지 컬렉션을 최적화하는 방법" />
+<meta property="og:description" content="원문: https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/posts/2018-10-23-how-to-optimize-garbage-collection-in-go/" />
+<meta property="article:published_time" content="2018-10-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-10-23T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="(번역) 카크로치디비(CockroachDB) 블로그 / Go에서 가비지 컬렉션을 최적화하는 방법"/>
+<meta name="twitter:description" content="원문: https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/"/>
+
+
+<meta itemprop="name" content="(번역) 카크로치디비(CockroachDB) 블로그 / Go에서 가비지 컬렉션을 최적화하는 방법">
+<meta itemprop="description" content="원문: https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/">
+<meta itemprop="datePublished" content="2018-10-23T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-10-23T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="563">
+
+
+
+<meta itemprop="keywords" content="go,cockroachdb," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+
+<title>
+
+
+     (번역) 카크로치디비(CockroachDB) 블로그 / Go에서 가비지 컬렉션을 최적화하는 방법 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> (번역) 카크로치디비(CockroachDB) 블로그 / Go에서 가비지 컬렉션을 최적화하는 방법 </h1>
+    <div class="content"> <p>원문: <a href="https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/">https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/</a></p>
+<p>Written by <a href="https://www.cockroachlabs.com/author/jessica-edwards/">Jessica Edwards</a> on Nov 23, 2015</p>
+<p><img src="/post/2018-10-23-how-to-optimize-garbage-collection-in-go/gc.jpg" alt=""></p>
+<p>몇 주 전 CockroachDB에서 Go를 선택한 이유에 대한 <a href="/post/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/">글</a>을 공유했을 때, Go의 알려진 문제(성능, 가비지 컬렉션, 데드락)를 처리하는 방법에 대한 여러 가지 질문을 받았습니다.</p>
+<p>이 글에서는, Go의 가비지 컬렌션과 관련된 성능 문제를 완화하는 몇 가지 강력한 최적화 방법을 설명하겠습니다. 특히, 구조체 임베딩, sync.Pool 및 배열 재사용을 통해, 메모리 할당을 최소화하고 가비지 컬렉션 오버헤드를 줄이는 방법을 공유하겠습니다.</p>
+<h3 id="-----">메모리 할당 최소화와 가비지 컬렉션 최적화</h3>
+<p>Go가 Java와 다른 점은 Go가 메모리 레이아웃을 관리할 수 있다는 것입니다. Go를 사용하면 다른 가비지 콜렉션 언어에서는 별도의 할당이 되는 것을 하나로 결합할 수 있습니다.</p>
+<p>디스크에서 데이터를 읽고, 디코드하는 아래 CockroachDB의 코드를 보십시오:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">metaKey</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mvccEncodeMetaKey</span>(<span style="color:#a6e22e">key</span>)
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">meta</span> <span style="color:#a6e22e">MVCCMetadata</span>
+<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">GetProto</span>(<span style="color:#a6e22e">metaKey</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">meta</span>); <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+    <span style="color:#75715e">// Handle err
+</span><span style="color:#75715e"></span>}
+<span style="color:#f92672">...</span>
+<span style="color:#a6e22e">valueKey</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">makeEncodeValueKey</span>(<span style="color:#a6e22e">meta</span>)
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">value</span> <span style="color:#a6e22e">MVCCValue</span>
+<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">GetProto</span>(<span style="color:#a6e22e">valueKey</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">value</span>); <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+    <span style="color:#75715e">// Handle err
+</span><span style="color:#75715e"></span>}
+</code></pre></div><p>데이터를 읽기 위해, 4번의 할당(MVCCMetadata, MVCCValue와 두 개의 키)을 합니다. Go는 구조체를 묶고 키 공간을 미리 할당하여 단일 할당으로 줄일 수 있는 기능을 제공합니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">getBuffer</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">meta</span>  <span style="color:#a6e22e">MVCCMetadata</span>
+    <span style="color:#a6e22e">value</span> <span style="color:#a6e22e">MVCCValue</span>
+    <span style="color:#a6e22e">key</span>   [<span style="color:#ae81ff">1024</span>]<span style="color:#66d9ef">byte</span>
+}
+
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">buf</span> <span style="color:#a6e22e">getBuffer</span>
+<span style="color:#a6e22e">metaKey</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mvccEncodeKey</span>(<span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">key</span>[:<span style="color:#ae81ff">0</span>], <span style="color:#a6e22e">key</span>)
+<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">GetProto</span>(<span style="color:#a6e22e">metaKey</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">meta</span>); <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+    <span style="color:#75715e">// Handle err
+</span><span style="color:#75715e"></span>}
+<span style="color:#f92672">...</span>
+<span style="color:#a6e22e">valueKey</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">makeEncodeValueKey</span>(<span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">key</span>[:<span style="color:#ae81ff">0</span>], <span style="color:#a6e22e">meta</span>)
+<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">GetProto</span>(<span style="color:#a6e22e">valueKey</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">value</span>); <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+    <span style="color:#75715e">// Handle err
+</span><span style="color:#75715e"></span>}
+</code></pre></div><p>위에서는 MVCCMetadata, MVCCValue를 포함하는 getBuffer를 선언합니다. 세 번째 멤버는 Go에서 슬라이스에 비해 자주 보이지 않는 배열입니다.</p>
+<p>고정 크기의 배열(1024바이트)을 가지고 있으면 추가 할당 없이 작업을 할 수 있습니다. 이것은 getBuffer 구조체에서 세 개의 오브젝트를 임베딩하여 할당을 4분의 1으로 줄일 수 있습니다. 또한, 키가 동시에 사용되지 않으므로 배열을 재사용할 수 있습니다.</p>
+<h3 id="syncpool">sync.Pool:</h3>
+<p><img src="/post/2018-10-23-how-to-optimize-garbage-collection-in-go/syncpool.jpg" alt=""></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">getBufferPool</span> = <span style="color:#a6e22e">sync</span>.<span style="color:#a6e22e">Pool</span>{
+       <span style="color:#a6e22e">New</span>: <span style="color:#66d9ef">func</span> () <span style="color:#66d9ef">interface</span>{} {
+              <span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">getBuffer</span>{}
+       },
+}
+</code></pre></div><p>사실, sync.Pool에 대해 알기까지 약간의 시간이 걸렸습니다. 이것은 가비지 콜렉션 사이에 오브젝트를 재활용 가능하게 하는 목록이므로 추가 오브젝트 할당을 방지합니다. 매 가비지 콜랙션 주기가 시작될 때, 풀에서 오브젝트들이 지워집니다.</p>
+<p>sync.Pool의 사용 예:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">buf</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">getBufferPool</span>.<span style="color:#a6e22e">Get</span>().(<span style="color:#f92672">*</span><span style="color:#a6e22e">getBuffer</span>)
+<span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">getBufferPool</span>.<span style="color:#a6e22e">Put</span>(<span style="color:#a6e22e">buf</span>)
+
+<span style="color:#a6e22e">key</span> <span style="color:#f92672">:=</span> append(<span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">key</span>[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">0</span>], <span style="color:#960050;background-color:#1e0010">…</span>)
+</code></pre></div><p>먼저 팩토리 함수를 이용해 글로벌 sync.Pool 오브젝트를 선언합니다. 위 경우 getBuffer를 새로 생성하는 대신 풀에서 가져옵니다. <code>Pool.Get</code>은 빈 인터페이스 타입을 반환하고 type assert를 이용해 우리가 원하는 타입으로 변환할 수 있습니다. 그리고 오브젝트를 다 사용한 후에는 풀에 다시 반환합니다. 결과적으로 Buffer 구조체를 얻기 위해 추가적인 할당을 할 필요가 없어집니다.</p>
+<h3 id="-">배열과 슬라이스</h3>
+<p>배열과 슬라이스는 Go의 타입 중 하나이며, 대부분의 경우 슬라이스가 사용됩니다. 또 [:0] 구문을 사용하여 배열에서 슬라이스를 가져올 수 있습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">key</span> <span style="color:#f92672">:=</span> append(<span style="color:#a6e22e">buf</span>.<span style="color:#a6e22e">key</span>[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">0</span>], <span style="color:#960050;background-color:#1e0010">…</span>)
+</code></pre></div><p>이러면 배열을 사용하는 슬라이스가 만들어집니다. 이 슬라이스에 이미 백업 배열이 있기 때문에 <code>append</code>는 새로운 할당을 하는 대신 배열을 사용합니다. 따라서 키를 디코딩 할 때 버퍼로 만들어진 값을 슬라이스에 넣을 수 있습니다. 따라서 키 사이즈가 1KB 이하면 아무것도 할당하지 않고 이미 할당된 배열을 재사용합니다.</p>
+<p>만약 키 크기가 1KB 이상인 경우가 발생하더라도, 슬라이스가 새 백업 배열을 할당하므로, 코드에서 이를 고려할 필요가 없습니다.</p>
+<h3 id="gogoprotobuf-vs-google-protobuf">Gogoprotobuf vs Google protobuf</h3>
+<p>마지막으로, 우리는 디스크에 저장하기 위해 프로토콜 버퍼를 사용합니다. 하지만 우리는 구글의 <a href="https://github.com/protocolbuffers/protobuf">protobuf</a> 대신 <a href="https://github.com/gogo/protobuf">gogoprotobuf</a>를 강력하게 추천합니다.</p>
+<p>Gogoprotobuf는 불필요한 할당을 피하기 위해 위에서 강조한 원칙을 따릅니다. 특히, 배열로 백업할 수 있는 슬라이스를 이용해 마샬링 할 수 있습니다. 또한, null을 허용하지 않는다면 할당없이 메시지를 저장합니다.</p>
+<p>마지막으로 Gogoprotobuf는 자동생성된 마샬링, 언마샬링 코드를 사용합니다. 이 방법은 표준 구글 프로토콜 버퍼 라이브러리에 있는 리플렉션 기반 마샬링 및 언마샬링보다 우수한 성능을 제공합니다.</p>
+<h3 id="heading">결론</h3>
+<p>위의 기술을 결합하여, Go의 가비지 컬렉션 오버헤드를 최소화하고, 성능을 최적화할 수 있었습니다. 베타 버전을 만들어가며, 메모리 프로파일링에 진척이 있으면, 그 결과를 후속 글로 공유하겠습니다. 만약 Go 성능 최적화에 다른 정보가 있다면, 우리에게 알려주십시오.</p>
+<p>일러스트 제공 <a href="https://www.liea.nl">Mei-Li Nieuwland</a></p> </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date"> 2018-10-23 </div>
+    
+  </div>
+</footer>
+
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

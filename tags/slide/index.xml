@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>slide on Marsettler</title>
+    <link>https://marsettler.com/tags/slide/</link>
+    <description>Recent content in slide on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/slide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>거대한 단일 MMORPG 서버</title>
+      <link>https://marsettler.com/posts/2019-09-01-huge-single-mmorpg-server/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-09-01-huge-single-mmorpg-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>분산 SQL 데이터베이스 CockroachDB</title>
+      <link>https://marsettler.com/posts/2018-12-26-distributed-sql-database-cockroachdb/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://marsettler.com/posts/2018-12-26-distributed-sql-database-cockroachdb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

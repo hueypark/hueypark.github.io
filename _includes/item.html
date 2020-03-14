@@ -1,7 +1,0 @@
-<li class="post-item post {{ post.post_class }}">
-	<a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
-	<p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 200 }}</p>
-	<div class="post-meta">
-		<p class="post-date">{{ post.date | date: '%Y-%m-%d' }}</p>
-	</div>
-</li>

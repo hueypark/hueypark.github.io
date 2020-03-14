@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wsl2 on Marsettler</title>
+    <link>https://marsettler.com/tags/wsl2/</link>
+    <description>Recent content in wsl2 on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/wsl2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>카크로치디비(CockroachDB) 윈도우(WSL2)에서 빌드</title>
+      <link>https://marsettler.com/posts/2019-07-02-windows-wsl2-cockroachdb/</link>
+      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-07-02-windows-wsl2-cockroachdb/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://marsettler.com/post/2019-07-02-windows-wsl2-cockroachdb/cockroachdb-on-windows.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://marsettler.com/2019/06/30/first-sprintseoul.html&#34;&gt;스프린트서울&lt;/a&gt; 참가하면 가장 불편했던 일은 개발환경 설정이었다. 평소에는 집에 있는 리눅스(데스크탑) 환경에서 개발하였는데, 윈도우즈(노트북)을 사용하게 되었기 때문이다. 급한대로 VirtualBox를 사용했는데 성능 차이도 있었고, 직접 손봐야 할 부분이 많았다.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

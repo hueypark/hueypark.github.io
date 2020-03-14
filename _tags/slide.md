@@ -1,4 +1,0 @@
----
-name: slide
-title: Slide
----

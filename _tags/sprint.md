@@ -1,4 +1,0 @@
----
-name: sprint
-title: Sprint
----

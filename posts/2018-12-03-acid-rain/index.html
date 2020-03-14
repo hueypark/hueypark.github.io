@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/posts/2018-12-03-acid-rain/">
+<meta property="og:title" content="(번역) 카크로치디비(CockroachDB) 블로그 / Serializable이 진정한 트랜잭션입니다" />
+<meta property="og:description" content="원문: https://www.cockroachlabs.com/blog/acid-rain/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/posts/2018-12-03-acid-rain/" />
+<meta property="article:published_time" content="2018-12-03T00:00:00+09:00" />
+<meta property="article:modified_time" content="2018-12-03T00:00:00+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="(번역) 카크로치디비(CockroachDB) 블로그 / Serializable이 진정한 트랜잭션입니다"/>
+<meta name="twitter:description" content="원문: https://www.cockroachlabs.com/blog/acid-rain/"/>
+
+
+<meta itemprop="name" content="(번역) 카크로치디비(CockroachDB) 블로그 / Serializable이 진정한 트랜잭션입니다">
+<meta itemprop="description" content="원문: https://www.cockroachlabs.com/blog/acid-rain/">
+<meta itemprop="datePublished" content="2018-12-03T00:00:00&#43;09:00" />
+<meta itemprop="dateModified" content="2018-12-03T00:00:00&#43;09:00" />
+<meta itemprop="wordCount" content="598">
+
+
+
+<meta itemprop="keywords" content="cockroachdb," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+
+<title>
+
+
+     (번역) 카크로치디비(CockroachDB) 블로그 / Serializable이 진정한 트랜잭션입니다 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> (번역) 카크로치디비(CockroachDB) 블로그 / Serializable이 진정한 트랜잭션입니다 </h1>
+    <div class="content"> <p>원문: <a href="https://www.cockroachlabs.com/blog/acid-rain/">https://www.cockroachlabs.com/blog/acid-rain/</a></p>
+<p>Written by <a href="https://www.cockroachlabs.com/author/ben-darnell/">Ben Darnell</a> on Sep 21, 2017</p>
+<p><img src="/post/2018-12-03-acid-rain/acidrain.jpg" alt=""></p>
+<p>대부분의 데이터베이스는 정확성과 성능 사이의 균형을 제공하는 여러 트랜잭션 격리 수준 중 하나를 선택할 수 있습니다. 그러나, 성능은 개발자에게 트랜잭션 상호작용을 신중하게 연구하거나 미묘한 버그를 유발하는 비용을 필요로 합니다. CockroachDB는 강한(<code>SERIALIZABLE</code>) 격리수준을 기본으로 제공하여 언제나 예상한 데이터가 보이는 것을 보장합니다. 저는 이 글에서 강한 격리수준의 의미와 불충분한 격리수준이 실제 애플리케이션에 어떤 충격을 주는지 설명할 것입니다.</p>
+<h2 id="sql--">SQL 표준의 격리수준</h2>
+<p>SQL 표준은 네가지 격리수준을 정의합니다.</p>
+<ul>
+<li><code>SERIALIZABLE</code></li>
+<li><code>REPEATABLE READ</code></li>
+<li><code>READ COMMITTED</code></li>
+<li><code>READ UNCOMMITTED</code></li>
+</ul>
+<p><code>SERIALIZABLE</code> 트랜잭션은 한 번에 하나의 트랜잭션만 실행하는 것처럼 실행됩니다. 다른 격리 수준은 SQL 표준이 &ldquo;세 가지 현상&quot;이라고 완곡하게 표현하는 더티리드, 논리피티블리드, 팬텀리드를 허용합니다. <a href="https://www.cs.umb.edu/cs734/CritiqueANSI_Iso.pdf">이후의 연구</a>는 추가적인 &ldquo;현상&quot;과 격리수준을 발견했습니다.</p>
+<p>최신의 연구에서 이러한 &ldquo;현상&quot;은 일반적으로 &ldquo;이상현상&rdquo; 또는 더 퉁명스럽게 <a href="http://hpts.ws/papers//2015/jepsen.pdf">&ldquo;거짓&rdquo;</a>이라고 불립니다. <code>SERIALIZABLE</code>이 아닌 격리수준을 사용하면, 잘못된 결과를 반환할 수 있는 권한을 데이터베이스에 부여하고, 올바른 결과를 반환하는 것보다 빨라지기를 기대하게 됩니다. SQL 표준은 이것이 위험하며 <code>SERIALIZABLE</code>이 기본 격리수준이 되기를 요구합니다. 더 약한 격리수준은 잠재적인 최적화를 위해 이런 이상현상을 견딜 수 있는 애플리케이션을 위해 제공됩니다.</p>
+<h2 id="--">실제 데이터베이스의 격리수준</h2>
+<p>대부분의 데이터베이스는 <code>SERIALIZABLE</code>이 기본값인 것을 무시하고, 안정성보다 성능을 우선시하여 기본값으로 <code>READ COMMITTED</code> 또는 <code>REPEATABLE READ</code> 격리수준을 사용합니다. 좀 더 걱정스럽게도, 데이터베이스 중 일부(오라클, PostgreSQL 9.1버전 이전)는 <code>SERIALIZABLE</code> 격리수준의 구현을 제공하지 않습니다. 오라클의 <code>SERIALIZABLE</code> 격리수준은 실제로 &ldquo;snapshot isolation(<code>SNAPSHOT</code> 격리)&ldquo;이라고 불리는 약한 모드입니다.</p>
+<p><code>SNAPSHOT</code> 격리는 초기 SQL 표준화 이후에 개발되었지만, 성능과 일관성의 균형이 잘 유지되므로 여러 데이터베이스 시스템에서 구현되었습니다. 이것은 <code>READ COMMITTED</code>보다 강하지만 <code>SERIALIZABLE</code>보다 약합니다. 이것은 <code>REPEATABLE READ</code>와 유사하지만 정확히 동일하지는 않습니다(<code>REPEATABLE READ</code>는 팬텀리드를 허용하지만 쓰기 이상현상을 방지하고 <code>SNAPSHOT</code> 격리는 반대). <code>SNAPSHOT</code> 격리를 구현한 데이터베이스는 이를 네 가지 SQL 표준 수준에 맞게 조정하는 방법에 대해 서로 다른 결정을 내렸습니다. 오라클은 <code>SNAPSHOT</code>을 <code>SERIALIZABLE</code>이라고 부르는 가장 공격적인 자세를 취했습니다. CockroachDB와 마이크로소프트 SQL 서버는 보수적으로 <code>SNAPSHOT</code>을 다섯 번째 격리 수준으로 취급합니다. PostgreSQL(버전 9.1부터)은 <code>REPEATABLE READ</code> 대신 <code>SNAPSHOT</code>을 사용 합니다.</p>
+<p><code>SERIALIZABLE</code> 모드는 더 약한 격리가 기본인 데이터베이스에서 자주 사용되지 않으므로, 종종 철저히 테스트되거나 최적화되지 않았습니다. 예를 들어, PostgreSQL은 SERIALIZABLE 트랜잭션 간의 충돌을 추적하는 데 사용되는 고정 크기 메모리 풀을 가지고 있고, 이 풀은 과부하 상태에서 고갈 될 수 있습니다.</p>
+<p>대부분의 데이터베이스 공급 업체는 강한 트랜잭션 격리수준을 예외적인 일관성 요구사항이 있는 애플리케이션에서 사용하는 이국적인 옵션으로 취급합니다. 하지만 대부분의 애플리케이션은 빠르지만 안전하지 않은 약한 격리수준으로 동작할 것으로 예상됩니다. 문제에 대한 이러한 접근방식은 애플리케이션을 많은 미묘한 버그에 노출시킵니다. Cockroach 연구소에서 우리는 격리수준의 이상현상을 너무 많이 생각한 나머지 회의실 이름으로 격리수준을 사용하고 있지만, <code>SERIALIZABLE</code> 대신 <code>SNAPSHOT</code> 격리수준을 선택하는 것이 안전하고 유익하다고 조언하기 힘들었습니다. 우리는 안전과 함께 시작하여 성능을 향상시키는 것이 다른 방법보다 효과적이라는 철학을 가지고 있습니다.</p>
+<h2 id="acidrain---">ACIDRain: 트랜잭션 버그를 찾기</h2>
+<p>스탠포드의 <a href="http://www.bailis.org/papers/acidrain-sigmod2017.pdf">최근 연구</a>는 약한 격리수준이 실제 버그로 이어지는 정도를 탐구했습니다. Todd Warszawski와 Peter Bailis는 12개의 전자 상거래 애플리케이션을 조사하여 트랜잭션과 관련된 22개의 버그를 발견했으며, 그 중 5개는 높은 격리수준을 이용하여 피할 수 있었습니다. 이 버그 중 상당수는 악용하기 쉽고 직접적인 재정적 영향을 줍니다. 예를 들어 다섯 가지 애플리케이션에서 다른 브라우저에서 결재를 진행하며 장바구니에 아이템을 추가하면 무료로 주문에 추가할 수 있었습니다. 연구자들은 이러한 취약점을 반자동 방식으로 확인하는 도구를 개발하여 비슷한 공격(&ldquo;ACIDRain&rdquo;)이 더 널리 전파되게 하였습니다.</p>
+<p>약한 트랜잭션 격리수준을 기본으로 하는 데이터베이스는 <code>SELECT</code> 문에 대한 (비표준) <code>FOR UPDATE</code>나 <code>LOCK IN SHARE MODE</code>와 같은 대안을 제공합니다. 올바르게 이런 변형을 사용하면 약한 격리수준에서도 트랜잭션을 안전하게 사용할 수 있습니다. 그러나 이것은 잘못 사용하기 쉽고, 일관되게 사용하더라도 이러한 확장은 <code>SERIALIZABLE</code> 모드의 단점을 대부분 도입합니다(실제로 <code>READ COMMITTED</code>에서 <code>SELECT FOR UPDATE</code>를 과용하면 공유 잠금만 필요한 경우에도 베타적 잠금을 사용하므로 <code>SERIALIZABLE</code>보다 성능이 떨어질 수 있음). ACIDRain 연구는 이 기술의 한계를 보여줍니다. <code>SELECT FOR UPDATE</code> 기능을 사용하려고 시도한 애플리케이션 중 1/3만 올바르게 사용했고, 나머지는 취약점을 노출했습니다.</p>
+<h2 id="heading">결론</h2>
+<p>약한 격리수준을 권장하는 데이터베이스는 데이터 안정성보다 성능에 높은 우선순위를 주기 때문에, 트랜잭션간 미묘한 상호작용을 고려하여야 하고 구현 중 에러가 발생하기 쉽습니다. CockroachDB는 기본적으로 <code>SERIALIZABLE</code> 트랜잭션을 제공하여 트랜잭션 데이터베이스에서 기대되는 일관성을 항상 보장합니다.</p>
+<p>Illustration by <a href="http://liskfeng.com/">Lisk Feng</a></p> </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date"> 2018-12-03 </div>
+    
+  </div>
+</footer>
+
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

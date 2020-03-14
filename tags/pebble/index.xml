@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pebble on Marsettler</title>
+    <link>https://marsettler.com/tags/pebble/</link>
+    <description>Recent content in pebble on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/pebble/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>db: SingleDelete 구현(Pebble issue #222)</title>
+      <link>https://marsettler.com/posts/2019-08-19-pebble-issue-222/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-08-19-pebble-issue-222/</guid>
+      <description>&lt;h2 id=&#34;heading&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cockroachdb/pebble&#34;&gt;Pebble&lt;/a&gt;은 LevelDB/RocksDB에서 영감을 받은 카크로치디비용 키-밸류 저장소입니다. 현재(2019년 8월)는 개발 진행중인 상태이며, 2020년 카크로치디비 적용을 &lt;a href=&#34;https://github.com/petermattis/pebble/issues/233&#34;&gt;계획&lt;/a&gt;하고 있습니다.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

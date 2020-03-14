@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/posts/2018-10-15-cockroachdb-blog-hello-world/">
+<meta property="og:title" content="(번역) 카크로치디비(CockroachDB) 블로그 / Hello World" />
+<meta property="og:description" content="원문: https://www.cockroachlabs.com/blog/hello-world/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/posts/2018-10-15-cockroachdb-blog-hello-world/" />
+<meta property="article:published_time" content="2018-10-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-10-15T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="(번역) 카크로치디비(CockroachDB) 블로그 / Hello World"/>
+<meta name="twitter:description" content="원문: https://www.cockroachlabs.com/blog/hello-world/"/>
+
+
+<meta itemprop="name" content="(번역) 카크로치디비(CockroachDB) 블로그 / Hello World">
+<meta itemprop="description" content="원문: https://www.cockroachlabs.com/blog/hello-world/">
+<meta itemprop="datePublished" content="2018-10-15T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-10-15T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="369">
+
+
+
+<meta itemprop="keywords" content="cockroachdb," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+
+<title>
+
+
+     (번역) 카크로치디비(CockroachDB) 블로그 / Hello World 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> (번역) 카크로치디비(CockroachDB) 블로그 / Hello World </h1>
+    <div class="content"> <p>원문: <a href="https://www.cockroachlabs.com/blog/hello-world/">https://www.cockroachlabs.com/blog/hello-world/</a></p>
+<p>Written by <a href="https://www.cockroachlabs.com/author/spencer-kimball/">Spencer Kimball</a> on Jun 4, 2015</p>
+<p><img src="/post/2018-10-15-cockroachdb-blog-hello-world/image-01.png" alt=""></p>
+<p>데이터베이스는 전 세계 모든 비즈니스의 심장부이며, 스프레스시트에서 수천개의 슈퍼컴퓨터로 연결된 광대한 서버에 이르기까지 다양합니다. 또한 그들은 빠르게 진화해왔습니다. Cockroach 연구소에 있는 우리는 그 진화를 지켜보았고, 때떄로 자신의 역량을 넘어서는 직무가 주어질 때에도 그 한계를 극복하기 위해 적극적으로 노력해왔습니다.</p>
+<p>하지만 우선, 왜 <code>Cockroach</code>일까요? 만약 그로테스크한 외형에 신경쓰지 않는다면, 그들의 생존력에 주목할 수 있습니다. 바퀴벌레가 포스트 아포칼립스 이후 최후의 생존자가 될 것이라는 것을 들은 적이 있으신가요? 현대의 데이터베이스 시스템은 자연에서 가장 오래되고 성공적인 디자인을 에뮬레이트하여 많은 것을 얻을 수 있습니다. 생존, 복제, 증식입니다. 그것은 지질시대 바퀴벌래의 모델이었고, 또한 우리의 모델입니다. 기억하기 어려운 이름이라는 것은 생존력에 전혀 영향을 주지 않을 것입니다.</p>
+<p>구글에서 근무한 2000년대 초반에, 데이터베이스 문제로 고통받는 일(애플리케이션 레벨 샤딩)은 작업 초기에 일어나곤 했습니다. 한 데이터베이스에 저장할 데이터가 너무 많으면 어떻게 될까요? 간단히 데이터를 필요한 만큼 분할하여 여러 데이터베이스 샤드에 넣을 수 있습니다. 그러나 데이터 증가가 멈추지 않는다면 어떻게 될까요? 문제는 간결함입니다. 더 많은 샤드와 문제는 다운타임을 만들고, 서버를 과부하시키며, 운영에 복잡성을 증가시킵니다. 우리는 규모에 어려움에 대한 대한 건전한 해법을 개발했습니다.</p>
+<p>2000년대 중반에 구글은 NoSQL로의 변화를 빠르게 진행했습니다. NoSQL은 단순성을 위하여 전통적인 RDBMS의 기능 일부를 희생했습니다. 보다 단순한 설계는 범용 하드웨어의 투명한 확장을 가능하게 했습니다. 이제는 단일 데이터베이스와 마찬가지로 애플리케이션을 개발하면서, 전래 없던 규모에 도달할 수 있습니다. 하지만 트랜잭션과 같은 기능이 없어져서, 점점 더 복잡한 애플리케이션 로직을 사용해야 했고, 개발자들에게 아킬레스 건으로 작용했습니다. 차세대 시스템이 과거를 대체함에 따라 일관성과 트랜잭션 기능을 복원할 수 있는 설계가 필요했습니다.</p>
+<p>2012년에 우리는 Viewfinder라는 사진 공유 플랫폼을 만들기 위해 구글을 떠났습니다. 수십억 명의 사용자게게 서비스를 제공하려는 꿈은 환상이 아니며, 우리의 꿈은 컸습니다. 그러나 우리가 만든 우수한 인프라에 대한 오픈소스 대체품을 찾아야만 하는 현실에 맞닥드렸습니다. 우리는 때때로 임시방편을 사용하여 문제에 대한 복잡한 해결방법을 만들었습니다. 이런 해결방법이 주 목표가 아닐경우, 문제를 해결하는데 충분한 시간을 사용할 수 없었습니다.</p>
+<p>결국 우리는 그것을 최우선 과제로 삼기로 했습니다. Cockroach 연구소를 만들고 수년간 우리를 괴롭혀왔던 문제를 해결하는 데이터베이스를 처음부터 만들기로 했습니다. 우리의 미션은 간단하지만, 충분히 크고 광대합니다: 데이터를 다루기 쉽게 만들자.</p>
+<p>우리가 원하는 데이터베이스는 확장가능하고, 재난에 견딜 수 있으며, 일관성을 유지하고, 쉽게 사용할 수 있는 추상화를 지원합니다. 우리는 데이터베이스의 단점에 대한 기술적 대안을 제시하기보다, 제품을 신속하게 구축하고, 이터레이션하는데 중점을 둘 것입니다. 이것이 우리가 다음 회사를 시작하려고 할 때 필요로 하는 데이터베이스입니다.</p>
+<p>오늘, 우리는 CockroachDB를 모두에게 공개했습니다. <a href="https://github.com/cockroachdb/cockroach">사용하십시오.</a> <a href="https://github.com/cockroachdb/cockroach">빌드하십시오.</a> <a href="https://github.com/cockroachdb/cockroach">기여하십시오!</a></p>
+<p>Ben, Peter &amp; Spencer</p> </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date"> 2018-10-15 </div>
+    
+  </div>
+</footer>
+
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

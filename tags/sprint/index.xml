@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sprint on Marsettler</title>
+    <link>https://marsettler.com/tags/sprint/</link>
+    <description>Recent content in sprint on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/sprint/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>(very good first issue) #41274 sql: Support aggregate functions for statistics</title>
+      <link>https://marsettler.com/posts/2020-02-22-vgfi-sql-support-aggregate-functions-for-statistics/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2020-02-22-vgfi-sql-support-aggregate-functions-for-statistics/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cockroachdb/cockroach/issues/41274&#34;&gt;카크로치디비 이슈 #41274&lt;/a&gt; sql: Support aggregate functions for statistics&lt;/p&gt;
+&lt;h3 id=&#34;heading&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;이슈 #41274는 &lt;code&gt;PostgreSQL&lt;/code&gt;에서 지원하는 &lt;a href=&#34;https://www.postgresql.org/docs/9.1/functions-aggregate.html&#34;&gt;aggregate function&lt;/a&gt;들의 구현을 요구하며, 대상은 아래와 같습니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(very good first issue) #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE</title>
+      <link>https://marsettler.com/posts/2020-02-22-sql-add-support-for-commentmore/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2020-02-22-sql-add-support-for-commentmore/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cockroachdb/cockroach/issues/44135&#34;&gt;카크로치디비 이슈 #44135&lt;/a&gt; sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE&lt;/p&gt;
+&lt;h3 id=&#34;heading&#34;&gt;개요&lt;/h3&gt;
+&lt;p&gt;이슈 #44135 &lt;code&gt;PostgreSQL&lt;/code&gt;에서 지원하는 &lt;a href=&#34;https://www.postgresql.org/docs/9.1/functions-aggregate.html&#34;&gt;COMMENT ON&lt;/a&gt; 문법의 &lt;code&gt;VIEW&lt;/code&gt;, &lt;code&gt;SEQUENCE&lt;/code&gt;에 대한 지원을 요구합니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB) 소개</title>
+      <link>https://marsettler.com/posts/2020-02-22-sprintseoul-cockroachdb/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2020-02-22-sprintseoul-cockroachdb/</guid>
+      <description>&lt;p&gt;안녕하세요.&lt;/p&gt;
+&lt;p&gt;스프린트서울을 참가자분들을 위한 카크로치디비(CockroachDB) 소개입니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>sql: COMMENT ON INDEX 지원(CockroachDB issue #41316)</title>
+      <link>https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/</guid>
+      <description>&lt;p&gt;이슈: &lt;a href=&#34;https://github.com/cockroachdb/cockroach/issues/41316&#34;&gt;sql: add support for COMMENT ON INDEX #41316&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;sql: COMMENT ON INDEX 지원 작업을 했습니다. 이번에는 이슈 등록자가 저에게 먼저 연락을 하는 새로운 경험을 했습니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>삭제될 WAL, MANIFEST, sstable을 보관하는 기능 제공 (Pebble issue #284)</title>
+      <link>https://marsettler.com/posts/2019-10-15-pebble-issue-284/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-10-15-pebble-issue-284/</guid>
+      <description>&lt;h2 id=&#34;heading&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;이슈: &lt;a href=&#34;https://github.com/cockroachdb/pebble/issues/284&#34;&gt;&lt;a href=&#34;https://github.com/cockroachdb/pebble/issues/284&#34;&gt;https://github.com/cockroachdb/pebble/issues/284&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;이번에는 Pebble에서 아무에게도 할당되지 않은 이슈를 선택해 수정했습니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>초보다 정밀한 단위에 대한 `EXTRACT` 명령이 postgres와 다르게 동작함(CockroachDB issue #40683)</title>
+      <link>https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/</guid>
+      <description>&lt;h2 id=&#34;heading&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;이번에는 간단하게 해결할 수 있는 이슈를 수정했습니다. 이 정도의 이슈는 처음 스프린트에 참여하는 분도 해결할 수 있을 것으로 기대합니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>db: SingleDelete 구현(Pebble issue #222)</title>
+      <link>https://marsettler.com/posts/2019-08-19-pebble-issue-222/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-08-19-pebble-issue-222/</guid>
+      <description>&lt;h2 id=&#34;heading&#34;&gt;개요&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cockroachdb/pebble&#34;&gt;Pebble&lt;/a&gt;은 LevelDB/RocksDB에서 영감을 받은 카크로치디비용 키-밸류 저장소입니다. 현재(2019년 8월)는 개발 진행중인 상태이며, 2020년 카크로치디비 적용을 &lt;a href=&#34;https://github.com/petermattis/pebble/issues/233&#34;&gt;계획&lt;/a&gt;하고 있습니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>파이콘 한국 2019 스프린트 - 카크로치디비(CockroachDB)와 함께</title>
+      <link>https://marsettler.com/posts/2019-08-18-sprint-on-pyconkr-2019-with-cockroachdb/</link>
+      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-08-18-sprint-on-pyconkr-2019-with-cockroachdb/</guid>
+      <description>&lt;p&gt;파이콘 한국 2019 스프린트에 참가했습니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>스프린트서울 첫 참가</title>
+      <link>https://marsettler.com/posts/2019-06-30-first-sprintseoul/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2019-06-30-first-sprintseoul/</guid>
+      <description>&lt;p&gt;작년 11월부터 카크로치디비에 &lt;a href=&#34;https://github.com/cockroachdb/cockroach/pulls?q=is%3Apr+author%3Ahueypark&#34;&gt;기여&lt;/a&gt;하고 있습니다. 한국에는 관련 커뮤니티나 정보가 부족해 답답해 하고 있었는데, &lt;a href=&#34;https://www.sprintseoul.org/&#34;&gt;스프린트서울&lt;/a&gt;이라는 행사를 알게되어 참가했습니다.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

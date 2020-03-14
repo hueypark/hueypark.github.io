@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c&#43;&#43; on Marsettler</title>
+    <link>https://marsettler.com/tags/c&#43;&#43;/</link>
+    <description>Recent content in c&#43;&#43; on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>std::shared_ptr is not thread safe</title>
+      <link>https://marsettler.com/posts/2018-09-03-shared-ptr-is-not-thread-safe/</link>
+      <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/posts/2018-09-03-shared-ptr-is-not-thread-safe/</guid>
+      <description>&lt;p&gt;I found that std::shared_ptr is not thread-safe, and I leave that example.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
