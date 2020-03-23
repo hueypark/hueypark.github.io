@@ -58,6 +58,16 @@
   </url>
   
   <url>
+    <loc>https://marsettler.com/tags/remote-work/</loc>
+    <lastmod>2020-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/remote-work/</loc>
+    <lastmod>2020-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/interior/</loc>
     <lastmod>2020-02-10T00:00:00+00:00</lastmod>
   </url>
@@ -344,6 +354,14 @@
   
   <url>
     <loc>https://marsettler.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/wiki/</loc>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/wiki/</loc>
   </url>
   
 </urlset>
