@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>Go</title>
-      <link>https://marsettler.com/go/</link>
-      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Wiki</title>
       <link>https://marsettler.com/wiki/</link>
       <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
@@ -29,6 +20,25 @@
       <description>Go
 Remote work(원격근무)
 Interior(인테리어)</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://marsettler.com/about-me/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/about-me/</guid>
+      <description>I am a software engineer living in Seoul, Korea.
+I write code on github.</description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://marsettler.com/go/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/go/</guid>
+      <description></description>
     </item>
     
     <item>
