@@ -6,10 +6,19 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go</title>
+      <link>https://marsettler.com/go/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/go/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>(Book) BPF Performance Tools</title>
@@ -433,8 +442,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/wiki/</guid>
-      <description>원격근무
-인테리어</description>
+      <description>Go
+Remote work(원격근무)
+Interior(인테리어)</description>
     </item>
     
   </channel>

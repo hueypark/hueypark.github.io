@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/go/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/go/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/posts/2020-02-20-bpf-performance-tools/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
   </url>
@@ -28,22 +48,12 @@
   </url>
   
   <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marsettler.com/posts/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/tags/sprint/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -90,11 +100,6 @@
   <url>
     <loc>https://marsettler.com/tags/guide/</loc>
     <lastmod>2019-11-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/go/</loc>
-    <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
