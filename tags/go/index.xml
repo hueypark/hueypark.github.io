@@ -17,7 +17,17 @@
       <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/go/</guid>
-      <description></description>
+      <description>Go module에서 GitHub private repository 사용</description>
+    </item>
+    
+    <item>
+      <title>Go module에서 GitHub private 저장소 사용</title>
+      <link>https://marsettler.com/using-go-module-with-github-private-repository/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/using-go-module-with-github-private-repository/</guid>
+      <description>Go module에서 GitHub private 저장소를 사용하는 방법입니다.
+ git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&amp;#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&amp;#34;.insteadOf &amp;#34;https://github.com&amp;#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&amp;#34;github.com/hueypark/asset&amp;#34; </description>
     </item>
     
     <item>
