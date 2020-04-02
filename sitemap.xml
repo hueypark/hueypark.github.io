@@ -13,27 +13,32 @@
   </url>
   
   <url>
+    <loc>https://marsettler.com/tags/go/</loc>
+    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/go-headless-test-with-xvfb/</loc>
+    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/go/</loc>
     <lastmod>2020-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marsettler.com/tags/go/</loc>
-    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marsettler.com/using-go-module-with-github-private-repository/</loc>
-    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
     <lastmod>2020-03-29T00:00:00+00:00</lastmod>
   </url>
   
