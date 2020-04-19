@@ -6,17 +6,26 @@
     <description>Recent content in c&#43;&#43; on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/c++/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>C&#43;&#43;</title>
+      <link>https://marsettler.com/c&#43;&#43;/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/c&#43;&#43;/</guid>
+      <description>std::shared_ptr is not thread safe</description>
+    </item>
+    
+    <item>
       <title>std::shared_ptr is not thread safe</title>
-      <link>https://marsettler.com/posts/2018-09-03-shared-ptr-is-not-thread-safe/</link>
+      <link>https://marsettler.com/std-shared-ptr-is-not-thread-safe/</link>
       <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/posts/2018-09-03-shared-ptr-is-not-thread-safe/</guid>
+      <guid>https://marsettler.com/std-shared-ptr-is-not-thread-safe/</guid>
       <description>&lt;p&gt;I found that std::shared_ptr is not thread-safe, and I leave that example.&lt;/p&gt;</description>
     </item>
     

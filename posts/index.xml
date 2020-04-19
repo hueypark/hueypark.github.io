@@ -368,15 +368,6 @@
     </item>
     
     <item>
-      <title>std::shared_ptr is not thread safe</title>
-      <link>https://marsettler.com/posts/2018-09-03-shared-ptr-is-not-thread-safe/</link>
-      <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/posts/2018-09-03-shared-ptr-is-not-thread-safe/</guid>
-      <description>&lt;p&gt;I found that std::shared_ptr is not thread-safe, and I leave that example.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>(번역) 의사결정을 위한 게임 프로듀서의 도움말</title>
       <link>https://marsettler.com/posts/2018-07-08-a-producers-guide-to-decisionmaking/</link>
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0900</pubDate>
