@@ -466,7 +466,7 @@ Go module에서 GitHub private repository 사용</description>
       <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/std-shared-ptr-is-not-thread-safe/</guid>
-      <description>&lt;p&gt;I found that std::shared_ptr is not thread-safe, and I leave that example.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I found that std::shared_ptr is not thread-safe. I leave some examples.&lt;/p&gt;</description>
     </item>
     
     <item>

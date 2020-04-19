@@ -10,7 +10,7 @@
 
 <link rel="canonical" href="https://marsettler.com/std-shared-ptr-is-not-thread-safe/">
 <meta property="og:title" content="std::shared_ptr is not thread safe" />
-<meta property="og:description" content="I found that std::shared_ptr is not thread-safe, and I leave that example." />
+<meta property="og:description" content="I found that std::shared_ptr is not thread-safe. I leave some examples." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/std-shared-ptr-is-not-thread-safe/" />
 <meta property="article:published_time" content="2018-09-03T00:00:00+00:00" />
@@ -18,14 +18,14 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="std::shared_ptr is not thread safe"/>
-<meta name="twitter:description" content="I found that std::shared_ptr is not thread-safe, and I leave that example."/>
+<meta name="twitter:description" content="I found that std::shared_ptr is not thread-safe. I leave some examples."/>
 
 
 <meta itemprop="name" content="std::shared_ptr is not thread safe">
-<meta itemprop="description" content="I found that std::shared_ptr is not thread-safe, and I leave that example.">
+<meta itemprop="description" content="I found that std::shared_ptr is not thread-safe. I leave some examples.">
 <meta itemprop="datePublished" content="2018-09-03T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-09-03T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="54">
+<meta itemprop="wordCount" content="144">
 
 
 
@@ -106,8 +106,58 @@ if (!doNotTrack) {
 
 <article class="post">
     <h1 class="title"> std::shared_ptr is not thread safe </h1>
-    <div class="content"> <p>I found that std::shared_ptr is not thread-safe, and I leave that example.</p>
-<h4 id="maincpp">main.cpp</h4>
+    <div class="content"> <p>I found that std::shared_ptr is not thread-safe. I leave some examples.</p>
+<h3 id="access-resource-after-destruct">Access resource after destruct</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;memory&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;thread&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Foo</span>
+{
+	<span style="color:#66d9ef">int</span> val;
+
+	Foo()
+	{
+		val <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+	}
+
+	<span style="color:#f92672">~</span>Foo()
+	{
+		val <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
+	}
+};
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+	<span style="color:#66d9ef">while</span> (true)
+	{
+		std<span style="color:#f92672">:</span><span style="color:#f92672">:</span>shared_ptr<span style="color:#f92672">&lt;</span> Foo <span style="color:#f92672">&gt;</span> ptr <span style="color:#f92672">=</span> std<span style="color:#f92672">:</span><span style="color:#f92672">:</span>make_shared<span style="color:#f92672">&lt;</span> Foo <span style="color:#f92672">&gt;</span>();
+		std<span style="color:#f92672">:</span><span style="color:#f92672">:</span>weak_ptr<span style="color:#f92672">&lt;</span> Foo <span style="color:#f92672">&gt;</span> wptr <span style="color:#f92672">=</span> ptr;
+
+		std<span style="color:#f92672">:</span><span style="color:#f92672">:</span><span style="color:#66d9ef">thread</span> t1(
+			[ <span style="color:#f92672">&amp;</span>ptr ]()
+			{
+				ptr.reset();
+			} );
+
+		std<span style="color:#f92672">:</span><span style="color:#f92672">:</span><span style="color:#66d9ef">thread</span> t2(
+			[ wptr ]()
+			{
+				std<span style="color:#f92672">:</span><span style="color:#f92672">:</span>shared_ptr<span style="color:#f92672">&lt;</span> Foo <span style="color:#f92672">&gt;</span> ptr <span style="color:#f92672">=</span> wptr.lock();
+
+				<span style="color:#66d9ef">if</span> ( ptr )
+				{
+					<span style="color:#75715e">// This should not print -1.
+</span><span style="color:#75715e"></span>					std<span style="color:#f92672">:</span><span style="color:#f92672">:</span>cout <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> ptr<span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>val <span style="color:#f92672">&lt;</span><span style="color:#f92672">&lt;</span> std<span style="color:#f92672">:</span><span style="color:#f92672">:</span>endl;
+				}
+			} );
+
+		t1.detach();
+		t2.detach();
+	}
+}
+
+</code></pre></div><h3 id="undefined-behavior">Undefined behavior</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;thread&gt;</span><span style="color:#75715e">
 </span><span style="color:#75715e"></span>
 std<span style="color:#f92672">:</span><span style="color:#f92672">:</span>shared_ptr<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> g_ptr <span style="color:#f92672">=</span> <span style="color:#66d9ef">nullptr</span>;
