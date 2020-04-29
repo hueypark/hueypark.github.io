@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>cockroachdb</title>
+      <link>https://marsettler.com/tags/cockroachdb/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/cockroachdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://marsettler.com/tags/go/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/go/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>c&#43;&#43;</title>
@@ -21,29 +39,11 @@
     </item>
     
     <item>
-      <title>go</title>
-      <link>https://marsettler.com/tags/go/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>book</title>
       <link>https://marsettler.com/tags/book/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/book/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cockroachdb</title>
-      <link>https://marsettler.com/tags/cockroachdb/</link>
-      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/cockroachdb/</guid>
       <description></description>
     </item>
     

@@ -13,6 +13,31 @@
   </url>
   
   <url>
+    <loc>https://marsettler.com/cockroachdb/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/cockroachdb/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/go/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/c&#43;&#43;/</loc>
     <lastmod>2020-04-19T00:00:00+00:00</lastmod>
   </url>
@@ -20,21 +45,6 @@
   <url>
     <loc>https://marsettler.com/tags/c&#43;&#43;/</loc>
     <lastmod>2020-04-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2020-04-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/go/</loc>
-    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -63,22 +73,17 @@
   </url>
   
   <url>
-    <loc>https://marsettler.com/posts/2020-02-22-vgfi-sql-support-aggregate-functions-for-statistics/</loc>
+    <loc>https://marsettler.com/cockroachdb-issue-41274-vgfi-sql-support-aggregate-functions-for-statistics/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marsettler.com/posts/2020-02-22-sql-add-support-for-commentmore/</loc>
+    <loc>https://marsettler.com/cockroachdb-issue-44135-sql-add-support-for-comment/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/tags/book/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/cockroachdb/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -93,7 +98,7 @@
   </url>
   
   <url>
-    <loc>https://marsettler.com/posts/2020-02-22-sprintseoul-cockroachdb/</loc>
+    <loc>https://marsettler.com/sprintseoul-cockroachdb/</loc>
     <lastmod>2020-02-20T00:00:00+00:00</lastmod>
   </url>
   

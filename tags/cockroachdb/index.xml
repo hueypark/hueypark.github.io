@@ -6,17 +6,26 @@
     <description>Recent content in cockroachdb on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/cockroachdb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>CockroachDB</title>
+      <link>https://marsettler.com/cockroachdb/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/cockroachdb/</guid>
+      <description>스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB) 소개</description>
+    </item>
+    
+    <item>
       <title>(very good first issue) #41274 sql: Support aggregate functions for statistics</title>
-      <link>https://marsettler.com/posts/2020-02-22-vgfi-sql-support-aggregate-functions-for-statistics/</link>
+      <link>https://marsettler.com/cockroachdb-issue-41274-vgfi-sql-support-aggregate-functions-for-statistics/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/posts/2020-02-22-vgfi-sql-support-aggregate-functions-for-statistics/</guid>
+      <guid>https://marsettler.com/cockroachdb-issue-41274-vgfi-sql-support-aggregate-functions-for-statistics/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cockroachdb/cockroach/issues/41274&#34;&gt;카크로치디비 이슈 #41274&lt;/a&gt; sql: Support aggregate functions for statistics&lt;/p&gt;
 &lt;h3 id=&#34;heading&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;이슈 #41274는 &lt;code&gt;PostgreSQL&lt;/code&gt;에서 지원하는 &lt;a href=&#34;https://www.postgresql.org/docs/9.1/functions-aggregate.html&#34;&gt;aggregate function&lt;/a&gt;들의 구현을 요구하며, 대상은 아래와 같습니다.&lt;/p&gt;</description>
@@ -24,10 +33,10 @@
     
     <item>
       <title>(very good first issue) #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE</title>
-      <link>https://marsettler.com/posts/2020-02-22-sql-add-support-for-commentmore/</link>
+      <link>https://marsettler.com/cockroachdb-issue-44135-sql-add-support-for-comment/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/posts/2020-02-22-sql-add-support-for-commentmore/</guid>
+      <guid>https://marsettler.com/cockroachdb-issue-44135-sql-add-support-for-comment/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cockroachdb/cockroach/issues/44135&#34;&gt;카크로치디비 이슈 #44135&lt;/a&gt; sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE&lt;/p&gt;
 &lt;h3 id=&#34;heading&#34;&gt;개요&lt;/h3&gt;
 &lt;p&gt;이슈 #44135 &lt;code&gt;PostgreSQL&lt;/code&gt;에서 지원하는 &lt;a href=&#34;https://www.postgresql.org/docs/9.1/functions-aggregate.html&#34;&gt;COMMENT ON&lt;/a&gt; 문법의 &lt;code&gt;VIEW&lt;/code&gt;, &lt;code&gt;SEQUENCE&lt;/code&gt;에 대한 지원을 요구합니다.&lt;/p&gt;</description>
@@ -35,10 +44,10 @@
     
     <item>
       <title>스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB) 소개</title>
-      <link>https://marsettler.com/posts/2020-02-22-sprintseoul-cockroachdb/</link>
+      <link>https://marsettler.com/sprintseoul-cockroachdb/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/posts/2020-02-22-sprintseoul-cockroachdb/</guid>
+      <guid>https://marsettler.com/sprintseoul-cockroachdb/</guid>
       <description>&lt;p&gt;안녕하세요.&lt;/p&gt;
 &lt;p&gt;스프린트서울을 참가자분들을 위한 카크로치디비(CockroachDB) 소개입니다.&lt;/p&gt;</description>
     </item>
