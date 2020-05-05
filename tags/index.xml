@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>cockroachdb</title>
+      <link>https://marsettler.com/tags/cockroachdb/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/cockroachdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>guide</title>
+      <link>https://marsettler.com/tags/guide/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>livestream</title>
+      <link>https://marsettler.com/tags/livestream/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/livestream/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>how to be successful</title>
@@ -17,15 +44,6 @@
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/how-to-be-successful/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cockroachdb</title>
-      <link>https://marsettler.com/tags/cockroachdb/</link>
-      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/cockroachdb/</guid>
       <description></description>
     </item>
     
@@ -89,15 +107,6 @@
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/diary/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>guide</title>
-      <link>https://marsettler.com/tags/guide/</link>
-      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/guide/</guid>
       <description></description>
     </item>
     

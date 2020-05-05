@@ -13,6 +13,36 @@
   </url>
   
   <url>
+    <loc>https://marsettler.com/cockroachdb-livestream-issue-41522/</loc>
+    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/cockroachdb/</loc>
+    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/guide/</loc>
+    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/livestream/</loc>
+    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2020-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/successful-plan-2020/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
   </url>
@@ -28,22 +58,7 @@
   </url>
   
   <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2020-05-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2020-05-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marsettler.com/cockroachdb/</loc>
-    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/cockroachdb/</loc>
     <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -154,11 +169,6 @@
   
   <url>
     <loc>https://marsettler.com/posts/2019-11-13-guide-with-heart-cockroachdb-19dot2-release/</loc>
-    <lastmod>2019-11-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/guide/</loc>
     <lastmod>2019-11-13T00:00:00+00:00</lastmod>
   </url>
   
