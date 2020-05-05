@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>guide on Marsettler</title>
-    <link>https://marsettler.com/tags/guide/</link>
-    <description>Recent content in guide on Marsettler</description>
+    <title>livestream on Marsettler</title>
+    <link>https://marsettler.com/tags/livestream/</link>
+    <description>Recent content in livestream on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://marsettler.com/tags/guide/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://marsettler.com/tags/livestream/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -29,15 +29,6 @@
 구현하고 있는데, 흥미로운 부분을 정리해 안내드립니다.&lt;/p&gt;
 &lt;p&gt;이슈: &lt;a href=&#34;https://github.com/cockroachdb/cockroach/issues/41522&#34;&gt;sql: support NOTIFY, LISTEN, and UNLISTEN commands of postgresql&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;PR: &lt;a href=&#34;https://github.com/cockroachdb/cockroach/pull/48308&#34;&gt;https://github.com/cockroachdb/cockroach/pull/48308&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>(안내서) 카크로치디비(CockroachDB) 블로그 / 카크로치디비 19.2 출시</title>
-      <link>https://marsettler.com/posts/2019-11-13-guide-with-heart-cockroachdb-19dot2-release/</link>
-      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/posts/2019-11-13-guide-with-heart-cockroachdb-19dot2-release/</guid>
-      <description>&lt;p&gt;카크로치디비 19.2가 릴리즈되었습니다. 레이턴시, 신뢰성, 편의성 측면에서 상당한 개선을 이야기하고 있는데, 인상 깊은 내용 몇 가지를 안내해 드리겠습니다.&lt;/p&gt;</description>
     </item>
     
   </channel>
