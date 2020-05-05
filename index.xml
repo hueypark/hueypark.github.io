@@ -62,7 +62,8 @@ I write code on github.</description>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/cockroachdb/</guid>
-      <description>피터 매티스와의 인터뷰 - Software Engineering Daily
+      <description>(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: CockroachDB is learning the secret technique LISTEN/NOTIFY
+피터 매티스와의 인터뷰 - Software Engineering Daily
 스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB) 소개</description>
     </item>
     
@@ -129,7 +130,7 @@ Go module에서 GitHub private repository 사용</description>
     </item>
     
     <item>
-      <title>(Guide) @JordanALewis LARGE DATA BANK livestream: CockroachDB is learning the secret technique LISTEN/NOTIFY</title>
+      <title>(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: CockroachDB is learning the secret technique LISTEN/NOTIFY</title>
       <link>https://marsettler.com/cockroachdb-livestream-issue-41522/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
