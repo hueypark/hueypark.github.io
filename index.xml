@@ -6,7 +6,7 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -20,6 +20,7 @@
       <description>C++
 CockroachDB
 Go
+해결하고 싶은 문제들
 Remote work(원격근무)
 How to be successful(성공하는 방법)
 Interior(인테리어)</description>
@@ -33,6 +34,15 @@ Interior(인테리어)</description>
       <guid>https://marsettler.com/about-me/</guid>
       <description>I am a software engineer living in Seoul, Korea.
 I write code on github.</description>
+    </item>
+    
+    <item>
+      <title>해결하고 싶은 문제들</title>
+      <link>https://marsettler.com/problems-want-to-solve/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/problems-want-to-solve/</guid>
+      <description>&lt;p&gt;해결하고 싶은 문제들을 기록합니다.&lt;/p&gt;</description>
     </item>
     
     <item>
