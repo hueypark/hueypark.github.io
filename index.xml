@@ -6,7 +6,7 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -34,6 +34,23 @@ Interior(인테리어)</description>
       <guid>https://marsettler.com/about-me/</guid>
       <description>I am a software engineer living in Seoul, Korea.
 I write code on github.</description>
+    </item>
+    
+    <item>
+      <title>(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: Bugfix and Chill(버그를 수정하자!)</title>
+      <link>https://marsettler.com/cockroachdb-livestream-bugfix-and-chill/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/cockroachdb-livestream-bugfix-and-chill/</guid>
+      <description>&lt;iframe
+	src=&#34;https://player.twitch.tv/?video=v615054683&amp;autoplay=false&#34;
+	height=&#34;400&#34;
+	width=&#34;100%&#34;
+	allowfullscreen=&#34;true&#34;&gt;
+&lt;/iframe&gt;
+
+&lt;p&gt;이번 주에도 &lt;a href=&#34;https://mobile.twitter.com/JordanALewis&#34;&gt;@JordanALewis&lt;/a&gt;의 진행되었습니다. &lt;code&gt;Bugfix and Chill&lt;/code&gt;이란 제목으로 여러가지 버그성 이슈를 살펴봅니다.&lt;/p&gt;
+&lt;p&gt;이번에도 흥미로운 부분을 정리해 안내드리며, 내일 새벽 4시에는 &lt;code&gt;streaming internal query engine&lt;/code&gt;에 관한 라이브 방송이 &lt;a href=&#34;https://mobile.twitter.com/JordanALewis/status/1261143648932179970&#34;&gt;계획&lt;/a&gt;되어 있으니 많은 관심 부탁드립니다.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -92,7 +109,8 @@ I write code on github.</description>
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/cockroachdb/</guid>
-      <description>(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: CockroachDB is learning the secret technique LISTEN/NOTIFY
+      <description>(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: Bugfix and Chill(버그를 수정하자!)
+(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: CockroachDB is learning the secret technique LISTEN/NOTIFY
 피터 매티스와의 인터뷰 - Software Engineering Daily
 스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB) 소개</description>
     </item>
