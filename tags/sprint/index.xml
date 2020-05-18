@@ -34,13 +34,14 @@
     </item>
     
     <item>
-      <title>스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB) 소개</title>
+      <title>스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB)</title>
       <link>https://marsettler.com/sprintseoul-cockroachdb/</link>
       <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/sprintseoul-cockroachdb/</guid>
-      <description>&lt;p&gt;안녕하세요.&lt;/p&gt;
-&lt;p&gt;스프린트서울을 참가자분들을 위한 카크로치디비(CockroachDB) 소개입니다.&lt;/p&gt;</description>
+      <description>스프린트에 참가하는 이유 왜 스프린트에 참가하시나요? 참가할 때마다 여러가지 이유를 생각해보지만 정답이 있는 문제는 아닙니다. 저는 처음 스프린트에 참가하며 다음과 같은 동기를 가지고 있었습니다.
+ Go 언어 개발능력을 향상시키고 싶었습니다. 가까운 미래에 애플리케이션 개발을 위해 단단하고 확장가능한 데이터베이스를 사용하고 싶었습니다.  아직 목표를 완전히 이룬 것은 아니지만 스프린트서울에 처음 참가한 2019년 6월보다는 한 걸음 나아가 있습니다.
+당신에게는 어떤 목표가 있나요? 저보다 더 멋진 목표와 동기가 있을 것으로 기대됩니다. 댓글로 저에게도 알려주십시오!</description>
     </item>
     
     <item>
