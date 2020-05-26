@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/cockroachdb-column-families/">
+<meta property="og:title" content="카크로치디비의 컬럼 패밀리" />
+<meta property="og:description" content="카크로치디비의 컬럼 패밀리에 대해 소개합니다.
+실제 스토리지 레이어에 어떻게 데이터가 기록되는지에 관심이 있거나,
+더 효율적인 테이블 설계를 하고 싶은 분에게 도움이 되는 내용입니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/cockroachdb-column-families/" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="카크로치디비의 컬럼 패밀리"/>
+<meta name="twitter:description" content="카크로치디비의 컬럼 패밀리에 대해 소개합니다.
+실제 스토리지 레이어에 어떻게 데이터가 기록되는지에 관심이 있거나,
+더 효율적인 테이블 설계를 하고 싶은 분에게 도움이 되는 내용입니다."/>
+
+
+<meta itemprop="name" content="카크로치디비의 컬럼 패밀리">
+<meta itemprop="description" content="카크로치디비의 컬럼 패밀리에 대해 소개합니다.
+실제 스토리지 레이어에 어떻게 데이터가 기록되는지에 관심이 있거나,
+더 효율적인 테이블 설계를 하고 싶은 분에게 도움이 되는 내용입니다.">
+
+<meta itemprop="wordCount" content="718">
+
+
+
+<meta itemprop="keywords" content="cockroachdb," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+
+<title>
+
+
+     카크로치디비의 컬럼 패밀리 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+    <a class="nav-item" href="/wiki/"><div class="nav-item-title">Wiki</div></a>
+    
+    <a class="nav-item" href="/about-me/"><div class="nav-item-title">About Me</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> 카크로치디비의 컬럼 패밀리 </h1>
+    <div class="content"> <p>카크로치디비의 컬럼 패밀리에 대해 소개합니다.
+실제 스토리지 레이어에 어떻게 데이터가 기록되는지에 관심이 있거나,
+더 효율적인 테이블 설계를 하고 싶은 분에게 도움이 되는 내용입니다.</p>
+<h3 id="-">컬럼 패밀리</h3>
+<p>컬럼 패밀리는 키밸류 저장소에 단일 키로 저장되는 컬럼 그룹입니다. 다시 말하면 같은 컬럼 패밀리에
+있는 데이터는 저장될 때 키밸류 저장소의 한 키에 같이 저장됩니다.</p>
+<p>기본적으로 테이블의 모든 컬럼은 하나의 컬럼 패밀리로 저장되며, 이러한 동작은 대부분의 경우에
+효율적입니다. 하지만 자주 변경되는 컬럼과 거의 변경되지 않는 컬럼이 함께 있다면, 거의 업데이트되지
+않는 컬럼을 불필요하게 다시 쓰는 문제가 있습니다. 특히 거의 업데이트되지 않는 컬럼이 매우 크다면
+다른 컬럼 패밀리로 구분하는 것이 무척 효과적입니다.</p>
+<h3 id="--">조금 더 알아볼까요?</h3>
+<p>먼저 테스트용 데이터베이스와 테이블을 생성하겠습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">DATABASE</span> test_db;
+
+USE test_db;
+
+<span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> t1 (a INT <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>, b INT, <span style="color:#66d9ef">c</span> INT);
+
+<span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> t2 (a INT <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>, b INT, <span style="color:#66d9ef">c</span> INT, FAMILY(a), FAMILY(b), FAMILY(<span style="color:#66d9ef">c</span>));
+</code></pre></div><p>아래처럼 t1은 하나의 컬럼 패밀리를 가지고, t2는 3개의 컬럼 패밀리를 가집니다. 이는 <code>SHOW CREATE t*</code>의
+결과 중 <code>FAMILY</code> 항목을 통해 확일할 수 있습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SHOW</span> <span style="color:#66d9ef">CREATE</span> t1;
+
+  <span style="color:#66d9ef">table_name</span> <span style="color:#f92672">|</span>               create_statement
+<span style="color:#75715e">-------------+------------------------------------------------
+</span><span style="color:#75715e"></span>  t1         <span style="color:#f92672">|</span> <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> t1 (
+             <span style="color:#f92672">|</span>     a INT8 <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+             <span style="color:#f92672">|</span>     b INT8 <span style="color:#66d9ef">NULL</span>,
+             <span style="color:#f92672">|</span>     <span style="color:#66d9ef">c</span> INT8 <span style="color:#66d9ef">NULL</span>,
+             <span style="color:#f92672">|</span>     <span style="color:#66d9ef">CONSTRAINT</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">primary</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> (a <span style="color:#66d9ef">ASC</span>),
+             <span style="color:#f92672">|</span>     FAMILY <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">primary</span><span style="color:#e6db74">&#34;</span> (a, b, <span style="color:#66d9ef">c</span>)
+             <span style="color:#f92672">|</span> )
+
+<span style="color:#66d9ef">SHOW</span> <span style="color:#66d9ef">CREATE</span> t2;
+
+  <span style="color:#66d9ef">table_name</span> <span style="color:#f92672">|</span>               create_statement
+<span style="color:#75715e">-------------+------------------------------------------------
+</span><span style="color:#75715e"></span>  t2         <span style="color:#f92672">|</span> <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> t2 (
+             <span style="color:#f92672">|</span>     a INT8 <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">NULL</span>,
+             <span style="color:#f92672">|</span>     b INT8 <span style="color:#66d9ef">NULL</span>,
+             <span style="color:#f92672">|</span>     <span style="color:#66d9ef">c</span> INT8 <span style="color:#66d9ef">NULL</span>,
+             <span style="color:#f92672">|</span>     <span style="color:#66d9ef">CONSTRAINT</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">primary</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span> (a <span style="color:#66d9ef">ASC</span>),
+             <span style="color:#f92672">|</span>     FAMILY fam_0_a (a),
+             <span style="color:#f92672">|</span>     FAMILY fam_1_b (b),
+             <span style="color:#f92672">|</span>     FAMILY fam_2_c (<span style="color:#66d9ef">c</span>)
+             <span style="color:#f92672">|</span> )
+</code></pre></div><p>더 진행하기 전에 카크로치디비의 멋진 디버깅 기능을 소개합니다. <code>\set auto_trace=on,kv</code> 명령어를
+사용하면 스토리지 레이어의 키밸류 저장소에 어떤 데이터가 저장되는지 알 수 있습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#66d9ef">set</span> auto_trace<span style="color:#f92672">=</span><span style="color:#66d9ef">on</span>,kv
+</code></pre></div><p>이어서 데이터를 추가해 봅시다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> t1 <span style="color:#66d9ef">VALUES</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>);
+<span style="color:#66d9ef">INSERT</span> <span style="color:#ae81ff">1</span>
+
+Time: <span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">023062</span>ms
+
+             <span style="color:#66d9ef">timestamp</span>             <span style="color:#f92672">|</span>       age       <span style="color:#f92672">|</span>                      message                       <span style="color:#f92672">|</span>                            tag                             <span style="color:#f92672">|</span> <span style="color:#66d9ef">location</span> <span style="color:#f92672">|</span>    <span style="color:#66d9ef">operation</span>     <span style="color:#f92672">|</span> span
+<span style="color:#75715e">-----------------------------------+-----------------+----------------------------------------------------+------------------------------------------------------------+----------+------------------+-------
+</span><span style="color:#75715e"></span>  <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">26</span> <span style="color:#ae81ff">12</span>:<span style="color:#ae81ff">56</span>:<span style="color:#ae81ff">28</span>.<span style="color:#ae81ff">282616</span><span style="color:#f92672">+</span><span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>.<span style="color:#ae81ff">000366</span> <span style="color:#f92672">|</span> CPut <span style="color:#f92672">/</span><span style="color:#66d9ef">Table</span><span style="color:#f92672">/</span><span style="color:#ae81ff">60</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">/</span>TUPLE<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">2</span>:Int<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">3</span>:Int<span style="color:#f92672">/</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">|</span> [n1,client<span style="color:#f92672">=</span><span style="color:#ae81ff">127</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">59970</span>,hostssl,<span style="color:#66d9ef">user</span><span style="color:#f92672">=</span>root]              <span style="color:#f92672">|</span>          <span style="color:#f92672">|</span> flow             <span style="color:#f92672">|</span>    <span style="color:#ae81ff">6</span>
+  <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">26</span> <span style="color:#ae81ff">12</span>:<span style="color:#ae81ff">56</span>:<span style="color:#ae81ff">28</span>.<span style="color:#ae81ff">282663</span><span style="color:#f92672">+</span><span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>.<span style="color:#ae81ff">000413</span> <span style="color:#f92672">|</span> querying <span style="color:#66d9ef">next</span> range <span style="color:#66d9ef">at</span> <span style="color:#f92672">/</span><span style="color:#66d9ef">Table</span><span style="color:#f92672">/</span><span style="color:#ae81ff">60</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">0</span>             <span style="color:#f92672">|</span> [n1,client<span style="color:#f92672">=</span><span style="color:#ae81ff">127</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">59970</span>,hostssl,<span style="color:#66d9ef">user</span><span style="color:#f92672">=</span>root,txn<span style="color:#f92672">=</span><span style="color:#ae81ff">95</span>d43440] <span style="color:#f92672">|</span>          <span style="color:#f92672">|</span> dist sender send <span style="color:#f92672">|</span>    <span style="color:#ae81ff">8</span>
+  <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">26</span> <span style="color:#ae81ff">12</span>:<span style="color:#ae81ff">56</span>:<span style="color:#ae81ff">28</span>.<span style="color:#ae81ff">282699</span><span style="color:#f92672">+</span><span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>.<span style="color:#ae81ff">000449</span> <span style="color:#f92672">|</span> r63: sending batch <span style="color:#ae81ff">1</span> CPut, <span style="color:#ae81ff">1</span> EndTxn <span style="color:#66d9ef">to</span> (n1,s1):<span style="color:#ae81ff">1</span>   <span style="color:#f92672">|</span> [n1,client<span style="color:#f92672">=</span><span style="color:#ae81ff">127</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">59970</span>,hostssl,<span style="color:#66d9ef">user</span><span style="color:#f92672">=</span>root,txn<span style="color:#f92672">=</span><span style="color:#ae81ff">95</span>d43440] <span style="color:#f92672">|</span>          <span style="color:#f92672">|</span> dist sender send <span style="color:#f92672">|</span>    <span style="color:#ae81ff">8</span>
+  <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">26</span> <span style="color:#ae81ff">12</span>:<span style="color:#ae81ff">56</span>:<span style="color:#ae81ff">28</span>.<span style="color:#ae81ff">283225</span><span style="color:#f92672">+</span><span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>.<span style="color:#ae81ff">000975</span> <span style="color:#f92672">|</span> fast path completed                                <span style="color:#f92672">|</span> [n1,client<span style="color:#f92672">=</span><span style="color:#ae81ff">127</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">59970</span>,hostssl,<span style="color:#66d9ef">user</span><span style="color:#f92672">=</span>root]              <span style="color:#f92672">|</span>          <span style="color:#f92672">|</span> flow             <span style="color:#f92672">|</span>    <span style="color:#ae81ff">6</span>
+  <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">26</span> <span style="color:#ae81ff">12</span>:<span style="color:#ae81ff">56</span>:<span style="color:#ae81ff">28</span>.<span style="color:#ae81ff">283251</span><span style="color:#f92672">+</span><span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>.<span style="color:#ae81ff">001001</span> <span style="color:#f92672">|</span> <span style="color:#66d9ef">rows</span> affected: <span style="color:#ae81ff">1</span>                                   <span style="color:#f92672">|</span> [n1,client<span style="color:#f92672">=</span><span style="color:#ae81ff">127</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">59970</span>,hostssl,<span style="color:#66d9ef">user</span><span style="color:#f92672">=</span>root]              <span style="color:#f92672">|</span>          <span style="color:#f92672">|</span> <span style="color:#66d9ef">exec</span> stmt        <span style="color:#f92672">|</span>    <span style="color:#ae81ff">4</span>
+(<span style="color:#ae81ff">5</span> <span style="color:#66d9ef">rows</span>)
+
+Time: <span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">663529</span>ms
+</code></pre></div><p>내용이 많지만 우리가 집중해야 할 부분은 아래 부분입니다. 컬럼 패밀리가 하나인 경우에 로우를 추가했을
+때에는 하나의 키에 모든 컬럼의 내용이 기록됩니다.</p>
+<p>(아래 결과는 아이디 60인 테이블의 1번 키의 각 컬럼에 2와 3이 기록되었음을 의미합니다.)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql">CPut <span style="color:#f92672">/</span><span style="color:#66d9ef">Table</span><span style="color:#f92672">/</span><span style="color:#ae81ff">60</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">/</span>TUPLE<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">2</span>:Int<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">3</span>:Int<span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>
+</code></pre></div><p>이어서 여러 컬럼 패밀리를 가진 테이블에 데이터를 추가해봅시다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> t2 <span style="color:#66d9ef">VALUES</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>);
+<span style="color:#66d9ef">INSERT</span> <span style="color:#ae81ff">1</span>
+
+Time: <span style="color:#ae81ff">2</span>.<span style="color:#ae81ff">42107</span>ms
+
+             <span style="color:#66d9ef">timestamp</span>             <span style="color:#f92672">|</span>       age       <span style="color:#f92672">|</span>                     message                      <span style="color:#f92672">|</span>                            tag                             <span style="color:#f92672">|</span> <span style="color:#66d9ef">location</span> <span style="color:#f92672">|</span>    <span style="color:#66d9ef">operation</span>     <span style="color:#f92672">|</span> span
+<span style="color:#75715e">-----------------------------------+-----------------+--------------------------------------------------+------------------------------------------------------------+----------+------------------+-------
+</span><span style="color:#75715e"></span>  <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">26</span> <span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">02</span>:<span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">249186</span><span style="color:#f92672">+</span><span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>.<span style="color:#ae81ff">001849</span> <span style="color:#f92672">|</span> CPut <span style="color:#f92672">/</span><span style="color:#66d9ef">Table</span><span style="color:#f92672">/</span><span style="color:#ae81ff">61</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">/</span>TUPLE<span style="color:#f92672">/</span>                  <span style="color:#f92672">|</span> [n1,client<span style="color:#f92672">=</span><span style="color:#ae81ff">127</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">59970</span>,hostssl,<span style="color:#66d9ef">user</span><span style="color:#f92672">=</span>root]              <span style="color:#f92672">|</span>          <span style="color:#f92672">|</span> flow             <span style="color:#f92672">|</span>    <span style="color:#ae81ff">6</span>
+  <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">26</span> <span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">02</span>:<span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">249198</span><span style="color:#f92672">+</span><span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>.<span style="color:#ae81ff">00186</span>  <span style="color:#f92672">|</span> CPut <span style="color:#f92672">/</span><span style="color:#66d9ef">Table</span><span style="color:#f92672">/</span><span style="color:#ae81ff">61</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">/</span>INT<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>                 <span style="color:#f92672">|</span> [n1,client<span style="color:#f92672">=</span><span style="color:#ae81ff">127</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">59970</span>,hostssl,<span style="color:#66d9ef">user</span><span style="color:#f92672">=</span>root]              <span style="color:#f92672">|</span>          <span style="color:#f92672">|</span> flow             <span style="color:#f92672">|</span>    <span style="color:#ae81ff">6</span>
+  <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">26</span> <span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">02</span>:<span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">249204</span><span style="color:#f92672">+</span><span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>.<span style="color:#ae81ff">001866</span> <span style="color:#f92672">|</span> CPut <span style="color:#f92672">/</span><span style="color:#66d9ef">Table</span><span style="color:#f92672">/</span><span style="color:#ae81ff">61</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">/</span>INT<span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>                 <span style="color:#f92672">|</span> [n1,client<span style="color:#f92672">=</span><span style="color:#ae81ff">127</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">59970</span>,hostssl,<span style="color:#66d9ef">user</span><span style="color:#f92672">=</span>root]              <span style="color:#f92672">|</span>          <span style="color:#f92672">|</span> flow             <span style="color:#f92672">|</span>    <span style="color:#ae81ff">6</span>
+  <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">26</span> <span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">02</span>:<span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">249231</span><span style="color:#f92672">+</span><span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>.<span style="color:#ae81ff">001893</span> <span style="color:#f92672">|</span> querying <span style="color:#66d9ef">next</span> range <span style="color:#66d9ef">at</span> <span style="color:#f92672">/</span><span style="color:#66d9ef">Table</span><span style="color:#f92672">/</span><span style="color:#ae81ff">61</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">0</span>           <span style="color:#f92672">|</span> [n1,client<span style="color:#f92672">=</span><span style="color:#ae81ff">127</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">59970</span>,hostssl,<span style="color:#66d9ef">user</span><span style="color:#f92672">=</span>root,txn<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>b8bd340] <span style="color:#f92672">|</span>          <span style="color:#f92672">|</span> dist sender send <span style="color:#f92672">|</span>    <span style="color:#ae81ff">8</span>
+  <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">26</span> <span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">02</span>:<span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">249253</span><span style="color:#f92672">+</span><span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>.<span style="color:#ae81ff">001915</span> <span style="color:#f92672">|</span> r64: sending batch <span style="color:#ae81ff">3</span> CPut, <span style="color:#ae81ff">1</span> EndTxn <span style="color:#66d9ef">to</span> (n1,s1):<span style="color:#ae81ff">1</span> <span style="color:#f92672">|</span> [n1,client<span style="color:#f92672">=</span><span style="color:#ae81ff">127</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">59970</span>,hostssl,<span style="color:#66d9ef">user</span><span style="color:#f92672">=</span>root,txn<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>b8bd340] <span style="color:#f92672">|</span>          <span style="color:#f92672">|</span> dist sender send <span style="color:#f92672">|</span>    <span style="color:#ae81ff">8</span>
+  <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">26</span> <span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">02</span>:<span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">249673</span><span style="color:#f92672">+</span><span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span> <span style="color:#f92672">|</span> <span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>.<span style="color:#ae81ff">002336</span> <span style="color:#f92672">|</span> fast path completed                              <span style="color:#f92672">|</span> [n1,client<span style="color:#f92672">=</span><span style="color:#ae81ff">127</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">59970</span>,hostssl,<span style="color:#66d9ef">user</span><span style="color:#f92672">=</span>root]              <span style="color:#f92672">|</span>          <span style="color:#f92672">|</span> flow             <span style="color:#f92672">|</span>    <span style="color:#ae81ff">6</span>
+  <span style="color:#ae81ff">2020</span><span style="color:#f92672">-</span><span style="color:#ae81ff">05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">26</span> <span style="color:#ae81ff">13</span>:<span style="color:#ae81ff">02</span>:<span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">24971</span><span style="color:#f92672">+</span><span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>  <span style="color:#f92672">|</span> <span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>:<span style="color:#ae81ff">00</span>.<span style="color:#ae81ff">002372</span> <span style="color:#f92672">|</span> <span style="color:#66d9ef">rows</span> affected: <span style="color:#ae81ff">1</span>                                 <span style="color:#f92672">|</span> [n1,client<span style="color:#f92672">=</span><span style="color:#ae81ff">127</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">59970</span>,hostssl,<span style="color:#66d9ef">user</span><span style="color:#f92672">=</span>root]              <span style="color:#f92672">|</span>          <span style="color:#f92672">|</span> <span style="color:#66d9ef">exec</span> stmt        <span style="color:#f92672">|</span>    <span style="color:#ae81ff">4</span>
+(<span style="color:#ae81ff">7</span> <span style="color:#66d9ef">rows</span>)
+
+Time: <span style="color:#ae81ff">2</span>.<span style="color:#ae81ff">040017</span>ms
+</code></pre></div><p>이번에는 아래 내용을 확인해 주십시오. 이전과는 달리 3개의 키에 나누어져 각 컬럼의 값이 기록되었습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql">CPut <span style="color:#f92672">/</span><span style="color:#66d9ef">Table</span><span style="color:#f92672">/</span><span style="color:#ae81ff">61</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">/</span>TUPLE<span style="color:#f92672">/</span>
+CPut <span style="color:#f92672">/</span><span style="color:#66d9ef">Table</span><span style="color:#f92672">/</span><span style="color:#ae81ff">61</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">/</span>INT<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
+CPut <span style="color:#f92672">/</span><span style="color:#66d9ef">Table</span><span style="color:#f92672">/</span><span style="color:#ae81ff">61</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">/</span>INT<span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>
+</code></pre></div><p>이어서 업데이트도 해 볼까요? 각각의 결과는 아래와 같습니다.
+(이번에는 결과의 중요한 부분만 간추렸습니다.)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">UPDATE</span> t1 <span style="color:#66d9ef">SET</span> <span style="color:#66d9ef">C</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span> <span style="color:#66d9ef">WHERE</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+
+Put <span style="color:#f92672">/</span><span style="color:#66d9ef">Table</span><span style="color:#f92672">/</span><span style="color:#ae81ff">60</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">/</span>TUPLE<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">2</span>:Int<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">3</span>:Int<span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>
+
+<span style="color:#66d9ef">UPDATE</span> t2 <span style="color:#66d9ef">SET</span> <span style="color:#66d9ef">C</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span> <span style="color:#66d9ef">WHERE</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+
+Put <span style="color:#f92672">/</span><span style="color:#66d9ef">Table</span><span style="color:#f92672">/</span><span style="color:#ae81ff">61</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">/</span>INT<span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>
+</code></pre></div><p>차이점이 보이시나요? <code>t1</code>은 로우가 가진 모든 컬럼의 데이터가 업데이트되었고, <code>t2</code>는
+변경된 컬럼의 데이터만 업데이트 되었습니다.</p>
+<h3 id="--1">왜 이것이 중요한가요?</h3>
+<p>카크로치디비는 테이블을 생성할 때 기본적으로 모는 컬럼을 하나의 컬럼 패밀리로 묶습니다. 대부분의
+경우 이는 효과적이지만 만약 여러분의 데이터가 일부 컬럼만을 자주 변경시키거나, 거의 변경되지 않는
+매우 큰 컬럼이 있다면 컬럼 패밀리를 나누는 것은 성능향상에 큰 도움이 될 것입니다!</p>
+<h3 id="--2">더 알아보고 싶다면</h3>
+<p>더 알아보고 싶다면 <a href="https://www.cockroachlabs.com/docs/stable/column-families.html">공식문서</a>나
+<a href="https://youtu.be/BqkG-1mKAXw">조단의 영상강의</a>를 확인해보십시오.</p>
+<h3 id="heading">감사합니다.</h3> </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date"> 0001-01-01 </div>
+    
+  </div>
+</footer>
+
+<script src="https://utteranc.es/client.js"
+        repo="hueypark/wiki"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

@@ -57,7 +57,8 @@
       <description>(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: Bugfix and Chill(버그를 수정하자!)
 (Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: CockroachDB is learning the secret technique LISTEN/NOTIFY
 피터 매티스와의 인터뷰 - Software Engineering Daily
-스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB)</description>
+스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB)
+카크로치디비의 컬럼 패밀리</description>
     </item>
     
     <item>
@@ -354,6 +355,17 @@
       
       <guid>https://marsettler.com/posts/2018-10-15-cockroachdb-blog-hello-world/</guid>
       <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/hello-world/&#34;&gt;https://www.cockroachlabs.com/blog/hello-world/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>카크로치디비의 컬럼 패밀리</title>
+      <link>https://marsettler.com/cockroachdb-column-families/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/cockroachdb-column-families/</guid>
+      <description>&lt;p&gt;카크로치디비의 컬럼 패밀리에 대해 소개합니다.
+실제 스토리지 레이어에 어떻게 데이터가 기록되는지에 관심이 있거나,
+더 효율적인 테이블 설계를 하고 싶은 분에게 도움이 되는 내용입니다.&lt;/p&gt;</description>
     </item>
     
   </channel>
