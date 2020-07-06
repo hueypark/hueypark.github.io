@@ -12,31 +12,6 @@
     
     
     <item>
-      <title>Wiki</title>
-      <link>https://marsettler.com/wiki/</link>
-      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/wiki/</guid>
-      <description>C++
-CockroachDB
-Go
-해결하고 싶은 문제들
-Remote work(원격근무)
-How to be successful(성공하는 방법)
-Interior(인테리어)</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://marsettler.com/about-me/</link>
-      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/about-me/</guid>
-      <description>I am a software engineer living in Seoul, Korea.
-I write code on github.</description>
-    </item>
-    
-    <item>
       <title>(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: Bugfix and Chill(버그를 수정하자!)</title>
       <link>https://marsettler.com/cockroachdb-livestream-bugfix-and-chill/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
@@ -167,6 +142,31 @@ Go module에서 GitHub private repository 사용</description>
       <guid>https://marsettler.com/using-go-module-with-github-private-repository/</guid>
       <description>Go module에서 GitHub private 저장소를 사용하는 방법입니다.
  git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&amp;#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&amp;#34;.insteadOf &amp;#34;https://github.com&amp;#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&amp;#34;github.com/hueypark/asset&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>Wiki</title>
+      <link>https://marsettler.com/wiki/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/wiki/</guid>
+      <description>C++
+CockroachDB
+Go
+해결하고 싶은 문제들
+Remote work(원격근무)
+How to be successful(성공하는 방법)
+Interior(인테리어)</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://marsettler.com/about-me/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/about-me/</guid>
+      <description>I am a software engineer living in Seoul, Korea.
+I write code on github.</description>
     </item>
     
     <item>
