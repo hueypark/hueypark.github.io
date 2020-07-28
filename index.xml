@@ -17,7 +17,7 @@
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/cockroachdb-livestream-bugfix-and-chill/</guid>
-      <description>&lt;iframe width=&#34;893&#34; height=&#34;502&#34; src=&#34;https://www.youtube.com/embed/nFmDJP-fNRQ&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+      <description>&lt;iframe height=&#34;400&#34; width=&#34;100%&#34; src=&#34;https://www.youtube.com/embed/nFmDJP-fNRQ&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;이번 주에도 &lt;a href=&#34;https://mobile.twitter.com/JordanALewis&#34;&gt;@JordanALewis&lt;/a&gt;의 진행되었습니다. &lt;code&gt;Bugfix and Chill&lt;/code&gt;이란 제목으로 여러가지 버그성 이슈를 살펴봅니다.&lt;/p&gt;
 &lt;p&gt;이번에도 흥미로운 부분을 정리해 안내드리며, 내일 새벽 4시에는 &lt;code&gt;streaming internal query engine&lt;/code&gt;에 관한 라이브 방송이 &lt;a href=&#34;https://mobile.twitter.com/JordanALewis/status/1261143648932179970&#34;&gt;계획&lt;/a&gt;되어 있으니 많은 관심 부탁드립니다.&lt;/p&gt;</description>
@@ -38,7 +38,7 @@
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/cockroachdb-livestream-issue-41522/</guid>
-      <description>&lt;iframe width=&#34;893&#34; height=&#34;502&#34; src=&#34;https://www.youtube.com/embed/r0SBgOePc6I&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+      <description>&lt;iframe height=&#34;400&#34; width=&#34;100%&#34; src=&#34;https://www.youtube.com/embed/r0SBgOePc6I&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://mobile.twitter.com/JordanALewis&#34;&gt;@JordanALewis&lt;/a&gt;는 매 주 토요일 새벽
 4시에 카크로치디비 관련 라이브스트림을 진행하고 있습니다. 이번에는 PostgreSQL의 LISTEN/NOTIFY를
