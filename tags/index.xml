@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>network</title>
+      <link>https://marsettler.com/tags/network/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tcp</title>
+      <link>https://marsettler.com/tags/tcp/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/tcp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>cockroachdb</title>

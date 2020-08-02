@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/network/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tcp/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/tcp/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/network/</loc>
+    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/cockroachdb-livestream-bugfix-and-chill/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
   </url>
@@ -19,16 +49,6 @@
   
   <url>
     <loc>https://marsettler.com/tags/livestream/</loc>
-    <lastmod>2020-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2020-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
   </url>
   

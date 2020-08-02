@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tcp on Marsettler</title>
+    <link>https://marsettler.com/tags/tcp/</link>
+    <description>Recent content in tcp on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/tcp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TCP</title>
+      <link>https://marsettler.com/tcp/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tcp/</guid>
+      <description>전송 제어 프로토콜(Transmission Control Protocol)은 인터넷 프로토콜 스위트(IP)의 핵심 프로토콜 중 하나로, IP와 함께 TCP/IP라는 명칭으로도 널리 불린다.
+읽어볼 만한 글 TCP/IP 네트워크 스택 이해하기</description>
+    </item>
+    
+  </channel>
+</rss>

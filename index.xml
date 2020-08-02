@@ -6,10 +6,29 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TCP</title>
+      <link>https://marsettler.com/tcp/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tcp/</guid>
+      <description>전송 제어 프로토콜(Transmission Control Protocol)은 인터넷 프로토콜 스위트(IP)의 핵심 프로토콜 중 하나로, IP와 함께 TCP/IP라는 명칭으로도 널리 불린다.
+읽어볼 만한 글 TCP/IP 네트워크 스택 이해하기</description>
+    </item>
+    
+    <item>
+      <title>네트워크</title>
+      <link>https://marsettler.com/network/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/network/</guid>
+      <description>TCP</description>
+    </item>
     
     <item>
       <title>(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: Bugfix and Chill(버그를 수정하자!)</title>
@@ -146,7 +165,8 @@ Go
 해결하고 싶은 문제들
 Remote work(원격근무)
 How to be successful(성공하는 방법)
-Interior(인테리어)</description>
+Interior(인테리어)
+Network(네트워크)</description>
     </item>
     
     <item>
