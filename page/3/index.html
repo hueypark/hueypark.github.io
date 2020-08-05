@@ -110,6 +110,79 @@ if (!doNotTrack) {
     <article class="post-preview">
 
   <header>
+    <h2 class="title"> <a href='https://marsettler.com/go-headless-test-with-xvfb/'> xvfb를 이용한 Go headless 테스트</a> </h2>
+    <div class="meta">
+      <div class="date">
+      2 Apr, 2020 - 1 minutes
+      </div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    Go에서 GLFW 등을 이용해 그래픽스 관련 작업을 할 때에도 자동화 테스트 구성이 가능합니다. 하지만 GitHub Actions과 같이 디스플레이가 없는 환경에서는 의존성을 가지고 있다는 이유만으로 그래픽스 관련 테스트가 실패합니다.
+xvfb는 메뉴얼에서 virtual framebuffer X server for X Version 라고 소개되고 있으며, 서버 사이드 테스트를 위해 주로 사용됩니다.
+Ubuntu 기준으로 sudo apt install xvfb로 설치하고 xvfb-run에 이어서 테스트 명령어를 추가하여 테스트할 수 있습니다. 실제 GitHub Actions에 적용한 예시를 공유드립니다.
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go-headless-test-with-xvfb/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/using-go-module-with-github-private-repository/'> Go module에서 GitHub private 저장소 사용</a> </h2>
+    <div class="meta">
+      <div class="date">
+      29 Mar, 2020 - 1 minutes
+      </div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    Go module에서 GitHub private 저장소를 사용하는 방법입니다.
+ git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&#34;.insteadOf &#34;https://github.com&#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&#34;github.com/hueypark/asset&#34; 
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/using-go-module-with-github-private-repository/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
     <h2 class="title"> <a href='https://marsettler.com/remote-work/'> 원격근무</a> </h2>
     <div class="meta">
       <div class="date">
@@ -145,134 +218,25 @@ if (!doNotTrack) {
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/interior/'> 인테리어</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/'> Visual Studio Code debug speed up on Windows</a> </h2>
     <div class="meta">
       <div class="date">
-      10 Feb, 2020 - 5 minutes
+      14 May, 2018 - 1 minutes
       </div>
       
 <div class="tags">
   
-    
-      <div class="tag">
-        <a href="/tags/life">#life</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p>인테리어와 관련된 내용을 기록합니다.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/interior/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2020-02-01-diary-2020-02/'> 2020-02 일지</a> </h2>
-    <div class="meta">
-      <div class="date">
-      1 Feb, 2020 - 2 minutes
-      </div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/diary">#diary</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p>2020년 2월 일지입니다.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/posts/2020-02-01-diary-2020-02/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2019-11-13-guide-with-heart-cockroachdb-19dot2-release/'> (안내서) 카크로치디비(CockroachDB) 블로그 / 카크로치디비 19.2 출시</a> </h2>
-    <div class="meta">
-      <div class="date">
-      13 Nov, 2019 - 1 minutes
-      </div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/guide">#guide</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p>카크로치디비 19.2가 릴리즈되었습니다. 레이턴시, 신뢰성, 편의성 측면에서 상당한 개선을 이야기하고 있는데, 인상 깊은 내용 몇 가지를 안내해 드리겠습니다.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/posts/2019-11-13-guide-with-heart-cockroachdb-19dot2-release/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/'> sql: COMMENT ON INDEX 지원(CockroachDB issue #41316)</a> </h2>
-    <div class="meta">
-      <div class="date">
-      20 Oct, 2019 - 1 minutes
-      </div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
-      </div>
     
       <div class="tag">
         <a href="/tags/go">#go</a>
       </div>
     
       <div class="tag">
-        <a href="/tags/sprint">#sprint</a>
+        <a href="/tags/vscode">#vscode</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/windows">#windows</a>
       </div>
     
   
@@ -283,12 +247,12 @@ if (!doNotTrack) {
   </header>
 
   <div class="summary">
-    <p>이슈: <a href="https://github.com/cockroachdb/cockroach/issues/41316">sql: add support for COMMENT ON INDEX #41316</a></p>
-<p>sql: COMMENT ON INDEX 지원 작업을 했습니다. 이번에는 이슈 등록자가 저에게 먼저 연락을 하는 새로운 경험을 했습니다.</p>
+    <p>On <code>Visual Studio Code</code>, <code>Go</code> debugging is very slow because that always rebuild everything.</p>
+<p>If you set following settings on your <code>.vscode</code> folder <code>Visual Studio Code</code> will only build when changed.</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/' class="rmore">Read more</a>
   </div>
 
 
@@ -298,25 +262,112 @@ if (!doNotTrack) {
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2019-10-15-pebble-issue-284/'> 삭제될 WAL, MANIFEST, sstable을 보관하는 기능 제공 (Pebble issue #284)</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-05-27-mission-send-intelligence-to-mars/'> Mission: Sends intelligence to Mars</a> </h2>
     <div class="meta">
       <div class="date">
-      13 Oct, 2019 - 1 minutes
+      27 May, 2018 - 1 minutes
       </div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
+        <a href="/tags/mission">#mission</a>
       </div>
+    
+      <div class="tag">
+        <a href="/tags/intelligence">#intelligence</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/mars">#mars</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h3 id="why">Why?</h3>
+<p>It's reasonable mission for entire my life.</p>
+<ul>
+<li>Too much(space conquest)</li>
+<li>Too small(house buying without a mortgage)</li>
+</ul>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2018-05-27-mission-send-intelligence-to-mars/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-07-08-a-producers-guide-to-decisionmaking/'> (번역) 의사결정을 위한 게임 프로듀서의 도움말</a> </h2>
+    <div class="meta">
+      <div class="date">
+      8 Jul, 2018 - 8 minutes
+      </div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/decisionmaking">#decisionmaking</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/game">#game</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/producer">#producer</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>원문: <a href="https://gamasutra.com/view/news/320800/A_producers_guide_to_decisionmaking.php">https://gamasutra.com/view/news/320800/A_producers_guide_to_decisionmaking.php</a></p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2018-07-08-a-producers-guide-to-decisionmaking/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-10-02-scheduling-in-go-part1/'> (번역) Go 스케줄링 파트 1</a> </h2>
+    <div class="meta">
+      <div class="date">
+      2 Oct, 2018 - 10 minutes
+      </div>
+      
+<div class="tags">
+  
     
       <div class="tag">
         <a href="/tags/go">#go</a>
       </div>
     
       <div class="tag">
-        <a href="/tags/sprint">#sprint</a>
+        <a href="/tags/multithread">#multithread</a>
       </div>
     
   
@@ -327,13 +378,14 @@ if (!doNotTrack) {
   </header>
 
   <div class="summary">
-    <h2 id="heading">개요</h2>
-<p>이슈: <a href="https://github.com/cockroachdb/pebble/issues/284"><a href="https://github.com/cockroachdb/pebble/issues/284">https://github.com/cockroachdb/pebble/issues/284</a></a></p>
-<p>이번에는 Pebble에서 아무에게도 할당되지 않은 이슈를 선택해 수정했습니다.</p>
+    <p>원문: <a href="https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html">https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html</a></p>
+<hr>
+<h3 id="heading">프렐류드</h3>
+<p>Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 OS 스케줄러에 중점을 둡니다.</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/posts/2019-10-15-pebble-issue-284/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/posts/2018-10-02-scheduling-in-go-part1/' class="rmore">Read more</a>
   </div>
 
 
@@ -343,25 +395,21 @@ if (!doNotTrack) {
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/'> 초보다 정밀한 단위에 대한 `EXTRACT` 명령이 postgres와 다르게 동작함(CockroachDB issue #40683)</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-10-03-scheduling-in-go-part2/'> (번역) Go 스케줄링 파트 2</a> </h2>
     <div class="meta">
       <div class="date">
-      13 Oct, 2019 - 2 minutes
+      3 Oct, 2018 - 10 minutes
       </div>
       
 <div class="tags">
   
-    
-      <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
-      </div>
     
       <div class="tag">
         <a href="/tags/go">#go</a>
       </div>
     
       <div class="tag">
-        <a href="/tags/sprint">#sprint</a>
+        <a href="/tags/multithread">#multithread</a>
       </div>
     
   
@@ -372,12 +420,14 @@ if (!doNotTrack) {
   </header>
 
   <div class="summary">
-    <h2 id="heading">개요</h2>
-<p>이번에는 간단하게 해결할 수 있는 이슈를 수정했습니다. 이 정도의 이슈는 처음 스프린트에 참여하는 분도 해결할 수 있을 것으로 기대합니다.</p>
+    <p>원문: <a href="https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html">https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html</a></p>
+<hr>
+<h3 id="heading">프렐류드</h3>
+<p>Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 Go 스케줄러에 중점을 둡니다.</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/posts/2018-10-03-scheduling-in-go-part2/' class="rmore">Read more</a>
   </div>
 
 
@@ -387,68 +437,21 @@ if (!doNotTrack) {
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2019-09-01-huge-single-mmorpg-server/'> 거대한 단일 MMORPG 서버</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-10-13-go-work-stealing-scheduler/'> (번역) Go 작업훔치기 스케줄러</a> </h2>
     <div class="meta">
       <div class="date">
-      1 Sep, 2019 - 0 minutes
+      13 Oct, 2018 - 3 minutes
       </div>
       
 <div class="tags">
   
-    
-      <div class="tag">
-        <a href="/tags/mmorpg_server">#mmorpg_server</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/slide">#slide</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/posts/2019-09-01-huge-single-mmorpg-server/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2019-08-19-pebble-issue-222/'> db: SingleDelete 구현(Pebble issue #222)</a> </h2>
-    <div class="meta">
-      <div class="date">
-      19 Aug, 2019 - 4 minutes
-      </div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
-      </div>
     
       <div class="tag">
         <a href="/tags/go">#go</a>
       </div>
     
       <div class="tag">
-        <a href="/tags/pebble">#pebble</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/sprint">#sprint</a>
+        <a href="/tags/scheduler">#scheduler</a>
       </div>
     
   
@@ -459,12 +462,11 @@ if (!doNotTrack) {
   </header>
 
   <div class="summary">
-    <h2 id="heading">개요</h2>
-<p><a href="https://github.com/cockroachdb/pebble">Pebble</a>은 LevelDB/RocksDB에서 영감을 받은 카크로치디비용 키-밸류 저장소입니다. 현재(2019년 8월)는 개발 진행중인 상태이며, 2020년 카크로치디비 적용을 <a href="https://github.com/petermattis/pebble/issues/233">계획</a>하고 있습니다.</p>
+    <p>원문: <a href="https://rakyll.org/scheduler/">https://rakyll.org/scheduler/</a></p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/posts/2019-08-19-pebble-issue-222/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/posts/2018-10-13-go-work-stealing-scheduler/' class="rmore">Read more</a>
   </div>
 
 
@@ -474,10 +476,10 @@ if (!doNotTrack) {
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2019-08-18-sprint-on-pyconkr-2019-with-cockroachdb/'> 파이콘 한국 2019 스프린트 - 카크로치디비(CockroachDB)와 함께</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-10-15-cockroachdb-blog-hello-world/'> (번역) 카크로치디비(CockroachDB) 블로그 / Hello World</a> </h2>
     <div class="meta">
       <div class="date">
-      18 Aug, 2019 - 1 minutes
+      15 Oct, 2018 - 2 minutes
       </div>
       
 <div class="tags">
@@ -485,10 +487,6 @@ if (!doNotTrack) {
     
       <div class="tag">
         <a href="/tags/cockroachdb">#cockroachdb</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/sprint">#sprint</a>
       </div>
     
   
@@ -499,11 +497,11 @@ if (!doNotTrack) {
   </header>
 
   <div class="summary">
-    <p>파이콘 한국 2019 스프린트에 참가했습니다.</p>
+    <p>원문: <a href="https://www.cockroachlabs.com/blog/hello-world/">https://www.cockroachlabs.com/blog/hello-world/</a></p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/posts/2019-08-18-sprint-on-pyconkr-2019-with-cockroachdb/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/posts/2018-10-15-cockroachdb-blog-hello-world/' class="rmore">Read more</a>
   </div>
 
 

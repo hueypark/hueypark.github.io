@@ -9,23 +9,23 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
 <link rel="canonical" href="https://marsettler.com/std-shared-ptr-is-not-thread-safe/">
-<meta property="og:title" content="std::shared_ptr is not thread safe" />
-<meta property="og:description" content="I found that std::shared_ptr is not thread-safe. I leave some examples." />
+<meta property="og:title" content="std::shared_ptr 는 쓰레드 세이프하지 않음" />
+<meta property="og:description" content="std::shared_ptr 는 쓰레드 세이프하지 않습니다. 관련 예제와 볼만한 링크를 남깁니다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/std-shared-ptr-is-not-thread-safe/" />
 <meta property="article:published_time" content="2018-09-03T00:00:00+00:00" />
-<meta property="article:modified_time" content="2018-09-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-05T23:50:49+09:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="std::shared_ptr is not thread safe"/>
-<meta name="twitter:description" content="I found that std::shared_ptr is not thread-safe. I leave some examples."/>
+<meta name="twitter:title" content="std::shared_ptr 는 쓰레드 세이프하지 않음"/>
+<meta name="twitter:description" content="std::shared_ptr 는 쓰레드 세이프하지 않습니다. 관련 예제와 볼만한 링크를 남깁니다."/>
 
 
-<meta itemprop="name" content="std::shared_ptr is not thread safe">
-<meta itemprop="description" content="I found that std::shared_ptr is not thread-safe. I leave some examples.">
+<meta itemprop="name" content="std::shared_ptr 는 쓰레드 세이프하지 않음">
+<meta itemprop="description" content="std::shared_ptr 는 쓰레드 세이프하지 않습니다. 관련 예제와 볼만한 링크를 남깁니다.">
 <meta itemprop="datePublished" content="2018-09-03T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-09-03T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="144">
+<meta itemprop="dateModified" content="2020-08-05T23:50:49&#43;09:00" />
+<meta itemprop="wordCount" content="162">
 
 
 
@@ -55,7 +55,7 @@ if (!doNotTrack) {
 <title>
 
 
-     std::shared_ptr is not thread safe 
+     std::shared_ptr 는 쓰레드 세이프하지 않음 
 
 </title>
 
@@ -111,9 +111,9 @@ if (!doNotTrack) {
 
 
 <article class="post">
-    <h1 class="title"> std::shared_ptr is not thread safe </h1>
-    <div class="content"> <p>I found that std::shared_ptr is not thread-safe. I leave some examples.</p>
-<h3 id="access-resource-after-destruct">Access resource after destruct</h3>
+    <h1 class="title"> std::shared_ptr 는 쓰레드 세이프하지 않음 </h1>
+    <div class="content"> <p>std::shared_ptr 는 쓰레드 세이프하지 않습니다. 관련 예제와 볼만한 링크를 남깁니다.</p>
+<h3 id="-1-----">예제 1. 소멸자 호출 후 자원 접근</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
 </span><span style="color:#75715e"></span><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;memory&gt;</span><span style="color:#75715e">
 </span><span style="color:#75715e"></span><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;thread&gt;</span><span style="color:#75715e">
@@ -163,7 +163,7 @@ if (!doNotTrack) {
 	}
 }
 
-</code></pre></div><h3 id="undefined-behavior">Undefined behavior</h3>
+</code></pre></div><h3 id="-2-undefined-behavior">예제 2. Undefined behavior</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#</span><span style="color:#75715e">include</span> <span style="color:#75715e">&lt;thread&gt;</span><span style="color:#75715e">
 </span><span style="color:#75715e"></span>
 std<span style="color:#f92672">:</span><span style="color:#f92672">:</span>shared_ptr<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> g_ptr <span style="color:#f92672">=</span> <span style="color:#66d9ef">nullptr</span>;
@@ -189,11 +189,11 @@ std<span style="color:#f92672">:</span><span style="color:#f92672">:</span>share
 
 	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
 }
-</code></pre></div> </div>
+</code></pre></div><h3 id="-">볼만한 링크</h3>
+<p><a href="http://www.comrite.com/wp/c-why-need-atomic_store-atomic_load-on-shared_ptr-atomic-shared_ptr/">c++ why std::shared_ptr need atomic_store, atomic_load or why we need atomic shared_ptr</a></p> </div>
     <footer class="post-footer">
-
   <div class="post-footer-data">
-            
+    
 <div class="tags">
   
     
@@ -208,7 +208,7 @@ std<span style="color:#f92672">:</span><span style="color:#f92672">:</span>share
   
 </div>
 
-    <div class="date"> 2018-09-03 </div>
+    <div class="date">created: 2018-09-03 | updated: 2020-08-05</div>
     
   </div>
 </footer>

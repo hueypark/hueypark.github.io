@@ -21,12 +21,12 @@
     </item>
     
     <item>
-      <title>std::shared_ptr is not thread safe</title>
+      <title>std::shared_ptr 는 쓰레드 세이프하지 않음</title>
       <link>https://marsettler.com/std-shared-ptr-is-not-thread-safe/</link>
       <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/std-shared-ptr-is-not-thread-safe/</guid>
-      <description>&lt;p&gt;I found that std::shared_ptr is not thread-safe. I leave some examples.&lt;/p&gt;</description>
+      <description>&lt;p&gt;std::shared_ptr 는 쓰레드 세이프하지 않습니다. 관련 예제와 볼만한 링크를 남깁니다.&lt;/p&gt;</description>
     </item>
     
   </channel>
