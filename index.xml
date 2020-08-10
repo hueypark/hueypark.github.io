@@ -6,10 +6,28 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Write Ahead Logging</title>
+      <link>https://marsettler.com/write-ahead-logging/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/write-ahead-logging/</guid>
+      <description>&lt;p&gt;Write Ahead Logging(WAL)은 데이터베이스 시스템에서 ACID의 특성 가운데 원자성과 내구성을 제공하는 기술입니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>데이터베이스</title>
+      <link>https://marsettler.com/database/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/database/</guid>
+      <description>Write Ahead Logging</description>
+    </item>
     
     <item>
       <title>TCP</title>
@@ -160,6 +178,7 @@ Go module에서 GitHub private repository 사용</description>
       <guid>https://marsettler.com/wiki/</guid>
       <description>C++
 CockroachDB
+Database(데이터베이스)
 Go
 해결하고 싶은 문제들
 Remote work(원격근무)

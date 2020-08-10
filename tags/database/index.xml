@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>database on Marsettler</title>
+    <link>https://marsettler.com/tags/database/</link>
+    <description>Recent content in database on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Write Ahead Logging</title>
+      <link>https://marsettler.com/write-ahead-logging/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/write-ahead-logging/</guid>
+      <description>&lt;p&gt;Write Ahead Logging(WAL)은 데이터베이스 시스템에서 ACID의 특성 가운데 원자성과 내구성을 제공하는 기술입니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>데이터베이스</title>
+      <link>https://marsettler.com/database/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/database/</guid>
+      <description>Write Ahead Logging</description>
+    </item>
+    
+  </channel>
+</rss>
