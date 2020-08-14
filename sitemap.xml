@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://marsettler.com/tags/database/</loc>
-    <lastmod>2020-08-12T21:28:28+09:00</lastmod>
+    <loc>https://marsettler.com/tags/architecture/</loc>
+    <lastmod>2020-08-14T21:01:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/game/</loc>
+    <lastmod>2020-08-14T21:01:46+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/</loc>
-    <lastmod>2020-08-12T21:28:28+09:00</lastmod>
+    <lastmod>2020-08-14T21:01:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/mmorpg/</loc>
+    <lastmod>2020-08-14T21:01:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/server/</loc>
+    <lastmod>2020-08-14T21:01:46+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2020-08-14T21:01:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/game-server-architecture/</loc>
+    <lastmod>2020-08-14T21:01:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/database/</loc>
     <lastmod>2020-08-12T21:28:28+09:00</lastmod>
   </url>
   
@@ -139,7 +164,7 @@
   
   <url>
     <loc>https://marsettler.com/wiki/</loc>
-    <lastmod>2020-08-10T21:51:20+09:00</lastmod>
+    <lastmod>2020-08-14T20:59:05+09:00</lastmod>
   </url>
   
   <url>
@@ -238,18 +263,8 @@
   </url>
   
   <url>
-    <loc>https://marsettler.com/tags/mmorpg_server/</loc>
-    <lastmod>2020-02-23T09:51:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/slide/</loc>
-    <lastmod>2020-02-23T09:51:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/posts/2019-09-01-huge-single-mmorpg-server/</loc>
-    <lastmod>2020-02-23T09:51:00+09:00</lastmod>
+    <loc>https://marsettler.com/huge-single-mmorpg-server/</loc>
+    <lastmod>2020-08-14T21:01:46+09:00</lastmod>
   </url>
   
   <url>
@@ -304,6 +319,11 @@
   
   <url>
     <loc>https://marsettler.com/posts/2019-01-04-brief-history-high-availability/</loc>
+    <lastmod>2020-02-23T09:51:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/slide/</loc>
     <lastmod>2020-02-23T09:51:00+09:00</lastmod>
   </url>
   
@@ -429,11 +449,6 @@
   
   <url>
     <loc>https://marsettler.com/tags/decisionmaking/</loc>
-    <lastmod>2020-02-23T09:51:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/game/</loc>
     <lastmod>2020-02-23T09:51:00+09:00</lastmod>
   </url>
   

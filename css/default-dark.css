@@ -17,8 +17,13 @@ body {
 }
 
 a {
-  color: var(--main-text);
+  color: #77aa44;
 }
+
+a:visited {
+  color: #808080;
+}
+
 
 .__h_instagram.card {
   border: 1px solid #303030 !important;

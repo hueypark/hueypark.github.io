@@ -70,15 +70,6 @@
     </item>
     
     <item>
-      <title>거대한 단일 MMORPG 서버</title>
-      <link>https://marsettler.com/posts/2019-09-01-huge-single-mmorpg-server/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/posts/2019-09-01-huge-single-mmorpg-server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>db: SingleDelete 구현(Pebble issue #222)</title>
       <link>https://marsettler.com/posts/2019-08-19-pebble-issue-222/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>

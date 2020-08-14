@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>architecture</title>
+      <link>https://marsettler.com/tags/architecture/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game</title>
+      <link>https://marsettler.com/tags/game/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mmorpg</title>
+      <link>https://marsettler.com/tags/mmorpg/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/mmorpg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>server</title>
+      <link>https://marsettler.com/tags/server/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/server/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>database</title>
@@ -147,24 +183,6 @@
     </item>
     
     <item>
-      <title>mmorpg_server</title>
-      <link>https://marsettler.com/tags/mmorpg_server/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/mmorpg_server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>slide</title>
-      <link>https://marsettler.com/tags/slide/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/slide/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>pebble</title>
       <link>https://marsettler.com/tags/pebble/</link>
       <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
@@ -188,6 +206,15 @@
       <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/wsl2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slide</title>
+      <link>https://marsettler.com/tags/slide/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://marsettler.com/tags/slide/</guid>
       <description></description>
     </item>
     
@@ -224,15 +251,6 @@
       <pubDate>Sun, 08 Jul 2018 00:00:00 +0900</pubDate>
       
       <guid>https://marsettler.com/tags/decisionmaking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>game</title>
-      <link>https://marsettler.com/tags/game/</link>
-      <pubDate>Sun, 08 Jul 2018 00:00:00 +0900</pubDate>
-      
-      <guid>https://marsettler.com/tags/game/</guid>
       <description></description>
     </item>
     
