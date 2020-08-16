@@ -17,8 +17,22 @@
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/game-server-architecture/</guid>
-      <description>게임 서버 아키텍처에 관한 이야기를 합니다. 대부분의 내용은 MMORPG에 특화될 것 같습니다.
-거대한 단일 MMORPG 서버 2019년 9월에 스터디에서 발표한 거대한 단일 MMORPG 서버에 대한 이야기입니다.</description>
+      <description>&lt;p&gt;아직 작성중입니다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;heading&#34;&gt;들어가며&lt;/h2&gt;
+&lt;p&gt;게임 서버 아키텍처에 관한 이야기를 합니다. 대부분의 내용은 MMORPG에 특화되어 있습니다.&lt;/p&gt;
+&lt;h2 id=&#34;-&#34;&gt;게임 서버&lt;/h2&gt;
+&lt;p&gt;아주 간단한 게임 서버를 생각해봅시다. 아래처럼 클라이언트와 서버가 아래와 같이 연결되어 있습니다.&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34; style=&#34;text-align:center;&#34;&gt;
+  
+flowchart LR
+    클라이언트1 &lt;--&gt; 서버
+    클라이언트2 &lt;--&gt; 서버
+    클라이언트3 &lt;--&gt; 서버
+
+&lt;/div&gt;
+
+&lt;p&gt;이처럼 다수의 클라이언트들이 서버를 통해서 상호작용합니다. 지금은 서버가 처리해야 할 클라이언트도 많지 않고, 사용자의 데이터를 영구적으로 저장하는 것도 고려되지 않았는데 하나씩 더 살펴봅시다.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -334,9 +348,7 @@ I write code on github.</description>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/huge-single-mmorpg-server/</guid>
-      <description>거대한 단일 MMORPG 서버 marsettler.com
- 이야기할 내용  거대한 단일 MMORPG 서버 기획 고려사항 서버 고려사항과 해법 데이터베이스 고려사항과 해법 마무리하며   1. 거대한 단일 MMORPG 서버 는 정확히 무엇을 말하는 건가요?
- MMORPG를 먼저 정의해 봅시다 대규모 다중 사용자 온라인 롤플레잉 게임 World of Warcraft,EVE Online,듀랑고,검은사막,&amp;hellip; 엔지니어링 측면에서 MMORPG 서버 한 지역 내에서 X명의 유저가 상호작용X가 어느 정도이면 MMORPG 일까요?이 발표는 수백에서 수천명으로 가정합니다 그러면 거대한 단일 MMORPG 서버란?</description>
+      <description>&lt;p&gt;2019년 9월 21일에 &lt;a href=&#34;https://cafe.naver.com/devrookie/9621&#34;&gt;데브루키 521회&lt;/a&gt;에서 발표한 자료입니다.&lt;/p&gt;</description>
     </item>
     
     <item>
