@@ -19,20 +19,7 @@
       <guid>https://marsettler.com/game-server-architecture/</guid>
       <description>&lt;p&gt;아직 작성중입니다.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;heading&#34;&gt;들어가며&lt;/h2&gt;
-&lt;p&gt;게임 서버 아키텍처에 관한 이야기를 합니다. 대부분의 내용은 MMORPG에 특화되어 있습니다.&lt;/p&gt;
-&lt;h2 id=&#34;-&#34;&gt;게임 서버&lt;/h2&gt;
-&lt;p&gt;아주 간단한 게임 서버를 생각해봅시다. 아래처럼 클라이언트와 서버가 아래와 같이 연결되어 있습니다.&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34; style=&#34;text-align:center;&#34;&gt;
-  
-flowchart LR
-    클라이언트1 &lt;--&gt; 서버
-    클라이언트2 &lt;--&gt; 서버
-    클라이언트3 &lt;--&gt; 서버
-
-&lt;/div&gt;
-
-&lt;p&gt;이처럼 다수의 클라이언트들이 서버를 통해서 상호작용합니다. 지금은 서버가 처리해야 할 클라이언트도 많지 않고, 사용자의 데이터를 영구적으로 저장하는 것도 고려되지 않았는데 하나씩 더 살펴봅시다.&lt;/p&gt;</description>
+&lt;p&gt;게임 서버 아키텍처에 관한 이야기를 합니다. 대부분의 내용은 MMORPG에 특화되어 있습니다.&lt;/p&gt;</description>
     </item>
     
     <item>
