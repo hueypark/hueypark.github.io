@@ -6,24 +6,15 @@
     <description>Recent content in Tags on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>architecture</title>
-      <link>https://marsettler.com/tags/architecture/</link>
-      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/architecture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>game</title>
       <link>https://marsettler.com/tags/game/</link>
-      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/game/</guid>
       <description></description>
@@ -32,7 +23,7 @@
     <item>
       <title>mmorpg</title>
       <link>https://marsettler.com/tags/mmorpg/</link>
-      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/mmorpg/</guid>
       <description></description>
@@ -41,9 +32,27 @@
     <item>
       <title>server</title>
       <link>https://marsettler.com/tags/server/</link>
-      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>single server mmorpg</title>
+      <link>https://marsettler.com/tags/single-server-mmorpg/</link>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/single-server-mmorpg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>architecture</title>
+      <link>https://marsettler.com/tags/architecture/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/architecture/</guid>
       <description></description>
     </item>
     

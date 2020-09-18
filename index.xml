@@ -6,10 +6,23 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Single Server MMORPG</title>
+      <link>https://marsettler.com/single_server_mmorpg/</link>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/single_server_mmorpg/</guid>
+      <description>This post is the first of the Single Server MMORPG server series.
+Single Server MMORPG server uses one logically server instead of using multiple separate sharded servers.
+It has interesting challenges for software engineers. And unfortunately, there is too little public material compared to other distributed systems.
+Most of the content will have engineering tools and decision-making. As for the game design, I will only mention the minimum necessary.
+I hope this helps the game industry and developers.</description>
+    </item>
     
     <item>
       <title>게임 서버 아키텍처</title>
