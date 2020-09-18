@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://marsettler.com/tags/game/</loc>
-    <lastmod>2020-09-18T21:00:55+09:00</lastmod>
+    <loc>https://marsettler.com/leadership/</loc>
+    <lastmod>2020-09-19T07:05:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/leadership/</loc>
+    <lastmod>2020-09-19T07:05:15+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/</loc>
+    <lastmod>2020-09-19T07:05:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2020-09-19T07:05:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/game/</loc>
     <lastmod>2020-09-18T21:00:55+09:00</lastmod>
   </url>
   
@@ -29,11 +44,6 @@
   
   <url>
     <loc>https://marsettler.com/tags/single-server-mmorpg/</loc>
-    <lastmod>2020-09-18T21:00:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
     <lastmod>2020-09-18T21:00:55+09:00</lastmod>
   </url>
   
@@ -174,7 +184,7 @@
   
   <url>
     <loc>https://marsettler.com/wiki/</loc>
-    <lastmod>2020-08-14T20:59:05+09:00</lastmod>
+    <lastmod>2020-09-19T07:05:15+09:00</lastmod>
   </url>
   
   <url>

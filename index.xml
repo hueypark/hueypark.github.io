@@ -6,10 +6,21 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leadership</title>
+      <link>https://marsettler.com/leadership/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/leadership/</guid>
+      <description>공동목표를 위해 스스로 노력하도록 사람들에게 영향력을 행사하는 과정1
+  원소랑님 트위터&amp;#8617;
+   </description>
+    </item>
     
     <item>
       <title>Single Server MMORPG</title>
@@ -209,6 +220,7 @@ Go
 Remote work(원격근무)
 How to be successful(성공하는 방법)
 Interior(인테리어)
+Leadership(리더십)
 Network(네트워크)</description>
     </item>
     
