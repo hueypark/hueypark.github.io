@@ -12,16 +12,13 @@
     
     
     <item>
-      <title>Single Server MMORPG</title>
-      <link>https://marsettler.com/single_server_mmorpg/</link>
+      <title>Single Server MMORPG: Introduction</title>
+      <link>https://marsettler.com/single-server-mmorpg/introduction/</link>
       <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/single_server_mmorpg/</guid>
-      <description>This post is the first of the Single Server MMORPG server series.
-Single Server MMORPG server uses one logically server instead of using multiple separate sharded servers.
-It has interesting challenges for software engineers. And unfortunately, there is too little public material compared to other distributed systems.
-Most of the content will have engineering tools and decision-making. As for the game design, I will only mention the minimum necessary.
-I hope this helps the game industry and developers.</description>
+      <guid>https://marsettler.com/single-server-mmorpg/introduction/</guid>
+      <description>&lt;p&gt;This post is the first of the Single Server MMORPG server series.&lt;/p&gt;
+&lt;p&gt;Single Server MMORPG server uses one logically server instead of using multiple separate sharded servers.&lt;/p&gt;</description>
     </item>
     
     <item>

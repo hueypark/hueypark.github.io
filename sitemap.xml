@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://marsettler.com/tags/cockroachdb/</loc>
-    <lastmod>2020-09-20T14:10:26+09:00</lastmod>
+    <lastmod>2020-09-21T07:23:41+09:00</lastmod>
   </url>
   
   <url>
@@ -19,42 +19,52 @@
   
   <url>
     <loc>https://marsettler.com/</loc>
-    <lastmod>2020-09-20T14:10:26+09:00</lastmod>
+    <lastmod>2020-09-21T07:23:41+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/pebble/</loc>
+    <lastmod>2020-09-21T07:23:41+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2020-09-20T14:10:26+09:00</lastmod>
+    <lastmod>2020-09-21T07:23:41+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/cockroachdb-introducing-pebble/</loc>
-    <lastmod>2020-09-20T14:10:26+09:00</lastmod>
+    <lastmod>2020-09-21T07:23:41+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/tags/game/</loc>
-    <lastmod>2020-09-18T21:00:55+09:00</lastmod>
+    <lastmod>2020-09-20T21:48:48+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/tags/mmorpg/</loc>
-    <lastmod>2020-09-18T21:00:55+09:00</lastmod>
+    <lastmod>2020-09-20T21:48:48+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/tags/server/</loc>
-    <lastmod>2020-09-18T21:00:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/single_server_mmorpg/</loc>
-    <lastmod>2020-09-18T21:00:55+09:00</lastmod>
+    <lastmod>2020-09-20T21:48:48+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/tags/single-server-mmorpg/</loc>
-    <lastmod>2020-09-18T21:00:55+09:00</lastmod>
+    <lastmod>2020-09-20T21:48:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/single-server-mmorpg/introduction/</loc>
+    <lastmod>2020-09-20T21:48:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/single-server-mmorpg/</loc>
+    <lastmod>2020-09-20T21:48:48+09:00</lastmod>
   </url>
   
   <url>
@@ -189,7 +199,7 @@
   
   <url>
     <loc>https://marsettler.com/wiki/</loc>
-    <lastmod>2020-09-19T07:05:15+09:00</lastmod>
+    <lastmod>2020-09-20T21:37:18+09:00</lastmod>
   </url>
   
   <url>
@@ -294,11 +304,6 @@
   
   <url>
     <loc>https://marsettler.com/posts/2019-08-19-pebble-issue-222/</loc>
-    <lastmod>2020-02-23T09:51:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/pebble/</loc>
     <lastmod>2020-02-23T09:51:00+09:00</lastmod>
   </url>
   
