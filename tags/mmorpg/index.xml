@@ -6,10 +6,20 @@
     <description>Recent content in mmorpg on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/mmorpg/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Single Server MMORPG: Technology stacks</title>
+      <link>https://marsettler.com/single-server-mmorpg/technology-stacks/</link>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/single-server-mmorpg/technology-stacks/</guid>
+      <description>&lt;h2 id=&#34;technology-stacks&#34;&gt;Technology stacks&lt;/h2&gt;
+&lt;p&gt;This technology stack is not consistently enforced for all MMORPGs. However, it will be the basis for technical decisions, so that I will mention it.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Single Server MMORPG: What is single server MMORPG?</title>
