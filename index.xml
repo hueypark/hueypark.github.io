@@ -6,10 +6,21 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Raft Consensus Algorithm</title>
+      <link>https://marsettler.com/distributed-system/raft-consensus-algorithm/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/distributed-system/raft-consensus-algorithm/</guid>
+      <description>Raft Consensus Algorithm은 분산 환경에서 사용할 수 있는 합의 알고리즘입니다. 이를 사용해 분산 환경에서 모든 노드의 상태를 동일하게 유지가능합니다.
+자세한 설명은 The Raft Consensus Algorithm 에서 볼 수 있습니다.
+etcd 안에 훌륭한 Raft 라이브러리가 있습니다.</description>
+    </item>
     
     <item>
       <title>Single Server MMORPG: Technology stacks</title>
@@ -241,6 +252,7 @@ Go module에서 GitHub private repository 사용</description>
       <description>C++
 CockroachDB
 Database(데이터베이스)
+Distributed System(분산 시스템)
 Game Server Architecture(게임 서버 아키텍처)
 Go
 해결하고 싶은 문제들
