@@ -3,17 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/tags/game/</loc>
+    <lastmod>2020-10-13T20:01:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2020-10-13T20:01:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/mmorpg/</loc>
+    <lastmod>2020-10-13T20:01:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2020-10-13T20:01:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/the-game-i-want-to-make/</loc>
+    <lastmod>2020-10-13T20:01:32+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/tags/distributed-system/</loc>
     <lastmod>2020-09-29T19:34:10+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/distributed-system/</loc>
-    <lastmod>2020-09-29T19:34:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/</loc>
     <lastmod>2020-09-29T19:34:10+09:00</lastmod>
   </url>
   
@@ -25,21 +45,6 @@
   <url>
     <loc>https://marsettler.com/distributed-system/raft-consensus-algorithm/</loc>
     <lastmod>2020-09-29T19:34:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2020-09-29T19:34:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/game/</loc>
-    <lastmod>2020-09-22T21:01:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/mmorpg/</loc>
-    <lastmod>2020-09-22T21:01:17+09:00</lastmod>
   </url>
   
   <url>

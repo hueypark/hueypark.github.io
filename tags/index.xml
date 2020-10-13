@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>game</title>
+      <link>https://marsettler.com/tags/game/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mmorpg</title>
+      <link>https://marsettler.com/tags/mmorpg/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/mmorpg/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>distributed system</title>
@@ -26,24 +44,6 @@
       <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/raft/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>game</title>
-      <link>https://marsettler.com/tags/game/</link>
-      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/game/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mmorpg</title>
-      <link>https://marsettler.com/tags/mmorpg/</link>
-      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/mmorpg/</guid>
       <description></description>
     </item>
     
