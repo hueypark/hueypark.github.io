@@ -286,13 +286,14 @@ Network(네트워크)</description>
     </item>
     
     <item>
-      <title>About Me</title>
+      <title>박재완</title>
       <link>https://marsettler.com/about-me/</link>
       <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/about-me/</guid>
-      <description>I am a software engineer living in Seoul, Korea.
-I write code on github.</description>
+      <description>C++, Go 등의 언어를 주로 사용하여 MMORPG 서버를 개발합니다. 많은 시간을 코드리뷰, 생산성 향상을 위한 자동화 툴 개발, 빌드 및 배포 자동화에 사용하고 있습니다.
+새로운 기술의 도입, 아키텍처, 개발환경의 변경에 주저함이 없지만, 프로젝트가 진행될수록 구성원의 생각이 일치되어 안정적이고 빠르게 개발할 수 있기를 바랍니다.
+ 주요 기술  언어: C++, Go, Python 데이터베이스: MySQL, Redis, CockroachDB 기타: 자동 빌드, 퍼포먼스 테스트, 성능 튜닝, 로그 및 크래시 분석   경력 서버 프로그래머 / 넷마블네오 / 2016년 5월 - 현재 모바일 MMORPG 리니지2 레볼루션을 출시했습니다.</description>
     </item>
     
     <item>
