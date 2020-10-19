@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/book/grow-together/</loc>
+    <lastmod>2020-10-19T21:01:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/book/</loc>
+    <lastmod>2020-10-19T21:01:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/book/</loc>
+    <lastmod>2020-10-19T21:01:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2020-10-19T21:01:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2020-10-19T21:01:10+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/albion-online/</loc>
     <lastmod>2020-10-14T22:11:36+09:00</lastmod>
   </url>
@@ -13,17 +38,7 @@
   </url>
   
   <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2020-10-16T20:32:01+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marsettler.com/tags/mmorpg/</loc>
-    <lastmod>2020-10-14T22:11:36+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
     <lastmod>2020-10-14T22:11:36+09:00</lastmod>
   </url>
   
@@ -265,11 +280,6 @@
   <url>
     <loc>https://marsettler.com/cockroachdb-issue-44135-sql-add-support-for-comment/</loc>
     <lastmod>2020-04-29T19:44:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/book/</loc>
-    <lastmod>2020-02-23T09:51:00+09:00</lastmod>
   </url>
   
   <url>
