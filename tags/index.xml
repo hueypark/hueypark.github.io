@@ -6,24 +6,24 @@
     <description>Recent content in Tags on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>book</title>
-      <link>https://marsettler.com/tags/book/</link>
-      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      <title>economy</title>
+      <link>https://marsettler.com/tags/economy/</link>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/tags/book/</guid>
+      <guid>https://marsettler.com/tags/economy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>game</title>
       <link>https://marsettler.com/tags/game/</link>
-      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/game/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>mmorpg</title>
       <link>https://marsettler.com/tags/mmorpg/</link>
-      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/mmorpg/</guid>
       <description></description>
@@ -41,9 +41,18 @@
     <item>
       <title>the game i want to make</title>
       <link>https://marsettler.com/tags/the-game-i-want-to-make/</link>
-      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/the-game-i-want-to-make/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>book</title>
+      <link>https://marsettler.com/tags/book/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/book/</guid>
       <description></description>
     </item>
     

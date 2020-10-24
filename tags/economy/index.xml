@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The-game-i-want-to-makes on Marsettler</title>
-    <link>https://marsettler.com/the-game-i-want-to-make/</link>
-    <description>Recent content in The-game-i-want-to-makes on Marsettler</description>
+    <title>economy on Marsettler</title>
+    <link>https://marsettler.com/tags/economy/</link>
+    <description>Recent content in economy on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Oct 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://marsettler.com/the-game-i-want-to-make/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://marsettler.com/tags/economy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,16 +21,6 @@
 &lt;p&gt;사용자들이 서로 상호작용하는 게임에서 경제는 매우 중요합니다. 하지만 많은 경우 잘 관리되지 못하며,
 심한 경우에는 패치가 진행될 때마다 극심한 인플레이션으로 재화의 가치가 바닥으로 떨어지곤 합니다.
 이 글에서는 극심한 인플레이션의 문제점과 그 해결방안에 대해 이야기해보겠습니다.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>내가 만들고 싶은 게임</title>
-      <link>https://marsettler.com/the-game-i-want-to-make/the-game-i-want-to-make/</link>
-      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/the-game-i-want-to-make/the-game-i-want-to-make/</guid>
-      <description>&lt;h3 id=&#34;---&#34;&gt;내가 만들고 싶은 게임&lt;/h3&gt;
-&lt;p&gt;게임 서버 프로그래머로 수 년 간 일했지만, 업무의 대부분의 시간은 디자이너가 제공해 주는 아이디어의 구현에 치중되어 있었습니다. 이 글에서는 스스로 만들고 싶은 게임에 대해 이야기 합니다.&lt;/p&gt;</description>
     </item>
     
   </channel>
