@@ -6,10 +6,19 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>게임 디자인</title>
+      <link>https://marsettler.com/game-design/</link>
+      <pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/game-design/</guid>
+      <description>절대적 공정함보다는 다양한 변수가 게임성에 더 의미있을 수 있음 유튜브에서 실력갓겜이 오래 살아남기 위해 반드시 필요한 것 이란 영상을 보았습니다. 흔히 생각하는 절대적 공정함이 게임성에 큰 도움이 되지 않을 수도 있다는 생각을 했습니다.</description>
+    </item>
     
     <item>
       <title>경제</title>
