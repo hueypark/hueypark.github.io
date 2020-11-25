@@ -6,10 +6,21 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>뉴스피드 2020</title>
+      <link>https://marsettler.com/newsfeed/newsfeed-2020/</link>
+      <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/newsfeed/newsfeed-2020/</guid>
+      <description>흥미롭게 본 이야기를 정리합니다.
+gcassert Go 컴파일 타임에 assert를 발생시키는 패키지입니다. //gcassert:inline 와 같은 방식으로 사용가능하며, Go로 퍼포먼스를 끝까지 짜내는 과정을 볼 수 있습니다.
+GopherCon 에서의 소개영상: https://www.youtube.com/watch?v=YGREMxpodN8&amp;amp;feature=youtu.be&amp;amp;t=1612</description>
+    </item>
     
     <item>
       <title>게임 디자인</title>
