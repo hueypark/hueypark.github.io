@@ -17,11 +17,10 @@
       <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/newsfeed/newsfeed-2020/</guid>
-      <description>흥미롭게 본 이야기를 정리합니다.
-2020년 12월 박현우님의 직무기술서 이야기 링크: https://twitter.com/lqez/status/1339816860540256257?s=20
- 직무기술서(JD) 쓰기 귀찮은 거 나도 안다. 하지만 회사 소개가 노션 페이지 하나 뿐이고, JD도 없는데 아는 사람이 한다는 이유 만으로 다른 사람에게 추천하기는 어렵다. 초창기 스타트업에서 어떻게 그걸 챙기냐고 반문하기도 하는데, 그럼 좋은 사람 뽑는 일보다 더 중요한 일은 무엇일까?
- 알비온 온라인 개발자 한마디: 연말 업데이트 링크: https://albiononline.com/ko/news/devtalk-year-end-update
-알비온 온라인의 개발자 한마디: 연말 업데이트입니다. 2020년을 돌아보고 2021년 계획을 알려주는데 그 중 흥미로운 내용을 기록합니다.</description>
+      <description>2020년 12월 semgrep-go 링크: https://github.com/dgryski/semgrep-go
+이상한 Go 코드의 패턴을 탐지하는 유틸리티입니다. Damian Gryski의 트윗에서 아래와 같이 잘못된 에러를 반환하는 코드를 탐지하는 것을 소개합니다.
+if rows.Err() != nil { return nil, err // &amp;lt;-- not the error from rows } 박현우님의 직무기술서 이야기 링크: https://twitter.com/lqez/status/1339816860540256257?s=20
+ 직무기술서(JD) 쓰기 귀찮은 거 나도 안다. 하지만 회사 소개가 노션 페이지 하나 뿐이고, JD도 없는데 아는 사람이 한다는 이유 만으로 다른 사람에게 추천하기는 어렵다. 초창기 스타트업에서 어떻게 그걸 챙기냐고 반문하기도 하는데, 그럼 좋은 사람 뽑는 일보다 더 중요한 일은 무엇일까?</description>
     </item>
     
   </channel>
