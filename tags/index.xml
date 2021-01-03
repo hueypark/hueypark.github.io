@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>book</title>
+      <link>https://marsettler.com/tags/book/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game</title>
+      <link>https://marsettler.com/tags/game/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/game/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>game design</title>
@@ -48,15 +66,6 @@
     </item>
     
     <item>
-      <title>game</title>
-      <link>https://marsettler.com/tags/game/</link>
-      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/game/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>mmorpg</title>
       <link>https://marsettler.com/tags/mmorpg/</link>
       <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
@@ -71,15 +80,6 @@
       <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/the-game-i-want-to-make/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>book</title>
-      <link>https://marsettler.com/tags/book/</link>
-      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/book/</guid>
       <description></description>
     </item>
     

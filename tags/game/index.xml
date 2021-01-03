@@ -6,10 +6,23 @@
     <description>Recent content in game on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/game/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(Book) 0년차 게임개발</title>
+      <link>https://marsettler.com/book/game-development-for-0-years/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/book/game-development-for-0-years/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;지은이: 김다훈, 박소연, 이재호, 주진영&lt;/li&gt;
+&lt;li&gt;ISBN: 979-11-971861-0-3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description>
+    </item>
     
     <item>
       <title>경제</title>
