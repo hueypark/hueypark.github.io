@@ -6,10 +6,19 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>와인 일지</title>
+      <link>https://marsettler.com/wine-diary/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/wine-diary/</guid>
+      <description>   이름 가격 구매 장소    </description>
+    </item>
     
     <item>
       <title>(Book) 0년차 게임개발</title>
