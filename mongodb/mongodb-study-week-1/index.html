@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/mongodb/mongodb-study-week-1/">
+<meta property="og:title" content="MongoDB 스터디 1주차(MongoDB 기초)" />
+<meta property="og:description" content="몽고DB란? 소개  Document type NoSQL  특징  Reliability Scalability Flexibility Index Support  구조  도큐먼트 컬렉션 데이터베이스  어떻게 사용하면 좋을까?  스키마가 없다는 것 정규화, 반정규화  다른 데이터베이스와 비교  RDBMS NoSQL  더 알아보고 싶은 것  트랜잭션의 동작방식과 제한사항 C&#43;&#43; 클라이언트 인터페이스의 생산성 몽고디비 아틀라스 GUI 관리자 툴 퍼포먼스 여러 리전에 걸친 배포  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-1/" />
+<meta property="article:published_time" content="2021-01-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-10T21:28:58+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MongoDB 스터디 1주차(MongoDB 기초)"/>
+<meta name="twitter:description" content="몽고DB란? 소개  Document type NoSQL  특징  Reliability Scalability Flexibility Index Support  구조  도큐먼트 컬렉션 데이터베이스  어떻게 사용하면 좋을까?  스키마가 없다는 것 정규화, 반정규화  다른 데이터베이스와 비교  RDBMS NoSQL  더 알아보고 싶은 것  트랜잭션의 동작방식과 제한사항 C&#43;&#43; 클라이언트 인터페이스의 생산성 몽고디비 아틀라스 GUI 관리자 툴 퍼포먼스 여러 리전에 걸친 배포  "/>
+
+
+<meta itemprop="name" content="MongoDB 스터디 1주차(MongoDB 기초)">
+<meta itemprop="description" content="몽고DB란? 소개  Document type NoSQL  특징  Reliability Scalability Flexibility Index Support  구조  도큐먼트 컬렉션 데이터베이스  어떻게 사용하면 좋을까?  스키마가 없다는 것 정규화, 반정규화  다른 데이터베이스와 비교  RDBMS NoSQL  더 알아보고 싶은 것  트랜잭션의 동작방식과 제한사항 C&#43;&#43; 클라이언트 인터페이스의 생산성 몽고디비 아틀라스 GUI 관리자 툴 퍼포먼스 여러 리전에 걸친 배포  ">
+<meta itemprop="datePublished" content="2021-01-10T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-01-10T21:28:58&#43;09:00" />
+<meta itemprop="wordCount" content="49">
+
+
+
+<meta itemprop="keywords" content="MongoDB," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-121966234-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<title>
+
+
+     MongoDB 스터디 1주차(MongoDB 기초) 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+    <a class="nav-item" href="/wiki/"><div class="nav-item-title">Wiki</div></a>
+    
+    <a class="nav-item" href="/about-me/"><div class="nav-item-title">About Me</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> MongoDB 스터디 1주차(MongoDB 기초) </h1>
+    <div class="content"> <h3 id="db">몽고DB란?</h3>
+<h4 id="heading">소개</h4>
+<ul>
+<li>Document type NoSQL</li>
+</ul>
+<h4 id="heading1">특징</h4>
+<ul>
+<li>Reliability</li>
+<li>Scalability</li>
+<li>Flexibility</li>
+<li>Index Support</li>
+</ul>
+<h4 id="heading2">구조</h4>
+<ul>
+<li>도큐먼트</li>
+<li>컬렉션</li>
+<li>데이터베이스</li>
+</ul>
+<h4 id="--">어떻게 사용하면 좋을까?</h4>
+<ul>
+<li>스키마가 없다는 것</li>
+<li>정규화, 반정규화</li>
+</ul>
+<h4 id="--1">다른 데이터베이스와 비교</h4>
+<ul>
+<li>RDBMS</li>
+<li>NoSQL</li>
+</ul>
+<h3 id="---">더 알아보고 싶은 것</h3>
+<ol>
+<li>트랜잭션의 동작방식과 제한사항</li>
+<li>C++ 클라이언트 인터페이스의 생산성</li>
+<li>몽고디비 아틀라스</li>
+<li>GUI 관리자 툴</li>
+<li>퍼포먼스</li>
+<li>여러 리전에 걸친 배포</li>
+</ol>
+ </div>
+    <footer class="post-footer">
+  <div class="post-footer-data">
+    
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date">created: 2021-01-10 | updated: 2021-01-10</div>
+    
+  </div>
+</footer>
+
+<script src="https://utteranc.es/client.js"
+        repo="hueypark/wiki"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+<script async src="/js/mermaid/mermaid.min.js"></script>
+
+</body>
+</html>
+

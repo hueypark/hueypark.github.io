@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>MongoDB 스터디 1주차(MongoDB 기초)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-1/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-1/</guid>
+      <description>몽고DB란? 소개  Document type NoSQL  특징  Reliability Scalability Flexibility Index Support  구조  도큐먼트 컬렉션 데이터베이스  어떻게 사용하면 좋을까?  스키마가 없다는 것 정규화, 반정규화  다른 데이터베이스와 비교  RDBMS NoSQL  더 알아보고 싶은 것  트랜잭션의 동작방식과 제한사항 C++ 클라이언트 인터페이스의 생산성 몽고디비 아틀라스 GUI 관리자 툴 퍼포먼스 여러 리전에 걸친 배포  </description>
+    </item>
+    
+    <item>
       <title>와인 일지</title>
       <link>https://marsettler.com/wine-diary/</link>
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
