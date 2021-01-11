@@ -17,7 +17,10 @@
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/mongodb/mongodb-study-week-1/</guid>
-      <description>몽고DB란? 소개  Document type NoSQL  특징  Reliability Scalability Flexibility Index Support  구조  도큐먼트 컬렉션 데이터베이스  어떻게 사용하면 좋을까?  스키마가 없다는 것 정규화, 반정규화  다른 데이터베이스와 비교  RDBMS NoSQL  더 알아보고 싶은 것  트랜잭션의 동작방식과 제한사항 C++ 클라이언트 인터페이스의 생산성 몽고디비 아틀라스 GUI 관리자 툴 퍼포먼스 여러 리전에 걸친 배포  </description>
+      <description>MongoDB란?  A database A NoSQL Database  row, column 이 없음   NoSQL documentDB Stored in collections  MongoDB는 NoSQL Document Database 입니다.
+Document와 Collection? Document: A way to organize and store data as a set of field-value pairs
+{ &amp;#34;name&amp;#34; : &amp;#34;hueypark&amp;#34;, &amp;#34;title&amp;#34; : &amp;#34;software engineer&amp;#34; } Collection: An ogranized store of documents in MongoDB, usually with common fields between documents
+Atlas의 놀라운 프리티어 정책  3-server replica set 512MB storage Never expires  mongo &amp;#34;mongodb+srv://sandbox.</description>
     </item>
     
     <item>
