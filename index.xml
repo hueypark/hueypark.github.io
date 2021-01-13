@@ -17,10 +17,9 @@
       <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/mongodb/mongodb-study-week-1/</guid>
-      <description>MongoDB란?  A database A NoSQL Database  row, column 이 없음   NoSQL documentDB Stored in collections  MongoDB는 NoSQL Document Database 입니다.
-Document와 Collection? Document: A way to organize and store data as a set of field-value pairs
-{ &amp;#34;name&amp;#34; : &amp;#34;hueypark&amp;#34;, &amp;#34;title&amp;#34; : &amp;#34;software engineer&amp;#34; } Collection: An ogranized store of documents in MongoDB, usually with common fields between documents
-Atlas의 놀라운 프리티어 정책  3-server replica set 512MB storage Never expires  mongo &amp;#34;mongodb+srv://sandbox.</description>
+      <description>들어가며 지금까지 필요 없는 로그성 데이터를 MongoDB에 저장한 경험이 있으며, 대부분은 RDBMS를 사용했습니다. MongoDB도 많이 발전하였고(트랜잭션, 컨시스턴시 관련) 우리의 MongoDB 운영능력도 증가했기 떄문에 애플리케이션에서 스케일아웃을 핸들링하지 않고 MongoDB를 사용해 개발속도를 향상시키고 싶습니다.
+MongoDB란 도큐먼트를 기본 자료형으로 사용하는 NoSQL 데이터베이스
+도큐먼트와 컬렉션  도큐먼트  도큐먼트는 field와 value의 쌍으로 데이터를 저장하고 관리 JSON 형태로 사용되며 실제로는 BSON으로 시리얼라이즈되어 저장됨    { &amp;#34;name&amp;#34; : &amp;#34;hueypark&amp;#34;, &amp;#34;title&amp;#34; : &amp;#34;software engineer&amp;#34; }  컬렉션  도큐먼트들이 모여있는 집합 일반적으로 한 컬렉션에 있는 도큐먼트들은 공통된 필드를 가지고 있음    BSON BSON은 바이너리로 시리얼라이즈 된 JSON</description>
     </item>
     
     <item>
