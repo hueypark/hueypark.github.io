@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/mongodb/mongodb-study-week-2/">
+<meta property="og:title" content="MongoDB 스터디 2주차(MongoDB 설치하기)" />
+<meta property="og:description" content="Replica Set Replica set 은 같은 데이터를 가진 mongod 프로세스 그룹입니다. 이를 통해 MongoDB는 데이터 중복과 고가용성을 제공합니다. 그렇기 때문에 일부 서버에 장애가 발생하더라고 전체 시스템은 정상적으로 운영될 수 있습니다.
+특정한 경우 복제를 통해 읽기 수용량을 증가시킬 수 있습니다. 또 서로 다른 데이터센터에 복사본을 유지하여 가용성을 증가시킬수 있도 장애복구, 분석, 백업 목적으로 추가 복사본을 만들 수도 있습니다.
+Replication Replica set 은 데이터를 가진 여러 노드로 이루어지며(데이터가 없는 아비터가 추가될 수도 있음), 이 중 하나만이 primary 노드가 됩니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-2/" />
+<meta property="article:published_time" content="2021-01-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-19T22:57:22+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MongoDB 스터디 2주차(MongoDB 설치하기)"/>
+<meta name="twitter:description" content="Replica Set Replica set 은 같은 데이터를 가진 mongod 프로세스 그룹입니다. 이를 통해 MongoDB는 데이터 중복과 고가용성을 제공합니다. 그렇기 때문에 일부 서버에 장애가 발생하더라고 전체 시스템은 정상적으로 운영될 수 있습니다.
+특정한 경우 복제를 통해 읽기 수용량을 증가시킬 수 있습니다. 또 서로 다른 데이터센터에 복사본을 유지하여 가용성을 증가시킬수 있도 장애복구, 분석, 백업 목적으로 추가 복사본을 만들 수도 있습니다.
+Replication Replica set 은 데이터를 가진 여러 노드로 이루어지며(데이터가 없는 아비터가 추가될 수도 있음), 이 중 하나만이 primary 노드가 됩니다."/>
+
+
+<meta itemprop="name" content="MongoDB 스터디 2주차(MongoDB 설치하기)">
+<meta itemprop="description" content="Replica Set Replica set 은 같은 데이터를 가진 mongod 프로세스 그룹입니다. 이를 통해 MongoDB는 데이터 중복과 고가용성을 제공합니다. 그렇기 때문에 일부 서버에 장애가 발생하더라고 전체 시스템은 정상적으로 운영될 수 있습니다.
+특정한 경우 복제를 통해 읽기 수용량을 증가시킬 수 있습니다. 또 서로 다른 데이터센터에 복사본을 유지하여 가용성을 증가시킬수 있도 장애복구, 분석, 백업 목적으로 추가 복사본을 만들 수도 있습니다.
+Replication Replica set 은 데이터를 가진 여러 노드로 이루어지며(데이터가 없는 아비터가 추가될 수도 있음), 이 중 하나만이 primary 노드가 됩니다.">
+<meta itemprop="datePublished" content="2021-01-17T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-01-19T22:57:22&#43;09:00" />
+<meta itemprop="wordCount" content="869">
+
+
+
+<meta itemprop="keywords" content="MongoDB," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-121966234-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<title>
+
+
+     MongoDB 스터디 2주차(MongoDB 설치하기) 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+    <a class="nav-item" href="/wiki/"><div class="nav-item-title">Wiki</div></a>
+    
+    <a class="nav-item" href="/about-me/"><div class="nav-item-title">About Me</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> MongoDB 스터디 2주차(MongoDB 설치하기) </h1>
+    <div class="content"> <h2 id="replica-set">Replica Set</h2>
+<p>Replica set 은 같은 데이터를 가진 mongod 프로세스 그룹입니다. 이를 통해 MongoDB는 데이터 중복과 고가용성을 제공합니다. 그렇기 때문에 일부 서버에 장애가 발생하더라고 전체 시스템은 정상적으로 운영될 수 있습니다.</p>
+<p>특정한 경우 복제를 통해 읽기 수용량을 증가시킬 수 있습니다. 또 서로 다른 데이터센터에 복사본을 유지하여 가용성을 증가시킬수 있도 장애복구, 분석, 백업 목적으로 추가 복사본을 만들 수도 있습니다.</p>
+<h3 id="replication">Replication</h3>
+<p>Replica set 은 데이터를 가진 여러 노드로 이루어지며(데이터가 없는 아비터가 추가될 수도 있음), 이 중 하나만이 primary 노드가 됩니다.</p>
+<p>Primary 노드는 모든 쓰기 명령을 처리합니다.</p>
+<div class="mermaid" style="text-align:center;">
+  
+graph TD
+	Driver  -->|쓰기| Primary
+	Primary -->|복제| S1[Secondary]
+	Primary -->|복제| S2[Secondary]
+
+</div>
+
+<h3 id="oplog">Oplog</h3>
+<p>데이터 변경을 저장하는 로그입니다. Binlog 가 아니기 때문에 OS나, 물리장비의 영향을 받지 않습니다. 또 그렇기 때문에 replica set 의 롤링 업그레이드가 가능합니다.</p>
+<h3 id="automatic-failover">Automatic Failover</h3>
+<p>Primary 가 설정 된 <code>electionTimeoutMillis</code> 값(기본 10초) 이상 통신되지 않으며, 새로운 Primary 를 선출을 시도합니다. 클러스터는 새로운 primary 를 선출하고 정상 동작을 재개합니다.</p>
+<p>선출 기간 동안에는 쓰기 명령은 동작하지 않습니다. 하지만 읽기 명령은 계속 진행될 수 있습니다.</p>
+<h3 id="write-concern">Write concern</h3>
+<p>클라이언트에 응답을 주기 전 쓰기 고려사항입니다.</p>
+<p>0: 으로 설정하면 데이터를 쓰기 전에 응답을 합니다. 장애 발생 시 아무것도 보장하지 않습니다.</p>
+<p>1: 기본값으로 primary 에 데이터가 쓰여지면 응답을 합니다. 만약 secondary 에 replication 이 되기 전에 primary 장애가 된다면 데이터가 롤백될 수 있습니다.</p>
+<p>2~: 설정된 숫자의 노드에 데이터가 쓰이면 응답을 합니다.</p>
+<p>&ldquo;majority&rdquo;: <a href="https://docs.mongodb.com/manual/reference/write-concern/index.html#calculating-majority-count">과반</a> 이상의 노드에 데이터가 쓰이면 응답을 합니다.</p>
+<h3 id="read-concernhttpsdocsmongodbcommanualreferencereadconcern">Read concern(<a href="https://docs.mongodb.com/manual/reference/read-concern/">https://docs.mongodb.com/manual/reference/read-concern/</a>)</h3>
+<p>클라이언트에 응답을 주기 전 읽기 고려사항입니다.</p>
+<p><a href="https://docs.mongodb.com/manual/reference/read-concern-local/#readconcern.%22local%22">&ldquo;local&rdquo;</a>, <a href="https://docs.mongodb.com/manual/reference/read-concern-available/#readconcern.%22available%22">&ldquo;available&rdquo;</a>, <a href="https://docs.mongodb.com/manual/reference/read-concern-majority/#readconcern.%22majority%22">&ldquo;majority&rdquo;</a>, <a href="https://docs.mongodb.com/manual/reference/read-concern-linearizable/#readconcern.%22linearizable%22">&ldquo;linearizable&rdquo;</a>, <a href="https://docs.mongodb.com/manual/reference/read-concern-snapshot/#readconcern.%22snapshot%22">&ldquo;snapshot&rdquo;</a> 이 있습니다.</p>
+<h3 id="read-preferences-httpsdocsmongodbcommanualcorereadpreferenceindexhtml">Read Preferences(드라이버 설정)(<a href="https://docs.mongodb.com/manual/core/read-preference/index.html">https://docs.mongodb.com/manual/core/read-preference/index.html</a>)</h3>
+<p>MongoDB 클라이언트가 읽기 요청을 replica set 의 어떤 노드로 보낼지에 대한 설정입니다.</p>
+<p>&ldquo;primary&rdquo;: 기본 값. 모든 읽기 요청은 primary 에게 보내집니다.</p>
+<p>&ldquo;primaryPreferred&rdquo;: 대부분의 상황에서 읽기가 primary 에게 보내지지만, 불가능하면 secondary 를 사용합니다.</p>
+<p>&ldquo;secondary&rdquo;: 모든 요청이 secondary 에게 보내집니다.</p>
+<p>&ldquo;secondaryPreferred&rdquo;: 대부분의 상황에서 읽기가 secondary 에게 보내지지만, 불가능하면 primary를 사용합니다.</p>
+<p>&ldquo;nearest&rdquo;: 응답시간을 기준으로 임의의 노드에게서 읽기를 수행합니다.</p>
+<h3 id="replica-set-arbiter">Replica Set Arbiter</h3>
+<p>특정 상황에서는(세 번 째 노드를 배치하는 대신 비용을 줄이고 싶다거나) arbiter 를 replica set 에 추가할 수 있씁니다. Arbiter 는 데이터를 가지고 있지 않으며 failover 상황에서 투표만 하며 primary 가 될 수 없습니다.</p>
+<p>중요!: primary 나 seconday 멤버가 있는 시스템에 arbiter 를 호스팅하지 마십시오.</p>
+<h3 id="--">최대 노드 수</h3>
+<p>최대 50개의 노드 설정이 가능하며, Primary 선출을 위한 투표가 가능한 노드는 최대 7개입니다.</p>
+<hr>
+<h2 id="mongod--">mongod 파일 구조</h2>
+<p>/data/db
+WiredTiger: 스토리지 엔진 관련 파일
+WiredTiger.lock: 다른 몽고디비가 동시에 같은 디렉토리를 사용하지 못하게 막는 파일(갑작스런 장비 재시작시 삭제해 줘야 할 수도 있음)
+WiredTiger.turtle: 스토리지 엔진 관련 파일
+WiredTiger.wt: 스토리지 엔진 관련 파일
+WiredTigerLAS.wt: 스토리지 엔진 관련 파일
+collection*.wt: 컬렉션 데이터
+index*.wt: 인덱스 데이터
+diagnostic.data/: MongoDB 에서 기술지원시 사용하는 진단용 데이터
+journal/: WiredTiger journal, WAL 로그, 장애 발생 시 이 로그를 이용해 checkpoint 이후 변경사항을 복구
+mongod.lock: WiredTiger.lock 비슷하게 동시에 두 몽고디비가 같은 디렉토리를 저장소로 사용하지 못하게 막는 파일
+sizeStorer.wt: 스토리지 엔진 관련 파일
+storage.bson: 스토리지 엔진 관련 파일</p>
+<p>/tmp/mongodb-*.sock: 소켓 커넥션을 만들기 위한 파일(갑작스런 장비 재시작시 삭제해 줘야 할 수도 있음)</p>
+<hr>
+<h2 id="wiredtiger--">WiredTiger 스토리지 엔진</h2>
+<h3 id="document-level-concurrency">Document Level Concurrency</h3>
+<p>여러 클라이언트가 동시에 여러 도큐먼트를 변경할 수 있습니다.</p>
+<p>대부분의 읽기와 쓰기에 낙관적인 잠금을 사용하며, 두 명령이 충돌하는 것을 발견하면 작업을 재시도하게 합니다.</p>
+<h3 id="snapshot--checkpoint">Snapshot 과 Checkpoint</h3>
+<p>MultiVersion Concurrency Control(MVCC) 를 사용합니다. 명령 실행 이전에 snapshot 을 남기고, 이 snapshot 은 메모리 내에서 일관된 보기를 제공합니다.</p>
+<p>디스크에 기록할 때 snapshot 에 있는 데이터를 기록하며, <a href="https://docs.mongodb.com/manual/reference/glossary/#term-durable">durable</a> 한 데이터를 checkpoint 에 남깁니다.</p>
+<h3 id="journal">Journal</h3>
+<p>WiredTiger 는 journal(write-ahead log) 를 이용하여 checkpoint 를 이용해 지속성을 데이터의 보장합니다.</p>
+<p>Checkpoint 사이의 데이터는 journal 에 기록되며 재시작 등이 발생이 마지막 checkpoint 이후의 데이터는 journal 을 이용해 복원됩니다.</p>
+<p>알림: MongoDB 4.0 부터 replica set 멤버에 대해 <a href="https://docs.mongodb.com/manual/reference/program/mongod/#cmdoption-mongod-nojournal">&ndash;nojournal</a> 또는 <a href="https://docs.mongodb.com/manual/reference/configuration-options/#storage.journal.enabled">storage.journal.enabled: false</a> 를 사용할 수 없습니다.</p>
+<h3 id="heading">압축</h3>
+<p>WiredTiger는 컬렉션과 인덱스에 대한 압축을 지원합니다. 압축은 CPU를 좀 더 사용해 저장소 용량을 줄입니다.</p>
+<p>기본적으로 <a href="https://docs.mongodb.com/manual/reference/glossary/#term-snappy">snappy</a> 라이브러리를 사용하며, 컬렉션을 위해 zlib, zstd 를 사용할 수도 있습니다.</p>
+<h3 id="-">메모리 사용</h3>
+<p>WiredTiger는 내부 캐시를 가지고 있습니다.</p>
+<p>MongoDB 3.4 이후 기본 내부 캐시 크기는 (RAM - 1GB) 의 50%  또는 256MB 중 큰 값입니다.</p>
+<h3 id="--1">스토리지 엔진 암호화</h3>
+<p>엔터프라이즈 버전에서는 스토리지 엔진 암호화를 지원합니다.</p>
+<hr>
+<h2 id="--community-">몽고디비 설치하기 실습(Community 버전)</h2>
+<ol>
+<li>의존성 설치</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install libcurl4 openssl liblzma5
+</code></pre></div><ol start="2">
+<li>배포용 압축파일 다운로드</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2004-4.4.3.tgz
+</code></pre></div><ol start="3">
+<li>압축 풀기</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar zxvf mongodb-linux-x86_64-ubuntu2004-4.4.3.tgz
+</code></pre></div><ol start="4">
+<li>/usr/local/bin/ 으로 바이너리 복사</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo cp mongodb-linux-x86_64-ubuntu2004-4.4.3/bin/* /usr/local/bin/
+</code></pre></div><ol start="5">
+<li>공용 키 생성(주의: 실 서비스에는 보안 고려하여 키 생성하여야 함)</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">openssl rand -base64 <span style="color:#ae81ff">741</span> &gt; hueypark-key
+</code></pre></div><ol start="6">
+<li>mongod 1 실행(mongod_1.conf)</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">storage:
+  dbPath: /home/hueypark/mongodb/db/<span style="color:#ae81ff">1</span>
+net:
+  bindIp: localhost
+  port: <span style="color:#ae81ff">27001</span>
+security:
+  authorization: enabled
+  keyFile: /home/hueypark/mongodb/hueypark-key
+systemLog:
+  destination: file
+  path: /home/hueypark/mongodb/log/mongod1.log
+  logAppend: <span style="color:#66d9ef">true</span>
+processManagement:
+  fork: <span style="color:#66d9ef">true</span>
+replication:
+  replSetName: hueypark<span style="color:#ae81ff">-1</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mongod --config mongod_1.conf
+</code></pre></div><ol start="8">
+<li>
+<p>&hellip; 실패 윈도우로 급 전환</p>
+</li>
+<li>
+<p>mongod 1, 2, 3 실행</p>
+</li>
+</ol>
+<p>mongod_1.conf</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">storage:
+  dbPath: C:/Users/jaewa/mongodb/data/db/<span style="color:#ae81ff">1</span>
+net:
+  bindIp: localhost
+  port: <span style="color:#ae81ff">27001</span>
+security:
+  authorization: enabled
+  keyFile: C:/Users/jaewa/mongodb/data/hueypark-key
+systemLog:
+  destination: file
+  path: C:/Users/jaewa/mongodb/data/log/mongod1.log
+  logAppend: <span style="color:#66d9ef">true</span>
+replication:
+  replSetName: hueypark
+</code></pre></div><p>mongod_2.conf</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">storage:
+  dbPath: C:/Users/jaewa/mongodb/data/db/<span style="color:#ae81ff">2</span>
+net:
+  bindIp: localhost
+  port: <span style="color:#ae81ff">27002</span>
+security:
+  authorization: enabled
+  keyFile: C:/Users/jaewa/mongodb/data/hueypark-key
+systemLog:
+  destination: file
+  path: C:/Users/jaewa/mongodb/data/log/mongod2.log
+  logAppend: <span style="color:#66d9ef">true</span>
+replication:
+  replSetName: hueypark
+</code></pre></div><p>mongod_3.conf</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">storage:
+  dbPath: C:/Users/jaewa/mongodb/data/db/<span style="color:#ae81ff">3</span>
+net:
+  bindIp: localhost
+  port: <span style="color:#ae81ff">27001</span>
+security:
+  authorization: enabled
+  keyFile: C:/Users/jaewa/mongodb/data/hueypark-key
+systemLog:
+  destination: file
+  path: C:/Users/jaewa/mongodb/data/log/mongod3.log
+  logAppend: <span style="color:#66d9ef">true</span>
+replication:
+  replSetName: hueypark
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bat" data-lang="bat">mongod --config mongod_1.conf
+mongod --config mongod_2.conf
+mongod --config mongod_3.conf
+</code></pre></div><ol start="10">
+<li>mongod 에 연결</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mongo --port <span style="color:#ae81ff">27011</span>
+</code></pre></div><ol start="11">
+<li>Replica set 초기화</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">rs</span>.<span style="color:#a6e22e">initiate</span>()
+</code></pre></div><ol start="12">
+<li>관리자 유저 생성</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">use</span> <span style="color:#a6e22e">admin</span>
+
+<span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">createUser</span>({
+  <span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;hueypark-admin&#34;</span>,
+  <span style="color:#a6e22e">pwd</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;hueypark-pass&#34;</span>,
+  <span style="color:#a6e22e">roles</span><span style="color:#f92672">:</span> [
+    {<span style="color:#a6e22e">role</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;root&#34;</span>, <span style="color:#a6e22e">db</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;admin&#34;</span>}
+  ]
+})
+</code></pre></div><ol start="13">
+<li>Shell에서 나온 후 관리자 유저로 재접속</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">exit</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mongo -port <span style="color:#ae81ff">27001</span> -u <span style="color:#e6db74">&#34;hueypark-admin&#34;</span> -p <span style="color:#e6db74">&#34;hueypark-pass&#34;</span> --authenticationDatabase <span style="color:#e6db74">&#34;admin&#34;</span>
+</code></pre></div><ol start="14">
+<li>다른 mongod Replica에 추가</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">rs</span>.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;localhost:27002&#34;</span>)
+<span style="color:#a6e22e">rs</span>.<span style="color:#a6e22e">add</span>(<span style="color:#e6db74">&#34;localhost:27003&#34;</span>)
+</code></pre></div><p>만약 Arbiter로 등록하고 싶다면 아래 함수를 사용</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">rs</span>.<span style="color:#a6e22e">addArb</span>(<span style="color:#e6db74">&#34;localhost:27003&#34;</span>)
+</code></pre></div><h3 id="heading1">레퍼런스</h3>
+<ul>
+<li><a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu-tarball/">Install MongoDB Community on Ubuntu using .tgz Tarball</a></li>
+<li>MongoDB University의 <a href="https://university.mongodb.com/courses/M103/about">M103 Basic Cluster Administration</a></li>
+</ul>
+ </div>
+    <footer class="post-footer">
+  <div class="post-footer-data">
+    
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date">created: 2021-01-17 | updated: 2021-01-19</div>
+    
+  </div>
+</footer>
+
+<script src="https://utteranc.es/client.js"
+        repo="hueypark/wiki"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+<script async src="/js/mermaid/mermaid.min.js"></script>
+
+</body>
+</html>
+
