@@ -16,7 +16,7 @@ Replication Replica set 은 데이터를 가진 여러 노드로 이루어지며
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-2/" />
 <meta property="article:published_time" content="2021-01-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-01-19T22:57:22+09:00" />
+<meta property="article:modified_time" content="2021-01-21T22:10:01+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MongoDB 스터디 2주차(MongoDB 설치하기)"/>
@@ -30,7 +30,7 @@ Replication Replica set 은 데이터를 가진 여러 노드로 이루어지며
 특정한 경우 복제를 통해 읽기 수용량을 증가시킬 수 있습니다. 또 서로 다른 데이터센터에 복사본을 유지하여 가용성을 증가시킬수 있도 장애복구, 분석, 백업 목적으로 추가 복사본을 만들 수도 있습니다.
 Replication Replica set 은 데이터를 가진 여러 노드로 이루어지며(데이터가 없는 아비터가 추가될 수도 있음), 이 중 하나만이 primary 노드가 됩니다.">
 <meta itemprop="datePublished" content="2021-01-17T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-01-19T22:57:22&#43;09:00" />
+<meta itemprop="dateModified" content="2021-01-21T22:10:01&#43;09:00" />
 <meta itemprop="wordCount" content="869">
 
 
@@ -161,20 +161,28 @@ graph TD
 <p>최대 50개의 노드 설정이 가능하며, Primary 선출을 위한 투표가 가능한 노드는 최대 7개입니다.</p>
 <hr>
 <h2 id="mongod--">mongod 파일 구조</h2>
-<p>/data/db
-WiredTiger: 스토리지 엔진 관련 파일
-WiredTiger.lock: 다른 몽고디비가 동시에 같은 디렉토리를 사용하지 못하게 막는 파일(갑작스런 장비 재시작시 삭제해 줘야 할 수도 있음)
-WiredTiger.turtle: 스토리지 엔진 관련 파일
-WiredTiger.wt: 스토리지 엔진 관련 파일
-WiredTigerLAS.wt: 스토리지 엔진 관련 파일
-collection*.wt: 컬렉션 데이터
-index*.wt: 인덱스 데이터
-diagnostic.data/: MongoDB 에서 기술지원시 사용하는 진단용 데이터
-journal/: WiredTiger journal, WAL 로그, 장애 발생 시 이 로그를 이용해 checkpoint 이후 변경사항을 복구
-mongod.lock: WiredTiger.lock 비슷하게 동시에 두 몽고디비가 같은 디렉토리를 저장소로 사용하지 못하게 막는 파일
-sizeStorer.wt: 스토리지 엔진 관련 파일
-storage.bson: 스토리지 엔진 관련 파일</p>
+<ul>
+<li>
+<p>/data/db</p>
+<ul>
+<li>WiredTiger: 스토리지 엔진 관련 파일</li>
+<li>WiredTiger.lock: 다른 몽고디비가 동시에 같은 디렉토리를 사용하지 못하게 막는 파일(갑작스런 장비 재시작시 삭제해 줘야 할 수도 있음)</li>
+<li>WiredTiger.turtle: 스토리지 엔진 관련 파일</li>
+<li>WiredTiger.wt: 스토리지 엔진 관련 파일</li>
+<li>WiredTigerLAS.wt: 스토리지 엔진 관련 파일</li>
+<li>collection*.wt: 컬렉션 데이터</li>
+<li>index*.wt: 인덱스 데이터</li>
+<li>diagnostic.data/: MongoDB 에서 기술지원시 사용하는 진단용 데이터</li>
+<li>journal/: WiredTiger journal, WAL 로그, 장애 발생 시 이 로그를 이용해 checkpoint 이후 변경사항을 복구</li>
+<li>mongod.lock: WiredTiger.lock 비슷하게 동시에 두 몽고디비가 같은 디렉토리를 저장소로 사용하지 못하게 막는 파일</li>
+<li>sizeStorer.wt: 스토리지 엔진 관련 파일</li>
+<li>storage.bson: 스토리지 엔진 관련 파일</li>
+</ul>
+</li>
+<li>
 <p>/tmp/mongodb-*.sock: 소켓 커넥션을 만들기 위한 파일(갑작스런 장비 재시작시 삭제해 줘야 할 수도 있음)</p>
+</li>
+</ul>
 <hr>
 <h2 id="wiredtiger--">WiredTiger 스토리지 엔진</h2>
 <h3 id="document-level-concurrency">Document Level Concurrency</h3>
@@ -344,7 +352,7 @@ mongod --config mongod_3.conf
   
 </div>
 
-    <div class="date">created: 2021-01-17 | updated: 2021-01-19</div>
+    <div class="date">created: 2021-01-17 | updated: 2021-01-21</div>
     
   </div>
 </footer>
