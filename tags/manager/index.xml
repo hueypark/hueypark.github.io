@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Books on Marsettler</title>
-    <link>https://marsettler.com/book/</link>
-    <description>Recent content in Books on Marsettler</description>
+    <title>manager on Marsettler</title>
+    <link>https://marsettler.com/tags/manager/</link>
+    <description>Recent content in manager on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://marsettler.com/book/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://marsettler.com/tags/manager/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,32 +23,6 @@
  하지만 시간이 지나면 진실이 드러나는 법이다. 유능한 인재는 자신을 홀대하는 상사나 존경심이 생기지 않는 상사 밑에서 몇 년이나 참고 버티지 않는다. 그리고 유능한 관리자는 쇄신을 단행할 권한만 준다면 형편없는 성과를 내던 팀을 환골탈태시킨다.
  47쪽
  모름지기 관리자라면 팀의 목적, 사람, 프로세스를 개선함으로써 팀의 전체적인 성과에 최대한 멀티플라이어 효과를 내야 한다.</description>
-    </item>
-    
-    <item>
-      <title>(Book) 0년차 게임개발</title>
-      <link>https://marsettler.com/book/game-development-for-0-years/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/book/game-development-for-0-years/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;지은이: 김다훈, 박소연, 이재호, 주진영&lt;/li&gt;
-&lt;li&gt;ISBN: 979-11-971861-0-3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;</description>
-    </item>
-    
-    <item>
-      <title>(Book) 함께 자라기</title>
-      <link>https://marsettler.com/book/grow-together/</link>
-      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/book/grow-together/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;지은이: 김창준&lt;/li&gt;
-&lt;li&gt;ISBN: 9788966262335&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;</description>
     </item>
     
   </channel>

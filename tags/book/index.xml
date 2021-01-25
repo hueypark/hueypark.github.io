@@ -6,10 +6,24 @@
     <description>Recent content in book on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/book/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(Book) 팀장의 탄생</title>
+      <link>https://marsettler.com/book/the-making-of-a-manager/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/book/the-making-of-a-manager/</guid>
+      <description>지은이: Julie Zhuo ISBN: 979-11-6521-268-1   38쪽
+ 진정한 관리자의 본분은 &amp;lsquo;여러 사람이 협력하는 집단에서 더 좋은 성과를 도출하는 것&#39;이다.
+ 40쪽
+ 하지만 시간이 지나면 진실이 드러나는 법이다. 유능한 인재는 자신을 홀대하는 상사나 존경심이 생기지 않는 상사 밑에서 몇 년이나 참고 버티지 않는다. 그리고 유능한 관리자는 쇄신을 단행할 권한만 준다면 형편없는 성과를 내던 팀을 환골탈태시킨다.
+ 47쪽
+ 모름지기 관리자라면 팀의 목적, 사람, 프로세스를 개선함으로써 팀의 전체적인 성과에 최대한 멀티플라이어 효과를 내야 한다.</description>
+    </item>
     
     <item>
       <title>(Book) 0년차 게임개발</title>
