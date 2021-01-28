@@ -17,7 +17,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-3/" />
 <meta property="article:published_time" content="2021-01-24T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-01-27T11:59:09+09:00" />
+<meta property="article:modified_time" content="2021-01-28T22:40:07+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MongoDB 스터디 3주차(샤딩을 통한 시스템 확장)"/>
@@ -33,7 +33,7 @@
 실현가능한가?
 예 1)  서버의 CPU 자원에 한계가 다가오고 필요한 CPU 자원은 2배로 예상됨 다음으로 좋은 CPU는 처리량이 10배이고 비용도 10배임 스케일업을 한다면 10배의 비용으로 2배의 CPU만 사용 스케일아웃을 한다면 2배의 비용으로 2배의 CPU 사용가능  예 2)  현재 사용가능한 가장 좋은 CPU를 사용 중 자원에 한계가 다가옴 스케일업으로 해결불가 스케일아웃으로 해결가능  예 3)  디스크를 1TB 에서 20TB 로 20배 스케일업 백업, 복구, resync 에 20배의 시간이 듬 스케일아웃한다면 병렬화의 장점을 사용해 시간을 절약할 수 있음 또 MongoDB의 경우 큰 데이터는 큰 인덱스를 만들기 때문에 메모리 사용량도 함께 증가함  기타 장점 분산처리에 용이하기 때문에 MongoDB 에서 제공하는 존 샤딩, 어그리게이션 등의 기능을 효과적으로 사용가능">
 <meta itemprop="datePublished" content="2021-01-24T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-01-27T11:59:09&#43;09:00" />
+<meta itemprop="dateModified" content="2021-01-28T22:40:07&#43;09:00" />
 <meta itemprop="wordCount" content="835">
 
 
@@ -192,7 +192,7 @@ MongoDB 는 샤딩을 이용해 매우 큰 데이터에 대해 높은 처리량�
 <h4 id="monotonic-change">Monotonic Change</h4>
 <p>단조롭게 변하지 않는가?</p>
 <p>기본 <code>_id</code> 나 <code>date</code> 와 같이 한 방향으로 꾸준하게 변하면 청크에 데이터가 몰리게 되므로 적합하지 않음</p>
-<h3 id="hased-shard-key">Hased Shard Key</h3>
+<h3 id="hashed-shard-key">Hashed Shard Key</h3>
 <p>Monotonic Change 가 있는 키를 사용 할 때 적용하면 키를 분산시킬 수 있음</p>
 <ul>
 <li>하지만 range 쿼리를 할 때 모든 샤드에 브로드케스트 해야 하는 단점이 있음</li>
@@ -285,7 +285,7 @@ MongoDB 는 샤딩을 이용해 매우 큰 데이터에 대해 높은 처리량�
   
 </div>
 
-    <div class="date">created: 2021-01-24 | updated: 2021-01-27</div>
+    <div class="date">created: 2021-01-24 | updated: 2021-01-28</div>
     
   </div>
 </footer>
