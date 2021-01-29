@@ -3,13 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://marsettler.com/server-fault/2021-01-25-cookierun-kingdom-server-fault/</loc>
-    <lastmod>2021-01-28T15:31:40+09:00</lastmod>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2021-01-29T19:23:53+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2021-01-28T22:40:07+09:00</lastmod>
+    <loc>https://marsettler.com/tags/newsfeed/</loc>
+    <lastmod>2021-01-29T19:23:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/newsfeed/</loc>
+    <lastmod>2021-01-29T19:23:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2021-01-29T19:23:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/newsfeed/newsfeed-2021/</loc>
+    <lastmod>2021-01-29T19:23:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/server-fault/2021-01-25-cookierun-kingdom-server-fault/</loc>
+    <lastmod>2021-01-28T15:31:40+09:00</lastmod>
   </url>
   
   <url>
@@ -20,11 +40,6 @@
   <url>
     <loc>https://marsettler.com/server-fault/</loc>
     <lastmod>2021-01-28T15:31:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2021-01-28T22:40:07+09:00</lastmod>
   </url>
   
   <url>
@@ -110,16 +125,6 @@
   <url>
     <loc>https://marsettler.com/game-design/games-with-interesting-physics/</loc>
     <lastmod>2020-11-28T10:13:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/newsfeed/</loc>
-    <lastmod>2020-12-31T20:05:38+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/newsfeed/</loc>
-    <lastmod>2020-12-31T20:05:38+09:00</lastmod>
   </url>
   
   <url>

@@ -6,10 +6,21 @@
     <description>Recent content in Newsfeeds on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/newsfeed/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>뉴스피드 2021</title>
+      <link>https://marsettler.com/newsfeed/newsfeed-2021/</link>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/newsfeed/newsfeed-2021/</guid>
+      <description>2020년 1월 시니어 개발자의 질문 이걸 왜 만들어야 되냐? 이게 왜 중요하냐? 라는 질문을 함
+링크: https://youtu.be/fhFq2LF4qAg?t=1220
+Diary of a Programmer 의 신년 특집 대담: PM 정진영 님을 모셨습니다 중 일부</description>
+    </item>
     
     <item>
       <title>뉴스피드 2020</title>
