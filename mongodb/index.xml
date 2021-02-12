@@ -6,10 +6,21 @@
     <description>Recent content in Mongodbs on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/mongodb/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MongoDB 스터디 5주차(패턴과 안티패턴)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-5/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-5/</guid>
+      <description>아직 작성중입니다.
+ Pattern Handling Duplication, Staleness and Integrity   Duplication
+ Why?  Result of embedding information in a given document for faster access   Concern  Challenge for correctness and consistency   case  is solution has minimal effect(unchanging information) should be handled(precomputed sum, application handled) accepting staleness in some pieces of data, writing extra application side logic to ensure referential integrity.      Staleness</description>
+    </item>
     
     <item>
       <title>MongoDB 스터디 3주차(샤딩을 통한 시스템 확장)</title>

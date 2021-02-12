@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/mongodb/mongodb-study-week-5/">
+<meta property="og:title" content="MongoDB 스터디 5주차(패턴과 안티패턴)" />
+<meta property="og:description" content="아직 작성중입니다.
+ Pattern Handling Duplication, Staleness and Integrity   Duplication
+ Why?  Result of embedding information in a given document for faster access   Concern  Challenge for correctness and consistency   case  is solution has minimal effect(unchanging information) should be handled(precomputed sum, application handled) accepting staleness in some pieces of data, writing extra application side logic to ensure referential integrity.      Staleness" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-5/" />
+<meta property="article:published_time" content="2021-02-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-13T08:02:38+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MongoDB 스터디 5주차(패턴과 안티패턴)"/>
+<meta name="twitter:description" content="아직 작성중입니다.
+ Pattern Handling Duplication, Staleness and Integrity   Duplication
+ Why?  Result of embedding information in a given document for faster access   Concern  Challenge for correctness and consistency   case  is solution has minimal effect(unchanging information) should be handled(precomputed sum, application handled) accepting staleness in some pieces of data, writing extra application side logic to ensure referential integrity.      Staleness"/>
+
+
+<meta itemprop="name" content="MongoDB 스터디 5주차(패턴과 안티패턴)">
+<meta itemprop="description" content="아직 작성중입니다.
+ Pattern Handling Duplication, Staleness and Integrity   Duplication
+ Why?  Result of embedding information in a given document for faster access   Concern  Challenge for correctness and consistency   case  is solution has minimal effect(unchanging information) should be handled(precomputed sum, application handled) accepting staleness in some pieces of data, writing extra application side logic to ensure referential integrity.      Staleness">
+<meta itemprop="datePublished" content="2021-02-10T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-02-13T08:02:38&#43;09:00" />
+<meta itemprop="wordCount" content="790">
+
+
+
+<meta itemprop="keywords" content="MongoDB," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-121966234-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<title>
+
+
+     MongoDB 스터디 5주차(패턴과 안티패턴) 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+    <a class="nav-item" href="/wiki/"><div class="nav-item-title">Wiki</div></a>
+    
+    <a class="nav-item" href="/about-me/"><div class="nav-item-title">About Me</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> MongoDB 스터디 5주차(패턴과 안티패턴) </h1>
+    <div class="content"> <p>아직 작성중입니다.</p>
+<hr>
+<h2 id="pattern">Pattern</h2>
+<h3 id="handling-duplication-staleness-and-integrity">Handling Duplication, Staleness and Integrity</h3>
+<ul>
+<li>
+<p>Duplication</p>
+<ul>
+<li>Why?
+<ul>
+<li>Result of embedding information in a given document for faster access</li>
+</ul>
+</li>
+<li>Concern
+<ul>
+<li>Challenge for correctness and consistency</li>
+</ul>
+</li>
+<li>case
+<ul>
+<li>is solution</li>
+<li>has minimal effect(unchanging information)</li>
+<li>should be handled(precomputed sum, application handled)
+accepting staleness in some pieces of data,
+writing extra application side logic to ensure referential integrity.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Staleness</p>
+<ul>
+<li>Why?
+<ul>
+<li>New events come along at such a rate that updating some data constantly causes peformance issues</li>
+</ul>
+</li>
+<li>Concern
+<ul>
+<li>Data quality and reliablity</li>
+</ul>
+</li>
+<li>case
+<ul>
+<li>use secondary</li>
+<li>batch updates</li>
+<li>use change stream</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Referential integrity</p>
+<ul>
+<li>Why?
+<ul>
+<li>Linking information between documents or tables</li>
+<li>No support for cascading deletes</li>
+</ul>
+</li>
+<li>Concern
+<ul>
+<li>Challenge for correctness and consistency</li>
+</ul>
+</li>
+<li>case
+<ul>
+<li>Change Streams</li>
+<li>Single Document</li>
+<li>Multi documents transction</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="attribute-pattern">Attribute Pattern</h3>
+<ul>
+<li>Problem
+<ul>
+<li>List of similar fields</li>
+<li>Want to search across many fields at once</li>
+<li>Fields present in only a small subset of documents</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>Break  the field/value into sub-document with:
+<ul>
+<li>fieldA: field</li>
+<li>fieldB: value</li>
+</ul>
+</li>
+<li>Example</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#e6db74">&#34;specs&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> [
+    { <span style="color:#960050;background-color:#1e0010">k</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#f92672">&#34;volume&#34;</span>, <span style="color:#960050;background-color:#1e0010">v</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#f92672">&#34;500&#34;</span>, <span style="color:#960050;background-color:#1e0010">u</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#f92672">&#34;ml&#34;</span> },
+    { <span style="color:#960050;background-color:#1e0010">k</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#f92672">&#34;volume&#34;</span>, <span style="color:#960050;background-color:#1e0010">v</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#f92672">&#34;12&#34;</span>, <span style="color:#960050;background-color:#1e0010">u</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#f92672">&#34;ounces&#34;</span> }
+]
+</code></pre></div><ul>
+<li>Benefits and Trade-Offs
+<ul>
+<li>Easier to index</li>
+<li>Allow for non-deterministic field names</li>
+<li>Ability to qualify the relationship of the original field and value</li>
+</ul>
+</li>
+</ul>
+<h3 id="extended-reference-pattern">Extended Reference Pattern</h3>
+<ul>
+<li>
+<p>Embed the &ldquo;One&rdquo; side, of a &ldquo;One-to-Many&rdquo; relationship, into &ldquo;Many&rdquo; side</p>
+</li>
+<li>
+<p>only the part that we need to join often</p>
+</li>
+<li>
+<p>Proplem</p>
+<ul>
+<li>Too many repetitive joins</li>
+</ul>
+</li>
+<li>
+<p>Solution</p>
+<ul>
+<li>Identify fields on the lookup side</li>
+<li>Bring those fields into the main object</li>
+</ul>
+</li>
+<li>
+<p>Benefits</p>
+<ul>
+<li>Faster reads</li>
+<li>Reduce number of joins and lookups</li>
+</ul>
+</li>
+<li>
+<p>Trade-Offs</p>
+<ul>
+<li>May introduce lots of duplication if extended reference contains fields that mutate a lot</li>
+</ul>
+</li>
+</ul>
+<h3 id="subset-pattern">Subset Pattern</h3>
+<ul>
+<li>Problem
+<ul>
+<li>Working set is too big</li>
+<li>Lot of pages are evicted from memory</li>
+<li>A larget part of documents is rarely needed</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>Split the collection in 2 collections
+<ul>
+<li>Most used part of documents</li>
+<li>Less used part of documents</li>
+</ul>
+</li>
+<li>Duplicate part of a 1-N or N-N relationship that is often used in the most used side</li>
+</ul>
+</li>
+<li>Benefits
+<ul>
+<li>Smaller working set, as often used documents are smaller</li>
+<li>Shorter disk access for bringing in additional documents from the most used collection</li>
+</ul>
+</li>
+<li>Trade-Offs
+<ul>
+<li>More round trips to the server</li>
+<li>A little more space used on disk</li>
+</ul>
+</li>
+</ul>
+<h3 id="computed-pattern">Computed Pattern</h3>
+<ul>
+<li>Problem
+<ul>
+<li>Costly computation or manipulation of data</li>
+<li>Executed frequently on the same data, producing the same result</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>Peform the operationand store the result in the appropriate document and collection</li>
+<li>If need to redo the operations, keep the source of them</li>
+</ul>
+</li>
+<li>Benefits
+<ul>
+<li>Read queries are faster</li>
+<li>Saving on resources like CPU and Disk</li>
+</ul>
+</li>
+<li>Trade-Offs
+<ul>
+<li>May be difficult to identify the need</li>
+<li>Avoid applying or overusing it unless needed</li>
+</ul>
+</li>
+</ul>
+<h3 id="bucket-pattern">Bucket Pattern</h3>
+<ul>
+<li>Problem
+<ul>
+<li>Avoiding too many documents, or too big documents</li>
+<li>A 1-to-Many relationship that can't be embedded</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>Define the optimal amount of information to group together</li>
+<li>Create arrays to store the information in the main object</li>
+<li>It is basically an embedded 1-to-Many relationship, where you get N documents, each having an average of Many/N sub documents</li>
+</ul>
+</li>
+<li>Benefits
+<ul>
+<li>Good balance between number of data access and size of data returned</li>
+<li>Makes data more manageable</li>
+<li>Easy to prune data</li>
+</ul>
+</li>
+<li>Trade-Offs
+<ul>
+<li>Can lead to poor query results in not designed correctly</li>
+<li>Less friendly to BI Tools</li>
+</ul>
+</li>
+</ul>
+<h3 id="shcema-versioning-pattern">Shcema Versioning Pattern</h3>
+<ul>
+<li>Problem
+<ul>
+<li>Avoid downtime while doing schema upgrades</li>
+<li>Upgrading all documents can take hours, days or even weeks when dealing with big data</li>
+<li>Don't want to update all documents</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>Each document get a &ldquo;schema_version&rdquo; field</li>
+<li>Application can handle all versions</li>
+<li>Choose your strategy to migrate the documents</li>
+</ul>
+</li>
+<li>Benefits
+<ul>
+<li>No downtime needed</li>
+<li>Feel in control of the migration</li>
+<li>Less future technical debt</li>
+</ul>
+</li>
+<li>Trade-Offs
+<ul>
+<li>May need 2 indexes for same field while in migration period</li>
+</ul>
+</li>
+</ul>
+<h3 id="polymorphic-pattern">Polymorphic Pattern</h3>
+<ul>
+<li>Problem
+<ul>
+<li>Objects more similar than different</li>
+<li>Wnat to keep objects in same collection</li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li>Field traks the type of document or sub-document</li>
+<li>Application has different code paths per document type, or has subclasses</li>
+</ul>
+</li>
+<li>Benefits
+<ul>
+<li>Easier to implement</li>
+<li>Allow to query across a single collection</li>
+</ul>
+</li>
+</ul>
+<h2 id="antipatterns">Anti-patterns</h2>
+<p><a href="https://developer.mongodb.com/article/schema-design-anti-pattern-massive-arrays/">Massive arrays</a>: storing massive, unbounded arrays in your documents.</p>
+<ul>
+<li>Problem
+<ul>
+<li>16 MB document size limit</li>
+<li>Index performance on arrays decreases as array size increases</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://developer.mongodb.com/article/schema-design-anti-pattern-massive-number-collections/">Massive number of collections</a>: storing a massive number of collections (especially if they are unused or unnecessary) in your database.</p>
+<ul>
+<li>Problem
+<ul>
+<li>Empty and unused indexes drain resources</li>
+<li>WiredTiger performance decreases with an excessive number of collections and indexes</li>
+</ul>
+</li>
+</ul>
+<p>Limit each replica set to 10,000 collections</p>
+<p>Unnecessary indexes: storing an index that is unnecessary because it is (1) rarely used if at all or (2) redundant because another compound index covers it.</p>
+<p>Bloated documents: storing large amounts of data together in a document when that data is not frequently accessed together.</p>
+<p>Separating data that is accessed together: separating data between different documents and collections that is frequently accessed together.</p>
+<p>Case-insensitive queries without case-insensitive indexes: frequently executing a case-insensitive query without having a case-insensitive index to cover it.</p>
+ </div>
+    <footer class="post-footer">
+  <div class="post-footer-data">
+    
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date">created: 2021-02-10 | updated: 2021-02-13</div>
+    
+  </div>
+</footer>
+
+<script src="https://utteranc.es/client.js"
+        repo="hueypark/wiki"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+<script async src="/js/mermaid/mermaid.min.js"></script>
+
+</body>
+</html>
+
