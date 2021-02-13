@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-5/" />
 <meta property="article:published_time" content="2021-02-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-02-13T08:02:38+09:00" />
+<meta property="article:modified_time" content="2021-02-13T13:37:23+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MongoDB 스터디 5주차(패턴과 안티패턴)"/>
@@ -30,8 +30,8 @@
  Pattern Handling Duplication, Staleness and Integrity   Duplication
  Why?  Result of embedding information in a given document for faster access   Concern  Challenge for correctness and consistency   case  is solution has minimal effect(unchanging information) should be handled(precomputed sum, application handled) accepting staleness in some pieces of data, writing extra application side logic to ensure referential integrity.      Staleness">
 <meta itemprop="datePublished" content="2021-02-10T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-02-13T08:02:38&#43;09:00" />
-<meta itemprop="wordCount" content="790">
+<meta itemprop="dateModified" content="2021-02-13T13:37:23&#43;09:00" />
+<meta itemprop="wordCount" content="904">
 
 
 
@@ -421,9 +421,58 @@ writing extra application side logic to ensure referential integrity.</li>
 </li>
 </ul>
 <p>Limit each replica set to 10,000 collections</p>
-<p>Unnecessary indexes: storing an index that is unnecessary because it is (1) rarely used if at all or (2) redundant because another compound index covers it.</p>
-<p>Bloated documents: storing large amounts of data together in a document when that data is not frequently accessed together.</p>
-<p>Separating data that is accessed together: separating data between different documents and collections that is frequently accessed together.</p>
+<ul>
+<li>Collections To Drop
+<ul>
+<li>Empty collections</li>
+<li>Collections whose size is mostly indexes</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://developer.mongodb.com/article/schema-design-anti-pattern-unnecessary-indexes/">Unnecessary indexes</a>: storing an index that is unnecessary because it is (1) rarely used if at all or (2) redundant because another compound index covers it.</p>
+<ul>
+<li>The Problem
+<ul>
+<li>Indexes take up space</li>
+<li>Indexes impact storage engine performance</li>
+<li>Indexes impact write performance</li>
+</ul>
+</li>
+</ul>
+<p>Limit each collection to 50 indexes.</p>
+<p>Indexes to Drop
+- Rarely used indexes
+- Redundant indexes</p>
+<ul>
+<li>Summary
+<ul>
+<li>Do: Create indexes that support frequent queries</li>
+<li>Don't: Create unnecessary indexes</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://developer.mongodb.com/article/schema-design-anti-pattern-bloated-documents/">Bloated documents</a>: storing large amounts of data together in a document when that data is not frequently accessed together.</p>
+<p>WiredTiger는 인덱스와 자주 쓰는 도큐먼트를 캐시한다</p>
+<ul>
+<li>Summary
+<ul>
+<li>Do: Store data together that is accessed together</li>
+<li>Don't: bloat your documents with related data that isn't accessed together</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://developer.mongodb.com/article/schema-design-anti-pattern-separating-data/">Separating data that is accessed together</a>: separating data between different documents and collections that is frequently accessed together.</p>
+<p>$lookup
+- Joins data from more than one collection
+- Great for rarely used queried or analytical queries</p>
+<ul>
+<li>Problem
+<ul>
+<li>$lookup can be slow and resource-intensive</li>
+</ul>
+</li>
+</ul>
+<p>Data that is accessed together should be stored together</p>
 <p>Case-insensitive queries without case-insensitive indexes: frequently executing a case-insensitive query without having a case-insensitive index to cover it.</p>
  </div>
     <footer class="post-footer">
