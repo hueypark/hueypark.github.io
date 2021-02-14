@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-5/" />
 <meta property="article:published_time" content="2021-02-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-02-13T13:37:23+09:00" />
+<meta property="article:modified_time" content="2021-02-14T10:41:07+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MongoDB 스터디 5주차(패턴과 안티패턴)"/>
@@ -30,8 +30,8 @@
  Pattern Handling Duplication, Staleness and Integrity   Duplication
  Why?  Result of embedding information in a given document for faster access   Concern  Challenge for correctness and consistency   case  is solution has minimal effect(unchanging information) should be handled(precomputed sum, application handled) accepting staleness in some pieces of data, writing extra application side logic to ensure referential integrity.      Staleness">
 <meta itemprop="datePublished" content="2021-02-10T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-02-13T13:37:23&#43;09:00" />
-<meta itemprop="wordCount" content="904">
+<meta itemprop="dateModified" content="2021-02-14T10:41:07&#43;09:00" />
+<meta itemprop="wordCount" content="1025">
 
 
 
@@ -473,7 +473,32 @@ writing extra application side logic to ensure referential integrity.</li>
 </li>
 </ul>
 <p>Data that is accessed together should be stored together</p>
-<p>Case-insensitive queries without case-insensitive indexes: frequently executing a case-insensitive query without having a case-insensitive index to cover it.</p>
+<p>Summary
+- Do: Carefully consider your use case as you design your schema
+- Don't: Separate data that is accessed together</p>
+<p><a href="https://developer.mongodb.com/article/schema-design-anti-pattern-case-insensitive-query-index/">Case-insensitive queries without case-insensitive indexes</a>: frequently executing a case-insensitive query without having a case-insensitive index to cover it.</p>
+<ul>
+<li>Problem
+<ul>
+<li>$regex queries are case-insensiteve but not performant</li>
+<li>Non-$regex queries that are not suppoeted by a case-insensitive index will return case-sensitive results</li>
+</ul>
+</li>
+</ul>
+<p>Collation: <a href="https://docs.mongodb.com/manual/reference/collation/">https://docs.mongodb.com/manual/reference/collation/</a>
+strength: level 1 and 2 five you case-insensitivity</p>
+<pre><code>Dog
+dog
+dOg
+</code></pre><ul>
+<li>Summary
+<ul>
+<li>Do: Use $regex with the i option (but it won't be as performant)</li>
+<li>Do: Create a case-insensitive index with a collation strength of 1 or 2 and specify that your query uses the same collation</li>
+<li>Do: Set the default collation strength of your collection to 1 or 2 when you create it, and do not specify a different collation in your queries and indexes</li>
+</ul>
+</li>
+</ul>
  </div>
     <footer class="post-footer">
   <div class="post-footer-data">
@@ -488,7 +513,7 @@ writing extra application side logic to ensure referential integrity.</li>
   
 </div>
 
-    <div class="date">created: 2021-02-10 | updated: 2021-02-13</div>
+    <div class="date">created: 2021-02-10 | updated: 2021-02-14</div>
     
   </div>
 </footer>
