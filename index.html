@@ -130,8 +130,9 @@ if (!doNotTrack) {
 
   <div class="summary">
     아직 작성중입니다.
- Pattern Handling Duplication, Staleness and Integrity   Duplication
- Why?  Result of embedding information in a given document for faster access   Concern  Challenge for correctness and consistency   case  is solution has minimal effect(unchanging information) should be handled(precomputed sum, application handled) accepting staleness in some pieces of data, writing extra application side logic to ensure referential integrity.      Staleness
+ 패턴 Attribute Pattern  상황  비슷한 필드가 많을 때 여러 필드에 걸쳐 조회하고 싶을때 필드가 일부 도큐먼트에만 있을 때   해결책  필드를 k/v 짝으로 나누어 서브도큐먼트에 저장   예  적용 전
+{ &#34;title&#34;: &#34;Star Wars&#34;, &#34;release_US&#34;: &#34;1977-05-20T01:00:00+01:00&#34;, &#34;release_France&#34;: &#34;1977-10-19T01:00:00+01:00&#34;, &#34;release_Italy&#34;: &#34;1977-10-20T01:00:00+01:00&#34;, &#34;release_UK&#34;: &#34;1977-12-27T01:00:00+01:00&#34;, } 적용 후
+{ &#34;title&#34;: &#34;Star Wars&#34;, &#34;director&#34;: &#34;George Lucas&#34;, &#34;releases&#34;: [ { &#34;location&#34;: &#34;USA&#34;, &#34;date&#34;: &#34;1977-05-20T01:00:00+01:00&#34; }, { &#34;location&#34;: &#34;France&#34;, &#34;date&#34;: &#34;1977-10-19T01:00:00+01:00&#34; }, { &#34;location&#34;: &#34;Italy&#34;, &#34;date&#34;: &#34;1977-10-20T01:00:00+01:00&#34; }, { &#34;location&#34;: &#34;UK&#34;, &#34;date&#34;: &#34;1977-12-27T01:00:00+01:00&#34; }, ] }  장점  인덱싱하기 쉬움 더 적은 인덱스가 필요함 쿼리가 간단해지고 일반적으로 빨라짐    Extended Reference Pattern  상황  너무 많은 조인이 발생함   해결책  주가 되는 도큐먼트에 쪽에 필드를 임베딩함   예  적용 전
   </div>
 
   <div class="rmore">
