@@ -10,31 +10,28 @@
 
 <link rel="canonical" href="https://marsettler.com/mongodb/mongodb-study-week-5/">
 <meta property="og:title" content="MongoDB 스터디 5주차(패턴과 안티패턴)" />
-<meta property="og:description" content="아직 작성중입니다.
- 패턴 Attribute Pattern  상황  비슷한 필드가 많을 때 여러 필드에 걸쳐 조회하고 싶을때 필드가 일부 도큐먼트에만 있을 때   해결책  필드를 k/v 짝으로 나누어 서브도큐먼트에 저장   예  적용 전
+<meta property="og:description" content="패턴 Attribute Pattern  상황  비슷한 필드가 많을 때 여러 필드에 걸쳐 조회하고 싶을때 필드가 일부 도큐먼트에만 있을 때   해결책  필드를 k/v 짝으로 나누어 서브도큐먼트에 저장   예  적용 전
 { &#34;title&#34;: &#34;Star Wars&#34;, &#34;release_US&#34;: &#34;1977-05-20T01:00:00&#43;01:00&#34;, &#34;release_France&#34;: &#34;1977-10-19T01:00:00&#43;01:00&#34;, &#34;release_Italy&#34;: &#34;1977-10-20T01:00:00&#43;01:00&#34;, &#34;release_UK&#34;: &#34;1977-12-27T01:00:00&#43;01:00&#34;, } 적용 후
 { &#34;title&#34;: &#34;Star Wars&#34;, &#34;director&#34;: &#34;George Lucas&#34;, &#34;releases&#34;: [ { &#34;location&#34;: &#34;USA&#34;, &#34;date&#34;: &#34;1977-05-20T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;France&#34;, &#34;date&#34;: &#34;1977-10-19T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;Italy&#34;, &#34;date&#34;: &#34;1977-10-20T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;UK&#34;, &#34;date&#34;: &#34;1977-12-27T01:00:00&#43;01:00&#34; }, ] }  장점  인덱싱하기 쉬움 더 적은 인덱스가 필요함 쿼리가 간단해지고 일반적으로 빨라짐    Extended Reference Pattern  상황  너무 많은 조인이 발생함   해결책  주가 되는 도큐먼트에 쪽에 필드를 임베딩함   예  적용 전" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-5/" />
 <meta property="article:published_time" content="2021-02-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-02-14T21:02:48+09:00" />
+<meta property="article:modified_time" content="2021-02-17T09:07:53+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MongoDB 스터디 5주차(패턴과 안티패턴)"/>
-<meta name="twitter:description" content="아직 작성중입니다.
- 패턴 Attribute Pattern  상황  비슷한 필드가 많을 때 여러 필드에 걸쳐 조회하고 싶을때 필드가 일부 도큐먼트에만 있을 때   해결책  필드를 k/v 짝으로 나누어 서브도큐먼트에 저장   예  적용 전
+<meta name="twitter:description" content="패턴 Attribute Pattern  상황  비슷한 필드가 많을 때 여러 필드에 걸쳐 조회하고 싶을때 필드가 일부 도큐먼트에만 있을 때   해결책  필드를 k/v 짝으로 나누어 서브도큐먼트에 저장   예  적용 전
 { &#34;title&#34;: &#34;Star Wars&#34;, &#34;release_US&#34;: &#34;1977-05-20T01:00:00&#43;01:00&#34;, &#34;release_France&#34;: &#34;1977-10-19T01:00:00&#43;01:00&#34;, &#34;release_Italy&#34;: &#34;1977-10-20T01:00:00&#43;01:00&#34;, &#34;release_UK&#34;: &#34;1977-12-27T01:00:00&#43;01:00&#34;, } 적용 후
 { &#34;title&#34;: &#34;Star Wars&#34;, &#34;director&#34;: &#34;George Lucas&#34;, &#34;releases&#34;: [ { &#34;location&#34;: &#34;USA&#34;, &#34;date&#34;: &#34;1977-05-20T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;France&#34;, &#34;date&#34;: &#34;1977-10-19T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;Italy&#34;, &#34;date&#34;: &#34;1977-10-20T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;UK&#34;, &#34;date&#34;: &#34;1977-12-27T01:00:00&#43;01:00&#34; }, ] }  장점  인덱싱하기 쉬움 더 적은 인덱스가 필요함 쿼리가 간단해지고 일반적으로 빨라짐    Extended Reference Pattern  상황  너무 많은 조인이 발생함   해결책  주가 되는 도큐먼트에 쪽에 필드를 임베딩함   예  적용 전"/>
 
 
 <meta itemprop="name" content="MongoDB 스터디 5주차(패턴과 안티패턴)">
-<meta itemprop="description" content="아직 작성중입니다.
- 패턴 Attribute Pattern  상황  비슷한 필드가 많을 때 여러 필드에 걸쳐 조회하고 싶을때 필드가 일부 도큐먼트에만 있을 때   해결책  필드를 k/v 짝으로 나누어 서브도큐먼트에 저장   예  적용 전
+<meta itemprop="description" content="패턴 Attribute Pattern  상황  비슷한 필드가 많을 때 여러 필드에 걸쳐 조회하고 싶을때 필드가 일부 도큐먼트에만 있을 때   해결책  필드를 k/v 짝으로 나누어 서브도큐먼트에 저장   예  적용 전
 { &#34;title&#34;: &#34;Star Wars&#34;, &#34;release_US&#34;: &#34;1977-05-20T01:00:00&#43;01:00&#34;, &#34;release_France&#34;: &#34;1977-10-19T01:00:00&#43;01:00&#34;, &#34;release_Italy&#34;: &#34;1977-10-20T01:00:00&#43;01:00&#34;, &#34;release_UK&#34;: &#34;1977-12-27T01:00:00&#43;01:00&#34;, } 적용 후
 { &#34;title&#34;: &#34;Star Wars&#34;, &#34;director&#34;: &#34;George Lucas&#34;, &#34;releases&#34;: [ { &#34;location&#34;: &#34;USA&#34;, &#34;date&#34;: &#34;1977-05-20T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;France&#34;, &#34;date&#34;: &#34;1977-10-19T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;Italy&#34;, &#34;date&#34;: &#34;1977-10-20T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;UK&#34;, &#34;date&#34;: &#34;1977-12-27T01:00:00&#43;01:00&#34; }, ] }  장점  인덱싱하기 쉬움 더 적은 인덱스가 필요함 쿼리가 간단해지고 일반적으로 빨라짐    Extended Reference Pattern  상황  너무 많은 조인이 발생함   해결책  주가 되는 도큐먼트에 쪽에 필드를 임베딩함   예  적용 전">
 <meta itemprop="datePublished" content="2021-02-10T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-02-14T21:02:48&#43;09:00" />
-<meta itemprop="wordCount" content="749">
+<meta itemprop="dateModified" content="2021-02-17T09:07:53&#43;09:00" />
+<meta itemprop="wordCount" content="747">
 
 
 
@@ -121,9 +118,7 @@ if (!doNotTrack) {
 
 <article class="post">
     <h1 class="title"> MongoDB 스터디 5주차(패턴과 안티패턴) </h1>
-    <div class="content"> <p>아직 작성중입니다.</p>
-<hr>
-<h2 id="heading">패턴</h2>
+    <div class="content"> <h2 id="heading">패턴</h2>
 <h3 id="attribute-pattern">Attribute Pattern</h3>
 <ul>
 <li>상황
@@ -588,7 +583,7 @@ if (!doNotTrack) {
   
 </div>
 
-    <div class="date">created: 2021-02-10 | updated: 2021-02-14</div>
+    <div class="date">created: 2021-02-10 | updated: 2021-02-17</div>
     
   </div>
 </footer>
