@@ -12,6 +12,19 @@
     
     
     <item>
+      <title>(Book) TCP/IP 교과서</title>
+      <link>https://marsettler.com/book/tcp-ip-in-24-hours/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/book/tcp-ip-in-24-hours/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;지은이: 조 캐서드&lt;/li&gt;
+&lt;li&gt;ISBN: 979-11-6521-399-2 93000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description>
+    </item>
+    
+    <item>
       <title>2020년 2월 19일 쿠키런: 킹덤 장기 점검(AWS)</title>
       <link>https://marsettler.com/server-fault/2021-02-21-cookierun-kingdom-server-faultaws/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
