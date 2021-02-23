@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>invest on Marsettler</title>
+    <link>https://marsettler.com/tags/invest/</link>
+    <description>Recent content in invest on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/invest/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>가치투자자 일지</title>
+      <link>https://marsettler.com/value-investors-diary/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/value-investors-diary/</guid>
+      <description>|회사명|코드|날짜|주가|시가총액|매출|영업이익|특이사항| |&amp;mdash;|&amp;mdash;|&amp;mdash;|&amp;mdash;|&amp;mdash;|&amp;mdash;|&amp;mdash;|</description>
+    </item>
+    
+  </channel>
+</rss>
