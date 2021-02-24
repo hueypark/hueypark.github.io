@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2021-02-24T09:28:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/mongodb/</loc>
+    <lastmod>2021-02-24T09:28:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/mongodb/mongodb-study-week-6/</loc>
+    <lastmod>2021-02-24T09:28:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/mongodb/</loc>
+    <lastmod>2021-02-24T09:28:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2021-02-24T09:28:38+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/book/tcp-ip-in-24-hours/</loc>
     <lastmod>2021-02-21T21:18:42+09:00</lastmod>
   </url>
@@ -23,11 +48,6 @@
   </url>
   
   <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2021-02-23T19:31:30+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marsettler.com/tags/server-fault/</loc>
     <lastmod>2021-02-21T15:57:06+09:00</lastmod>
   </url>
@@ -38,22 +58,7 @@
   </url>
   
   <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2021-02-23T19:31:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/mongodb/</loc>
-    <lastmod>2021-02-17T09:23:14+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marsettler.com/mongodb/mongodb-study-week-5/</loc>
-    <lastmod>2021-02-17T09:23:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/mongodb/</loc>
     <lastmod>2021-02-17T09:23:14+09:00</lastmod>
   </url>
   
