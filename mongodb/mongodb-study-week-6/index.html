@@ -15,7 +15,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-6/" />
 <meta property="article:published_time" content="2021-02-23T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-02-25T22:31:47+09:00" />
+<meta property="article:modified_time" content="2021-02-25T22:39:23+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MongoDB 스터디 6주차(MongoDB CURD 쓰기 연산)"/>
@@ -27,7 +27,7 @@
 <meta itemprop="description" content="Create Operations db.collection.insertOne() 도큐먼트를 하나 추가합니다.
 문법 db.collection.insertOne(&lt;document&gt;,{writeConcern: &lt;document&gt;}) writeConcern  w: 몇 개의 mongod 에 저장 후 응답할 지 설정  &lt;숫자&gt;: 몇 개의 mongod 에 기록될 지 직접 지정 &ldquo;majority&rdquo;: 과반의 mongod 에 기록되게 설정 &lt;커스텀 write concern 이름&gt;: 특정 데이터 센터에 저장되게 설정가능, Custom Multi-Datacenter Write Concerns   j: 디스크의 저널에 저장 후 응답할지 설정 여부 timeout: 쓰기 제한 시간(밀리세컨드), 반환하기 전에 이미 성공한 쓰기 작업을 롤백하지 않음    예 db.">
 <meta itemprop="datePublished" content="2021-02-23T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-02-25T22:31:47&#43;09:00" />
+<meta itemprop="dateModified" content="2021-02-25T22:39:23&#43;09:00" />
 <meta itemprop="wordCount" content="840">
 
 
@@ -270,7 +270,7 @@ if (!doNotTrack) {
 
 { <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">92</span>, <span style="color:#ae81ff">90</span> ] }
 { <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">98</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">100</span> ] }
-{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">110</span>, <span style="color:#ae81ff">100</span> ] }
+{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">100</span> ] }
 </code></pre></div><h2 id="dbcollectionupdatemany">db.collection.updateMany()</h2>
 <p>도큐먼트를 여러 개 업데이트합니다.</p>
 <h2 id="dbcollectionreplaceone">db.collection.replaceOne()</h2>
@@ -288,8 +288,8 @@ if (!doNotTrack) {
 );
 
 { <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;grade_sum&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span> },
-{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">98</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">100</span> ] },
-{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">100</span> ] }
+{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">98</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">102</span> ] },
+{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">110</span>, <span style="color:#ae81ff">100</span> ] }
 </code></pre></div><h1 id="delete-operations">Delete operations</h1>
 <h2 id="dbcollectiondeleteonehttpsdocsmongodbcommanualreferencemethoddbcollectiondeleteone"><a href="https://docs.mongodb.com/manual/reference/method/db.collection.deleteOne/">db.collection.deleteOne()</a></h2>
 <p>필터된 도큐먼트를 하나 지웁니다.</p>
