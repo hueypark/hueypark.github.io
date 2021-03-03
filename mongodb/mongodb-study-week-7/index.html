@@ -17,7 +17,7 @@ Read Concern readConcern 옵션을 사용해 읽기 작업의 일관성과 격�
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-7/" />
 <meta property="article:published_time" content="2021-02-27T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-03-04T08:47:22+09:00" />
+<meta property="article:modified_time" content="2021-03-04T08:51:27+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MongoDB 스터디 7주차(MongoDB CURD 읽기 연산)"/>
@@ -33,8 +33,8 @@ Read Concern readConcern 옵션을 사용해 읽기 작업의 일관성과 격�
 Read Concern readConcern 옵션을 사용해 읽기 작업의 일관성과 격리수준, 가용성을 제어할 수 있습니다.
 4.4 버전부터 기본값의 전역 설정이 가능합니다. 세부정보는 setDefaultRWConcern에서 확인하십시오.">
 <meta itemprop="datePublished" content="2021-02-27T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-03-04T08:47:22&#43;09:00" />
-<meta itemprop="wordCount" content="484">
+<meta itemprop="dateModified" content="2021-03-04T08:51:27&#43;09:00" />
+<meta itemprop="wordCount" content="485">
 
 
 
@@ -228,7 +228,8 @@ if (!doNotTrack) {
 </li>
 </ul>
 <h1 id="dbcollectionfindandmodifyhttpsdocsmongodbcommanualreferencemethoddbcollectionfindandmodify"><a href="https://docs.mongodb.com/manual/reference/method/db.collection.findAndModify/">db.collection.findAndModify()</a></h1>
-<p>도큐먼트를 업데이트할 때 <code>db.collection.findAndModify()</code> 와 <code>update()</code> 는 다르게 동작합니다:</p>
+<p>단일 도큐먼트를 변경 후 반환합니다.</p>
+<p><code>db.collection.findAndModify()</code> 와 <code>update()</code> 의 차이:</p>
 <ul>
 <li>
 <p>기본적으로 둘 다 단일 도큐먼트를 업데이트합니다. 그러나 <code>update()</code> 는 <code>multi</code> 옵션을 사용해 여러 문서를 업데이트 할 수 있습니다.</p>
