@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/mongodb/mongodb-study-week-7/">
+<meta property="og:title" content="MongoDB 스터디 7주차(MongoDB CURD 읽기 연산)" />
+<meta property="og:description" content="db.collection.find() 쿼리 기준과 일치하는 도큐먼트에 대한 커서를 반환합니다.
+파라미터  query: 필터에 사용할 쿼리 연산자입니다. projection: 도큐먼트에서 반환할 필드를 지정합니다. 생략하면 모든 필드가 반환됩니다.  db.collection.findOne() 쿼리 기준과 일치하는 하나의 도큐먼트를 반환합니다. 여러 도큐먼트들이 쿼리를 만족하면 디스크에 저장된 순서에 따라 첫 도큐먼트를 반환합니다. 만약 대상이 없으면 null을 반환합니다.
+Read Concern readConcern 옵션을 사용해 읽기 작업의 일관성과 격리수준, 가용성을 제어할 수 있습니다.
+4.4 버전부터 기본값의 전역 설정이 가능합니다. 세부정보는 setDefaultRWConcern에서 확인하십시오." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-7/" />
+<meta property="article:published_time" content="2021-02-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-04T08:47:22+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MongoDB 스터디 7주차(MongoDB CURD 읽기 연산)"/>
+<meta name="twitter:description" content="db.collection.find() 쿼리 기준과 일치하는 도큐먼트에 대한 커서를 반환합니다.
+파라미터  query: 필터에 사용할 쿼리 연산자입니다. projection: 도큐먼트에서 반환할 필드를 지정합니다. 생략하면 모든 필드가 반환됩니다.  db.collection.findOne() 쿼리 기준과 일치하는 하나의 도큐먼트를 반환합니다. 여러 도큐먼트들이 쿼리를 만족하면 디스크에 저장된 순서에 따라 첫 도큐먼트를 반환합니다. 만약 대상이 없으면 null을 반환합니다.
+Read Concern readConcern 옵션을 사용해 읽기 작업의 일관성과 격리수준, 가용성을 제어할 수 있습니다.
+4.4 버전부터 기본값의 전역 설정이 가능합니다. 세부정보는 setDefaultRWConcern에서 확인하십시오."/>
+
+
+<meta itemprop="name" content="MongoDB 스터디 7주차(MongoDB CURD 읽기 연산)">
+<meta itemprop="description" content="db.collection.find() 쿼리 기준과 일치하는 도큐먼트에 대한 커서를 반환합니다.
+파라미터  query: 필터에 사용할 쿼리 연산자입니다. projection: 도큐먼트에서 반환할 필드를 지정합니다. 생략하면 모든 필드가 반환됩니다.  db.collection.findOne() 쿼리 기준과 일치하는 하나의 도큐먼트를 반환합니다. 여러 도큐먼트들이 쿼리를 만족하면 디스크에 저장된 순서에 따라 첫 도큐먼트를 반환합니다. 만약 대상이 없으면 null을 반환합니다.
+Read Concern readConcern 옵션을 사용해 읽기 작업의 일관성과 격리수준, 가용성을 제어할 수 있습니다.
+4.4 버전부터 기본값의 전역 설정이 가능합니다. 세부정보는 setDefaultRWConcern에서 확인하십시오.">
+<meta itemprop="datePublished" content="2021-02-27T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-03-04T08:47:22&#43;09:00" />
+<meta itemprop="wordCount" content="484">
+
+
+
+<meta itemprop="keywords" content="MongoDB," />
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-121966234-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<title>
+
+
+     MongoDB 스터디 7주차(MongoDB CURD 읽기 연산) 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    
+    
+    <a class="nav-item" href="/wiki/"><div class="nav-item-title">Wiki</div></a>
+    
+    <a class="nav-item" href="/about-me/"><div class="nav-item-title">About Me</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> MongoDB 스터디 7주차(MongoDB CURD 읽기 연산) </h1>
+    <div class="content"> <h1 id="dbcollectionfindhttpsdocsmongodbcommanualreferencemethoddbcollectionfind"><a href="https://docs.mongodb.com/manual/reference/method/db.collection.find/">db.collection.find()</a></h1>
+<p>쿼리 기준과 일치하는 도큐먼트에 대한 커서를 반환합니다.</p>
+<h2 id="heading">파라미터</h2>
+<ul>
+<li>query: 필터에 사용할 쿼리 연산자입니다.</li>
+<li>projection: 도큐먼트에서 반환할 필드를 지정합니다. 생략하면 모든 필드가 반환됩니다.</li>
+</ul>
+<h1 id="dbcollectionfindonehttpsdocsmongodbcommanualreferencemethoddbcollectionfindone"><a href="https://docs.mongodb.com/manual/reference/method/db.collection.findOne/">db.collection.findOne()</a></h1>
+<p>쿼리 기준과 일치하는 하나의 도큐먼트를 반환합니다.
+여러 도큐먼트들이 쿼리를 만족하면 디스크에 저장된 순서에 따라 첫 도큐먼트를 반환합니다.
+만약 대상이 없으면 null을 반환합니다.</p>
+<h1 id="read-concernhttpsdocsmongodbcommanualreferencereadconcern"><a href="https://docs.mongodb.com/manual/reference/read-concern/">Read Concern</a></h1>
+<p>readConcern 옵션을 사용해 읽기 작업의 일관성과 격리수준, 가용성을 제어할 수 있습니다.</p>
+<p>4.4 버전부터 기본값의 전역 설정이 가능합니다. 세부정보는 <a href="https://docs.mongodb.com/manual/reference/command/setDefaultRWConcern/#dbcmd.setDefaultRWConcern">setDefaultRWConcern</a>에서 확인하십시오.</p>
+<h2 id="read-concern-levels">Read Concern Levels</h2>
+<ul>
+<li>local
+<ul>
+<li>과반수에 기록되었음을 확인하지 않고 데이터를 반환합니다.(읽어온 데이터가 롤백될 수 있음)</li>
+<li>사용가능: <code>causally consistent session</code> 또는 트랜잭션에서 사용할 수 있습니다.</li>
+</ul>
+</li>
+<li>available
+<ul>
+<li>과반수에 기록되었음을 확인하지 않고 데이터를 반환합니다.(읽어온 데이터가 롤백될 수 있음)</li>
+<li>사용가능: <code>causally consistent session</code> 또는 트랜잭션에서 사용할 수 없습니다.</li>
+<li>샤딩된 클러스터에서 가장 낮은 레이턴시를 제공합니다. 하지만 샤드된 컬렉션에서 <a href="https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document">orphaned document</a>를 반환할 수 있음을 유의하십시오.</li>
+</ul>
+</li>
+<li>majority
+<ul>
+<li>과반수에 기록된 데이터를 반환합니다.</li>
+<li>이를 충족하기 위해 각 레플리카 셋 멤버들이 메모리의 <code>majority-commit point</code> 반환해야 합니다. 따라서 위 두 설정에 비해 성능이 떨어집니다.</li>
+<li>사용가능:
+<ul>
+<li><code>causally consistent session</code> 또는 트랜잭션에서 사용할 수 있습니다..</li>
+<li>PSA 아키텍처를 사용할 때 이 설정을 쓰지 않게 설정할 수 있습니다. 하지만 이것은 Change Streams, 트랜잭션, 샤디드 클러스터에 영향을 줄 수 있습니다. 자세한 내용은 <a href="https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority">Disable Read Concern Majority</a>에서 확인하십시오.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>linearizable
+<ul>
+<li>읽기를 시작하기 전에 완료된 쓰기를 반영하는 데이터를 반환합니다. 쿼리가 결과를 반환하기 전에 레플리카 셋 전체에 결과가 전파되길 기다립니다.</li>
+<li>읽기 시작 후 레플리카 셋의 과반이 재시작되어도, 반환된 데이터는 유효합니다.(<code>writeConcernMajorityJournalDefault</code> 을 false 로 변경하면 아닐 수 있음)</li>
+<li>사용가능:
+<ul>
+<li><code>causally consistent session</code> 또는 트랜잭션에서 사용할 수 없습니다.</li>
+<li>프라이머리 노드에만 설정할 수 있습니다.</li>
+</ul>
+</li>
+<li>어그리게이션의 <a href="https://docs.mongodb.com/manual/reference/operator/aggregation/out/#pipe._S_out">$out</a>, <a href="https://docs.mongodb.com/manual/reference/operator/aggregation/merge/#pipe._S_merge">$merge</a> 스테이지에서 사용할 수 없습니다.</li>
+<li>요구사항: 유니크하게 식별가능한 단일 도큐먼트에 읽기 작업에서만 보장됩니다.</li>
+</ul>
+</li>
+<li>snapshot
+<ul>
+<li>트랜잭션이 <code>causally consistent session</code> 이 아니고 Write concern 이 majority 인 경우, 트랜잭션은 과반이 커밋된 데이터의 스냅샷에서 읽습니다.</li>
+<li>트랜잭션이 <code>causally consistent session</code> 이고 Write concern 이 majority 인 경우, 트랜잭션 시작 직전에 과반이 커밋된 데이터의 스냅샷에서 읽습니다.</li>
+<li>사용가능:
+<ul>
+<li>멀티 도큐먼트 트랜잭션에서만 사용가능합니다.</li>
+<li>샤딩된 클러스터 중 하나라도 <a href="https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority">Disable Read Concern Majority</a> 설정을 할 경우 사용할 수 없습니다.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="causal-consistencyhttpsdocsmongodbcommanualcorereadisolationconsistencyrecencycausalconsistency"><a href="https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#causal-consistency">Causal Consistency</a></h2>
+<p>뭔가 묘한 일관성 옵션입니다. 잘 찾아보면 활용할 만 한 특수한 사용처가 있을지도 모릅니다.</p>
+<blockquote>
+<p>Applications must ensure that only one thread at a time executes these operations in a client session.</p>
+</blockquote>
+<blockquote>
+<p>Operations within a causally consistent session are not isolated from operations outside the session.</p>
+</blockquote>
+<h1 id="read-preferencehttpsdocsmongodbcommanualcorereadpreference"><a href="https://docs.mongodb.com/manual/core/read-preference/">Read Preference</a></h1>
+<p>MongoDB 클라이언트가 레플리카 셋의 어떤 멤버에서 데이터를 가져올지 설정합니다.</p>
+<ul>
+<li>primary
+<ul>
+<li>기본 값</li>
+<li>모든 명령은 프라이머리에서 데이터를 가져옵니다.</li>
+</ul>
+</li>
+<li>primaryPreferred
+<ul>
+<li>프라이머리에서 데이터를 가져옵니다. 그럴 수 없을 경우 세컨더리에서 가져옵니다.</li>
+</ul>
+</li>
+<li>secondary
+<ul>
+<li>세컨더리에서 데이터를 가져옵니다.</li>
+</ul>
+</li>
+<li>secondaryPreferred
+<ul>
+<li>세컨더리에서 데이터를 가져옵니다. 그럴 수 없을 경우 프라이머리에서 가져옵니다.</li>
+</ul>
+</li>
+<li>nearest
+<ul>
+<li>계산된 레이턴시를 기반으로 적절한 노드에서 데이터를 가져옵니다.</li>
+</ul>
+</li>
+</ul>
+<h1 id="dbcollectionfindandmodifyhttpsdocsmongodbcommanualreferencemethoddbcollectionfindandmodify"><a href="https://docs.mongodb.com/manual/reference/method/db.collection.findAndModify/">db.collection.findAndModify()</a></h1>
+<p>도큐먼트를 업데이트할 때 <code>db.collection.findAndModify()</code> 와 <code>update()</code> 는 다르게 동작합니다:</p>
+<ul>
+<li>
+<p>기본적으로 둘 다 단일 도큐먼트를 업데이트합니다. 그러나 <code>update()</code> 는 <code>multi</code> 옵션을 사용해 여러 문서를 업데이트 할 수 있습니다.</p>
+</li>
+<li>
+<p>대상이 되는 도큐먼트가 다수일때 <code>findAndModify()</code> 는 <code>sort</code> 옵션을 사용해 대상을 선택할 수 있습니다.</p>
+</li>
+<li>
+<p>기본적으로 <code>findAndModify()</code> 는 업데이트 전의 문서를 반환합니다. 업데이트 된 문서를 얻으려면 <code>new</code> 옵션을 사용하십시오. <code>update()</code> 는 작업 상태만 포함된 <code>WriteResult</code> 객체를 반환합니다. 업데이트 문서를 확인하려면 <code>find()</code> 명령을 사용하십시오(그 사이에 다른 업데이트에 의해 문서가 수정되었을 수 있습니다.).</p>
+</li>
+</ul>
+ </div>
+    <footer class="post-footer">
+  <div class="post-footer-data">
+    
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date">created: 2021-02-27 | updated: 2021-03-04</div>
+    
+  </div>
+</footer>
+
+<script src="https://utteranc.es/client.js"
+        repo="hueypark/wiki"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://marsettler.com/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+<script async src="/js/mermaid/mermaid.min.js"></script>
+
+</body>
+</html>
+
