@@ -10,7 +10,7 @@
 
 <link rel="canonical" href="https://marsettler.com/mongodb/mongodb-study-week-8/">
 <meta property="og:title" content="MongoDB 스터디 8주차(MongoDB CURD 맵 리듀스)" />
-<meta property="og:description" content="Map-Reduce MongoDB 에서는 맵리듀스 대신 어그리게이션 파이프라인을 사용하길 권장하고 있으며, 상세내용은 아래와 같습니다.
+<meta property="og:description" content="Map-Reduce MongoDB 는 맵리듀스 대신 어그리게이션 파이프라인을 사용하길 권장하고 있으며, 상세내용은 아래와 같습니다.
 어그리게이션 파이프라이프라인으로 맵 리듀스를 대체할 수 있습니다
 어그리게이션 파이프라인은 맵-리듀스보다 좋은 성능과 사용성을 제공하며, $group, $merge와 같은 명령어를 사용해 맵리듀스를 어그리게이션 파이프라인으로 변경할 수 있습니다.
 또 사용자 정의 기능이 필요한 경우 4.4 버전부터 $accumulator, $function 명렁어로 해결할 수 있습니다.
@@ -19,11 +19,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-8/" />
 <meta property="article:published_time" content="2021-03-06T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-03-07T10:22:07+09:00" />
+<meta property="article:modified_time" content="2021-03-07T11:01:25+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="MongoDB 스터디 8주차(MongoDB CURD 맵 리듀스)"/>
-<meta name="twitter:description" content="Map-Reduce MongoDB 에서는 맵리듀스 대신 어그리게이션 파이프라인을 사용하길 권장하고 있으며, 상세내용은 아래와 같습니다.
+<meta name="twitter:description" content="Map-Reduce MongoDB 는 맵리듀스 대신 어그리게이션 파이프라인을 사용하길 권장하고 있으며, 상세내용은 아래와 같습니다.
 어그리게이션 파이프라이프라인으로 맵 리듀스를 대체할 수 있습니다
 어그리게이션 파이프라인은 맵-리듀스보다 좋은 성능과 사용성을 제공하며, $group, $merge와 같은 명령어를 사용해 맵리듀스를 어그리게이션 파이프라인으로 변경할 수 있습니다.
 또 사용자 정의 기능이 필요한 경우 4.4 버전부터 $accumulator, $function 명렁어로 해결할 수 있습니다.
@@ -32,14 +32,14 @@
 
 
 <meta itemprop="name" content="MongoDB 스터디 8주차(MongoDB CURD 맵 리듀스)">
-<meta itemprop="description" content="Map-Reduce MongoDB 에서는 맵리듀스 대신 어그리게이션 파이프라인을 사용하길 권장하고 있으며, 상세내용은 아래와 같습니다.
+<meta itemprop="description" content="Map-Reduce MongoDB 는 맵리듀스 대신 어그리게이션 파이프라인을 사용하길 권장하고 있으며, 상세내용은 아래와 같습니다.
 어그리게이션 파이프라이프라인으로 맵 리듀스를 대체할 수 있습니다
 어그리게이션 파이프라인은 맵-리듀스보다 좋은 성능과 사용성을 제공하며, $group, $merge와 같은 명령어를 사용해 맵리듀스를 어그리게이션 파이프라인으로 변경할 수 있습니다.
 또 사용자 정의 기능이 필요한 경우 4.4 버전부터 $accumulator, $function 명렁어로 해결할 수 있습니다.
 맵리듀스를 대체하는 어그리게이션 파이프라인을 알고 싶으면, 맵리듀스에서 어그리게이션 파이프라인으로 변경 나 맵리듀스 예제 문서를 참고하십시오.
 참고자료  공식 문서 Map-Reduce  ">
 <meta itemprop="datePublished" content="2021-03-06T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-03-07T10:22:07&#43;09:00" />
+<meta itemprop="dateModified" content="2021-03-07T11:01:25&#43;09:00" />
 <meta itemprop="wordCount" content="71">
 
 
@@ -128,7 +128,7 @@ if (!doNotTrack) {
 <article class="post">
     <h1 class="title"> MongoDB 스터디 8주차(MongoDB CURD 맵 리듀스) </h1>
     <div class="content"> <h1 id="mapreduce">Map-Reduce</h1>
-<p>MongoDB 에서는 맵리듀스 대신 어그리게이션 파이프라인을 사용하길 권장하고 있으며, 상세내용은 아래와 같습니다.</p>
+<p>MongoDB 는 맵리듀스 대신 어그리게이션 파이프라인을 사용하길 권장하고 있으며, 상세내용은 아래와 같습니다.</p>
 <p><a href="https://docs.mongodb.com/manual/core/aggregation-pipeline/">어그리게이션 파이프라이프라인</a>으로 맵 리듀스를 대체할 수 있습니다</p>
 <p>어그리게이션 파이프라인은 맵-리듀스보다 좋은 성능과 사용성을 제공하며, <a href="https://docs.mongodb.com/manual/reference/operator/aggregation/group/#pipe._S_group">$group</a>, <a href="https://docs.mongodb.com/manual/reference/operator/aggregation/merge/#pipe._S_merge">$merge</a>와 같은 명령어를 사용해 맵리듀스를 어그리게이션 파이프라인으로 변경할 수 있습니다.</p>
 <p>또 사용자 정의 기능이 필요한 경우 4.4 버전부터 <a href="https://docs.mongodb.com/manual/reference/operator/aggregation/accumulator/#grp._S_accumulator">$accumulator</a>, <a href="https://docs.mongodb.com/manual/reference/operator/aggregation/function/#exp._S_function">$function</a> 명렁어로 해결할 수 있습니다.</p>

@@ -6,10 +6,21 @@
     <description>Recent content in Server-faults on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/server-fault/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020년 3월 6일 쿠키런: 킹덤 긴급점검</title>
+      <link>https://marsettler.com/server-fault/2021-03-06-cookierun-kingdom-server-fault/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/server-fault/2021-03-06-cookierun-kingdom-server-fault/</guid>
+      <description>쿠키런: 킹덤 긴급점검이 있었습니다. 접속자 수 증대와 함께 증가하는 부하를 개선했는데, 어떤 작업이 있었는지 궁금합니다.
+개요  업데이트를 위한 점검(06:00~11:00)  점검 내용: 길드 시스템, 신규 쿠키 추가 및 오류사항 수정 등   15:00시 서버 안정화를 위한 긴급 점검 시작  갑작스러운 이용자 수 증가가 원인이라고 공지   22:00시 긴급 점검 완료  채용공고에서 흥미로운 부분 우대조건에 아래와 같은 내용이 있는데 어떤 마음인지 알 것 같습니다.
+ try-catch 와 null 에 현실자각타임이 오신 분</description>
+    </item>
     
     <item>
       <title>2020년 2월 19일 쿠키런: 킹덤 장기 점검(AWS)</title>

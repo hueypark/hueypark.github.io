@@ -6,10 +6,21 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020년 3월 6일 쿠키런: 킹덤 긴급점검</title>
+      <link>https://marsettler.com/server-fault/2021-03-06-cookierun-kingdom-server-fault/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/server-fault/2021-03-06-cookierun-kingdom-server-fault/</guid>
+      <description>쿠키런: 킹덤 긴급점검이 있었습니다. 접속자 수 증대와 함께 증가하는 부하를 개선했는데, 어떤 작업이 있었는지 궁금합니다.
+개요  업데이트를 위한 점검(06:00~11:00)  점검 내용: 길드 시스템, 신규 쿠키 추가 및 오류사항 수정 등   15:00시 서버 안정화를 위한 긴급 점검 시작  갑작스러운 이용자 수 증가가 원인이라고 공지   22:00시 긴급 점검 완료  채용공고에서 흥미로운 부분 우대조건에 아래와 같은 내용이 있는데 어떤 마음인지 알 것 같습니다.
+ try-catch 와 null 에 현실자각타임이 오신 분</description>
+    </item>
     
     <item>
       <title>MongoDB 스터디 8주차(MongoDB CURD 맵 리듀스)</title>
@@ -17,7 +28,7 @@
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/mongodb/mongodb-study-week-8/</guid>
-      <description>Map-Reduce MongoDB 에서는 맵리듀스 대신 어그리게이션 파이프라인을 사용하길 권장하고 있으며, 상세내용은 아래와 같습니다.
+      <description>Map-Reduce MongoDB 는 맵리듀스 대신 어그리게이션 파이프라인을 사용하길 권장하고 있으며, 상세내용은 아래와 같습니다.
 어그리게이션 파이프라이프라인으로 맵 리듀스를 대체할 수 있습니다
 어그리게이션 파이프라인은 맵-리듀스보다 좋은 성능과 사용성을 제공하며, $group, $merge와 같은 명령어를 사용해 맵리듀스를 어그리게이션 파이프라인으로 변경할 수 있습니다.
 또 사용자 정의 기능이 필요한 경우 4.4 버전부터 $accumulator, $function 명렁어로 해결할 수 있습니다.
