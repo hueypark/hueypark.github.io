@@ -6,10 +6,22 @@
     <description>Recent content in MongoDB on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MongoDB 스터디 8주차(aggregation)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-8aggregation/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-8aggregation/</guid>
+      <description>어그리게이션(Aggregation) 어그리게이션 작업은 데이터를 처리하여 계산된 결과를 반환합니다. 어그리게이션은 여러 도큐먼트의 값을 그룹화하고, 데이터에 다양한 작업을 수행한 후 단일 결과를 반환할 수 있습니다. MongoDB는 세 가지 어그리게이션을 제공합니다.
+ Aggregation Pipeline Single Purpose Aggregation Operations Map-reduce  어그리게이션 파이프라인(Aggregation Pipeline) Aggregation pipeline 은 파이프라인 이용해 데이터의 집계를 처리하는 프레임워크입니다. 여러 스테이지에 걸쳐 도큐먼트들을 집계된 결과로 변경합니다.
+아래 예를 살펴봅시다:
+db.orders.aggregate([{ $match: { status: &amp;#34;A&amp;#34; } },{ $group: { _id: &amp;#34;$custmor_id&amp;#34;, total: { $sum: &amp;#34;$amount&amp;#34; } } }]) $match 스테이지는 도큐먼트들을 status 필드가 &amp;quot;A&amp;quot; 인 데이터만 다음 스테이지로 보냅니다.</description>
+    </item>
     
     <item>
       <title>MongoDB 스터디 8주차(MongoDB CURD 맵 리듀스)</title>

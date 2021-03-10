@@ -110,6 +110,42 @@ if (!doNotTrack) {
     <article class="post-preview">
 
   <header>
+    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-8aggregation/'> MongoDB 스터디 8주차(aggregation)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2021-03-07 | updated: 2021-03-10</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    어그리게이션(Aggregation) 어그리게이션 작업은 데이터를 처리하여 계산된 결과를 반환합니다. 어그리게이션은 여러 도큐먼트의 값을 그룹화하고, 데이터에 다양한 작업을 수행한 후 단일 결과를 반환할 수 있습니다. MongoDB는 세 가지 어그리게이션을 제공합니다.
+ Aggregation Pipeline Single Purpose Aggregation Operations Map-reduce  어그리게이션 파이프라인(Aggregation Pipeline) Aggregation pipeline 은 파이프라인 이용해 데이터의 집계를 처리하는 프레임워크입니다. 여러 스테이지에 걸쳐 도큐먼트들을 집계된 결과로 변경합니다.
+아래 예를 살펴봅시다:
+db.orders.aggregate([{ $match: { status: &#34;A&#34; } },{ $group: { _id: &#34;$custmor_id&#34;, total: { $sum: &#34;$amount&#34; } } }]) $match 스테이지는 도큐먼트들을 status 필드가 &quot;A&quot; 인 데이터만 다음 스테이지로 보냅니다.
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/mongodb/mongodb-study-week-8aggregation/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
     <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-8map-reduce/'> MongoDB 스터디 8주차(MongoDB CURD 맵 리듀스)</a> </h2>
     <div class="meta">
       <div class="date">created: 2021-03-06 | updated: 2021-03-07</div>
@@ -422,48 +458,6 @@ cmake -G &#34;Visual Studio 16 2019&#34; -A x64 -DCMAKE_CXX_STANDARD=17 -DCMAKE_
 
   <div class="rmore">
     <a href='https://marsettler.com/mongodb/mongodb-study-week-5/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/book/the-making-of-a-manager/'> (Book) 팀장의 탄생</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2021-01-25 | updated: 2021-02-12</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/book">#book</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/manager">#manager</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    지은이: Julie Zhuo ISBN: 979-11-6521-268-1   38쪽
- 진정한 관리자의 본분은 &lsquo;여러 사람이 협력하는 집단에서 더 좋은 성과를 도출하는 것'이다.
- 40쪽
- 하지만 시간이 지나면 진실이 드러나는 법이다. 유능한 인재는 자신을 홀대하는 상사나 존경심이 생기지 않는 상사 밑에서 몇 년이나 참고 버티지 않는다. 그리고 유능한 관리자는 쇄신을 단행할 권한만 준다면 형편없는 성과를 내던 팀을 환골탈태시킨다.
- 47쪽
- 모름지기 관리자라면 팀의 목적, 사람, 프로세스를 개선함으로써 팀의 전체적인 성과에 최대한 멀티플라이어 효과를 내야 한다.
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/book/the-making-of-a-manager/' class="rmore">Read more</a>
   </div>
 
 
