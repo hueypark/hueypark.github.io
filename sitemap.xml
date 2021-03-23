@@ -3,27 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2021-03-23T23:37:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/mongodb/</loc>
+    <lastmod>2021-03-23T23:37:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/mongodb/mongodb-study-week-9/</loc>
+    <lastmod>2021-03-23T23:37:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/mongodb/</loc>
+    <lastmod>2021-03-23T23:37:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2021-03-23T23:37:03+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/server-fault/2021-03-06-cookierun-kingdom-server-fault/</loc>
     <lastmod>2021-03-07T11:19:49+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2021-03-21T16:10:27+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/mongodb/</loc>
-    <lastmod>2021-03-11T07:45:48+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marsettler.com/mongodb/mongodb-study-week-8aggregation/</loc>
-    <lastmod>2021-03-11T07:45:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/mongodb/</loc>
     <lastmod>2021-03-11T07:45:48+09:00</lastmod>
   </url>
   
@@ -35,11 +45,6 @@
   <url>
     <loc>https://marsettler.com/server-fault/</loc>
     <lastmod>2021-03-07T11:19:49+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2021-03-21T16:10:27+09:00</lastmod>
   </url>
   
   <url>

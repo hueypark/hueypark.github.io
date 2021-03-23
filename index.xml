@@ -6,10 +6,24 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MongoDB 스터디 9주차(인덱스)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-9/</link>
+      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-9/</guid>
+      <description>인덱스 인덱스는 쿼리가 효율적으로 실행되게 돕습니다. 쿼리에 적절한 인덱스가 있으면 이를 사용해 조회할 도큐먼트 수를 줄일 수 있습니다.
+인덱스는 특정 필드 또는 필드들을 값에 따라 정렬해 저장합니다.
+정렬된 인덱스는 효율적인 레인지 쿼리를 지원합니다.
+몽고디비 인덱스는 B-tree 자료구조를 사용합니다.
+_id 인덱스 몽고디비는 _id 유니크 인덱스를 만듭니다. _id 인덱스는 같은 _id 를 가진 도큐먼트가 두 개 생기는 것을 막습니다. _id 인덱스는 제거할 수 없습니다.
+ NOTE: 샤딩된 클러스터에서 _id 필드를 샤드 키로 사용하지 않으면 오류방지를 위해 애플리케이션이 _id 필드의 유니크성을 보장해야 합니다.</description>
+    </item>
     
     <item>
       <title>2020년 3월 6일 쿠키런: 킹덤 긴급점검</title>
