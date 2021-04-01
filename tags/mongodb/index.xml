@@ -6,10 +6,21 @@
     <description>Recent content in MongoDB on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MongoDB 스터디 10주차(트랜잭션)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-10/</link>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-10/</guid>
+      <description>트랜잭션 몽고디비는 4.0버전(2018년)부터 여러 도큐먼트에 대한 트랜잭션을, 4.2버전(2019년) 부터는 샤딩된 컬렉션에 대한 분산 트랜잭션을 지원하고 있습니다.
+여러 도큐먼트에 대한 ACID 트랜잭션 지원은 다양한 상황에서 개발자가 쉽게 대응할 수 있게 합니다. 스냅샷 격리수준과 아토믹한 실행은 샤딩된 클러스터에서도 트랜잭션이 필요한 워크로드를 제어할 수 있게 합니다.
+ In version 4.0, MongoDB supports multi-document transactions on replica sets. In version 4.2, MongoDB introduces distributed transactions, which adds support for multi-document transactions on sharded clusters and incorporates the existing support for multi-document transactions on replica sets.</description>
+    </item>
     
     <item>
       <title>MongoDB 스터디 9주차(인덱스)</title>
