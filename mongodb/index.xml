@@ -6,10 +6,19 @@
     <description>Recent content in Mongodbs on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/mongodb/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MongoDB 스터디 11주차(데이터 모델링)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-11/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-11/</guid>
+      <description>고려사항  데이터 모델은 애플리케이션과 함께 변함 데이터 모델에 영향을 미치는 요소  사용자의 요구사항 읽기 및 쓰기 작업의 특성    모델링 순서  애플리케이션 워크로드 측정  데이터 사이즈 중요도에 따라 작업을 목록화   데이터와 데이터 간의 관계를 연결(CRD, Collection Relationship Diagram)  링크할지 임베드 할지 결정   각 컬렉션의 데이터 모델을 정리(디자인 패턴 적용)  임베딩 vs 링킹 1. 임베딩 User ={&amp;#34;_id&amp;#34;: 1,&amp;#34;name&amp;#34;: &amp;#34;hueypark&amp;#34;,&amp;#34;items&amp;#34;:[{&amp;#34;type&amp;#34;: &amp;#34;sword&amp;#34;,&amp;#34;damage&amp;#34;: 10},{&amp;#34;type&amp;#34;: &amp;#34;spear&amp;#34;,&amp;#34;damage&amp;#34;: 20}]}2.</description>
+    </item>
     
     <item>
       <title>MongoDB 스터디 10주차(트랜잭션)</title>
