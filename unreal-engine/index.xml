@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unreal-engines on Marsettler</title>
+    <link>https://marsettler.com/unreal-engine/</link>
+    <description>Recent content in Unreal-engines on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/unreal-engine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>언리얼 엔진 플러그인</title>
+      <link>https://marsettler.com/unreal-engine/plugin/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/unreal-engine/plugin/</guid>
+      <description>언리얼 엔진 플러그인 박재완
+jaewan.huey.park@gmail.com
+ 플러그인 에디터 안에서 프로젝트 단위로
+켜고 끌 수 있는 코드 및 데이터 모음
+ 할 수 있는 일  런타임 게임플레이 기능 추가 엔진 기능 수정 새 에셋 유형 생성 에디터 메뉴, 툴바 명령 추가   엔진 시스템 중 일부도
+플러그인으로 확장되어 있음
+ 하고 싶은 일(오늘 해 볼 일) 데이터 테이블을 확장하여 좀 더 편하게 데이터 추출(json 또는 csv?)
+ 작업 순서  새 플러그인 생성 데이터 테이블 확장 클래스 추가 팩토리 추가 액션 추가 팩토리에서 ConfigureProperties 가상함수 구현 액션에서 OpenAssetEditor 가상함수 구현 아이템 정보를 csv로 저장 에셋 저장시 csv도 자동저장 레벨 에디터 툴바에 버튼 추가   1.</description>
+    </item>
+    
+  </channel>
+</rss>
