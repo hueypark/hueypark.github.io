@@ -525,7 +525,8 @@ etcd 안에 훌륭한 Raft 라이브러리가 있습니다.</description>
       <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/c&#43;&#43;/</guid>
-      <description>std::shared_ptr is not thread safe</description>
+      <description>친애하는 나의 C++
+std::shared_ptr is not thread safe</description>
     </item>
     
     <item>
@@ -581,6 +582,7 @@ Go module에서 GitHub private repository 사용</description>
       <description>내가 만들고 싶은 게임
 C++
 CockroachDB
+CTO
 Database(데이터베이스)
 Distributed System(분산 시스템)
 Game Server Architecture(게임 서버 아키텍처)
@@ -1029,6 +1031,17 @@ Network(네트워크)</description>
       <guid>https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/</guid>
       <description>&lt;p&gt;On &lt;code&gt;Visual Studio Code&lt;/code&gt;, &lt;code&gt;Go&lt;/code&gt; debugging is very slow because that always rebuild everything.&lt;/p&gt;
 &lt;p&gt;If you set following settings on your &lt;code&gt;.vscode&lt;/code&gt; folder &lt;code&gt;Visual Studio Code&lt;/code&gt; will only build when changed.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CTO</title>
+      <link>https://marsettler.com/cto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/cto/</guid>
+      <description>버나드(@kms_bernard) 님의 트윗  많은 사람들이 간과하는 것 같은데, CTO는 회사의 경영자다. CTO가 하는 결정은 기술적인게 아니라 비즈니스적인것이어야 하고, 한편으로는 회사의 다른 비즈니스적인 결정에 기술적인 시야를 제공할 수 있어야한다.
+  그렇기에 내가 경계하는 것은 비즈니스적인 임팩트를 고려하지 않고 기술적으로 옳은 일을 하려고 하는 것과, 비즈니스가 기술적인 위험에 노출되도록 방치하는 것이다.
+ </description>
     </item>
     
     <item>
