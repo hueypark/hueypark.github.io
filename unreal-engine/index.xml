@@ -6,10 +6,28 @@
     <description>Recent content in Unreal-engines on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Feb 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/unreal-engine/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>언리얼 엔진 4 커스텀 네비게이션 시스템</title>
+      <link>https://marsettler.com/unreal-engine/custom-navigation-system/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/unreal-engine/custom-navigation-system/</guid>
+      <description>언리얼 엔진 4 커스텀 네비게이션 시스템 박재완
+jaewan.huey.park@gmail.com
+ 목차  네비게이션 시스템 개요 왜 커스텀이 필요한가? 커스텀 네비게이션 데이터 구현 맛보기 Q &amp;amp; A 참고자료   네비게이션 시스템 인공지능 에이전트가 경로 찾기를 사용하여
+레벨을 탐색하는 기능을 제공
+ 벽을 피해 목적지로 가고 싶다면?
+ 그냥 사용하시면 됩니다
+ 왜 커스텀이 필요한가?  이유 1. 게임에서 기대되는 특별한 연출
+ 언리얼 엔진 4 에 내장 네비게이션은
+recastnavigation 기반
+ 일반적인 상황에서 잘 작동하지만</description>
+    </item>
     
     <item>
       <title>언리얼 엔진 플러그인</title>

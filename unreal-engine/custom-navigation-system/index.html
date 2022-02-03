@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>언리얼 엔진 4 커스텀 네비게이션 시스템</title>
+
+		<link rel="stylesheet" href="/revealjs/dist/reset.css">
+		<link rel="stylesheet" href="/revealjs/dist/reveal.css">
+		<link rel="stylesheet" href="/revealjs/dist/theme/black.css">
+
+		
+		<link rel="stylesheet" href="/revealjs/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					
+## 언리얼 엔진 4
+## 커스텀 네비게이션 시스템
+
+박재완
+
+jaewan.huey.park@gmail.com
+
+---
+
+## 목차
+
+- 네비게이션 시스템 개요
+- 왜 커스텀이 필요한가?
+- 커스텀 네비게이션 데이터 구현 맛보기
+- Q &amp; A
+- 참고자료
+
+---
+
+## 네비게이션 시스템
+
+인공지능 에이전트가 경로 찾기를 사용하여
+
+레벨을 탐색하는 기능을 제공
+
+---
+
+![](/unreal-engine/custom-navigation-system/level.png)
+
+벽을 피해 목적지로 가고 싶다면?
+
+---
+
+![](/unreal-engine/custom-navigation-system/level-with-navigation.png)
+
+그냥 사용하시면 됩니다
+
+---
+
+## 왜 커스텀이 필요한가?
+
+---
+
+### 이유 1.
+
+게임에서 기대되는 특별한 연출
+
+---
+
+언리얼 엔진 4 에 내장 네비게이션은
+
+[recastnavigation](https://github.com/recastnavigation/recastnavigation) 기반
+
+---
+
+일반적인 상황에서 잘 작동하지만
+
+특별한 연출을 보여주기엔 아쉬운 부분들이 있음
+
+---
+
+특별한 연출들
+
+- 높은 지형에서 낮은 지형으로 자유로운 낙하(네비게이션이 연결되어 있지 않더라도)
+- 점프(고속으로 이동하며 두 언덕 사이를 넘나들거나)
+- 길찾기가 최단 경로다 보니 NPC 들이 벽에 너무 붙어가는 문제
+- 벽타기?(트랜드라 적어보긴 했지만 이건 아닌 것 같음;;)
+
+---
+
+### 이유 2.
+
+서버와 공용으로 사용할 때 아쉬운 제어 기능
+
+---
+
+서버와 공용으로 사용할 때 아쉬운 제어 기능
+
+- 옥트리 크기를 설정한 값으로 제어하거나(인덱스로 빠르게 접근 가능하게...)
+- 런타임에 변경되는 지형을 미리 예측가능하게 설정하거나(Nav Modifier Volume 으로 어느정도는...)
+- 대량의 지형지물을 서버에서 배치한 후에도 빠르게 네비게이션 정보를 재구성하거나...
+
+---
+
+## 왜 커스텀이 필요한가?
+
+1. 게임에서 기대되는 특별한 연출
+2. 서버와 공용으로 사용할 때 아쉬운 제어 기능
+
+---
+
+## 커스텀 네비게이션 데이터
+## 구현 맛보기
+
+---
+
+## 시작!
+
+추상화된 네비게이션 데이터로 언리얼의 네비게이션 시스템에서 사용하는 공통 인터페이스를 제공 
+
+```cpp
+class ANavigationData
+```
+
+---
+
+물론 ARecastNavMesh 도 ANavigationData 를 상속받고 있음
+
+```cpp
+class NAVIGATIONSYSTEM_API ARecastNavMesh : public ANavigationData
+```
+
+---
+
+## 주요 자료구조
+
+- NavMesh: 네비게이션 데이터 구현체(ANavigationData 상속)
+- NavMeshGenerator: 네비게이션 데이터를 생성하는 생성기(FNavDataGenerator 상송)
+- NavRenderingComponent: 에디터에서 생성된 결과를 확인하기 위한 렌더링 컴포넌트
+- NavSceneProxy, NavSceneProxyData: NavRenderingComponent 렌더링용 씬 프록시와 씬 프록시 데이터
+- Graph: 실제 길찾기를 담당하는 그래프
+
+---
+
+## NavMesh 주요 함수
+
+```cpp
+// 생성자
+AHueyNavMesh()
+
+// 네비게이션 생성기를 생성합니다.
+virtual void ConditionalConstructGenerator() override;
+
+// 렌더링 컴포넌트를 생성합니다.
+virtual UPrimitiveComponent* ConstructRenderingComponent() override;
+
+// 경로를 찾습니다.
+static FPathFindingResult FindPath(
+	const FNavAgentProperties&amp; agentProperties,
+	const FPathFindingQuery&amp; query);
+```
+
+---
+
+## NavMeshGenerator 주요 함수
+
+```cpp
+	// 모두 리빌드합니다.
+	virtual bool RebuildAll() override;
+
+	// 틱마다 비동기 빌드를 시도합니다.
+	virtual void TickAsyncBuild(float DeltaSeconds) override;
+
+	// 네비게이션 바운드가 변경되었을 때를 처리합니다.
+	virtual void OnNavigationBoundsChanged() override;
+
+	// 변경된 부분만 리빌드합니다.
+	virtual void RebuildDirtyAreas(const TArray&lt;FNavigationDirtyArea&gt;&amp; DirtyAreas) override;
+```
+
+## NavRenderingComponent 주요 함수
+
+``` cpp
+// 씬에 표현될 프록시를 만듭니다.
+virtual FPrimitiveSceneProxy* CreateSceneProxy() override;
+
+// 컴포넌트의 영역을 계산합니다.
+//
+// 렌더링에 포함할지 판정할 때 사용됩니다.
+virtual FBoxSphereBounds CalcBounds(const FTransform&amp; LocalToWorld) const override;
+```
+
+## NavSceneProxy 주요 함수
+
+```cpp
+// ViewRelevance 를 반환합니다.
+//
+// ViewRelevance 는 씬에 보일지에 관한 관련성을 표현하는 값입니다.
+virtual FPrimitiveViewRelevance GetViewRelevance(const FSceneView* View) const override;
+```
+
+---
+
+## 아직 알아가야 할 부분
+
+- 생성된 네비게이션 데이터 저장은 어디서 하지?
+
+```cpp
+// 여기일 것 같은 느낌적 느낌
+virtual void Serialize( FArchive&amp; Ar ) override;
+```
+
+- 변경된 부분만 리빌드
+- 처음에 점프를 이야기하면서 시작하신 것 같습니다만
+
+---
+
+## Q &amp; A
+
+---
+
+## 참고자료
+
+- [Navigation Mesh Generation(언리얼 엔진 커스텀 네비게이션 메쉬 생성에 관한 문서)](http://javid.nl/Navigation%20Mesh.pdf)
+- [Study: Navigation Mesh Generation](http://www.critterai.org/projects/nmgen_study/)
+- [recastnavigation](https://github.com/recastnavigation/recastnavigation)
+				</section>
+			</div>
+		</div>
+
+		<script src="/revealjs/dist/reveal.js"></script>
+		<script src="/revealjs/plugin/notes/notes.js"></script>
+		<script src="/revealjs/plugin/markdown/markdown.js"></script>
+		<script src="/revealjs/plugin/highlight/highlight.js"></script>
+		<script>
+			
+			
+			
+			Reveal.initialize({
+				hash: true,
+				slideNumber: "c/t",
+				
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
