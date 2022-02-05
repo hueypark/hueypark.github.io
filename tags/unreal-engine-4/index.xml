@@ -19,7 +19,7 @@
       <guid>https://marsettler.com/unreal-engine/custom-navigation-system/</guid>
       <description>언리얼 엔진 4 커스텀 네비게이션 시스템 박재완
 jaewan.huey.park@gmail.com
- 목차  네비게이션 시스템 개요 왜 커스텀이 필요한가? 커스텀 네비게이션 데이터 구현 맛보기 Q &amp;amp; A 참고자료   네비게이션 시스템 인공지능 에이전트가 경로 찾기를 사용하여
+ 목차  네비게이션 시스템 개요 왜 커스텀이 필요한가? 커스텀 네비게이션 데이터 구현 맛보기 참고자료 Q &amp;amp; A   네비게이션 시스템 인공지능 에이전트가 경로 찾기를 사용하여
 레벨을 탐색하는 기능을 제공
  벽을 피해 목적지로 가고 싶다면?
  그냥 사용하시면 됩니다
