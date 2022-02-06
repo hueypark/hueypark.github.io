@@ -6,10 +6,22 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>컴파일 시점에 printf 오류 검사</title>
+      <link>https://marsettler.com/unreal-engine/compile_time_log_validate/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/unreal-engine/compile_time_log_validate/</guid>
+      <description>언리얼 엔진의 UE_LOG 매크로는 컴파일 시점에 입력값의 오류를 검사하지 않습니다.
+따라서 실행 중 로그를 기록하려다 의도하지 않은 동작(크래시 등)을 발생시킬 위험이 있습니다.
+예)
+FString temp; UE_LOG(LogClass, Log, TEXT(&amp;#34;%d, %s&amp;#34;), *temp); _stprintf_s</description>
+    </item>
     
     <item>
       <title>언리얼 엔진 4 커스텀 네비게이션 시스템</title>

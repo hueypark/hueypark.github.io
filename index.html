@@ -14,7 +14,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://marsettler.com/" />
-<meta property="og:updated_time" content="2022-02-03T00:00:00+00:00" />
+<meta property="og:updated_time" content="2022-02-06T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Marsettler"/>
@@ -107,6 +107,42 @@ if (!doNotTrack) {
 
 
   
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/unreal-engine/compile_time_log_validate/'> 컴파일 시점에 printf 오류 검사</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2022-02-06 | updated: 2022-02-06</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/c&#43;&#43;">#c&#43;&#43;</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    언리얼 엔진의 UE_LOG 매크로는 컴파일 시점에 입력값의 오류를 검사하지 않습니다.
+따라서 실행 중 로그를 기록하려다 의도하지 않은 동작(크래시 등)을 발생시킬 위험이 있습니다.
+예)
+FString temp; UE_LOG(LogClass, Log, TEXT(&#34;%d, %s&#34;), *temp); _stprintf_s
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/unreal-engine/compile_time_log_validate/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
     <article class="post-preview">
 
   <header>
@@ -434,42 +470,6 @@ _id 인덱스 몽고디비는 _id 유니크 인덱스를 만듭니다. _id 인�
 
   <div class="rmore">
     <a href='https://marsettler.com/mongodb/mongodb-study-week-9/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-8aggregation/'> MongoDB 스터디 8주차(aggregation)</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2021-03-07 | updated: 2021-03-11</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/mongodb">#MongoDB</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    어그리게이션(Aggregation) 어그리게이션 작업은 데이터를 처리하여 계산된 결과를 반환합니다. 어그리게이션은 여러 도큐먼트의 값을 그룹화하고, 데이터에 다양한 작업을 수행한 후 단일 결과를 반환할 수 있습니다. MongoDB는 세 가지 어그리게이션을 제공합니다.
- Aggregation Pipeline Single Purpose Aggregation Operations Map-reduce  어그리게이션 파이프라인(Aggregation Pipeline) Aggregation pipeline 은 파이프라인 이용해 데이터의 집계를 처리하는 프레임워크입니다. 여러 스테이지에 걸쳐 도큐먼트들을 집계된 결과로 변경합니다.
-아래 예를 살펴봅시다:
-db.orders.aggregate([{ $match: { status: &#34;A&#34; } },{ $group: { _id: &#34;$custmor_id&#34;, total: { $sum: &#34;$amount&#34; } } }]) $match 스테이지는 도큐먼트들을 status 필드가 &quot;A&quot; 인 데이터만 다음 스테이지로 보냅니다.
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/mongodb/mongodb-study-week-8aggregation/' class="rmore">Read more</a>
   </div>
 
 
