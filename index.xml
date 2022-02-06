@@ -93,10 +93,10 @@ _id 인덱스 몽고디비는 _id 유니크 인덱스를 만듭니다. _id 인�
     
     <item>
       <title>2020년 3월 6일 쿠키런: 킹덤 긴급점검</title>
-      <link>https://marsettler.com/server-fault/2021-03-06-cookierun-kingdom-server-fault/</link>
+      <link>https://marsettler.com/outage/2021-03-06-cookierun-kingdom-server-fault/</link>
       <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/server-fault/2021-03-06-cookierun-kingdom-server-fault/</guid>
+      <guid>https://marsettler.com/outage/2021-03-06-cookierun-kingdom-server-fault/</guid>
       <description>쿠키런: 킹덤 긴급점검이 있었습니다. 접속자 수 증대와 함께 증가하는 부하를 개선했는데, 어떤 작업이 있었는지 궁금합니다.
 개요  업데이트를 위한 점검(06:00~11:00)  점검 내용: 길드 시스템, 신규 쿠키 추가 및 오류사항 수정 등   15:00시 서버 안정화를 위한 긴급 점검 시작  갑작스러운 이용자 수 증가가 원인이라고 공지   22:00시 긴급 점검 완료  채용공고에서 흥미로운 부분 우대조건에 아래와 같은 내용이 있는데 어떤 마음인지 알 것 같습니다.
  try-catch 와 null 에 현실자각타임이 오신 분</description>
@@ -165,10 +165,10 @@ Read Concern readConcern 옵션을 사용해 읽기 작업의 일관성과 격�
     
     <item>
       <title>2020년 2월 19일 쿠키런: 킹덤 장기 점검(AWS)</title>
-      <link>https://marsettler.com/server-fault/2021-02-21-cookierun-kingdom-server-faultaws/</link>
+      <link>https://marsettler.com/outage/2021-02-21-cookierun-kingdom-server-faultaws/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/server-fault/2021-02-21-cookierun-kingdom-server-faultaws/</guid>
+      <guid>https://marsettler.com/outage/2021-02-21-cookierun-kingdom-server-faultaws/</guid>
       <description>개요 2월 19일(금) 23:22 ~ 2월 20(토) 19:00 까지 쿠키런: 킹덤 긴급 점검이 있었습니다.
 원인 아마존웹서비스 장애로 인한 긴급 점검이라고 안내하고 있습니다.
 특이사항 동일한 원인(AWS 도쿄 리전 장애)으로 의심되는 리그 오브 레전드의 경우 2월 20일 00:45 에 정상화되었는데, 왜 19:00 까지 점검이 지속되었는지 궁금합니다. 아마 서버 아키텍처의 유연성 차이 또는 데이터베이스의 HA 구성 차이일 것으로 짐작됩니다.
@@ -187,6 +187,19 @@ Read Concern readConcern 옵션을 사용해 읽기 작업의 일관성과 격�
     </item>
     
     <item>
+      <title>로블록스 장애 디브리핑(Roblox Return to Service 10/28-10/31 2021)</title>
+      <link>https://marsettler.com/outage/2022-01-20-roblox-outage-debriefing/</link>
+      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/outage/2022-01-20-roblox-outage-debriefing/</guid>
+      <description>로블록스는 2021년 10월 28일부터 10월 31일까지 73시간의 장애 대한 디브리핑을 하고 자사 블로그에 공개했습니다.
+ 최근의 개선사항과 계획된 작업들 중 인상적인 내용 몇가지를 기록합니다.
+모니터링 시스템 개선 모니터링 시스템이 메인 시스템 간 순환 종속성 제거했습니다. 메인 시스템 장애가 모니터링 시스템 장애로 이어졌고, 그로 인해 장애 원인를 찾을 데이터를 빠르게 확보할 수 없었음
+장애의 주 원인(Consul and BoltDB) 모니터링 시스템을 확장했습니다.
+서비스 시작과 설정 관리방식 개선 서비스 재시작 시 서비스에 필요한 캐시 배치, 웜업을 위해 서비스 복구가 느려졌습니다.</description>
+    </item>
+    
+    <item>
       <title>뉴스피드 2021</title>
       <link>https://marsettler.com/newsfeed/newsfeed-2021/</link>
       <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
@@ -199,10 +212,10 @@ Read Concern readConcern 옵션을 사용해 읽기 작업의 일관성과 격�
     
     <item>
       <title>2020년 1월 25일 쿠키런: 킹덤 장기 점검</title>
-      <link>https://marsettler.com/server-fault/2021-01-25-cookierun-kingdom-server-fault/</link>
+      <link>https://marsettler.com/outage/2021-01-25-cookierun-kingdom-server-fault/</link>
       <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/server-fault/2021-01-25-cookierun-kingdom-server-fault/</guid>
+      <guid>https://marsettler.com/outage/2021-01-25-cookierun-kingdom-server-fault/</guid>
       <description>개요 쿠키런: 킹덤이 오픈 후 알 수 없는 이유로 오랜 시간 점검하였음
 총 점검 시간: 39시간 40분(2021-01-25 16:50:00 ~ 2021-01-25 03:30:00)
 원인 기술적인 원인은 공개하지 않았음
