@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programmer on Marsettler</title>
+    <link>https://marsettler.com/tags/programmer/</link>
+    <description>Recent content in programmer on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/programmer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>(Book) 실용주의 프로그래머 20주년 기념판</title>
+      <link>https://marsettler.com/book/the-pragmatic-programmer-20th-anniversary-edition/</link>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/book/the-pragmatic-programmer-20th-anniversary-edition/</guid>
+      <description>지은이: 데이비드 토머스, 앤드류 헌트 ISBN: 978-89-6626-336-3    프로그래밍은 미래를 덜 고통스럽게 만들려 노력하는 것이다. 팀 동료들을 수월하게 해 주는 것이다. 문제를 일으켰다가 다시 되돌릴 수 있는 것이다. 좋은 습관을 기르고, 여러분의 도구를 이해하는 것이다.
+&amp;ndash; x쪽
+  &amp;lsquo;깨진 창문&#39;을 고치지 않은 채로 내버려 두지 말라. 나쁜 설계, 잘못된 결정, 혹은 형편없는 코드 등이 모두 깨진 창문이다. 발견하자마자 바로 고쳐라. 적절히 고칠 시간이 없다면 일단 판자로 덮는 것만이라도 하라.</description>
+    </item>
+    
+  </channel>
+</rss>
