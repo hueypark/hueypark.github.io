@@ -6,10 +6,20 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>뉴스피드 2022</title>
+      <link>https://marsettler.com/newsfeed/newsfeed-2022/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/newsfeed/newsfeed-2022/</guid>
+      <description>2022년 6월 Redis Sorted Set 을 활용한 처리율 제한기 구현에 관한 글입니다.
+Better Rate Limiting With Redis Sorted Sets</description>
+    </item>
     
     <item>
       <title>(Book) 실용주의 프로그래머 20주년 기념판</title>
@@ -50,6 +60,18 @@ jaewan.huey.park@gmail.com
  언리얼 엔진 4 에 내장 네비게이션은
 recastnavigation 기반
  일반적인 상황에서 잘 작동하지만</description>
+    </item>
+    
+    <item>
+      <title>CTO</title>
+      <link>https://marsettler.com/cto/</link>
+      <pubDate>Wed, 03 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/cto/</guid>
+      <description>버나드(@kms_bernard) 님의 트윗  많은 사람들이 간과하는 것 같은데, CTO는 회사의 경영자다. CTO가 하는 결정은 기술적인게 아니라 비즈니스적인것이어야 하고, 한편으로는 회사의 다른 비즈니스적인 결정에 기술적인 시야를 제공할 수 있어야한다.
+  그렇기에 내가 경계하는 것은 비즈니스적인 임팩트를 고려하지 않고 기술적으로 옳은 일을 하려고 하는 것과, 비즈니스가 기술적인 위험에 노출되도록 방치하는 것이다.
+ 신순규 자기님의 영상 중  하지만 할 수 있다고 생각하고 방법을 찾아보자
+ </description>
     </item>
     
     <item>
@@ -1085,18 +1107,6 @@ Network(네트워크)</description>
       <guid>https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/</guid>
       <description>&lt;p&gt;On &lt;code&gt;Visual Studio Code&lt;/code&gt;, &lt;code&gt;Go&lt;/code&gt; debugging is very slow because that always rebuild everything.&lt;/p&gt;
 &lt;p&gt;If you set following settings on your &lt;code&gt;.vscode&lt;/code&gt; folder &lt;code&gt;Visual Studio Code&lt;/code&gt; will only build when changed.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>CTO</title>
-      <link>https://marsettler.com/cto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/cto/</guid>
-      <description>버나드(@kms_bernard) 님의 트윗  많은 사람들이 간과하는 것 같은데, CTO는 회사의 경영자다. CTO가 하는 결정은 기술적인게 아니라 비즈니스적인것이어야 하고, 한편으로는 회사의 다른 비즈니스적인 결정에 기술적인 시야를 제공할 수 있어야한다.
-  그렇기에 내가 경계하는 것은 비즈니스적인 임팩트를 고려하지 않고 기술적으로 옳은 일을 하려고 하는 것과, 비즈니스가 기술적인 위험에 노출되도록 방치하는 것이다.
- 신순규 자기님의 영상 중  하지만 할 수 있다고 생각하고 방법을 찾아보자
- </description>
     </item>
     
     <item>
