@@ -6,10 +6,27 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jun 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>gRPC</title>
+      <link>https://marsettler.com/distributed-system/grpc/</link>
+      <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/distributed-system/grpc/</guid>
+      <description>gRPC 101 간단하고 빠르게 게임서버 만들기
+ gRPC A high performance,
+open source
+universal
+RPC framework
+ RPC(Remote procedure call) 원격 프로시저 호출
+ 왜 gRPC 인가?  Simple service definition Start quickly and scale Works across languages and platforms Bi-directional streaming and integrated auth   Simple service definition 강력한 바이너리 직렬화 툴셋인,
+Protocol Buffers 를 활용해 서비스를 정의함
+ Start quickly and scale 적은 코드로 쉽게 개발을 시작한 후,</description>
+    </item>
     
     <item>
       <title>뉴스피드 2022</title>

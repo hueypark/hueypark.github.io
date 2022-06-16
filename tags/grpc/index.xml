@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>distributed system on Marsettler</title>
-    <link>https://marsettler.com/tags/distributed-system/</link>
-    <description>Recent content in distributed system on Marsettler</description>
+    <title>grpc on Marsettler</title>
+    <link>https://marsettler.com/tags/grpc/</link>
+    <description>Recent content in grpc on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Jun 2022 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://marsettler.com/tags/distributed-system/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://marsettler.com/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -26,17 +26,6 @@ RPC framework
  왜 gRPC 인가?  Simple service definition Start quickly and scale Works across languages and platforms Bi-directional streaming and integrated auth   Simple service definition 강력한 바이너리 직렬화 툴셋인,
 Protocol Buffers 를 활용해 서비스를 정의함
  Start quickly and scale 적은 코드로 쉽게 개발을 시작한 후,</description>
-    </item>
-    
-    <item>
-      <title>Raft Consensus Algorithm</title>
-      <link>https://marsettler.com/distributed-system/raft-consensus-algorithm/</link>
-      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/distributed-system/raft-consensus-algorithm/</guid>
-      <description>Raft Consensus Algorithm은 분산 환경에서 사용할 수 있는 합의 알고리즘입니다. 이를 사용해 분산 환경에서 모든 노드의 상태를 동일하게 유지가능합니다.
-자세한 설명은 The Raft Consensus Algorithm 에서 볼 수 있습니다.
-etcd 안에 훌륭한 Raft 라이브러리가 있습니다.</description>
     </item>
     
   </channel>

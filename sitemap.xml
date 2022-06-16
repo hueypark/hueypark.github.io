@@ -3,8 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/tags/distributed-system/</loc>
+    <lastmod>2022-06-16T23:58:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/distributed-system/</loc>
+    <lastmod>2022-06-16T23:58:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/distributed-system/grpc/</loc>
+    <lastmod>2022-06-16T23:58:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/grpc/</loc>
+    <lastmod>2022-06-16T23:58:28+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/</loc>
-    <lastmod>2022-06-03T13:48:42+09:00</lastmod>
+    <lastmod>2022-06-16T23:58:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2022-06-16T23:58:28+09:00</lastmod>
   </url>
   
   <url>
@@ -15,11 +40,6 @@
   <url>
     <loc>https://marsettler.com/newsfeed/</loc>
     <lastmod>2022-06-03T13:47:21+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2022-06-03T13:48:42+09:00</lastmod>
   </url>
   
   <url>
@@ -320,16 +340,6 @@
   <url>
     <loc>https://marsettler.com/the-game-i-want-to-make/the-game-i-want-to-make/</loc>
     <lastmod>2020-10-19T22:40:12+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/distributed-system/</loc>
-    <lastmod>2020-09-29T19:34:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/distributed-system/</loc>
-    <lastmod>2020-09-29T19:34:10+09:00</lastmod>
   </url>
   
   <url>
