@@ -17,9 +17,9 @@
       <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/newsfeed/newsfeed-2022/</guid>
-      <description>2022년 8월 개발자 시장과 머니볼 전략 꽤 일리있는 이야기이다.
- ㄹ) 개발자 시장에 머니볼 전략 안통한다고 생각한다. 머니볼 전략의 핵심은 다년 강제 계약에 있다.
-  https://twitter.com/jk__dev/status/1561203032305442816  2022년 7월 스타트업은 유치원이&amp;hellip; 시리즈를 읽고  링크  스타트업은 유치원이 아닙니다. 스타트업은 유치원과 비슷합니다. 회사는 유치원이 아니다&#39;라는 글을 보고 한마디 썼었는데&amp;hellip;    DRI(Directly Responsible Indivisual) 토스에서의 시간을 돌아보며 라는 글을 읽다 DRI(Directly Responsible Indivisual) 라는 개념이 신기해 기록을 남깁니다.</description>
+      <description>2022년 8월 Don&#39;t Put All Your Code In Internal 오픈소스라면 외부에서 패키지의 일부도 사용할 수 있었으면 좋겠다고 하였는데, 개인적으로 공감하기는 어려웠습니다.
+ 링크: https://ido50.net/rants/dont-put-all-your-code-in-internal  Go 1.19 GOMEMLIMIT Go 1.19 부터 메모리 관리를 효율적으로 하기 위한 옵션이 추가되었습니다. 이 값을 사용하면 특정 워크로드에서 효율적으로 메모리를 관리할 수 있습니다. 사용사례를 소개한 글과 자동으로 적절한 GOMEMLIMIT 를 설정해주는 패키지를 공유드립니다.
+ GOMEMLIMIT is a game changer for high-memory applications automemlimit: 자동으로 적절한 GOMEMLIMIT 를 설정해주는 패키지  개발자 시장과 머니볼 전략 꽤 일리있는 이야기이다.</description>
     </item>
     
     <item>
