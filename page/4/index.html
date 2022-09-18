@@ -14,7 +14,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://marsettler.com/" />
-<meta property="og:updated_time" content="2022-06-12T00:00:00+00:00" />
+<meta property="og:updated_time" content="2022-09-18T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Marsettler"/>
@@ -108,6 +108,190 @@ if (!doNotTrack) {
 
 
   
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-3/'> MongoDB 스터디 3주차(샤딩을 통한 시스템 확장)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2021-01-24 | updated: 2021-01-28</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    샤딩 샤딩은 여러 물리장비에 데이터를 분산하는 방법 MongoDB 는 샤딩을 이용해 매우 큰 데이터에 대해 높은 처리량을 제공
+시스템을 확장하는 두 가지 방법  스케일업 스케일아웃(MongoDB 는 샤딩 통해 스케일아웃을 지원)  대상이 되는 자원  CPU 네트워크 메모리 디스크  고려사항 경제적으로 이득인가?
+실현가능한가?
+예 1)  서버의 CPU 자원에 한계가 다가오고 필요한 CPU 자원은 2배로 예상됨 다음으로 좋은 CPU는 처리량이 10배이고 비용도 10배임 스케일업을 한다면 10배의 비용으로 2배의 CPU만 사용 스케일아웃을 한다면 2배의 비용으로 2배의 CPU 사용가능  예 2)  현재 사용가능한 가장 좋은 CPU를 사용 중 자원에 한계가 다가옴 스케일업으로 해결불가 스케일아웃으로 해결가능  예 3)  디스크를 1TB 에서 20TB 로 20배 스케일업 백업, 복구, resync 에 20배의 시간이 듬 스케일아웃한다면 병렬화의 장점을 사용해 시간을 절약할 수 있음 또 MongoDB의 경우 큰 데이터는 큰 인덱스를 만들기 때문에 메모리 사용량도 함께 증가함  기타 장점 분산처리에 용이하기 때문에 MongoDB 에서 제공하는 존 샤딩, 어그리게이션 등의 기능을 효과적으로 사용가능
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/mongodb/mongodb-study-week-3/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-2/'> MongoDB 스터디 2주차(MongoDB 설치하기)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2021-01-17 | updated: 2021-01-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    Replica Set Replica set 은 같은 데이터를 가진 mongod 프로세스 그룹입니다. 이를 통해 MongoDB는 데이터 중복과 고가용성을 제공합니다. 그렇기 때문에 일부 서버에 장애가 발생하더라고 전체 시스템은 정상적으로 운영될 수 있습니다.
+특정한 경우 복제를 통해 읽기 수용량을 증가시킬 수 있습니다. 또 서로 다른 데이터센터에 복사본을 유지하여 가용성을 증가시킬수 있도 장애복구, 분석, 백업 목적으로 추가 복사본을 만들 수도 있습니다.
+Replication Replica set 은 데이터를 가진 여러 노드로 이루어지며(데이터가 없는 아비터가 추가될 수도 있음), 이 중 하나만이 primary 노드가 됩니다.
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/mongodb/mongodb-study-week-2/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-1/'> MongoDB 스터디 1주차(MongoDB 기초)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2021-01-10 | updated: 2021-01-13</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    들어가며 지금까지 필요 없는 로그성 데이터를 MongoDB에 저장한 경험이 있으며, 대부분은 RDBMS를 사용했습니다. MongoDB도 많이 발전하였고(트랜잭션, 컨시스턴시 관련) 우리의 MongoDB 운영능력도 증가했기 떄문에 애플리케이션에서 스케일아웃을 핸들링하지 않고 MongoDB를 사용해 개발속도를 향상시키고 싶습니다.
+MongoDB란 도큐먼트를 기본 자료형으로 사용하는 NoSQL 데이터베이스
+도큐먼트와 컬렉션  도큐먼트  도큐먼트는 field와 value의 쌍으로 데이터를 저장하고 관리 JSON 형태로 사용되며 실제로는 BSON으로 시리얼라이즈되어 저장됨    { &#34;name&#34; : &#34;hueypark&#34;, &#34;title&#34; : &#34;software engineer&#34; }  컬렉션  도큐먼트들이 모여있는 집합 일반적으로 한 컬렉션에 있는 도큐먼트들은 공통된 필드를 가지고 있음    BSON BSON은 바이너리로 시리얼라이즈 된 JSON
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/mongodb/mongodb-study-week-1/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/book/game-development-for-0-years/'> (Book) 0년차 게임개발</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2021-01-03 | updated: 2021-01-03</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/book">#book</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/game">#game</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <ul>
+<li>지은이: 김다훈, 박소연, 이재호, 주진영</li>
+<li>ISBN: 979-11-971861-0-3</li>
+</ul>
+<hr>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/book/game-development-for-0-years/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/newsfeed/newsfeed-2020/'> 뉴스피드 2020</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-11-25 | updated: 2020-12-31</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/newsfeed">#newsfeed</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    2020년 12월 Disagree and commit 이병준님의 면접시 조심하면 좋은 것들 중 일부
+링크: https://youtu.be/SZEHjcDSEdE?t=183
+ 자기가 동의하지 않는 내용이라도 팀원의 한 사람으로서 동의를 했다면 그 동의한 내용을 반드시 따라야 한다.
+ 기계인간님의 개발자의 성격 이야기 어떤 역할을 하느냐에 따라 조금씩 다르겠지만, 개발자도 적극적이어야 할 필요가 있다는 점에서 크게 공감합니다.
+ 사람마다 회사생활하며 느낀바는 다르겠지만 개발자는 어느 수준부터는 축구선수같길 요구받는다. 내가 수비수라고 수비만 하면 안된다. 내가 공격해야 하는 상황일 땐 공 차고 나가면서 골도 넣을 수 있어야 한다.
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/newsfeed/newsfeed-2020/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
     <article class="post-preview">
 
   <header>
@@ -302,203 +486,6 @@ Besiege 링크: http://www.besiege.spiderlinggames.co.uk/
 
   <div class="rmore">
     <a href='https://marsettler.com/book/grow-together/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/about-me/'> 박재완</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-03-28 | updated: 2020-10-16</div>
-      
-<div class="tags">
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p>C++, Go 등의 언어를 주로 사용하여 MMORPG 서버를 개발합니다. 많은 시간을 코드리뷰, 생산성 향상을 위한 자동화 툴 개발, 빌드 및 배포 자동화에 사용하고 있습니다.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/about-me/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/albion-online/brimstone-mist-arrives-october-21/'> 브림스톤과 미스트: 10월 21일</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-10-14 | updated: 2020-10-14</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/game">#game</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/mmorpg">#mmorpg</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p>원문: <a href="https://albiononline.com/en/news/brimstone-mist-arrives-october-21">https://albiononline.com/en/news/brimstone-mist-arrives-october-21</a></p>
-<p>오염된 던전에 새로운 적들을 추가되고 아발론의 길에 새로운 생선이 생기며 광범위한 전투 밸런싱을 조정하는 주요 패치가 준비되었습니다.</p>
-<p><img src="https://assets.albiononline.com/uploads/media/default/media/3ad3aca6b7325fc257ec6368a446bbc287b147af.jpeg" alt=""></p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/albion-online/brimstone-mist-arrives-october-21/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/distributed-system/raft-consensus-algorithm/'> Raft Consensus Algorithm</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-09-29 | updated: 2020-09-29</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/distributed-system">#distributed system</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/raft">#raft</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    Raft Consensus Algorithm은 분산 환경에서 사용할 수 있는 합의 알고리즘입니다. 이를 사용해 분산 환경에서 모든 노드의 상태를 동일하게 유지가능합니다.
-자세한 설명은 The Raft Consensus Algorithm 에서 볼 수 있습니다.
-etcd 안에 훌륭한 Raft 라이브러리가 있습니다.
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/distributed-system/raft-consensus-algorithm/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/single-server-mmorpg/technology-stacks/'> Single Server MMORPG: Technology stacks</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-09-22 | updated: 2020-09-22</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/game">#game</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/mmorpg">#mmorpg</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/server">#server</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/single-server-mmorpg">#single server mmorpg</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <h2 id="technology-stacks">Technology stacks</h2>
-<p>This technology stack is not consistently enforced for all MMORPGs. However, it will be the basis for technical decisions, so that I will mention it.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/single-server-mmorpg/technology-stacks/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/single-server-mmorpg/what-is-single-server-mmorpg/'> Single Server MMORPG: What is single server MMORPG?</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-09-21 | updated: 2020-09-21</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/game">#game</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/mmorpg">#mmorpg</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/server">#server</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/single-server-mmorpg">#single server mmorpg</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p>What is a single server MMORPG?</p>
-<p>Before I begin, let's clarify the concept of what we're going to talk.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/single-server-mmorpg/what-is-single-server-mmorpg/' class="rmore">Read more</a>
   </div>
 
 

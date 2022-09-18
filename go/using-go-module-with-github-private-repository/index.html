@@ -8,70 +8,31 @@
 <meta name="keywords" content="" />
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-<link rel="canonical" href="https://marsettler.com/wiki/">
-<meta property="og:title" content="Wiki" />
-<meta property="og:description" content="내가 만들고 싶은 게임
-C&#43;&#43;
-CockroachDB
-CTO
-Database(데이터베이스)
-Distributed System(분산 시스템)
-Game Server Architecture(게임 서버 아키텍처)
-Go
-해결하고 싶은 문제들
-Remote work(원격근무)
-Single Server MMORPG
-How to be successful(성공하는 방법)
-Interior(인테리어)
-Leadership(리더십)
-Network(네트워크)" />
+<link rel="canonical" href="https://marsettler.com/go/using-go-module-with-github-private-repository/">
+<meta property="og:title" content="Go module에서 GitHub private 저장소 사용" />
+<meta property="og:description" content="Go module에서 GitHub private 저장소를 사용하는 방법입니다.
+ git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&#34;.insteadOf &#34;https://github.com&#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&#34;github.com/hueypark/asset&#34; " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://marsettler.com/wiki/" />
+<meta property="og:url" content="https://marsettler.com/go/using-go-module-with-github-private-repository/" />
 <meta property="article:published_time" content="2020-03-29T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-09-18T20:36:46+09:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Wiki"/>
-<meta name="twitter:description" content="내가 만들고 싶은 게임
-C&#43;&#43;
-CockroachDB
-CTO
-Database(데이터베이스)
-Distributed System(분산 시스템)
-Game Server Architecture(게임 서버 아키텍처)
-Go
-해결하고 싶은 문제들
-Remote work(원격근무)
-Single Server MMORPG
-How to be successful(성공하는 방법)
-Interior(인테리어)
-Leadership(리더십)
-Network(네트워크)"/>
+<meta name="twitter:title" content="Go module에서 GitHub private 저장소 사용"/>
+<meta name="twitter:description" content="Go module에서 GitHub private 저장소를 사용하는 방법입니다.
+ git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&#34;.insteadOf &#34;https://github.com&#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&#34;github.com/hueypark/asset&#34; "/>
 
 
-<meta itemprop="name" content="Wiki">
-<meta itemprop="description" content="내가 만들고 싶은 게임
-C&#43;&#43;
-CockroachDB
-CTO
-Database(데이터베이스)
-Distributed System(분산 시스템)
-Game Server Architecture(게임 서버 아키텍처)
-Go
-해결하고 싶은 문제들
-Remote work(원격근무)
-Single Server MMORPG
-How to be successful(성공하는 방법)
-Interior(인테리어)
-Leadership(리더십)
-Network(네트워크)">
+<meta itemprop="name" content="Go module에서 GitHub private 저장소 사용">
+<meta itemprop="description" content="Go module에서 GitHub private 저장소를 사용하는 방법입니다.
+ git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&#34;.insteadOf &#34;https://github.com&#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&#34;github.com/hueypark/asset&#34; ">
 <meta itemprop="datePublished" content="2020-03-29T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2022-09-18T20:36:46&#43;09:00" />
-<meta itemprop="wordCount" content="33">
+<meta itemprop="wordCount" content="26">
 
 
 
-<meta itemprop="keywords" content="" />
+<meta itemprop="keywords" content="go," />
 
 <link rel="stylesheet" href="/css/layout.css" />
 
@@ -97,7 +58,7 @@ if (!doNotTrack) {
 <title>
 
 
-     Wiki 
+     Go module에서 GitHub private 저장소 사용 
 
 </title>
 
@@ -154,27 +115,24 @@ if (!doNotTrack) {
 
 
 <article class="post">
-    <h1 class="title"> Wiki </h1>
-    <div class="content"> <p><a href="/the-game-i-want-to-make">내가 만들고 싶은 게임</a></p>
-<p><a href="/c++">C++</a></p>
-<p><a href="/cockroachdb">CockroachDB</a></p>
-<p><a href="/cto">CTO</a></p>
-<p><a href="/database">Database(데이터베이스)</a></p>
-<p><a href="/distributed-system">Distributed System(분산 시스템)</a></p>
-<p><a href="/game-server-architecture">Game Server Architecture(게임 서버 아키텍처)</a></p>
-<p><a href="/go/go">Go</a></p>
-<p><a href="/problems-want-to-solve">해결하고 싶은 문제들</a></p>
-<p><a href="/remote-work">Remote work(원격근무)</a></p>
-<p><a href="/single-server-mmorpg">Single Server MMORPG</a></p>
-<p><a href="/how-to-be-successful">How to be successful(성공하는 방법)</a></p>
-<p><a href="/interior">Interior(인테리어)</a></p>
-<p><a href="/leadership">Leadership(리더십)</a></p>
-<p><a href="/network">Network(네트워크)</a></p>
- </div>
+    <h1 class="title"> Go module에서 GitHub private 저장소 사용 </h1>
+    <div class="content"> <p>Go module에서 GitHub private 저장소를 사용하는 방법입니다.</p>
+<hr>
+<h3 id="git--github-----">git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global url.<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">https://</span><span style="color:#e6db74">${</span>GITHUB_USER<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>{GITHUB_TOKEN<span style="color:#e6db74">}</span><span style="color:#e6db74">}@github.com</span><span style="color:#e6db74">&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com&#34;</span>
+</code></pre></div><h3 id="goprivatehttpsgolangorgcmdgohdrmoduleconfigurationfornonpublicmodules--private--"><a href="https://golang.org/cmd/go/#hdr-Module_configuration_for_non_public_modules">GOPRIVATE</a> 환경변수에 private 저장소 등록</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">GOPRIVATE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;github.com/hueypark/asset&#34;</span>
+</code></pre></div> </div>
     <footer class="post-footer">
   <div class="post-footer-data">
     
 <div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
   
 </div>
 

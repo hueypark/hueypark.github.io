@@ -6,10 +6,20 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Sep 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>좋은 읽을거리</title>
+      <link>https://marsettler.com/go/good-reads/</link>
+      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/go/good-reads/</guid>
+      <description>Fixing Memory Exhaustion Bugs in My Golang Web App Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기
+디버깅 과정을 상세하게 공유해 주고 있으며, 특히 Other lessons learned 와 Dead ends 파트에서 공유해준 내용에는 배울 점이 많습니다.</description>
+    </item>
     
     <item>
       <title>gRPC</title>
@@ -625,10 +635,10 @@ std::shared_ptr is not thread safe</description>
     
     <item>
       <title>Go의 철학</title>
-      <link>https://marsettler.com/the-zen-of-go/</link>
+      <link>https://marsettler.com/go/the-zen-of-go/</link>
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/the-zen-of-go/</guid>
+      <guid>https://marsettler.com/go/the-zen-of-go/</guid>
       <description>Dave Cheney의 The Zen of Go를 번역했습니다. 좀 더 알고 싶으신 분은 발표 영상과 블로그 글을 함께 참고해 주십시오.
  Go의 철학 쉽고, 읽기 좋으며, 유지가능한 Go 코드 작성을 위한 10가지 엔지니어링 가치. 고퍼콘 이스라엘 2020에 발표하였음.
 패키지는 하나의 목적만을 달성합니다 잘 디자인된 Go 패키지는 단 하나의 아이디어와 관련 동작을 제공합니다. 좋은 Go 패키지를 위해 좋은 이름을 먼저 정해야 합니다. 엘리베이터 피치라고 생각하며 패키지 이름을 정해보십시오.
@@ -637,10 +647,10 @@ std::shared_ptr is not thread safe</description>
     
     <item>
       <title>xvfb를 이용한 Go headless 테스트</title>
-      <link>https://marsettler.com/go-headless-test-with-xvfb/</link>
+      <link>https://marsettler.com/go/go-headless-test-with-xvfb/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/go-headless-test-with-xvfb/</guid>
+      <guid>https://marsettler.com/go/go-headless-test-with-xvfb/</guid>
       <description>Go에서 GLFW 등을 이용해 그래픽스 관련 작업을 할 때에도 자동화 테스트 구성이 가능합니다. 하지만 GitHub Actions과 같이 디스플레이가 없는 환경에서는 의존성을 가지고 있다는 이유만으로 그래픽스 관련 테스트가 실패합니다.
 xvfb는 메뉴얼에서 virtual framebuffer X server for X Version 라고 소개되고 있으며, 서버 사이드 테스트를 위해 주로 사용됩니다.
 Ubuntu 기준으로 sudo apt install xvfb로 설치하고 xvfb-run에 이어서 테스트 명령어를 추가하여 테스트할 수 있습니다. 실제 GitHub Actions에 적용한 예시를 공유드립니다.</description>
@@ -648,21 +658,22 @@ Ubuntu 기준으로 sudo apt install xvfb로 설치하고 xvfb-run에 이어서 
     
     <item>
       <title>Go</title>
-      <link>https://marsettler.com/go/</link>
+      <link>https://marsettler.com/go/go/</link>
       <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/go/</guid>
+      <guid>https://marsettler.com/go/go/</guid>
       <description>xvfb를 이용한 Go headless 테스트
 Go의 철학
-Go module에서 GitHub private repository 사용</description>
+Go module에서 GitHub private repository 사용
+좋은 읽을거리</description>
     </item>
     
     <item>
       <title>Go module에서 GitHub private 저장소 사용</title>
-      <link>https://marsettler.com/using-go-module-with-github-private-repository/</link>
+      <link>https://marsettler.com/go/using-go-module-with-github-private-repository/</link>
       <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/using-go-module-with-github-private-repository/</guid>
+      <guid>https://marsettler.com/go/using-go-module-with-github-private-repository/</guid>
       <description>Go module에서 GitHub private 저장소를 사용하는 방법입니다.
  git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&amp;#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&amp;#34;.insteadOf &amp;#34;https://github.com&amp;#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&amp;#34;github.com/hueypark/asset&amp;#34; </description>
     </item>

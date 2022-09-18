@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/tags/go/</loc>
+    <lastmod>2022-09-18T20:49:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/go/</loc>
+    <lastmod>2022-09-18T20:49:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2022-09-18T20:49:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2022-09-18T20:49:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/go/good-reads/</loc>
+    <lastmod>2022-09-18T20:49:02+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/tags/distributed-system/</loc>
     <lastmod>2022-06-16T23:58:28+09:00</lastmod>
   </url>
@@ -20,16 +45,6 @@
   <url>
     <loc>https://marsettler.com/tags/grpc/</loc>
     <lastmod>2022-06-16T23:58:28+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2022-08-28T09:06:40+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2022-08-28T09:06:40+09:00</lastmod>
   </url>
   
   <url>
@@ -503,38 +518,33 @@
   </url>
   
   <url>
-    <loc>https://marsettler.com/tags/go/</loc>
-    <lastmod>2020-09-20T14:10:26+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marsettler.com/c&#43;&#43;/</loc>
     <lastmod>2021-10-05T23:24:50+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marsettler.com/the-zen-of-go/</loc>
-    <lastmod>2020-04-05T19:16:59+09:00</lastmod>
+    <loc>https://marsettler.com/go/the-zen-of-go/</loc>
+    <lastmod>2022-09-18T20:36:46+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marsettler.com/go-headless-test-with-xvfb/</loc>
-    <lastmod>2020-04-02T22:23:00+09:00</lastmod>
+    <loc>https://marsettler.com/go/go-headless-test-with-xvfb/</loc>
+    <lastmod>2022-09-18T20:36:46+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marsettler.com/go/</loc>
-    <lastmod>2020-04-05T19:16:59+09:00</lastmod>
+    <loc>https://marsettler.com/go/go/</loc>
+    <lastmod>2022-09-18T20:49:02+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marsettler.com/using-go-module-with-github-private-repository/</loc>
-    <lastmod>2020-03-31T23:20:37+09:00</lastmod>
+    <loc>https://marsettler.com/go/using-go-module-with-github-private-repository/</loc>
+    <lastmod>2022-09-18T20:36:46+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/wiki/</loc>
-    <lastmod>2021-11-03T22:27:10+09:00</lastmod>
+    <lastmod>2022-09-18T20:36:46+09:00</lastmod>
   </url>
   
   <url>

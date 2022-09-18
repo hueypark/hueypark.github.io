@@ -8,27 +8,27 @@
 <meta name="keywords" content="" />
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-<link rel="canonical" href="https://marsettler.com/using-go-module-with-github-private-repository/">
-<meta property="og:title" content="Go module에서 GitHub private 저장소 사용" />
-<meta property="og:description" content="Go module에서 GitHub private 저장소를 사용하는 방법입니다.
- git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&#34;.insteadOf &#34;https://github.com&#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&#34;github.com/hueypark/asset&#34; " />
+<link rel="canonical" href="https://marsettler.com/go/good-reads/">
+<meta property="og:title" content="좋은 읽을거리" />
+<meta property="og:description" content="Fixing Memory Exhaustion Bugs in My Golang Web App Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기
+디버깅 과정을 상세하게 공유해 주고 있으며, 특히 Other lessons learned 와 Dead ends 파트에서 공유해준 내용에는 배울 점이 많습니다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://marsettler.com/using-go-module-with-github-private-repository/" />
-<meta property="article:published_time" content="2020-03-29T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-03-31T23:20:37+09:00" />
+<meta property="og:url" content="https://marsettler.com/go/good-reads/" />
+<meta property="article:published_time" content="2022-09-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-18T20:49:02+09:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Go module에서 GitHub private 저장소 사용"/>
-<meta name="twitter:description" content="Go module에서 GitHub private 저장소를 사용하는 방법입니다.
- git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&#34;.insteadOf &#34;https://github.com&#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&#34;github.com/hueypark/asset&#34; "/>
+<meta name="twitter:title" content="좋은 읽을거리"/>
+<meta name="twitter:description" content="Fixing Memory Exhaustion Bugs in My Golang Web App Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기
+디버깅 과정을 상세하게 공유해 주고 있으며, 특히 Other lessons learned 와 Dead ends 파트에서 공유해준 내용에는 배울 점이 많습니다."/>
 
 
-<meta itemprop="name" content="Go module에서 GitHub private 저장소 사용">
-<meta itemprop="description" content="Go module에서 GitHub private 저장소를 사용하는 방법입니다.
- git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&#34;.insteadOf &#34;https://github.com&#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&#34;github.com/hueypark/asset&#34; ">
-<meta itemprop="datePublished" content="2020-03-29T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-03-31T23:20:37&#43;09:00" />
-<meta itemprop="wordCount" content="26">
+<meta itemprop="name" content="좋은 읽을거리">
+<meta itemprop="description" content="Fixing Memory Exhaustion Bugs in My Golang Web App Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기
+디버깅 과정을 상세하게 공유해 주고 있으며, 특히 Other lessons learned 와 Dead ends 파트에서 공유해준 내용에는 배울 점이 많습니다.">
+<meta itemprop="datePublished" content="2022-09-18T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-09-18T20:49:02&#43;09:00" />
+<meta itemprop="wordCount" content="37">
 
 
 
@@ -58,7 +58,7 @@ if (!doNotTrack) {
 <title>
 
 
-     Go module에서 GitHub private 저장소 사용 
+     좋은 읽을거리 
 
 </title>
 
@@ -115,14 +115,13 @@ if (!doNotTrack) {
 
 
 <article class="post">
-    <h1 class="title"> Go module에서 GitHub private 저장소 사용 </h1>
-    <div class="content"> <p>Go module에서 GitHub private 저장소를 사용하는 방법입니다.</p>
-<hr>
-<h3 id="git--github-----">git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global url.<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">https://</span><span style="color:#e6db74">${</span>GITHUB_USER<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>{GITHUB_TOKEN<span style="color:#e6db74">}</span><span style="color:#e6db74">}@github.com</span><span style="color:#e6db74">&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com&#34;</span>
-</code></pre></div><h3 id="goprivatehttpsgolangorgcmdgohdrmoduleconfigurationfornonpublicmodules--private--"><a href="https://golang.org/cmd/go/#hdr-Module_configuration_for_non_public_modules">GOPRIVATE</a> 환경변수에 private 저장소 등록</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">GOPRIVATE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;github.com/hueypark/asset&#34;</span>
-</code></pre></div> </div>
+    <h1 class="title"> 좋은 읽을거리 </h1>
+    <div class="content"> <h2 id="fixing-memory-exhaustion-bugs-in-my-golang-web-apphttpsmtlynchionotespicoshareperf"><a href="https://mtlynch.io/notes/picoshare-perf/">Fixing Memory Exhaustion Bugs in My Golang Web App</a></h2>
+<p>Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기</p>
+<p>디버깅 과정을 상세하게 공유해 주고 있으며,
+특히 <a href="https://mtlynch.io/notes/picoshare-perf/#other-lessons-learned">Other lessons learned</a> 와
+<a href="https://mtlynch.io/notes/picoshare-perf/#dead-ends">Dead ends</a> 파트에서 공유해준 내용에는 배울 점이 많습니다.</p>
+ </div>
     <footer class="post-footer">
   <div class="post-footer-data">
     
@@ -136,7 +135,7 @@ if (!doNotTrack) {
   
 </div>
 
-    <div class="date">created: 2020-03-29 | updated: 2020-03-31</div>
+    <div class="date">created: 2022-09-18 | updated: 2022-09-18</div>
     
   </div>
 </footer>
