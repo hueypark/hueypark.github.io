@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43;s on Marsettler</title>
+    <link>https://marsettler.com/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43;s on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Sep 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/c++/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>C&#43;&#43; 좋은 읽을거리</title>
+      <link>https://marsettler.com/c&#43;&#43;/good-reads/</link>
+      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/c&#43;&#43;/good-reads/</guid>
+      <description>Can C++ be 10x simpler &amp;amp; safer &amp;hellip; ? C++ 코드를 생성하는 컴파일러를 개발해 C++ 의 좋은 점만 사용하는 50배 안전하고, 10배 간단한 C++ 을 만드는 아이디어
+ 레퍼런스  https://github.com/hsutter/cppfront    </description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://marsettler.com/c&#43;&#43;/c&#43;&#43;/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/c&#43;&#43;/c&#43;&#43;/</guid>
+      <description>친애하는 나의 C++
+std::shared_ptr is not thread safe
+C++ 좋은 읽을거리</description>
+    </item>
+    
+  </channel>
+</rss>
