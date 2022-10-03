@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>database on Marsettler</title>
-    <link>https://marsettler.com/tags/database/</link>
-    <description>Recent content in database on Marsettler</description>
+    <title>olap on Marsettler</title>
+    <link>https://marsettler.com/tags/olap/</link>
+    <description>Recent content in olap on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Oct 2022 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://marsettler.com/tags/database/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://marsettler.com/tags/olap/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,24 +20,6 @@
       <description>코호트 분석 원하는 유저군(코호트)을 잡아서 해당 유저들의 행동을 분석하는 기법
 예: &amp;ldquo;지난 6개월간 우리 앱에서 한달에 10만원 이상 소비한 30대 여성&amp;quot;이란 유저군을 잡은 후, 해당 유저군의 리텐션 (재방문률)을 분석
 분석방법  Amplitude, Google Analytics 등의 외부 솔루션 사용  장점: 개발 비용이 없음 단점:  솔루션 비용 발생 솔루션에 의존하게 됨     RDB(OLTP) 사용  장점: 익숙함 단점: 일정 규모를 넘어가면 성능문제로 문제해결 불가능함   데이터 파이프라인을 구축(Snowflake, Apache Kafka 등 활용)  장점: 익숙함 단점: 생각보다 많은 비용   코호트 분석용 OALP 데이터베이스를 직접 개발: https://engineering.</description>
-    </item>
-    
-    <item>
-      <title>Write Ahead Logging</title>
-      <link>https://marsettler.com/write-ahead-logging/</link>
-      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/write-ahead-logging/</guid>
-      <description>&lt;p&gt;Write Ahead Logging(WAL)은 데이터베이스 시스템에서 ACID의 특성 가운데 원자성과 내구성을 제공하는 기술입니다.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>데이터베이스</title>
-      <link>https://marsettler.com/database/</link>
-      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/database/</guid>
-      <description>Write Ahead Logging</description>
     </item>
     
   </channel>

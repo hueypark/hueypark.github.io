@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Oct 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>analysis</title>
+      <link>https://marsettler.com/tags/analysis/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>https://marsettler.com/tags/database/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>olap</title>
+      <link>https://marsettler.com/tags/olap/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/olap/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>c&#43;&#43;</title>
@@ -278,15 +305,6 @@
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/architecture/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>database</title>
-      <link>https://marsettler.com/tags/database/</link>
-      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/database/</guid>
       <description></description>
     </item>
     
