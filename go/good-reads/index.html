@@ -10,25 +10,25 @@
 
 <link rel="canonical" href="https://marsettler.com/go/good-reads/">
 <meta property="og:title" content="좋은 읽을거리" />
-<meta property="og:description" content="Fixing Memory Exhaustion Bugs in My Golang Web App Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기
+<meta property="og:description" content="Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate. Heap allocation is costly. Generic methods are not fast. Heap Ballast is dead. Long live GOMEMLIMIT!    Fixing Memory Exhaustion Bugs in My Golang Web App Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기
 디버깅 과정을 상세하게 공유해 주고 있으며, 특히 Other lessons learned 와 Dead ends 파트에서 공유해준 내용에는 배울 점이 많습니다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/go/good-reads/" />
 <meta property="article:published_time" content="2022-09-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-09-18T20:49:02+09:00" />
+<meta property="article:modified_time" content="2022-10-10T23:53:43+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="좋은 읽을거리"/>
-<meta name="twitter:description" content="Fixing Memory Exhaustion Bugs in My Golang Web App Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기
+<meta name="twitter:description" content="Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate. Heap allocation is costly. Generic methods are not fast. Heap Ballast is dead. Long live GOMEMLIMIT!    Fixing Memory Exhaustion Bugs in My Golang Web App Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기
 디버깅 과정을 상세하게 공유해 주고 있으며, 특히 Other lessons learned 와 Dead ends 파트에서 공유해준 내용에는 배울 점이 많습니다."/>
 
 
 <meta itemprop="name" content="좋은 읽을거리">
-<meta itemprop="description" content="Fixing Memory Exhaustion Bugs in My Golang Web App Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기
+<meta itemprop="description" content="Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate. Heap allocation is costly. Generic methods are not fast. Heap Ballast is dead. Long live GOMEMLIMIT!    Fixing Memory Exhaustion Bugs in My Golang Web App Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기
 디버깅 과정을 상세하게 공유해 주고 있으며, 특히 Other lessons learned 와 Dead ends 파트에서 공유해준 내용에는 배울 점이 많습니다.">
 <meta itemprop="datePublished" content="2022-09-18T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2022-09-18T20:49:02&#43;09:00" />
-<meta itemprop="wordCount" content="37">
+<meta itemprop="dateModified" content="2022-10-10T23:53:43&#43;09:00" />
+<meta itemprop="wordCount" content="64">
 
 
 
@@ -116,7 +116,19 @@ if (!doNotTrack) {
 
 <article class="post">
     <h1 class="title"> 좋은 읽을거리 </h1>
-    <div class="content"> <h2 id="fixing-memory-exhaustion-bugs-in-my-golang-web-apphttpsmtlynchionotespicoshareperf"><a href="https://mtlynch.io/notes/picoshare-perf/">Fixing Memory Exhaustion Bugs in My Golang Web App</a></h2>
+    <div class="content"> <h2 id="obscure-go-optimisations--bryan-borehamhttpsyoutuberrtihwocali"><a href="https://youtu.be/rRtihWOcaLI">Obscure Go Optimisations - Bryan Boreham</a></h2>
+<ul>
+<li>Take-aways
+<ul>
+<li>Slice-to-interface cast will allocate.</li>
+<li>Heap allocation is costly.</li>
+<li>Generic methods are not fast.</li>
+<li>Heap Ballast is dead.</li>
+<li>Long live GOMEMLIMIT!</li>
+</ul>
+</li>
+</ul>
+<h2 id="fixing-memory-exhaustion-bugs-in-my-golang-web-apphttpsmtlynchionotespicoshareperf"><a href="https://mtlynch.io/notes/picoshare-perf/">Fixing Memory Exhaustion Bugs in My Golang Web App</a></h2>
 <p>Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기</p>
 <p>디버깅 과정을 상세하게 공유해 주고 있으며,
 특히 <a href="https://mtlynch.io/notes/picoshare-perf/#other-lessons-learned">Other lessons learned</a> 와
@@ -135,7 +147,7 @@ if (!doNotTrack) {
   
 </div>
 
-    <div class="date">created: 2022-09-18 | updated: 2022-09-18</div>
+    <div class="date">created: 2022-09-18 | updated: 2022-10-10</div>
     
   </div>
 </footer>
