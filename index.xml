@@ -38,8 +38,7 @@
       <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/go/go-good-reads/</guid>
-      <description>Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate. Heap allocation is costly. Generic methods are not fast. Heap Ballast is dead. Long live GOMEMLIMIT!    Fixing Memory Exhaustion Bugs in My Golang Web App Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기
-디버깅 과정을 상세하게 공유해 주고 있으며, 특히 Other lessons learned 와 Dead ends 파트에서 공유해준 내용에는 배울 점이 많습니다.</description>
+      <description>How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate. Heap allocation is costly. Generic methods are not fast. Heap Ballast is dead. Long live GOMEMLIMIT!    Fixing Memory Exhaustion Bugs in My Golang Web App Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기</description>
     </item>
     
     <item>
