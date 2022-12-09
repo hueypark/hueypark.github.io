@@ -6,10 +6,20 @@
     <description>Recent content in go on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C&#43;&#43; to Go</title>
+      <link>https://marsettler.com/go/c&#43;&#43;-to-go/</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/go/c&#43;&#43;-to-go/</guid>
+      <description>C++ to Go Introducing Ziegel 박재완
+ Luft  Ziegel and TrailDB   Luft  OLAP database for analize the analyzing user behavior in real-time Use TrailDB as a storage Written in C/C++ and Go   TrailDB  TrailDB is an efficient tool for storing and querying series of events Written in C   Ziegel  New storage engine for the Luft Written in Go   Why?</description>
+    </item>
     
     <item>
       <title>Go good reads</title>

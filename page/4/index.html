@@ -14,7 +14,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://marsettler.com/" />
-<meta property="og:updated_time" content="2022-10-03T00:00:00+00:00" />
+<meta property="og:updated_time" content="2022-12-04T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Marsettler"/>
@@ -108,6 +108,41 @@ if (!doNotTrack) {
 
 
   
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-5/'> MongoDB 스터디 5주차(패턴과 안티패턴)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2021-02-10 | updated: 2021-02-17</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    패턴 Attribute Pattern  상황  비슷한 필드가 많을 때 여러 필드에 걸쳐 조회하고 싶을때 필드가 일부 도큐먼트에만 있을 때   해결책  필드를 k/v 짝으로 나누어 서브도큐먼트에 저장   예  적용 전
+{ &#34;title&#34;: &#34;Star Wars&#34;, &#34;release_US&#34;: &#34;1977-05-20T01:00:00+01:00&#34;, &#34;release_France&#34;: &#34;1977-10-19T01:00:00+01:00&#34;, &#34;release_Italy&#34;: &#34;1977-10-20T01:00:00+01:00&#34;, &#34;release_UK&#34;: &#34;1977-12-27T01:00:00+01:00&#34;, } 적용 후
+{ &#34;title&#34;: &#34;Star Wars&#34;, &#34;director&#34;: &#34;George Lucas&#34;, &#34;releases&#34;: [ { &#34;location&#34;: &#34;USA&#34;, &#34;date&#34;: &#34;1977-05-20T01:00:00+01:00&#34; }, { &#34;location&#34;: &#34;France&#34;, &#34;date&#34;: &#34;1977-10-19T01:00:00+01:00&#34; }, { &#34;location&#34;: &#34;Italy&#34;, &#34;date&#34;: &#34;1977-10-20T01:00:00+01:00&#34; }, { &#34;location&#34;: &#34;UK&#34;, &#34;date&#34;: &#34;1977-12-27T01:00:00+01:00&#34; }, ] }  장점  인덱싱하기 쉬움 더 적은 인덱스가 필요함 쿼리가 간단해지고 일반적으로 빨라짐    Extended Reference Pattern  상황  너무 많은 조인이 발생함   해결책  주가 되는 도큐먼트에 쪽에 필드를 임베딩함   예  적용 전
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/mongodb/mongodb-study-week-5/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
     <article class="post-preview">
 
   <header>
@@ -434,54 +469,6 @@ Besiege 링크: http://www.besiege.spiderlinggames.co.uk/
 
   <div class="rmore">
     <a href='https://marsettler.com/game-design/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/the-game-i-want-to-make/economy/'> 경제</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-10-20 | updated: 2020-10-24</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/economy">#economy</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/game">#game</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/mmorpg">#mmorpg</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/the-game-i-want-to-make">#the game i want to make</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <h3 id="-">아직 작성중입니다.</h3>
-<p>사용자들이 서로 상호작용하는 게임에서 경제는 매우 중요합니다. 하지만 많은 경우 잘 관리되지 못하며,
-심한 경우에는 패치가 진행될 때마다 극심한 인플레이션으로 재화의 가치가 바닥으로 떨어지곤 합니다.
-이 글에서는 극심한 인플레이션의 문제점과 그 해결방안에 대해 이야기해보겠습니다.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/the-game-i-want-to-make/economy/' class="rmore">Read more</a>
   </div>
 
 
