@@ -46,7 +46,7 @@
 
 ---
 
-## Ziegel
+## [Ziegel](https://engineering.ab180.co/stories/traildb-to-ziegel)
 
 - New storage engine for the Luft
 - Written in Go
@@ -89,7 +89,7 @@
 
 ---
 
-### 1. Measuring performance
+### Measuring performance
 
 Go provides great tools for measuring performance.
 
@@ -118,7 +118,7 @@ Total:      11.55s 22.23s (flat, cum) 14.49%
 
 ---
 
-### 2. Add benchmarks for the meseurement
+### Add benchmarks for the meseurement
 
 - Add benchmarks early for the measurement
 - This allows you to see how much a specific commit affected overall performance
@@ -129,7 +129,7 @@ Total:      11.55s 22.23s (flat, cum) 14.49%
 
 ---
 
-## 3. Impressive optimizations
+## Impressive optimizations
 
 ---
 
@@ -138,7 +138,7 @@ Total:      11.55s 22.23s (flat, cum) 14.49%
 - Memory allocation on type assertion is too huge
 
 ```go
-fund Do(v string) interface{} {
+fund GetValue(v string) interface{} {
 	return v.(interface{})
 }
 ```
@@ -190,9 +190,9 @@ func PutUint64(data []byte, val uint64) {
 
 ---
 
-After long periods of debugging, I found the misuse of the unsafe package.
+- After long periods of debugging, I found misuse of the unsafe package.
 
-I am currently using the unsafe package more conservatively.
+- I&#39;m conservative about the unsafe package now.
 
 
 ---
@@ -205,7 +205,11 @@ I am currently using the unsafe package more conservatively.
 
 ---
 
-- However, changing the paradigm from garbage collector to direct memory management was not easy
+- However, changing the paradigm from garbage collector to direct memory management was not easy.
+
+---
+
+- e.g. How can you handle this case?
 
 ```go
 type Writer struct {
@@ -236,14 +240,34 @@ func (w *Writer) Write(data []byte) {
 	- After remove this inefficient parts, the performance will be improved more
 ---
 
-## TODOs
+## TODO
 
 1. Remove TrailDB compatibility
-2. Support very fast autoscale
-3. More efficient memory management
+2. More efficient memory management
+3. Support very fast autoscale
 4. Download partial column only if needed
 	- Pre requirment for the very fast autoscale
 5. User level filter
+
+---
+
+## Takeaways
+
+- Introduce Luft
+- Why
+- Issues
+- Journey
+- Peformance tuning
+- Hard works
+- TODO
+
+---
+
+## Personal opinion that Go over C&#43;&#43;
+
+- Productivity is much better
+- Do not need verty high level of language skill(easy to hire)
+- Finally, Go can do better performance like our product
 
 ---
 
