@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/feedback/</loc>
+    <lastmod>2022-12-17T12:41:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/feedback/</loc>
+    <lastmod>2022-12-17T12:41:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2022-12-17T12:41:31+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2022-12-17T12:41:31+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/tags/c&#43;&#43;/</loc>
     <lastmod>2022-12-10T14:18:47+09:00</lastmod>
   </url>
@@ -19,16 +39,6 @@
   
   <url>
     <loc>https://marsettler.com/go/</loc>
-    <lastmod>2022-12-10T14:18:47+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2022-12-10T14:18:47+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
     <lastmod>2022-12-10T14:18:47+09:00</lastmod>
   </url>
   
