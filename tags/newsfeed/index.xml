@@ -6,10 +6,19 @@
     <description>Recent content in newsfeed on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/newsfeed/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Newsfeed 2023</title>
+      <link>https://marsettler.com/newsfeed/newsfeed-2023/</link>
+      <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/newsfeed/newsfeed-2023/</guid>
+      <description>January 2023 2022 센드버드 오픈 오피스 아워 ㅣ글로벌 B2B 스타트업을 만들기 위한 20 Quesetions 를 보고 인상깊었던 답변 내맘대로 정리 Q. 고객사의 커스텀 개발 요청을 어떤 기준으로, 어디까지 수용해야할까요? 제품 이점이 명확하게 강화되고 추가 고객사 확보가 가능하다면 수용하는 편입니다. 피드백 바탕으로 제품 개발하는 것은 중요한 지점인데 팀에서는 SI라고 생각하는 경우가 있어서요. 비슷한 맥락에서 고객의 목소리/요구사항에서 무엇을 반영하고(우선순위화하고), 무엇을 안 할지 정하는 기준은 무엇일까요? 그대로 다 만들 수도 없을 것이고 그렇게 하는게 좋은 제품을 만드는 길은 아닐듯해 어떻게 취사선택할지 고민이 됩니다.</description>
+    </item>
     
     <item>
       <title>Newsfeed 2022</title>
