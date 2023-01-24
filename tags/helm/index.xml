@@ -13,10 +13,10 @@
     
     <item>
       <title>Helm: The package manager for Kubernetes</title>
-      <link>https://marsettler.com/infra/heml/</link>
+      <link>https://marsettler.com/infra/helm/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/infra/heml/</guid>
+      <guid>https://marsettler.com/infra/helm/</guid>
       <description>What is Helm? Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.
 Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.
 The Purpose of Helm Helm is a tool for managing Kubernetes packages called charts. Helm can do the following:
