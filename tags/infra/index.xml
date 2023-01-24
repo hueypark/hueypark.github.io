@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>infra on Marsettler</title>
+    <link>https://marsettler.com/tags/infra/</link>
+    <description>Recent content in infra on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/infra/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Helm: The package manager for Kubernetes</title>
+      <link>https://marsettler.com/infra/heml/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/infra/heml/</guid>
+      <description>What is Helm? Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.
+Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.
+The Purpose of Helm Helm is a tool for managing Kubernetes packages called charts. Helm can do the following:
+ Create new charts from scratch Package charts into chart archive (tgz) files Interact with chart repositories where charts are stored Install and uninstall charts into an existing Kubernetes cluster Manage the release cycle of charts that have been installed with Helm  For Helm, there are three important concepts:</description>
+    </item>
+    
+  </channel>
+</rss>

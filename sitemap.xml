@@ -3,8 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/tags/helm/</loc>
+    <lastmod>2023-01-23T12:25:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/infra/heml/</loc>
+    <lastmod>2023-01-23T12:25:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/infra/</loc>
+    <lastmod>2023-01-23T12:25:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/infra/</loc>
+    <lastmod>2023-01-23T12:25:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/kubernetes/</loc>
+    <lastmod>2023-01-23T12:25:33+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/</loc>
-    <lastmod>2023-01-07T22:05:47+09:00</lastmod>
+    <lastmod>2023-01-24T21:04:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2023-01-24T21:04:42+09:00</lastmod>
   </url>
   
   <url>
@@ -20,11 +50,6 @@
   <url>
     <loc>https://marsettler.com/newsfeed/</loc>
     <lastmod>2023-01-05T23:27:33+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2023-01-07T22:05:47+09:00</lastmod>
   </url>
   
   <url>
@@ -49,12 +74,12 @@
   
   <url>
     <loc>https://marsettler.com/tags/go/</loc>
-    <lastmod>2022-12-31T06:07:21+09:00</lastmod>
+    <lastmod>2023-01-24T21:04:42+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://marsettler.com/go/</loc>
-    <lastmod>2022-12-31T06:07:21+09:00</lastmod>
+    <lastmod>2023-01-24T21:04:42+09:00</lastmod>
   </url>
   
   <url>
@@ -94,7 +119,7 @@
   
   <url>
     <loc>https://marsettler.com/go/go-good-reads/</loc>
-    <lastmod>2022-12-31T06:07:21+09:00</lastmod>
+    <lastmod>2023-01-24T21:04:42+09:00</lastmod>
   </url>
   
   <url>
