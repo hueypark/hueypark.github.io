@@ -6,10 +6,20 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Jan 2023 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CEO</title>
+      <link>https://marsettler.com/ceo/</link>
+      <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/ceo/</guid>
+      <description>Founding CEO and Management CEO Founding CEO are the original CEO, that was involved in the creation and early development of the company and tend to have a strong vision for its future, while management CEO are brought in to manage the company after it has been established and help it scale.
+ https://www.youtube.com/watch?v=_bFTmjYVgzE&amp;amp;t=934s https://www.youtube.com/watch?v=l5gy7ITrqH8&amp;amp;t=1655s  </description>
+    </item>
     
     <item>
       <title>Helm Charts</title>
@@ -99,7 +109,7 @@ The Purpose of Helm Helm is a tool for managing Kubernetes packages called chart
       <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/go/go-good-reads/</guid>
-      <description>Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &amp;lt;file2&amp;gt; &amp;lt;file1&amp;gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate. Heap allocation is costly.</description>
+      <description>DRAFT RELEASE NOTES — Introduction to Go 1.20  Interesting for me  Profile-guided optimization(PGO) Wrapping multiple errors   Other links  What’s New in Go 1.20, Part I: Language Changes  What’s New in Go 1.20, Part II: Major Standard Library Changes    Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &amp;lt;file2&amp;gt; &amp;lt;file1&amp;gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate.</description>
     </item>
     
     <item>

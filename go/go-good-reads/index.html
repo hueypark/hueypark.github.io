@@ -10,22 +10,22 @@
 
 <link rel="canonical" href="https://marsettler.com/go/go-good-reads/">
 <meta property="og:title" content="Go good reads" />
-<meta property="og:description" content="Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate. Heap allocation is costly." />
+<meta property="og:description" content="DRAFT RELEASE NOTES — Introduction to Go 1.20  Interesting for me  Profile-guided optimization(PGO) Wrapping multiple errors   Other links  What’s New in Go 1.20, Part I: Language Changes  What’s New in Go 1.20, Part II: Major Standard Library Changes    Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/go/go-good-reads/" />
 <meta property="article:published_time" content="2022-09-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-01-24T21:04:42+09:00" />
+<meta property="article:modified_time" content="2023-01-29T22:42:02+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Go good reads"/>
-<meta name="twitter:description" content="Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate. Heap allocation is costly."/>
+<meta name="twitter:description" content="DRAFT RELEASE NOTES — Introduction to Go 1.20  Interesting for me  Profile-guided optimization(PGO) Wrapping multiple errors   Other links  What’s New in Go 1.20, Part I: Language Changes  What’s New in Go 1.20, Part II: Major Standard Library Changes    Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate."/>
 
 
 <meta itemprop="name" content="Go good reads">
-<meta itemprop="description" content="Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate. Heap allocation is costly.">
+<meta itemprop="description" content="DRAFT RELEASE NOTES — Introduction to Go 1.20  Interesting for me  Profile-guided optimization(PGO) Wrapping multiple errors   Other links  What’s New in Go 1.20, Part I: Language Changes  What’s New in Go 1.20, Part II: Major Standard Library Changes    Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate.">
 <meta itemprop="datePublished" content="2022-09-18T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2023-01-24T21:04:42&#43;09:00" />
-<meta itemprop="wordCount" content="149">
+<meta itemprop="dateModified" content="2023-01-29T22:42:02&#43;09:00" />
+<meta itemprop="wordCount" content="187">
 
 
 
@@ -113,7 +113,23 @@ if (!doNotTrack) {
 
 <article class="post">
     <h1 class="title"> Go good reads </h1>
-    <div class="content"> <h1 id="profiling-and-execution-tracing-in-gohttpsteivahmediumcomprofilingandexecutiontracingingoa5e646970f5b"><a href="https://teivah.medium.com/profiling-and-execution-tracing-in-go-a5e646970f5b">Profiling and Execution Tracing in Go</a></h1>
+    <div class="content"> <h1 id="draft-release-notes--introduction-to-go-120httpstipgolangorgdocgo120introduction"><a href="https://tip.golang.org/doc/go1.20#introduction">DRAFT RELEASE NOTES — Introduction to Go 1.20</a></h1>
+<ul>
+<li>Interesting for me
+<ul>
+<li>Profile-guided optimization(PGO)</li>
+<li>Wrapping multiple errors</li>
+</ul>
+</li>
+<li>Other links
+<ul>
+<li><a href="https://blog.carlmjohnson.net/post/2023/golang-120-language-changes/">What’s New in Go 1.20, Part I: Language Changes
+</a></li>
+<li><a href="https://blog.carlmjohnson.net/post/2023/golang-120-arenas-errors-responsecontroller/">What’s New in Go 1.20, Part II: Major Standard Library Changes</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="profiling-and-execution-tracing-in-gohttpsteivahmediumcomprofilingandexecutiontracingingoa5e646970f5b"><a href="https://teivah.medium.com/profiling-and-execution-tracing-in-go-a5e646970f5b">Profiling and Execution Tracing in Go</a></h1>
 <ul>
 <li>What I learned
 <ul>
@@ -168,7 +184,7 @@ if (!doNotTrack) {
   
 </div>
 
-    <div class="date">created: 2022-09-18 | updated: 2023-01-24</div>
+    <div class="date">created: 2022-09-18 | updated: 2023-01-29</div>
     
   </div>
 </footer>
