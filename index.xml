@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Career</title>
+      <link>https://marsettler.com/career/</link>
+      <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/career/</guid>
+      <description>I really wanted to go to a large company  No matter how good a company is that people say it is, I no longer envy it.
+ It can be difficult to fully grasp something until you have experienced it for yourself. In such situations, I believe it is advantageous to give it a try.</description>
+    </item>
+    
+    <item>
       <title>CEO</title>
       <link>https://marsettler.com/ceo/</link>
       <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
@@ -97,13 +107,13 @@ He also add four action items for the engineer.
     </item>
     
     <item>
-      <title>C&#43;&#43; 좋은 읽을거리</title>
+      <title>C&#43;&#43; good reads</title>
       <link>https://marsettler.com/c&#43;&#43;/good-reads/</link>
       <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/c&#43;&#43;/good-reads/</guid>
-      <description>Can C++ be 10x simpler &amp;amp; safer &amp;hellip; ? C++ 코드를 생성하는 컴파일러를 개발해 C++ 의 좋은 점만 사용하는 50배 안전하고, 10배 간단한 C++ 을 만드는 아이디어
- 레퍼런스  https://github.com/hsutter/cppfront    </description>
+      <description>C++ STL performance example with shared_ptr  I just have to say this and move on&amp;hellip; If you think it&#39;s okay to just use the STL for a project that doesn&#39;t need this level of optimization or performance, think again.
+  It is highly likely that your project is not suitable for writing Non GC Native language, so it is recommended to replace it with a VM-based language. I don&#39;t use C++ anymore for 99% of my projects.</description>
     </item>
     
     <item>
