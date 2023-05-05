@@ -10,25 +10,25 @@
 
 <link rel="canonical" href="https://marsettler.com/go/go-good-reads/">
 <meta property="og:title" content="Go good reads" />
-<meta property="og:description" content="Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management Despite the tradeoffs, arena is a very cool feature.
+<meta property="og:description" content="Go basically never frees heap memory back to the operating system Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management Despite the tradeoffs, arena is a very cool feature.
 DRAFT RELEASE NOTES — Introduction to Go 1.20  Interesting for me  Profile-guided optimization(PGO) Wrapping multiple errors   Other links  What’s New in Go 1.20, Part I: Language Changes  What’s New in Go 1.20, Part II: Major Standard Library Changes    Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/go/go-good-reads/" />
 <meta property="article:published_time" content="2022-09-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-02-19T22:44:03+09:00" />
+<meta property="article:modified_time" content="2023-05-05T12:54:57+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Go good reads"/>
-<meta name="twitter:description" content="Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management Despite the tradeoffs, arena is a very cool feature.
+<meta name="twitter:description" content="Go basically never frees heap memory back to the operating system Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management Despite the tradeoffs, arena is a very cool feature.
 DRAFT RELEASE NOTES — Introduction to Go 1.20  Interesting for me  Profile-guided optimization(PGO) Wrapping multiple errors   Other links  What’s New in Go 1.20, Part I: Language Changes  What’s New in Go 1.20, Part II: Major Standard Library Changes    Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate."/>
 
 
 <meta itemprop="name" content="Go good reads">
-<meta itemprop="description" content="Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management Despite the tradeoffs, arena is a very cool feature.
+<meta itemprop="description" content="Go basically never frees heap memory back to the operating system Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management Despite the tradeoffs, arena is a very cool feature.
 DRAFT RELEASE NOTES — Introduction to Go 1.20  Interesting for me  Profile-guided optimization(PGO) Wrapping multiple errors   Other links  What’s New in Go 1.20, Part I: Language Changes  What’s New in Go 1.20, Part II: Major Standard Library Changes    Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate.">
 <meta itemprop="datePublished" content="2022-09-18T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2023-02-19T22:44:03&#43;09:00" />
-<meta itemprop="wordCount" content="205">
+<meta itemprop="dateModified" content="2023-05-05T12:54:57&#43;09:00" />
+<meta itemprop="wordCount" content="216">
 
 
 
@@ -116,7 +116,8 @@ if (!doNotTrack) {
 
 <article class="post">
     <h1 class="title"> Go good reads </h1>
-    <div class="content"> <h1 id="go-120-experiment-memory-arenas-vs-traditional-memory-managementhttpspyroscopeiobloggo120memoryarenas"><a href="https://pyroscope.io/blog/go-1-20-memory-arenas/">Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management</a></h1>
+    <div class="content"> <h1 id="go-basically-never-frees-heap-memory-back-to-the-operating-systemhttpsutccutorontocacksspaceblogprogramminggonomemoryfreeing"><a href="https://utcc.utoronto.ca/~cks/space/blog/programming/GoNoMemoryFreeing">Go basically never frees heap memory back to the operating system</a></h1>
+<h1 id="go-120-experiment-memory-arenas-vs-traditional-memory-managementhttpspyroscopeiobloggo120memoryarenas"><a href="https://pyroscope.io/blog/go-1-20-memory-arenas/">Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management</a></h1>
 <p>Despite the tradeoffs, arena is a very cool feature.</p>
 <h1 id="draft-release-notes--introduction-to-go-120httpstipgolangorgdocgo120introduction"><a href="https://tip.golang.org/doc/go1.20#introduction">DRAFT RELEASE NOTES — Introduction to Go 1.20</a></h1>
 <ul>
@@ -189,7 +190,7 @@ if (!doNotTrack) {
   
 </div>
 
-    <div class="date">created: 2022-09-18 | updated: 2023-02-19</div>
+    <div class="date">created: 2022-09-18 | updated: 2023-05-05</div>
     
   </div>
 </footer>
