@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on Marsettler</title>
+    <link>https://marsettler.com/tags/software/</link>
+    <description>Recent content in software on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 May 2023 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>(Book) 개발자에게 물어보세요</title>
+      <link>https://marsettler.com/book/ask-your-developer/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/book/ask-your-developer/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;지은이: 제프 로슨&lt;/li&gt;
+&lt;li&gt;ISBN-13: 978-89-6626-390-5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
