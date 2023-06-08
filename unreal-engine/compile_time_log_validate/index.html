@@ -26,7 +26,6 @@ FString temp; UE_LOG(LogClass, Log, TEXT(&#34;%d, %s&#34;), *temp); _stprintf_s"
 예)
 FString temp; UE_LOG(LogClass, Log, TEXT(&#34;%d, %s&#34;), *temp); _stprintf_s"/>
 
-
 <meta itemprop="name" content="컴파일 시점에 printf 오류 검사">
 <meta itemprop="description" content="언리얼 엔진의 UE_LOG 매크로는 컴파일 시점에 입력값의 오류를 검사하지 않습니다.
 따라서 실행 중 로그를 기록하려다 의도하지 않은 동작(크래시 등)을 발생시킬 위험이 있습니다.
