@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/tags/go/</loc>
+    <lastmod>2023-06-10T13:18:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/go/go-performance-optimization-tips/</loc>
+    <lastmod>2023-06-10T13:18:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/go/</loc>
+    <lastmod>2023-06-10T13:18:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2023-06-10T13:18:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2023-06-10T13:18:29+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/book/ask-your-developer/</loc>
     <lastmod>2023-06-04T19:39:42+09:00</lastmod>
   </url>
@@ -23,18 +48,8 @@
   </url>
   
   <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2023-06-04T20:27:02+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marsettler.com/tags/software/</loc>
     <lastmod>2023-06-04T19:39:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2023-06-04T20:27:02+09:00</lastmod>
   </url>
   
   <url>
@@ -140,16 +155,6 @@
   <url>
     <loc>https://marsettler.com/go/c&#43;&#43;-to-go/</loc>
     <lastmod>2022-12-10T14:18:47+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/go/</loc>
-    <lastmod>2023-05-05T12:54:57+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/go/</loc>
-    <lastmod>2023-05-05T12:54:57+09:00</lastmod>
   </url>
   
   <url>
