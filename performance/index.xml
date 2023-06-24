@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Performances on Marsettler</title>
+    <link>https://marsettler.com/performance/</link>
+    <description>Recent content in Performances on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Jun 2023 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/performance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bloom filter</title>
+      <link>https://marsettler.com/performance/bloom_filter/</link>
+      <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/performance/bloom_filter/</guid>
+      <description>Good reads  Modern Bloom Filters: 22x Faster!  </description>
+    </item>
+    
+  </channel>
+</rss>

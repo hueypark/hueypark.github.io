@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/performance/bloom_filter/</loc>
+    <lastmod>2023-06-24T22:17:41+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/bloom-filter/</loc>
+    <lastmod>2023-06-24T22:17:41+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2023-06-24T22:17:41+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/performance/</loc>
+    <lastmod>2023-06-24T22:17:41+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/performance/</loc>
+    <lastmod>2023-06-24T22:17:41+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2023-06-24T22:17:41+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/tags/go/</loc>
     <lastmod>2023-06-10T13:18:29+09:00</lastmod>
   </url>
@@ -15,16 +45,6 @@
   <url>
     <loc>https://marsettler.com/go/</loc>
     <lastmod>2023-06-10T13:18:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2023-06-24T21:19:41+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2023-06-24T21:19:41+09:00</lastmod>
   </url>
   
   <url>
