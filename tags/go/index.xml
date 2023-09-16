@@ -53,8 +53,8 @@
       <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/go/go-good-reads/</guid>
-      <description>Go compiler and runtime meeting notes go HACKING.md Go basically never frees heap memory back to the operating system Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management Despite the tradeoffs, arena is a very cool feature.
-DRAFT RELEASE NOTES — Introduction to Go 1.20  Interesting for me  Profile-guided optimization(PGO) Wrapping multiple errors   Other links  What’s New in Go 1.20, Part I: Language Changes  What’s New in Go 1.</description>
+      <description>A Deep Look Into Golang Profile-Guided Optimization (PGO) Go compiler and runtime meeting notes go HACKING.md Go basically never frees heap memory back to the operating system Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management Despite the tradeoffs, arena is a very cool feature.
+DRAFT RELEASE NOTES — Introduction to Go 1.20  Interesting for me  Profile-guided optimization(PGO) Wrapping multiple errors   Other links  What’s New in Go 1.</description>
     </item>
     
     <item>
