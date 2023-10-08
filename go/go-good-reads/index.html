@@ -10,24 +10,21 @@
 
 <link rel="canonical" href="https://marsettler.com/go/go-good-reads/">
 <meta property="og:title" content="Go good reads" />
-<meta property="og:description" content="A Deep Look Into Golang Profile-Guided Optimization (PGO) Go compiler and runtime meeting notes go HACKING.md Go basically never frees heap memory back to the operating system Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management Despite the tradeoffs, arena is a very cool feature.
-DRAFT RELEASE NOTES — Introduction to Go 1.20  Interesting for me  Profile-guided optimization(PGO) Wrapping multiple errors   Other links  What’s New in Go 1." />
+<meta property="og:description" content="Index  Performance Generics Others  Performance A Deep Look Into Golang Profile-Guided Optimization (PGO) Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/go/go-good-reads/" />
 <meta property="article:published_time" content="2022-09-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-09-16T21:25:14+09:00" />
+<meta property="article:modified_time" content="2023-10-08T13:39:21+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Go good reads"/>
-<meta name="twitter:description" content="A Deep Look Into Golang Profile-Guided Optimization (PGO) Go compiler and runtime meeting notes go HACKING.md Go basically never frees heap memory back to the operating system Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management Despite the tradeoffs, arena is a very cool feature.
-DRAFT RELEASE NOTES — Introduction to Go 1.20  Interesting for me  Profile-guided optimization(PGO) Wrapping multiple errors   Other links  What’s New in Go 1."/>
+<meta name="twitter:description" content="Index  Performance Generics Others  Performance A Deep Look Into Golang Profile-Guided Optimization (PGO) Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate."/>
 
 <meta itemprop="name" content="Go good reads">
-<meta itemprop="description" content="A Deep Look Into Golang Profile-Guided Optimization (PGO) Go compiler and runtime meeting notes go HACKING.md Go basically never frees heap memory back to the operating system Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management Despite the tradeoffs, arena is a very cool feature.
-DRAFT RELEASE NOTES — Introduction to Go 1.20  Interesting for me  Profile-guided optimization(PGO) Wrapping multiple errors   Other links  What’s New in Go 1.">
+<meta itemprop="description" content="Index  Performance Generics Others  Performance A Deep Look Into Golang Profile-Guided Optimization (PGO) Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate.">
 <meta itemprop="datePublished" content="2022-09-18T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2023-09-16T21:25:14&#43;09:00" />
-<meta itemprop="wordCount" content="232">
+<meta itemprop="dateModified" content="2023-10-08T13:39:21&#43;09:00" />
+<meta itemprop="wordCount" content="246">
 
 
 
@@ -118,13 +115,55 @@ if (!doNotTrack) {
 
 <article class="post">
     <h1 class="title"> Go good reads </h1>
-    <div class="content"> <h1 id="a-deep-look-into-golang-profileguided-optimization-pgohttpstheyahyacompostsgopgo"><a href="https://theyahya.com/posts/go-pgo/">A Deep Look Into Golang Profile-Guided Optimization (PGO)</a></h1>
-<h1 id="go-compiler-and-runtime-meeting-noteshttpsgithubcomgolanggoissues43930"><a href="https://github.com/golang/go/issues/43930">Go compiler and runtime meeting notes</a></h1>
-<h1 id="go-hackingmdhttpsgithubcomgolanggoblobmastersrcruntimehackingmd"><a href="https://github.com/golang/go/blob/master/src/runtime/HACKING.md">go HACKING.md</a></h1>
-<h1 id="go-basically-never-frees-heap-memory-back-to-the-operating-systemhttpsutccutorontocacksspaceblogprogramminggonomemoryfreeing"><a href="https://utcc.utoronto.ca/~cks/space/blog/programming/GoNoMemoryFreeing">Go basically never frees heap memory back to the operating system</a></h1>
-<h1 id="go-120-experiment-memory-arenas-vs-traditional-memory-managementhttpspyroscopeiobloggo120memoryarenas"><a href="https://pyroscope.io/blog/go-1-20-memory-arenas/">Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management</a></h1>
+    <div class="content"> <h1 id="index">Index</h1>
+<ul>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#generics">Generics</a></li>
+<li><a href="#others">Others</a></li>
+</ul>
+<h1 id="performance">Performance</h1>
+<h2 id="a-deep-look-into-golang-profileguided-optimization-pgohttpstheyahyacompostsgopgo"><a href="https://theyahya.com/posts/go-pgo/">A Deep Look Into Golang Profile-Guided Optimization (PGO)</a></h2>
+<h2 id="profiling-and-execution-tracing-in-gohttpsteivahmediumcomprofilingandexecutiontracingingoa5e646970f5b"><a href="https://teivah.medium.com/profiling-and-execution-tracing-in-go-a5e646970f5b">Profiling and Execution Tracing in Go</a></h2>
+<ul>
+<li>What I learned
+<ul>
+<li>pprof can diff with <code>go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="how-to-write-accurate-benchmarks-in-gohttpsteivahmediumcomhowtowriteaccuratebenchmarksingo4266d7dd1a95"><a href="https://teivah.medium.com/how-to-write-accurate-benchmarks-in-go-4266d7dd1a95">How to Write Accurate Benchmarks in Go</a></h2>
+<ul>
+<li>Not resetting or pausing the timer</li>
+<li>Making wrong assumptions about micro-benchmarks</li>
+<li>Not being careful about compiler optimizations</li>
+<li>Being fooled by the observer effect</li>
+</ul>
+<h2 id="obscure-go-optimisations--bryan-borehamhttpsyoutuberrtihwocali"><a href="https://youtu.be/rRtihWOcaLI">Obscure Go Optimisations - Bryan Boreham</a></h2>
+<ul>
+<li>Take-aways
+<ul>
+<li>Slice-to-interface cast will allocate.</li>
+<li>Heap allocation is costly.</li>
+<li>Generic methods are not fast.</li>
+<li>Heap Ballast is dead.</li>
+<li>Long live GOMEMLIMIT!</li>
+</ul>
+</li>
+</ul>
+<h2 id="fixing-memory-exhaustion-bugs-in-my-golang-web-apphttpsmtlynchionotespicoshareperf"><a href="https://mtlynch.io/notes/picoshare-perf/">Fixing Memory Exhaustion Bugs in My Golang Web App</a></h2>
+<p>Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기</p>
+<p>디버깅 과정을 상세하게 공유해 주고 있으며,
+특히 <a href="https://mtlynch.io/notes/picoshare-perf/##other-lessons-learned">Other lessons learned</a> 와
+<a href="https://mtlynch.io/notes/picoshare-perf/##dead-ends">Dead ends</a> 파트에서 공유해준 내용에는 배울 점이 많습니다.</p>
+<h1 id="generics">Generics</h1>
+<h2 id="deconstructing-type-parameters-by-the-go-bloghttpsgodevblogdeconstructingtypeparameters"><a href="https://go.dev/blog/deconstructing-type-parameters">Deconstructing Type Parameters by The Go Blog</a></h2>
+<h1 id="others">Others</h1>
+<h2 id="go-compiler-and-runtime-meeting-noteshttpsgithubcomgolanggoissues43930"><a href="https://github.com/golang/go/issues/43930">Go compiler and runtime meeting notes</a></h2>
+<h2 id="go-hackingmdhttpsgithubcomgolanggoblobmastersrcruntimehackingmd"><a href="https://github.com/golang/go/blob/master/src/runtime/HACKING.md">go HACKING.md</a></h2>
+<h2 id="go-basically-never-frees-heap-memory-back-to-the-operating-systemhttpsutccutorontocacksspaceblogprogramminggonomemoryfreeing"><a href="https://utcc.utoronto.ca/~cks/space/blog/programming/GoNoMemoryFreeing">Go basically never frees heap memory back to the operating system</a></h2>
+<h2 id="go-120-experiment-memory-arenas-vs-traditional-memory-managementhttpspyroscopeiobloggo120memoryarenas"><a href="https://pyroscope.io/blog/go-1-20-memory-arenas/">Go 1.20 Experiment: Memory Arenas vs Traditional Memory Management</a></h2>
 <p>Despite the tradeoffs, arena is a very cool feature.</p>
-<h1 id="draft-release-notes--introduction-to-go-120httpstipgolangorgdocgo120introduction"><a href="https://tip.golang.org/doc/go1.20#introduction">DRAFT RELEASE NOTES — Introduction to Go 1.20</a></h1>
+<h2 id="draft-release-notes--introduction-to-go-120httpstipgolangorgdocgo120introduction"><a href="https://tip.golang.org/doc/go1.20##introduction">DRAFT RELEASE NOTES — Introduction to Go 1.20</a></h2>
 <ul>
 <li>Interesting for me
 <ul>
@@ -140,44 +179,12 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<h1 id="profiling-and-execution-tracing-in-gohttpsteivahmediumcomprofilingandexecutiontracingingoa5e646970f5b"><a href="https://teivah.medium.com/profiling-and-execution-tracing-in-go-a5e646970f5b">Profiling and Execution Tracing in Go</a></h1>
-<ul>
-<li>What I learned
-<ul>
-<li>pprof can diff with <code>go tool pprof -http=:8080 -diff_base &lt;file2&gt; &lt;file1&gt;</code></li>
-</ul>
-</li>
-</ul>
-<h1 id="how-to-write-accurate-benchmarks-in-gohttpsteivahmediumcomhowtowriteaccuratebenchmarksingo4266d7dd1a95"><a href="https://teivah.medium.com/how-to-write-accurate-benchmarks-in-go-4266d7dd1a95">How to Write Accurate Benchmarks in Go</a></h1>
-<ul>
-<li>Not resetting or pausing the timer</li>
-<li>Making wrong assumptions about micro-benchmarks</li>
-<li>Not being careful about compiler optimizations</li>
-<li>Being fooled by the observer effect</li>
-</ul>
-<h1 id="obscure-go-optimisations--bryan-borehamhttpsyoutuberrtihwocali"><a href="https://youtu.be/rRtihWOcaLI">Obscure Go Optimisations - Bryan Boreham</a></h1>
-<ul>
-<li>Take-aways
-<ul>
-<li>Slice-to-interface cast will allocate.</li>
-<li>Heap allocation is costly.</li>
-<li>Generic methods are not fast.</li>
-<li>Heap Ballast is dead.</li>
-<li>Long live GOMEMLIMIT!</li>
-</ul>
-</li>
-</ul>
-<h1 id="fixing-memory-exhaustion-bugs-in-my-golang-web-apphttpsmtlynchionotespicoshareperf"><a href="https://mtlynch.io/notes/picoshare-perf/">Fixing Memory Exhaustion Bugs in My Golang Web App</a></h1>
-<p>Go 메모리 관련 OOM 버그를 수정하는 여정에 관한 이야기</p>
-<p>디버깅 과정을 상세하게 공유해 주고 있으며,
-특히 <a href="https://mtlynch.io/notes/picoshare-perf/#other-lessons-learned">Other lessons learned</a> 와
-<a href="https://mtlynch.io/notes/picoshare-perf/#dead-ends">Dead ends</a> 파트에서 공유해준 내용에는 배울 점이 많습니다.</p>
-<h1 id="gophercon-2021-suzy-mueller--debugging-treasure-hunthttpsyoutubezpipprjwg7q"><a href="https://youtu.be/ZPIPPRjwg7Q">GopherCon 2021: Suzy Mueller - Debugging Treasure Hunt</a></h1>
+<h2 id="gophercon-2021-suzy-mueller--debugging-treasure-hunthttpsyoutubezpipprjwg7q"><a href="https://youtu.be/ZPIPPRjwg7Q">GopherCon 2021: Suzy Mueller - Debugging Treasure Hunt</a></h2>
 <ul>
 <li><a href="https://youtu.be/ZPIPPRjwg7Q?t=2001">Log point</a> is great.</li>
 <li>We can make a breakpoint with the <a href="https://youtu.be/ZPIPPRjwg7Q?t=2276">function name</a>.</li>
 </ul>
-<h1 id="gophercon-2019-dave-cheney--two-go-programs-three-different-profiling-techniqueshttpsyoutubenok0ayigiya"><a href="https://youtu.be/nok0aYiGiYA">GopherCon 2019: Dave Cheney - Two Go Programs, Three Different Profiling Techniques</a></h1>
+<h2 id="gophercon-2019-dave-cheney--two-go-programs-three-different-profiling-techniqueshttpsyoutubenok0ayigiya"><a href="https://youtu.be/nok0aYiGiYA">GopherCon 2019: Dave Cheney - Two Go Programs, Three Different Profiling Techniques</a></h2>
 <ul>
 <li><a href="https://youtu.be/nok0aYiGiYA?t=1485">Trace tool</a></li>
 </ul>
@@ -195,7 +202,7 @@ if (!doNotTrack) {
   
 </div>
 
-    <div class="date">created: 2022-09-18 | updated: 2023-09-16</div>
+    <div class="date">created: 2022-09-18 | updated: 2023-10-08</div>
     
   </div>
 </footer>
