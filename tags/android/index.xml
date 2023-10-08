@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on Marsettler</title>
+    <link>https://marsettler.com/tags/android/</link>
+    <description>Recent content in android on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Oct 2023 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>(Book) Androids: The Team That Built the Android Operating System</title>
+      <link>https://marsettler.com/book/androids-the-team-that-built-the-android-operating-system/</link>
+      <pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/book/androids-the-team-that-built-the-android-operating-system/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Publisher: Chet Haase&lt;/li&gt;
+&lt;li&gt;ISBN-13: 978-1737354819&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
