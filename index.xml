@@ -204,7 +204,7 @@ The Purpose of Helm Helm is a tool for managing Kubernetes packages called chart
       <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/go/go-good-reads/</guid>
-      <description>Index  Performance Generics Others  Performance A Deep Look Into Golang Profile-Guided Optimization (PGO) Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &amp;lt;file2&amp;gt; &amp;lt;file1&amp;gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate.</description>
+      <description>Index  Performance Generics Others  Performance pprof documentation A Deep Look Into Golang Profile-Guided Optimization (PGO) Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &amp;lt;file2&amp;gt; &amp;lt;file1&amp;gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate.</description>
     </item>
     
     <item>
