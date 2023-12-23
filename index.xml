@@ -152,7 +152,8 @@ The Purpose of Helm Helm is a tool for managing Kubernetes packages called chart
       <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/newsfeed/newsfeed-2023/</guid>
-      <description>December 2023 건강검진 검사 추천 비추천 by @BenjaminKim_  추천  위내시경(위암) 대장내시경(대장암, 3년~5년 마다) 유방초음파(20대부터 2년에 한 번씩, 30대부터는 1년에 한번) 갑상선초음파(20,30대) 복부 초음파(간암, 췌장암, 신장암, 담낭암) 조영증강 복부 CT(한 번쯤 해보면 좋다) 뇌 MRA(40대 이상. 혈압이 안 좋은 경우만) 관상동맥 CT(나이가 많은 경우)  추천까진 아니고 해도 괜찮은 것  저선량 폐CT(30,40대가 되면 한 번 정도 해보고 괜찮으면 담부턴 몇년 주기로) 흉부 CT  비추천  조영증강을 안 한 복부 CT (얻는 것 없이 방사선만 노출된다) PET-CT (절대 찍지 말것.</description>
+      <description>December 2023 Constant Propagation in Compiler Design  In simpler words, we can say that if some value is assigned a known constant, than we can simply replace the that value by constant.
+ 건강검진 검사 추천 비추천 by @BenjaminKim_  추천  위내시경(위암) 대장내시경(대장암, 3년~5년 마다) 유방초음파(20대부터 2년에 한 번씩, 30대부터는 1년에 한번) 갑상선초음파(20,30대) 복부 초음파(간암, 췌장암, 신장암, 담낭암) 조영증강 복부 CT(한 번쯤 해보면 좋다) 뇌 MRA(40대 이상. 혈압이 안 좋은 경우만) 관상동맥 CT(나이가 많은 경우)  추천까진 아니고 해도 괜찮은 것  저선량 폐CT(30,40대가 되면 한 번 정도 해보고 괜찮으면 담부턴 몇년 주기로) 흉부 CT  비추천  조영증강을 안 한 복부 CT (얻는 것 없이 방사선만 노출된다) PET-CT (절대 찍지 말것.</description>
     </item>
     
     <item>
@@ -201,7 +202,7 @@ The Purpose of Helm Helm is a tool for managing Kubernetes packages called chart
       <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/go/go-good-reads/</guid>
-      <description>Index  Performance Generics Others  Performance pprof documentation A Deep Look Into Golang Profile-Guided Optimization (PGO) Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &amp;lt;file2&amp;gt; &amp;lt;file1&amp;gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate.</description>
+      <description>Index  Performance Generics Others  Performance Go 1.22 inlining overhaul pprof documentation A Deep Look Into Golang Profile-Guided Optimization (PGO) Profiling and Execution Tracing in Go  What I learned  pprof can diff with go tool pprof -http=:8080 -diff_base &amp;lt;file2&amp;gt; &amp;lt;file1&amp;gt;    How to Write Accurate Benchmarks in Go  Not resetting or pausing the timer Making wrong assumptions about micro-benchmarks Not being careful about compiler optimizations Being fooled by the observer effect  Obscure Go Optimisations - Bryan Boreham  Take-aways  Slice-to-interface cast will allocate.</description>
     </item>
     
     <item>
