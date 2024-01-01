@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2024-01-01T15:58:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/newsfeed/</loc>
+    <lastmod>2024-01-01T15:58:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/newsfeed/newsfeed-2024/</loc>
+    <lastmod>2024-01-01T15:58:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/newsfeed/</loc>
+    <lastmod>2024-01-01T15:58:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2024-01-01T15:58:55+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/book/androids-the-team-that-built-the-android-operating-system/</loc>
     <lastmod>2023-10-10T09:12:43+09:00</lastmod>
   </url>
@@ -20,16 +45,6 @@
   <url>
     <loc>https://marsettler.com/book/</loc>
     <lastmod>2023-10-10T09:12:43+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2023-12-23T14:46:49+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2023-12-23T14:46:49+09:00</lastmod>
   </url>
   
   <url>
@@ -158,17 +173,7 @@
   </url>
   
   <url>
-    <loc>https://marsettler.com/tags/newsfeed/</loc>
-    <lastmod>2023-12-23T14:46:49+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marsettler.com/newsfeed/newsfeed-2023/</loc>
-    <lastmod>2023-12-23T14:46:49+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/newsfeed/</loc>
     <lastmod>2023-12-23T14:46:49+09:00</lastmod>
   </url>
   

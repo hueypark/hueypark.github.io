@@ -6,10 +6,19 @@
     <description>Recent content in newsfeed on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/newsfeed/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Newsfeed 2024</title>
+      <link>https://marsettler.com/newsfeed/newsfeed-2024/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/newsfeed/newsfeed-2024/</guid>
+      <description>January 2024 Whole world richer by Jeff Bezos  What does cost reduction really mean? It means inventing a better way. Right, and when you invent a better way, you make the whole world richer. So, you know, whatever it was, I don&#39;t know how many thousands of years ago, somebody invented the plow. And when they invented the plow, they made the whole world richer because they made farming less expensive.</description>
+    </item>
     
     <item>
       <title>Newsfeed 2023</title>
