@@ -559,6 +559,15 @@ MongoDB란 도큐먼트를 기본 자료형으로 사용하는 NoSQL 데이터�
     </item>
     
     <item>
+      <title>Favorite Songs</title>
+      <link>https://marsettler.com/favorite-songs/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/favorite-songs/</guid>
+      <description>&lt;p&gt;It is a list of my favorite songs. I will update it from time to time.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>(Book) 0년차 게임개발</title>
       <link>https://marsettler.com/book/game-development-for-0-years/</link>
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
