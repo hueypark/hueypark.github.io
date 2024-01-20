@@ -17,8 +17,10 @@
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/newsfeed/newsfeed-2024/</guid>
-      <description>January 2024 2023-04부터 실천중인 스프린트 기반의 팀 업무 프레임워크   회의록을 작성한다 회의 목표를 정하고 시작한다 목표를 달성하면 회의를 빨리 끝낸다    Write the meeting notes Set the goal of the meeting and start End the meeting as soon as the goal is achieved   만약 정보전달성 회의라면 가급적 회의를 하지 말고 이메일이나 문서로 공유한다.
- If it is an information transfer meeting, it is better not to have a meeting and share it by email or document.</description>
+      <description>January 2024 Short-lived Datacenter Authors: Michael Wawrzoniak, Ingo Müller, Rodrigo Bruno, Ana Klimovic, Gustavo Alonso
+Peer-to-Peer Communication Across Network Address Translators Authors: Bryan Ford, Pyda Srisuresh, Dan Kegel
+TCP Connections for P2P Apps: A Software Approach to Solving the NAT Problem Author: Jeffrey L. Eppinger
+InfiniCache: Exploiting Ephemeral Serverless Functions to Build a Cost-Effective Memory Cache Authors: Ao Wang and Jingyuan Zhang, George Mason University; Xiaolong Ma, University of Nevada, Reno; Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, and Vasily Tarasov, IBM Research&amp;ndash;Almaden; Feng Yan, University of Nevada, Reno; Yue Cheng, George Mason University</description>
     </item>
     
     <item>
