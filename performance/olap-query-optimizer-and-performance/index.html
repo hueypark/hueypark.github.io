@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>OLAP database query optimizer and performance</title>
+
+		<link rel="stylesheet" href="/revealjs/dist/reset.css">
+		<link rel="stylesheet" href="/revealjs/dist/reveal.css">
+		<link rel="stylesheet" href="/revealjs/dist/theme/black.css">
+
+		
+		<link rel="stylesheet" href="/revealjs/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					
+# OLAP database query optimizer and performance
+
+---
+
+## OLAP workloads
+
+&gt; Online analytical processing, or OLAP, is an approach to answer multi-dimensional analytical queries swiftly in computing.
+
+https://en.wikipedia.org/wiki/Online_analytical_processing
+
+---
+
+## OLAP VS. OLTP: THE DIFFERENCES
+
+&gt; OLAP is used for complex data analysis, while OLTP is used for real-time processing of online transactions at scale.
+
+https://www.snowflake.com/guides/olap-vs-oltp/
+
+---
+
+## Luft: OLAP database for Airbridge
+
+https://engineering.ab180.co/stories/introducing-luft
+
+---
+
+## Airbridge dashboard demo
+
+Let&#39;s take a look at what you&#39;d do if you implemented.
+
+1. Retention
+2. Funnel
+
+---
+
+## TrailDB to Ziegel (C&#43;&#43; to GO)
+
+https://marsettler.com/go/c&#43;&#43;-to-go/
+
+---
+
+## Revisiting TODO
+
+1. Remove TrailDB compatibility
+2. More efficient memory management
+3. Support very fast autoscale
+4. Download partial column only if needed
+    - Pre requirment for the very fast autoscale
+5. User level filter
+
+---
+
+## 오늘 할 이야기
+
+- Luft 성능 리포트 2:  더 많은 코호트에 대한 리텐션 집계
+- 제안서: Luft 의 대형 쿼리 처리에 관하여
+- AWS Lambda 를 활용한 Luft 스케일링
+
+---
+
+## Luft 성능 리포트 2
+## 더 많은 코호트에 대한 리텐션 집계
+
+https://engineering.ab180.co/stories/luft-performance-report-2
+ 
+
+---
+
+## 제안서: Luft 의 대형 쿼리
+## 처리에 관하여
+
+https://engineering.ab180.co/stories/luft-query-optimizer-and-scale
+
+---
+
+## AWS Lambda 를 활용한
+## Luft 스케일링
+
+https://engineering.ab180.co/stories/luft-task-executor-with-aws-lambda
+
+---
+
+## Q &amp; A
+
+---
+
+## Reference
+
+- [Luft: 유저 행동 분석에 최적화된 OLAP 데이터베이스](https://engineering.ab180.co/stories/introducing-luft)
+- [C&#43;&#43; to Go: Introducing Ziegel](https://marsettler.com/go/c&#43;&#43;-to-go/)
+- [Luft 성능 리포트 2:  더 많은 코호트에 대한 리텐션 집계](https://engineering.ab180.co/stories/luft-performance-report-2)
+- [제안서: Luft 의 대형 쿼리 처리에 관하여](https://engineering.ab180.co/stories/luft-query-optimizer-and-scale)
+- [AWS Lambda 를 활용한 Luft 스케일링](https://engineering.ab180.co/stories/luft-task-executor-with-aws-lambda)
+
+				</section>
+			</div>
+		</div>
+
+		<script src="/revealjs/dist/reveal.js"></script>
+		<script src="/revealjs/plugin/notes/notes.js"></script>
+		<script src="/revealjs/plugin/markdown/markdown.js"></script>
+		<script src="/revealjs/plugin/highlight/highlight.js"></script>
+		<script>
+			
+			
+			
+			Reveal.initialize({
+				hash: true,
+				slideNumber: "c/t",
+				
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

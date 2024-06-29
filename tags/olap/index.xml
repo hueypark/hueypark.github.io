@@ -6,10 +6,24 @@
     <description>Recent content in olap on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Feb 2024 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/olap/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OLAP database query optimizer and performance</title>
+      <link>https://marsettler.com/performance/olap-query-optimizer-and-performance/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/performance/olap-query-optimizer-and-performance/</guid>
+      <description>OLAP database query optimizer and performance  OLAP workloads  Online analytical processing, or OLAP, is an approach to answer multi-dimensional analytical queries swiftly in computing.
+ https://en.wikipedia.org/wiki/Online_analytical_processing
+ OLAP VS. OLTP: THE DIFFERENCES  OLAP is used for complex data analysis, while OLTP is used for real-time processing of online transactions at scale.
+ https://www.snowflake.com/guides/olap-vs-oltp/
+ Luft: OLAP database for Airbridge https://engineering.ab180.co/stories/introducing-luft
+ Airbridge dashboard demo Let&#39;s take a look at what you&#39;d do if you implemented.</description>
+    </item>
     
     <item>
       <title>어떻게 코호트 분석을 하나요?</title>
