@@ -31,7 +31,9 @@
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/newsfeed/newsfeed-2024/</guid>
-      <description>July 2024 As a senior individual contributor, part of how you get things done is always going to be black magic by Jaana Dogan  As a senior individual contributor, part of how you get things done is always going to be black magic. In companies where there is an established senior IC population, this is a pretty well understood reality. In others, management will try to micromanage you or count some arbitrary artifacts.</description>
+      <description>July 2024 35% Faster Than The Filesystem by SQLite  It appears that the overhead of calling open() and close() is greater than the overhead of using the database.
+ It&#39;s a reasonable guess.
+As a senior individual contributor, part of how you get things done is always going to be black magic by Jaana Dogan  As a senior individual contributor, part of how you get things done is always going to be black magic.</description>
     </item>
     
     <item>
