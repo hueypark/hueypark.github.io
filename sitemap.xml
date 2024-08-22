@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2024-08-22T23:45:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/rust/</loc>
+    <lastmod>2024-08-22T23:45:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/rust/rust/</loc>
+    <lastmod>2024-08-22T23:45:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/rust/</loc>
+    <lastmod>2024-08-22T23:45:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2024-08-22T23:45:45+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/tags/database/</loc>
     <lastmod>2024-06-29T15:04:28+09:00</lastmod>
   </url>
@@ -10,11 +35,6 @@
   <url>
     <loc>https://marsettler.com/tags/luft/</loc>
     <lastmod>2024-06-29T15:04:28+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2024-08-22T19:56:34+09:00</lastmod>
   </url>
   
   <url>
@@ -30,11 +50,6 @@
   <url>
     <loc>https://marsettler.com/performance/</loc>
     <lastmod>2024-06-29T15:04:28+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2024-08-22T19:56:34+09:00</lastmod>
   </url>
   
   <url>

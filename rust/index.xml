@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rusts on Marsettler</title>
+    <link>https://marsettler.com/rust/</link>
+    <description>Recent content in Rusts on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Aug 2024 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/rust/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rust Programming Language</title>
+      <link>https://marsettler.com/rust/rust/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/rust/rust/</guid>
+      <description>Good reads Where is Rust being used? by Let&#39;s Get Rusty  People say learning rust is the hardest thing in the world.
+But that&#39;s not true.
+The hardest thing in the world is finding a rust job position.
+ </description>
+    </item>
+    
+  </channel>
+</rss>

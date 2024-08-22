@@ -6,10 +6,22 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2024 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rust Programming Language</title>
+      <link>https://marsettler.com/rust/rust/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/rust/rust/</guid>
+      <description>Good reads Where is Rust being used? by Let&#39;s Get Rusty  People say learning rust is the hardest thing in the world.
+But that&#39;s not true.
+The hardest thing in the world is finding a rust job position.
+ </description>
+    </item>
     
     <item>
       <title>OLAP database query optimizer and performance</title>
