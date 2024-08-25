@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rust on Marsettler</title>
-    <link>https://marsettler.com/tags/rust/</link>
-    <description>Recent content in rust on Marsettler</description>
+    <title>bevy on Marsettler</title>
+    <link>https://marsettler.com/tags/bevy/</link>
+    <description>Recent content in bevy on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://marsettler.com/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://marsettler.com/tags/bevy/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Rust Programming Language</title>
-      <link>https://marsettler.com/rust/rust/</link>
-      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/rust/rust/</guid>
-      <description>Good reads Where is Rust being used? by Let&#39;s Get Rusty  People say learning rust is the hardest thing in the world.
-But that&#39;s not true.
-The hardest thing in the world is finding a rust job position.
- </description>
-    </item>
     
     <item>
       <title>Bevy 101 - ECS 부터 itch.io 배포까지</title>

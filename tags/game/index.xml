@@ -6,10 +6,20 @@
     <description>Recent content in game on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/game/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bevy 101 - ECS 부터 itch.io 배포까지</title>
+      <link>https://marsettler.com/marsettler/bevy-101-from-ecs-to-itch-io-deployment/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/marsettler/bevy-101-from-ecs-to-itch-io-deployment/</guid>
+      <description>Bevy 101 - ECS 부터 itch.io 배포까지  박재완  여러 게임회사를 다닌 후 지금은 OLAP 데이터베이스 개발하고 있음 Bevy 로 캐주얼 게임 만들기 시도 중   목차  Bevy Game Engine 기초 itch.io 에 게임 배포하기   Bevy  A refreshingly simple data-driven game engine built in Rust Free and Open Source Forever!  https://bevyengine.org/
+ Bevy 주요 기능  Data Driven 2D, 3D Renderer, Render Graph, Animation Cross Platform Bevy UI Scenes Sound Hot Reloading Productive Compile Times Free and Open Source   Data Driven All engine and game logic uses Bevy ECS, a custom Entity Component System</description>
+    </item>
     
     <item>
       <title>(Book) 0년차 게임개발</title>

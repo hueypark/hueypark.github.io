@@ -14,7 +14,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://marsettler.com/" />
-<meta property="og:updated_time" content="2024-08-22T00:00:00+00:00" />
+<meta property="og:updated_time" content="2024-08-25T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Marsettler"/>
@@ -97,6 +97,76 @@
 
 
   
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-7/'> MongoDB 스터디 7주차(MongoDB CURD 읽기 연산)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2021-02-27 | updated: 2021-03-04</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    db.collection.find() 쿼리 기준과 일치하는 도큐먼트에 대한 커서를 반환합니다.
+파라미터  query: 필터에 사용할 쿼리 연산자입니다. projection: 도큐먼트에서 반환할 필드를 지정합니다. 생략하면 모든 필드가 반환됩니다.  db.collection.findOne() 쿼리 기준과 일치하는 하나의 도큐먼트를 반환합니다. 여러 도큐먼트들이 쿼리를 만족하면 디스크에 저장된 순서에 따라 첫 도큐먼트를 반환합니다. 만약 대상이 없으면 null을 반환합니다.
+Read Concern readConcern 옵션을 사용해 읽기 작업의 일관성과 격리수준, 가용성을 제어할 수 있습니다.
+4.4 버전부터 기본값의 전역 설정이 가능합니다. 세부정보는 setDefaultRWConcern에서 확인하십시오.
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/mongodb/mongodb-study-week-7/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-6/'> MongoDB 스터디 6주차(MongoDB CURD 쓰기 연산)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2021-02-23 | updated: 2021-02-25</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    Create Operations db.collection.insertOne() 도큐먼트를 하나 추가합니다.
+문법 db.collection.insertOne(&lt;document&gt;,{writeConcern: &lt;document&gt;}) writeConcern  w: 몇 개의 mongod 에 저장 후 응답할 지 설정  &lt;숫자&gt;: 몇 개의 mongod 에 기록될 지 직접 지정 &ldquo;majority&rdquo;: 과반의 mongod 에 기록되게 설정 &lt;커스텀 write concern 이름&gt;: 특정 데이터 센터에 저장되게 설정가능, Custom Multi-Datacenter Write Concerns   j: 디스크의 저널에 저장 후 응답할지 설정 여부 timeout: 쓰기 제한 시간(밀리세컨드), 반환하기 전에 이미 성공한 쓰기 작업을 롤백하지 않음    예 db.
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/mongodb/mongodb-study-week-6/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
     <article class="post-preview">
 
   <header>
@@ -385,83 +455,6 @@ MongoDB란 도큐먼트를 기본 자료형으로 사용하는 NoSQL 데이터�
 
   <div class="rmore">
     <a href='https://marsettler.com/book/game-development-for-0-years/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/newsfeed/newsfeed-2020/'> 뉴스피드 2020</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-11-25 | updated: 2020-12-31</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/newsfeed">#newsfeed</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    2020년 12월 Disagree and commit 이병준님의 면접시 조심하면 좋은 것들 중 일부
-링크: https://youtu.be/SZEHjcDSEdE?t=183
- 자기가 동의하지 않는 내용이라도 팀원의 한 사람으로서 동의를 했다면 그 동의한 내용을 반드시 따라야 한다.
- 기계인간님의 개발자의 성격 이야기 어떤 역할을 하느냐에 따라 조금씩 다르겠지만, 개발자도 적극적이어야 할 필요가 있다는 점에서 크게 공감합니다.
- 사람마다 회사생활하며 느낀바는 다르겠지만 개발자는 어느 수준부터는 축구선수같길 요구받는다. 내가 수비수라고 수비만 하면 안된다. 내가 공격해야 하는 상황일 땐 공 차고 나가면서 골도 넣을 수 있어야 한다.
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/newsfeed/newsfeed-2020/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/game-design/games-with-interesting-physics/'> 물리가 흥미로운 게임들</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-11-28 | updated: 2020-11-28</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/game-design">#game design</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/physics">#physics</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    Totally Accurate Battle Simulator 링크: https://landfall.se/
-Totally Accurate는 전혀 아니고 약간 바보같은 연출과 적당한 물리처리로 의외성을 만들어내는 게임입니다.
-Besiege 링크: http://www.besiege.spiderlinggames.co.uk/
-모듈화된 부품을 조립하여 공성병기? 를 만드는데, 그 조합의 결과가 물리처리와 합쳐저 놀라운 수준의 의외성을 보여주고 있습니다.
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/game-design/games-with-interesting-physics/' class="rmore">Read more</a>
   </div>
 
 
