@@ -6,10 +6,23 @@
     <description>Recent content in book on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Nov 2024 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/book/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(Book) Time Off: 이토록 멋진 휴식</title>
+      <link>https://marsettler.com/book/time-off/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/book/time-off/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Authors: Max Frenzel, John Fitch&lt;/li&gt;
+&lt;li&gt;ISBN-13: 978-1734794403&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description>
+    </item>
     
     <item>
       <title>(Book) Androids: The Team That Built the Android Operating System</title>

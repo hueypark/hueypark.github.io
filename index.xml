@@ -6,10 +6,23 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Nov 2024 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(Book) Time Off: 이토록 멋진 휴식</title>
+      <link>https://marsettler.com/book/time-off/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/book/time-off/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Authors: Max Frenzel, John Fitch&lt;/li&gt;
+&lt;li&gt;ISBN-13: 978-1734794403&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</description>
+    </item>
     
     <item>
       <title>We do this we thought it would be easy</title>
@@ -261,7 +274,7 @@ Constant Propagation in Compiler Design  In simpler words, we can say that if so
       <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/go/go-good-reads/</guid>
-      <description>Index  Performance Generics Others  Performance New unique package by Michael Knyszek  This work also led us to reexamine finalizers, resulting in another proposal for an easier-to-use and more efficient replacement for finalizers. With a hash function for comparable values on the way as well, the future of building memory-efficient caches in Go is bright!
+      <description>Index  Performance Generics Others  Performance Benchmarks and performance testing New unique package by Michael Knyszek  This work also led us to reexamine finalizers, resulting in another proposal for an easier-to-use and more efficient replacement for finalizers. With a hash function for comparable values on the way as well, the future of building memory-efficient caches in Go is bright!
  It is wonderful to see that the Go team is working on improving the memory management of Go.</description>
     </item>
     
