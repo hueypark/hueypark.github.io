@@ -53,8 +53,7 @@
       <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/go/go-good-reads/</guid>
-      <description>Index  Performance Generics Others  Performance Leveraging benchstat Projections in Go Benchmark Analysis! Benchmarks and performance testing New unique package by Michael Knyszek  This work also led us to reexamine finalizers, resulting in another proposal for an easier-to-use and more efficient replacement for finalizers. With a hash function for comparable values on the way as well, the future of building memory-efficient caches in Go is bright!
- It is wonderful to see that the Go team is working on improving the memory management of Go.</description>
+      <description>Index  Performance Generics Others  Performance Optimising and Visualising Go Tests Parallelism: Why more cores don&#39;t speed up your Go tests Leveraging benchstat Projections in Go Benchmark Analysis! Benchmarks and performance testing New unique package by Michael Knyszek  This work also led us to reexamine finalizers, resulting in another proposal for an easier-to-use and more efficient replacement for finalizers. With a hash function for comparable values on the way as well, the future of building memory-efficient caches in Go is bright!</description>
     </item>
     
     <item>
