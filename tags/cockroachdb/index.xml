@@ -21,6 +21,17 @@
     </item>
     
     <item>
+      <title>카크로치디비의 컬럼 패밀리</title>
+      <link>https://marsettler.com/cockroachdb-column-families/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/cockroachdb-column-families/</guid>
+      <description>&lt;p&gt;카크로치디비의 컬럼 패밀리에 대해 소개합니다.
+실제 스토리지 레이어에 어떻게 데이터가 기록되는지에 관심이 있거나,
+더 효율적인 테이블 설계를 하고 싶은 분에게 도움이 되는 내용입니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: Bugfix and Chill(버그를 수정하자!)</title>
       <link>https://marsettler.com/cockroachdb-livestream-bugfix-and-chill/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
@@ -355,17 +366,6 @@
       
       <guid>https://marsettler.com/posts/2018-10-15-cockroachdb-blog-hello-world/</guid>
       <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/hello-world/&#34;&gt;https://www.cockroachlabs.com/blog/hello-world/&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>카크로치디비의 컬럼 패밀리</title>
-      <link>https://marsettler.com/cockroachdb-column-families/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/cockroachdb-column-families/</guid>
-      <description>&lt;p&gt;카크로치디비의 컬럼 패밀리에 대해 소개합니다.
-실제 스토리지 레이어에 어떻게 데이터가 기록되는지에 관심이 있거나,
-더 효율적인 테이블 설계를 하고 싶은 분에게 도움이 되는 내용입니다.&lt;/p&gt;</description>
     </item>
     
   </channel>

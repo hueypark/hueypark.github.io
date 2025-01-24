@@ -12,12 +12,14 @@
     
     
     <item>
-      <title>Newsfeed 2024</title>
+      <title>Newsfeed 2025</title>
       <link>https://marsettler.com/newsfeed/newsfeed-2025/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/newsfeed/newsfeed-2025/</guid>
-      <description>January 2025 VC 투자계약 차이: 실리콘밸리🇺🇸 vs. 한국🇰🇷 by Demo Day Culture eats strategy for breakfast by Bernie Mckeown </description>
+      <description>January 2025 이직이 가능한 상태를 유지하자 by 취한하늘  Let&#39;s increase productivity.
+Let&#39;s have enduring value.
+ VC 투자계약 차이: 실리콘밸리🇺🇸 vs. 한국🇰🇷 by Demo Day Culture eats strategy for breakfast by Bernie Mckeown </description>
     </item>
     
     <item>
@@ -847,6 +849,17 @@ etcd 안에 훌륭한 Raft 라이브러리가 있습니다.</description>
     </item>
     
     <item>
+      <title>카크로치디비의 컬럼 패밀리</title>
+      <link>https://marsettler.com/cockroachdb-column-families/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/cockroachdb-column-families/</guid>
+      <description>&lt;p&gt;카크로치디비의 컬럼 패밀리에 대해 소개합니다.
+실제 스토리지 레이어에 어떻게 데이터가 기록되는지에 관심이 있거나,
+더 효율적인 테이블 설계를 하고 싶은 분에게 도움이 되는 내용입니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: Bugfix and Chill(버그를 수정하자!)</title>
       <link>https://marsettler.com/cockroachdb-livestream-bugfix-and-chill/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
@@ -1431,17 +1444,6 @@ Network(네트워크)</description>
       <guid>https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/</guid>
       <description>&lt;p&gt;On &lt;code&gt;Visual Studio Code&lt;/code&gt;, &lt;code&gt;Go&lt;/code&gt; debugging is very slow because that always rebuild everything.&lt;/p&gt;
 &lt;p&gt;If you set following settings on your &lt;code&gt;.vscode&lt;/code&gt; folder &lt;code&gt;Visual Studio Code&lt;/code&gt; will only build when changed.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>카크로치디비의 컬럼 패밀리</title>
-      <link>https://marsettler.com/cockroachdb-column-families/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/cockroachdb-column-families/</guid>
-      <description>&lt;p&gt;카크로치디비의 컬럼 패밀리에 대해 소개합니다.
-실제 스토리지 레이어에 어떻게 데이터가 기록되는지에 관심이 있거나,
-더 효율적인 테이블 설계를 하고 싶은 분에게 도움이 되는 내용입니다.&lt;/p&gt;</description>
     </item>
     
   </channel>
