@@ -6,10 +6,20 @@
     <description>Recent content in game on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Mar 2025 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/game/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Awesome graphic games</title>
+      <link>https://marsettler.com/game-design/graphis/</link>
+      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/game-design/graphis/</guid>
+      <description>Destructible Textures by Pybounce  I&#39;m bad at art so I tried making textures break up in to their pixels when hit. It still looks pretty meh butit&#39;s neat
+ </description>
+    </item>
     
     <item>
       <title>Bevy 101 - ECS 부터 itch.io 배포까지</title>
