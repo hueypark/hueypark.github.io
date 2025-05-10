@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,36 @@
     <item>
       <title>book</title>
       <link>https://marsettler.com/tags/book/</link>
-      <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game</title>
+      <link>https://marsettler.com/tags/game/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Krafton</title>
+      <link>https://marsettler.com/tags/krafton/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/krafton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PUBG</title>
+      <link>https://marsettler.com/tags/pubg/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/tags/pubg/</guid>
       <description></description>
     </item>
     
@@ -53,15 +80,6 @@
       <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/tags/tokyo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>game</title>
-      <link>https://marsettler.com/tags/game/</link>
-      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://marsettler.com/tags/game/</guid>
       <description></description>
     </item>
     
