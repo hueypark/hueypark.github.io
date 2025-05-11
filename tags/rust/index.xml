@@ -12,16 +12,16 @@
     
     
     <item>
-      <title>Rust Programming Language</title>
-      <link>https://marsettler.com/rust/rust/</link>
+      <title>Rust good reads</title>
+      <link>https://marsettler.com/rust/rust-reads/</link>
       <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://marsettler.com/rust/rust/</guid>
-      <description>Good reads Where is Rust being used? by Let&#39;s Get Rusty  People say learning rust is the hardest thing in the world.
+      <guid>https://marsettler.com/rust/rust-reads/</guid>
+      <description>Rust good reads Two Years of Rust by Fernando Borretti  The way I would summarize Rust is: it’s a better Go, or a faster Python.
+ Where is Rust being used? by Let&#39;s Get Rusty  People say learning rust is the hardest thing in the world.
 But that&#39;s not true.
 The hardest thing in the world is finding a rust job position.
- Ragnar {Groot Koerkamp}  PhD High Throughput Bioinformatics @BMI ETH Zurich
- </description>
+ Ragnar {Groot Koerkamp}  PhD High Throughput Bioinformatics @BMI ETH Zurich</description>
     </item>
     
     <item>
