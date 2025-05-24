@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://marsettler.com/mars/</loc>
+    <lastmod>2025-05-24T22:19:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/mars/</loc>
+    <lastmod>2025-05-24T22:19:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/mars/mars/</loc>
+    <lastmod>2025-05-24T22:19:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/</loc>
+    <lastmod>2025-05-24T22:19:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://marsettler.com/tags/</loc>
+    <lastmod>2025-05-24T22:19:07+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://marsettler.com/tags/book/</loc>
     <lastmod>2025-05-11T00:19:54+09:00</lastmod>
   </url>
@@ -18,11 +43,6 @@
   </url>
   
   <url>
-    <loc>https://marsettler.com/</loc>
-    <lastmod>2025-05-17T11:14:29+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://marsettler.com/posts/</loc>
     <lastmod>2025-05-11T00:19:54+09:00</lastmod>
   </url>
@@ -30,11 +50,6 @@
   <url>
     <loc>https://marsettler.com/tags/pubg/</loc>
     <lastmod>2025-05-11T00:19:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/</loc>
-    <lastmod>2025-05-17T11:14:29+09:00</lastmod>
   </url>
   
   <url>
@@ -1199,11 +1214,6 @@
   
   <url>
     <loc>https://marsettler.com/tags/intelligence/</loc>
-    <lastmod>2020-02-23T09:51:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://marsettler.com/tags/mars/</loc>
     <lastmod>2020-02-23T09:51:00+09:00</lastmod>
   </url>
   
