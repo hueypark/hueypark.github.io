@@ -14,7 +14,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://marsettler.com/" />
-<meta property="og:updated_time" content="2025-05-24T00:00:00+00:00" />
+<meta property="og:updated_time" content="2025-06-01T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Marsettler"/>
@@ -106,6 +106,42 @@ airbridge.init({
 
 
   
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-8aggregation/'> MongoDB 스터디 8주차(aggregation)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2021-03-07 | updated: 2021-03-11</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    어그리게이션(Aggregation) 어그리게이션 작업은 데이터를 처리하여 계산된 결과를 반환합니다. 어그리게이션은 여러 도큐먼트의 값을 그룹화하고, 데이터에 다양한 작업을 수행한 후 단일 결과를 반환할 수 있습니다. MongoDB는 세 가지 어그리게이션을 제공합니다.
+ Aggregation Pipeline Single Purpose Aggregation Operations Map-reduce  어그리게이션 파이프라인(Aggregation Pipeline) Aggregation pipeline 은 파이프라인 이용해 데이터의 집계를 처리하는 프레임워크입니다. 여러 스테이지에 걸쳐 도큐먼트들을 집계된 결과로 변경합니다.
+아래 예를 살펴봅시다:
+db.orders.aggregate([{ $match: { status: &#34;A&#34; } },{ $group: { _id: &#34;$custmor_id&#34;, total: { $sum: &#34;$amount&#34; } } }]) $match 스테이지는 도큐먼트들을 status 필드가 &quot;A&quot; 인 데이터만 다음 스테이지로 보냅니다.
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/mongodb/mongodb-study-week-8aggregation/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
     <article class="post-preview">
 
   <header>
@@ -426,41 +462,6 @@ Replication Replica set 은 데이터를 가진 여러 노드로 이루어지며
 
   <div class="rmore">
     <a href='https://marsettler.com/mongodb/mongodb-study-week-2/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-1/'> MongoDB 스터디 1주차(MongoDB 기초)</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2021-01-10 | updated: 2021-01-13</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/mongodb">#MongoDB</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    들어가며 지금까지 필요 없는 로그성 데이터를 MongoDB에 저장한 경험이 있으며, 대부분은 RDBMS를 사용했습니다. MongoDB도 많이 발전하였고(트랜잭션, 컨시스턴시 관련) 우리의 MongoDB 운영능력도 증가했기 떄문에 애플리케이션에서 스케일아웃을 핸들링하지 않고 MongoDB를 사용해 개발속도를 향상시키고 싶습니다.
-MongoDB란 도큐먼트를 기본 자료형으로 사용하는 NoSQL 데이터베이스
-도큐먼트와 컬렉션  도큐먼트  도큐먼트는 field와 value의 쌍으로 데이터를 저장하고 관리 JSON 형태로 사용되며 실제로는 BSON으로 시리얼라이즈되어 저장됨    { &#34;name&#34; : &#34;hueypark&#34;, &#34;title&#34; : &#34;software engineer&#34; }  컬렉션  도큐먼트들이 모여있는 집합 일반적으로 한 컬렉션에 있는 도큐먼트들은 공통된 필드를 가지고 있음    BSON BSON은 바이너리로 시리얼라이즈 된 JSON
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/mongodb/mongodb-study-week-1/' class="rmore">Read more</a>
   </div>
 
 

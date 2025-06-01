@@ -6,10 +6,19 @@
     <description>Recent content in mars on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jun 2025 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/mars/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mars</title>
+      <link>https://marsettler.com/marsettler/mars/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/marsettler/mars/</guid>
+      <description>Terraforming Mars Building a Marsbase is a Horrible Idea: Let’s do it! by Kurzgesagt </description>
+    </item>
     
     <item>
       <title>Mars related reads</title>
