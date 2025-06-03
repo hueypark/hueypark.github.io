@@ -17,9 +17,10 @@
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/newsfeed/newsfeed-2025/</guid>
-      <description>June 2025 Building a Distributed Cache for S3 by Tom Schreiber  Stage 1: Local OS page cache Stage 2: Local cache on cloud compute nodes Stage 3: The distributed cache
-  That’s why latency becomes the dominant bottleneck in many real-world analytical queries. You simply can’t fan out enough I/O to hide the delay.
- Short-running queries often touch just a few compressed blocks. Scattered access patterns involve many small, disjoint reads.</description>
+      <description>June 2025 Why OpenAI Spent $3B on a VS Code Fork by Barely Thinking  Things money cannot buy
+ Happiness Fit body Fast time to market    Better product -&amp;gt; More usage -&amp;gt; More data -&amp;gt; Better algorithm -&amp;gt; Better product
+ Cyclical growth.
+Building a Distributed Cache for S3 by Tom Schreiber  Stage 1: Local OS page cache Stage 2: Local cache on cloud compute nodes Stage 3: The distributed cache</description>
     </item>
     
     <item>
