@@ -6,10 +6,20 @@
     <description>Recent content in rust on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Jun 2025 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rust Game Dev Reads</title>
+      <link>https://marsettler.com/marsettler/rust-game-dev-reads/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/marsettler/rust-game-dev-reads/</guid>
+      <description>Avian Physics 0.3 by Joona Aalto My highlights:
+  Additionally, a new tangent_velocity property is provided to emulate the artificial movement of contact surfaces, making it possible to simulate scenarios such as conveyor belts or speed pads. Physics Picking Filter Physics Diagnostics   </description>
+    </item>
     
     <item>
       <title>Rust good reads</title>
