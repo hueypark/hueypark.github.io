@@ -17,9 +17,9 @@
       <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/marsettler/rust-game-dev-reads/</guid>
-      <description>vleue/vleue_navigator  Navigation for Bevy with NavMesh
+      <description>News vleue/vleue_navigator  Navigation for Bevy with NavMesh
  Avian Physics 0.3 by Joona Aalto My highlights:
-  Additionally, a new tangent_velocity property is provided to emulate the artificial movement of contact surfaces, making it possible to simulate scenarios such as conveyor belts or speed pads. Physics Picking Filter Physics Diagnostics   </description>
+  Additionally, a new tangent_velocity property is provided to emulate the artificial movement of contact surfaces, making it possible to simulate scenarios such as conveyor belts or speed pads. Physics Picking Filter Physics Diagnostics   Development Environment Fixing Rust memory allocation slowdown in VS Code on Windows </description>
     </item>
     
     <item>
