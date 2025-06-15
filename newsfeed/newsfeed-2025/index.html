@@ -10,21 +10,30 @@
 
 <link rel="canonical" href="https://marsettler.com/newsfeed/newsfeed-2025/">
 <meta property="og:title" content="Newsfeed 2025" />
-<meta property="og:description" content="June 2025 Airbnb ft Brian Chesky - Battling a Copycat Clone and Rebuilding User Trust to Revolutionize Travel  I thought the best revenge against the clone isn&#39;t to beat them it&#39;s just to make them run the company long term you had the baby you raised the baby I&#39;m not adopting your baby you raise the baby and I thought there&#39;s no way they&#39;re going to raise this baby for 18 years" />
+<meta property="og:description" content="June 2025 Multiple GCP products are experiencing Service issues  Incident began at 2025-06-12 10:51 and ended at 2025-06-12 18:18 (all times are US/Pacific).
+  Summary
+Google Cloud, Google Workspace and Google Security Operations products experienced increased 503 errors in external API requests, impacting customers.
+We deeply apologize for the impact this outage has had. Google Cloud customers and their users trust their businesses to Google, and we will do better." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://marsettler.com/newsfeed/newsfeed-2025/" />
 <meta property="article:published_time" content="2025-01-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2025-06-14T21:24:19+09:00" />
+<meta property="article:modified_time" content="2025-06-15T20:16:34+09:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Newsfeed 2025"/>
-<meta name="twitter:description" content="June 2025 Airbnb ft Brian Chesky - Battling a Copycat Clone and Rebuilding User Trust to Revolutionize Travel  I thought the best revenge against the clone isn&#39;t to beat them it&#39;s just to make them run the company long term you had the baby you raised the baby I&#39;m not adopting your baby you raise the baby and I thought there&#39;s no way they&#39;re going to raise this baby for 18 years"/>
+<meta name="twitter:description" content="June 2025 Multiple GCP products are experiencing Service issues  Incident began at 2025-06-12 10:51 and ended at 2025-06-12 18:18 (all times are US/Pacific).
+  Summary
+Google Cloud, Google Workspace and Google Security Operations products experienced increased 503 errors in external API requests, impacting customers.
+We deeply apologize for the impact this outage has had. Google Cloud customers and their users trust their businesses to Google, and we will do better."/>
 
 <meta itemprop="name" content="Newsfeed 2025">
-<meta itemprop="description" content="June 2025 Airbnb ft Brian Chesky - Battling a Copycat Clone and Rebuilding User Trust to Revolutionize Travel  I thought the best revenge against the clone isn&#39;t to beat them it&#39;s just to make them run the company long term you had the baby you raised the baby I&#39;m not adopting your baby you raise the baby and I thought there&#39;s no way they&#39;re going to raise this baby for 18 years">
+<meta itemprop="description" content="June 2025 Multiple GCP products are experiencing Service issues  Incident began at 2025-06-12 10:51 and ended at 2025-06-12 18:18 (all times are US/Pacific).
+  Summary
+Google Cloud, Google Workspace and Google Security Operations products experienced increased 503 errors in external API requests, impacting customers.
+We deeply apologize for the impact this outage has had. Google Cloud customers and their users trust their businesses to Google, and we will do better.">
 <meta itemprop="datePublished" content="2025-01-01T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2025-06-14T21:24:19&#43;09:00" />
-<meta itemprop="wordCount" content="1858">
+<meta itemprop="dateModified" content="2025-06-15T20:16:34&#43;09:00" />
+<meta itemprop="wordCount" content="2485">
 
 
 
@@ -112,6 +121,21 @@ airbridge.init({
 <article class="post">
     <h1 class="title"> Newsfeed 2025 </h1>
     <div class="content"> <h1 id="june-2025">June 2025</h1>
+<h2 id="multiple-gcp-products-are-experiencing-service-issueshttpsstatuscloudgooglecomincidentsow5i3ppk96rdumcb1ssw"><a href="https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW">Multiple GCP products are experiencing Service issues</a></h2>
+<blockquote>
+<p>Incident began at 2025-06-12 10:51 and ended at 2025-06-12 18:18 (all times are US/Pacific).</p>
+</blockquote>
+<blockquote>
+<p>Summary</p>
+<p>Google Cloud, Google Workspace and Google Security Operations products experienced increased 503 errors in external API requests, impacting customers.</p>
+<p>We deeply apologize for the impact this outage has had. Google Cloud customers and their users trust their businesses to Google, and we will do better. We apologize for the impact this has had not only on our customers’ businesses and their users but also on the trust of our systems. We are committed to making improvements to help avoid outages like this moving forward.</p>
+<p>What happened?</p>
+<p>Google and Google Cloud APIs are served through our Google API management and control planes. Distributed regionally, these management and control planes are responsible for ensuring each API request that comes in is authorized, has the policy and appropriate checks (like quota) to meet their endpoints. The core binary that is part of this policy check system is known as Service Control. Service Control is a regional service that has a regional datastore that it reads quota and policy information from. This datastore metadata gets replicated almost instantly globally to manage quota policies for Google Cloud and our customers.</p>
+<p>On May 29, 2025, a new feature was added to Service Control for additional quota policy checks. This code change and binary release went through our region by region rollout, but the code path that failed was never exercised during this rollout due to needing a policy change that would trigger the code. As a safety precaution, this code change came with a red-button to turn off that particular policy serving path. The issue with this change was that it did not have appropriate error handling nor was it feature flag protected. Without the appropriate error handling, the null pointer caused the binary to crash. Feature flags are used to gradually enable the feature region by region per project, starting with internal projects, to enable us to catch issues. If this had been flag protected, the issue would have been caught in staging.</p>
+<p>On June 12, 2025 at ~10:45am PDT, a policy change was inserted into the regional Spanner tables that Service Control uses for policies. Given the global nature of quota management, this metadata was replicated globally within seconds. This policy data contained unintended blank fields. Service Control, then regionally exercised quota checks on policies in each regional datastore. This pulled in blank fields for this respective policy change and exercised the code path that hit the null pointer causing the binaries to go into a crash loop. This occurred globally given each regional deployment.</p>
+<p>Within 2 minutes, our Site Reliability Engineering team was triaging the incident. Within 10 minutes, the root cause was identified and the red-button (to disable the serving path) was being put in place. The red-button was ready to roll out ~25 minutes from the start of the incident. Within 40 minutes of the incident, the red-button rollout was completed, and we started seeing recovery across regions, starting with the smaller ones first.</p>
+<p>Within some of our larger regions, such as us-central-1, as Service Control tasks restarted, it created a herd effect on the underlying infrastructure it depends on (i.e. that Spanner table), overloading the infrastructure. Service Control did not have the appropriate randomized exponential backoff implemented to avoid this. It took up to ~2h 40 mins to fully resolve in us-central-1 as we throttled task creation to minimize the impact on the underlying infrastructure and routed traffic to multi-regional databases to reduce the load. At that point, Service Control and API serving was fully recovered across all regions. Corresponding Google and Google Cloud products started recovering with some taking longer depending upon their architecture.</p>
+</blockquote>
 <h2 id="airbnb-ft-brian-chesky--battling-a-copycat-clone-and-rebuilding-user-trust-to-revolutionize-travelhttpsyoutubeedjutze8m1i"><a href="https://youtu.be/EDjUTzE8M1I">Airbnb ft Brian Chesky - Battling a Copycat Clone and Rebuilding User Trust to Revolutionize Travel</a></h2>
 <blockquote>
 <p>I thought the best revenge against the clone isn't to beat them
@@ -449,7 +473,7 @@ Because of my personal experience, I wanted to make a completely meaningless &ls
   
 </div>
 
-    <div class="date">created: 2025-01-01 | updated: 2025-06-14</div>
+    <div class="date">created: 2025-01-01 | updated: 2025-06-15</div>
     
   </div>
 </footer>
