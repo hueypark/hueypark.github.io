@@ -53,7 +53,7 @@
       <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/go/go-good-reads/</guid>
-      <description>Index  Performance Concurrency Generics Reiaibility Others  Performance Finding performance problems by diffing two Go profiles by Zach Musgrave Optimising and Visualising Go Tests Parallelism: Why more cores don&#39;t speed up your Go tests Leveraging benchstat Projections in Go Benchmark Analysis! Benchmarks and performance testing New unique package by Michael Knyszek  This work also led us to reexamine finalizers, resulting in another proposal for an easier-to-use and more efficient replacement for finalizers.</description>
+      <description>Index  Performance Concurrency Generics Reiaibility Others  Performance How Go 1.24&#39;s Swiss Tables saved us hundreds of gigabytes by Nayef Ghattas Finding performance problems by diffing two Go profiles by Zach Musgrave Optimising and Visualising Go Tests Parallelism: Why more cores don&#39;t speed up your Go tests Leveraging benchstat Projections in Go Benchmark Analysis! Benchmarks and performance testing New unique package by Michael Knyszek  This work also led us to reexamine finalizers, resulting in another proposal for an easier-to-use and more efficient replacement for finalizers.</description>
     </item>
     
     <item>
