@@ -17,8 +17,9 @@
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/newsfeed/newsfeed-2025/</guid>
-      <description>August 2025 🤔 자기개발 안하면 시간낭비다?? 에 대한 솔직한 생각 털어보기 (4K) by 조승연의 탐구생활  자기 인생의 꿈이랑 커리어의 방향이 딱히 안 맞는 사람이 많다
-  버스를 탔는데 예를 들어서 부산으로 놀라가야 되는데 여수로 가, 그럼 천안까지 타고 가도 된단 말이에요 근데 천안삼거리에서 내려서 딴 걸 타야 되잖아 그러면은 이제 다른 버스가 언제 지나가고 이걸 알고 있어야 되잖아요 그런 사람들이 아마 직장 외에서도 자기 개발을 해야 된다고 생각을 할 것 같아요</description>
+      <description>August 2025 No more disks: the architecture behind stateless compute in ClickHouse Cloud by Tom Schreiber  TL;DR
+  ClickHouse Cloud compute is now fully stateless. This post introduces the final piece that made it possible: a new in-memory database engine powered by a Shared Catalog that removes the last dependency on local disks.
+  We’ll walk through how we got here, what the Shared Catalog unlocks, and how this powers stateless compute over anything, including data lakes.</description>
     </item>
     
     <item>
