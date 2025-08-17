@@ -135,9 +135,9 @@ As a founder, you must always check the &amp;lsquo;fund maturity date&amp;rsquo;
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/newsfeed/newsfeed-2025/</guid>
-      <description>August 2025 No more disks: the architecture behind stateless compute in ClickHouse Cloud by Tom Schreiber  TL;DR
-  ClickHouse Cloud compute is now fully stateless. This post introduces the final piece that made it possible: a new in-memory database engine powered by a Shared Catalog that removes the last dependency on local disks.
-  We’ll walk through how we got here, what the Shared Catalog unlocks, and how this powers stateless compute over anything, including data lakes.</description>
+      <description>August 2025 I&#39;m a software engineer, and I&#39;ve lost my job 4 times in the last 18 years. I don&#39;t think AI is the problem. by Marc Kriguer  Companies hire too quickly
+ No more disks: the architecture behind stateless compute in ClickHouse Cloud by Tom Schreiber  TL;DR
+  ClickHouse Cloud compute is now fully stateless. This post introduces the final piece that made it possible: a new in-memory database engine powered by a Shared Catalog that removes the last dependency on local disks.</description>
     </item>
     
     <item>
