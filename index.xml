@@ -135,9 +135,8 @@ As a founder, you must always check the &amp;lsquo;fund maturity date&amp;rsquo;
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/newsfeed/newsfeed-2025/</guid>
-      <description>August 2025 I&#39;m a software engineer, and I&#39;ve lost my job 4 times in the last 18 years. I don&#39;t think AI is the problem. by Marc Kriguer  Companies hire too quickly
- No more disks: the architecture behind stateless compute in ClickHouse Cloud by Tom Schreiber  TL;DR
-  ClickHouse Cloud compute is now fully stateless. This post introduces the final piece that made it possible: a new in-memory database engine powered by a Shared Catalog that removes the last dependency on local disks.</description>
+      <description>August 2025 When to Hire a Computer Performance Engineering Team (2025) part 1 of 2 by Brendan Gregg  (A) One engineer at $1M/year infrastructure spend, then one per $10M to $20M/year (B) Staff spend should equal or exceed observability monitoring spend (C) When latency or reliability is prohibitive to growth
+ I&#39;m a software engineer, and I&#39;ve lost my job 4 times in the last 18 years. I don&#39;t think AI is the problem.</description>
     </item>
     
     <item>
