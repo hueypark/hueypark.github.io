@@ -53,7 +53,7 @@
       <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/go/go-good-reads/</guid>
-      <description>Index  Performance Concurrency Generics Reiaibility Others  Performance Parsing Protobuf Like Never Before by mcyoung Deep dive into a go binary by Jesús Espino If you want to know how high performance systems written in Go were built, read VictoriaLogs: https://github.com/VictoriaMetrics/VictoriaLogs by Phuong Le   Custom bloom filters to reduce disk I/O and CPU cycles for redundant logs. Column-oriented block storage for better compression ratio and cache locality. Memory-mapped files with automatic pread fallback for zero-copy reads.</description>
+      <description>Index  Performance Concurrency Generics Reiaibility Others  Performance We tried Go&#39;s experimental Green Tea garbage collector and it didn&#39;t help performance by Zach Musgrave Parsing Protobuf Like Never Before by mcyoung Deep dive into a go binary by Jesús Espino If you want to know how high performance systems written in Go were built, read VictoriaLogs: https://github.com/VictoriaMetrics/VictoriaLogs by Phuong Le   Custom bloom filters to reduce disk I/O and CPU cycles for redundant logs.</description>
     </item>
     
     <item>
