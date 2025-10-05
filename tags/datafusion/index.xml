@@ -17,7 +17,8 @@
       <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
       
       <guid>https://marsettler.com/apache-datafusion/</guid>
-      <description>Apache DataFusion 49.0.0 Released </description>
+      <description>Apache DataFusion 49.0.0 Released Highlights I found impressive
+ Dynamic Filters and TopK pushdown Async User-Defined Functions (ask_llm?!) Better Cancellation for Certain Long-Running Queries  </description>
     </item>
     
   </channel>
