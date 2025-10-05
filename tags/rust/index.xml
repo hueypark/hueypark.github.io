@@ -6,10 +6,19 @@
     <description>Recent content in rust on Marsettler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Oct 2025 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://marsettler.com/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apache DataFusion</title>
+      <link>https://marsettler.com/apache-datafusion/</link>
+      <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/apache-datafusion/</guid>
+      <description>Apache DataFusion 49.0.0 Released </description>
+    </item>
     
     <item>
       <title>Rust Game Dev Reads</title>
