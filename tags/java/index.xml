@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on Marsettler</title>
+    <link>https://marsettler.com/tags/java/</link>
+    <description>Recent content in java on Marsettler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Oct 2025 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://marsettler.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java good reads</title>
+      <link>https://marsettler.com/java-good-read/</link>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://marsettler.com/java-good-read/</guid>
+      <description>How Netflix Uses Java - 2025 Edition by Paul Bakker Impressive things.
+ Virtual Threads Web MVC or WebFlux Comparison  GraphQL  Flexible schema to query data Think in &amp;ldquo;data&amp;rdquo;, not in &amp;ldquo;methods&amp;rdquo;   gRPC  Highly performant Server-to-Server calls Think &amp;ldquo;methods&amp;rdquo;, not &amp;ldquo;data&amp;rdquo;   REST 🪦    </description>
+    </item>
+    
+  </channel>
+</rss>
