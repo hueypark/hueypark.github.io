@@ -23,7 +23,7 @@
 
   <meta itemprop="name" content="Marsettler">
   <meta itemprop="datePublished" content="2025-11-09T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-12-21T15:24:32+09:00">
+  <meta itemprop="dateModified" content="2025-12-21T15:17:14+09:00">
 
 <link rel="stylesheet" href="/css/layout.css" />
 
@@ -111,29 +111,144 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2019-08-19-pebble-issue-222/'> db: SingleDelete 구현(Pebble issue #222)</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/performance/bloom_filter/'> Bloom filter</a> </h2>
     <div class="meta">
-      <div class="date">created: 2019-08-19 | updated: 2025-12-21</div>
+      <div class="date">created: 2023-06-24 | updated: 2023-06-24</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
+        <a href="/tags/performance">#performance</a>
       </div>
+    
+      <div class="tag">
+        <a href="/tags/bloom-filter">#bloom filter</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h2 id="good-reads">Good reads</h2>
+<ul>
+<li><a href="https://save-buffer.github.io/bloom_filter.html">Modern Bloom Filters: 22x Faster!</a></li>
+</ul>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/performance/bloom_filter/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/career/'> Career</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2023-01-29 | updated: 2023-06-24</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/career">#career</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h1 id="reflections-on-career-advancement-understanding-the-power-of-relationships-and-reputation">Reflections on Career Advancement: Understanding the Power of Relationships and Reputation</h1>
+<ol>
+<li>Anyone can become a Director by working hard enough. To become a Sr. Director, someone needs to push you. To become a VP, several people need to pull for you.</li>
+<li>Check job postings weekly and ensure you have at least one job interview a year.</li>
+<li>Almost no one applying for a certain position lacks the qualifications. People who can hardly go wrong even if chosen with eyes closed are the ones who get the interview opportunities. Eventually, those slightly more familiar tend to get selected.</li>
+<li>In the same context, office politics is merely about forming relationships, and there&rsquo;s no need to view it negatively.</li>
+<li>There&rsquo;s no great significance in judging the right and wrong of office politics. Even if you don&rsquo;t participate, everyone else does.</li>
+<li>Working hard and performing well is a given; promotion relies on relationships and reputation.</li>
+</ol>
+<p>Link: <a href="https://twitter.com/shinhh/status/1671678952551718912">https://twitter.com/shinhh/status/1671678952551718912</a></p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/career/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/book/ask-your-developer/'> (Book) 개발자에게 물어보세요</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2023-05-28 | updated: 2023-06-15</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/book">#book</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/developer">#developer</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/software">#software</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <ul>
+<li>지은이: 제프 로슨</li>
+<li>ISBN-13: 978-89-6626-390-5</li>
+</ul>
+<hr>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/book/ask-your-developer/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/go-performance-optimization-tips/'> Go 성능 최적화 팁</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2023-06-04 | updated: 2023-06-10</div>
+      
+<div class="tags">
+  
     
       <div class="tag">
         <a href="/tags/go">#go</a>
       </div>
     
-      <div class="tag">
-        <a href="/tags/pebble">#pebble</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/sprint">#sprint</a>
-      </div>
-    
   
 </div>
 
@@ -142,12 +257,28 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <h2 id="개요">개요</h2>
-<p><a href="https://github.com/cockroachdb/pebble">Pebble</a>은 LevelDB/RocksDB에서 영감을 받은 카크로치디비용 키-밸류 저장소입니다. 현재(2019년 8월)는 개발 진행중인 상태이며, 2020년 카크로치디비 적용을 <a href="https://github.com/petermattis/pebble/issues/233">계획</a>하고 있습니다.</p>
+    <h2 id="go-성능-최적화-팁">Go 성능 최적화 팁</h2>
+<p>박재완</p>
+<hr>
+<h2 id="airbridge-와-luft">Airbridge 와 Luft</h2>
+<ul>
+<li><a href="https://www.airbridge.io/">Airbridge</a>
+<ul>
+<li>합리적인 비용의 올인원 모바일 마케팅 솔루션</li>
+</ul>
+</li>
+<li><a href="https://engineering.ab180.co/stories/introducing-luft">Luft</a>
+<ul>
+<li>Airbridge 에서 유저행동 분석을 위해 사용하는 OLAP 데이터베이스</li>
+<li><a href="https://engineering.ab180.co/stories/traildb-to-ziegel">Ziegel</a> 을 스토리지 엔진으로 사용</li>
+<li>Go 로 작성</li>
+</ul>
+</li>
+</ul>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/posts/2019-08-19-pebble-issue-222/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/go/go-performance-optimization-tips/' class="rmore">Read more</a>
   </div>
 
 
@@ -157,27 +288,15 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/huge-single-mmorpg-server/'> 거대한 단일 MMORPG 서버</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/write-ahead-logging/'> Write Ahead Logging</a> </h2>
     <div class="meta">
-      <div class="date">created: 2019-09-01 | updated: 2025-12-21</div>
+      <div class="date">created: 2020-08-10 | updated: 2023-06-04</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/architecture">#architecture</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/game">#game</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/mmorpg">#mmorpg</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/server">#server</a>
+        <a href="/tags/database">#database</a>
       </div>
     
   
@@ -188,11 +307,11 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <p>2019년 9월 21일에 <a href="https://cafe.naver.com/devrookie/9621">데브루키 521회</a>에서 발표한 자료입니다.</p>
+    <p>Write Ahead Logging(WAL)은 데이터베이스 시스템에서 ACID의 특성 가운데 원자성과 내구성을 제공하는 기술입니다.</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/huge-single-mmorpg-server/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/write-ahead-logging/' class="rmore">Read more</a>
   </div>
 
 
@@ -202,23 +321,15 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/'> 초보다 정밀한 단위에 대한 `EXTRACT` 명령이 postgres와 다르게 동작함(CockroachDB issue #40683)</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/food-recipes/'> Food recipes</a> </h2>
     <div class="meta">
-      <div class="date">created: 2019-10-13 | updated: 2025-12-21</div>
+      <div class="date">created: 2023-04-16 | updated: 2023-04-16</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/go">#go</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/sprint">#sprint</a>
+        <a href="/tags/food">#food</a>
       </div>
     
   
@@ -229,12 +340,142 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <h2 id="개요">개요</h2>
-<p>이번에는 간단하게 해결할 수 있는 이슈를 수정했습니다. 이 정도의 이슈는 처음 스프린트에 참여하는 분도 해결할 수 있을 것으로 기대합니다.</p>
+    <h1 id="seaweed-soup">Seaweed soup</h1>
+<h2 id="재료">재료</h2>
+<table>
+  <thead>
+      <tr>
+          <th>재료</th>
+          <th>양</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>미역</td>
+          <td>10g</td>
+      </tr>
+      <tr>
+          <td>소고기 양지</td>
+          <td>150g</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="양념">양념</h2>
+<table>
+  <thead>
+      <tr>
+          <th>양념</th>
+          <th>양</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>참기름</td>
+          <td>1큰술</td>
+      </tr>
+      <tr>
+          <td>국간장</td>
+          <td>2큰술</td>
+      </tr>
+      <tr>
+          <td>마늘</td>
+          <td>0.5큰술</td>
+      </tr>
+      <tr>
+          <td>소금</td>
+          <td>조금</td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="조리순서">조리순서</h1>
+<ol>
+<li>미역을 물에 10분 정도 담가서 불린다.</li>
+<li>키친타월로 소고기 피를 뺀다.</li>
+<li>참기름을 두르고 소고기를 볶는다.</li>
+<li>불린 미역 물기를 빼서 넣고 소고기와 함게 볶는다.</li>
+<li>국간장, 마늘, 소금을 넣고 끓인다.</li>
+</ol>
+<h1 id="galbijjim-korean-braised-beef-short-ribs">Galbijjim (Korean braised beef short ribs)</h1>
+<h2 id="재료-1">재료</h2>
+<table>
+  <thead>
+      <tr>
+          <th>재료</th>
+          <th>양</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>소갈비</td>
+          <td>800g</td>
+      </tr>
+      <tr>
+          <td>감자</td>
+          <td>1개</td>
+      </tr>
+      <tr>
+          <td>당근</td>
+          <td>1개</td>
+      </tr>
+      <tr>
+          <td>대파</td>
+          <td>1개</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="양념-1">양념</h2>
+<table>
+  <thead>
+      <tr>
+          <th>양념</th>
+          <th>양</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>설탕</td>
+          <td>1/2컵</td>
+      </tr>
+      <tr>
+          <td>맛술</td>
+          <td>1/2컵</td>
+      </tr>
+      <tr>
+          <td>진간장</td>
+          <td>1컵</td>
+      </tr>
+      <tr>
+          <td>다진마늘</td>
+          <td>2큰술</td>
+      </tr>
+      <tr>
+          <td>생강</td>
+          <td>1/2큰술</td>
+      </tr>
+      <tr>
+          <td>참기름</td>
+          <td>2큰술</td>
+      </tr>
+  </tbody>
+</table>
+<h1 id="조리순서-1">조리순서</h1>
+<ol>
+<li>갈비 핏물을 뺀다.</li>
+<li>양념을 미리 한 곳에 섞어서 준비한다.
+<ul>
+<li>설탕 1/2컵, 맛술 1/2컵, 진간장 1컵, 다진마늘 2큰술, 생강 1/2큰술, 참기름 2큰술</li>
+</ul>
+</li>
+<li>갈비에 양념을 넣고 조리한다.</li>
+<li>먼저 센불로 끓인다.</li>
+<li>감자와 당근을 준비한다.</li>
+<li>거품을 걷어낸다.</li>
+<li>준비해둔 당근과 감자를 넣고 졸아들때까지 끓인다.</li>
+</ol>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/food-recipes/' class="rmore">Read more</a>
   </div>
 
 
@@ -244,23 +485,15 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2019-10-15-pebble-issue-284/'> 삭제될 WAL, MANIFEST, sstable을 보관하는 기능 제공 (Pebble issue #284)</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/book/unusual-challenges/'> (Book) Unusual Challenges(유난한 도전)</a> </h2>
     <div class="meta">
-      <div class="date">created: 2019-10-13 | updated: 2025-12-21</div>
+      <div class="date">created: 2023-02-19 | updated: 2023-04-08</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/go">#go</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/sprint">#sprint</a>
+        <a href="/tags/book">#book</a>
       </div>
     
   
@@ -271,13 +504,15 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <h2 id="개요">개요</h2>
-<p>이슈: <a href="https://github.com/cockroachdb/pebble/issues/284">https://github.com/cockroachdb/pebble/issues/284</a></p>
-<p>이번에는 Pebble에서 아무에게도 할당되지 않은 이슈를 선택해 수정했습니다.</p>
+    <ul>
+<li>지은이: 정경화</li>
+<li>ISBN: 979-11-91211-86-3 03320</li>
+</ul>
+<hr>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/posts/2019-10-15-pebble-issue-284/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/book/unusual-challenges/' class="rmore">Read more</a>
   </div>
 
 
@@ -287,23 +522,15 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/'> sql: COMMENT ON INDEX 지원(CockroachDB issue #41316)</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/c&#43;&#43;/good-reads/'> C&#43;&#43; good reads</a> </h2>
     <div class="meta">
-      <div class="date">created: 2019-10-20 | updated: 2025-12-21</div>
+      <div class="date">created: 2022-09-18 | updated: 2023-01-29</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/go">#go</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/sprint">#sprint</a>
+        <a href="/tags/c&#43;&#43;">#c&#43;&#43;</a>
       </div>
     
   
@@ -314,12 +541,16 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <p>이슈: <a href="https://github.com/cockroachdb/cockroach/issues/41316">sql: add support for COMMENT ON INDEX #41316</a></p>
-<p>sql: COMMENT ON INDEX 지원 작업을 했습니다. 이번에는 이슈 등록자가 저에게 먼저 연락을 하는 새로운 경험을 했습니다.</p>
+    <h1 id="c-stl-performance-example-with-shared_"><a href="https://blog.lunapiece.net/posts/C++_STL_Performance/">C++ STL performance example with shared_ptr</a></h1>
+<blockquote>
+<p>I just have to say this and move on&hellip; If you think it&rsquo;s okay to just use the STL for a project that doesn&rsquo;t need this level of optimization or performance, think again.</p>
+</blockquote>
+<blockquote>
+<p>It is highly likely that your project is not suitable for writing Non GC Native language, so it is recommended to replace it with a VM-based language. I don&rsquo;t use C++ anymore for 99% of my projects. Most of them are solved with C#, Kotlin, and TypeScript.</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/c&#43;&#43;/good-reads/' class="rmore">Read more</a>
   </div>
 
 
@@ -329,19 +560,15 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2019-11-13-guide-with-heart-cockroachdb-19dot2-release/'> (안내서) 카크로치디비(CockroachDB) 블로그 / 카크로치디비 19.2 출시</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/ceo/'> CEO</a> </h2>
     <div class="meta">
-      <div class="date">created: 2019-11-13 | updated: 2025-12-21</div>
+      <div class="date">created: 2023-01-29 | updated: 2023-01-29</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/guide">#guide</a>
+        <a href="/tags/ceo">#ceo</a>
       </div>
     
   
@@ -352,11 +579,16 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <p>카크로치디비 19.2가 릴리즈되었습니다. 레이턴시, 신뢰성, 편의성 측면에서 상당한 개선을 이야기하고 있는데, 인상 깊은 내용 몇 가지를 안내해 드리겠습니다.</p>
+    <h1 id="founding-ceo-and-management-ceo">Founding CEO and Management CEO</h1>
+<p>Founding CEO are the original CEO, that was involved in the creation and early development of the company and tend to have a strong vision for its future, while management CEO are brought in to manage the company after it has been established and help it scale.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=_bFTmjYVgzE&amp;t=934s">https://www.youtube.com/watch?v=_bFTmjYVgzE&amp;t=934s</a></li>
+<li><a href="https://www.youtube.com/watch?v=l5gy7ITrqH8&amp;t=1655s">https://www.youtube.com/watch?v=l5gy7ITrqH8&amp;t=1655s</a></li>
+</ul>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/posts/2019-11-13-guide-with-heart-cockroachdb-19dot2-release/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/ceo/' class="rmore">Read more</a>
   </div>
 
 
@@ -366,15 +598,23 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2020-02-01-diary-2020-02/'> 2020-02 일지</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/infra/helm_charts/'> Helm Charts</a> </h2>
     <div class="meta">
-      <div class="date">created: 2020-02-01 | updated: 2025-12-21</div>
+      <div class="date">created: 2023-01-24 | updated: 2023-01-29</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/diary">#diary</a>
+        <a href="/tags/helm">#helm</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/infra">#infra</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/kubernetes">#kubernetes</a>
       </div>
     
   
@@ -385,120 +625,14 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <p>2020년 2월 일지입니다.</p>
+    <p>This page based on <a href="https://helm.sh/docs/topics/charts/">Charts</a> for personal notes. If you want to learn more, please visit the official website.</p>
+<hr>
+<h1 id="charts">Charts</h1>
+<p>Helm uses a packaging format called charts. A chart is a collection of files that describe a related set of Kubernetes resources. A single chart might be used to deploy something simple, like a memcached pod, or something complex, like a full web app stack with HTTP servers, databases, caches, and so on.</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/posts/2020-02-01-diary-2020-02/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/interior/'> 인테리어</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-02-10 | updated: 2025-12-21</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/life">#life</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/home">#home</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/interior">#interior</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p>Write about interior design.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/interior/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/remote-work/'> 원격근무</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-02-10 | updated: 2025-12-21</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/remote-work">#remote work</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p>원격근무에 대한 생각을 기록합니다.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/remote-work/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/cockroachdb-with-peter-mattis-sedaily/'> 피터 매티스와의 인터뷰 - Software Engineering Daily</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-02-20 | updated: 2025-12-21</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p>카크로치 연구소의 피터 매티스가 소프트웨어 엔지니어링 데일리와 인터뷰를 진행했습니다. 몇 가지 흥미로운
-부분을 요약해 정리했으며, 전체 내용은 <a href="https://softwareengineeringdaily.com/2020/04/28/cockroachdb-with-peter-mattis/">소프트웨어 엔지니어링 데일리</a>에서
-들을 수 있습니다.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/cockroachdb-with-peter-mattis-sedaily/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/infra/helm_charts/' class="rmore">Read more</a>
   </div>
 
 

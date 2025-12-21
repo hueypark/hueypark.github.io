@@ -23,7 +23,7 @@
 
   <meta itemprop="name" content="Marsettler">
   <meta itemprop="datePublished" content="2025-11-09T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-12-21T15:24:32+09:00">
+  <meta itemprop="dateModified" content="2025-12-21T15:17:14+09:00">
 
 <link rel="stylesheet" href="/css/layout.css" />
 
@@ -111,19 +111,15 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/unreal-engine/custom-navigation-system/'> 언리얼 엔진 4 커스텀 네비게이션 시스템</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/problems-want-to-solve/'> 해결하고 싶은 문제들</a> </h2>
     <div class="meta">
-      <div class="date">created: 2022-02-03 | updated: 2025-12-21</div>
+      <div class="date">created: 2020-05-10 | updated: 2020-05-11</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/unreal-engine-4">#Unreal Engine 4</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/navigation">#navigation</a>
+        <a href="/tags/problems-want-to-solve">#problems want to solve</a>
       </div>
     
   
@@ -134,44 +130,11 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <h2 id="언리얼-엔진-4">언리얼 엔진 4</h2>
-<h2 id="커스텀-네비게이션-시스템">커스텀 네비게이션 시스템</h2>
-<p>박재완</p>
-<p><a href="mailto:jaewan.huey.park@gmail.com">jaewan.huey.park@gmail.com</a></p>
-<hr>
-<h2 id="목차">목차</h2>
-<ul>
-<li>네비게이션 시스템 개요</li>
-<li>왜 커스텀이 필요한가?</li>
-<li>커스텀 네비게이션 데이터 구현 맛보기</li>
-<li>참고자료</li>
-<li>Q &amp; A</li>
-</ul>
-<hr>
-<h2 id="네비게이션-시스템">네비게이션 시스템</h2>
-<p>인공지능 에이전트가 경로 찾기를 사용하여</p>
-<p>레벨을 탐색하는 기능을 제공</p>
-<hr>
-<p><img src="/unreal-engine/custom-navigation-system/level.png" alt=""></p>
-<p>벽을 피해 목적지로 가고 싶다면?</p>
-<hr>
-<p><img src="/unreal-engine/custom-navigation-system/level-with-navigation.png" alt=""></p>
-<p>그냥 사용하시면 됩니다</p>
-<hr>
-<h2 id="왜-커스텀이-필요한가">왜 커스텀이 필요한가?</h2>
-<hr>
-<h3 id="이유-1">이유 1.</h3>
-<p>특별한 연출</p>
-<hr>
-<p>언리얼 엔진 4 에 내장 네비게이션은</p>
-<p><a href="https://github.com/recastnavigation/recastnavigation">recastnavigation</a> 기반</p>
-<hr>
-<p>일반적인 상황에서 잘 작동하지만</p>
-<p>특별한 연출을 보여주기엔 아쉬운 부분들이 있음</p>
+    <p>해결하고 싶은 문제들을 기록합니다.</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/unreal-engine/custom-navigation-system/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/problems-want-to-solve/' class="rmore">Read more</a>
   </div>
 
 
@@ -181,15 +144,15 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/unreal-engine/compile_time_log_validate/'> 컴파일 시점에 printf 오류 검사</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/cockroachdb-with-peter-mattis-sedaily/'> 피터 매티스와의 인터뷰 - Software Engineering Daily</a> </h2>
     <div class="meta">
-      <div class="date">created: 2022-02-06 | updated: 2025-12-21</div>
+      <div class="date">created: 2020-02-20 | updated: 2020-05-03</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/c&#43;&#43;">#c&#43;&#43;</a>
+        <a href="/tags/cockroachdb">#cockroachdb</a>
       </div>
     
   
@@ -200,16 +163,13 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <p>언리얼 엔진의 UE_LOG 매크로는 컴파일 시점에 입력값의 오류를 검사하지 않습니다.</p>
-<p>따라서 실행 중 로그를 기록하려다 의도하지 않은 동작(크래시 등)을 발생시킬 위험이 있습니다.</p>
-<p>예)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>FString temp;
-</span></span><span style="display:flex;"><span>UE_LOG(LogClass, Log, TEXT(<span style="color:#e6db74">&#34;%d, %s&#34;</span>), <span style="color:#f92672">*</span>temp);
-</span></span></code></pre></div><p>_stprintf_s</p>
+    <p>카크로치 연구소의 피터 매티스가 소프트웨어 엔지니어링 데일리와 인터뷰를 진행했습니다. 몇 가지 흥미로운
+부분을 요약해 정리했으며, 전체 내용은 <a href="https://softwareengineeringdaily.com/2020/04/28/cockroachdb-with-peter-mattis/">소프트웨어 엔지니어링 데일리</a>에서
+들을 수 있습니다.</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/unreal-engine/compile_time_log_validate/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/cockroachdb-with-peter-mattis-sedaily/' class="rmore">Read more</a>
   </div>
 
 
@@ -219,23 +179,15 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/book/the-pragmatic-programmer-20th-anniversary-edition/'> (Book) 실용주의 프로그래머 20주년 기념판</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/how-to-be-successful/'> How to be successful(성공하는 방법)</a> </h2>
     <div class="meta">
-      <div class="date">created: 2022-04-02 | updated: 2025-12-21</div>
+      <div class="date">created: 2020-05-02 | updated: 2020-05-02</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/book">#book</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/programmer">#programmer</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/pragmatic">#pragmatic</a>
+        <a href="/tags/how-to-be-successful">#how to be successful</a>
       </div>
     
   
@@ -246,21 +198,25 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <ul>
-<li>지은이: 데이비드 토머스, 앤드류 헌트</li>
-<li>ISBN: 978-89-6626-336-3</li>
-</ul>
-<hr>
+    <h2 id="시작하기-전에">시작하기 전에</h2>
+<p>당신에게는 무엇이 성공입니까? 사람들은 각자의 가치관에 따라 성공이란 단어를 매우 많은 다른 의미로
+정의합니다. 이 성공하는 방법이란 글에서는 성공을 아래와 같이 정의하고 있습니다.</p>
 <blockquote>
-<p>프로그래밍은 미래를 덜 고통스럽게 만들려 노력하는 것이다. 팀 동료들을 수월하게 해 주는 것이다. 문제를 일으켰다가 다시 되돌릴 수 있는 것이다. 좋은 습관을 기르고, 여러분의 도구를 이해하는 것이다.</p>
-<p>&ndash; x쪽</p>
+<p>성공: 자기가 가진 전문기술을 사용하여 사회와 인류에 기여하는 행위</p>
 </blockquote>
-<blockquote>
-<p>&lsquo;깨진 창문&rsquo;을 고치지 않은 채로 내버려 두지 말라. 나쁜 설계, 잘못된 결정, 혹은 형편없는 코드 등이 모두 깨진 창문이다. 발견하자마자 바로 고쳐라. 적절히 고칠 시간이 없다면 일단 판자로 덮는 것만이라도 하라. 불쾌한 코드를 주석 처리 하거나, &lsquo;아직 구현되지 않았음&rsquo;이라고 메시지를 표시하거나, 가따 데이터로 대치해 놓거나 하라. 더 이상의 손상을 예방하기 위해 어떤 조치든 취하고 여러분이 상황을 잘 관리하고 있음을 보여 줘라.</p>
+<h2 id="가능한-한-많이-또-빨리-아래-단계를-수행합니다">가능한 한 많이 또 빨리 아래 단계를 수행합니다</h2>
+<ol>
+<li>상황 확인</li>
+<li>계획 수립</li>
+<li>행동</li>
+<li>피드백 반영</li>
+</ol>
+<h2 id="수행">수행</h2>
+<p><a href="/successful-plan-2020">2020년 성공 계획</a></p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/book/the-pragmatic-programmer-20th-anniversary-edition/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/how-to-be-successful/' class="rmore">Read more</a>
   </div>
 
 
@@ -270,15 +226,15 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/newsfeed/newsfeed-2022/'> Newsfeed 2022</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/successful-plan-2020/'> 2020년 성공 계획</a> </h2>
     <div class="meta">
-      <div class="date">created: 2022-06-03 | updated: 2025-12-21</div>
+      <div class="date">created: 2020-05-02 | updated: 2020-05-02</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/newsfeed">#newsfeed</a>
+        <a href="/tags/how-to-be-successful">#how to be successful</a>
       </div>
     
   
@@ -289,23 +245,25 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <h2 id="december-2022">December 2022</h2>
-<h3 id="guido-van-rossum-python-and-the-future-of-programming--lex-fridman-podcast-341">Guido van Rossum: Python and the Future of Programming | Lex Fridman Podcast #341</h3>
+    <h2 id="상황-확인">상황 확인</h2>
+<p>상황: 소프트웨어 엔지니어로 5년 3개월가량 일하고 있습니다. 그동안 나름대로 열심히 일하였고, 동료들과 회사에게 긍정적인 평가를 받고 있습니다. 하지만 기대보다 부족하고, 현재 수횅하는 업무 특성상 조금은 정체되고 있는 건 아닌가 걱정됩니다.</p>
+<h2 id="계획-수립">계획 수립</h2>
+<h3 id="목표-엔지니어링-리더십-발휘">목표: 엔지니어링 리더십 발휘</h3>
+<h3 id="핵심-결과">핵심 결과:</h3>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=-DVyjdw4t9I&amp;t=10963s">GitHub Copilot</a></li>
+<li>동료들과 회사에게 더욱 인정받기(수치 공개불가)</li>
+<li>엔지니어링 문제로 인한 장애 발생률 측정</li>
 </ul>
-<blockquote>
-<p>Are programmers jobs threatend by the existence of stack overflow? I don&rsquo;t think so.</p>
-</blockquote>
-<p>Agreed.</p>
-<h3 id="if-it-is-truly-important-to-you-youll-find-a-way-if-it-is-not-youll-find-an-excuse---anonymous">If it is truly important to you, you’ll find a way; if it is not, you’ll find an excuse. - anonymous</h3>
-<h2 id="2022년-10월">2022년 10월</h2>
-<h3 id="중대한-결정을-지혜롭계-하는-법"><a href="https://twitter.com/sight_archive/status/1579715123060822017?s=20&amp;t=slCC7kyDRAlMeoeS7n0tww">중대한 결정을 지혜롭계 하는 법</a></h3>
-<p>일단 마음 내키는대로 결정하고, 그 뒤에 벌어질 일들을 담대하게 마주하라</p>
+<h3 id="목표-스케일아웃-가능한-데이터베이스-솔루션-확보">목표: 스케일아웃 가능한 데이터베이스 솔루션 확보</h3>
+<h3 id="핵심-결과-1">핵심 결과:</h3>
+<ul>
+<li>CockroachDB 이슈 8개 해결(1개/월)</li>
+<li>CockroachDB 아키택처, 기술 8개 공유(1개/월)</li>
+</ul>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/newsfeed/newsfeed-2022/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/successful-plan-2020/' class="rmore">Read more</a>
   </div>
 
 
@@ -315,19 +273,19 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/distributed-system/grpc/'> gRPC</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/cockroachdb-issue-44135-sql-add-support-for-comment/'> (very good first issue) #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE</a> </h2>
     <div class="meta">
-      <div class="date">created: 2022-06-12 | updated: 2025-12-21</div>
+      <div class="date">created: 2020-02-20 | updated: 2020-04-29</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/distributed-system">#distributed system</a>
+        <a href="/tags/cockroachdb">#cockroachdb</a>
       </div>
     
       <div class="tag">
-        <a href="/tags/grpc">#grpc</a>
+        <a href="/tags/sprint">#sprint</a>
       </div>
     
   
@@ -338,40 +296,13 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <h1 id="grpc-101">gRPC 101</h1>
-<p>간단하고 빠르게 게임서버 만들기</p>
-<hr>
-<h2 id="grpc">gRPC</h2>
-<p>A high performance,</p>
-<p>open source</p>
-<p>universal</p>
-<p>RPC framework</p>
-<hr>
-<h3 id="rpcremote-procedure-call">RPC(Remote procedure call)</h3>
-<p>원격 프로시저 호출</p>
-<hr>
-<h2 id="왜-grpc-인가">왜 gRPC 인가?</h2>
-<ul>
-<li>Simple service definition</li>
-<li>Start quickly and scale</li>
-<li>Works across languages and platforms</li>
-<li>Bi-directional streaming and integrated auth</li>
-</ul>
-<hr>
-<h3 id="simple-service-definition">Simple service definition</h3>
-<p>강력한 바이너리 직렬화 툴셋인,</p>
-<p>Protocol Buffers 를 활용해 서비스를 정의함</p>
-<hr>
-<h3 id="start-quickly-and-scale">Start quickly and scale</h3>
-<p>적은 코드로 쉽게 개발을 시작한 후,</p>
-<p>대규모 요청을 처리하게 확장가능</p>
-<hr>
-<h3 id="works-across-languages-and-platforms">Works across languages and platforms</h3>
-<p>자동으로 생성되는 클라이언트, 서버 stubs 를 사용해</p>
+    <p><a href="https://github.com/cockroachdb/cockroach/issues/44135">카크로치디비 이슈 #44135</a> sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE</p>
+<h3 id="개요">개요</h3>
+<p>이슈 #44135 <code>PostgreSQL</code>에서 지원하는 <a href="https://www.postgresql.org/docs/9.1/functions-aggregate.html">COMMENT ON</a> 문법의 <code>VIEW</code>, <code>SEQUENCE</code>에 대한 지원을 요구합니다.</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/distributed-system/grpc/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/cockroachdb-issue-44135-sql-add-support-for-comment/' class="rmore">Read more</a>
   </div>
 
 
@@ -381,9 +312,81 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/go/go-good-reads/'> Go good reads</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/cockroachdb-issue-41274-vgfi-sql-support-aggregate-functions-for-statistics/'> (very good first issue) #41274 sql: Support aggregate functions for statistics</a> </h2>
     <div class="meta">
-      <div class="date">created: 2022-09-18 | updated: 2025-12-21</div>
+      <div class="date">created: 2020-02-20 | updated: 2020-04-29</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/sprint">#sprint</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p><a href="https://github.com/cockroachdb/cockroach/issues/41274">카크로치디비 이슈 #41274</a> sql: Support aggregate functions for statistics</p>
+<h3 id="개요">개요</h3>
+<p>이슈 #41274는 <code>PostgreSQL</code>에서 지원하는 <a href="https://www.postgresql.org/docs/9.1/functions-aggregate.html">aggregate function</a>들의 구현을 요구하며, 대상은 아래와 같습니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/cockroachdb-issue-41274-vgfi-sql-support-aggregate-functions-for-statistics/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/remote-work/'> 원격근무</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-02-10 | updated: 2020-03-25</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/remote-work">#remote work</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>원격근무에 대한 생각을 기록합니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/remote-work/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/'> Visual Studio Code debug speed up on Windows</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2018-05-14 | updated: 2020-02-23</div>
       
 <div class="tags">
   
@@ -392,6 +395,14 @@ airbridge.init({
         <a href="/tags/go">#go</a>
       </div>
     
+      <div class="tag">
+        <a href="/tags/vscode">#vscode</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/windows">#windows</a>
+      </div>
+    
   
 </div>
 
@@ -400,45 +411,12 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <h1 id="index">Index</h1>
-<ul>
-<li><a href="##performance">Performance</a></li>
-<li><a href="##concurrency">Concurrency</a></li>
-<li><a href="##generics">Generics</a></li>
-<li><a href="##reiaibility">Reiaibility</a></li>
-<li><a href="##others">Others</a></li>
-</ul>
-<h2 id="performance">Performance</h2>
-<h3 id="we-tried-go"><a href="https://www.dolthub.com/blog/2025-09-26-greentea-gc-with-dolt/">We tried Go&rsquo;s experimental Green Tea garbage collector and it didn&rsquo;t help performance by Zach Musgrave</a></h3>
-<h3 id="parsing-protobuf-like-never-before-by-mcyoung"><a href="https://mcyoung.xyz/2025/07/16/hyperpb/">Parsing Protobuf Like Never Before by mcyoung</a></h3>
-<h3 id="deep-dive-into-a-go-binary-by-jesús-espino"><a href="https://youtu.be/5VkYXgUqxcE?list=PLDWZ5uzn69ewrYyHTNrXlrWVDjLiOX0Yb">Deep dive into a go binary by Jesús Espino</a></h3>
-<h3 id="if-you-want-to-know-how-high-performance-systems-written-in-go-were-built-read-victorialogs--httpsgithubcomvictoriametricsvictorialogs-by-phuong-le"><a href="https://x.com/func25/status/1950115605484552333">If you want to know how high performance systems written in Go were built, read VictoriaLogs:  https://github.com/VictoriaMetrics/VictoriaLogs by Phuong Le</a></h3>
-<blockquote>
-<ol>
-<li>Custom bloom filters to reduce disk I/O and CPU cycles for redundant logs.</li>
-<li>Column-oriented block storage for better compression ratio and cache locality.</li>
-<li>Memory-mapped files with automatic pread fallback for zero-copy reads.</li>
-<li>Lock-free object pools and arena allocators to reduce heap allocations.</li>
-<li>Reflection-free JSON parsers for streaming at hundreds of MB/s per core.</li>
-<li>Compile-time templates replace text/html parsing with near-printf speed.</li>
-<li>Dictionary-aware Zstd compression balancing CPU cost against bandwidth savings.</li>
-<li>Multi-core parallelism everywhere with adaptive concurrency limits.</li>
-<li>Scatter-gather fan-out writes with adaptive concurrency for network saturation.</li>
-<li>Fast hashing and lock-free randomization for minimal contention.</li>
-</ol>
-</blockquote>
-<h3 id="how-go-124"><a href="https://www.datadoghq.com/blog/engineering/go-swiss-tables/">How Go 1.24&rsquo;s Swiss Tables saved us hundreds of gigabytes by Nayef Ghattas</a></h3>
-<h3 id="finding-performance-problems-by-diffing-two-go-profiles-by-zach-musgrave"><a href="https://www.dolthub.com/blog/2025-06-20-go-pprof-diffing/">Finding performance problems by diffing two Go profiles by Zach Musgrave</a></h3>
-<h3 id="optimising-and-visualising-go-tests-parallelism-why-more-cores-don"><a href="https://threedots.tech/post/go-test-parallelism/">Optimising and Visualising Go Tests Parallelism: Why more cores don&rsquo;t speed up your Go tests</a></h3>
-<h3 id="leveraging-benchstat-projections-in-go-benchmark-analysis"><a href="https://www.bwplotka.dev/2024/go-microbenchmarks-benchstat/">Leveraging benchstat Projections in Go Benchmark Analysis!</a></h3>
-<h3 id="benchmarks-and-performance-testing"><a href="https://www.willem.dev/articles/benchmarks-performance-testing/">Benchmarks and performance testing</a></h3>
-<h3 id="new-unique-package-by-michael-knyszek"><a href="https://go.dev/blog/unique">New unique package by Michael Knyszek</a></h3>
-<blockquote>
-<p>This work also led us to reexamine finalizers, resulting in another proposal for an easier-to-use and more efficient replacement for finalizers. With a hash function for comparable values on the way as well, the future of building memory-efficient caches in Go is bright!</p>
+    <p>On <code>Visual Studio Code</code>, <code>Go</code> debugging is very slow because that always rebuild everything.</p>
+<p>If you set following settings on your <code>.vscode</code> folder <code>Visual Studio Code</code> will only build when changed.</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/go/go-good-reads/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/' class="rmore">Read more</a>
   </div>
 
 
@@ -448,15 +426,23 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/c&#43;&#43;/good-reads/'> C&#43;&#43; good reads</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-05-27-mission-send-intelligence-to-mars/'> Mission: Sends intelligence to Mars</a> </h2>
     <div class="meta">
-      <div class="date">created: 2022-09-18 | updated: 2025-12-21</div>
+      <div class="date">created: 2018-05-27 | updated: 2020-02-23</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/c&#43;&#43;">#c&#43;&#43;</a>
+        <a href="/tags/mission">#mission</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/intelligence">#intelligence</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/mars">#mars</a>
       </div>
     
   
@@ -467,16 +453,16 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <h1 id="c-stl-performance-example-with-shared_"><a href="https://blog.lunapiece.net/posts/C++_STL_Performance/">C++ STL performance example with shared_ptr</a></h1>
-<blockquote>
-<p>I just have to say this and move on&hellip; If you think it&rsquo;s okay to just use the STL for a project that doesn&rsquo;t need this level of optimization or performance, think again.</p>
-</blockquote>
-<blockquote>
-<p>It is highly likely that your project is not suitable for writing Non GC Native language, so it is recommended to replace it with a VM-based language. I don&rsquo;t use C++ anymore for 99% of my projects. Most of them are solved with C#, Kotlin, and TypeScript.</p>
+    <h3 id="why">Why?</h3>
+<p>It&rsquo;s reasonable mission for entire my life.</p>
+<ul>
+<li>Too much(space conquest)</li>
+<li>Too small(house buying without a mortgage)</li>
+</ul>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/c&#43;&#43;/good-reads/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/posts/2018-05-27-mission-send-intelligence-to-mars/' class="rmore">Read more</a>
   </div>
 
 
@@ -486,23 +472,23 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/analytics/how-to-do-cohort-analysis/'> 어떻게 코호트 분석을 하나요?</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-07-08-a-producers-guide-to-decisionmaking/'> (번역) 의사결정을 위한 게임 프로듀서의 도움말</a> </h2>
     <div class="meta">
-      <div class="date">created: 2022-10-03 | updated: 2025-12-21</div>
+      <div class="date">created: 2018-07-08 | updated: 2020-02-23</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/analysis">#analysis</a>
+        <a href="/tags/decisionmaking">#decisionmaking</a>
       </div>
     
       <div class="tag">
-        <a href="/tags/database">#database</a>
+        <a href="/tags/game">#game</a>
       </div>
     
       <div class="tag">
-        <a href="/tags/olap">#olap</a>
+        <a href="/tags/producer">#producer</a>
       </div>
     
   
@@ -513,182 +499,11 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <h1 id="코호트-분석">코호트 분석</h1>
-<p>원하는 유저군(코호트)을 잡아서 해당 유저들의 행동을 분석하는 기법</p>
-<p>예: &ldquo;지난 6개월간 우리 앱에서 한달에 10만원 이상 소비한 30대 여성&quot;이란 유저군을 잡은 후,
-해당 유저군의 리텐션 (재방문률)을 분석</p>
-<h1 id="분석방법">분석방법</h1>
-<ol>
-<li>Amplitude, Google Analytics 등의 외부 솔루션 사용
-<ul>
-<li>장점: 개발 비용이 없음</li>
-<li>단점:
-<ul>
-<li>솔루션 비용 발생</li>
-<li>솔루션에 의존하게 됨</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>RDB(OLTP) 사용
-<ul>
-<li>장점: 익숙함</li>
-<li>단점: 일정 규모를 넘어가면 성능문제로 문제해결 불가능함</li>
-</ul>
-</li>
-<li>데이터 파이프라인을 구축(Snowflake, Apache Kafka 등 활용)
-<ul>
-<li>장점: 익숙함</li>
-<li>단점: 생각보다 많은 비용</li>
-</ul>
-</li>
-<li>코호트 분석용 OALP 데이터베이스를 직접 개발: <a href="https://engineering.ab180.co/stories/introducing-luft">https://engineering.ab180.co/stories/introducing-luft</a>
-<ul>
-<li>장점: 고성능의 입맛대로 동작하는 데이터베이스를 가질 수도 있음</li>
-<li>단점: 직접 개발해야 함</li>
-</ul>
-</li>
-</ol>
+    <p>원문: <a href="https://gamasutra.com/view/news/320800/A_producers_guide_to_decisionmaking.php">https://gamasutra.com/view/news/320800/A_producers_guide_to_decisionmaking.php</a></p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/analytics/how-to-do-cohort-analysis/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/go/c&#43;&#43;-to-go/'> C&#43;&#43; to Go</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2022-12-04 | updated: 2025-12-21</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/c&#43;&#43;">#c&#43;&#43;</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/go">#go</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <h1 id="c-to-go">C++ to Go</h1>
-<h2 id="introducing-ziegel">Introducing Ziegel</h2>
-<p>박재완</p>
-<hr>
-<h2 id="luft">Luft</h2>
-<ul>
-<li>Ziegel and TrailDB</li>
-</ul>
-<hr>
-<h2 id="luft-1"><a href="https://engineering.ab180.co/stories/introducing-luft">Luft</a></h2>
-<ul>
-<li>OLAP database for analize the analyzing user behavior in real-time</li>
-<li>Use TrailDB as a storage</li>
-<li>Written in C/C++ and Go</li>
-</ul>
-<hr>
-<h2 id="traildb"><a href="https://traildb.io/">TrailDB</a></h2>
-<ul>
-<li>TrailDB is an efficient tool for storing and querying series of events</li>
-<li>Written in C</li>
-</ul>
-<hr>
-<h2 id="ziegel"><a href="https://engineering.ab180.co/stories/traildb-to-ziegel">Ziegel</a></h2>
-<ul>
-<li>New storage engine for the Luft</li>
-<li>Written in Go</li>
-</ul>
-<hr>
-<h2 id="why">Why?</h2>
-<ul>
-<li>TrailDB has been a suitable solution for the Luft</li>
-<li>But development was halted in 2019</li>
-<li>Issues with peformance and productivity</li>
-</ul>
-<hr>
-<h2 id="issues">Issues</h2>
-<ol>
-<li>Inefficient multi-core utilization</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// finalize. this could take a while with idle CPU usage but don&#39;t panic.</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// it&#39;s not freeze;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// it&#39;s because TrailDB indexing process is not parallelized yet :(</span>
-</span></span></code></pre></div><ol start="2">
-<li>Row store data structure</li>
-<li>Use multiple language: C/C++ and Go</li>
-</ol>
-<hr>
-<h2 id="journey-for-the-migration">Journey for the migration</h2>
-<ol>
-<li>Add more tests for consistency verification</li>
-<li>Add interface for engine replacement
-<ul>
-<li>With this interface, we can easily replace the engine(partial or full)</li>
-</ul>
-</li>
-<li>Implement storage engine</li>
-<li>Peformance tuning
-<ul>
-<li>2x fater for the ingestion, 1.2 slower for the query</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 id="peformance-tuning">Peformance tuning</h2>
-<hr>
-<h3 id="measuring-performance">Measuring performance</h3>
-<p>Go provides great tools for measuring performance.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/go/c&#43;&#43;-to-go/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/feedback/'> Feedback</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2022-12-17 | updated: 2025-12-21</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/feedback">#feedback</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <h1 id="if-you-provide-feedback-it-is-important-to-also-include-suggestions-for-improvement">If you provide feedback, it is important to also include suggestions for improvement</h1>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/feedback/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/posts/2018-07-08-a-producers-guide-to-decisionmaking/' class="rmore">Read more</a>
   </div>
 
 

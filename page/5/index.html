@@ -23,7 +23,7 @@
 
   <meta itemprop="name" content="Marsettler">
   <meta itemprop="datePublished" content="2025-11-09T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-12-21T15:24:32+09:00">
+  <meta itemprop="dateModified" content="2025-12-21T15:17:14+09:00">
 
 <link rel="stylesheet" href="/css/layout.css" />
 
@@ -111,19 +111,23 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/sprintseoul-cockroachdb/'> 스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB)</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/infra/using_helm/'> Using Helm</a> </h2>
     <div class="meta">
-      <div class="date">created: 2020-02-20 | updated: 2025-12-21</div>
+      <div class="date">created: 2023-01-24 | updated: 2023-01-24</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
+        <a href="/tags/helm">#helm</a>
       </div>
     
       <div class="tag">
-        <a href="/tags/sprint">#sprint</a>
+        <a href="/tags/infra">#infra</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/kubernetes">#kubernetes</a>
       </div>
     
   
@@ -134,20 +138,15 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <h3 id="스프린트에-참가하는-이유">스프린트에 참가하는 이유</h3>
-<p>왜 스프린트에 참가하시나요? 참가할 때마다 여러가지 이유를 생각해보지만 정답이 있는 문제는 아닙니다. 저는 처음 스프린트에 참가하며 다음과 같은 동기를 가지고 있었습니다.</p>
-<ol>
-<li><code>Go</code> 언어 개발능력을 향상시키고 싶었습니다.</li>
-<li>가까운 미래에 애플리케이션 개발을 위해 단단하고 확장가능한 데이터베이스를 사용하고 싶었습니다.</li>
-</ol>
-<p>아직 목표를 완전히 이룬 것은 아니지만 스프린트서울에 처음 참가한 2019년 6월보다는 한 걸음 나아가 있습니다.</p>
-<p>당신에게는 어떤 목표가 있나요? 저보다 더 멋진 목표와 동기가 있을 것으로 기대됩니다. 댓글로 저에게도 알려주십시오!</p>
-<h3 id="카크로치디비">카크로치디비</h3>
-<p>카크로치디비는 <code>Go</code>로 작성된 수평확장 가능한 관계형 데이터베이스로, 관계형 데이터베이스의 편의성과 NoSQL이 가진 확장성을 동시에 제공합니다.</p>
+    <p>This page based on <a href="https://helm.sh/docs/intro/using_helm/">Using Helm</a> for personal notes. If you want to learn more, please visit the official website.</p>
+<hr>
+<h1 id="theree-big-concepts">Theree Big Concepts</h1>
+<p>A <code>Chart</code> is a Helm package. It contains all of the resource definitions necessary to run an application, tool, or service inside of a Kubernetes cluster. Think of it like the Kubernetes equivalent of a Homebrew formula, an Apt dpkg, or a Yum RPM file.</p>
+<p>A <code>Repository</code> is the place where charts can be collected and shared. It&rsquo;s like Perl&rsquo;s CPAN archive or the Fedora Package Database, but for Kubernetes packages.</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/sprintseoul-cockroachdb/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/infra/using_helm/' class="rmore">Read more</a>
   </div>
 
 
@@ -157,19 +156,23 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/cockroachdb-issue-44135-sql-add-support-for-comment/'> (very good first issue) #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/infra/helm/'> Helm: The package manager for Kubernetes</a> </h2>
     <div class="meta">
-      <div class="date">created: 2020-02-20 | updated: 2025-12-21</div>
+      <div class="date">created: 2023-01-23 | updated: 2023-01-24</div>
       
 <div class="tags">
   
     
       <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
+        <a href="/tags/helm">#helm</a>
       </div>
     
       <div class="tag">
-        <a href="/tags/sprint">#sprint</a>
+        <a href="/tags/infra">#infra</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/kubernetes">#kubernetes</a>
       </div>
     
   
@@ -180,13 +183,23 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <p><a href="https://github.com/cockroachdb/cockroach/issues/44135">카크로치디비 이슈 #44135</a> sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE</p>
-<h3 id="개요">개요</h3>
-<p>이슈 #44135 <code>PostgreSQL</code>에서 지원하는 <a href="https://www.postgresql.org/docs/9.1/functions-aggregate.html">COMMENT ON</a> 문법의 <code>VIEW</code>, <code>SEQUENCE</code>에 대한 지원을 요구합니다.</p>
+    <h1 id="what-is-helm">What is Helm?</h1>
+<p>Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.</p>
+<p>Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.</p>
+<h1 id="the-purpose-of-helm">The Purpose of Helm</h1>
+<p>Helm is a tool for managing Kubernetes packages called charts. Helm can do the following:</p>
+<ul>
+<li>Create new charts from scratch</li>
+<li>Package charts into chart archive (tgz) files</li>
+<li>Interact with chart repositories where charts are stored</li>
+<li>Install and uninstall charts into an existing Kubernetes cluster</li>
+<li>Manage the release cycle of charts that have been installed with Helm</li>
+</ul>
+<p>For Helm, there are three important concepts:</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/cockroachdb-issue-44135-sql-add-support-for-comment/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/infra/helm/' class="rmore">Read more</a>
   </div>
 
 
@@ -196,48 +209,9 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/cockroachdb-issue-41274-vgfi-sql-support-aggregate-functions-for-statistics/'> (very good first issue) #41274 sql: Support aggregate functions for statistics</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/book/you-can-also-frailty-slowly/'> (Book) 당신도 느리게 나이 들 수 있습니다.</a> </h2>
     <div class="meta">
-      <div class="date">created: 2020-02-20 | updated: 2025-12-21</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/cockroachdb">#cockroachdb</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/sprint">#sprint</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p><a href="https://github.com/cockroachdb/cockroach/issues/41274">카크로치디비 이슈 #41274</a> sql: Support aggregate functions for statistics</p>
-<h3 id="개요">개요</h3>
-<p>이슈 #41274는 <code>PostgreSQL</code>에서 지원하는 <a href="https://www.postgresql.org/docs/9.1/functions-aggregate.html">aggregate function</a>들의 구현을 요구하며, 대상은 아래와 같습니다.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/cockroachdb-issue-41274-vgfi-sql-support-aggregate-functions-for-statistics/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/posts/2020-02-20-bpf-performance-tools/'> (Book) BPF Performance Tools</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-02-20 | updated: 2025-12-21</div>
+      <div class="date">created: 2022-01-07 | updated: 2023-01-07</div>
       
 <div class="tags">
   
@@ -254,11 +228,15 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <p>BPF Performance Tools</p>
+    <ul>
+<li>지은이: 정희원</li>
+<li>ISBN: 979-11-407-0258-9 03510</li>
+</ul>
+<hr>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/posts/2020-02-20-bpf-performance-tools/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/book/you-can-also-frailty-slowly/' class="rmore">Read more</a>
   </div>
 
 
@@ -268,11 +246,17 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/about-me/'> 박재완</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/feedback/'> Feedback</a> </h2>
     <div class="meta">
-      <div class="date">created: 2020-03-28 | updated: 2025-12-21</div>
+      <div class="date">created: 2022-12-17 | updated: 2022-12-17</div>
       
 <div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/feedback">#feedback</a>
+      </div>
+    
   
 </div>
 
@@ -281,11 +265,11 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <p>C++, Go 등의 언어를 주로 사용하여 MMORPG 서버를 개발합니다. 많은 시간을 코드리뷰, 생산성 향상을 위한 자동화 툴 개발, 빌드 및 배포 자동화에 사용하고 있습니다.</p>
+    <h1 id="if-you-provide-feedback-it-is-important-to-also-include-suggestions-for-improvement">If you provide feedback, it is important to also include suggestions for improvement</h1>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/about-me/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/feedback/' class="rmore">Read more</a>
   </div>
 
 
@@ -295,12 +279,16 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/go/using-go-module-with-github-private-repository/'> Go module에서 GitHub private 저장소 사용</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/go/c&#43;&#43;-to-go/'> C&#43;&#43; to Go</a> </h2>
     <div class="meta">
-      <div class="date">created: 2020-03-29 | updated: 2025-12-21</div>
+      <div class="date">created: 2022-12-04 | updated: 2022-12-10</div>
       
 <div class="tags">
   
+    
+      <div class="tag">
+        <a href="/tags/c&#43;&#43;">#c&#43;&#43;</a>
+      </div>
     
       <div class="tag">
         <a href="/tags/go">#go</a>
@@ -314,17 +302,233 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <p>Go module에서 GitHub private 저장소를 사용하는 방법입니다.</p>
+    <h1 id="c-to-go">C++ to Go</h1>
+<h2 id="introducing-ziegel">Introducing Ziegel</h2>
+<p>박재완</p>
 <hr>
-<h3 id="git-설정에서-github-접근을-계정과-토큰을-사용하게-변경">git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global url.<span style="color:#e6db74">&#34;https://</span><span style="color:#e6db74">${</span>GITHUB_USER<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>{GITHUB_TOKEN<span style="color:#e6db74">}</span><span style="color:#e6db74">}@github.com&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com&#34;</span>
-</span></span></code></pre></div><h3 id="goprivate-환경변수에-private-저장소-등록"><a href="https://golang.org/cmd/go/#hdr-Module_configuration_for_non_public_modules">GOPRIVATE</a> 환경변수에 private 저장소 등록</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>GOPRIVATE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;github.com/hueypark/asset&#34;</span>
-</span></span></code></pre></div>
+<h2 id="luft">Luft</h2>
+<ul>
+<li>Ziegel and TrailDB</li>
+</ul>
+<hr>
+<h2 id="luft-1"><a href="https://engineering.ab180.co/stories/introducing-luft">Luft</a></h2>
+<ul>
+<li>OLAP database for analize the analyzing user behavior in real-time</li>
+<li>Use TrailDB as a storage</li>
+<li>Written in C/C++ and Go</li>
+</ul>
+<hr>
+<h2 id="traildb"><a href="https://traildb.io/">TrailDB</a></h2>
+<ul>
+<li>TrailDB is an efficient tool for storing and querying series of events</li>
+<li>Written in C</li>
+</ul>
+<hr>
+<h2 id="ziegel"><a href="https://engineering.ab180.co/stories/traildb-to-ziegel">Ziegel</a></h2>
+<ul>
+<li>New storage engine for the Luft</li>
+<li>Written in Go</li>
+</ul>
+<hr>
+<h2 id="why">Why?</h2>
+<ul>
+<li>TrailDB has been a suitable solution for the Luft</li>
+<li>But development was halted in 2019</li>
+<li>Issues with peformance and productivity</li>
+</ul>
+<hr>
+<h2 id="issues">Issues</h2>
+<ol>
+<li>Inefficient multi-core utilization</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// finalize. this could take a while with idle CPU usage but don&#39;t panic.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// it&#39;s not freeze;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// it&#39;s because TrailDB indexing process is not parallelized yet :(</span>
+</span></span></code></pre></div><ol start="2">
+<li>Row store data structure</li>
+<li>Use multiple language: C/C++ and Go</li>
+</ol>
+<hr>
+<h2 id="journey-for-the-migration">Journey for the migration</h2>
+<ol>
+<li>Add more tests for consistency verification</li>
+<li>Add interface for engine replacement
+<ul>
+<li>With this interface, we can easily replace the engine(partial or full)</li>
+</ul>
+</li>
+<li>Implement storage engine</li>
+<li>Peformance tuning
+<ul>
+<li>2x fater for the ingestion, 1.2 slower for the query</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="peformance-tuning">Peformance tuning</h2>
+<hr>
+<h3 id="measuring-performance">Measuring performance</h3>
+<p>Go provides great tools for measuring performance.</p>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/go/using-go-module-with-github-private-repository/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/go/c&#43;&#43;-to-go/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/newsfeed/newsfeed-2022/'> Newsfeed 2022</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2022-06-03 | updated: 2022-11-29</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/newsfeed">#newsfeed</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h2 id="december-2022">December 2022</h2>
+<h3 id="guido-van-rossum-python-and-the-future-of-programming--lex-fridman-podcast-341">Guido van Rossum: Python and the Future of Programming | Lex Fridman Podcast #341</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=-DVyjdw4t9I&amp;t=10963s">GitHub Copilot</a></li>
+</ul>
+<blockquote>
+<p>Are programmers jobs threatend by the existence of stack overflow? I don&rsquo;t think so.</p>
+</blockquote>
+<p>Agreed.</p>
+<h3 id="if-it-is-truly-important-to-you-youll-find-a-way-if-it-is-not-youll-find-an-excuse---anonymous">If it is truly important to you, you’ll find a way; if it is not, you’ll find an excuse. - anonymous</h3>
+<h2 id="2022년-10월">2022년 10월</h2>
+<h3 id="중대한-결정을-지혜롭계-하는-법"><a href="https://twitter.com/sight_archive/status/1579715123060822017?s=20&amp;t=slCC7kyDRAlMeoeS7n0tww">중대한 결정을 지혜롭계 하는 법</a></h3>
+<p>일단 마음 내키는대로 결정하고, 그 뒤에 벌어질 일들을 담대하게 마주하라</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/newsfeed/newsfeed-2022/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/analytics/how-to-do-cohort-analysis/'> 어떻게 코호트 분석을 하나요?</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2022-10-03 | updated: 2022-10-03</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/analysis">#analysis</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/database">#database</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/olap">#olap</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h1 id="코호트-분석">코호트 분석</h1>
+<p>원하는 유저군(코호트)을 잡아서 해당 유저들의 행동을 분석하는 기법</p>
+<p>예: &ldquo;지난 6개월간 우리 앱에서 한달에 10만원 이상 소비한 30대 여성&quot;이란 유저군을 잡은 후,
+해당 유저군의 리텐션 (재방문률)을 분석</p>
+<h1 id="분석방법">분석방법</h1>
+<ol>
+<li>Amplitude, Google Analytics 등의 외부 솔루션 사용
+<ul>
+<li>장점: 개발 비용이 없음</li>
+<li>단점:
+<ul>
+<li>솔루션 비용 발생</li>
+<li>솔루션에 의존하게 됨</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>RDB(OLTP) 사용
+<ul>
+<li>장점: 익숙함</li>
+<li>단점: 일정 규모를 넘어가면 성능문제로 문제해결 불가능함</li>
+</ul>
+</li>
+<li>데이터 파이프라인을 구축(Snowflake, Apache Kafka 등 활용)
+<ul>
+<li>장점: 익숙함</li>
+<li>단점: 생각보다 많은 비용</li>
+</ul>
+</li>
+<li>코호트 분석용 OALP 데이터베이스를 직접 개발: <a href="https://engineering.ab180.co/stories/introducing-luft">https://engineering.ab180.co/stories/introducing-luft</a>
+<ul>
+<li>장점: 고성능의 입맛대로 동작하는 데이터베이스를 가질 수도 있음</li>
+<li>단점: 직접 개발해야 함</li>
+</ul>
+</li>
+</ol>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/analytics/how-to-do-cohort-analysis/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/c&#43;&#43;/c&#43;&#43;/'> C&#43;&#43;</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-04-19 | updated: 2022-09-18</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/c&#43;&#43;">#c&#43;&#43;</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p><a href="/c++/dear-my-c++">친애하는 나의 C++</a></p>
+<p><a href="/std-shared-ptr-is-not-thread-safe">std::shared_ptr is not thread safe</a></p>
+<p><a href="/c++/good-reads">C++ 좋은 읽을거리</a></p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/c&#43;&#43;/c&#43;&#43;/' class="rmore">Read more</a>
   </div>
 
 
@@ -336,7 +540,7 @@ airbridge.init({
   <header>
     <h2 class="title"> <a href='https://marsettler.com/go/go/'> Go</a> </h2>
     <div class="meta">
-      <div class="date">created: 2020-03-29 | updated: 2025-12-21</div>
+      <div class="date">created: 2020-03-29 | updated: 2022-09-18</div>
       
 <div class="tags">
   
@@ -370,9 +574,9 @@ airbridge.init({
     <article class="post-preview">
 
   <header>
-    <h2 class="title"> <a href='https://marsettler.com/go/go-headless-test-with-xvfb/'> xvfb를 이용한 Go headless 테스트</a> </h2>
+    <h2 class="title"> <a href='https://marsettler.com/go/using-go-module-with-github-private-repository/'> Go module에서 GitHub private 저장소 사용</a> </h2>
     <div class="meta">
-      <div class="date">created: 2020-04-02 | updated: 2025-12-21</div>
+      <div class="date">created: 2020-03-29 | updated: 2022-09-18</div>
       
 <div class="tags">
   
@@ -389,93 +593,17 @@ airbridge.init({
   </header>
 
   <div class="summary">
-    <p>Go에서 <a href="https://github.com/go-gl/glfw">GLFW</a> 등을 이용해 그래픽스 관련 작업을 할 때에도 자동화
-테스트 구성이 가능합니다. 하지만 <a href="https://github.com/features/actions">GitHub Actions</a>과 같이
-디스플레이가 없는 환경에서는 의존성을 가지고 있다는 이유만으로 그래픽스 관련 테스트가 실패합니다.</p>
-<p>xvfb는 메뉴얼에서 <code>virtual framebuffer X server for X Version</code> 라고 소개되고 있으며, 서버 사이드
-테스트를 위해 주로 사용됩니다.</p>
-<p>Ubuntu 기준으로 <code>sudo apt install xvfb</code>로 설치하고 <code>xvfb-run</code>에 이어서 테스트 명령어를 추가하여
-테스트할 수 있습니다. 실제 GitHub Actions에 적용한 <a href="https://github.com/hueypark/marsettler/blob/dadbd044b1c2c6ce29ace6924b7bee5180660e9e/.github/workflows/benchmark.yml#L29">예시</a>를
-공유드립니다.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/go/go-headless-test-with-xvfb/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/go/the-zen-of-go/'> Go의 철학</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-04-05 | updated: 2025-12-21</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/go">#go</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p><a href="https://twitter.com/davecheney">Dave Cheney</a>의 <a href="https://the-zen-of-go.netlify.com/">The Zen of Go</a>를 번역했습니다. 좀 더 알고 싶으신 분은 <a href="https://www.youtube.com/watch?v=yd_rtwYaXps">발표 영상</a>과 <a href="https://dave.cheney.net/2020/02/23/the-zen-of-go">블로그 글</a>을 함께 참고해 주십시오.</p>
+    <p>Go module에서 GitHub private 저장소를 사용하는 방법입니다.</p>
 <hr>
-<h2 id="go의-철학">Go의 철학</h2>
-<p>쉽고, 읽기 좋으며, 유지가능한 Go 코드 작성을 위한 10가지 엔지니어링 가치. <a href="https://www.gophercon.org.il/">고퍼콘 이스라엘 2020</a>에 발표하였음.</p>
-<h4 id="패키지는-하나의-목적만을-달성합니다">패키지는 하나의 목적만을 달성합니다</h4>
-<p>잘 디자인된 Go 패키지는 단 하나의 아이디어와 관련 동작을 제공합니다. 좋은 Go 패키지를 위해 좋은 이름을 먼저 정해야 합니다. 엘리베이터 피치라고 생각하며 패키지 이름을 정해보십시오.</p>
-<h4 id="에러는-명시적으로-처리합니다">에러는 명시적으로 처리합니다</h4>
-<p>단단한 프로그램은 문제가 생기기 전에 실패처리를 하는 요소들로 이루어져 있습니다. 실패를 발생지점에서 의도적으로 처리할 수 있다는 것은 <code>if err != nil { return err }</code> 의 장황함마저 대수롭지 않아 보이게 합니다. <code>panic</code>과 <code>recover</code>는 예외가 아니며, 그런 식으로 사용되게 의도되지 않았습니다.</p>
+<h3 id="git-설정에서-github-접근을-계정과-토큰을-사용하게-변경">git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global url.<span style="color:#e6db74">&#34;https://</span><span style="color:#e6db74">${</span>GITHUB_USER<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>{GITHUB_TOKEN<span style="color:#e6db74">}</span><span style="color:#e6db74">}@github.com&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com&#34;</span>
+</span></span></code></pre></div><h3 id="goprivate-환경변수에-private-저장소-등록"><a href="https://golang.org/cmd/go/#hdr-Module_configuration_for_non_public_modules">GOPRIVATE</a> 환경변수에 private 저장소 등록</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>GOPRIVATE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;github.com/hueypark/asset&#34;</span>
+</span></span></code></pre></div>
   </div>
 
   <div class="rmore">
-    <a href='https://marsettler.com/go/the-zen-of-go/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/c&#43;&#43;/c&#43;&#43;/'> C&#43;&#43;</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-04-19 | updated: 2025-12-21</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/c&#43;&#43;">#c&#43;&#43;</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p><a href="/c++/dear-my-c++">친애하는 나의 C++</a></p>
-<p><a href="/std-shared-ptr-is-not-thread-safe">std::shared_ptr is not thread safe</a></p>
-<p><a href="/c++/good-reads">C++ 좋은 읽을거리</a></p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/c&#43;&#43;/c&#43;&#43;/' class="rmore">Read more</a>
+    <a href='https://marsettler.com/go/using-go-module-with-github-private-repository/' class="rmore">Read more</a>
   </div>
 
 
