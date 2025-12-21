@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/go/using-go-module-with-github-private-repository/">
+<meta property="og:url" content="https://marsettler.com/go/using-go-module-with-github-private-repository/">
+  <meta property="og:site_name" content="Marsettler">
+  <meta property="og:title" content="Go module에서 GitHub private 저장소 사용">
+  <meta property="og:description" content="Go module에서 GitHub private 저장소를 사용하는 방법입니다.
+git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&#34;.insteadOf &#34;https://github.com&#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&#34;github.com/hueypark/asset&#34;">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="go">
+    <meta property="article:published_time" content="2020-03-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-21T15:10:18+09:00">
+    <meta property="article:tag" content="Go">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Go module에서 GitHub private 저장소 사용">
+  <meta name="twitter:description" content="Go module에서 GitHub private 저장소를 사용하는 방법입니다.
+git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&#34;.insteadOf &#34;https://github.com&#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&#34;github.com/hueypark/asset&#34;">
+
+
+  <meta itemprop="name" content="Go module에서 GitHub private 저장소 사용">
+  <meta itemprop="description" content="Go module에서 GitHub private 저장소를 사용하는 방법입니다.
+git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경 git config --global url.&#34;https://${GITHUB_USER}:${{GITHUB_TOKEN}}@github.com&#34;.insteadOf &#34;https://github.com&#34; GOPRIVATE 환경변수에 private 저장소 등록 GOPRIVATE=&#34;github.com/hueypark/asset&#34;">
+  <meta itemprop="datePublished" content="2020-03-29T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-21T15:10:18+09:00">
+  <meta itemprop="wordCount" content="26">
+  <meta itemprop="keywords" content="Go">
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+<title>
+
+
+     Go module에서 GitHub private 저장소 사용 
+
+</title>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9117575221392760"
+     crossorigin="anonymous"></script>
+
+<script>
+(function(a_,i_,r_,_b,_r,_i,_d,_g,_e){if(!a_[_b]){var n=function(){var c=i_.createElement(r_);c.onerror=function(){g.queue.filter(function(a){return 0<=_d.indexOf(a[0])}).forEach(function(a){a=a[1];a=a[a.length-1];"function"===typeof a&&a("error occur when load airbridge")})};c.async=1;c.src=_r;"complete"===i_.readyState?i_.head.appendChild(c):a_.addEventListener("load",function h(){a_.removeEventListener("load",h);i_.head.appendChild(c)})},g={queue:[],get isSDKEnabled(){return!1}};_i.concat(_d).forEach(function(c){var a=c.split("."),h=a.pop();a.reduce(function(p,q){return p[q]=p[q]||{}},g)[h]=function(){g.queue.push([c,arguments])}});a_[_b]=g;0<_g?(_b=new (a_.XDomainRequest||a_.XMLHttpRequest),_i=function(){},_b.open("GET",_r),_b.timeout=_g,_b.onload=function(){n()},_b.onerror=_i,_b.onprogress=_i,_b.ontimeout=_i,_b.send()):n()}})(window,document,"script","airbridge","//static.airbridge.io/sdk/latest/airbridge.min.js","init startTracking stopTracking fetchResource openBanner setBanner setDownload setDownloads openDeeplink setDeeplinks sendWeb setUserAgent setMobileAppData setUserID clearUserID setUserEmail clearUserEmail setUserPhone clearUserPhone setUserAttribute removeUserAttribute clearUserAttributes setUserAlias removeUserAlias clearUserAlias clearUser setUserId setUserAttributes addUserAlias setDeviceAlias removeDeviceAlias clearDeviceAlias setDeviceIFV setDeviceIFA setDeviceGAID events.send events.signIn events.signUp events.signOut events.purchased events.addedToCart events.productDetailsViewEvent events.homeViewEvent events.productListViewEvent events.searchResultViewEvent".split(" "),["events.wait","createTouchpoint"],0);
+
+airbridge.init({
+    app: 'marsettler',
+    webToken: 'fc5d8317920041d19c0f29af5eba27e8',
+})
+</script>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    <a class="nav-item" href="/tags"><div class="nav-item-title">Tags</div></a>
+    
+    
+    <a class="nav-item" href="/wiki/"><div class="nav-item-title">Wiki</div></a>
+    
+    <a class="nav-item" href="/about-me/"><div class="nav-item-title">About Me</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> Go module에서 GitHub private 저장소 사용 </h1>
+    <div class="content"> <p>Go module에서 GitHub private 저장소를 사용하는 방법입니다.</p>
+<hr>
+<h3 id="git-설정에서-github-접근을-계정과-토큰을-사용하게-변경">git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global url.<span style="color:#e6db74">&#34;https://</span><span style="color:#e6db74">${</span>GITHUB_USER<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>{GITHUB_TOKEN<span style="color:#e6db74">}</span><span style="color:#e6db74">}@github.com&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com&#34;</span>
+</span></span></code></pre></div><h3 id="goprivate-환경변수에-private-저장소-등록"><a href="https://golang.org/cmd/go/#hdr-Module_configuration_for_non_public_modules">GOPRIVATE</a> 환경변수에 private 저장소 등록</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>GOPRIVATE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;github.com/hueypark/asset&#34;</span>
+</span></span></code></pre></div> </div>
+    <footer class="post-footer">
+  <div class="post-footer-data">
+    
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date">created: 2020-03-29 | updated: 2025-12-21</div>
+    
+  </div>
+</footer>
+
+<script src="https://utteranc.es/client.js"
+        repo="hueypark/wiki"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  
+
+</div>
+
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+<script async src="/js/mermaid/mermaid.min.js"></script>
+
+</body>
+</html>
+

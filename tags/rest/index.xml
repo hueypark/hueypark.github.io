@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rest on Marsettler</title>
+    <link>https://marsettler.com/tags/rest/</link>
+    <description>Recent content in Rest on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/rest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(Book) Time Off: 이토록 멋진 휴식</title>
+      <link>https://marsettler.com/book/time-off/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/time-off/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Authors: Max Frenzel, John Fitch&lt;/li&gt;&#xA;&lt;li&gt;ISBN-13: 978-1734794403&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+  </channel>
+</rss>

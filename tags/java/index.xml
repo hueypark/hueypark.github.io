@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Marsettler</title>
+    <link>https://marsettler.com/tags/java/</link>
+    <description>Recent content in Java on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java good reads</title>
+      <link>https://marsettler.com/java-good-read/</link>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/java-good-read/</guid>
+      <description>&lt;h2 id=&#34;how-netflix-uses-java---2025-edition-by-paul-bakker&#34;&gt;&lt;a href=&#34;https://youtu.be/XpunFFS-n8I&#34;&gt;How Netflix Uses Java - 2025 Edition by Paul Bakker&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Impressive things.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Virtual Threads&lt;/li&gt;&#xA;&lt;li&gt;Web MVC or WebFlux&lt;/li&gt;&#xA;&lt;li&gt;Comparison&#xA;&lt;ul&gt;&#xA;&lt;li&gt;GraphQL&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Flexible schema to query data&lt;/li&gt;&#xA;&lt;li&gt;Think in &amp;ldquo;data&amp;rdquo;, not in &amp;ldquo;methods&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;gRPC&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Highly performant Server-to-Server calls&lt;/li&gt;&#xA;&lt;li&gt;Think &amp;ldquo;methods&amp;rdquo;, not &amp;ldquo;data&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;REST 🪦&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

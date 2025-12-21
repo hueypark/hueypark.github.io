@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/mongodb/mongodb-study-week-6/">
+<meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-6/">
+  <meta property="og:site_name" content="Marsettler">
+  <meta property="og:title" content="MongoDB 스터디 6주차(MongoDB CURD 쓰기 연산)">
+  <meta property="og:description" content="Create Operations db.collection.insertOne() 도큐먼트를 하나 추가합니다.
+문법 db.collection.insertOne( &lt;document&gt;, { writeConcern: &lt;document&gt; } ) writeConcern w: 몇 개의 mongod 에 저장 후 응답할 지 설정 &lt;숫자&gt;: 몇 개의 mongod 에 기록될 지 직접 지정 “majority”: 과반의 mongod 에 기록되게 설정 &lt;커스텀 write concern 이름&gt;: 특정 데이터 센터에 저장되게 설정가능, Custom Multi-Datacenter Write Concerns j: 디스크의 저널에 저장 후 응답할지 설정 여부 timeout: 쓰기 제한 시간(밀리세컨드), 반환하기 전에 이미 성공한 쓰기 작업을 롤백하지 않음 예 db.products.insertOne( { &#34;item&#34;: &#34;envelopes&#34;, &#34;qty&#34;: 100, type: &#34;Self-Sealing&#34; }, { writeConcern: { w : &#34;majority&#34;, wtimeout : 100 } } ); db.collection.insertMany() 도큐먼트를 여러 개 추가합니다.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="mongodb">
+    <meta property="article:published_time" content="2021-02-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-21T15:10:18+09:00">
+    <meta property="article:tag" content="MongoDB">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MongoDB 스터디 6주차(MongoDB CURD 쓰기 연산)">
+  <meta name="twitter:description" content="Create Operations db.collection.insertOne() 도큐먼트를 하나 추가합니다.
+문법 db.collection.insertOne( &lt;document&gt;, { writeConcern: &lt;document&gt; } ) writeConcern w: 몇 개의 mongod 에 저장 후 응답할 지 설정 &lt;숫자&gt;: 몇 개의 mongod 에 기록될 지 직접 지정 “majority”: 과반의 mongod 에 기록되게 설정 &lt;커스텀 write concern 이름&gt;: 특정 데이터 센터에 저장되게 설정가능, Custom Multi-Datacenter Write Concerns j: 디스크의 저널에 저장 후 응답할지 설정 여부 timeout: 쓰기 제한 시간(밀리세컨드), 반환하기 전에 이미 성공한 쓰기 작업을 롤백하지 않음 예 db.products.insertOne( { &#34;item&#34;: &#34;envelopes&#34;, &#34;qty&#34;: 100, type: &#34;Self-Sealing&#34; }, { writeConcern: { w : &#34;majority&#34;, wtimeout : 100 } } ); db.collection.insertMany() 도큐먼트를 여러 개 추가합니다.">
+
+
+  <meta itemprop="name" content="MongoDB 스터디 6주차(MongoDB CURD 쓰기 연산)">
+  <meta itemprop="description" content="Create Operations db.collection.insertOne() 도큐먼트를 하나 추가합니다.
+문법 db.collection.insertOne( &lt;document&gt;, { writeConcern: &lt;document&gt; } ) writeConcern w: 몇 개의 mongod 에 저장 후 응답할 지 설정 &lt;숫자&gt;: 몇 개의 mongod 에 기록될 지 직접 지정 “majority”: 과반의 mongod 에 기록되게 설정 &lt;커스텀 write concern 이름&gt;: 특정 데이터 센터에 저장되게 설정가능, Custom Multi-Datacenter Write Concerns j: 디스크의 저널에 저장 후 응답할지 설정 여부 timeout: 쓰기 제한 시간(밀리세컨드), 반환하기 전에 이미 성공한 쓰기 작업을 롤백하지 않음 예 db.products.insertOne( { &#34;item&#34;: &#34;envelopes&#34;, &#34;qty&#34;: 100, type: &#34;Self-Sealing&#34; }, { writeConcern: { w : &#34;majority&#34;, wtimeout : 100 } } ); db.collection.insertMany() 도큐먼트를 여러 개 추가합니다.">
+  <meta itemprop="datePublished" content="2021-02-23T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-21T15:10:18+09:00">
+  <meta itemprop="wordCount" content="840">
+  <meta itemprop="keywords" content="MongoDB">
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+<title>
+
+
+     MongoDB 스터디 6주차(MongoDB CURD 쓰기 연산) 
+
+</title>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9117575221392760"
+     crossorigin="anonymous"></script>
+
+<script>
+(function(a_,i_,r_,_b,_r,_i,_d,_g,_e){if(!a_[_b]){var n=function(){var c=i_.createElement(r_);c.onerror=function(){g.queue.filter(function(a){return 0<=_d.indexOf(a[0])}).forEach(function(a){a=a[1];a=a[a.length-1];"function"===typeof a&&a("error occur when load airbridge")})};c.async=1;c.src=_r;"complete"===i_.readyState?i_.head.appendChild(c):a_.addEventListener("load",function h(){a_.removeEventListener("load",h);i_.head.appendChild(c)})},g={queue:[],get isSDKEnabled(){return!1}};_i.concat(_d).forEach(function(c){var a=c.split("."),h=a.pop();a.reduce(function(p,q){return p[q]=p[q]||{}},g)[h]=function(){g.queue.push([c,arguments])}});a_[_b]=g;0<_g?(_b=new (a_.XDomainRequest||a_.XMLHttpRequest),_i=function(){},_b.open("GET",_r),_b.timeout=_g,_b.onload=function(){n()},_b.onerror=_i,_b.onprogress=_i,_b.ontimeout=_i,_b.send()):n()}})(window,document,"script","airbridge","//static.airbridge.io/sdk/latest/airbridge.min.js","init startTracking stopTracking fetchResource openBanner setBanner setDownload setDownloads openDeeplink setDeeplinks sendWeb setUserAgent setMobileAppData setUserID clearUserID setUserEmail clearUserEmail setUserPhone clearUserPhone setUserAttribute removeUserAttribute clearUserAttributes setUserAlias removeUserAlias clearUserAlias clearUser setUserId setUserAttributes addUserAlias setDeviceAlias removeDeviceAlias clearDeviceAlias setDeviceIFV setDeviceIFA setDeviceGAID events.send events.signIn events.signUp events.signOut events.purchased events.addedToCart events.productDetailsViewEvent events.homeViewEvent events.productListViewEvent events.searchResultViewEvent".split(" "),["events.wait","createTouchpoint"],0);
+
+airbridge.init({
+    app: 'marsettler',
+    webToken: 'fc5d8317920041d19c0f29af5eba27e8',
+})
+</script>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    <a class="nav-item" href="/tags"><div class="nav-item-title">Tags</div></a>
+    
+    
+    <a class="nav-item" href="/wiki/"><div class="nav-item-title">Wiki</div></a>
+    
+    <a class="nav-item" href="/about-me/"><div class="nav-item-title">About Me</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> MongoDB 스터디 6주차(MongoDB CURD 쓰기 연산) </h1>
+    <div class="content"> <h1 id="create-operations">Create Operations</h1>
+<h2 id="dbcollectioninsertone"><a href="https://docs.mongodb.com/manual/reference/method/db.collection.insertOne/">db.collection.insertOne()</a></h2>
+<p>도큐먼트를 하나 추가합니다.</p>
+<h3 id="문법">문법</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">collection</span>.<span style="color:#a6e22e">insertOne</span>(
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span>document<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">writeConcern</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span>document<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><ul>
+<li><a href="https://docs.mongodb.com/manual/reference/write-concern/">writeConcern</a>
+<ul>
+<li>w: 몇 개의 mongod 에 저장 후 응답할 지 설정
+<ul>
+<li>&lt;숫자&gt;: 몇 개의 mongod 에 기록될 지 직접 지정</li>
+<li>&ldquo;majority&rdquo;: 과반의 mongod 에 기록되게 설정</li>
+<li>&lt;커스텀 write concern 이름&gt;: 특정 데이터 센터에 저장되게 설정가능, <a href="https://docs.mongodb.com/manual/tutorial/configure-replica-set-tag-sets/#configure-custom-write-concern">Custom Multi-Datacenter Write Concerns</a></li>
+</ul>
+</li>
+<li>j: 디스크의 저널에 저장 후 응답할지 설정 여부</li>
+<li>timeout: 쓰기 제한 시간(밀리세컨드), 반환하기 전에 이미 성공한 쓰기 작업을 롤백하지 않음</li>
+</ul>
+</li>
+</ul>
+<h3 id="예">예</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">products</span>.<span style="color:#a6e22e">insertOne</span>(
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;item&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;envelopes&#34;</span>, <span style="color:#e6db74">&#34;qty&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>, <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Self-Sealing&#34;</span> },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#a6e22e">writeConcern</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">w</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;majority&#34;</span>, <span style="color:#a6e22e">wtimeout</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span> } }
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><h2 id="dbcollectioninsertmany"><a href="https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/">db.collection.insertMany()</a></h2>
+<p>도큐먼트를 여러 개 추가합니다.</p>
+<h3 id="문법-1">문법</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">collection</span>.<span style="color:#a6e22e">insertMany</span>(
+</span></span><span style="display:flex;"><span>	[ <span style="color:#f92672">&lt;</span>document <span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span> , <span style="color:#f92672">&lt;</span>document <span style="color:#ae81ff">2</span><span style="color:#f92672">&gt;</span>, ... ],
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">writeConcern</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span>document<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">ordered</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">boolean</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><ul>
+<li>ordered
+<ul>
+<li>입력이 순서를 유지할 지 여부, 기본값은 true</li>
+</ul>
+</li>
+</ul>
+<h3 id="예-ordered-true">예: ordered true</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">products</span>.<span style="color:#a6e22e">insertMany</span>( [
+</span></span><span style="display:flex;"><span>	{ <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">13</span>, <span style="color:#a6e22e">item</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;envelopes&#34;</span>, <span style="color:#a6e22e">qty</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">60</span> },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">13</span>, <span style="color:#a6e22e">item</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;stamps&#34;</span>, <span style="color:#a6e22e">qty</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">110</span> },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">14</span>, <span style="color:#a6e22e">item</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;packing tape&#34;</span>, <span style="color:#a6e22e">qty</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">38</span> }
+</span></span><span style="display:flex;"><span>] );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">BulkWriteError</span>({
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;writeErrors&#34;</span> <span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;index&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;code&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">11000</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;errmsg&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;E11000 duplicate key error collection: inventory.products index: _id_ dup key: { : 13.0 }&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;op&#34;</span> <span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">13</span>,
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#34;item&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;stamps&#34;</span>,
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#34;qty&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">110</span>
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	],
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;writeConcernErrors&#34;</span> <span style="color:#f92672">:</span> [ ],
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;nInserted&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;nUpserted&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;nMatched&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;nModified&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;nRemoved&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;upserted&#34;</span> <span style="color:#f92672">:</span> [ ]
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><h3 id="예-ordered-false">예: ordered false</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>	<span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">products</span>.<span style="color:#a6e22e">insertMany</span>( [
+</span></span><span style="display:flex;"><span>		{ <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>, <span style="color:#a6e22e">item</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;large box&#34;</span>, <span style="color:#a6e22e">qty</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span> },
+</span></span><span style="display:flex;"><span>		{ <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">11</span>, <span style="color:#a6e22e">item</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;small box&#34;</span>, <span style="color:#a6e22e">qty</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">55</span> },
+</span></span><span style="display:flex;"><span>		{ <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">11</span>, <span style="color:#a6e22e">item</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;medium box&#34;</span>, <span style="color:#a6e22e">qty</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span> },
+</span></span><span style="display:flex;"><span>		{ <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">12</span>, <span style="color:#a6e22e">item</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;envelope&#34;</span>, <span style="color:#a6e22e">qty</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>},
+</span></span><span style="display:flex;"><span>		{ <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">13</span>, <span style="color:#a6e22e">item</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;stamps&#34;</span>, <span style="color:#a6e22e">qty</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">125</span> },
+</span></span><span style="display:flex;"><span>		{ <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">13</span>, <span style="color:#a6e22e">item</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;tape&#34;</span>, <span style="color:#a6e22e">qty</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>},
+</span></span><span style="display:flex;"><span>		{ <span style="color:#a6e22e">_id</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">14</span>, <span style="color:#a6e22e">item</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;bubble wrap&#34;</span>, <span style="color:#a6e22e">qty</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span>}
+</span></span><span style="display:flex;"><span>	], { <span style="color:#a6e22e">ordered</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span> } );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">BulkWriteError</span>({
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;writeErrors&#34;</span> <span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;index&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;code&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">11000</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;errmsg&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;E11000 duplicate key error collection: inventory.products index: _id_ dup key: { : 11.0 }&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;op&#34;</span> <span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">11</span>,
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#34;item&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;medium box&#34;</span>,
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#34;qty&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;index&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;code&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">11000</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;errmsg&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;E11000 duplicate key error collection: inventory.products index: _id_ dup key: { : 13.0 }&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;op&#34;</span> <span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">13</span>,
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#34;item&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;tape&#34;</span>,
+</span></span><span style="display:flex;"><span>				<span style="color:#e6db74">&#34;qty&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	],
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;writeConcernErrors&#34;</span> <span style="color:#f92672">:</span> [ ],
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;nInserted&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;nUpserted&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;nMatched&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;nModified&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;nRemoved&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;upserted&#34;</span> <span style="color:#f92672">:</span> [ ]
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><h1 id="update-operations">Update Operations</h1>
+<h2 id="dbcollectionupdateone"><a href="https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/">db.collection.updateOne()</a></h2>
+<p>도큐먼트를 하나 업데이트합니다.</p>
+<h3 id="문법-2">문법</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">collection</span>.<span style="color:#a6e22e">updateOne</span>(
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">filter</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">update</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>	  <span style="color:#a6e22e">upsert</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">boolean</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>	  <span style="color:#a6e22e">writeConcern</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span>document<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>	  <span style="color:#a6e22e">collation</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span>document<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>	  <span style="color:#a6e22e">arrayFilters</span><span style="color:#f92672">:</span> [ <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">filterdocument1</span><span style="color:#f92672">&gt;</span>, ... ],
+</span></span><span style="display:flex;"><span>	  <span style="color:#a6e22e">hint</span><span style="color:#f92672">:</span>  <span style="color:#f92672">&lt;</span>document<span style="color:#f92672">|</span><span style="color:#a6e22e">string</span><span style="color:#f92672">&gt;</span>		  <span style="color:#75715e">// Available starting in MongoDB 4.2.1
+</span></span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><ul>
+<li>upsert: true일 경우 필터로 매치되는 도큐먼트가 없으면 새 도큐먼트 생성</li>
+<li>collation: 언어별 특화된 문자열 처리 옵션 <a href="https://docs.mongodb.com/manual/reference/collation/">collation</a> 참조</li>
+<li>arrayFilters: 배열 업데이트를 위한 필터</li>
+<li>hint: 인덱스 힌트</li>
+</ul>
+<h3 id="예-1">예</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">students</span>.<span style="color:#a6e22e">insert</span>([
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">92</span>, <span style="color:#ae81ff">90</span> ] },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">98</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">102</span> ] },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">110</span>, <span style="color:#ae81ff">100</span> ] }
+</span></span><span style="display:flex;"><span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">students</span>.<span style="color:#a6e22e">updateMany</span>(
+</span></span><span style="display:flex;"><span>	{ <span style="color:#a6e22e">grades</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">$gte</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span> } },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#a6e22e">$set</span><span style="color:#f92672">:</span> { <span style="color:#e6db74">&#34;grades.$[element]&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span> } },
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">arrayFilters</span><span style="color:#f92672">:</span> [ { <span style="color:#e6db74">&#34;element&#34;</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">$gte</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span> } } ]
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">92</span>, <span style="color:#ae81ff">90</span> ] }
+</span></span><span style="display:flex;"><span>{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">98</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">100</span> ] }
+</span></span><span style="display:flex;"><span>{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">100</span> ] }
+</span></span></code></pre></div><h2 id="dbcollectionupdatemany">db.collection.updateMany()</h2>
+<p>도큐먼트를 여러 개 업데이트합니다.</p>
+<h2 id="dbcollectionreplaceone">db.collection.replaceOne()</h2>
+<p>필터된 도큐먼트를 새 도큐먼트로 변경합니다.</p>
+<h3 id="예-2">예</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">students</span>.<span style="color:#a6e22e">insert</span>([
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">92</span>, <span style="color:#ae81ff">90</span> ] },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">98</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">102</span> ] },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">110</span>, <span style="color:#ae81ff">100</span> ] }
+</span></span><span style="display:flex;"><span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">students</span>.<span style="color:#a6e22e">replaceOne</span>(
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> },
+</span></span><span style="display:flex;"><span>	{ <span style="color:#e6db74">&#34;grade_sum&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span> }
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;grade_sum&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span> },
+</span></span><span style="display:flex;"><span>{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">98</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">102</span> ] },
+</span></span><span style="display:flex;"><span>{ <span style="color:#e6db74">&#34;_id&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;grades&#34;</span> <span style="color:#f92672">:</span> [ <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">110</span>, <span style="color:#ae81ff">100</span> ] }
+</span></span></code></pre></div><h1 id="delete-operations">Delete operations</h1>
+<h2 id="dbcollectiondeleteone"><a href="https://docs.mongodb.com/manual/reference/method/db.collection.deleteOne/">db.collection.deleteOne()</a></h2>
+<p>필터된 도큐먼트를 하나 지웁니다.</p>
+<h3 id="문법-3">문법</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">collection</span>.<span style="color:#a6e22e">deleteOne</span>(
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">filter</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">writeConcern</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span>document<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">collation</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span>document<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">hint</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span>document<span style="color:#f92672">|</span><span style="color:#a6e22e">string</span><span style="color:#f92672">&gt;</span>		  <span style="color:#75715e">// Available starting in MongoDB 4.4
+</span></span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><h2 id="dbcollectiondeletemany"><a href="https://docs.mongodb.com/manual/reference/method/db.collection.deleteMany/">db.collection.deleteMany()</a></h2>
+<p>필터된 도큐먼트를 여러개 지웁니다.</p>
+<h3 id="문법-4">문법</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">collection</span>.<span style="color:#a6e22e">deleteMany</span>(
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">filter</span><span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">writeConcern</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span>document<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">collation</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span>document<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><h1 id="bulk-write-operations">Bulk Write Operations</h1>
+<h2 id="dbcollectionbulkwrite"><a href="https://docs.mongodb.com/manual/reference/method/db.collection.bulkWrite/">db.collection.bulkWrite()</a></h2>
+<p>여러 작업을 한 번에 합니다.</p>
+<h3 id="문법-5">문법</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">collection</span>.<span style="color:#a6e22e">bulkWrite</span>(
+</span></span><span style="display:flex;"><span>	[ <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">operation</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">&gt;</span>, <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">operation</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">&gt;</span>, ... ],
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">writeConcern</span> <span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span>document<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">ordered</span> <span style="color:#f92672">:</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">boolean</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><ul>
+<li>사용가능 명령
+<ul>
+<li>insertOne</li>
+<li>updateOne</li>
+<li>updateMany</li>
+<li>deleteOne</li>
+<li>deleteMany</li>
+<li>replaceOne</li>
+</ul>
+</li>
+</ul>
+<h3 id="예-3">예</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>	<span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">characters</span>.<span style="color:#a6e22e">bulkWrite</span>([
+</span></span><span style="display:flex;"><span>		{ <span style="color:#a6e22e">insertOne</span><span style="color:#f92672">:</span> { <span style="color:#e6db74">&#34;document&#34;</span><span style="color:#f92672">:</span> { <span style="color:#e6db74">&#34;_id&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span>, <span style="color:#e6db74">&#34;char&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Dithras&#34;</span>, <span style="color:#e6db74">&#34;class&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;barbarian&#34;</span>, <span style="color:#e6db74">&#34;lvl&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span> } } },
+</span></span><span style="display:flex;"><span>		{ <span style="color:#a6e22e">insertOne</span><span style="color:#f92672">:</span> { <span style="color:#e6db74">&#34;document&#34;</span><span style="color:#f92672">:</span> { <span style="color:#e6db74">&#34;_id&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>, <span style="color:#e6db74">&#34;char&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Taeln&#34;</span>, <span style="color:#e6db74">&#34;class&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;fighter&#34;</span>, <span style="color:#e6db74">&#34;lvl&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span> } } },
+</span></span><span style="display:flex;"><span>		{ <span style="color:#a6e22e">updateOne</span> <span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;filter&#34;</span> <span style="color:#f92672">:</span> { <span style="color:#e6db74">&#34;char&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Eldon&#34;</span> },
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;update&#34;</span> <span style="color:#f92672">:</span> { <span style="color:#a6e22e">$set</span> <span style="color:#f92672">:</span> { <span style="color:#e6db74">&#34;status&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Critical Injury&#34;</span> } }
+</span></span><span style="display:flex;"><span>		} },
+</span></span><span style="display:flex;"><span>		{ <span style="color:#a6e22e">deleteOne</span> <span style="color:#f92672">:</span> { <span style="color:#e6db74">&#34;filter&#34;</span> <span style="color:#f92672">:</span> { <span style="color:#e6db74">&#34;char&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Brisbane&#34;</span>} } },
+</span></span><span style="display:flex;"><span>		{ <span style="color:#a6e22e">replaceOne</span> <span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;filter&#34;</span> <span style="color:#f92672">:</span> { <span style="color:#e6db74">&#34;char&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Meldane&#34;</span> },
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;replacement&#34;</span> <span style="color:#f92672">:</span> { <span style="color:#e6db74">&#34;char&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Tanys&#34;</span>, <span style="color:#e6db74">&#34;class&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;oracle&#34;</span>, <span style="color:#e6db74">&#34;lvl&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span> }
+</span></span><span style="display:flex;"><span>		} }
+</span></span><span style="display:flex;"><span>	]);
+</span></span></code></pre></div><h2 id="dbcollectioninsertmany-1"><a href="https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/">db.collection.insertMany()</a></h2>
+<p>위에서 설명한 insertMany 도 Bulk Write 로 구분됩니다.</p>
+<h1 id="isolated">$isolated</h1>
+<p><a href="https://docs.mongodb.com/manual/release-notes/4.0-compatibility/index.html">4.0</a> 에서 제거되었고,
+필요하면 트랜잭션을 사용하길 권고합니다.</p>
+ </div>
+    <footer class="post-footer">
+  <div class="post-footer-data">
+    
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date">created: 2021-02-23 | updated: 2025-12-21</div>
+    
+  </div>
+</footer>
+
+<script src="https://utteranc.es/client.js"
+        repo="hueypark/wiki"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  
+
+</div>
+
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+<script async src="/js/mermaid/mermaid.min.js"></script>
+
+</body>
+</html>
+

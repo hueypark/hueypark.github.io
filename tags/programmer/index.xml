@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmer on Marsettler</title>
+    <link>https://marsettler.com/tags/programmer/</link>
+    <description>Recent content in Programmer on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/programmer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(Book) 실용주의 프로그래머 20주년 기념판</title>
+      <link>https://marsettler.com/book/the-pragmatic-programmer-20th-anniversary-edition/</link>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/the-pragmatic-programmer-20th-anniversary-edition/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;지은이: 데이비드 토머스, 앤드류 헌트&lt;/li&gt;&#xA;&lt;li&gt;ISBN: 978-89-6626-336-3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;프로그래밍은 미래를 덜 고통스럽게 만들려 노력하는 것이다. 팀 동료들을 수월하게 해 주는 것이다. 문제를 일으켰다가 다시 되돌릴 수 있는 것이다. 좋은 습관을 기르고, 여러분의 도구를 이해하는 것이다.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; x쪽&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;lsquo;깨진 창문&amp;rsquo;을 고치지 않은 채로 내버려 두지 말라. 나쁜 설계, 잘못된 결정, 혹은 형편없는 코드 등이 모두 깨진 창문이다. 발견하자마자 바로 고쳐라. 적절히 고칠 시간이 없다면 일단 판자로 덮는 것만이라도 하라. 불쾌한 코드를 주석 처리 하거나, &amp;lsquo;아직 구현되지 않았음&amp;rsquo;이라고 메시지를 표시하거나, 가따 데이터로 대치해 놓거나 하라. 더 이상의 손상을 예방하기 위해 어떤 조치든 취하고 여러분이 상황을 잘 관리하고 있음을 보여 줘라.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

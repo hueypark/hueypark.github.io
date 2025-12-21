@@ -1,0 +1,580 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/">
+<meta property="og:url" content="https://marsettler.com/">
+  <meta property="og:site_name" content="Marsettler">
+  <meta property="og:title" content="Marsettler">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Marsettler">
+
+
+  <meta itemprop="name" content="Marsettler">
+  <meta itemprop="datePublished" content="2025-11-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-21T15:10:18+09:00">
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+<title>
+
+
+     Marsettler 
+
+</title>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9117575221392760"
+     crossorigin="anonymous"></script>
+
+<script>
+(function(a_,i_,r_,_b,_r,_i,_d,_g,_e){if(!a_[_b]){var n=function(){var c=i_.createElement(r_);c.onerror=function(){g.queue.filter(function(a){return 0<=_d.indexOf(a[0])}).forEach(function(a){a=a[1];a=a[a.length-1];"function"===typeof a&&a("error occur when load airbridge")})};c.async=1;c.src=_r;"complete"===i_.readyState?i_.head.appendChild(c):a_.addEventListener("load",function h(){a_.removeEventListener("load",h);i_.head.appendChild(c)})},g={queue:[],get isSDKEnabled(){return!1}};_i.concat(_d).forEach(function(c){var a=c.split("."),h=a.pop();a.reduce(function(p,q){return p[q]=p[q]||{}},g)[h]=function(){g.queue.push([c,arguments])}});a_[_b]=g;0<_g?(_b=new (a_.XDomainRequest||a_.XMLHttpRequest),_i=function(){},_b.open("GET",_r),_b.timeout=_g,_b.onload=function(){n()},_b.onerror=_i,_b.onprogress=_i,_b.ontimeout=_i,_b.send()):n()}})(window,document,"script","airbridge","//static.airbridge.io/sdk/latest/airbridge.min.js","init startTracking stopTracking fetchResource openBanner setBanner setDownload setDownloads openDeeplink setDeeplinks sendWeb setUserAgent setMobileAppData setUserID clearUserID setUserEmail clearUserEmail setUserPhone clearUserPhone setUserAttribute removeUserAttribute clearUserAttributes setUserAlias removeUserAlias clearUserAlias clearUser setUserId setUserAttributes addUserAlias setDeviceAlias removeDeviceAlias clearDeviceAlias setDeviceIFV setDeviceIFA setDeviceGAID events.send events.signIn events.signUp events.signOut events.purchased events.addedToCart events.productDetailsViewEvent events.homeViewEvent events.productListViewEvent events.searchResultViewEvent".split(" "),["events.wait","createTouchpoint"],0);
+
+airbridge.init({
+    app: 'marsettler',
+    webToken: 'fc5d8317920041d19c0f29af5eba27e8',
+})
+</script>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    <a class="nav-item" href="/tags"><div class="nav-item-title">Tags</div></a>
+    
+    
+    <a class="nav-item" href="/wiki/"><div class="nav-item-title">Wiki</div></a>
+    
+    <a class="nav-item" href="/about-me/"><div class="nav-item-title">About Me</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<main>
+
+
+  
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/sprintseoul-cockroachdb/'> 스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-02-20 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/sprint">#sprint</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h3 id="스프린트에-참가하는-이유">스프린트에 참가하는 이유</h3>
+<p>왜 스프린트에 참가하시나요? 참가할 때마다 여러가지 이유를 생각해보지만 정답이 있는 문제는 아닙니다. 저는 처음 스프린트에 참가하며 다음과 같은 동기를 가지고 있었습니다.</p>
+<ol>
+<li><code>Go</code> 언어 개발능력을 향상시키고 싶었습니다.</li>
+<li>가까운 미래에 애플리케이션 개발을 위해 단단하고 확장가능한 데이터베이스를 사용하고 싶었습니다.</li>
+</ol>
+<p>아직 목표를 완전히 이룬 것은 아니지만 스프린트서울에 처음 참가한 2019년 6월보다는 한 걸음 나아가 있습니다.</p>
+<p>당신에게는 어떤 목표가 있나요? 저보다 더 멋진 목표와 동기가 있을 것으로 기대됩니다. 댓글로 저에게도 알려주십시오!</p>
+<h3 id="카크로치디비">카크로치디비</h3>
+<p>카크로치디비는 <code>Go</code>로 작성된 수평확장 가능한 관계형 데이터베이스로, 관계형 데이터베이스의 편의성과 NoSQL이 가진 확장성을 동시에 제공합니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/sprintseoul-cockroachdb/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/cockroachdb-issue-44135-sql-add-support-for-comment/'> (very good first issue) #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-02-20 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/sprint">#sprint</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p><a href="https://github.com/cockroachdb/cockroach/issues/44135">카크로치디비 이슈 #44135</a> sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE</p>
+<h3 id="개요">개요</h3>
+<p>이슈 #44135 <code>PostgreSQL</code>에서 지원하는 <a href="https://www.postgresql.org/docs/9.1/functions-aggregate.html">COMMENT ON</a> 문법의 <code>VIEW</code>, <code>SEQUENCE</code>에 대한 지원을 요구합니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/cockroachdb-issue-44135-sql-add-support-for-comment/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/cockroachdb-issue-41274-vgfi-sql-support-aggregate-functions-for-statistics/'> (very good first issue) #41274 sql: Support aggregate functions for statistics</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-02-20 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/sprint">#sprint</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p><a href="https://github.com/cockroachdb/cockroach/issues/41274">카크로치디비 이슈 #41274</a> sql: Support aggregate functions for statistics</p>
+<h3 id="개요">개요</h3>
+<p>이슈 #41274는 <code>PostgreSQL</code>에서 지원하는 <a href="https://www.postgresql.org/docs/9.1/functions-aggregate.html">aggregate function</a>들의 구현을 요구하며, 대상은 아래와 같습니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/cockroachdb-issue-41274-vgfi-sql-support-aggregate-functions-for-statistics/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2020-02-20-bpf-performance-tools/'> (Book) BPF Performance Tools</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-02-20 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/book">#book</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>BPF Performance Tools</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2020-02-20-bpf-performance-tools/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/about-me/'> 박재완</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-03-28 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>C++, Go 등의 언어를 주로 사용하여 MMORPG 서버를 개발합니다. 많은 시간을 코드리뷰, 생산성 향상을 위한 자동화 툴 개발, 빌드 및 배포 자동화에 사용하고 있습니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/about-me/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/using-go-module-with-github-private-repository/'> Go module에서 GitHub private 저장소 사용</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-03-29 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>Go module에서 GitHub private 저장소를 사용하는 방법입니다.</p>
+<hr>
+<h3 id="git-설정에서-github-접근을-계정과-토큰을-사용하게-변경">git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global url.<span style="color:#e6db74">&#34;https://</span><span style="color:#e6db74">${</span>GITHUB_USER<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>{GITHUB_TOKEN<span style="color:#e6db74">}</span><span style="color:#e6db74">}@github.com&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com&#34;</span>
+</span></span></code></pre></div><h3 id="goprivate-환경변수에-private-저장소-등록"><a href="https://golang.org/cmd/go/#hdr-Module_configuration_for_non_public_modules">GOPRIVATE</a> 환경변수에 private 저장소 등록</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>GOPRIVATE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;github.com/hueypark/asset&#34;</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/using-go-module-with-github-private-repository/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/go/'> Go</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-03-29 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p><a href="/go/go-headless-test-with-xvfb">xvfb를 이용한 Go headless 테스트</a></p>
+<p><a href="/go/the-zen-of-go">Go의 철학</a></p>
+<p><a href="/go/using-go-module-with-github-private-repository">Go module에서 GitHub private repository 사용</a></p>
+<p><a href="/go/good-reads">좋은 읽을거리</a></p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/go/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/go-headless-test-with-xvfb/'> xvfb를 이용한 Go headless 테스트</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-04-02 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>Go에서 <a href="https://github.com/go-gl/glfw">GLFW</a> 등을 이용해 그래픽스 관련 작업을 할 때에도 자동화
+테스트 구성이 가능합니다. 하지만 <a href="https://github.com/features/actions">GitHub Actions</a>과 같이
+디스플레이가 없는 환경에서는 의존성을 가지고 있다는 이유만으로 그래픽스 관련 테스트가 실패합니다.</p>
+<p>xvfb는 메뉴얼에서 <code>virtual framebuffer X server for X Version</code> 라고 소개되고 있으며, 서버 사이드
+테스트를 위해 주로 사용됩니다.</p>
+<p>Ubuntu 기준으로 <code>sudo apt install xvfb</code>로 설치하고 <code>xvfb-run</code>에 이어서 테스트 명령어를 추가하여
+테스트할 수 있습니다. 실제 GitHub Actions에 적용한 <a href="https://github.com/hueypark/marsettler/blob/dadbd044b1c2c6ce29ace6924b7bee5180660e9e/.github/workflows/benchmark.yml#L29">예시</a>를
+공유드립니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/go-headless-test-with-xvfb/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/the-zen-of-go/'> Go의 철학</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-04-05 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p><a href="https://twitter.com/davecheney">Dave Cheney</a>의 <a href="https://the-zen-of-go.netlify.com/">The Zen of Go</a>를 번역했습니다. 좀 더 알고 싶으신 분은 <a href="https://www.youtube.com/watch?v=yd_rtwYaXps">발표 영상</a>과 <a href="https://dave.cheney.net/2020/02/23/the-zen-of-go">블로그 글</a>을 함께 참고해 주십시오.</p>
+<hr>
+<h2 id="go의-철학">Go의 철학</h2>
+<p>쉽고, 읽기 좋으며, 유지가능한 Go 코드 작성을 위한 10가지 엔지니어링 가치. <a href="https://www.gophercon.org.il/">고퍼콘 이스라엘 2020</a>에 발표하였음.</p>
+<h4 id="패키지는-하나의-목적만을-달성합니다">패키지는 하나의 목적만을 달성합니다</h4>
+<p>잘 디자인된 Go 패키지는 단 하나의 아이디어와 관련 동작을 제공합니다. 좋은 Go 패키지를 위해 좋은 이름을 먼저 정해야 합니다. 엘리베이터 피치라고 생각하며 패키지 이름을 정해보십시오.</p>
+<h4 id="에러는-명시적으로-처리합니다">에러는 명시적으로 처리합니다</h4>
+<p>단단한 프로그램은 문제가 생기기 전에 실패처리를 하는 요소들로 이루어져 있습니다. 실패를 발생지점에서 의도적으로 처리할 수 있다는 것은 <code>if err != nil { return err }</code> 의 장황함마저 대수롭지 않아 보이게 합니다. <code>panic</code>과 <code>recover</code>는 예외가 아니며, 그런 식으로 사용되게 의도되지 않았습니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/the-zen-of-go/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/c&#43;&#43;/c&#43;&#43;/'> C&#43;&#43;</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-04-19 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/c&#43;&#43;">#c&#43;&#43;</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p><a href="/c++/dear-my-c++">친애하는 나의 C++</a></p>
+<p><a href="/std-shared-ptr-is-not-thread-safe">std::shared_ptr is not thread safe</a></p>
+<p><a href="/c++/good-reads">C++ 좋은 읽을거리</a></p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/c&#43;&#43;/c&#43;&#43;/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+
+
+<div class="page-nav">
+  <div class="page-prev">
+    
+        <a href="/page/4/" title="Previous page" > &lt;&lt; </a>
+    
+  </div> 
+
+  <div class="page-num">
+    5/15
+  </div> 
+
+  <div class="page-next">
+    
+    <a href="/page/6/" title="Next page"> >> </a>
+    
+  </div> 
+</div> 
+
+
+</main>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  
+  <div class="social-link">
+  <a href="/index.xml" target="_blank">RSS</a>
+  </div>
+  
+
+</div>
+
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+<script async src="/js/mermaid/mermaid.min.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/mongodb/mongodb-study-week-5/">
+<meta property="og:url" content="https://marsettler.com/mongodb/mongodb-study-week-5/">
+  <meta property="og:site_name" content="Marsettler">
+  <meta property="og:title" content="MongoDB 스터디 5주차(패턴과 안티패턴)">
+  <meta property="og:description" content="패턴 Attribute Pattern 상황 비슷한 필드가 많을 때 여러 필드에 걸쳐 조회하고 싶을때 필드가 일부 도큐먼트에만 있을 때 해결책 필드를 k/v 짝으로 나누어 서브도큐먼트에 저장 예 적용 전
+{ &#34;title&#34;: &#34;Star Wars&#34;, &#34;release_US&#34;: &#34;1977-05-20T01:00:00&#43;01:00&#34;, &#34;release_France&#34;: &#34;1977-10-19T01:00:00&#43;01:00&#34;, &#34;release_Italy&#34;: &#34;1977-10-20T01:00:00&#43;01:00&#34;, &#34;release_UK&#34;: &#34;1977-12-27T01:00:00&#43;01:00&#34;, } 적용 후
+{ &#34;title&#34;: &#34;Star Wars&#34;, &#34;director&#34;: &#34;George Lucas&#34;, &#34;releases&#34;: [ { &#34;location&#34;: &#34;USA&#34;, &#34;date&#34;: &#34;1977-05-20T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;France&#34;, &#34;date&#34;: &#34;1977-10-19T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;Italy&#34;, &#34;date&#34;: &#34;1977-10-20T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;UK&#34;, &#34;date&#34;: &#34;1977-12-27T01:00:00&#43;01:00&#34; }, ] } 장점 인덱싱하기 쉬움 더 적은 인덱스가 필요함 쿼리가 간단해지고 일반적으로 빨라짐 Extended Reference Pattern 상황 너무 많은 조인이 발생함 해결책 주가 되는 도큐먼트에 쪽에 필드를 임베딩함 예 적용 전">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="mongodb">
+    <meta property="article:published_time" content="2021-02-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-21T15:10:18+09:00">
+    <meta property="article:tag" content="MongoDB">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MongoDB 스터디 5주차(패턴과 안티패턴)">
+  <meta name="twitter:description" content="패턴 Attribute Pattern 상황 비슷한 필드가 많을 때 여러 필드에 걸쳐 조회하고 싶을때 필드가 일부 도큐먼트에만 있을 때 해결책 필드를 k/v 짝으로 나누어 서브도큐먼트에 저장 예 적용 전
+{ &#34;title&#34;: &#34;Star Wars&#34;, &#34;release_US&#34;: &#34;1977-05-20T01:00:00&#43;01:00&#34;, &#34;release_France&#34;: &#34;1977-10-19T01:00:00&#43;01:00&#34;, &#34;release_Italy&#34;: &#34;1977-10-20T01:00:00&#43;01:00&#34;, &#34;release_UK&#34;: &#34;1977-12-27T01:00:00&#43;01:00&#34;, } 적용 후
+{ &#34;title&#34;: &#34;Star Wars&#34;, &#34;director&#34;: &#34;George Lucas&#34;, &#34;releases&#34;: [ { &#34;location&#34;: &#34;USA&#34;, &#34;date&#34;: &#34;1977-05-20T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;France&#34;, &#34;date&#34;: &#34;1977-10-19T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;Italy&#34;, &#34;date&#34;: &#34;1977-10-20T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;UK&#34;, &#34;date&#34;: &#34;1977-12-27T01:00:00&#43;01:00&#34; }, ] } 장점 인덱싱하기 쉬움 더 적은 인덱스가 필요함 쿼리가 간단해지고 일반적으로 빨라짐 Extended Reference Pattern 상황 너무 많은 조인이 발생함 해결책 주가 되는 도큐먼트에 쪽에 필드를 임베딩함 예 적용 전">
+
+
+  <meta itemprop="name" content="MongoDB 스터디 5주차(패턴과 안티패턴)">
+  <meta itemprop="description" content="패턴 Attribute Pattern 상황 비슷한 필드가 많을 때 여러 필드에 걸쳐 조회하고 싶을때 필드가 일부 도큐먼트에만 있을 때 해결책 필드를 k/v 짝으로 나누어 서브도큐먼트에 저장 예 적용 전
+{ &#34;title&#34;: &#34;Star Wars&#34;, &#34;release_US&#34;: &#34;1977-05-20T01:00:00&#43;01:00&#34;, &#34;release_France&#34;: &#34;1977-10-19T01:00:00&#43;01:00&#34;, &#34;release_Italy&#34;: &#34;1977-10-20T01:00:00&#43;01:00&#34;, &#34;release_UK&#34;: &#34;1977-12-27T01:00:00&#43;01:00&#34;, } 적용 후
+{ &#34;title&#34;: &#34;Star Wars&#34;, &#34;director&#34;: &#34;George Lucas&#34;, &#34;releases&#34;: [ { &#34;location&#34;: &#34;USA&#34;, &#34;date&#34;: &#34;1977-05-20T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;France&#34;, &#34;date&#34;: &#34;1977-10-19T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;Italy&#34;, &#34;date&#34;: &#34;1977-10-20T01:00:00&#43;01:00&#34; }, { &#34;location&#34;: &#34;UK&#34;, &#34;date&#34;: &#34;1977-12-27T01:00:00&#43;01:00&#34; }, ] } 장점 인덱싱하기 쉬움 더 적은 인덱스가 필요함 쿼리가 간단해지고 일반적으로 빨라짐 Extended Reference Pattern 상황 너무 많은 조인이 발생함 해결책 주가 되는 도큐먼트에 쪽에 필드를 임베딩함 예 적용 전">
+  <meta itemprop="datePublished" content="2021-02-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-21T15:10:18+09:00">
+  <meta itemprop="wordCount" content="747">
+  <meta itemprop="keywords" content="MongoDB">
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+<title>
+
+
+     MongoDB 스터디 5주차(패턴과 안티패턴) 
+
+</title>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9117575221392760"
+     crossorigin="anonymous"></script>
+
+<script>
+(function(a_,i_,r_,_b,_r,_i,_d,_g,_e){if(!a_[_b]){var n=function(){var c=i_.createElement(r_);c.onerror=function(){g.queue.filter(function(a){return 0<=_d.indexOf(a[0])}).forEach(function(a){a=a[1];a=a[a.length-1];"function"===typeof a&&a("error occur when load airbridge")})};c.async=1;c.src=_r;"complete"===i_.readyState?i_.head.appendChild(c):a_.addEventListener("load",function h(){a_.removeEventListener("load",h);i_.head.appendChild(c)})},g={queue:[],get isSDKEnabled(){return!1}};_i.concat(_d).forEach(function(c){var a=c.split("."),h=a.pop();a.reduce(function(p,q){return p[q]=p[q]||{}},g)[h]=function(){g.queue.push([c,arguments])}});a_[_b]=g;0<_g?(_b=new (a_.XDomainRequest||a_.XMLHttpRequest),_i=function(){},_b.open("GET",_r),_b.timeout=_g,_b.onload=function(){n()},_b.onerror=_i,_b.onprogress=_i,_b.ontimeout=_i,_b.send()):n()}})(window,document,"script","airbridge","//static.airbridge.io/sdk/latest/airbridge.min.js","init startTracking stopTracking fetchResource openBanner setBanner setDownload setDownloads openDeeplink setDeeplinks sendWeb setUserAgent setMobileAppData setUserID clearUserID setUserEmail clearUserEmail setUserPhone clearUserPhone setUserAttribute removeUserAttribute clearUserAttributes setUserAlias removeUserAlias clearUserAlias clearUser setUserId setUserAttributes addUserAlias setDeviceAlias removeDeviceAlias clearDeviceAlias setDeviceIFV setDeviceIFA setDeviceGAID events.send events.signIn events.signUp events.signOut events.purchased events.addedToCart events.productDetailsViewEvent events.homeViewEvent events.productListViewEvent events.searchResultViewEvent".split(" "),["events.wait","createTouchpoint"],0);
+
+airbridge.init({
+    app: 'marsettler',
+    webToken: 'fc5d8317920041d19c0f29af5eba27e8',
+})
+</script>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    <a class="nav-item" href="/tags"><div class="nav-item-title">Tags</div></a>
+    
+    
+    <a class="nav-item" href="/wiki/"><div class="nav-item-title">Wiki</div></a>
+    
+    <a class="nav-item" href="/about-me/"><div class="nav-item-title">About Me</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> MongoDB 스터디 5주차(패턴과 안티패턴) </h1>
+    <div class="content"> <h2 id="패턴">패턴</h2>
+<h3 id="attribute-pattern">Attribute Pattern</h3>
+<ul>
+<li>상황
+<ul>
+<li>비슷한 필드가 많을 때</li>
+<li>여러 필드에 걸쳐 조회하고 싶을때</li>
+<li>필드가 일부 도큐먼트에만 있을 때</li>
+</ul>
+</li>
+<li>해결책
+<ul>
+<li>필드를 k/v 짝으로 나누어 서브도큐먼트에 저장</li>
+</ul>
+</li>
+<li>예</li>
+</ul>
+<p>적용 전</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Star Wars&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;release_US&#34;</span>: <span style="color:#e6db74">&#34;1977-05-20T01:00:00+01:00&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;release_France&#34;</span>: <span style="color:#e6db74">&#34;1977-10-19T01:00:00+01:00&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;release_Italy&#34;</span>: <span style="color:#e6db74">&#34;1977-10-20T01:00:00+01:00&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;release_UK&#34;</span>: <span style="color:#e6db74">&#34;1977-12-27T01:00:00+01:00&#34;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>적용 후</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;Star Wars&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;director&#34;</span>: <span style="color:#e6db74">&#34;George Lucas&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;releases&#34;</span>:
+</span></span><span style="display:flex;"><span>	[
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;location&#34;</span>: <span style="color:#e6db74">&#34;USA&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;1977-05-20T01:00:00+01:00&#34;</span>
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;location&#34;</span>: <span style="color:#e6db74">&#34;France&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;1977-10-19T01:00:00+01:00&#34;</span>
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;location&#34;</span>: <span style="color:#e6db74">&#34;Italy&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;1977-10-20T01:00:00+01:00&#34;</span>
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;location&#34;</span>: <span style="color:#e6db74">&#34;UK&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;1977-12-27T01:00:00+01:00&#34;</span>
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>	]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>장점
+<ul>
+<li>인덱싱하기 쉬움</li>
+<li>더 적은 인덱스가 필요함</li>
+<li>쿼리가 간단해지고 일반적으로 빨라짐</li>
+</ul>
+</li>
+</ul>
+<h3 id="extended-reference-pattern">Extended Reference Pattern</h3>
+<ul>
+<li>상황
+<ul>
+<li>너무 많은 조인이 발생함</li>
+</ul>
+</li>
+<li>해결책
+<ul>
+<li>주가 되는 도큐먼트에 쪽에 필드를 임베딩함</li>
+</ul>
+</li>
+<li>예</li>
+</ul>
+<p>적용 전</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">customer</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;huey&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;seoul&#34;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">order</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;customer_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;2021-02-14&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>적용 후</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">customer</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;huey&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">order</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;customer_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;customer&#34;</span>:
+</span></span><span style="display:flex;"><span>	{
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;huey&#34;</span>
+</span></span><span style="display:flex;"><span>	},
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;date&#34;</span>: <span style="color:#e6db74">&#34;2021-02-14&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>장점
+<ul>
+<li>조인이 줄어들어 성능이 향상됨</li>
+</ul>
+</li>
+<li>단점
+<ul>
+<li>데이터 중복</li>
+</ul>
+</li>
+</ul>
+<h3 id="subset-pattern">Subset Pattern</h3>
+<ul>
+<li>상황
+<ul>
+<li>작업 데이터가 너무 커서 메모리에 캐시를 유지하기 어려움</li>
+<li>도큐먼트의 큰 부분이 자주 사용되지 않음</li>
+</ul>
+</li>
+<li>해결책
+<ul>
+<li>컬렉션을 두 개로 나눔
+<ul>
+<li>자주 사용되는 부분</li>
+<li>자주 사용되지 않는 부분</li>
+</ul>
+</li>
+<li>두 컬렉션을 연결</li>
+</ul>
+</li>
+<li>예)</li>
+</ul>
+<p>적용 전</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">user</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;huey&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;seoul&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;desc&#34;</span>: <span style="color:#e6db74">&#34;Software engineer in Seoul...&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>적용 후</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">user</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;huey&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;city&#34;</span>: <span style="color:#e6db74">&#34;seoul&#34;</span>,	
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">user_detail</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;user_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;desc&#34;</span>: <span style="color:#e6db74">&#34;Software engineer in Seoul...&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>장점
+<ul>
+<li>자주 사용되는 도큐먼트가 작기 때문에 작업 데이터가 작아짐</li>
+<li>도큐먼트가 더 많이 캐시되기 때문에 디스크 접근이 줄어듬</li>
+</ul>
+</li>
+<li>단점
+<ul>
+<li>서버와 더 많은 횟수의 통신이 필요</li>
+<li>디스크가 약간 더 필요함</li>
+</ul>
+</li>
+</ul>
+<h3 id="computed-pattern">Computed Pattern</h3>
+<ul>
+<li>상황
+<ul>
+<li>데이터에 대한 계산이 많음</li>
+<li>같은 데이터에 자주 접근해서, 같은 결과를 계산함</li>
+</ul>
+</li>
+<li>해결책
+<ul>
+<li>계산된 데이터를 도큐먼트에 저장</li>
+<li>다음 번에 데이터가 필요할 때 미리 계산된 데이터 사용</li>
+</ul>
+</li>
+<li>장점
+<ul>
+<li>읽기가 빨라짐</li>
+<li>CPU와 디스크 자원이 절약됨</li>
+</ul>
+</li>
+<li>단점
+<ul>
+<li>필요한 지점을 식별하기 어려울 수 있음</li>
+<li>불필요한 상황에서 과용되기 쉬움</li>
+</ul>
+</li>
+</ul>
+<h3 id="bucket-pattern">Bucket Pattern</h3>
+<ul>
+<li>상황
+<ul>
+<li>도큐먼트가 너무 많거나, 커짐</li>
+<li>임베딩하기 어려운 크기의 1 to many 관계</li>
+</ul>
+</li>
+<li>해결책
+<ul>
+<li>그룹화할 적절한 양의 데이터를 지정</li>
+<li>메인 도큐먼트에 array를 만들어 데이터 저장</li>
+</ul>
+</li>
+<li>예</li>
+</ul>
+<p>적용 전</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;sensor_id&#34;</span>: <span style="color:#ae81ff">12345</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;timestamp&#34;</span>: <span style="color:#e6db74">&#34;2019-01-31T10:00:00.000Z&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;temperature&#34;</span>: <span style="color:#ae81ff">40</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;sensor_id&#34;</span>: <span style="color:#ae81ff">12345</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;timestamp&#34;</span>: <span style="color:#e6db74">&#34;2019-01-31T10:01:00.000Z&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;temperature&#34;</span>: <span style="color:#ae81ff">40</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;sensor_id&#34;</span>: <span style="color:#ae81ff">12345</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;timestamp&#34;</span>: <span style="color:#e6db74">&#34;2019-01-31T10:02:00.000Z&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;temperature&#34;</span>: <span style="color:#ae81ff">41</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>적용 후</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;sensor_id&#34;</span>: <span style="color:#ae81ff">12345</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;start_date&#34;</span>: <span style="color:#e6db74">&#34;2019-01-31T10:00:00.000Z&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;end_date&#34;</span>: <span style="color:#e6db74">&#34;2019-01-31T10:59:59.000Z&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;measurements&#34;</span>: [
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;timestamp&#34;</span>: <span style="color:#e6db74">&#34;2019-01-31T10:00:00.000Z&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;temperature&#34;</span>: <span style="color:#ae81ff">40</span>
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;timestamp&#34;</span>: <span style="color:#e6db74">&#34;2019-01-31T10:01:00.000Z&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;temperature&#34;</span>: <span style="color:#ae81ff">40</span>
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;timestamp&#34;</span>: <span style="color:#e6db74">&#34;2019-01-31T10:42:00.000Z&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;temperature&#34;</span>: <span style="color:#ae81ff">42</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>장점
+<ul>
+<li>데이터가 급격하게 커져도 적절한 수준에서 제어 가능</li>
+<li>쉽게 데이터 관리 가능</li>
+</ul>
+</li>
+<li>단점
+<ul>
+<li>잘 디자인되지 않으면 제대로 된 결과를 얻기 힘듬</li>
+<li>일반적인 BI 툴에 적용 불가</li>
+</ul>
+</li>
+</ul>
+<h3 id="shcema-versioning-pattern">Shcema Versioning Pattern</h3>
+<ul>
+<li>상황
+<ul>
+<li>스키마 변경시 다운타임 발생(짧게는 수 시간에서 수 주가 소요)</li>
+<li>모든 도큐먼트를 다 변경하고 싶지 않음</li>
+</ul>
+</li>
+<li>해결책
+<ul>
+<li><code>schema_version</code> 필드 추가</li>
+<li>애플리케이션이 버전 별 처리</li>
+<li>버전 마이그레이션 전략 수립</li>
+</ul>
+</li>
+<li>장점
+<ul>
+<li>다운타임 없음</li>
+<li>데이터 마이그레이션을 제어할 수 있음</li>
+</ul>
+</li>
+<li>단점
+<ul>
+<li>마이그레이션 전까지 인덱스가 두 배로 필요할 수 있음</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="안티-패턴">안티 패턴</h2>
+<h3 id="massive-arrays">Massive arrays</h3>
+<ul>
+<li>상황
+<ul>
+<li>매우 큰 array 를 포함한 도큐먼트</li>
+</ul>
+</li>
+<li>문제점
+<ul>
+<li>도큐먼트 크기 제한 16 MB</li>
+<li>array 크기가 커 짐에 따라 인덱스 성능이 떨어짐</li>
+</ul>
+</li>
+<li>예</li>
+</ul>
+<p>수정 전</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">user</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;huey&#34;</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;items&#34;</span>:
+</span></span><span style="display:flex;"><span>	[
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;dragon sword&#34;</span>
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>		{
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;_id&#34;</span>: <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;titanium shield&#34;</span>
+</span></span><span style="display:flex;"><span>		},
+</span></span><span style="display:flex;"><span>		<span style="color:#960050;background-color:#1e0010">...</span>
+</span></span><span style="display:flex;"><span>	]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>수정 후</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">user</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;huey&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">item</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;user_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;dragon sword&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;_id&#34;</span>: <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;user_id&#34;</span>: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;titanium shield&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">...</span>
+</span></span></code></pre></div><h3 id="massive-number-of-collections">Massive number of collections</h3>
+<ul>
+<li>상황
+<ul>
+<li>너무 많은 컬렉션(안 쓰거나 불필요한)을 추가</li>
+</ul>
+</li>
+<li>문제점
+<ul>
+<li>안 쓰거나 불필요한 인덱스도 자원을 소모함</li>
+<li>WiredTiger 는 컬렉션과 인덱스의 수가 늘어남에 따라 성능이 저하됨</li>
+</ul>
+</li>
+<li>예
+<ul>
+<li>새로 추가되는 데이터를 일별로 구분된 컬렉션으로 관리(<code>player-2021-02-14</code>, <code>player-2021-02-15</code>, <code>player-2021-02-16</code>, &hellip;)</li>
+</ul>
+</li>
+</ul>
+<h3 id="unnecessary-indexes">Unnecessary indexes</h3>
+<ul>
+<li>상황
+<ul>
+<li>거의 안 쓰이거나 컴파운드 인덱스가 이미 커버하는 인덱스를 중복 생성</li>
+</ul>
+</li>
+<li>문제점
+<ul>
+<li>인덱스는 디스크를 차지함</li>
+<li>인덱스는 스토리지 엔진 성능에 영향을 줌</li>
+<li>인덱스는 쓰기 성능에 영향을 줌</li>
+</ul>
+</li>
+<li>해결책
+<ul>
+<li>중복 인덱스 제거
+<ul>
+<li>{ last_name: 1, first_name: 1 } 인덱스가 있으면 { last_name: 1 } 불필요</li>
+</ul>
+</li>
+<li>거의 안 쓰는 인덱스 제거 고려</li>
+</ul>
+</li>
+</ul>
+<h3 id="bloated-documents">Bloated documents</h3>
+<ul>
+<li>상황
+<ul>
+<li>함께 사용되는 경우가 적은 데이터를 한 도큐먼트로 관리</li>
+</ul>
+</li>
+<li>문제점
+<ul>
+<li>WiredTiger 는 자주 쓰는 도큐먼트를 캐시하기 때문에 불필요한 메모리 사용 증가</li>
+</ul>
+</li>
+<li>해결책
+<ul>
+<li>함께 사용되는 경우가 적은 데이터는 Subset Pattern 을 이용해 분리</li>
+</ul>
+</li>
+</ul>
+<h3 id="separating-data-that-is-accessed-together">Separating data that is accessed together</h3>
+<ul>
+<li>상황
+<ul>
+<li>자주 함께 사용되는 데이터를 분리해 놓음</li>
+</ul>
+</li>
+<li>문제점
+<ul>
+<li>$lookup 은 느리고 자원을 많이 사용함</li>
+</ul>
+</li>
+<li>해결책
+<ul>
+<li>자주 함께 사용되는 데이터는 한 도큐먼트에 저장(Extended Reference Pattern 으로 중복 적제하는 것 고려)</li>
+</ul>
+</li>
+</ul>
+<h3 id="case-insensitive-queries-without-case-insensitive-indexes">Case-insensitive queries without case-insensitive indexes</h3>
+<ul>
+<li>상황
+<ul>
+<li>대소문자를 구분하지 않는 쿼리를 대소문자 구분하는 인덱스에 적용</li>
+</ul>
+</li>
+<li>문제점
+<ul>
+<li>$regex 쿼리는 사용가능하지만 비효율적임(인덱스 사용불가)</li>
+<li>Non-$regex 쿼리는 동작하지 않음</li>
+</ul>
+</li>
+<li>해결책
+<ul>
+<li><a href="https://docs.mongodb.com/manual/reference/collation/">MongoDB Collation</a> 을 참고해 필요한 인덱스 생성</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="참고자료">참고자료</h2>
+<ul>
+<li>Building with Patterns: A Summary: <a href="https://www.mongodb.com/blog/post/building-with-patterns-a-summary">https://www.mongodb.com/blog/post/building-with-patterns-a-summary</a></li>
+<li>A Summary of Schema Design Anti-Patterns and How to Spot Them: <a href="https://developer.mongodb.com/article/schema-design-anti-pattern-summary/">https://developer.mongodb.com/article/schema-design-anti-pattern-summary/</a></li>
+</ul>
+ </div>
+    <footer class="post-footer">
+  <div class="post-footer-data">
+    
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date">created: 2021-02-10 | updated: 2025-12-21</div>
+    
+  </div>
+</footer>
+
+<script src="https://utteranc.es/client.js"
+        repo="hueypark/wiki"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  
+
+</div>
+
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+<script async src="/js/mermaid/mermaid.min.js"></script>
+
+</body>
+</html>
+

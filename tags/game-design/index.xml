@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game Design on Marsettler</title>
+    <link>https://marsettler.com/tags/game-design/</link>
+    <description>Recent content in Game Design on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/game-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>물리가 흥미로운 게임들</title>
+      <link>https://marsettler.com/game-design/games-with-interesting-physics/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/game-design/games-with-interesting-physics/</guid>
+      <description>&lt;h3 id=&#34;totally-accurate-battle-simulator&#34;&gt;Totally Accurate Battle Simulator&lt;/h3&gt;&#xA;&lt;p&gt;링크: &lt;a href=&#34;https://landfall.se/&#34;&gt;https://landfall.se/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Totally Accurate는 전혀 아니고 약간 바보같은 연출과 적당한 물리처리로 의외성을 만들어내는 게임입니다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;besiege&#34;&gt;Besiege&lt;/h3&gt;&#xA;&lt;p&gt;링크: &lt;a href=&#34;http://www.besiege.spiderlinggames.co.uk/&#34;&gt;http://www.besiege.spiderlinggames.co.uk/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;모듈화된 부품을 조립하여 공성병기? 를 만드는데, 그 조합의 결과가 물리처리와 합쳐저 놀라운 수준의 의외성을 보여주고 있습니다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

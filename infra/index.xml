@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infras on Marsettler</title>
+    <link>https://marsettler.com/infra/</link>
+    <description>Recent content in Infras on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/infra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Helm Charts</title>
+      <link>https://marsettler.com/infra/helm_charts/</link>
+      <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/infra/helm_charts/</guid>
+      <description>&lt;p&gt;This page based on &lt;a href=&#34;https://helm.sh/docs/topics/charts/&#34;&gt;Charts&lt;/a&gt; for personal notes. If you want to learn more, please visit the official website.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;charts&#34;&gt;Charts&lt;/h1&gt;&#xA;&lt;p&gt;Helm uses a packaging format called charts. A chart is a collection of files that describe a related set of Kubernetes resources. A single chart might be used to deploy something simple, like a memcached pod, or something complex, like a full web app stack with HTTP servers, databases, caches, and so on.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using Helm</title>
+      <link>https://marsettler.com/infra/using_helm/</link>
+      <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/infra/using_helm/</guid>
+      <description>&lt;p&gt;This page based on &lt;a href=&#34;https://helm.sh/docs/intro/using_helm/&#34;&gt;Using Helm&lt;/a&gt; for personal notes. If you want to learn more, please visit the official website.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;theree-big-concepts&#34;&gt;Theree Big Concepts&lt;/h1&gt;&#xA;&lt;p&gt;A &lt;code&gt;Chart&lt;/code&gt; is a Helm package. It contains all of the resource definitions necessary to run an application, tool, or service inside of a Kubernetes cluster. Think of it like the Kubernetes equivalent of a Homebrew formula, an Apt dpkg, or a Yum RPM file.&lt;/p&gt;&#xA;&lt;p&gt;A &lt;code&gt;Repository&lt;/code&gt; is the place where charts can be collected and shared. It&amp;rsquo;s like Perl&amp;rsquo;s CPAN archive or the Fedora Package Database, but for Kubernetes packages.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Helm: The package manager for Kubernetes</title>
+      <link>https://marsettler.com/infra/helm/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/infra/helm/</guid>
+      <description>&lt;h1 id=&#34;what-is-helm&#34;&gt;What is Helm?&lt;/h1&gt;&#xA;&lt;p&gt;Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.&lt;/p&gt;&#xA;&lt;p&gt;Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-purpose-of-helm&#34;&gt;The Purpose of Helm&lt;/h1&gt;&#xA;&lt;p&gt;Helm is a tool for managing Kubernetes packages called charts. Helm can do the following:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create new charts from scratch&lt;/li&gt;&#xA;&lt;li&gt;Package charts into chart archive (tgz) files&lt;/li&gt;&#xA;&lt;li&gt;Interact with chart repositories where charts are stored&lt;/li&gt;&#xA;&lt;li&gt;Install and uninstall charts into an existing Kubernetes cluster&lt;/li&gt;&#xA;&lt;li&gt;Manage the release cycle of charts that have been installed with Helm&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;For Helm, there are three important concepts:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

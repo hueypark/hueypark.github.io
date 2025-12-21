@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raft on Marsettler</title>
+    <link>https://marsettler.com/tags/raft/</link>
+    <description>Recent content in Raft on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/raft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raft Consensus Algorithm</title>
+      <link>https://marsettler.com/distributed-system/raft-consensus-algorithm/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/distributed-system/raft-consensus-algorithm/</guid>
+      <description>&lt;p&gt;Raft Consensus Algorithm은 분산 환경에서 사용할 수 있는 합의 알고리즘입니다. 이를 사용해 분산 환경에서 모든 노드의 상태를 동일하게 유지가능합니다.&lt;/p&gt;&#xA;&lt;p&gt;자세한 설명은 &lt;a href=&#34;https://raft.github.io/&#34;&gt;The Raft Consensus Algorithm&lt;/a&gt; 에서 볼 수 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://etcd.io/&#34;&gt;etcd&lt;/a&gt; 안에 훌륭한 &lt;a href=&#34;https://github.com/etcd-io/etcd/tree/master/raft&#34;&gt;Raft 라이브러리&lt;/a&gt;가 있습니다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grpc on Marsettler</title>
+    <link>https://marsettler.com/tags/grpc/</link>
+    <description>Recent content in Grpc on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/grpc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gRPC</title>
+      <link>https://marsettler.com/distributed-system/grpc/</link>
+      <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/distributed-system/grpc/</guid>
+      <description>&lt;h1 id=&#34;grpc-101&#34;&gt;gRPC 101&lt;/h1&gt;&#xA;&lt;p&gt;간단하고 빠르게 게임서버 만들기&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;grpc&#34;&gt;gRPC&lt;/h2&gt;&#xA;&lt;p&gt;A high performance,&lt;/p&gt;&#xA;&lt;p&gt;open source&lt;/p&gt;&#xA;&lt;p&gt;universal&lt;/p&gt;&#xA;&lt;p&gt;RPC framework&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;rpcremote-procedure-call&#34;&gt;RPC(Remote procedure call)&lt;/h3&gt;&#xA;&lt;p&gt;원격 프로시저 호출&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;왜-grpc-인가&#34;&gt;왜 gRPC 인가?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Simple service definition&lt;/li&gt;&#xA;&lt;li&gt;Start quickly and scale&lt;/li&gt;&#xA;&lt;li&gt;Works across languages and platforms&lt;/li&gt;&#xA;&lt;li&gt;Bi-directional streaming and integrated auth&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;simple-service-definition&#34;&gt;Simple service definition&lt;/h3&gt;&#xA;&lt;p&gt;강력한 바이너리 직렬화 툴셋인,&lt;/p&gt;&#xA;&lt;p&gt;Protocol Buffers 를 활용해 서비스를 정의함&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;start-quickly-and-scale&#34;&gt;Start quickly and scale&lt;/h3&gt;&#xA;&lt;p&gt;적은 코드로 쉽게 개발을 시작한 후,&lt;/p&gt;&#xA;&lt;p&gt;대규모 요청을 처리하게 확장가능&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;works-across-languages-and-platforms&#34;&gt;Works across languages and platforms&lt;/h3&gt;&#xA;&lt;p&gt;자동으로 생성되는 클라이언트, 서버 stubs 를 사용해&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

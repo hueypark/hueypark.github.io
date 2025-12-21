@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multithread on Marsettler</title>
+    <link>https://marsettler.com/tags/multithread/</link>
+    <description>Recent content in Multithread on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/multithread/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(번역) Go 스케줄링 파트 3</title>
+      <link>https://marsettler.com/posts/2018-12-08-scheduling-in-go-part3/</link>
+      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-12-08-scheduling-in-go-part3/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html&#34;&gt;https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;프렐류드&#34;&gt;프렐류드&lt;/h3&gt;&#xA;&lt;p&gt;Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 동시성에 중점을 둡니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) Go 스케줄링 파트 2</title>
+      <link>https://marsettler.com/posts/2018-10-03-scheduling-in-go-part2/</link>
+      <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-03-scheduling-in-go-part2/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html&#34;&gt;https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;프렐류드&#34;&gt;프렐류드&lt;/h3&gt;&#xA;&lt;p&gt;Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 Go 스케줄러에 중점을 둡니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) Go 스케줄링 파트 1</title>
+      <link>https://marsettler.com/posts/2018-10-02-scheduling-in-go-part1/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-02-scheduling-in-go-part1/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html&#34;&gt;https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;프렐류드&#34;&gt;프렐류드&lt;/h3&gt;&#xA;&lt;p&gt;Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 OS 스케줄러에 중점을 둡니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>std::shared_ptr 는 쓰레드 세이프하지 않음</title>
+      <link>https://marsettler.com/std-shared-ptr-is-not-thread-safe/</link>
+      <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/std-shared-ptr-is-not-thread-safe/</guid>
+      <description>&lt;p&gt;std::shared_ptr 는 쓰레드 세이프하지 않습니다. 관련 예제와 볼만한 링크를 남깁니다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/posts/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/">
+<meta property="og:url" content="https://marsettler.com/posts/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/">
+  <meta property="og:site_name" content="Marsettler">
+  <meta property="og:title" content="(번역) 카크로치디비(CockroachDB) 블로그 / 왜 Go가 CockroachDB에 올바른 선택인가">
+  <meta property="og:description" content="원문: https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-10-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-21T15:10:18+09:00">
+    <meta property="article:tag" content="Go">
+    <meta property="article:tag" content="Cockroachdb">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="(번역) 카크로치디비(CockroachDB) 블로그 / 왜 Go가 CockroachDB에 올바른 선택인가">
+  <meta name="twitter:description" content="원문: https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/">
+
+
+  <meta itemprop="name" content="(번역) 카크로치디비(CockroachDB) 블로그 / 왜 Go가 CockroachDB에 올바른 선택인가">
+  <meta itemprop="description" content="원문: https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/">
+  <meta itemprop="datePublished" content="2018-10-21T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-21T15:10:18+09:00">
+  <meta itemprop="wordCount" content="268">
+  <meta itemprop="keywords" content="Go,Cockroachdb">
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+<title>
+
+
+     (번역) 카크로치디비(CockroachDB) 블로그 / 왜 Go가 CockroachDB에 올바른 선택인가 
+
+</title>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9117575221392760"
+     crossorigin="anonymous"></script>
+
+<script>
+(function(a_,i_,r_,_b,_r,_i,_d,_g,_e){if(!a_[_b]){var n=function(){var c=i_.createElement(r_);c.onerror=function(){g.queue.filter(function(a){return 0<=_d.indexOf(a[0])}).forEach(function(a){a=a[1];a=a[a.length-1];"function"===typeof a&&a("error occur when load airbridge")})};c.async=1;c.src=_r;"complete"===i_.readyState?i_.head.appendChild(c):a_.addEventListener("load",function h(){a_.removeEventListener("load",h);i_.head.appendChild(c)})},g={queue:[],get isSDKEnabled(){return!1}};_i.concat(_d).forEach(function(c){var a=c.split("."),h=a.pop();a.reduce(function(p,q){return p[q]=p[q]||{}},g)[h]=function(){g.queue.push([c,arguments])}});a_[_b]=g;0<_g?(_b=new (a_.XDomainRequest||a_.XMLHttpRequest),_i=function(){},_b.open("GET",_r),_b.timeout=_g,_b.onload=function(){n()},_b.onerror=_i,_b.onprogress=_i,_b.ontimeout=_i,_b.send()):n()}})(window,document,"script","airbridge","//static.airbridge.io/sdk/latest/airbridge.min.js","init startTracking stopTracking fetchResource openBanner setBanner setDownload setDownloads openDeeplink setDeeplinks sendWeb setUserAgent setMobileAppData setUserID clearUserID setUserEmail clearUserEmail setUserPhone clearUserPhone setUserAttribute removeUserAttribute clearUserAttributes setUserAlias removeUserAlias clearUserAlias clearUser setUserId setUserAttributes addUserAlias setDeviceAlias removeDeviceAlias clearDeviceAlias setDeviceIFV setDeviceIFA setDeviceGAID events.send events.signIn events.signUp events.signOut events.purchased events.addedToCart events.productDetailsViewEvent events.homeViewEvent events.productListViewEvent events.searchResultViewEvent".split(" "),["events.wait","createTouchpoint"],0);
+
+airbridge.init({
+    app: 'marsettler',
+    webToken: 'fc5d8317920041d19c0f29af5eba27e8',
+})
+</script>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    <a class="nav-item" href="/tags"><div class="nav-item-title">Tags</div></a>
+    
+    
+    <a class="nav-item" href="/wiki/"><div class="nav-item-title">Wiki</div></a>
+    
+    <a class="nav-item" href="/about-me/"><div class="nav-item-title">About Me</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> (번역) 카크로치디비(CockroachDB) 블로그 / 왜 Go가 CockroachDB에 올바른 선택인가 </h1>
+    <div class="content"> <p>원문: <a href="https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/">https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/</a></p>
+<p>Written by <a href="https://www.cockroachlabs.com/author/jessica-edwards/">Jessica Edwards</a> on Nov 3, 2015</p>
+<p><img src="/post/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/cockroach_gopher_flag_sticker.png" alt=""></p>
+<p>많은 개발자들이 우리게게 묻는 첫 번째 질문은, 가비지 컬렉터가 있는 Go언어로 분산 데이터베이스를 작성하는 것에 대한 경험입니다. JVM 가비지 컬렉션은 꽤 비싼데, Go로 만드는 것은 CockroachDB의 성능을 위험에 처하게 할 수 있지 않은가요?</p>
+<p>사실, 고성능 분산 시스템을 만들 때에는, C++, Java 및 Go와 같은 소수의 언어만 사용할 수 있습니다. Java는 성능 문제로 인해 매력이 없으며, 지금까지 많은 사람들이 C++로 개발해왔지만 자체 라이브러리 제작에 많은 노력이 필요하여, 작업이 훨신 복잡해집니다.</p>
+<p>창립자를 포함한 대부분의 개발자에게 Go언어는 새로운 언어였지만, Go의 라이브러리, 인터페이스 및 툴 지원은 CockroachDB를 위해 적절한 선택이었습니다.</p>
+<p>Go가 잘 맞다고 느끼는 이유는 언어에 대한 경험의 부족이 컨트리뷰터에게 장벽이 되지 않기 때문입니다. Go는 Java 또는 C++ 경험이 있는 모든 사람이 신속하게 사용할 수 있습니다. 지금은 프로젝트에 67명의 컨트리뷰터가 생겼고, CockroachDB는 빈 프로젝트에서 125,000줄(자동생성을 제외한)의 Go 코드로 성장했습니다. 코드 복잡성을 관리하는 것은 언어 선택에 명백한 영향을 주며, 오픈소스일 경우 특히 중요합니다.</p>
+<p>Go가 C++ 또는 Java보다 얼마나 큰 생산성을 내는지 정량화하기는 어렵습니다. 하지만 Go는 단순성 및 직교성에 중점을 두고 대규모 코드로 확장할 수 있게 디자인되었습니다. 강제된 코딩 스타일, 간단하고 자동화된 import 관리, 다양하게 제공되는 linter, 간결하고(최소화된) 문법 등, Go가 가진 모든 특성은 깔끔하고, 이해하기 쉬운 코드를 위해 중요합니다.</p>
+<p>Java와 비교하여 인터페이스 추가시점(초기화 시점이 아니라)이 자유롭기 때문에, 추상화보다 구현에 집중할 수 있었습니다. C++보다 좋은 점은 자동 메모리 관리와 단일화된 작업방식 제공이었습니다. 동기화를 위해 채널을 효율적으로 사용할 수 있었습니다.</p>
+<p>물론 성능에 관한 문제가 아직 Go에 남아있습니다. 아직 CockroachDB의 핵심 기능을 구현중이기 때문에 성능 프로파일링은 대부분 나오지 않았습니다. 그러나 과거 Java에서 Go로 큰 시스템을 포팅하였을 때, 메모리 사용량과 가비지 컬렉션 오버헤드를 크게 줄일 수 있었던 경험이 있습니다.</p>
+<p><a href="https://github.com/cockroachdb/cockroach/issues/2132">베타버전</a>이 완성되고 성능개선에 집중하게 되면, 후속 결과를 공유드리겠습니다.</p> </div>
+    <footer class="post-footer">
+  <div class="post-footer-data">
+    
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+  
+</div>
+
+    <div class="date">created: 2018-10-21 | updated: 2025-12-21</div>
+    
+  </div>
+</footer>
+
+<script src="https://utteranc.es/client.js"
+        repo="hueypark/wiki"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  
+
+</div>
+
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+<script async src="/js/mermaid/mermaid.min.js"></script>
+
+</body>
+</html>
+

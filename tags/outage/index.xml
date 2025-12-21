@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Outage on Marsettler</title>
+    <link>https://marsettler.com/tags/outage/</link>
+    <description>Recent content in Outage on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/outage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2020년 3월 6일 쿠키런: 킹덤 긴급점검</title>
+      <link>https://marsettler.com/outage/2021-03-06-cookierun-kingdom-server-fault/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/outage/2021-03-06-cookierun-kingdom-server-fault/</guid>
+      <description>&lt;p&gt;쿠키런: 킹덤 긴급점검이 있었습니다. 접속자 수 증대와 함께 증가하는 부하를 개선했는데, 어떤 작업이 있었는지 궁금합니다.&lt;/p&gt;&#xA;&lt;h1 id=&#34;개요&#34;&gt;개요&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;업데이트를 위한 점검(06:00~11:00)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;점검 내용: 길드 시스템, 신규 쿠키 추가 및 오류사항 수정 등&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;15:00시 서버 안정화를 위한 긴급 점검 시작&#xA;&lt;ul&gt;&#xA;&lt;li&gt;갑작스러운 이용자 수 증가가 원인이라고 공지&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;22:00시 긴급 점검 완료&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h1 id=&#34;채용공고에서-흥미로운-부분&#34;&gt;채용공고에서 흥미로운 부분&lt;/h1&gt;&#xA;&lt;p&gt;우대조건에 아래와 같은 내용이 있는데 어떤 마음인지 알 것 같습니다.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;try-catch 와 null 에 현실자각타임이 오신 분&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;평소 흥미롭게 보던 기술스택이 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2020년 2월 19일 쿠키런: 킹덤 장기 점검(AWS)</title>
+      <link>https://marsettler.com/outage/2021-02-21-cookierun-kingdom-server-faultaws/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/outage/2021-02-21-cookierun-kingdom-server-faultaws/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;&#xA;&lt;p&gt;2월 19일(금) 23:22 ~ 2월 20(토) 19:00 까지 쿠키런: 킹덤 긴급 점검이 있었습니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;원인&#34;&gt;원인&lt;/h2&gt;&#xA;&lt;p&gt;아마존웹서비스 장애로 인한 긴급 점검이라고 안내하고 있습니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;특이사항&#34;&gt;특이사항&lt;/h2&gt;&#xA;&lt;p&gt;동일한 원인(AWS 도쿄 리전 장애)으로 의심되는 리그 오브 레전드의 경우 2월 20일 00:45 에 정상화되었는데, 왜 19:00 까지&#xA;점검이 지속되었는지 궁금합니다. 아마 서버 아키텍처의 유연성 차이 또는 데이터베이스의 HA 구성 차이일 것으로 짐작됩니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;참고자료&#34;&gt;참고자료&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;쿠키런: 킹덤 [안내] 아마존 웹서비스 데이터센터의 장애 발생 안내(정상화): &lt;a href=&#34;https://cafe.naver.com/crkingdom/343860&#34;&gt;https://cafe.naver.com/crkingdom/343860&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;쿠키런: 킹덤 [안내] 아마존 웹서비스 장애 정상화 및 서버 오픈 안내(2/20, 19:00): &lt;a href=&#34;https://cafe.naver.com/crkingdom/375034&#34;&gt;https://cafe.naver.com/crkingdom/375034&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;리그 오브 레전드 2021년 2월 19일 게임 이용 장애 현상 안내 (정상화): &lt;a href=&#34;https://kr.leagueoflegends.com/ko-kr/news/notices/2021nyeon-2wol-19il-geim-iyong-jangae-hyeonsang-annae-jeongsanghwa/&#34;&gt;https://kr.leagueoflegends.com/ko-kr/news/notices/2021nyeon-2wol-19il-geim-iyong-jangae-hyeonsang-annae-jeongsanghwa/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;44BITS AWS 도쿄 리전 장애 발생, 특정 AZ 일부 구역의 온도 상승이 원인 &lt;a href=&#34;https://www.44bits.io/ko/post/news--2021-02-20-aws-ap-northeast-1-outage&#34;&gt;https://www.44bits.io/ko/post/news--2021-02-20-aws-ap-northeast-1-outage&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>로블록스 장애 디브리핑(Roblox Return to Service 10/28-10/31 2021)</title>
+      <link>https://marsettler.com/outage/2022-01-20-roblox-outage-debriefing/</link>
+      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/outage/2022-01-20-roblox-outage-debriefing/</guid>
+      <description>&lt;p&gt;로블록스는 2021년 10월 28일부터 10월 31일까지 73시간의 장애 대한 디브리핑을 하고 자사 블로그에 공개했습니다.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;최근의 개선사항과 계획된 작업들 중 인상적인 내용 몇가지를 기록합니다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;모니터링-시스템-개선&#34;&gt;모니터링 시스템 개선&lt;/h3&gt;&#xA;&lt;p&gt;모니터링 시스템이 메인 시스템 간 순환 종속성 제거했습니다.&#xA;메인 시스템 장애가 모니터링 시스템 장애로 이어졌고, 그로 인해 장애 원인를 찾을 데이터를 빠르게 확보할 수 없었음&lt;/p&gt;&#xA;&lt;p&gt;장애의 주 원인(Consul and BoltDB) 모니터링 시스템을 확장했습니다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;서비스-시작과-설정-관리방식-개선&#34;&gt;서비스 시작과 설정 관리방식 개선&lt;/h3&gt;&#xA;&lt;p&gt;서비스 재시작 시 서비스에 필요한 캐시 배치, 웜업을 위해 서비스 복구가 느려졌습니다.&#xA;이 프로세스를 자동화하고 오류가 덜 발생하게 하기 위해 도구와 프로세스를 개발하고 있습니다.&#xA;특히 캐시 배포 매커니즘을 재설계했습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2020년 1월 25일 쿠키런: 킹덤 장기 점검</title>
+      <link>https://marsettler.com/outage/2021-01-25-cookierun-kingdom-server-fault/</link>
+      <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/outage/2021-01-25-cookierun-kingdom-server-fault/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;&#xA;&lt;p&gt;쿠키런: 킹덤이 오픈 후 알 수 없는 이유로 오랜 시간 점검하였음&lt;/p&gt;&#xA;&lt;p&gt;총 점검 시간: 39시간 40분(2021-01-25 16:50:00 ~ 2021-01-25 03:30:00)&lt;/p&gt;&#xA;&lt;h2 id=&#34;원인&#34;&gt;원인&lt;/h2&gt;&#xA;&lt;p&gt;기술적인 원인은 공개하지 않았음&lt;/p&gt;&#xA;&lt;p&gt;나중에라도 데브시스터즈에서 공유해주시면 흥미로울 것 같음&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;여러분께 &amp;lt;쿠키런: 킹덤&amp;gt;을 선보이며 여러 가지 상황에 대비할 준비를 해왔지만 이번에 발생한 오류는 예상치 못한 치명적인 문제였고, 킹덤팀에서도 오랜 시간을 들여 수정하게 되었습니다.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;점검-보상&#34;&gt;점검 보상&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;크리스탈 12,000개&lt;/li&gt;&#xA;&lt;li&gt;스태미너 젤리 50개&lt;/li&gt;&#xA;&lt;li&gt;킹덤 아레나 티켓 30개&lt;/li&gt;&#xA;&lt;li&gt;코인 50,000개&lt;/li&gt;&#xA;&lt;li&gt;가속원 30분 5개&lt;/li&gt;&#xA;&lt;li&gt;경험의 별사탕 레벨 4 100개&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;긴급 점검 보상은 2021년 1월 25일(월) 점검 전까지 생성된 계정에 한하여 지급됩니다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

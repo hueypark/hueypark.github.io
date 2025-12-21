@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marsettlers on Marsettler</title>
+    <link>https://marsettler.com/marsettler/</link>
+    <description>Recent content in Marsettlers on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/marsettler/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust Game Dev Reads</title>
+      <link>https://marsettler.com/marsettler/rust-game-dev-reads/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/marsettler/rust-game-dev-reads/</guid>
+      <description>&lt;h1 id=&#34;news&#34;&gt;News&lt;/h1&gt;&#xA;&lt;h2 id=&#34;vleuevleue_&#34;&gt;&lt;a href=&#34;https://github.com/vleue/vleue_navigator&#34;&gt;vleue/vleue_navigator&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Navigation for Bevy with NavMesh&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;avian-physics-03-by-joona-aalto&#34;&gt;&lt;a href=&#34;https://joonaa.dev/blog/08/avian-0-3&#34;&gt;Avian Physics 0.3 by Joona Aalto&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;My highlights:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Additionally, a new tangent_velocity property is provided to emulate the artificial movement of contact surfaces, making it possible to simulate scenarios such as &lt;code&gt;conveyor belts&lt;/code&gt; or speed pads.&lt;/li&gt;&#xA;&lt;li&gt;Physics Picking Filter&lt;/li&gt;&#xA;&lt;li&gt;Physics Diagnostics&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;development-environment&#34;&gt;Development Environment&lt;/h1&gt;&#xA;&lt;h2 id=&#34;fixing-rust-memory-allocation-slowdown-in-vs-code-on-windows&#34;&gt;&lt;a href=&#34;https://zaynar.co.uk/posts/vs-code-debug-heap/&#34;&gt;Fixing Rust memory allocation slowdown in VS Code on Windows&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Mars</title>
+      <link>https://marsettler.com/marsettler/mars/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/marsettler/mars/</guid>
+      <description>&lt;h1 id=&#34;terraforming-mars&#34;&gt;Terraforming Mars&lt;/h1&gt;&#xA;&lt;h2 id=&#34;building-a-marsbase-is-a-horrible-idea-lets-do-it-by-kurzgesagt&#34;&gt;&lt;a href=&#34;https://youtu.be/uqKGREZs6-w&#34;&gt;Building a Marsbase is a Horrible Idea: Let’s do it! by Kurzgesagt&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;how-to-terraform-mars---with-lasers-by-kurzgesagt&#34;&gt;&lt;a href=&#34;https://youtu.be/HpcTJW4ur54&#34;&gt;How to Terraform Mars - WITH LASERS by Kurzgesagt&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;nasa-researchers-discover-what-happened-to-mars-water-by-joshua-shavit&#34;&gt;&lt;a href=&#34;https://www.thebrighterside.news/discoveries/nasa-researchers-discover-what-happened-to-mars-water/&#34;&gt;NASA researchers discover what happened to Mars’ water by Joshua Shavit&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Bevy 101 - ECS 부터 itch.io 배포까지</title>
+      <link>https://marsettler.com/marsettler/bevy-101-from-ecs-to-itch-io-deployment/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/marsettler/bevy-101-from-ecs-to-itch-io-deployment/</guid>
+      <description>&lt;h1 id=&#34;bevy-101---ecs-부터-itchio-배포까지&#34;&gt;Bevy 101 - ECS 부터 itch.io 배포까지&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;박재완&#34;&gt;박재완&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;여러 게임회사를 다닌 후&lt;/li&gt;&#xA;&lt;li&gt;지금은 &lt;a href=&#34;http://abit.ly/luft&#34;&gt;OLAP 데이터베이스&lt;/a&gt; 개발하고 있음&lt;/li&gt;&#xA;&lt;li&gt;Bevy 로 캐주얼 게임 만들기 시도 중&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bevy Game Engine 기초&lt;/li&gt;&#xA;&lt;li&gt;itch.io 에 게임 배포하기&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;bevy&#34;&gt;Bevy&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A refreshingly simple data-driven game engine built in Rust&lt;/li&gt;&#xA;&lt;li&gt;Free and Open Source Forever!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://bevyengine.org/&#34;&gt;https://bevyengine.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;bevy-주요-기능&#34;&gt;Bevy 주요 기능&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Data Driven&lt;/li&gt;&#xA;&lt;li&gt;2D, 3D Renderer, Render Graph, Animation&lt;/li&gt;&#xA;&lt;li&gt;Cross Platform&lt;/li&gt;&#xA;&lt;li&gt;Bevy UI&lt;/li&gt;&#xA;&lt;li&gt;Scenes&lt;/li&gt;&#xA;&lt;li&gt;Sound&lt;/li&gt;&#xA;&lt;li&gt;Hot Reloading&lt;/li&gt;&#xA;&lt;li&gt;Productive Compile Times&lt;/li&gt;&#xA;&lt;li&gt;Free and Open Source&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;data-driven&#34;&gt;Data Driven&lt;/h3&gt;&#xA;&lt;p&gt;All engine and game logic uses Bevy ECS, a custom Entity Component System&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

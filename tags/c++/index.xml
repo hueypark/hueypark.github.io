@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on Marsettler</title>
+    <link>https://marsettler.com/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; to Go</title>
+      <link>https://marsettler.com/go/c&#43;&#43;-to-go/</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/go/c&#43;&#43;-to-go/</guid>
+      <description>&lt;h1 id=&#34;c-to-go&#34;&gt;C++ to Go&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introducing-ziegel&#34;&gt;Introducing Ziegel&lt;/h2&gt;&#xA;&lt;p&gt;박재완&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;luft&#34;&gt;Luft&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ziegel and TrailDB&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;luft-1&#34;&gt;&lt;a href=&#34;https://engineering.ab180.co/stories/introducing-luft&#34;&gt;Luft&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;OLAP database for analize the analyzing user behavior in real-time&lt;/li&gt;&#xA;&lt;li&gt;Use TrailDB as a storage&lt;/li&gt;&#xA;&lt;li&gt;Written in C/C++ and Go&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;traildb&#34;&gt;&lt;a href=&#34;https://traildb.io/&#34;&gt;TrailDB&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;TrailDB is an efficient tool for storing and querying series of events&lt;/li&gt;&#xA;&lt;li&gt;Written in C&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;ziegel&#34;&gt;&lt;a href=&#34;https://engineering.ab180.co/stories/traildb-to-ziegel&#34;&gt;Ziegel&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;New storage engine for the Luft&lt;/li&gt;&#xA;&lt;li&gt;Written in Go&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why&#34;&gt;Why?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;TrailDB has been a suitable solution for the Luft&lt;/li&gt;&#xA;&lt;li&gt;But development was halted in 2019&lt;/li&gt;&#xA;&lt;li&gt;Issues with peformance and productivity&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;issues&#34;&gt;Issues&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Inefficient multi-core utilization&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// finalize. this could take a while with idle CPU usage but don&amp;#39;t panic.&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// it&amp;#39;s not freeze;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// it&amp;#39;s because TrailDB indexing process is not parallelized yet :(&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;Row store data structure&lt;/li&gt;&#xA;&lt;li&gt;Use multiple language: C/C++ and Go&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;journey-for-the-migration&#34;&gt;Journey for the migration&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Add more tests for consistency verification&lt;/li&gt;&#xA;&lt;li&gt;Add interface for engine replacement&#xA;&lt;ul&gt;&#xA;&lt;li&gt;With this interface, we can easily replace the engine(partial or full)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Implement storage engine&lt;/li&gt;&#xA;&lt;li&gt;Peformance tuning&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2x fater for the ingestion, 1.2 slower for the query&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;peformance-tuning&#34;&gt;Peformance tuning&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;measuring-performance&#34;&gt;Measuring performance&lt;/h3&gt;&#xA;&lt;p&gt;Go provides great tools for measuring performance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>C&#43;&#43; good reads</title>
+      <link>https://marsettler.com/c&#43;&#43;/good-reads/</link>
+      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/c&#43;&#43;/good-reads/</guid>
+      <description>&lt;h1 id=&#34;c-stl-performance-example-with-shared_&#34;&gt;&lt;a href=&#34;https://blog.lunapiece.net/posts/C++_STL_Performance/&#34;&gt;C++ STL performance example with shared_ptr&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;I just have to say this and move on&amp;hellip; If you think it&amp;rsquo;s okay to just use the STL for a project that doesn&amp;rsquo;t need this level of optimization or performance, think again.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;It is highly likely that your project is not suitable for writing Non GC Native language, so it is recommended to replace it with a VM-based language. I don&amp;rsquo;t use C++ anymore for 99% of my projects. Most of them are solved with C#, Kotlin, and TypeScript.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>컴파일 시점에 printf 오류 검사</title>
+      <link>https://marsettler.com/unreal-engine/compile_time_log_validate/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/unreal-engine/compile_time_log_validate/</guid>
+      <description>&lt;p&gt;언리얼 엔진의 UE_LOG 매크로는 컴파일 시점에 입력값의 오류를 검사하지 않습니다.&lt;/p&gt;&#xA;&lt;p&gt;따라서 실행 중 로그를 기록하려다 의도하지 않은 동작(크래시 등)을 발생시킬 위험이 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;예)&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;FString temp;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;UE_LOG(LogClass, Log, TEXT(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%d, %s&amp;#34;&lt;/span&gt;), &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;temp);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;_stprintf_s&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://marsettler.com/c&#43;&#43;/c&#43;&#43;/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/c&#43;&#43;/c&#43;&#43;/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://marsettler.com/c++/dear-my-c++&#34;&gt;친애하는 나의 C++&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/std-shared-ptr-is-not-thread-safe&#34;&gt;std::shared_ptr is not thread safe&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/c++/good-reads&#34;&gt;C++ 좋은 읽을거리&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>std::shared_ptr 는 쓰레드 세이프하지 않음</title>
+      <link>https://marsettler.com/std-shared-ptr-is-not-thread-safe/</link>
+      <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/std-shared-ptr-is-not-thread-safe/</guid>
+      <description>&lt;p&gt;std::shared_ptr 는 쓰레드 세이프하지 않습니다. 관련 예제와 볼만한 링크를 남깁니다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

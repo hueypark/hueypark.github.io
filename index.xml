@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marsettler</title>
+    <link>https://marsettler.com/</link>
+    <description>Recent content on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rocket Lab</title>
+      <link>https://marsettler.com/rklb/</link>
+      <pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/rklb/</guid>
+      <description>&lt;h1 id=&#34;news&#34;&gt;News&lt;/h1&gt;&#xA;&lt;h2 id=&#34;november-2025&#34;&gt;November 2025&lt;/h2&gt;&#xA;&lt;h3 id=&#34;i-believe-rocket-lab-could-lose-half-its-value-buy-it-then-by-david-h-lerner&#34;&gt;&lt;a href=&#34;https://seekingalpha.com/article/4833512-i-believe-rocketlab-stock-could-lose-half-its-value-buy-it-then&#34;&gt;I Believe Rocket Lab Could Lose Half Its Value, Buy It Then by David H. Lerner&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Summary&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Rocket Lab is a high-potential space company led by visionary CEO Peter Beck, expanding into defense and satellite markets.&lt;/li&gt;&#xA;&lt;li&gt;RKLB posted record Q2 revenue of $144M, up 36% YoY, and is executing well on contracts, including a $515M Space Development Agency project.&lt;/li&gt;&#xA;&lt;li&gt;The upcoming Neutron rocket launch is a major catalyst, but repeated delays and high expectations create significant short-term risk for the stock.&lt;/li&gt;&#xA;&lt;li&gt;RKLB is currently priced for perfection (P/S 52x); a failed Neutron launch could drive shares lower, presenting a potential buying opportunity.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>Java good reads</title>
+      <link>https://marsettler.com/java-good-read/</link>
+      <pubDate>Tue, 07 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/java-good-read/</guid>
+      <description>&lt;h2 id=&#34;how-netflix-uses-java---2025-edition-by-paul-bakker&#34;&gt;&lt;a href=&#34;https://youtu.be/XpunFFS-n8I&#34;&gt;How Netflix Uses Java - 2025 Edition by Paul Bakker&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Impressive things.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Virtual Threads&lt;/li&gt;&#xA;&lt;li&gt;Web MVC or WebFlux&lt;/li&gt;&#xA;&lt;li&gt;Comparison&#xA;&lt;ul&gt;&#xA;&lt;li&gt;GraphQL&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Flexible schema to query data&lt;/li&gt;&#xA;&lt;li&gt;Think in &amp;ldquo;data&amp;rdquo;, not in &amp;ldquo;methods&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;gRPC&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Highly performant Server-to-Server calls&lt;/li&gt;&#xA;&lt;li&gt;Think &amp;ldquo;methods&amp;rdquo;, not &amp;ldquo;data&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;REST 🪦&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Apache DataFusion</title>
+      <link>https://marsettler.com/apache-datafusion/</link>
+      <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/apache-datafusion/</guid>
+      <description>&lt;h2 id=&#34;using-external-indexes-metadata-stores-catalogs-and-caches-to-accelerate-queries-on-apache-parquet-by-andrew-lamb-influxdata&#34;&gt;&lt;a href=&#34;https://datafusion.apache.org/blog/2025/08/15/external-parquet-indexes/&#34;&gt;Using External Indexes, Metadata Stores, Catalogs and Caches to Accelerate Queries on Apache Parquet by Andrew Lamb (InfluxData)&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;embedding-user-defined-indexes-in-apache-parquet-files-by-qi-zhu-cloudera-jigao-luo-systems-group-at-tu-darmstadt-and-andrew-lamb-influxdata&#34;&gt;&lt;a href=&#34;https://datafusion.apache.org/blog/2025/07/14/user-defined-parquet-indexes/&#34;&gt;Embedding User-Defined Indexes in Apache Parquet Files by Qi Zhu (Cloudera), Jigao Luo (Systems Group at TU Darmstadt), and Andrew Lamb (InfluxData)&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;apache-datafusion-4900-released&#34;&gt;&lt;a href=&#34;https://datafusion.apache.org/blog/2025/07/28/datafusion-49.0.0/&#34;&gt;Apache DataFusion 49.0.0 Released&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Highlights I found impressive&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dynamic Filters and TopK pushdown&lt;/li&gt;&#xA;&lt;li&gt;Async User-Defined Functions (ask_llm?!)&lt;/li&gt;&#xA;&lt;li&gt;Better Cancellation for Certain Long-Running Queries&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Sailing Into the AI Storm, Helmet Fastened</title>
+      <link>https://marsettler.com/posts/2025-07-19-sailing-into-the-ai-storm-helmet-fastened/</link>
+      <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2025-07-19-sailing-into-the-ai-storm-helmet-fastened/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://marsettler.com/post/2025-07-19-sailing-into-the-ai-storm-helmet-fastened/sailing.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I still remember learning to sail during my days as a midshipman. One moment stands out clearly: opening the sail and feeling the wind take hold, pushing the boat forward. Unlike rowing, where every stroke relies on your own strength, sailing carried me farther than I could ever go alone, lifted and driven by the power of the wind.&lt;/p&gt;&#xA;&lt;p&gt;But the wind wasn&amp;rsquo;t always kind. Without warning, the boom swung around and hit me on the head. I was lucky to avoid serious injury, but the impact stayed with me. That was when I first realized: if you want to harness the wind, you need a helmet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Investment</title>
+      <link>https://marsettler.com/investment/</link>
+      <pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/investment/</guid>
+      <description>&lt;h2 id=&#34;hybe-bang-si-hyuk-scam-controversy-how-did-he-pocket-400-billion-krw-by-kim-soo-heon&#34;&gt;&lt;a href=&#34;https://youtu.be/6yQdpIGzrUM&#34;&gt;HYBE Bang Si-hyuk Scam Controversy: How Did He Pocket 400 Billion KRW? by Kim Soo-heon&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Rust Game Dev Reads</title>
+      <link>https://marsettler.com/marsettler/rust-game-dev-reads/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/marsettler/rust-game-dev-reads/</guid>
+      <description>&lt;h1 id=&#34;news&#34;&gt;News&lt;/h1&gt;&#xA;&lt;h2 id=&#34;vleuevleue_&#34;&gt;&lt;a href=&#34;https://github.com/vleue/vleue_navigator&#34;&gt;vleue/vleue_navigator&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Navigation for Bevy with NavMesh&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;avian-physics-03-by-joona-aalto&#34;&gt;&lt;a href=&#34;https://joonaa.dev/blog/08/avian-0-3&#34;&gt;Avian Physics 0.3 by Joona Aalto&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;My highlights:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Additionally, a new tangent_velocity property is provided to emulate the artificial movement of contact surfaces, making it possible to simulate scenarios such as &lt;code&gt;conveyor belts&lt;/code&gt; or speed pads.&lt;/li&gt;&#xA;&lt;li&gt;Physics Picking Filter&lt;/li&gt;&#xA;&lt;li&gt;Physics Diagnostics&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;development-environment&#34;&gt;Development Environment&lt;/h1&gt;&#xA;&lt;h2 id=&#34;fixing-rust-memory-allocation-slowdown-in-vs-code-on-windows&#34;&gt;&lt;a href=&#34;https://zaynar.co.uk/posts/vs-code-debug-heap/&#34;&gt;Fixing Rust memory allocation slowdown in VS Code on Windows&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Mars</title>
+      <link>https://marsettler.com/marsettler/mars/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/marsettler/mars/</guid>
+      <description>&lt;h1 id=&#34;terraforming-mars&#34;&gt;Terraforming Mars&lt;/h1&gt;&#xA;&lt;h2 id=&#34;building-a-marsbase-is-a-horrible-idea-lets-do-it-by-kurzgesagt&#34;&gt;&lt;a href=&#34;https://youtu.be/uqKGREZs6-w&#34;&gt;Building a Marsbase is a Horrible Idea: Let’s do it! by Kurzgesagt&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;how-to-terraform-mars---with-lasers-by-kurzgesagt&#34;&gt;&lt;a href=&#34;https://youtu.be/HpcTJW4ur54&#34;&gt;How to Terraform Mars - WITH LASERS by Kurzgesagt&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;h2 id=&#34;nasa-researchers-discover-what-happened-to-mars-water-by-joshua-shavit&#34;&gt;&lt;a href=&#34;https://www.thebrighterside.news/discoveries/nasa-researchers-discover-what-happened-to-mars-water/&#34;&gt;NASA researchers discover what happened to Mars’ water by Joshua Shavit&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Startup</title>
+      <link>https://marsettler.com/startup/startup/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/startup/startup/</guid>
+      <description>&lt;h1 id=&#34;investment&#34;&gt;Investment&lt;/h1&gt;&#xA;&lt;h2 id=&#34;when-do-vcs-start-seriously-thinking-about-exits-by-demo-day-translated-from-korean&#34;&gt;&lt;a href=&#34;https://youtu.be/rE9M41meI2M&#34;&gt;When do VCs start seriously thinking about exits? by Demo Day (Translated from Korean)&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;For VCs, exits are not about &amp;ldquo;greed&amp;rdquo; but a &amp;ldquo;structural inevitability.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;As a founder, you must always check the &amp;lsquo;fund maturity date&amp;rsquo; of your VC.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;human-resources&#34;&gt;Human Resources&lt;/h1&gt;&#xA;&lt;h2 id=&#34;things-to-watch-out-for-when-expanding-team-size-by-seunghoon-lee-translated-from-korean&#34;&gt;&lt;a href=&#34;https://brunch.co.kr/@seunghoon82/681&#34;&gt;Things to watch out for when expanding team size by Seunghoon Lee (Translated from Korean)&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Speed (e.g., product update speed, new technology development/launch speed, etc.) must increase compared to the past. (The idea that speed can slow down for the sake of stability and structure is 99% wrong. You must add stability and structure while making things even faster.)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>배틀그라운드, 새로운 전장으로 (크래프톤웨이 두 번째 이야기) 를 읽고</title>
+      <link>https://marsettler.com/posts/2025-04-26-battleground-into-the-new-arena/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2025-04-26-battleground-into-the-new-arena/</guid>
+      <description>&lt;h2 id=&#34;배틀그라운드-새로운-전장으로&#34;&gt;배틀그라운드, 새로운 전장으로&lt;/h2&gt;&#xA;&lt;h2 id=&#34;크래프톤웨이-두-번째-이야기-를-읽고&#34;&gt;(크래프톤웨이 두 번째 이야기) 를 읽고&lt;/h2&gt;&#xA;&lt;p&gt;발표자: 박재완&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;순서&#34;&gt;순서&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;읽은 이유&lt;/li&gt;&#xA;&lt;li&gt;책 소개&lt;/li&gt;&#xA;&lt;li&gt;Quiz!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-읽은-이유&#34;&gt;1. 읽은 이유&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;크래프톤이 넥슨의 자리도 위협하고 있다.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;1황! 1황!&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://youtu.be/7mqCUaB0-6U?t=1272&#34;&gt;중년게이머 김실장 방송 중 크래프톤 실적발표&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;빵빵 뜨고 난 이후에 사그러드는 게임이 얼마나 많습니까?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;오랫동안 성장하는 IP를 만들기 위해서 어떻게 해야 되는가?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;김창한 대표님 미친 사람(?) 이더라고요.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=7mqCUaB0-6U&amp;amp;t=1460&#34;&gt;중년게이머 김실장 방송 중 책 이야기&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-책-소개&#34;&gt;2. 책 소개&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;목차&#34;&gt;목차&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2017 일시정지 버튼 없음: 배틀그라운드 출시 이후&lt;/li&gt;&#xA;&lt;li&gt;2018 게임맵을 위한 로드맵: 빨랐고 다양했던 시도들 끝에 얻은 것&lt;/li&gt;&#xA;&lt;li&gt;2019 다시 기본으로: 배틀그라운드만의 재미를 위하여&lt;/li&gt;&#xA;&lt;li&gt;2020 허들 삭제: 베스트 시나리오와 워스트 시나리오 사이&lt;/li&gt;&#xA;&lt;li&gt;2021 크래프톤의 길: &amp;lsquo;우리&amp;rsquo;라는 단어를 새롭게 정의하며&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;구성&#34;&gt;구성&lt;/h3&gt;&#xA;&lt;p&gt;김효섭 전 대표의 이메일을 통째로 받고,&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Book) 나쁜 보스는 되고 싶지 않지만 직원들이 잘했으면 좋겠어요</title>
+      <link>https://marsettler.com/book/2025-04-28-i-do-not-want-to-be-a-bad-boss-but-i-want-my-employees-to-do-well/</link>
+      <pubDate>Mon, 28 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/2025-04-28-i-do-not-want-to-be-a-bad-boss-but-i-want-my-employees-to-do-well/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Publisher: 이기대&lt;/li&gt;&#xA;&lt;li&gt;ISBN-13: 9791194534051&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>(Book) 배틀그라운드, 새로운 전장으로</title>
+      <link>https://marsettler.com/book/2025-04-26-battleground-into-the-new-arena/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/2025-04-26-battleground-into-the-new-arena/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Publisher: 이기문&lt;/li&gt;&#xA;&lt;li&gt;ISBN-13: 9791173321139&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>2025 Tokyo Journey</title>
+      <link>https://marsettler.com/journey/2025-tokyo/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/journey/2025-tokyo/</guid>
+      <description>&lt;h2 id=&#34;top-3-memorable-experiences&#34;&gt;Top 3 Memorable Experiences&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;There is something to learn even from those you don’t particularly like.&lt;/li&gt;&#xA;&lt;li&gt;Hokusai&amp;rsquo;s wave is impressive.&lt;/li&gt;&#xA;&lt;li&gt;I need to buy a pantry for my wife.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;top-3-restaurants&#34;&gt;Top 3 Restaurants&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/LL6fVXW1bxCsN32QA&#34;&gt;Oborodzuki&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/LsjpVD5wSSnGTvqX6&#34;&gt;Imakatsu Ginza&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/p6pL91fotMuuX9r67&#34;&gt;Moheji Hanare&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;key-schedule&#34;&gt;Key Schedule&lt;/h2&gt;&#xA;&lt;h3 id=&#34;2025-04-09&#34;&gt;2025-04-09&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/LsjpVD5wSSnGTvqX6&#34;&gt;Imakatsu Ginza&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2025-04-10&#34;&gt;2025-04-10&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/ioZeycm6LVc7QPzv6&#34;&gt;shigekuni&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/L7MZNsbFVJmzxf2q7&#34;&gt;Peter Luger Steak House Tokyo&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2025-04-11&#34;&gt;2025-04-11&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/LJcxBH1jVn5rPY496&#34;&gt;Path&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/ec7GKq7kLM3bV1xE8&#34;&gt;Ginza West Aoyama Garden&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/MynvqXYTcbZLFDQX6&#34;&gt;CAMELBACK sandwich&amp;amp;espresso&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/eaJ6z6v6BXTR2Nj37&#34;&gt;Genshiyaki Hibachi&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2025-04-12&#34;&gt;2025-04-12&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/yYX5kDJR16W6pjdr7&#34;&gt;wellk&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/LL6fVXW1bxCsN32QA&#34;&gt;Oborodzuki&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2025-04-13&#34;&gt;2025-04-13&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/ioZeycm6LVc7QPzv6&#34;&gt;shigekuni&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/WKQJqRBiS6NAPit36&#34;&gt;Cafe de l&amp;rsquo;ambre&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/Fd4RRLEXVtA1z6Cy9&#34;&gt;The Sumida Hokusai Museum&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/p6pL91fotMuuX9r67&#34;&gt;Moheji Hanare&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/KhomdXU9CvKCTAvTA&#34;&gt;IKI OYSTER BAR&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2025-04-14&#34;&gt;2025-04-14&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/iAy2TPKAYU8qkJTv7&#34;&gt;Egg Baby Cafe&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/VmEU4WPJpRSE3U2J7&#34;&gt;Nihonbashi Kaisen Don Tsujihan - Ark Hills Branch&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Awesome graphic games</title>
+      <link>https://marsettler.com/game-design/graphis/</link>
+      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/game-design/graphis/</guid>
+      <description>&lt;h2 id=&#34;destructible-textures-by-pybounce&#34;&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=1XetFP-jzYY&amp;amp;t=301s&#34;&gt;Destructible Textures by Pybounce&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;I&amp;rsquo;m bad at art so I tried making textures break up in to their pixels when hit. It still looks pretty meh butit&amp;rsquo;s neat&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>Visa</title>
+      <link>https://marsettler.com/visa/</link>
+      <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/visa/</guid>
+      <description>&lt;h2 id=&#34;my-o-1a-talent-visa-was-approved-in-just-12-days-by-azamat-khamidov&#34;&gt;&lt;a href=&#34;https://www.linkedin.com/feed/update/urn:li:activity:7292221746034675712/&#34;&gt;My O-1A talent visa was approved in just 12 days by Azamat Khamidov&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Newsfeed 2025</title>
+      <link>https://marsettler.com/newsfeed/newsfeed-2025/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/newsfeed/newsfeed-2025/</guid>
+      <description>&lt;h1 id=&#34;december-2025&#34;&gt;December 2025&lt;/h1&gt;&#xA;&lt;h2 id=&#34;own-a-graph-by-staysaasy&#34;&gt;&lt;a href=&#34;https://staysaasy.com/strategy/2025/11/25/own-a-graph.html&#34;&gt;Own a Graph by @staysaasy&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Graphs are a critical unit of ownership for senior people to track their progress, communicate outcomes, and get feedback. If you don’t own one, fix that ASAP.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;i-choose-my-own-destiny-by-otaku__&#34;&gt;&lt;a href=&#34;https://x.com/otaku__life_/status/1979481545821000181&#34;&gt;I Choose My Own Destiny by @otaku__life_ (Translated from Korean)&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;That barbarian wasn&amp;rsquo;t the chosen hero and couldn&amp;rsquo;t pull the sword from the stone. So he just carried the whole rock—sword and used it as a hammer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Book) Time Off: 이토록 멋진 휴식</title>
+      <link>https://marsettler.com/book/time-off/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/time-off/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Authors: Max Frenzel, John Fitch&lt;/li&gt;&#xA;&lt;li&gt;ISBN-13: 978-1734794403&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>We do this we thought it would be easy</title>
+      <link>https://marsettler.com/we-do-this-we-thought-it-would-be-easy/</link>
+      <pubDate>Sun, 25 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/we-do-this-we-thought-it-would-be-easy/</guid>
+      <description>&lt;h1 id=&#34;we-do-this-not-because-it-is-easy&#34;&gt;WE DO THIS NOT BECAUSE IT IS EASY,&lt;/h1&gt;&#xA;&lt;h1 id=&#34;but-because-we-thought-it-would-be-easy&#34;&gt;BUT BECAUSE WE THOUGHT IT WOULD BE EASY&lt;/h1&gt;&#xA;&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://youtu.be/oFtjKbXKqbg?t=4724&#34;&gt;Pieter Levels: Programming, Viral AI Startups, and Digital Nomad Life | Lex Fridman Podcast #440&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Rust good reads</title>
+      <link>https://marsettler.com/rust/rust-reads/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/rust/rust-reads/</guid>
+      <description>&lt;h1 id=&#34;rust-good-reads&#34;&gt;Rust good reads&lt;/h1&gt;&#xA;&lt;h2 id=&#34;two-years-of-rust-by-fernando-borretti&#34;&gt;&lt;a href=&#34;https://borretti.me/article/two-years-of-rust&#34;&gt;Two Years of Rust by Fernando Borretti&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The way I would summarize Rust is: it’s a better Go, or a faster Python.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;where-is-rust-being-used-by-let&#34;&gt;&lt;a href=&#34;https://youtu.be/42FhQWQ6SVA&#34;&gt;Where is Rust being used? by Let&amp;rsquo;s Get Rusty&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;People say learning rust is the hardest thing in the world.&lt;/p&gt;&#xA;&lt;p&gt;But that&amp;rsquo;s not true.&lt;/p&gt;&#xA;&lt;p&gt;The hardest thing in the world is finding a rust job position.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;ragnar-groot-koerkamp&#34;&gt;&lt;a href=&#34;https://curiouscoding.nl/&#34;&gt;Ragnar {Groot Koerkamp}&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;PhD High Throughput Bioinformatics @BMI ETH Zurich&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bevy 101 - ECS 부터 itch.io 배포까지</title>
+      <link>https://marsettler.com/marsettler/bevy-101-from-ecs-to-itch-io-deployment/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/marsettler/bevy-101-from-ecs-to-itch-io-deployment/</guid>
+      <description>&lt;h1 id=&#34;bevy-101---ecs-부터-itchio-배포까지&#34;&gt;Bevy 101 - ECS 부터 itch.io 배포까지&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;박재완&#34;&gt;박재완&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;여러 게임회사를 다닌 후&lt;/li&gt;&#xA;&lt;li&gt;지금은 &lt;a href=&#34;http://abit.ly/luft&#34;&gt;OLAP 데이터베이스&lt;/a&gt; 개발하고 있음&lt;/li&gt;&#xA;&lt;li&gt;Bevy 로 캐주얼 게임 만들기 시도 중&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bevy Game Engine 기초&lt;/li&gt;&#xA;&lt;li&gt;itch.io 에 게임 배포하기&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;bevy&#34;&gt;Bevy&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A refreshingly simple data-driven game engine built in Rust&lt;/li&gt;&#xA;&lt;li&gt;Free and Open Source Forever!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://bevyengine.org/&#34;&gt;https://bevyengine.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;bevy-주요-기능&#34;&gt;Bevy 주요 기능&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Data Driven&lt;/li&gt;&#xA;&lt;li&gt;2D, 3D Renderer, Render Graph, Animation&lt;/li&gt;&#xA;&lt;li&gt;Cross Platform&lt;/li&gt;&#xA;&lt;li&gt;Bevy UI&lt;/li&gt;&#xA;&lt;li&gt;Scenes&lt;/li&gt;&#xA;&lt;li&gt;Sound&lt;/li&gt;&#xA;&lt;li&gt;Hot Reloading&lt;/li&gt;&#xA;&lt;li&gt;Productive Compile Times&lt;/li&gt;&#xA;&lt;li&gt;Free and Open Source&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;data-driven&#34;&gt;Data Driven&lt;/h3&gt;&#xA;&lt;p&gt;All engine and game logic uses Bevy ECS, a custom Entity Component System&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OLAP database query optimizer and performance</title>
+      <link>https://marsettler.com/performance/olap-query-optimizer-and-performance/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/performance/olap-query-optimizer-and-performance/</guid>
+      <description>&lt;h1 id=&#34;olap-database-query-optimizer-and-performance&#34;&gt;OLAP database query optimizer and performance&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;olap-workloads&#34;&gt;OLAP workloads&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Online analytical processing, or OLAP, is an approach to answer multi-dimensional analytical queries swiftly in computing.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Online_analytical_processing&#34;&gt;https://en.wikipedia.org/wiki/Online_analytical_processing&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;olap-vs-oltp-the-differences&#34;&gt;OLAP VS. OLTP: THE DIFFERENCES&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;OLAP is used for complex data analysis, while OLTP is used for real-time processing of online transactions at scale.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.snowflake.com/guides/olap-vs-oltp/&#34;&gt;https://www.snowflake.com/guides/olap-vs-oltp/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;luft-olap-database-for-airbridge&#34;&gt;Luft: OLAP database for Airbridge&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://engineering.ab180.co/stories/introducing-luft&#34;&gt;https://engineering.ab180.co/stories/introducing-luft&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;airbridge-dashboard-demo&#34;&gt;Airbridge dashboard demo&lt;/h2&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s take a look at what you&amp;rsquo;d do if you implemented.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Newsfeed 2024</title>
+      <link>https://marsettler.com/newsfeed/newsfeed-2024/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/newsfeed/newsfeed-2024/</guid>
+      <description>&lt;h1 id=&#34;december-2024&#34;&gt;December 2024&lt;/h1&gt;&#xA;&lt;h2 id=&#34;2024년-cto-회고-by-향로&#34;&gt;&lt;a href=&#34;https://jojoldu.tistory.com/815?trk=feed_main-feed-card_feed-article-content&#34;&gt;2024년 CTO 회고 by 향로&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;대부분의 회사가 그렇겠지만, 퇴사하는 팀원을 막는 것은 대단히 어려운 일이다.&#xA;그래서 팀원의 근속 기간을 늘리는 것도 중요하지만, 팀원이 빠르게 적응해서 기여 기간을 늘리는 것이 훨씬 제어가능하다.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Like most companies, preventing a team member from leaving is extremely difficult.&#xA;Therefore, while increasing the retention period of team members is important, enabling them to adapt quickly and extend their contribution period is much more manageable.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Book) Androids: The Team That Built the Android Operating System</title>
+      <link>https://marsettler.com/book/androids-the-team-that-built-the-android-operating-system/</link>
+      <pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/androids-the-team-that-built-the-android-operating-system/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Publisher: Chet Haase&lt;/li&gt;&#xA;&lt;li&gt;ISBN-13: 978-1737354819&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>Bloom filter</title>
+      <link>https://marsettler.com/performance/bloom_filter/</link>
+      <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/performance/bloom_filter/</guid>
+      <description>&lt;h2 id=&#34;good-reads&#34;&gt;Good reads&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://save-buffer.github.io/bloom_filter.html&#34;&gt;Modern Bloom Filters: 22x Faster!&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Go 성능 최적화 팁</title>
+      <link>https://marsettler.com/go/go-performance-optimization-tips/</link>
+      <pubDate>Sun, 04 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/go/go-performance-optimization-tips/</guid>
+      <description>&lt;h2 id=&#34;go-성능-최적화-팁&#34;&gt;Go 성능 최적화 팁&lt;/h2&gt;&#xA;&lt;p&gt;박재완&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;airbridge-와-luft&#34;&gt;Airbridge 와 Luft&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.airbridge.io/&#34;&gt;Airbridge&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;합리적인 비용의 올인원 모바일 마케팅 솔루션&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://engineering.ab180.co/stories/introducing-luft&#34;&gt;Luft&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Airbridge 에서 유저행동 분석을 위해 사용하는 OLAP 데이터베이스&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://engineering.ab180.co/stories/traildb-to-ziegel&#34;&gt;Ziegel&lt;/a&gt; 을 스토리지 엔진으로 사용&lt;/li&gt;&#xA;&lt;li&gt;Go 로 작성&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>(Book) 개발자에게 물어보세요</title>
+      <link>https://marsettler.com/book/ask-your-developer/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/ask-your-developer/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;지은이: 제프 로슨&lt;/li&gt;&#xA;&lt;li&gt;ISBN-13: 978-89-6626-390-5&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>Food recipes</title>
+      <link>https://marsettler.com/food-recipes/</link>
+      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/food-recipes/</guid>
+      <description>&lt;h1 id=&#34;seaweed-soup&#34;&gt;Seaweed soup&lt;/h1&gt;&#xA;&lt;h2 id=&#34;재료&#34;&gt;재료&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;재료&lt;/th&gt;&#xA;          &lt;th&gt;양&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;미역&lt;/td&gt;&#xA;          &lt;td&gt;10g&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;소고기 양지&lt;/td&gt;&#xA;          &lt;td&gt;150g&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;양념&#34;&gt;양념&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;양념&lt;/th&gt;&#xA;          &lt;th&gt;양&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;참기름&lt;/td&gt;&#xA;          &lt;td&gt;1큰술&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;국간장&lt;/td&gt;&#xA;          &lt;td&gt;2큰술&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;마늘&lt;/td&gt;&#xA;          &lt;td&gt;0.5큰술&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;소금&lt;/td&gt;&#xA;          &lt;td&gt;조금&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h1 id=&#34;조리순서&#34;&gt;조리순서&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;미역을 물에 10분 정도 담가서 불린다.&lt;/li&gt;&#xA;&lt;li&gt;키친타월로 소고기 피를 뺀다.&lt;/li&gt;&#xA;&lt;li&gt;참기름을 두르고 소고기를 볶는다.&lt;/li&gt;&#xA;&lt;li&gt;불린 미역 물기를 빼서 넣고 소고기와 함게 볶는다.&lt;/li&gt;&#xA;&lt;li&gt;국간장, 마늘, 소금을 넣고 끓인다.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h1 id=&#34;galbijjim-korean-braised-beef-short-ribs&#34;&gt;Galbijjim (Korean braised beef short ribs)&lt;/h1&gt;&#xA;&lt;h2 id=&#34;재료-1&#34;&gt;재료&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;재료&lt;/th&gt;&#xA;          &lt;th&gt;양&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;소갈비&lt;/td&gt;&#xA;          &lt;td&gt;800g&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;감자&lt;/td&gt;&#xA;          &lt;td&gt;1개&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;당근&lt;/td&gt;&#xA;          &lt;td&gt;1개&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;대파&lt;/td&gt;&#xA;          &lt;td&gt;1개&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;양념-1&#34;&gt;양념&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;양념&lt;/th&gt;&#xA;          &lt;th&gt;양&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;설탕&lt;/td&gt;&#xA;          &lt;td&gt;1/2컵&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;맛술&lt;/td&gt;&#xA;          &lt;td&gt;1/2컵&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;진간장&lt;/td&gt;&#xA;          &lt;td&gt;1컵&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;다진마늘&lt;/td&gt;&#xA;          &lt;td&gt;2큰술&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;생강&lt;/td&gt;&#xA;          &lt;td&gt;1/2큰술&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;참기름&lt;/td&gt;&#xA;          &lt;td&gt;2큰술&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h1 id=&#34;조리순서-1&#34;&gt;조리순서&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;갈비 핏물을 뺀다.&lt;/li&gt;&#xA;&lt;li&gt;양념을 미리 한 곳에 섞어서 준비한다.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;설탕 1/2컵, 맛술 1/2컵, 진간장 1컵, 다진마늘 2큰술, 생강 1/2큰술, 참기름 2큰술&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;갈비에 양념을 넣고 조리한다.&lt;/li&gt;&#xA;&lt;li&gt;먼저 센불로 끓인다.&lt;/li&gt;&#xA;&lt;li&gt;감자와 당근을 준비한다.&lt;/li&gt;&#xA;&lt;li&gt;거품을 걷어낸다.&lt;/li&gt;&#xA;&lt;li&gt;준비해둔 당근과 감자를 넣고 졸아들때까지 끓인다.&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>(Book) Unusual Challenges(유난한 도전)</title>
+      <link>https://marsettler.com/book/unusual-challenges/</link>
+      <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/unusual-challenges/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;지은이: 정경화&lt;/li&gt;&#xA;&lt;li&gt;ISBN: 979-11-91211-86-3 03320&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>Career</title>
+      <link>https://marsettler.com/career/</link>
+      <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/career/</guid>
+      <description>&lt;h1 id=&#34;reflections-on-career-advancement-understanding-the-power-of-relationships-and-reputation&#34;&gt;Reflections on Career Advancement: Understanding the Power of Relationships and Reputation&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Anyone can become a Director by working hard enough. To become a Sr. Director, someone needs to push you. To become a VP, several people need to pull for you.&lt;/li&gt;&#xA;&lt;li&gt;Check job postings weekly and ensure you have at least one job interview a year.&lt;/li&gt;&#xA;&lt;li&gt;Almost no one applying for a certain position lacks the qualifications. People who can hardly go wrong even if chosen with eyes closed are the ones who get the interview opportunities. Eventually, those slightly more familiar tend to get selected.&lt;/li&gt;&#xA;&lt;li&gt;In the same context, office politics is merely about forming relationships, and there&amp;rsquo;s no need to view it negatively.&lt;/li&gt;&#xA;&lt;li&gt;There&amp;rsquo;s no great significance in judging the right and wrong of office politics. Even if you don&amp;rsquo;t participate, everyone else does.&lt;/li&gt;&#xA;&lt;li&gt;Working hard and performing well is a given; promotion relies on relationships and reputation.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Link: &lt;a href=&#34;https://twitter.com/shinhh/status/1671678952551718912&#34;&gt;https://twitter.com/shinhh/status/1671678952551718912&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CEO</title>
+      <link>https://marsettler.com/ceo/</link>
+      <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/ceo/</guid>
+      <description>&lt;h1 id=&#34;founding-ceo-and-management-ceo&#34;&gt;Founding CEO and Management CEO&lt;/h1&gt;&#xA;&lt;p&gt;Founding CEO are the original CEO, that was involved in the creation and early development of the company and tend to have a strong vision for its future, while management CEO are brought in to manage the company after it has been established and help it scale.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_bFTmjYVgzE&amp;amp;t=934s&#34;&gt;https://www.youtube.com/watch?v=_bFTmjYVgzE&amp;amp;t=934s&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=l5gy7ITrqH8&amp;amp;t=1655s&#34;&gt;https://www.youtube.com/watch?v=l5gy7ITrqH8&amp;amp;t=1655s&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Helm Charts</title>
+      <link>https://marsettler.com/infra/helm_charts/</link>
+      <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/infra/helm_charts/</guid>
+      <description>&lt;p&gt;This page based on &lt;a href=&#34;https://helm.sh/docs/topics/charts/&#34;&gt;Charts&lt;/a&gt; for personal notes. If you want to learn more, please visit the official website.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;charts&#34;&gt;Charts&lt;/h1&gt;&#xA;&lt;p&gt;Helm uses a packaging format called charts. A chart is a collection of files that describe a related set of Kubernetes resources. A single chart might be used to deploy something simple, like a memcached pod, or something complex, like a full web app stack with HTTP servers, databases, caches, and so on.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using Helm</title>
+      <link>https://marsettler.com/infra/using_helm/</link>
+      <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/infra/using_helm/</guid>
+      <description>&lt;p&gt;This page based on &lt;a href=&#34;https://helm.sh/docs/intro/using_helm/&#34;&gt;Using Helm&lt;/a&gt; for personal notes. If you want to learn more, please visit the official website.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;theree-big-concepts&#34;&gt;Theree Big Concepts&lt;/h1&gt;&#xA;&lt;p&gt;A &lt;code&gt;Chart&lt;/code&gt; is a Helm package. It contains all of the resource definitions necessary to run an application, tool, or service inside of a Kubernetes cluster. Think of it like the Kubernetes equivalent of a Homebrew formula, an Apt dpkg, or a Yum RPM file.&lt;/p&gt;&#xA;&lt;p&gt;A &lt;code&gt;Repository&lt;/code&gt; is the place where charts can be collected and shared. It&amp;rsquo;s like Perl&amp;rsquo;s CPAN archive or the Fedora Package Database, but for Kubernetes packages.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Helm: The package manager for Kubernetes</title>
+      <link>https://marsettler.com/infra/helm/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/infra/helm/</guid>
+      <description>&lt;h1 id=&#34;what-is-helm&#34;&gt;What is Helm?&lt;/h1&gt;&#xA;&lt;p&gt;Helm helps you manage Kubernetes applications — Helm Charts help you define, install, and upgrade even the most complex Kubernetes application.&lt;/p&gt;&#xA;&lt;p&gt;Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.&lt;/p&gt;&#xA;&lt;h1 id=&#34;the-purpose-of-helm&#34;&gt;The Purpose of Helm&lt;/h1&gt;&#xA;&lt;p&gt;Helm is a tool for managing Kubernetes packages called charts. Helm can do the following:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create new charts from scratch&lt;/li&gt;&#xA;&lt;li&gt;Package charts into chart archive (tgz) files&lt;/li&gt;&#xA;&lt;li&gt;Interact with chart repositories where charts are stored&lt;/li&gt;&#xA;&lt;li&gt;Install and uninstall charts into an existing Kubernetes cluster&lt;/li&gt;&#xA;&lt;li&gt;Manage the release cycle of charts that have been installed with Helm&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;For Helm, there are three important concepts:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Newsfeed 2023</title>
+      <link>https://marsettler.com/newsfeed/newsfeed-2023/</link>
+      <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/newsfeed/newsfeed-2023/</guid>
+      <description>&lt;h1 id=&#34;december-2023&#34;&gt;December 2023&lt;/h1&gt;&#xA;&lt;h2 id=&#34;the-big-cloud-exit-faq-by-dhh&#34;&gt;&lt;a href=&#34;https://world.hey.com/dhh/the-big-cloud-exit-faq-20274010&#34;&gt;The Big Cloud Exit FAQ by @dhh&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This isn’t some archaic knowledge that’s been lost to the ages. We might not know exactly how the pyramids were built, but we do still know how to connect a Linux machine to the internet.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;I think many of us are forgetting this.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;buy the baseline, rent the spike&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;100% agree.&lt;/p&gt;&#xA;&lt;h2 id=&#34;constant-propagation-in-compiler-design&#34;&gt;&lt;a href=&#34;https://www.geeksforgeeks.org/constant-propagation-in-complier-design/&#34;&gt;Constant Propagation in Compiler Design&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;In simpler words, we can say that if  some value is assigned a known constant, than we can simply replace the that value by constant.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Feedback</title>
+      <link>https://marsettler.com/feedback/</link>
+      <pubDate>Sat, 17 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/feedback/</guid>
+      <description>&lt;h1 id=&#34;if-you-provide-feedback-it-is-important-to-also-include-suggestions-for-improvement&#34;&gt;If you provide feedback, it is important to also include suggestions for improvement&lt;/h1&gt;</description>
+    </item>
+    <item>
+      <title>C&#43;&#43; to Go</title>
+      <link>https://marsettler.com/go/c&#43;&#43;-to-go/</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/go/c&#43;&#43;-to-go/</guid>
+      <description>&lt;h1 id=&#34;c-to-go&#34;&gt;C++ to Go&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introducing-ziegel&#34;&gt;Introducing Ziegel&lt;/h2&gt;&#xA;&lt;p&gt;박재완&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;luft&#34;&gt;Luft&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ziegel and TrailDB&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;luft-1&#34;&gt;&lt;a href=&#34;https://engineering.ab180.co/stories/introducing-luft&#34;&gt;Luft&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;OLAP database for analize the analyzing user behavior in real-time&lt;/li&gt;&#xA;&lt;li&gt;Use TrailDB as a storage&lt;/li&gt;&#xA;&lt;li&gt;Written in C/C++ and Go&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;traildb&#34;&gt;&lt;a href=&#34;https://traildb.io/&#34;&gt;TrailDB&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;TrailDB is an efficient tool for storing and querying series of events&lt;/li&gt;&#xA;&lt;li&gt;Written in C&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;ziegel&#34;&gt;&lt;a href=&#34;https://engineering.ab180.co/stories/traildb-to-ziegel&#34;&gt;Ziegel&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;New storage engine for the Luft&lt;/li&gt;&#xA;&lt;li&gt;Written in Go&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why&#34;&gt;Why?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;TrailDB has been a suitable solution for the Luft&lt;/li&gt;&#xA;&lt;li&gt;But development was halted in 2019&lt;/li&gt;&#xA;&lt;li&gt;Issues with peformance and productivity&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;issues&#34;&gt;Issues&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Inefficient multi-core utilization&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// finalize. this could take a while with idle CPU usage but don&amp;#39;t panic.&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// it&amp;#39;s not freeze;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// it&amp;#39;s because TrailDB indexing process is not parallelized yet :(&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;Row store data structure&lt;/li&gt;&#xA;&lt;li&gt;Use multiple language: C/C++ and Go&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;journey-for-the-migration&#34;&gt;Journey for the migration&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Add more tests for consistency verification&lt;/li&gt;&#xA;&lt;li&gt;Add interface for engine replacement&#xA;&lt;ul&gt;&#xA;&lt;li&gt;With this interface, we can easily replace the engine(partial or full)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Implement storage engine&lt;/li&gt;&#xA;&lt;li&gt;Peformance tuning&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2x fater for the ingestion, 1.2 slower for the query&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;peformance-tuning&#34;&gt;Peformance tuning&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;measuring-performance&#34;&gt;Measuring performance&lt;/h3&gt;&#xA;&lt;p&gt;Go provides great tools for measuring performance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>어떻게 코호트 분석을 하나요?</title>
+      <link>https://marsettler.com/analytics/how-to-do-cohort-analysis/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/analytics/how-to-do-cohort-analysis/</guid>
+      <description>&lt;h1 id=&#34;코호트-분석&#34;&gt;코호트 분석&lt;/h1&gt;&#xA;&lt;p&gt;원하는 유저군(코호트)을 잡아서 해당 유저들의 행동을 분석하는 기법&lt;/p&gt;&#xA;&lt;p&gt;예: &amp;ldquo;지난 6개월간 우리 앱에서 한달에 10만원 이상 소비한 30대 여성&amp;quot;이란 유저군을 잡은 후,&#xA;해당 유저군의 리텐션 (재방문률)을 분석&lt;/p&gt;&#xA;&lt;h1 id=&#34;분석방법&#34;&gt;분석방법&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Amplitude, Google Analytics 등의 외부 솔루션 사용&#xA;&lt;ul&gt;&#xA;&lt;li&gt;장점: 개발 비용이 없음&lt;/li&gt;&#xA;&lt;li&gt;단점:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;솔루션 비용 발생&lt;/li&gt;&#xA;&lt;li&gt;솔루션에 의존하게 됨&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;RDB(OLTP) 사용&#xA;&lt;ul&gt;&#xA;&lt;li&gt;장점: 익숙함&lt;/li&gt;&#xA;&lt;li&gt;단점: 일정 규모를 넘어가면 성능문제로 문제해결 불가능함&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;데이터 파이프라인을 구축(Snowflake, Apache Kafka 등 활용)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;장점: 익숙함&lt;/li&gt;&#xA;&lt;li&gt;단점: 생각보다 많은 비용&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;코호트 분석용 OALP 데이터베이스를 직접 개발: &lt;a href=&#34;https://engineering.ab180.co/stories/introducing-luft&#34;&gt;https://engineering.ab180.co/stories/introducing-luft&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;장점: 고성능의 입맛대로 동작하는 데이터베이스를 가질 수도 있음&lt;/li&gt;&#xA;&lt;li&gt;단점: 직접 개발해야 함&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>C&#43;&#43; good reads</title>
+      <link>https://marsettler.com/c&#43;&#43;/good-reads/</link>
+      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/c&#43;&#43;/good-reads/</guid>
+      <description>&lt;h1 id=&#34;c-stl-performance-example-with-shared_&#34;&gt;&lt;a href=&#34;https://blog.lunapiece.net/posts/C++_STL_Performance/&#34;&gt;C++ STL performance example with shared_ptr&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;I just have to say this and move on&amp;hellip; If you think it&amp;rsquo;s okay to just use the STL for a project that doesn&amp;rsquo;t need this level of optimization or performance, think again.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;It is highly likely that your project is not suitable for writing Non GC Native language, so it is recommended to replace it with a VM-based language. I don&amp;rsquo;t use C++ anymore for 99% of my projects. Most of them are solved with C#, Kotlin, and TypeScript.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Go good reads</title>
+      <link>https://marsettler.com/go/go-good-reads/</link>
+      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/go/go-good-reads/</guid>
+      <description>&lt;h1 id=&#34;index&#34;&gt;Index&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;##performance&#34;&gt;Performance&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;##concurrency&#34;&gt;Concurrency&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;##generics&#34;&gt;Generics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;##reiaibility&#34;&gt;Reiaibility&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;##others&#34;&gt;Others&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;&#xA;&lt;h3 id=&#34;we-tried-go&#34;&gt;&lt;a href=&#34;https://www.dolthub.com/blog/2025-09-26-greentea-gc-with-dolt/&#34;&gt;We tried Go&amp;rsquo;s experimental Green Tea garbage collector and it didn&amp;rsquo;t help performance by Zach Musgrave&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;parsing-protobuf-like-never-before-by-mcyoung&#34;&gt;&lt;a href=&#34;https://mcyoung.xyz/2025/07/16/hyperpb/&#34;&gt;Parsing Protobuf Like Never Before by mcyoung&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;deep-dive-into-a-go-binary-by-jesús-espino&#34;&gt;&lt;a href=&#34;https://youtu.be/5VkYXgUqxcE?list=PLDWZ5uzn69ewrYyHTNrXlrWVDjLiOX0Yb&#34;&gt;Deep dive into a go binary by Jesús Espino&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;if-you-want-to-know-how-high-performance-systems-written-in-go-were-built-read-victorialogs--httpsgithubcomvictoriametricsvictorialogs-by-phuong-le&#34;&gt;&lt;a href=&#34;https://x.com/func25/status/1950115605484552333&#34;&gt;If you want to know how high performance systems written in Go were built, read VictoriaLogs:  https://github.com/VictoriaMetrics/VictoriaLogs by Phuong Le&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Custom bloom filters to reduce disk I/O and CPU cycles for redundant logs.&lt;/li&gt;&#xA;&lt;li&gt;Column-oriented block storage for better compression ratio and cache locality.&lt;/li&gt;&#xA;&lt;li&gt;Memory-mapped files with automatic pread fallback for zero-copy reads.&lt;/li&gt;&#xA;&lt;li&gt;Lock-free object pools and arena allocators to reduce heap allocations.&lt;/li&gt;&#xA;&lt;li&gt;Reflection-free JSON parsers for streaming at hundreds of MB/s per core.&lt;/li&gt;&#xA;&lt;li&gt;Compile-time templates replace text/html parsing with near-printf speed.&lt;/li&gt;&#xA;&lt;li&gt;Dictionary-aware Zstd compression balancing CPU cost against bandwidth savings.&lt;/li&gt;&#xA;&lt;li&gt;Multi-core parallelism everywhere with adaptive concurrency limits.&lt;/li&gt;&#xA;&lt;li&gt;Scatter-gather fan-out writes with adaptive concurrency for network saturation.&lt;/li&gt;&#xA;&lt;li&gt;Fast hashing and lock-free randomization for minimal contention.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;how-go-124&#34;&gt;&lt;a href=&#34;https://www.datadoghq.com/blog/engineering/go-swiss-tables/&#34;&gt;How Go 1.24&amp;rsquo;s Swiss Tables saved us hundreds of gigabytes by Nayef Ghattas&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;finding-performance-problems-by-diffing-two-go-profiles-by-zach-musgrave&#34;&gt;&lt;a href=&#34;https://www.dolthub.com/blog/2025-06-20-go-pprof-diffing/&#34;&gt;Finding performance problems by diffing two Go profiles by Zach Musgrave&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;optimising-and-visualising-go-tests-parallelism-why-more-cores-don&#34;&gt;&lt;a href=&#34;https://threedots.tech/post/go-test-parallelism/&#34;&gt;Optimising and Visualising Go Tests Parallelism: Why more cores don&amp;rsquo;t speed up your Go tests&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;leveraging-benchstat-projections-in-go-benchmark-analysis&#34;&gt;&lt;a href=&#34;https://www.bwplotka.dev/2024/go-microbenchmarks-benchstat/&#34;&gt;Leveraging benchstat Projections in Go Benchmark Analysis!&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;benchmarks-and-performance-testing&#34;&gt;&lt;a href=&#34;https://www.willem.dev/articles/benchmarks-performance-testing/&#34;&gt;Benchmarks and performance testing&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;new-unique-package-by-michael-knyszek&#34;&gt;&lt;a href=&#34;https://go.dev/blog/unique&#34;&gt;New unique package by Michael Knyszek&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This work also led us to reexamine finalizers, resulting in another proposal for an easier-to-use and more efficient replacement for finalizers. With a hash function for comparable values on the way as well, the future of building memory-efficient caches in Go is bright!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>gRPC</title>
+      <link>https://marsettler.com/distributed-system/grpc/</link>
+      <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/distributed-system/grpc/</guid>
+      <description>&lt;h1 id=&#34;grpc-101&#34;&gt;gRPC 101&lt;/h1&gt;&#xA;&lt;p&gt;간단하고 빠르게 게임서버 만들기&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;grpc&#34;&gt;gRPC&lt;/h2&gt;&#xA;&lt;p&gt;A high performance,&lt;/p&gt;&#xA;&lt;p&gt;open source&lt;/p&gt;&#xA;&lt;p&gt;universal&lt;/p&gt;&#xA;&lt;p&gt;RPC framework&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;rpcremote-procedure-call&#34;&gt;RPC(Remote procedure call)&lt;/h3&gt;&#xA;&lt;p&gt;원격 프로시저 호출&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;왜-grpc-인가&#34;&gt;왜 gRPC 인가?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Simple service definition&lt;/li&gt;&#xA;&lt;li&gt;Start quickly and scale&lt;/li&gt;&#xA;&lt;li&gt;Works across languages and platforms&lt;/li&gt;&#xA;&lt;li&gt;Bi-directional streaming and integrated auth&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;simple-service-definition&#34;&gt;Simple service definition&lt;/h3&gt;&#xA;&lt;p&gt;강력한 바이너리 직렬화 툴셋인,&lt;/p&gt;&#xA;&lt;p&gt;Protocol Buffers 를 활용해 서비스를 정의함&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;start-quickly-and-scale&#34;&gt;Start quickly and scale&lt;/h3&gt;&#xA;&lt;p&gt;적은 코드로 쉽게 개발을 시작한 후,&lt;/p&gt;&#xA;&lt;p&gt;대규모 요청을 처리하게 확장가능&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;works-across-languages-and-platforms&#34;&gt;Works across languages and platforms&lt;/h3&gt;&#xA;&lt;p&gt;자동으로 생성되는 클라이언트, 서버 stubs 를 사용해&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Newsfeed 2022</title>
+      <link>https://marsettler.com/newsfeed/newsfeed-2022/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/newsfeed/newsfeed-2022/</guid>
+      <description>&lt;h2 id=&#34;december-2022&#34;&gt;December 2022&lt;/h2&gt;&#xA;&lt;h3 id=&#34;guido-van-rossum-python-and-the-future-of-programming--lex-fridman-podcast-341&#34;&gt;Guido van Rossum: Python and the Future of Programming | Lex Fridman Podcast #341&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=-DVyjdw4t9I&amp;amp;t=10963s&#34;&gt;GitHub Copilot&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Are programmers jobs threatend by the existence of stack overflow? I don&amp;rsquo;t think so.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Agreed.&lt;/p&gt;&#xA;&lt;h3 id=&#34;if-it-is-truly-important-to-you-youll-find-a-way-if-it-is-not-youll-find-an-excuse---anonymous&#34;&gt;If it is truly important to you, you’ll find a way; if it is not, you’ll find an excuse. - anonymous&lt;/h3&gt;&#xA;&lt;h2 id=&#34;2022년-10월&#34;&gt;2022년 10월&lt;/h2&gt;&#xA;&lt;h3 id=&#34;중대한-결정을-지혜롭계-하는-법&#34;&gt;&lt;a href=&#34;https://twitter.com/sight_archive/status/1579715123060822017?s=20&amp;amp;t=slCC7kyDRAlMeoeS7n0tww&#34;&gt;중대한 결정을 지혜롭계 하는 법&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;p&gt;일단 마음 내키는대로 결정하고, 그 뒤에 벌어질 일들을 담대하게 마주하라&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Book) 실용주의 프로그래머 20주년 기념판</title>
+      <link>https://marsettler.com/book/the-pragmatic-programmer-20th-anniversary-edition/</link>
+      <pubDate>Sat, 02 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/the-pragmatic-programmer-20th-anniversary-edition/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;지은이: 데이비드 토머스, 앤드류 헌트&lt;/li&gt;&#xA;&lt;li&gt;ISBN: 978-89-6626-336-3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;프로그래밍은 미래를 덜 고통스럽게 만들려 노력하는 것이다. 팀 동료들을 수월하게 해 주는 것이다. 문제를 일으켰다가 다시 되돌릴 수 있는 것이다. 좋은 습관을 기르고, 여러분의 도구를 이해하는 것이다.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; x쪽&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;lsquo;깨진 창문&amp;rsquo;을 고치지 않은 채로 내버려 두지 말라. 나쁜 설계, 잘못된 결정, 혹은 형편없는 코드 등이 모두 깨진 창문이다. 발견하자마자 바로 고쳐라. 적절히 고칠 시간이 없다면 일단 판자로 덮는 것만이라도 하라. 불쾌한 코드를 주석 처리 하거나, &amp;lsquo;아직 구현되지 않았음&amp;rsquo;이라고 메시지를 표시하거나, 가따 데이터로 대치해 놓거나 하라. 더 이상의 손상을 예방하기 위해 어떤 조치든 취하고 여러분이 상황을 잘 관리하고 있음을 보여 줘라.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>컴파일 시점에 printf 오류 검사</title>
+      <link>https://marsettler.com/unreal-engine/compile_time_log_validate/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/unreal-engine/compile_time_log_validate/</guid>
+      <description>&lt;p&gt;언리얼 엔진의 UE_LOG 매크로는 컴파일 시점에 입력값의 오류를 검사하지 않습니다.&lt;/p&gt;&#xA;&lt;p&gt;따라서 실행 중 로그를 기록하려다 의도하지 않은 동작(크래시 등)을 발생시킬 위험이 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;예)&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;FString temp;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;UE_LOG(LogClass, Log, TEXT(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%d, %s&amp;#34;&lt;/span&gt;), &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;temp);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;_stprintf_s&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>언리얼 엔진 4 커스텀 네비게이션 시스템</title>
+      <link>https://marsettler.com/unreal-engine/custom-navigation-system/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/unreal-engine/custom-navigation-system/</guid>
+      <description>&lt;h2 id=&#34;언리얼-엔진-4&#34;&gt;언리얼 엔진 4&lt;/h2&gt;&#xA;&lt;h2 id=&#34;커스텀-네비게이션-시스템&#34;&gt;커스텀 네비게이션 시스템&lt;/h2&gt;&#xA;&lt;p&gt;박재완&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:jaewan.huey.park@gmail.com&#34;&gt;jaewan.huey.park@gmail.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;네비게이션 시스템 개요&lt;/li&gt;&#xA;&lt;li&gt;왜 커스텀이 필요한가?&lt;/li&gt;&#xA;&lt;li&gt;커스텀 네비게이션 데이터 구현 맛보기&lt;/li&gt;&#xA;&lt;li&gt;참고자료&lt;/li&gt;&#xA;&lt;li&gt;Q &amp;amp; A&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;네비게이션-시스템&#34;&gt;네비게이션 시스템&lt;/h2&gt;&#xA;&lt;p&gt;인공지능 에이전트가 경로 찾기를 사용하여&lt;/p&gt;&#xA;&lt;p&gt;레벨을 탐색하는 기능을 제공&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://marsettler.com/unreal-engine/custom-navigation-system/level.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;벽을 피해 목적지로 가고 싶다면?&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://marsettler.com/unreal-engine/custom-navigation-system/level-with-navigation.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;그냥 사용하시면 됩니다&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;왜-커스텀이-필요한가&#34;&gt;왜 커스텀이 필요한가?&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;이유-1&#34;&gt;이유 1.&lt;/h3&gt;&#xA;&lt;p&gt;특별한 연출&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;언리얼 엔진 4 에 내장 네비게이션은&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/recastnavigation/recastnavigation&#34;&gt;recastnavigation&lt;/a&gt; 기반&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;일반적인 상황에서 잘 작동하지만&lt;/p&gt;&#xA;&lt;p&gt;특별한 연출을 보여주기엔 아쉬운 부분들이 있음&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Book) 당신도 느리게 나이 들 수 있습니다.</title>
+      <link>https://marsettler.com/book/you-can-also-frailty-slowly/</link>
+      <pubDate>Fri, 07 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/you-can-also-frailty-slowly/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;지은이: 정희원&lt;/li&gt;&#xA;&lt;li&gt;ISBN: 979-11-407-0258-9 03510&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>CTO</title>
+      <link>https://marsettler.com/cto/</link>
+      <pubDate>Wed, 03 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/cto/</guid>
+      <description>&lt;h2 id=&#34;changing-thoughts-on-good-developers-by-이동욱-translated-from-korean&#34;&gt;&lt;a href=&#34;https://www.linkedin.com/posts/%EB%8F%99%EC%9A%B1-%EC%9D%B4-575160177_2019%EB%85%84%EC%97%90-eo%EC%97%90%EC%84%9C-%EC%B4%AC%EC%98%81%ED%95%B4%EC%A3%BC%EC%8B%A0-%EC%9D%B8%ED%84%B0%EB%B7%B0%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%A7%80%EA%B8%88%EB%8F%84-%EB%A7%8E%EC%9D%B4%EB%93%A4-%EB%AC%B8%EC%9D%98-%EC%A3%BC%EC%8B%A0%EB%8B%A4-activity-7345234203271143424-aHmR&#34;&gt;Changing Thoughts on Good Developers by 이동욱 (Translated from Korean)&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Focusing on individual traits like &amp;ldquo;characteristics of a good developer&amp;rdquo; or &amp;ldquo;personalities suited for developers&amp;rdquo; turned out to be meaningless.&#xA;What really mattered was &amp;ldquo;which developer, with what strengths and weaknesses, works at which company, and in what situation.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developers who struggle to go deep into a single technology often thrive in early-stage startups, quickly building a variety of products as the company pivots.&lt;/li&gt;&#xA;&lt;li&gt;Friends who found coding less appealing but had no trouble with presentations and documentation became ace in traditional large companies, excelling at both implementation and reporting in various situations.&lt;/li&gt;&#xA;&lt;li&gt;A team member I once urged to study more development turned out to be an indispensable morale booster for the team.&lt;/li&gt;&#xA;&lt;li&gt;An organization that only hired developers focused solely on technical skills ended up never holding any knowledge-sharing sessions.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;when-a-highly-competent-employee-says-they-want-to-quit-by-yurim-jin-translated-from-korean&#34;&gt;&lt;a href=&#34;https://www.linkedin.com/posts/hellojayjin_ssqreuqpktxutqaqzc-activity-7330544641903075328-ShBd?utm_source=share&amp;amp;utm_medium=member_desktop&amp;amp;rcm=ACoAABSjspgBLaworIQjzZyO5CJmXIsDApO0tOU&#34;&gt;When a Highly Competent Employee Says They Want to Quit by Yurim Jin (Translated from Korean)&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;When a highly competent employee says they want to quit&#xA;&lt;ul&gt;&#xA;&lt;li&gt;It&amp;rsquo;s usually not just about getting paid more elsewhere. These are people who are dedicated and loyal to their work but feel unrecognized = a failure in management.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Your first reaction to their resignation&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If you don&amp;rsquo;t handle it well, you&amp;rsquo;ll only confirm their feeling that they&amp;rsquo;re not important, making it much harder to turn things around!&lt;/li&gt;&#xA;&lt;li&gt;Let them speak, but don&amp;rsquo;t argue. They&amp;rsquo;ve probably spent sleepless nights practicing what to say.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Competent people have influence&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Other employees respect them and identify with them. As a result, other talented employees may want to follow their lead.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;if-i-get-the-responsibility-to-promote-someone-make-sure-to-reread-chapter-31-of-peter-druckers-management-cases&#34;&gt;If I get the responsibility to promote someone, make sure to reread Chapter 31 of Peter Drucker&amp;rsquo;s &amp;ldquo;Management Cases&amp;rdquo;.&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;link: &lt;a href=&#34;https://mobile.twitter.com/John_Grib/status/1562055514380308480&#34;&gt;https://mobile.twitter.com/John_Grib/status/1562055514380308480&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;버나드kms_bernard-님의-트윗&#34;&gt;버나드(@kms_bernard) 님의 &lt;a href=&#34;https://twitter.com/kms_bernard/status/1454740694191333376&#34;&gt;트윗&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;많은 사람들이 간과하는 것 같은데, CTO는 회사의 경영자다. CTO가 하는 결정은 기술적인게 아니라 비즈니스적인것이어야 하고, 한편으로는 회사의 다른 비즈니스적인 결정에 기술적인 시야를 제공할 수 있어야한다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>언리얼 엔진 플러그인</title>
+      <link>https://marsettler.com/unreal-engine/plugin/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/unreal-engine/plugin/</guid>
+      <description>&lt;h2 id=&#34;언리얼-엔진-플러그인&#34;&gt;언리얼 엔진 플러그인&lt;/h2&gt;&#xA;&lt;p&gt;박재완&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:jaewan.huey.park@gmail.com&#34;&gt;jaewan.huey.park@gmail.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;플러그인&#34;&gt;플러그인&lt;/h2&gt;&#xA;&lt;p&gt;에디터 안에서 프로젝트 단위로&lt;/p&gt;&#xA;&lt;p&gt;켜고 끌 수 있는 코드 및 데이터 모음&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;할-수-있는-일&#34;&gt;할 수 있는 일&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;런타임 게임플레이 기능 추가&lt;/li&gt;&#xA;&lt;li&gt;엔진 기능 수정&lt;/li&gt;&#xA;&lt;li&gt;새 에셋 유형 생성&lt;/li&gt;&#xA;&lt;li&gt;에디터 메뉴, 툴바 명령 추가&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;엔진 시스템 중 일부도&lt;/p&gt;&#xA;&lt;p&gt;플러그인으로 확장되어 있음&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;하고-싶은-일오늘-해-볼-일&#34;&gt;하고 싶은 일(오늘 해 볼 일)&lt;/h2&gt;&#xA;&lt;p&gt;데이터 테이블을 확장하여 좀 더 편하게 데이터 추출(json 또는 csv?)&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;작업-순서&#34;&gt;작업 순서&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;새 플러그인 생성&lt;/li&gt;&#xA;&lt;li&gt;데이터 테이블 확장 클래스 추가&lt;/li&gt;&#xA;&lt;li&gt;팩토리 추가&lt;/li&gt;&#xA;&lt;li&gt;액션 추가&lt;/li&gt;&#xA;&lt;li&gt;팩토리에서 ConfigureProperties 가상함수 구현&lt;/li&gt;&#xA;&lt;li&gt;액션에서 OpenAssetEditor 가상함수 구현&lt;/li&gt;&#xA;&lt;li&gt;아이템 정보를 csv로 저장&lt;/li&gt;&#xA;&lt;li&gt;에셋 저장시 csv도 자동저장&lt;/li&gt;&#xA;&lt;li&gt;레벨 에디터 툴바에 버튼 추가&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-새-플러그인-생성&#34;&gt;1. 새 플러그인 생성&lt;/h2&gt;&#xA;&lt;p&gt;Edit -&amp;gt; Plugins -&amp;gt; New Plugin&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MongoDB 스터디 11주차(데이터 모델링)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-11/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-11/</guid>
+      <description>&lt;h1 id=&#34;고려사항&#34;&gt;고려사항&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;데이터 모델은 애플리케이션과 함께 변함&lt;/li&gt;&#xA;&lt;li&gt;데이터 모델에 영향을 미치는 요소&#xA;&lt;ul&gt;&#xA;&lt;li&gt;사용자의 요구사항&lt;/li&gt;&#xA;&lt;li&gt;읽기 및 쓰기 작업의 특성&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;모델링-순서&#34;&gt;모델링 순서&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;애플리케이션 워크로드 측정&#xA;&lt;ul&gt;&#xA;&lt;li&gt;데이터 사이즈&lt;/li&gt;&#xA;&lt;li&gt;중요도에 따라 작업을 목록화&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;데이터와 데이터 간의 관계를 연결(CRD, Collection Relationship Diagram)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;레퍼런스할지 임베드 할지 결정&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;각 컬렉션의 데이터 모델을 정리(디자인 패턴 적용)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h1 id=&#34;임베딩-vs-레퍼런스&#34;&gt;임베딩 vs 레퍼런스&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-임베딩&#34;&gt;1. 임베딩&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;User&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hueypark&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;items&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;[&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sword&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;damage&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;},&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;spear&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;damage&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;2-레퍼런스부모가-가진-배열로-연결&#34;&gt;2. 레퍼런스(부모가 가진 배열로 연결)&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;User&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hueypark&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;items&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Item&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sword&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;damage&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;},&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;spear&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;damage&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3-레퍼런스자식이-가진-스칼라로-연결&#34;&gt;3. 레퍼런스(자식이 가진 스칼라로 연결)&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;User&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hueypark&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Item&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;user_id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sword&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;damage&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;},&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;_id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;user_id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;spear&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;damage&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;각-방법의-장단점&#34;&gt;각 방법의 장단점&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;임베딩&#xA;&lt;ul&gt;&#xA;&lt;li&gt;장점&#xA;&lt;ul&gt;&#xA;&lt;li&gt;한 번의 조회로 필요한 데이터를 가져 올 수 있음&lt;/li&gt;&#xA;&lt;li&gt;트랜잭션 도움 없이 아토믹한 데이터 변경이 가능함&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;단점&#xA;&lt;ul&gt;&#xA;&lt;li&gt;단일 도큐먼트 크기 제한을 고려해야 함&lt;/li&gt;&#xA;&lt;li&gt;자식을 기준으로 조회하기 어려움(예: 모든 sword 의 수는 몇 개인가?)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;레퍼런스(부모가 가진 배열로 연결)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;장점&#xA;&lt;ul&gt;&#xA;&lt;li&gt;단일 도큐먼트 크기 제한에서 상대적으로 자유로움&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;단점&#xA;&lt;ul&gt;&#xA;&lt;li&gt;자식으로 부모를 조회할 수 없음&lt;/li&gt;&#xA;&lt;li&gt;조회를 두 번 해야 함&lt;/li&gt;&#xA;&lt;li&gt;아토믹한 데이터 변경을 위해 트랜잭션을 사용해야 함&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;레퍼런스(자식이 가진 스칼라로 연결)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;장점&#xA;&lt;ul&gt;&#xA;&lt;li&gt;자식 기반의 조회가 용이함&lt;/li&gt;&#xA;&lt;li&gt;단일 도큐먼트 크기 제한에서 상대적으로 자유로움&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;단점&#xA;&lt;ul&gt;&#xA;&lt;li&gt;조회를 두 번 해야 함&lt;/li&gt;&#xA;&lt;li&gt;아토믹한 데이터 변경을 위해 트랜잭션을 사용해야 함&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;선택-전략&#34;&gt;선택 전략&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;데이터의 특성에 따라 적절한 방법을 적용한다.&lt;/li&gt;&#xA;&lt;li&gt;기본적으로 임베딩을 사용하고 필요시 레퍼런스로 전환한다.&lt;/li&gt;&#xA;&lt;li&gt;기본적으로 레퍼런스를 사용하고 필요시 임베딩으로 전환한다.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;참고자료&#34;&gt;참고자료&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Data Modeling with MongoDB 프레젠테이션: &lt;a href=&#34;https://www.mongodb.com/presentations/data-modeling-with-mongodb&#34;&gt;https://www.mongodb.com/presentations/data-modeling-with-mongodb&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;공식문서 내 데이터 모델링: &lt;a href=&#34;https://docs.mongodb.com/manual/core/data-modeling-introduction/&#34;&gt;https://docs.mongodb.com/manual/core/data-modeling-introduction/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://marsettler.com/mongodb/mongodb-study-week-5/&#34;&gt;MongoDB 스터디 5주차(패턴과 안티패턴)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>MongoDB 스터디 10주차(트랜잭션)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-10/</link>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-10/</guid>
+      <description>&lt;h1 id=&#34;트랜잭션&#34;&gt;트랜잭션&lt;/h1&gt;&#xA;&lt;p&gt;몽고디비는 4.0버전(2018년)부터 여러 도큐먼트에 대한 트랜잭션을, 4.2버전(2019년) 부터는 샤딩된 컬렉션에 대한&#xA;분산 트랜잭션을 지원하고 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;여러 도큐먼트에 대한 ACID 트랜잭션 지원은 다양한 상황에서 개발자가 쉽게 대응할 수 있게 합니다. 스냅샷 격리수준과&#xA;아토믹한 실행은 샤딩된 클러스터에서도 트랜잭션이 필요한 워크로드를 제어할 수 있게 합니다.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In version 4.0, MongoDB supports multi-document transactions on replica sets.&lt;/li&gt;&#xA;&lt;li&gt;In version 4.2, MongoDB introduces distributed transactions, which adds support for multi-document transactions on sharded clusters and incorporates the existing support for multi-document transactions on replica sets.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;IMPORTANT: 대부분의 경우 멀티 도큐먼트 트랜잭션은 큰 부하를 일으키며, 효율적인 스키마를 대체하지 않아야 합니다.&#xA;대부분의 시나리오에서 비정규화된 데이터 모델(임베디드 도큐먼트 또는 배열)로 최적화 가능합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MongoDB 스터디 9주차(인덱스)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-9/</link>
+      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-9/</guid>
+      <description>&lt;h1 id=&#34;인덱스&#34;&gt;인덱스&lt;/h1&gt;&#xA;&lt;p&gt;인덱스는 쿼리가 효율적으로 실행되게 돕습니다. 쿼리에 적절한 인덱스가 있으면 이를 사용해 조회할 도큐먼트 수를 줄일 수 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;인덱스는 특정 필드 또는 필드들을 값에 따라 정렬해 저장합니다.&lt;/p&gt;&#xA;&lt;p&gt;정렬된 인덱스는 효율적인 레인지 쿼리를 지원합니다.&lt;/p&gt;&#xA;&lt;p&gt;몽고디비 인덱스는 B-tree 자료구조를 사용합니다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://marsettler.com/mongodb/mongodb-study-week-9/index-for-sort.bakedsvg.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;_id-인덱스&#34;&gt;&lt;code&gt;_id&lt;/code&gt; 인덱스&lt;/h2&gt;&#xA;&lt;p&gt;몽고디비는 &lt;a href=&#34;https://docs.mongodb.com/manual/core/document/#document-id-field&#34;&gt;_id&lt;/a&gt; 유니크 인덱스를 만듭니다.&#xA;&lt;code&gt;_id&lt;/code&gt; 인덱스는 같은 &lt;code&gt;_id&lt;/code&gt; 를 가진 도큐먼트가 두 개 생기는 것을 막습니다. &lt;code&gt;_id&lt;/code&gt; 인덱스는 제거할 수 없습니다.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;NOTE: 샤딩된 클러스터에서 &lt;code&gt;_id&lt;/code&gt; 필드를 샤드 키로 사용하지 않으면 오류방지를 위해 애플리케이션이 &lt;code&gt;_id&lt;/code&gt; 필드의&#xA;유니크성을 보장해야 합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2020년 3월 6일 쿠키런: 킹덤 긴급점검</title>
+      <link>https://marsettler.com/outage/2021-03-06-cookierun-kingdom-server-fault/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/outage/2021-03-06-cookierun-kingdom-server-fault/</guid>
+      <description>&lt;p&gt;쿠키런: 킹덤 긴급점검이 있었습니다. 접속자 수 증대와 함께 증가하는 부하를 개선했는데, 어떤 작업이 있었는지 궁금합니다.&lt;/p&gt;&#xA;&lt;h1 id=&#34;개요&#34;&gt;개요&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;업데이트를 위한 점검(06:00~11:00)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;점검 내용: 길드 시스템, 신규 쿠키 추가 및 오류사항 수정 등&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;15:00시 서버 안정화를 위한 긴급 점검 시작&#xA;&lt;ul&gt;&#xA;&lt;li&gt;갑작스러운 이용자 수 증가가 원인이라고 공지&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;22:00시 긴급 점검 완료&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h1 id=&#34;채용공고에서-흥미로운-부분&#34;&gt;채용공고에서 흥미로운 부분&lt;/h1&gt;&#xA;&lt;p&gt;우대조건에 아래와 같은 내용이 있는데 어떤 마음인지 알 것 같습니다.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;try-catch 와 null 에 현실자각타임이 오신 분&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;평소 흥미롭게 보던 기술스택이 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MongoDB 스터디 8주차(aggregation)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-8aggregation/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-8aggregation/</guid>
+      <description>&lt;h1 id=&#34;어그리게이션aggregation&#34;&gt;어그리게이션(Aggregation)&lt;/h1&gt;&#xA;&lt;p&gt;어그리게이션 작업은 데이터를 처리하여 계산된 결과를 반환합니다. 어그리게이션은 여러 도큐먼트의 값을 그룹화하고, 데이터에&#xA;다양한 작업을 수행한 후 단일 결과를 반환할 수 있습니다. MongoDB는 세 가지 어그리게이션을 제공합니다.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Aggregation Pipeline&lt;/li&gt;&#xA;&lt;li&gt;Single Purpose Aggregation Operations&lt;/li&gt;&#xA;&lt;li&gt;Map-reduce&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;어그리게이션-파이프라인aggregation-pipeline&#34;&gt;어그리게이션 파이프라인(Aggregation Pipeline)&lt;/h1&gt;&#xA;&lt;p&gt;Aggregation pipeline 은 파이프라인 이용해 데이터의 집계를 처리하는 프레임워크입니다. 여러 스테이지에 걸쳐 도큐먼트들을&#xA;집계된 결과로 변경합니다.&lt;/p&gt;&#xA;&lt;p&gt;아래 예를 살펴봅시다:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;db&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;orders&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;aggregate&lt;/span&gt;([&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;{ &lt;span style=&#34;color:#a6e22e&#34;&gt;$match&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;status&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;A&amp;#34;&lt;/span&gt; } },&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;{ &lt;span style=&#34;color:#a6e22e&#34;&gt;$group&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;_id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;$custmor_id&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;total&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;$sum&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;$amount&amp;#34;&lt;/span&gt; } } }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;])&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://marsettler.com/mongodb/mongodb-study-week-8/aggregate.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MongoDB 스터디 8주차(MongoDB CURD 맵 리듀스)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-8map-reduce/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-8map-reduce/</guid>
+      <description>&lt;h1 id=&#34;map-reduce&#34;&gt;Map-Reduce&lt;/h1&gt;&#xA;&lt;p&gt;MongoDB 는 맵리듀스 대신 어그리게이션 파이프라인을 사용하길 권장하고 있으며, 상세내용은 아래와 같습니다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.mongodb.com/manual/core/aggregation-pipeline/&#34;&gt;어그리게이션 파이프라이프라인&lt;/a&gt;으로 맵 리듀스를 대체할 수 있습니다&lt;/p&gt;&#xA;&lt;p&gt;어그리게이션 파이프라인은 맵-리듀스보다 좋은 성능과 사용성을 제공하며, &lt;a href=&#34;https://docs.mongodb.com/manual/reference/operator/aggregation/group/#pipe._S_group&#34;&gt;$group&lt;/a&gt;, &lt;a href=&#34;https://docs.mongodb.com/manual/reference/operator/aggregation/merge/#pipe._S_merge&#34;&gt;$merge&lt;/a&gt;와 같은 명령어를 사용해 맵리듀스를 어그리게이션 파이프라인으로 변경할 수 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;또 사용자 정의 기능이 필요한 경우 4.4 버전부터 &lt;a href=&#34;https://docs.mongodb.com/manual/reference/operator/aggregation/accumulator/#grp._S_accumulator&#34;&gt;$accumulator&lt;/a&gt;, &lt;a href=&#34;https://docs.mongodb.com/manual/reference/operator/aggregation/function/#exp._S_function&#34;&gt;$function&lt;/a&gt; 명렁어로 해결할 수 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;맵리듀스를 대체하는 어그리게이션 파이프라인을 알고 싶으면, &lt;a href=&#34;https://docs.mongodb.com/manual/reference/operator/aggregation/function/#exp._S_function&#34;&gt;맵리듀스에서 어그리게이션 파이프라인으로 변경&lt;/a&gt; 나 &lt;a href=&#34;https://docs.mongodb.com/manual/tutorial/map-reduce-examples/&#34;&gt;맵리듀스 예제&lt;/a&gt; 문서를 참고하십시오.&lt;/p&gt;&#xA;&lt;h1 id=&#34;참고자료&#34;&gt;참고자료&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.mongodb.com/manual/core/map-reduce/&#34;&gt;공식 문서 Map-Reduce&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>MongoDB 스터디 7주차(MongoDB CURD 읽기 연산)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-7/</link>
+      <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-7/</guid>
+      <description>&lt;h1 id=&#34;dbcollectionfind&#34;&gt;&lt;a href=&#34;https://docs.mongodb.com/manual/reference/method/db.collection.find/&#34;&gt;db.collection.find()&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;쿼리 기준과 일치하는 도큐먼트에 대한 커서를 반환합니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;파라미터&#34;&gt;파라미터&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;query: 필터에 사용할 쿼리 연산자입니다.&lt;/li&gt;&#xA;&lt;li&gt;projection: 도큐먼트에서 반환할 필드를 지정합니다. 생략하면 모든 필드가 반환됩니다.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;dbcollectionfindone&#34;&gt;&lt;a href=&#34;https://docs.mongodb.com/manual/reference/method/db.collection.findOne/&#34;&gt;db.collection.findOne()&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;쿼리 기준과 일치하는 하나의 도큐먼트를 반환합니다.&#xA;여러 도큐먼트들이 쿼리를 만족하면 디스크에 저장된 순서에 따라 첫 도큐먼트를 반환합니다.&#xA;만약 대상이 없으면 null을 반환합니다.&lt;/p&gt;&#xA;&lt;h1 id=&#34;read-concern&#34;&gt;&lt;a href=&#34;https://docs.mongodb.com/manual/reference/read-concern/&#34;&gt;Read Concern&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;readConcern 옵션을 사용해 읽기 작업의 일관성과 격리수준, 가용성을 제어할 수 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;4.4 버전부터 기본값의 전역 설정이 가능합니다. 세부정보는 &lt;a href=&#34;https://docs.mongodb.com/manual/reference/command/setDefaultRWConcern/#dbcmd.setDefaultRWConcern&#34;&gt;setDefaultRWConcern&lt;/a&gt;에서 확인하십시오.&lt;/p&gt;&#xA;&lt;h2 id=&#34;read-concern-levels&#34;&gt;Read Concern Levels&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;local&#xA;&lt;ul&gt;&#xA;&lt;li&gt;과반수에 기록되었음을 확인하지 않고 데이터를 반환합니다.(읽어온 데이터가 롤백될 수 있음)&lt;/li&gt;&#xA;&lt;li&gt;사용가능: &lt;code&gt;causally consistent session&lt;/code&gt; 또는 트랜잭션에서 사용할 수 있습니다.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;available&#xA;&lt;ul&gt;&#xA;&lt;li&gt;과반수에 기록되었음을 확인하지 않고 데이터를 반환합니다.(읽어온 데이터가 롤백될 수 있음)&lt;/li&gt;&#xA;&lt;li&gt;사용가능: &lt;code&gt;causally consistent session&lt;/code&gt; 또는 트랜잭션에서 사용할 수 없습니다.&lt;/li&gt;&#xA;&lt;li&gt;샤딩된 클러스터에서 가장 낮은 레이턴시를 제공합니다. 하지만 샤드된 컬렉션에서 &lt;a href=&#34;https://docs.mongodb.com/manual/reference/glossary/#term-orphaned-document&#34;&gt;orphaned document&lt;/a&gt;를 반환할 수 있음을 유의하십시오.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;majority&#xA;&lt;ul&gt;&#xA;&lt;li&gt;과반수에 기록된 데이터를 반환합니다.&lt;/li&gt;&#xA;&lt;li&gt;이를 충족하기 위해 각 레플리카 셋 멤버들이 메모리의 &lt;code&gt;majority-commit point&lt;/code&gt; 반환해야 합니다. 따라서 위 두 설정에 비해 성능이 떨어집니다.&lt;/li&gt;&#xA;&lt;li&gt;사용가능:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;causally consistent session&lt;/code&gt; 또는 트랜잭션에서 사용할 수 있습니다.&lt;/li&gt;&#xA;&lt;li&gt;PSA 아키텍처를 사용할 때 이 설정을 쓰지 않게 설정할 수 있습니다. 하지만 이것은 Change Streams, 트랜잭션, 샤디드 클러스터에 영향을 줄 수 있습니다. 자세한 내용은 &lt;a href=&#34;https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority&#34;&gt;Disable Read Concern Majority&lt;/a&gt;에서 확인하십시오.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;linearizable&#xA;&lt;ul&gt;&#xA;&lt;li&gt;읽기를 시작하기 전에 완료된 쓰기에 대한 데이터만 반환합니다. 쿼리가 결과를 반환하기 전에 레플리카 셋 전체에 결과가 전파되길 기다립니다.&lt;/li&gt;&#xA;&lt;li&gt;읽기 시작 후 레플리카 셋의 과반이 재시작되어도, 반환된 데이터는 유효합니다.(&lt;code&gt;writeConcernMajorityJournalDefault&lt;/code&gt; 을 false 로 변경하면 아닐 수 있음)&lt;/li&gt;&#xA;&lt;li&gt;사용가능:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;causally consistent session&lt;/code&gt; 또는 트랜잭션에서 사용할 수 없습니다.&lt;/li&gt;&#xA;&lt;li&gt;프라이머리 노드에만 설정할 수 있습니다.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;어그리게이션의 &lt;a href=&#34;https://docs.mongodb.com/manual/reference/operator/aggregation/out/#pipe._S_out&#34;&gt;$out&lt;/a&gt;, &lt;a href=&#34;https://docs.mongodb.com/manual/reference/operator/aggregation/merge/#pipe._S_merge&#34;&gt;$merge&lt;/a&gt; 스테이지에서 사용할 수 없습니다.&lt;/li&gt;&#xA;&lt;li&gt;요구사항: 유니크하게 식별가능한 단일 도큐먼트에 읽기 작업에서만 보장됩니다.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;snapshot&#xA;&lt;ul&gt;&#xA;&lt;li&gt;트랜잭션이 &lt;code&gt;causally consistent session&lt;/code&gt; 이 아니고 Write concern 이 majority 인 경우, 트랜잭션은 과반이 커밋된 데이터의 스냅샷에서 읽습니다.&lt;/li&gt;&#xA;&lt;li&gt;트랜잭션이 &lt;code&gt;causally consistent session&lt;/code&gt; 이고 Write concern 이 majority 인 경우, 트랜잭션 시작 직전에 과반이 커밋된 데이터의 스냅샷에서 읽습니다.&lt;/li&gt;&#xA;&lt;li&gt;사용가능:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;멀티 도큐먼트 트랜잭션에서만 사용가능합니다.&lt;/li&gt;&#xA;&lt;li&gt;샤딩된 클러스터 중 하나라도 &lt;a href=&#34;https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority&#34;&gt;Disable Read Concern Majority&lt;/a&gt; 설정을 할 경우 사용할 수 없습니다.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;causal-consistency&#34;&gt;&lt;a href=&#34;https://docs.mongodb.com/manual/core/read-isolation-consistency-recency/#causal-consistency&#34;&gt;Causal Consistency&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;뭔가 묘한 일관성 옵션입니다. 잘 찾아보면 활용할 만 한 특수한 사용처가 있을지도 모릅니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MongoDB 스터디 6주차(MongoDB CURD 쓰기 연산)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-6/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-6/</guid>
+      <description>&lt;h1 id=&#34;create-operations&#34;&gt;Create Operations&lt;/h1&gt;&#xA;&lt;h2 id=&#34;dbcollectioninsertone&#34;&gt;&lt;a href=&#34;https://docs.mongodb.com/manual/reference/method/db.collection.insertOne/&#34;&gt;db.collection.insertOne()&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;도큐먼트를 하나 추가합니다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;문법&#34;&gt;문법&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;db&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;collection&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;insertOne&lt;/span&gt;(&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;document&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&lt;span style=&#34;color:#a6e22e&#34;&gt;writeConcern&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;document&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.mongodb.com/manual/reference/write-concern/&#34;&gt;writeConcern&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;w: 몇 개의 mongod 에 저장 후 응답할 지 설정&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;lt;숫자&amp;gt;: 몇 개의 mongod 에 기록될 지 직접 지정&lt;/li&gt;&#xA;&lt;li&gt;&amp;ldquo;majority&amp;rdquo;: 과반의 mongod 에 기록되게 설정&lt;/li&gt;&#xA;&lt;li&gt;&amp;lt;커스텀 write concern 이름&amp;gt;: 특정 데이터 센터에 저장되게 설정가능, &lt;a href=&#34;https://docs.mongodb.com/manual/tutorial/configure-replica-set-tag-sets/#configure-custom-write-concern&#34;&gt;Custom Multi-Datacenter Write Concerns&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;j: 디스크의 저널에 저장 후 응답할지 설정 여부&lt;/li&gt;&#xA;&lt;li&gt;timeout: 쓰기 제한 시간(밀리세컨드), 반환하기 전에 이미 성공한 쓰기 작업을 롤백하지 않음&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;예&#34;&gt;예&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;db&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;products&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;insertOne&lt;/span&gt;(&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;{ &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;item&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;envelopes&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;qty&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Self-Sealing&amp;#34;&lt;/span&gt; },&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;{ &lt;span style=&#34;color:#a6e22e&#34;&gt;writeConcern&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;w&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;majority&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;wtimeout&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt; } }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;dbcollectioninsertmany&#34;&gt;&lt;a href=&#34;https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/&#34;&gt;db.collection.insertMany()&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;도큐먼트를 여러 개 추가합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Book) TCP/IP 교과서</title>
+      <link>https://marsettler.com/book/tcp-ip-in-24-hours/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/tcp-ip-in-24-hours/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;지은이: 조 캐서드&lt;/li&gt;&#xA;&lt;li&gt;ISBN: 979-11-6521-399-2 93000&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>2020년 2월 19일 쿠키런: 킹덤 장기 점검(AWS)</title>
+      <link>https://marsettler.com/outage/2021-02-21-cookierun-kingdom-server-faultaws/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/outage/2021-02-21-cookierun-kingdom-server-faultaws/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;&#xA;&lt;p&gt;2월 19일(금) 23:22 ~ 2월 20(토) 19:00 까지 쿠키런: 킹덤 긴급 점검이 있었습니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;원인&#34;&gt;원인&lt;/h2&gt;&#xA;&lt;p&gt;아마존웹서비스 장애로 인한 긴급 점검이라고 안내하고 있습니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;특이사항&#34;&gt;특이사항&lt;/h2&gt;&#xA;&lt;p&gt;동일한 원인(AWS 도쿄 리전 장애)으로 의심되는 리그 오브 레전드의 경우 2월 20일 00:45 에 정상화되었는데, 왜 19:00 까지&#xA;점검이 지속되었는지 궁금합니다. 아마 서버 아키텍처의 유연성 차이 또는 데이터베이스의 HA 구성 차이일 것으로 짐작됩니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;참고자료&#34;&gt;참고자료&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;쿠키런: 킹덤 [안내] 아마존 웹서비스 데이터센터의 장애 발생 안내(정상화): &lt;a href=&#34;https://cafe.naver.com/crkingdom/343860&#34;&gt;https://cafe.naver.com/crkingdom/343860&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;쿠키런: 킹덤 [안내] 아마존 웹서비스 장애 정상화 및 서버 오픈 안내(2/20, 19:00): &lt;a href=&#34;https://cafe.naver.com/crkingdom/375034&#34;&gt;https://cafe.naver.com/crkingdom/375034&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;리그 오브 레전드 2021년 2월 19일 게임 이용 장애 현상 안내 (정상화): &lt;a href=&#34;https://kr.leagueoflegends.com/ko-kr/news/notices/2021nyeon-2wol-19il-geim-iyong-jangae-hyeonsang-annae-jeongsanghwa/&#34;&gt;https://kr.leagueoflegends.com/ko-kr/news/notices/2021nyeon-2wol-19il-geim-iyong-jangae-hyeonsang-annae-jeongsanghwa/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;44BITS AWS 도쿄 리전 장애 발생, 특정 AZ 일부 구역의 온도 상승이 원인 &lt;a href=&#34;https://www.44bits.io/ko/post/news--2021-02-20-aws-ap-northeast-1-outage&#34;&gt;https://www.44bits.io/ko/post/news--2021-02-20-aws-ap-northeast-1-outage&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>MongoDB 스터디 5주차(패턴과 안티패턴)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-5/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-5/</guid>
+      <description>&lt;h2 id=&#34;패턴&#34;&gt;패턴&lt;/h2&gt;&#xA;&lt;h3 id=&#34;attribute-pattern&#34;&gt;Attribute Pattern&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;상황&#xA;&lt;ul&gt;&#xA;&lt;li&gt;비슷한 필드가 많을 때&lt;/li&gt;&#xA;&lt;li&gt;여러 필드에 걸쳐 조회하고 싶을때&lt;/li&gt;&#xA;&lt;li&gt;필드가 일부 도큐먼트에만 있을 때&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;해결책&#xA;&lt;ul&gt;&#xA;&lt;li&gt;필드를 k/v 짝으로 나누어 서브도큐먼트에 저장&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;예&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;적용 전&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Star Wars&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;release_US&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1977-05-20T01:00:00+01:00&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;release_France&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1977-10-19T01:00:00+01:00&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;release_Italy&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1977-10-20T01:00:00+01:00&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;release_UK&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1977-12-27T01:00:00+01:00&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;적용 후&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Star Wars&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;director&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;George Lucas&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;releases&amp;#34;&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;[&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;location&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;USA&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;date&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1977-05-20T01:00:00+01:00&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;},&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;location&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;France&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;date&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1977-10-19T01:00:00+01:00&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;},&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;location&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Italy&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;date&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1977-10-20T01:00:00+01:00&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;},&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;location&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;UK&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;&#x9;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;date&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1977-12-27T01:00:00+01:00&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;},&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;장점&#xA;&lt;ul&gt;&#xA;&lt;li&gt;인덱싱하기 쉬움&lt;/li&gt;&#xA;&lt;li&gt;더 적은 인덱스가 필요함&lt;/li&gt;&#xA;&lt;li&gt;쿼리가 간단해지고 일반적으로 빨라짐&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;extended-reference-pattern&#34;&gt;Extended Reference Pattern&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;상황&#xA;&lt;ul&gt;&#xA;&lt;li&gt;너무 많은 조인이 발생함&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;해결책&#xA;&lt;ul&gt;&#xA;&lt;li&gt;주가 되는 도큐먼트에 쪽에 필드를 임베딩함&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;예&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;적용 전&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>로블록스 장애 디브리핑(Roblox Return to Service 10/28-10/31 2021)</title>
+      <link>https://marsettler.com/outage/2022-01-20-roblox-outage-debriefing/</link>
+      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/outage/2022-01-20-roblox-outage-debriefing/</guid>
+      <description>&lt;p&gt;로블록스는 2021년 10월 28일부터 10월 31일까지 73시간의 장애 대한 디브리핑을 하고 자사 블로그에 공개했습니다.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;최근의 개선사항과 계획된 작업들 중 인상적인 내용 몇가지를 기록합니다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;모니터링-시스템-개선&#34;&gt;모니터링 시스템 개선&lt;/h3&gt;&#xA;&lt;p&gt;모니터링 시스템이 메인 시스템 간 순환 종속성 제거했습니다.&#xA;메인 시스템 장애가 모니터링 시스템 장애로 이어졌고, 그로 인해 장애 원인를 찾을 데이터를 빠르게 확보할 수 없었음&lt;/p&gt;&#xA;&lt;p&gt;장애의 주 원인(Consul and BoltDB) 모니터링 시스템을 확장했습니다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;서비스-시작과-설정-관리방식-개선&#34;&gt;서비스 시작과 설정 관리방식 개선&lt;/h3&gt;&#xA;&lt;p&gt;서비스 재시작 시 서비스에 필요한 캐시 배치, 웜업을 위해 서비스 복구가 느려졌습니다.&#xA;이 프로세스를 자동화하고 오류가 덜 발생하게 하기 위해 도구와 프로세스를 개발하고 있습니다.&#xA;특히 캐시 배포 매커니즘을 재설계했습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>뉴스피드 2021</title>
+      <link>https://marsettler.com/newsfeed/newsfeed-2021/</link>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/newsfeed/newsfeed-2021/</guid>
+      <description>&lt;h2 id=&#34;2020년-7월&#34;&gt;2020년 7월&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;승진은 후불제 &amp;hellip; 이미 다음 단계 일은 하고 있음 + 그걸 얼마나 잘 당연시하는가&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://twitter.com/sajiiinnn/status/1404288485108846593?s=20&#34;&gt;쑤(@sajiiinnn) 님의 트윗&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2020년-6월&#34;&gt;2020년 6월&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;끝으로 어느 팀이든 좋은 코드를 마스터한 시니어만으로 구성되지 않는다. 프로그래밍팀은 하나의 마을이다. 거기엔 아름답고 웅장하게 세워진 성도 있고 이제 첫 삽을 떠본 주니어가 만든 초가집도 있다. 시니어의 역할은 주니어의 초가집 엉성한 부분을 지적하는것에서 끝나지 않는다. 진짜 마스터는 계속해서 자기 성을 짓는 사람이다. 주니어가 지켜보며 영감 (inspiration)을 얻을만큼 계속해서 조금 더 아름다운 성을 만드는 사람이다. 주니어의 초라한 집에서 훗날 성이 될수 있는 재능을 발견해 용기를 주는 사람이다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2020년 1월 25일 쿠키런: 킹덤 장기 점검</title>
+      <link>https://marsettler.com/outage/2021-01-25-cookierun-kingdom-server-fault/</link>
+      <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/outage/2021-01-25-cookierun-kingdom-server-fault/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;&#xA;&lt;p&gt;쿠키런: 킹덤이 오픈 후 알 수 없는 이유로 오랜 시간 점검하였음&lt;/p&gt;&#xA;&lt;p&gt;총 점검 시간: 39시간 40분(2021-01-25 16:50:00 ~ 2021-01-25 03:30:00)&lt;/p&gt;&#xA;&lt;h2 id=&#34;원인&#34;&gt;원인&lt;/h2&gt;&#xA;&lt;p&gt;기술적인 원인은 공개하지 않았음&lt;/p&gt;&#xA;&lt;p&gt;나중에라도 데브시스터즈에서 공유해주시면 흥미로울 것 같음&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;여러분께 &amp;lt;쿠키런: 킹덤&amp;gt;을 선보이며 여러 가지 상황에 대비할 준비를 해왔지만 이번에 발생한 오류는 예상치 못한 치명적인 문제였고, 킹덤팀에서도 오랜 시간을 들여 수정하게 되었습니다.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;점검-보상&#34;&gt;점검 보상&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;크리스탈 12,000개&lt;/li&gt;&#xA;&lt;li&gt;스태미너 젤리 50개&lt;/li&gt;&#xA;&lt;li&gt;킹덤 아레나 티켓 30개&lt;/li&gt;&#xA;&lt;li&gt;코인 50,000개&lt;/li&gt;&#xA;&lt;li&gt;가속원 30분 5개&lt;/li&gt;&#xA;&lt;li&gt;경험의 별사탕 레벨 4 100개&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;긴급 점검 보상은 2021년 1월 25일(월) 점검 전까지 생성된 계정에 한하여 지급됩니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Book) 팀장의 탄생</title>
+      <link>https://marsettler.com/book/the-making-of-a-manager/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/the-making-of-a-manager/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;지은이: Julie Zhuo&lt;/li&gt;&#xA;&lt;li&gt;ISBN: 979-11-6521-268-1&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;38쪽&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;진정한 관리자의 본분은 &amp;lsquo;여러 사람이 협력하는 집단에서 더 좋은 성과를 도출하는 것&amp;rsquo;이다.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;40쪽&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;하지만 시간이 지나면 진실이 드러나는 법이다. 유능한 인재는 자신을 홀대하는 상사나 존경심이 생기지 않는 상사 밑에서 몇 년이나 참고 버티지 않는다. 그리고 유능한 관리자는 쇄신을 단행할 권한만 준다면 형편없는 성과를 내던 팀을 환골탈태시킨다.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;47쪽&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;모름지기 관리자라면 팀의 목적, 사람, 프로세스를 개선함으로써 팀의 전체적인 성과에 최대한 멀티플라이어 효과를 내야 한다.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;51쪽&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;실무를 할 떄보다 성과 달성에 더 매력을 느끼는가?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MongoDB 스터디 3주차(샤딩을 통한 시스템 확장)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-3/</link>
+      <pubDate>Sun, 24 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-3/</guid>
+      <description>&lt;h2 id=&#34;샤딩&#34;&gt;샤딩&lt;/h2&gt;&#xA;&lt;p&gt;샤딩은 여러 물리장비에 데이터를 분산하는 방법&#xA;MongoDB 는 샤딩을 이용해 매우 큰 데이터에 대해 높은 처리량을 제공&lt;/p&gt;&#xA;&lt;h3 id=&#34;시스템을-확장하는-두-가지-방법&#34;&gt;시스템을 확장하는 두 가지 방법&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;스케일업&lt;/li&gt;&#xA;&lt;li&gt;스케일아웃(MongoDB 는 샤딩 통해 스케일아웃을 지원)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;대상이-되는-자원&#34;&gt;대상이 되는 자원&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CPU&lt;/li&gt;&#xA;&lt;li&gt;네트워크&lt;/li&gt;&#xA;&lt;li&gt;메모리&lt;/li&gt;&#xA;&lt;li&gt;디스크&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;고려사항&#34;&gt;고려사항&lt;/h3&gt;&#xA;&lt;p&gt;경제적으로 이득인가?&lt;/p&gt;&#xA;&lt;p&gt;실현가능한가?&lt;/p&gt;&#xA;&lt;h4 id=&#34;예-1&#34;&gt;예 1)&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;서버의 CPU 자원에 한계가 다가오고 필요한 CPU 자원은 2배로 예상됨&lt;/li&gt;&#xA;&lt;li&gt;다음으로 좋은 CPU는 처리량이 10배이고 비용도 10배임&lt;/li&gt;&#xA;&lt;li&gt;스케일업을 한다면 10배의 비용으로 2배의 CPU만 사용&lt;/li&gt;&#xA;&lt;li&gt;스케일아웃을 한다면 2배의 비용으로 2배의 CPU 사용가능&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;예-2&#34;&gt;예 2)&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;현재 사용가능한 가장 좋은 CPU를 사용 중 자원에 한계가 다가옴&lt;/li&gt;&#xA;&lt;li&gt;스케일업으로 해결불가&lt;/li&gt;&#xA;&lt;li&gt;스케일아웃으로 해결가능&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;예-3&#34;&gt;예 3)&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;디스크를 1TB 에서 20TB 로 20배 스케일업&lt;/li&gt;&#xA;&lt;li&gt;백업, 복구, resync 에 20배의 시간이 듬&lt;/li&gt;&#xA;&lt;li&gt;스케일아웃한다면 병렬화의 장점을 사용해 시간을 절약할 수 있음&lt;/li&gt;&#xA;&lt;li&gt;또 MongoDB의 경우 큰 데이터는 큰 인덱스를 만들기 때문에 메모리 사용량도 함께 증가함&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;기타-장점&#34;&gt;기타 장점&lt;/h3&gt;&#xA;&lt;p&gt;분산처리에 용이하기 때문에 MongoDB 에서 제공하는 존 샤딩, 어그리게이션 등의 기능을 효과적으로 사용가능&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>가치투자자 일지</title>
+      <link>https://marsettler.com/value-investors-diary/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/value-investors-diary/</guid>
+      <description>&lt;h1 id=&#34;대한민국&#34;&gt;대한민국&lt;/h1&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;날짜&lt;/th&gt;&#xA;          &lt;th&gt;회사&lt;/th&gt;&#xA;          &lt;th&gt;보고서&lt;/th&gt;&#xA;          &lt;th&gt;주가&lt;/th&gt;&#xA;          &lt;th&gt;시가총액&lt;/th&gt;&#xA;          &lt;th&gt;매출&lt;/th&gt;&#xA;          &lt;th&gt;영업이익&lt;/th&gt;&#xA;          &lt;th&gt;당기순이익&lt;/th&gt;&#xA;          &lt;th&gt;특이사항&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2021-04-11&lt;/td&gt;&#xA;          &lt;td&gt;엔씨소프트(KRX: 036570)&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;http://dart.fss.or.kr/dsaf001/main.do?rcpNo=20210316001082&#34;&gt;사업보고서 (2020.12)&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;925,000원&lt;/td&gt;&#xA;          &lt;td&gt;20조 3,075억원&lt;/td&gt;&#xA;          &lt;td&gt;5,613억원&lt;/td&gt;&#xA;          &lt;td&gt;1,567억원&lt;/td&gt;&#xA;          &lt;td&gt;803억원&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2021-04-11&lt;/td&gt;&#xA;          &lt;td&gt;넷마블네오&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;http://dart.fss.or.kr/dsaf001/main.do?rcpNo=20210331003262&#34;&gt;사업보고서 (2020.12)&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;138,000원&lt;/td&gt;&#xA;          &lt;td&gt;1조 7,194억원&lt;/td&gt;&#xA;          &lt;td&gt;881억원&lt;/td&gt;&#xA;          &lt;td&gt;432억원&lt;/td&gt;&#xA;          &lt;td&gt;386억원&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2021-04-11&lt;/td&gt;&#xA;          &lt;td&gt;라인게임즈&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://www.hankyung.com/economy/article/202103267003i&#34;&gt;[한경 CFO Insight] 라인게임즈 텐센트 등에서 1000억원 유치&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;9,000억원(추정)&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;투자유치를 위한 유상증자 2회 있었음&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2021-03-01&lt;/td&gt;&#xA;          &lt;td&gt;엔씨소프트(KRX: 036570)&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;http://dart.fss.or.kr/dsaf001/main.do?rcpNo=20201116001896&#34;&gt;분기보고서 (2020.09)&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;936,000원&lt;/td&gt;&#xA;          &lt;td&gt;20조 5,490억원&lt;/td&gt;&#xA;          &lt;td&gt;5,852억원&lt;/td&gt;&#xA;          &lt;td&gt;2,177억원&lt;/td&gt;&#xA;          &lt;td&gt;1,525억원&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2021-03-01&lt;/td&gt;&#xA;          &lt;td&gt;넷마블네오&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;http://dart.fss.or.kr/dsaf001/main.do?rcpNo=20201116000809&#34;&gt;분기보고서 (2020.09)&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;92,000원&lt;/td&gt;&#xA;          &lt;td&gt;1조 1,462억원&lt;/td&gt;&#xA;          &lt;td&gt;205억원&lt;/td&gt;&#xA;          &lt;td&gt;100억원&lt;/td&gt;&#xA;          &lt;td&gt;88억원&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2021-03-01&lt;/td&gt;&#xA;          &lt;td&gt;라인게임즈&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;http://dart.fss.or.kr/dsaf001/main.do?rcpNo=20200601000366&#34;&gt;대규모기업집단현황공시[연1회공시및1/4분기용(개별회사)]&lt;/a&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;4,500억원(추정)&lt;/td&gt;&#xA;          &lt;td&gt;206억원&lt;/td&gt;&#xA;          &lt;td&gt;-431억원&lt;/td&gt;&#xA;          &lt;td&gt;-670억원&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h1 id=&#34;미국&#34;&gt;미국&lt;/h1&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;날짜&lt;/th&gt;&#xA;          &lt;th&gt;회사&lt;/th&gt;&#xA;          &lt;th&gt;주가&lt;/th&gt;&#xA;          &lt;th&gt;Market Cap(시가총액)&lt;/th&gt;&#xA;          &lt;th&gt;Revenue(매출)&lt;/th&gt;&#xA;          &lt;th&gt;EPS(주당순이익)&lt;/th&gt;&#xA;          &lt;th&gt;특이사항&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2021-03-07&lt;/td&gt;&#xA;          &lt;td&gt;MongoDB(MDB)&lt;/td&gt;&#xA;          &lt;td&gt;308.17$&lt;/td&gt;&#xA;          &lt;td&gt;18,570,000,000$&lt;/td&gt;&#xA;          &lt;td&gt;542,900,000$&lt;/td&gt;&#xA;          &lt;td&gt;-4.36&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2021-03-07&lt;/td&gt;&#xA;          &lt;td&gt;Oracle(ORCL)&lt;/td&gt;&#xA;          &lt;td&gt;69.97$&lt;/td&gt;&#xA;          &lt;td&gt;205,990,000,000$&lt;/td&gt;&#xA;          &lt;td&gt;39,400,000,000$&lt;/td&gt;&#xA;          &lt;td&gt;3.3&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2021-03-07&lt;/td&gt;&#xA;          &lt;td&gt;Cockroach Labs&lt;/td&gt;&#xA;          &lt;td&gt;-&lt;/td&gt;&#xA;          &lt;td&gt;2,000,000,000$&lt;/td&gt;&#xA;          &lt;td&gt;-&lt;/td&gt;&#xA;          &lt;td&gt;-&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>MongoDB 스터디 2주차(MongoDB 설치하기)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-2/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-2/</guid>
+      <description>&lt;h2 id=&#34;replica-set&#34;&gt;Replica Set&lt;/h2&gt;&#xA;&lt;p&gt;Replica set 은 같은 데이터를 가진 mongod 프로세스 그룹입니다. 이를 통해 MongoDB는 데이터 중복과 고가용성을 제공합니다. 그렇기 때문에 일부 서버에 장애가 발생하더라고 전체 시스템은 정상적으로 운영될 수 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;특정한 경우 복제를 통해 읽기 수용량을 증가시킬 수 있습니다. 또 서로 다른 데이터센터에 복사본을 유지하여 가용성을 증가시킬수 있도 장애복구, 분석, 백업 목적으로 추가 복사본을 만들 수도 있습니다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;replication&#34;&gt;Replication&lt;/h3&gt;&#xA;&lt;p&gt;Replica set 은 데이터를 가진 여러 노드로 이루어지며(데이터가 없는 아비터가 추가될 수도 있음), 이 중 하나만이 primary 노드가 됩니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MongoDB 스터디 1주차(MongoDB 기초)</title>
+      <link>https://marsettler.com/mongodb/mongodb-study-week-1/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/mongodb/mongodb-study-week-1/</guid>
+      <description>&lt;h3 id=&#34;들어가며&#34;&gt;들어가며&lt;/h3&gt;&#xA;&lt;p&gt;지금까지 필요 없는 로그성 데이터를 MongoDB에 저장한 경험이 있으며, 대부분은 RDBMS를 사용했습니다. MongoDB도 많이 발전하였고(트랜잭션, 컨시스턴시 관련) 우리의 MongoDB 운영능력도 증가했기 떄문에 애플리케이션에서 스케일아웃을 핸들링하지 않고 MongoDB를 사용해 개발속도를 향상시키고 싶습니다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;mongodb란&#34;&gt;MongoDB란&lt;/h3&gt;&#xA;&lt;p&gt;도큐먼트를 기본 자료형으로 사용하는 NoSQL 데이터베이스&lt;/p&gt;&#xA;&lt;h3 id=&#34;도큐먼트와-컬렉션&#34;&gt;도큐먼트와 컬렉션&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;도큐먼트&#xA;&lt;ul&gt;&#xA;&lt;li&gt;도큐먼트는 field와 value의 쌍으로 데이터를 저장하고 관리&lt;/li&gt;&#xA;&lt;li&gt;JSON 형태로 사용되며 실제로는 BSON으로 시리얼라이즈되어 저장됨&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hueypark&amp;#34;&lt;/span&gt;,&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt; : &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;software engineer&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;컬렉션&#xA;&lt;ul&gt;&#xA;&lt;li&gt;도큐먼트들이 모여있는 집합&lt;/li&gt;&#xA;&lt;li&gt;일반적으로 한 컬렉션에 있는 도큐먼트들은 공통된 필드를 가지고 있음&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;bson&#34;&gt;BSON&lt;/h3&gt;&#xA;&lt;p&gt;BSON은 바이너리로 시리얼라이즈 된 JSON&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>와인 일지</title>
+      <link>https://marsettler.com/wine-diary/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/wine-diary/</guid>
+      <description>&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;이름&lt;/th&gt;&#xA;          &lt;th&gt;가격&lt;/th&gt;&#xA;          &lt;th&gt;구매 장소&lt;/th&gt;&#xA;          &lt;th&gt;구매 날짜&lt;/th&gt;&#xA;          &lt;th&gt;사진&lt;/th&gt;&#xA;          &lt;th&gt;시음 날짜&lt;/th&gt;&#xA;          &lt;th&gt;후기&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Viberti Barbera La Gemella 2019&lt;/td&gt;&#xA;          &lt;td&gt;27,000원&lt;/td&gt;&#xA;          &lt;td&gt;뱅가드와인머천트(광화문점)&lt;/td&gt;&#xA;          &lt;td&gt;2021-02-09&lt;/td&gt;&#xA;          &lt;td&gt;&lt;img src=&#34;https://marsettler.com/wine/viberti-barbera-la-gemella-2019-front.jpg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://marsettler.com/wine/viberti-barbera-la-gemella-2019-back.jpg&#34; alt=&#34;&#34;&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Colombina San Martino 2012&lt;/td&gt;&#xA;          &lt;td&gt;41,000원&lt;/td&gt;&#xA;          &lt;td&gt;뱅가드와인머천트(광화문점)&lt;/td&gt;&#xA;          &lt;td&gt;2021-02-09&lt;/td&gt;&#xA;          &lt;td&gt;&lt;img src=&#34;https://marsettler.com/wine/colombina-san-martino-2012-front.jpg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://marsettler.com/wine/colombina-san-martino-2012-back.jpg&#34; alt=&#34;&#34;&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;BARBARESCO BRIC MICCA 2016&lt;/td&gt;&#xA;          &lt;td&gt;55,000원&lt;/td&gt;&#xA;          &lt;td&gt;뱅가드와인머천트(광화문점)&lt;/td&gt;&#xA;          &lt;td&gt;2021-02-09&lt;/td&gt;&#xA;          &lt;td&gt;&lt;img src=&#34;https://marsettler.com/wine/barbaresco-bric-micca-2016-front.jpg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://marsettler.com/wine/barbaresco-bric-micca-2016-back.jpg&#34; alt=&#34;&#34;&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Soumah Single Vineyard Chardonnay 2019&lt;/td&gt;&#xA;          &lt;td&gt;45,000원&lt;/td&gt;&#xA;          &lt;td&gt;뱅가드와인머천트(광화문점)&lt;/td&gt;&#xA;          &lt;td&gt;2021-01-11&lt;/td&gt;&#xA;          &lt;td&gt;&lt;img src=&#34;https://marsettler.com/wine/soumah-single-vineyard-chardonnay-2019-front.jpg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://marsettler.com/wine/soumah-single-vineyard-chardonnay-2019-back.jpg&#34; alt=&#34;&#34;&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Essay Chenin Blanc 2020&lt;/td&gt;&#xA;          &lt;td&gt;12,900원&lt;/td&gt;&#xA;          &lt;td&gt;뱅가드와인머천트(광화문점)&lt;/td&gt;&#xA;          &lt;td&gt;2021-01-11&lt;/td&gt;&#xA;          &lt;td&gt;&lt;img src=&#34;https://marsettler.com/wine/essay-chenin-blanc-2020-front.jpg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://marsettler.com/wine/essay-chenin-blanc-2020-back.jpg&#34; alt=&#34;&#34;&gt;&lt;/td&gt;&#xA;          &lt;td&gt;2021-01-15&lt;/td&gt;&#xA;          &lt;td&gt;살짝 단 맛, 가성비가 좋은 와인&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Viberti Giovanni La Gemella Barbera d’Alba 2019&lt;/td&gt;&#xA;          &lt;td&gt;24,300원&lt;/td&gt;&#xA;          &lt;td&gt;뱅가드와인머천트(광화문점)&lt;/td&gt;&#xA;          &lt;td&gt;2021-01-11&lt;/td&gt;&#xA;          &lt;td&gt;&lt;img src=&#34;https://marsettler.com/wine/viberti-giovanni-la-gemella-barbera-d%E2%80%99alba-2019-front.jpg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://marsettler.com/wine/viberti-giovanni-la-gemella-barbera-d%E2%80%99alba-2019-front.jpg&#34; alt=&#34;&#34;&gt;&lt;/td&gt;&#xA;          &lt;td&gt;2021-01-26&lt;/td&gt;&#xA;          &lt;td&gt;향이 좋음&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Viberti Giovanni Nebbiolo Langhe 2018&lt;/td&gt;&#xA;          &lt;td&gt;34,200원&lt;/td&gt;&#xA;          &lt;td&gt;뱅가드와인머천트(광화문점)&lt;/td&gt;&#xA;          &lt;td&gt;2021-01-11&lt;/td&gt;&#xA;          &lt;td&gt;&lt;img src=&#34;https://marsettler.com/wine/viberti-giovanni-nebbiolo-langhe-2018-front.jpg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://marsettler.com/wine/viberti-giovanni-nebbiolo-langhe-2018-back.jpg&#34; alt=&#34;&#34;&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Bleda Pino Doncel 12 Meses 2018&lt;/td&gt;&#xA;          &lt;td&gt;25,000원&lt;/td&gt;&#xA;          &lt;td&gt;뱅가드와인머천트(광화문점)&lt;/td&gt;&#xA;          &lt;td&gt;2021-01-11&lt;/td&gt;&#xA;          &lt;td&gt;&lt;img src=&#34;https://marsettler.com/wine/bleda-pino-doncel-12-meses-2018-front.jpg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://marsettler.com/wine/bleda-pino-doncel-12-meses-2018-back.jpg&#34; alt=&#34;&#34;&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Essay Cabernet Sauvignon 2018&lt;/td&gt;&#xA;          &lt;td&gt;12,900원&lt;/td&gt;&#xA;          &lt;td&gt;뱅가드와인머천트(광화문점)&lt;/td&gt;&#xA;          &lt;td&gt;2021-01-11&lt;/td&gt;&#xA;          &lt;td&gt;&lt;img src=&#34;https://marsettler.com/wine/essay-cabernet-sauvignon-2018-front.jpg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://marsettler.com/wine/essay-cabernet-sauvignon-2018-back.jpg&#34; alt=&#34;&#34;&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;THE BALVENIE DOUBLEWOOD12&lt;/td&gt;&#xA;          &lt;td&gt;137,000원&lt;/td&gt;&#xA;          &lt;td&gt;(주)현대백화점 신촌점&lt;/td&gt;&#xA;          &lt;td&gt;2021-01-09&lt;/td&gt;&#xA;          &lt;td&gt;&lt;img src=&#34;https://marsettler.com/wine/the-balvenie-doublewood12-front.jpg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://marsettler.com/wine/the-balvenie-doublewood12-back.jpg&#34; alt=&#34;&#34;&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Talo Primitivo di Manduria San Marzano 2018&lt;/td&gt;&#xA;          &lt;td&gt;30,000원&lt;/td&gt;&#xA;          &lt;td&gt;(주)현대백화점 신촌점&lt;/td&gt;&#xA;          &lt;td&gt;2021-01-09&lt;/td&gt;&#xA;          &lt;td&gt;&lt;img src=&#34;https://marsettler.com/wine/talo-primitivo-di-manduria-san-marzano-2018-front.jpg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://marsettler.com/wine/talo-primitivo-di-manduria-san-marzano-2018-back.jpg&#34; alt=&#34;&#34;&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Trapiche Broquel Malbec 2018&lt;/td&gt;&#xA;          &lt;td&gt;20,000원&lt;/td&gt;&#xA;          &lt;td&gt;(주)현대백화점 신촌점&lt;/td&gt;&#xA;          &lt;td&gt;2021-01-09&lt;/td&gt;&#xA;          &lt;td&gt;&lt;img src=&#34;https://marsettler.com/wine/che-broquel-malbec-2018-front.jpg&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://marsettler.com/wine/che-broquel-malbec-2018-back.jpg&#34; alt=&#34;&#34;&gt;&lt;/td&gt;&#xA;          &lt;td&gt;2021-01-10&lt;/td&gt;&#xA;          &lt;td&gt;별로임, 와인의 향이 없고 술 맛만 남&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>Digital Marketing</title>
+      <link>https://marsettler.com/digital-marketing/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/digital-marketing/</guid>
+      <description>&lt;p&gt;Write something about digital marketing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Favorite Songs</title>
+      <link>https://marsettler.com/favorite-songs/</link>
+      <pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/favorite-songs/</guid>
+      <description>&lt;p&gt;It is a list of my favorite songs. I will update it from time to time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Book) 0년차 게임개발</title>
+      <link>https://marsettler.com/book/game-development-for-0-years/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/game-development-for-0-years/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;지은이: 김다훈, 박소연, 이재호, 주진영&lt;/li&gt;&#xA;&lt;li&gt;ISBN: 979-11-971861-0-3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>물리가 흥미로운 게임들</title>
+      <link>https://marsettler.com/game-design/games-with-interesting-physics/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/game-design/games-with-interesting-physics/</guid>
+      <description>&lt;h3 id=&#34;totally-accurate-battle-simulator&#34;&gt;Totally Accurate Battle Simulator&lt;/h3&gt;&#xA;&lt;p&gt;링크: &lt;a href=&#34;https://landfall.se/&#34;&gt;https://landfall.se/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Totally Accurate는 전혀 아니고 약간 바보같은 연출과 적당한 물리처리로 의외성을 만들어내는 게임입니다.&lt;/p&gt;&#xA;&lt;h3 id=&#34;besiege&#34;&gt;Besiege&lt;/h3&gt;&#xA;&lt;p&gt;링크: &lt;a href=&#34;http://www.besiege.spiderlinggames.co.uk/&#34;&gt;http://www.besiege.spiderlinggames.co.uk/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;모듈화된 부품을 조립하여 공성병기? 를 만드는데, 그 조합의 결과가 물리처리와 합쳐저 놀라운 수준의 의외성을 보여주고 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>뉴스피드 2020</title>
+      <link>https://marsettler.com/newsfeed/newsfeed-2020/</link>
+      <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/newsfeed/newsfeed-2020/</guid>
+      <description>&lt;h2 id=&#34;2020년-12월&#34;&gt;2020년 12월&lt;/h2&gt;&#xA;&lt;h3 id=&#34;disagree-and-commit&#34;&gt;Disagree and commit&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://mobile.twitter.com/bjlee72&#34;&gt;이병준&lt;/a&gt;님의 &lt;a href=&#34;https://youtu.be/SZEHjcDSEdE&#34;&gt;면접시 조심하면 좋은 것들&lt;/a&gt; 중 일부&lt;/p&gt;&#xA;&lt;p&gt;링크: &lt;a href=&#34;https://youtu.be/SZEHjcDSEdE?t=183&#34;&gt;https://youtu.be/SZEHjcDSEdE?t=183&lt;/a&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;자기가 동의하지 않는 내용이라도 팀원의 한 사람으로서 동의를 했다면 그 동의한 내용을 반드시 따라야 한다.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;기계인간님의-개발자의-성격-이야기&#34;&gt;&lt;a href=&#34;https://mobile.twitter.com/John_Grib&#34;&gt;기계인간&lt;/a&gt;님의 개발자의 성격 이야기&lt;/h3&gt;&#xA;&lt;p&gt;어떤 역할을 하느냐에 따라 조금씩 다르겠지만, 개발자도 적극적이어야 할 필요가 있다는 점에서 크게 공감합니다.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;사람마다 회사생활하며 느낀바는 다르겠지만 개발자는 어느 수준부터는 축구선수같길 요구받는다. 내가 수비수라고 수비만 하면 안된다. 내가 공격해야 하는 상황일 땐 공 차고 나가면서 골도 넣을 수 있어야 한다. 소극적인 내 성격에 개발자가 딱인줄 알았는데 경력 쌓이고 보니 오산이었다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>경제</title>
+      <link>https://marsettler.com/the-game-i-want-to-make/economy/</link>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/the-game-i-want-to-make/economy/</guid>
+      <description>&lt;h3 id=&#34;아직-작성중입니다&#34;&gt;아직 작성중입니다.&lt;/h3&gt;&#xA;&lt;p&gt;사용자들이 서로 상호작용하는 게임에서 경제는 매우 중요합니다. 하지만 많은 경우 잘 관리되지 못하며,&#xA;심한 경우에는 패치가 진행될 때마다 극심한 인플레이션으로 재화의 가치가 바닥으로 떨어지곤 합니다.&#xA;이 글에서는 극심한 인플레이션의 문제점과 그 해결방안에 대해 이야기해보겠습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Book) 함께 자라기</title>
+      <link>https://marsettler.com/book/grow-together/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/grow-together/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;지은이: 김창준&lt;/li&gt;&#xA;&lt;li&gt;ISBN: 9788966262335&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>브림스톤과 미스트: 10월 21일</title>
+      <link>https://marsettler.com/albion-online/brimstone-mist-arrives-october-21/</link>
+      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/albion-online/brimstone-mist-arrives-october-21/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://albiononline.com/en/news/brimstone-mist-arrives-october-21&#34;&gt;https://albiononline.com/en/news/brimstone-mist-arrives-october-21&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;오염된 던전에 새로운 적들을 추가되고 아발론의 길에 새로운 생선이 생기며 광범위한 전투 밸런싱을 조정하는 주요 패치가 준비되었습니다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://assets.albiononline.com/uploads/media/default/media/3ad3aca6b7325fc257ec6368a446bbc287b147af.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>내가 만들고 싶은 게임</title>
+      <link>https://marsettler.com/the-game-i-want-to-make/the-game-i-want-to-make/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/the-game-i-want-to-make/the-game-i-want-to-make/</guid>
+      <description>&lt;h3 id=&#34;내가-만들고-싶은-게임&#34;&gt;내가 만들고 싶은 게임&lt;/h3&gt;&#xA;&lt;p&gt;게임 서버 프로그래머로 수 년 간 일했지만, 업무의 대부분의 시간은 디자이너가 제공해 주는 아이디어의 구현에 치중되어 있었습니다. 이 글에서는 스스로 만들고 싶은 게임에 대해 이야기 합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Raft Consensus Algorithm</title>
+      <link>https://marsettler.com/distributed-system/raft-consensus-algorithm/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/distributed-system/raft-consensus-algorithm/</guid>
+      <description>&lt;p&gt;Raft Consensus Algorithm은 분산 환경에서 사용할 수 있는 합의 알고리즘입니다. 이를 사용해 분산 환경에서 모든 노드의 상태를 동일하게 유지가능합니다.&lt;/p&gt;&#xA;&lt;p&gt;자세한 설명은 &lt;a href=&#34;https://raft.github.io/&#34;&gt;The Raft Consensus Algorithm&lt;/a&gt; 에서 볼 수 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://etcd.io/&#34;&gt;etcd&lt;/a&gt; 안에 훌륭한 &lt;a href=&#34;https://github.com/etcd-io/etcd/tree/master/raft&#34;&gt;Raft 라이브러리&lt;/a&gt;가 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Single Server MMORPG: Technology stacks</title>
+      <link>https://marsettler.com/single-server-mmorpg/technology-stacks/</link>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/single-server-mmorpg/technology-stacks/</guid>
+      <description>&lt;h2 id=&#34;technology-stacks&#34;&gt;Technology stacks&lt;/h2&gt;&#xA;&lt;p&gt;This technology stack is not consistently enforced for all MMORPGs. However, it will be the basis for technical decisions, so that I will mention it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Single Server MMORPG: What is single server MMORPG?</title>
+      <link>https://marsettler.com/single-server-mmorpg/what-is-single-server-mmorpg/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/single-server-mmorpg/what-is-single-server-mmorpg/</guid>
+      <description>&lt;p&gt;What is a single server MMORPG?&lt;/p&gt;&#xA;&lt;p&gt;Before I begin, let&amp;rsquo;s clarify the concept of what we&amp;rsquo;re going to talk.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leadership</title>
+      <link>https://marsettler.com/leadership/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/leadership/</guid>
+      <description>&lt;p&gt;공동목표를 위해 스스로 노력하도록 사람들에게 영향력을 행사하는 과정&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;&#xA;&lt;hr&gt;&#xA;&lt;ol&gt;&#xA;&lt;li id=&#34;fn:1&#34;&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://mobile.twitter.com/WonSoRang/status/1306992658900901888&#34;&gt;원소랑님 트위터&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>페블(Pebble): RocksDB에서 영감을 받은 키밸류 저장소</title>
+      <link>https://marsettler.com/cockroachdb-introducing-pebble/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/cockroachdb-introducing-pebble/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cockroachdb/pebble&#34;&gt;페블(Pebble)&lt;/a&gt;은 &lt;a href=&#34;https://rocksdb.org/&#34;&gt;RocksDB&lt;/a&gt;에서 영감을 받은 키밸류 저장소입니다. 카크로치디비 블로그에 새로운 &lt;a href=&#34;https://www.cockroachlabs.com/blog/pebble-rocksdb-kv-store/&#34;&gt;Pebble 이야기&lt;/a&gt;가 포스팅되었는데 그 내용을 요약하고 의견을 덧붙입니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Single Server MMORPG: Introduction</title>
+      <link>https://marsettler.com/single-server-mmorpg/introduction/</link>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/single-server-mmorpg/introduction/</guid>
+      <description>&lt;p&gt;This post is the first of the Single Server MMORPG server series.&lt;/p&gt;&#xA;&lt;p&gt;Single Server MMORPG server uses one logically server instead of using multiple separate sharded servers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>게임 서버 아키텍처</title>
+      <link>https://marsettler.com/game-server-architecture/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/game-server-architecture/</guid>
+      <description>&lt;p&gt;아직 작성중입니다.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;게임 서버 아키텍처에 관한 이야기를 합니다. 대부분의 내용은 MMORPG에 특화되어 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Write Ahead Logging</title>
+      <link>https://marsettler.com/write-ahead-logging/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/write-ahead-logging/</guid>
+      <description>&lt;p&gt;Write Ahead Logging(WAL)은 데이터베이스 시스템에서 ACID의 특성 가운데 원자성과 내구성을 제공하는 기술입니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>데이터베이스</title>
+      <link>https://marsettler.com/database/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/database/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://marsettler.com/write-ahead-logging&#34;&gt;Write Ahead Logging&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.vldb.org/&#34;&gt;Very Large Data Bases Endowment Inc.&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sigmod.org/&#34;&gt;SIGMOD&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ieee-icde.org/2025/&#34;&gt;ICDE 2025&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>TCP</title>
+      <link>https://marsettler.com/tcp/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/tcp/</guid>
+      <description>&lt;p&gt;전송 제어 프로토콜(Transmission Control Protocol)은 인터넷 프로토콜 스위트(IP)의 핵심 프로토콜 중 하나로, IP와 함께 TCP/IP라는 명칭으로도 널리 불린다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>네트워크</title>
+      <link>https://marsettler.com/network/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/network/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://marsettler.com/tcp&#34;&gt;TCP&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>카크로치디비의 컬럼 패밀리</title>
+      <link>https://marsettler.com/cockroachdb-column-families/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/cockroachdb-column-families/</guid>
+      <description>&lt;p&gt;카크로치디비의 컬럼 패밀리에 대해 소개합니다.&#xA;실제 스토리지 레이어에 어떻게 데이터가 기록되는지에 관심이 있거나,&#xA;더 효율적인 테이블 설계를 하고 싶은 분에게 도움이 되는 내용입니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: Bugfix and Chill(버그를 수정하자!)</title>
+      <link>https://marsettler.com/cockroachdb-livestream-bugfix-and-chill/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/cockroachdb-livestream-bugfix-and-chill/</guid>
+      <description>&lt;iframe height=&#34;400&#34; width=&#34;100%&#34; src=&#34;https://www.youtube.com/embed/nFmDJP-fNRQ&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&#xA;&lt;p&gt;이번 주에도 &lt;a href=&#34;https://mobile.twitter.com/JordanALewis&#34;&gt;@JordanALewis&lt;/a&gt;의 진행되었습니다. &lt;code&gt;Bugfix and Chill&lt;/code&gt;이란 제목으로 여러가지 버그성 이슈를 살펴봅니다.&lt;/p&gt;&#xA;&lt;p&gt;이번에도 흥미로운 부분을 정리해 안내드리며, 내일 새벽 4시에는 &lt;code&gt;streaming internal query engine&lt;/code&gt;에 관한 라이브 방송이 &lt;a href=&#34;https://mobile.twitter.com/JordanALewis/status/1261143648932179970&#34;&gt;계획&lt;/a&gt;되어 있으니 많은 관심 부탁드립니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>해결하고 싶은 문제들</title>
+      <link>https://marsettler.com/problems-want-to-solve/</link>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/problems-want-to-solve/</guid>
+      <description>&lt;p&gt;해결하고 싶은 문제들을 기록합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Guide) Jordan Lewis&#39;s LARGE DATA BANK livestream: CockroachDB is learning the secret technique LISTEN/NOTIFY</title>
+      <link>https://marsettler.com/cockroachdb-livestream-issue-41522/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/cockroachdb-livestream-issue-41522/</guid>
+      <description>&lt;iframe height=&#34;400&#34; width=&#34;100%&#34; src=&#34;https://www.youtube.com/embed/r0SBgOePc6I&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&#34;https://mobile.twitter.com/JordanALewis&#34;&gt;@JordanALewis&lt;/a&gt;는 매 주 토요일 새벽&#xA;4시에 카크로치디비 관련 라이브스트림을 진행하고 있습니다. 이번에는 PostgreSQL의 LISTEN/NOTIFY를&#xA;구현하고 있는데, 흥미로운 부분을 정리해 안내드립니다.&lt;/p&gt;&#xA;&lt;p&gt;이슈: &lt;a href=&#34;https://github.com/cockroachdb/cockroach/issues/41522&#34;&gt;sql: support NOTIFY, LISTEN, and UNLISTEN commands of postgresql&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;PR: &lt;a href=&#34;https://github.com/cockroachdb/cockroach/pull/48308&#34;&gt;https://github.com/cockroachdb/cockroach/pull/48308&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2020년 성공 계획</title>
+      <link>https://marsettler.com/successful-plan-2020/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/successful-plan-2020/</guid>
+      <description>&lt;h2 id=&#34;상황-확인&#34;&gt;상황 확인&lt;/h2&gt;&#xA;&lt;p&gt;상황: 소프트웨어 엔지니어로 5년 3개월가량 일하고 있습니다. 그동안 나름대로 열심히 일하였고, 동료들과 회사에게 긍정적인 평가를 받고 있습니다. 하지만 기대보다 부족하고, 현재 수횅하는 업무 특성상 조금은 정체되고 있는 건 아닌가 걱정됩니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;계획-수립&#34;&gt;계획 수립&lt;/h2&gt;&#xA;&lt;h3 id=&#34;목표-엔지니어링-리더십-발휘&#34;&gt;목표: 엔지니어링 리더십 발휘&lt;/h3&gt;&#xA;&lt;h3 id=&#34;핵심-결과&#34;&gt;핵심 결과:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;동료들과 회사에게 더욱 인정받기(수치 공개불가)&lt;/li&gt;&#xA;&lt;li&gt;엔지니어링 문제로 인한 장애 발생률 측정&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;목표-스케일아웃-가능한-데이터베이스-솔루션-확보&#34;&gt;목표: 스케일아웃 가능한 데이터베이스 솔루션 확보&lt;/h3&gt;&#xA;&lt;h3 id=&#34;핵심-결과-1&#34;&gt;핵심 결과:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CockroachDB 이슈 8개 해결(1개/월)&lt;/li&gt;&#xA;&lt;li&gt;CockroachDB 아키택처, 기술 8개 공유(1개/월)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>How to be successful(성공하는 방법)</title>
+      <link>https://marsettler.com/how-to-be-successful/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/how-to-be-successful/</guid>
+      <description>&lt;h2 id=&#34;시작하기-전에&#34;&gt;시작하기 전에&lt;/h2&gt;&#xA;&lt;p&gt;당신에게는 무엇이 성공입니까? 사람들은 각자의 가치관에 따라 성공이란 단어를 매우 많은 다른 의미로&#xA;정의합니다. 이 성공하는 방법이란 글에서는 성공을 아래와 같이 정의하고 있습니다.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;성공: 자기가 가진 전문기술을 사용하여 사회와 인류에 기여하는 행위&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;가능한-한-많이-또-빨리-아래-단계를-수행합니다&#34;&gt;가능한 한 많이 또 빨리 아래 단계를 수행합니다&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;상황 확인&lt;/li&gt;&#xA;&lt;li&gt;계획 수립&lt;/li&gt;&#xA;&lt;li&gt;행동&lt;/li&gt;&#xA;&lt;li&gt;피드백 반영&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;수행&#34;&gt;수행&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/successful-plan-2020&#34;&gt;2020년 성공 계획&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CockroachDB</title>
+      <link>https://marsettler.com/cockroachdb/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/cockroachdb/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://marsettler.com/cockroachdb-introducing-pebble&#34;&gt;페블(Pebble): RocksDB에서 영감을 받은 키밸류 저장소&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/cockroachdb-livestream-bugfix-and-chill&#34;&gt;(Guide) Jordan Lewis&amp;rsquo;s LARGE DATA BANK livestream: Bugfix and Chill(버그를 수정하자!)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/cockroachdb-livestream-issue-41522&#34;&gt;(Guide) Jordan Lewis&amp;rsquo;s LARGE DATA BANK livestream: CockroachDB is learning the secret technique LISTEN/NOTIFY&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/cockroachdb-with-peter-mattis-sedaily&#34;&gt;피터 매티스와의 인터뷰 - Software Engineering Daily&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/sprintseoul-cockroachdb&#34;&gt;스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/cockroachdb-column-families&#34;&gt;카크로치디비의 컬럼 패밀리&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://marsettler.com/c&#43;&#43;/c&#43;&#43;/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/c&#43;&#43;/c&#43;&#43;/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://marsettler.com/c++/dear-my-c++&#34;&gt;친애하는 나의 C++&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/std-shared-ptr-is-not-thread-safe&#34;&gt;std::shared_ptr is not thread safe&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/c++/good-reads&#34;&gt;C++ 좋은 읽을거리&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Go의 철학</title>
+      <link>https://marsettler.com/go/the-zen-of-go/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/go/the-zen-of-go/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://twitter.com/davecheney&#34;&gt;Dave Cheney&lt;/a&gt;의 &lt;a href=&#34;https://the-zen-of-go.netlify.com/&#34;&gt;The Zen of Go&lt;/a&gt;를 번역했습니다. 좀 더 알고 싶으신 분은 &lt;a href=&#34;https://www.youtube.com/watch?v=yd_rtwYaXps&#34;&gt;발표 영상&lt;/a&gt;과 &lt;a href=&#34;https://dave.cheney.net/2020/02/23/the-zen-of-go&#34;&gt;블로그 글&lt;/a&gt;을 함께 참고해 주십시오.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;go의-철학&#34;&gt;Go의 철학&lt;/h2&gt;&#xA;&lt;p&gt;쉽고, 읽기 좋으며, 유지가능한 Go 코드 작성을 위한 10가지 엔지니어링 가치. &lt;a href=&#34;https://www.gophercon.org.il/&#34;&gt;고퍼콘 이스라엘 2020&lt;/a&gt;에 발표하였음.&lt;/p&gt;&#xA;&lt;h4 id=&#34;패키지는-하나의-목적만을-달성합니다&#34;&gt;패키지는 하나의 목적만을 달성합니다&lt;/h4&gt;&#xA;&lt;p&gt;잘 디자인된 Go 패키지는 단 하나의 아이디어와 관련 동작을 제공합니다. 좋은 Go 패키지를 위해 좋은 이름을 먼저 정해야 합니다. 엘리베이터 피치라고 생각하며 패키지 이름을 정해보십시오.&lt;/p&gt;&#xA;&lt;h4 id=&#34;에러는-명시적으로-처리합니다&#34;&gt;에러는 명시적으로 처리합니다&lt;/h4&gt;&#xA;&lt;p&gt;단단한 프로그램은 문제가 생기기 전에 실패처리를 하는 요소들로 이루어져 있습니다. 실패를 발생지점에서 의도적으로 처리할 수 있다는 것은 &lt;code&gt;if err != nil { return err }&lt;/code&gt; 의 장황함마저 대수롭지 않아 보이게 합니다. &lt;code&gt;panic&lt;/code&gt;과 &lt;code&gt;recover&lt;/code&gt;는 예외가 아니며, 그런 식으로 사용되게 의도되지 않았습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>xvfb를 이용한 Go headless 테스트</title>
+      <link>https://marsettler.com/go/go-headless-test-with-xvfb/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/go/go-headless-test-with-xvfb/</guid>
+      <description>&lt;p&gt;Go에서 &lt;a href=&#34;https://github.com/go-gl/glfw&#34;&gt;GLFW&lt;/a&gt; 등을 이용해 그래픽스 관련 작업을 할 때에도 자동화&#xA;테스트 구성이 가능합니다. 하지만 &lt;a href=&#34;https://github.com/features/actions&#34;&gt;GitHub Actions&lt;/a&gt;과 같이&#xA;디스플레이가 없는 환경에서는 의존성을 가지고 있다는 이유만으로 그래픽스 관련 테스트가 실패합니다.&lt;/p&gt;&#xA;&lt;p&gt;xvfb는 메뉴얼에서 &lt;code&gt;virtual framebuffer X server for X Version&lt;/code&gt; 라고 소개되고 있으며, 서버 사이드&#xA;테스트를 위해 주로 사용됩니다.&lt;/p&gt;&#xA;&lt;p&gt;Ubuntu 기준으로 &lt;code&gt;sudo apt install xvfb&lt;/code&gt;로 설치하고 &lt;code&gt;xvfb-run&lt;/code&gt;에 이어서 테스트 명령어를 추가하여&#xA;테스트할 수 있습니다. 실제 GitHub Actions에 적용한 &lt;a href=&#34;https://github.com/hueypark/marsettler/blob/dadbd044b1c2c6ce29ace6924b7bee5180660e9e/.github/workflows/benchmark.yml#L29&#34;&gt;예시&lt;/a&gt;를&#xA;공유드립니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Go</title>
+      <link>https://marsettler.com/go/go/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/go/go/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://marsettler.com/go/go-headless-test-with-xvfb&#34;&gt;xvfb를 이용한 Go headless 테스트&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/go/the-zen-of-go&#34;&gt;Go의 철학&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/go/using-go-module-with-github-private-repository&#34;&gt;Go module에서 GitHub private repository 사용&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/go/good-reads&#34;&gt;좋은 읽을거리&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Go module에서 GitHub private 저장소 사용</title>
+      <link>https://marsettler.com/go/using-go-module-with-github-private-repository/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/go/using-go-module-with-github-private-repository/</guid>
+      <description>&lt;p&gt;Go module에서 GitHub private 저장소를 사용하는 방법입니다.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;git-설정에서-github-접근을-계정과-토큰을-사용하게-변경&#34;&gt;git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global url.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;GITHUB_USER&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;{GITHUB_TOKEN&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}@github.com&amp;#34;&lt;/span&gt;.insteadOf &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://github.com&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;goprivate-환경변수에-private-저장소-등록&#34;&gt;&lt;a href=&#34;https://golang.org/cmd/go/#hdr-Module_configuration_for_non_public_modules&#34;&gt;GOPRIVATE&lt;/a&gt; 환경변수에 private 저장소 등록&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GOPRIVATE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;github.com/hueypark/asset&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Wiki</title>
+      <link>https://marsettler.com/wiki/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/wiki/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://marsettler.com/the-game-i-want-to-make&#34;&gt;내가 만들고 싶은 게임&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/c++/c++&#34;&gt;C++&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/cockroachdb&#34;&gt;CockroachDB&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/cto&#34;&gt;CTO&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/database&#34;&gt;Database(데이터베이스)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/distributed-system&#34;&gt;Distributed System(분산 시스템)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/game-server-architecture&#34;&gt;Game Server Architecture(게임 서버 아키텍처)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/go/go&#34;&gt;Go&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/problems-want-to-solve&#34;&gt;해결하고 싶은 문제들&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/remote-work&#34;&gt;Remote work(원격근무)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/single-server-mmorpg&#34;&gt;Single Server MMORPG&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/how-to-be-successful&#34;&gt;How to be successful(성공하는 방법)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/interior&#34;&gt;Interior(인테리어)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/leadership&#34;&gt;Leadership(리더십)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/network&#34;&gt;Network(네트워크)&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>박재완</title>
+      <link>https://marsettler.com/about-me/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/about-me/</guid>
+      <description>&lt;p&gt;C++, Go 등의 언어를 주로 사용하여 MMORPG 서버를 개발합니다. 많은 시간을 코드리뷰, 생산성 향상을 위한 자동화 툴 개발, 빌드 및 배포 자동화에 사용하고 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Book) BPF Performance Tools</title>
+      <link>https://marsettler.com/posts/2020-02-20-bpf-performance-tools/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2020-02-20-bpf-performance-tools/</guid>
+      <description>&lt;p&gt;BPF Performance Tools&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(very good first issue) #41274 sql: Support aggregate functions for statistics</title>
+      <link>https://marsettler.com/cockroachdb-issue-41274-vgfi-sql-support-aggregate-functions-for-statistics/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/cockroachdb-issue-41274-vgfi-sql-support-aggregate-functions-for-statistics/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cockroachdb/cockroach/issues/41274&#34;&gt;카크로치디비 이슈 #41274&lt;/a&gt; sql: Support aggregate functions for statistics&lt;/p&gt;&#xA;&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;&#xA;&lt;p&gt;이슈 #41274는 &lt;code&gt;PostgreSQL&lt;/code&gt;에서 지원하는 &lt;a href=&#34;https://www.postgresql.org/docs/9.1/functions-aggregate.html&#34;&gt;aggregate function&lt;/a&gt;들의 구현을 요구하며, 대상은 아래와 같습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(very good first issue) #44135 sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE</title>
+      <link>https://marsettler.com/cockroachdb-issue-44135-sql-add-support-for-comment/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/cockroachdb-issue-44135-sql-add-support-for-comment/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/cockroachdb/cockroach/issues/44135&#34;&gt;카크로치디비 이슈 #44135&lt;/a&gt; sql: add support for COMMENT ON VIEW, COMMENT ON SEQUENCE&lt;/p&gt;&#xA;&lt;h3 id=&#34;개요&#34;&gt;개요&lt;/h3&gt;&#xA;&lt;p&gt;이슈 #44135 &lt;code&gt;PostgreSQL&lt;/code&gt;에서 지원하는 &lt;a href=&#34;https://www.postgresql.org/docs/9.1/functions-aggregate.html&#34;&gt;COMMENT ON&lt;/a&gt; 문법의 &lt;code&gt;VIEW&lt;/code&gt;, &lt;code&gt;SEQUENCE&lt;/code&gt;에 대한 지원을 요구합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB)</title>
+      <link>https://marsettler.com/sprintseoul-cockroachdb/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/sprintseoul-cockroachdb/</guid>
+      <description>&lt;h3 id=&#34;스프린트에-참가하는-이유&#34;&gt;스프린트에 참가하는 이유&lt;/h3&gt;&#xA;&lt;p&gt;왜 스프린트에 참가하시나요? 참가할 때마다 여러가지 이유를 생각해보지만 정답이 있는 문제는 아닙니다. 저는 처음 스프린트에 참가하며 다음과 같은 동기를 가지고 있었습니다.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;Go&lt;/code&gt; 언어 개발능력을 향상시키고 싶었습니다.&lt;/li&gt;&#xA;&lt;li&gt;가까운 미래에 애플리케이션 개발을 위해 단단하고 확장가능한 데이터베이스를 사용하고 싶었습니다.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;아직 목표를 완전히 이룬 것은 아니지만 스프린트서울에 처음 참가한 2019년 6월보다는 한 걸음 나아가 있습니다.&lt;/p&gt;&#xA;&lt;p&gt;당신에게는 어떤 목표가 있나요? 저보다 더 멋진 목표와 동기가 있을 것으로 기대됩니다. 댓글로 저에게도 알려주십시오!&lt;/p&gt;&#xA;&lt;h3 id=&#34;카크로치디비&#34;&gt;카크로치디비&lt;/h3&gt;&#xA;&lt;p&gt;카크로치디비는 &lt;code&gt;Go&lt;/code&gt;로 작성된 수평확장 가능한 관계형 데이터베이스로, 관계형 데이터베이스의 편의성과 NoSQL이 가진 확장성을 동시에 제공합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>피터 매티스와의 인터뷰 - Software Engineering Daily</title>
+      <link>https://marsettler.com/cockroachdb-with-peter-mattis-sedaily/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/cockroachdb-with-peter-mattis-sedaily/</guid>
+      <description>&lt;p&gt;카크로치 연구소의 피터 매티스가 소프트웨어 엔지니어링 데일리와 인터뷰를 진행했습니다. 몇 가지 흥미로운&#xA;부분을 요약해 정리했으며, 전체 내용은 &lt;a href=&#34;https://softwareengineeringdaily.com/2020/04/28/cockroachdb-with-peter-mattis/&#34;&gt;소프트웨어 엔지니어링 데일리&lt;/a&gt;에서&#xA;들을 수 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>원격근무</title>
+      <link>https://marsettler.com/remote-work/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/remote-work/</guid>
+      <description>&lt;p&gt;원격근무에 대한 생각을 기록합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>인테리어</title>
+      <link>https://marsettler.com/interior/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/interior/</guid>
+      <description>&lt;p&gt;Write about interior design.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2020-02 일지</title>
+      <link>https://marsettler.com/posts/2020-02-01-diary-2020-02/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2020-02-01-diary-2020-02/</guid>
+      <description>&lt;p&gt;2020년 2월 일지입니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(안내서) 카크로치디비(CockroachDB) 블로그 / 카크로치디비 19.2 출시</title>
+      <link>https://marsettler.com/posts/2019-11-13-guide-with-heart-cockroachdb-19dot2-release/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2019-11-13-guide-with-heart-cockroachdb-19dot2-release/</guid>
+      <description>&lt;p&gt;카크로치디비 19.2가 릴리즈되었습니다. 레이턴시, 신뢰성, 편의성 측면에서 상당한 개선을 이야기하고 있는데, 인상 깊은 내용 몇 가지를 안내해 드리겠습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>sql: COMMENT ON INDEX 지원(CockroachDB issue #41316)</title>
+      <link>https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/</guid>
+      <description>&lt;p&gt;이슈: &lt;a href=&#34;https://github.com/cockroachdb/cockroach/issues/41316&#34;&gt;sql: add support for COMMENT ON INDEX #41316&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;sql: COMMENT ON INDEX 지원 작업을 했습니다. 이번에는 이슈 등록자가 저에게 먼저 연락을 하는 새로운 경험을 했습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>삭제될 WAL, MANIFEST, sstable을 보관하는 기능 제공 (Pebble issue #284)</title>
+      <link>https://marsettler.com/posts/2019-10-15-pebble-issue-284/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2019-10-15-pebble-issue-284/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;&#xA;&lt;p&gt;이슈: &lt;a href=&#34;https://github.com/cockroachdb/pebble/issues/284&#34;&gt;https://github.com/cockroachdb/pebble/issues/284&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;이번에는 Pebble에서 아무에게도 할당되지 않은 이슈를 선택해 수정했습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>초보다 정밀한 단위에 대한 `EXTRACT` 명령이 postgres와 다르게 동작함(CockroachDB issue #40683)</title>
+      <link>https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;&#xA;&lt;p&gt;이번에는 간단하게 해결할 수 있는 이슈를 수정했습니다. 이 정도의 이슈는 처음 스프린트에 참여하는 분도 해결할 수 있을 것으로 기대합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>거대한 단일 MMORPG 서버</title>
+      <link>https://marsettler.com/huge-single-mmorpg-server/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/huge-single-mmorpg-server/</guid>
+      <description>&lt;p&gt;2019년 9월 21일에 &lt;a href=&#34;https://cafe.naver.com/devrookie/9621&#34;&gt;데브루키 521회&lt;/a&gt;에서 발표한 자료입니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>db: SingleDelete 구현(Pebble issue #222)</title>
+      <link>https://marsettler.com/posts/2019-08-19-pebble-issue-222/</link>
+      <pubDate>Mon, 19 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2019-08-19-pebble-issue-222/</guid>
+      <description>&lt;h2 id=&#34;개요&#34;&gt;개요&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/cockroachdb/pebble&#34;&gt;Pebble&lt;/a&gt;은 LevelDB/RocksDB에서 영감을 받은 카크로치디비용 키-밸류 저장소입니다. 현재(2019년 8월)는 개발 진행중인 상태이며, 2020년 카크로치디비 적용을 &lt;a href=&#34;https://github.com/petermattis/pebble/issues/233&#34;&gt;계획&lt;/a&gt;하고 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>파이콘 한국 2019 스프린트 - 카크로치디비(CockroachDB)와 함께</title>
+      <link>https://marsettler.com/posts/2019-08-18-sprint-on-pyconkr-2019-with-cockroachdb/</link>
+      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2019-08-18-sprint-on-pyconkr-2019-with-cockroachdb/</guid>
+      <description>&lt;p&gt;파이콘 한국 2019 스프린트에 참가했습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>카크로치디비(CockroachDB) 윈도우(WSL2)에서 빌드</title>
+      <link>https://marsettler.com/posts/2019-07-02-windows-wsl2-cockroachdb/</link>
+      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2019-07-02-windows-wsl2-cockroachdb/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://marsettler.com/post/2019-07-02-windows-wsl2-cockroachdb/cockroachdb-on-windows.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/2019/06/30/first-sprintseoul.html&#34;&gt;스프린트서울&lt;/a&gt; 참가하면 가장 불편했던 일은 개발환경 설정이었다. 평소에는 집에 있는 리눅스(데스크탑) 환경에서 개발하였는데, 윈도우즈(노트북)을 사용하게 되었기 때문이다. 급한대로 VirtualBox를 사용했는데 성능 차이도 있었고, 직접 손봐야 할 부분이 많았다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>스프린트서울 첫 참가</title>
+      <link>https://marsettler.com/posts/2019-06-30-first-sprintseoul/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2019-06-30-first-sprintseoul/</guid>
+      <description>&lt;p&gt;작년 11월부터 카크로치디비에 &lt;a href=&#34;https://github.com/cockroachdb/cockroach/pulls?q=is%3Apr+author%3Ahueypark&#34;&gt;기여&lt;/a&gt;하고 있습니다. 한국에는 관련 커뮤니티나 정보가 부족해 답답해 하고 있었는데, &lt;a href=&#34;https://www.sprintseoul.org/&#34;&gt;스프린트서울&lt;/a&gt;이라는 행사를 알게되어 참가했습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / 왜 우리는 카크로치디비 라이센스를 변경했는가</title>
+      <link>https://marsettler.com/posts/2019-06-10-oss-relicensing-cockroachdb/</link>
+      <pubDate>Mon, 10 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2019-06-10-oss-relicensing-cockroachdb/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/oss-relicensing-cockroachdb/&#34;&gt;Why We’re Relicensing CockroachDB&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / 지역 파티셔닝을 사용해 성능을 향상시키는 방법</title>
+      <link>https://marsettler.com/posts/2019-06-08-geo-partitioning/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2019-06-08-geo-partitioning/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/geo-partitioning/&#34;&gt;How to Improve Performance using Geo-Partitioning&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / CockroachDB 19.1 소개</title>
+      <link>https://marsettler.com/posts/2019-05-06-cockroachdb-19dot1-release/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2019-05-06-cockroachdb-19dot1-release/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/cockroachdb-19dot1-release/&#34;&gt;https://www.cockroachlabs.com/blog/cockroachdb-19dot1-release/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / 고가용성의 역사</title>
+      <link>https://marsettler.com/posts/2019-01-04-brief-history-high-availability/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2019-01-04-brief-history-high-availability/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/brief-history-high-availability/&#34;&gt;https://www.cockroachlabs.com/blog/brief-history-high-availability/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>분산 SQL 데이터베이스 CockroachDB</title>
+      <link>https://marsettler.com/posts/2018-12-26-distributed-sql-database-cockroachdb/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0900</pubDate>
+      <guid>https://marsettler.com/posts/2018-12-26-distributed-sql-database-cockroachdb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / Go 테스트 코드 의존성 압도적으로 관리하기</title>
+      <link>https://marsettler.com/posts/2018-12-15-outsmarting-go-dependencies-testing-code/</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0900</pubDate>
+      <guid>https://marsettler.com/posts/2018-12-15-outsmarting-go-dependencies-testing-code/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/outsmarting-go-dependencies-testing-code/&#34;&gt;https://www.cockroachlabs.com/blog/outsmarting-go-dependencies-testing-code/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) Go 스케줄링 파트 3</title>
+      <link>https://marsettler.com/posts/2018-12-08-scheduling-in-go-part3/</link>
+      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-12-08-scheduling-in-go-part3/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html&#34;&gt;https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;프렐류드&#34;&gt;프렐류드&lt;/h3&gt;&#xA;&lt;p&gt;Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 동시성에 중점을 둡니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / Serializable이 진정한 트랜잭션입니다</title>
+      <link>https://marsettler.com/posts/2018-12-03-acid-rain/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0900</pubDate>
+      <guid>https://marsettler.com/posts/2018-12-03-acid-rain/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/acid-rain/&#34;&gt;https://www.cockroachlabs.com/blog/acid-rain/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / 비용기반 SQL 옵티마이저는 어떻게 만들어졌나</title>
+      <link>https://marsettler.com/posts/2018-11-18-building-cost-based-sql-optimizer/</link>
+      <pubDate>Sun, 18 Nov 2018 08:00:00 +0900</pubDate>
+      <guid>https://marsettler.com/posts/2018-11-18-building-cost-based-sql-optimizer/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/&#34;&gt;https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / CAP 이론의 한계</title>
+      <link>https://marsettler.com/posts/2018-11-07-limits-of-the-cap-theorem/</link>
+      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-11-07-limits-of-the-cap-theorem/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/limits-of-the-cap-theorem&#34;&gt;https://www.cockroachlabs.com/blog/limits-of-the-cap-theorem&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / CockroachDB 1.0 제품준비 완료</title>
+      <link>https://marsettler.com/posts/2018-11-04-cockroachdb-1-0-release/</link>
+      <pubDate>Sun, 04 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-11-04-cockroachdb-1-0-release/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/cockroachdb-1-0-release&#34;&gt;https://www.cockroachlabs.com/blog/cockroachdb-1-0-release&lt;/a&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;2017년 5월에 작성된 CockroachDB 1.0 제품준비 완료 소식입니다. 이어서 최신 버전인  2.0, 2.1 소식도 전해드리겠습니다.&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / 관리형 CockroachDB 출시: The Geo-Distributed Database as a Service</title>
+      <link>https://marsettler.com/posts/2018-10-31-launching-managed-cockroachdb/</link>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-31-launching-managed-cockroachdb/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/launching-managed-cockroachdb&#34;&gt;https://www.cockroachlabs.com/blog/launching-managed-cockroachdb&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / cgo의 비용과 복잡성</title>
+      <link>https://marsettler.com/posts/2018-10-26-the-cost-and-complexity-of-cgo/</link>
+      <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-26-the-cost-and-complexity-of-cgo/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/the-cost-and-complexity-of-cgo/&#34;&gt;https://www.cockroachlabs.com/blog/the-cost-and-complexity-of-cgo/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / CockroachDB의 온라인 스키마 변경 원리</title>
+      <link>https://marsettler.com/posts/2018-10-28-how-online-schema-changes-are-possible-in-cockroachdb/</link>
+      <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-28-how-online-schema-changes-are-possible-in-cockroachdb/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/how-online-schema-changes-are-possible-in-cockroachdb/&#34;&gt;https://www.cockroachlabs.com/blog/how-online-schema-changes-are-possible-in-cockroachdb/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / Go에서 가비지 컬렉션을 최적화하는 방법</title>
+      <link>https://marsettler.com/posts/2018-10-23-how-to-optimize-garbage-collection-in-go/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-23-how-to-optimize-garbage-collection-in-go/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/&#34;&gt;https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / 왜 Go가 CockroachDB에 올바른 선택인가</title>
+      <link>https://marsettler.com/posts/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/&#34;&gt;https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / CockroachDB에서의 SQL: 테이블 데이터를 키밸류 저장소에 매핑시키기</title>
+      <link>https://marsettler.com/posts/2018-10-19-sql-in-cockroachdb-mapping-table-data-to-key-value-storage/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-19-sql-in-cockroachdb-mapping-table-data-to-key-value-storage/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/sql-in-cockroachdb-mapping-table-data-to-key-value-storage/&#34;&gt;https://www.cockroachlabs.com/blog/sql-in-cockroachdb-mapping-table-data-to-key-value-storage/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / CockroachDB의 분산처리, 아토믹 트랜잭션은 어떻게 동작하는가</title>
+      <link>https://marsettler.com/posts/2018-10-17-how-cockroachdb-distributes-atomic-transactions/</link>
+      <pubDate>Wed, 17 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-17-how-cockroachdb-distributes-atomic-transactions/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/how-cockroachdb-distributes-atomic-transactions/&#34;&gt;https://www.cockroachlabs.com/blog/how-cockroachdb-distributes-atomic-transactions/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / Raft를 스케일링하기</title>
+      <link>https://marsettler.com/posts/2018-10-16-cockroachdb-blog-scaling-raft/</link>
+      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-16-cockroachdb-blog-scaling-raft/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/scaling-raft/&#34;&gt;https://www.cockroachlabs.com/blog/scaling-raft/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 카크로치디비(CockroachDB) 블로그 / Hello World</title>
+      <link>https://marsettler.com/posts/2018-10-15-cockroachdb-blog-hello-world/</link>
+      <pubDate>Mon, 15 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-15-cockroachdb-blog-hello-world/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.cockroachlabs.com/blog/hello-world/&#34;&gt;https://www.cockroachlabs.com/blog/hello-world/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) Go 작업훔치기 스케줄러</title>
+      <link>https://marsettler.com/posts/2018-10-13-go-work-stealing-scheduler/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-13-go-work-stealing-scheduler/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://rakyll.org/scheduler/&#34;&gt;https://rakyll.org/scheduler/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) Go 스케줄링 파트 2</title>
+      <link>https://marsettler.com/posts/2018-10-03-scheduling-in-go-part2/</link>
+      <pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-03-scheduling-in-go-part2/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html&#34;&gt;https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;프렐류드&#34;&gt;프렐류드&lt;/h3&gt;&#xA;&lt;p&gt;Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 Go 스케줄러에 중점을 둡니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) Go 스케줄링 파트 1</title>
+      <link>https://marsettler.com/posts/2018-10-02-scheduling-in-go-part1/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2018-10-02-scheduling-in-go-part1/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html&#34;&gt;https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;프렐류드&#34;&gt;프렐류드&lt;/h3&gt;&#xA;&lt;p&gt;Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 OS 스케줄러에 중점을 둡니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>std::shared_ptr 는 쓰레드 세이프하지 않음</title>
+      <link>https://marsettler.com/std-shared-ptr-is-not-thread-safe/</link>
+      <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/std-shared-ptr-is-not-thread-safe/</guid>
+      <description>&lt;p&gt;std::shared_ptr 는 쓰레드 세이프하지 않습니다. 관련 예제와 볼만한 링크를 남깁니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 의사결정을 위한 게임 프로듀서의 도움말</title>
+      <link>https://marsettler.com/posts/2018-07-08-a-producers-guide-to-decisionmaking/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0900</pubDate>
+      <guid>https://marsettler.com/posts/2018-07-08-a-producers-guide-to-decisionmaking/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://gamasutra.com/view/news/320800/A_producers_guide_to_decisionmaking.php&#34;&gt;https://gamasutra.com/view/news/320800/A_producers_guide_to_decisionmaking.php&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mission: Sends intelligence to Mars</title>
+      <link>https://marsettler.com/posts/2018-05-27-mission-send-intelligence-to-mars/</link>
+      <pubDate>Sun, 27 May 2018 00:00:00 +0900</pubDate>
+      <guid>https://marsettler.com/posts/2018-05-27-mission-send-intelligence-to-mars/</guid>
+      <description>&lt;h3 id=&#34;why&#34;&gt;Why?&lt;/h3&gt;&#xA;&lt;p&gt;It&amp;rsquo;s reasonable mission for entire my life.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Too much(space conquest)&lt;/li&gt;&#xA;&lt;li&gt;Too small(house buying without a mortgage)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Visual Studio Code debug speed up on Windows</title>
+      <link>https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/</link>
+      <pubDate>Mon, 14 May 2018 00:00:00 +0900</pubDate>
+      <guid>https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/</guid>
+      <description>&lt;p&gt;On &lt;code&gt;Visual Studio Code&lt;/code&gt;, &lt;code&gt;Go&lt;/code&gt; debugging is very slow because that always rebuild everything.&lt;/p&gt;&#xA;&lt;p&gt;If you set following settings on your &lt;code&gt;.vscode&lt;/code&gt; folder &lt;code&gt;Visual Studio Code&lt;/code&gt; will only build when changed.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Luft on Marsettler</title>
+    <link>https://marsettler.com/tags/luft/</link>
+    <description>Recent content in Luft on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/luft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OLAP database query optimizer and performance</title>
+      <link>https://marsettler.com/performance/olap-query-optimizer-and-performance/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/performance/olap-query-optimizer-and-performance/</guid>
+      <description>&lt;h1 id=&#34;olap-database-query-optimizer-and-performance&#34;&gt;OLAP database query optimizer and performance&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;olap-workloads&#34;&gt;OLAP workloads&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Online analytical processing, or OLAP, is an approach to answer multi-dimensional analytical queries swiftly in computing.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Online_analytical_processing&#34;&gt;https://en.wikipedia.org/wiki/Online_analytical_processing&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;olap-vs-oltp-the-differences&#34;&gt;OLAP VS. OLTP: THE DIFFERENCES&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;OLAP is used for complex data analysis, while OLTP is used for real-time processing of online transactions at scale.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.snowflake.com/guides/olap-vs-oltp/&#34;&gt;https://www.snowflake.com/guides/olap-vs-oltp/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;luft-olap-database-for-airbridge&#34;&gt;Luft: OLAP database for Airbridge&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://engineering.ab180.co/stories/introducing-luft&#34;&gt;https://engineering.ab180.co/stories/introducing-luft&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;airbridge-dashboard-demo&#34;&gt;Airbridge dashboard demo&lt;/h2&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s take a look at what you&amp;rsquo;d do if you implemented.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

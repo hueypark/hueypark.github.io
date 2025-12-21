@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Itchio on Marsettler</title>
+    <link>https://marsettler.com/tags/itchio/</link>
+    <description>Recent content in Itchio on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/itchio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bevy 101 - ECS 부터 itch.io 배포까지</title>
+      <link>https://marsettler.com/marsettler/bevy-101-from-ecs-to-itch-io-deployment/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/marsettler/bevy-101-from-ecs-to-itch-io-deployment/</guid>
+      <description>&lt;h1 id=&#34;bevy-101---ecs-부터-itchio-배포까지&#34;&gt;Bevy 101 - ECS 부터 itch.io 배포까지&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;박재완&#34;&gt;박재완&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;여러 게임회사를 다닌 후&lt;/li&gt;&#xA;&lt;li&gt;지금은 &lt;a href=&#34;http://abit.ly/luft&#34;&gt;OLAP 데이터베이스&lt;/a&gt; 개발하고 있음&lt;/li&gt;&#xA;&lt;li&gt;Bevy 로 캐주얼 게임 만들기 시도 중&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bevy Game Engine 기초&lt;/li&gt;&#xA;&lt;li&gt;itch.io 에 게임 배포하기&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;bevy&#34;&gt;Bevy&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A refreshingly simple data-driven game engine built in Rust&lt;/li&gt;&#xA;&lt;li&gt;Free and Open Source Forever!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://bevyengine.org/&#34;&gt;https://bevyengine.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;bevy-주요-기능&#34;&gt;Bevy 주요 기능&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Data Driven&lt;/li&gt;&#xA;&lt;li&gt;2D, 3D Renderer, Render Graph, Animation&lt;/li&gt;&#xA;&lt;li&gt;Cross Platform&lt;/li&gt;&#xA;&lt;li&gt;Bevy UI&lt;/li&gt;&#xA;&lt;li&gt;Scenes&lt;/li&gt;&#xA;&lt;li&gt;Sound&lt;/li&gt;&#xA;&lt;li&gt;Hot Reloading&lt;/li&gt;&#xA;&lt;li&gt;Productive Compile Times&lt;/li&gt;&#xA;&lt;li&gt;Free and Open Source&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;data-driven&#34;&gt;Data Driven&lt;/h3&gt;&#xA;&lt;p&gt;All engine and game logic uses Bevy ECS, a custom Entity Component System&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

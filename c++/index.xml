@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43;s on Marsettler</title>
+    <link>https://marsettler.com/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43;s on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; good reads</title>
+      <link>https://marsettler.com/c&#43;&#43;/good-reads/</link>
+      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/c&#43;&#43;/good-reads/</guid>
+      <description>&lt;h1 id=&#34;c-stl-performance-example-with-shared_&#34;&gt;&lt;a href=&#34;https://blog.lunapiece.net/posts/C++_STL_Performance/&#34;&gt;C++ STL performance example with shared_ptr&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;I just have to say this and move on&amp;hellip; If you think it&amp;rsquo;s okay to just use the STL for a project that doesn&amp;rsquo;t need this level of optimization or performance, think again.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;It is highly likely that your project is not suitable for writing Non GC Native language, so it is recommended to replace it with a VM-based language. I don&amp;rsquo;t use C++ anymore for 99% of my projects. Most of them are solved with C#, Kotlin, and TypeScript.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://marsettler.com/c&#43;&#43;/c&#43;&#43;/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/c&#43;&#43;/c&#43;&#43;/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://marsettler.com/c++/dear-my-c++&#34;&gt;친애하는 나의 C++&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/std-shared-ptr-is-not-thread-safe&#34;&gt;std::shared_ptr is not thread safe&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/c++/good-reads&#34;&gt;C++ 좋은 읽을거리&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

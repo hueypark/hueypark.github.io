@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<link rel="canonical" href="https://marsettler.com/tags/go/">
+<meta property="og:url" content="https://marsettler.com/tags/go/">
+  <meta property="og:site_name" content="Marsettler">
+  <meta property="og:title" content="Go">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Go">
+
+
+  <meta itemprop="name" content="Go">
+  <meta itemprop="datePublished" content="2023-06-04T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-21T15:10:18+09:00">
+
+<link rel="stylesheet" href="/css/layout.css" />
+
+
+<link rel="stylesheet" href="/css/default-dark.css" />
+
+
+<link href="/font/d2coding.css" rel="stylesheet" type="text/css">
+
+<title>
+
+
+     Go 
+
+</title>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9117575221392760"
+     crossorigin="anonymous"></script>
+
+<script>
+(function(a_,i_,r_,_b,_r,_i,_d,_g,_e){if(!a_[_b]){var n=function(){var c=i_.createElement(r_);c.onerror=function(){g.queue.filter(function(a){return 0<=_d.indexOf(a[0])}).forEach(function(a){a=a[1];a=a[a.length-1];"function"===typeof a&&a("error occur when load airbridge")})};c.async=1;c.src=_r;"complete"===i_.readyState?i_.head.appendChild(c):a_.addEventListener("load",function h(){a_.removeEventListener("load",h);i_.head.appendChild(c)})},g={queue:[],get isSDKEnabled(){return!1}};_i.concat(_d).forEach(function(c){var a=c.split("."),h=a.pop();a.reduce(function(p,q){return p[q]=p[q]||{}},g)[h]=function(){g.queue.push([c,arguments])}});a_[_b]=g;0<_g?(_b=new (a_.XDomainRequest||a_.XMLHttpRequest),_i=function(){},_b.open("GET",_r),_b.timeout=_g,_b.onload=function(){n()},_b.onerror=_i,_b.onprogress=_i,_b.ontimeout=_i,_b.send()):n()}})(window,document,"script","airbridge","//static.airbridge.io/sdk/latest/airbridge.min.js","init startTracking stopTracking fetchResource openBanner setBanner setDownload setDownloads openDeeplink setDeeplinks sendWeb setUserAgent setMobileAppData setUserID clearUserID setUserEmail clearUserEmail setUserPhone clearUserPhone setUserAttribute removeUserAttribute clearUserAttributes setUserAlias removeUserAlias clearUserAlias clearUser setUserId setUserAttributes addUserAlias setDeviceAlias removeDeviceAlias clearDeviceAlias setDeviceIFV setDeviceIFA setDeviceGAID events.send events.signIn events.signUp events.signOut events.purchased events.addedToCart events.productDetailsViewEvent events.homeViewEvent events.productListViewEvent events.searchResultViewEvent".split(" "),["events.wait","createTouchpoint"],0);
+
+airbridge.init({
+    app: 'marsettler',
+    webToken: 'fc5d8317920041d19c0f29af5eba27e8',
+})
+</script>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://marsettler.com/">Marsettler</a>
+    </div> 
+
+    <a class="nav-item" href="/tags"><div class="nav-item-title">Tags</div></a>
+    
+    
+    <a class="nav-item" href="/wiki/"><div class="nav-item-title">Wiki</div></a>
+    
+    <a class="nav-item" href="/about-me/"><div class="nav-item-title">About Me</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<h2 class="term-list-title">
+    <a href="https://marsettler.com/tags/go/" class="linktopost">tag: go</a>
+</h2>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/go-performance-optimization-tips/'> Go 성능 최적화 팁</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2023-06-04 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h2 id="go-성능-최적화-팁">Go 성능 최적화 팁</h2>
+<p>박재완</p>
+<hr>
+<h2 id="airbridge-와-luft">Airbridge 와 Luft</h2>
+<ul>
+<li><a href="https://www.airbridge.io/">Airbridge</a>
+<ul>
+<li>합리적인 비용의 올인원 모바일 마케팅 솔루션</li>
+</ul>
+</li>
+<li><a href="https://engineering.ab180.co/stories/introducing-luft">Luft</a>
+<ul>
+<li>Airbridge 에서 유저행동 분석을 위해 사용하는 OLAP 데이터베이스</li>
+<li><a href="https://engineering.ab180.co/stories/traildb-to-ziegel">Ziegel</a> 을 스토리지 엔진으로 사용</li>
+<li>Go 로 작성</li>
+</ul>
+</li>
+</ul>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/go-performance-optimization-tips/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/c&#43;&#43;-to-go/'> C&#43;&#43; to Go</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2022-12-04 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/c&#43;&#43;">#c&#43;&#43;</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h1 id="c-to-go">C++ to Go</h1>
+<h2 id="introducing-ziegel">Introducing Ziegel</h2>
+<p>박재완</p>
+<hr>
+<h2 id="luft">Luft</h2>
+<ul>
+<li>Ziegel and TrailDB</li>
+</ul>
+<hr>
+<h2 id="luft-1"><a href="https://engineering.ab180.co/stories/introducing-luft">Luft</a></h2>
+<ul>
+<li>OLAP database for analize the analyzing user behavior in real-time</li>
+<li>Use TrailDB as a storage</li>
+<li>Written in C/C++ and Go</li>
+</ul>
+<hr>
+<h2 id="traildb"><a href="https://traildb.io/">TrailDB</a></h2>
+<ul>
+<li>TrailDB is an efficient tool for storing and querying series of events</li>
+<li>Written in C</li>
+</ul>
+<hr>
+<h2 id="ziegel"><a href="https://engineering.ab180.co/stories/traildb-to-ziegel">Ziegel</a></h2>
+<ul>
+<li>New storage engine for the Luft</li>
+<li>Written in Go</li>
+</ul>
+<hr>
+<h2 id="why">Why?</h2>
+<ul>
+<li>TrailDB has been a suitable solution for the Luft</li>
+<li>But development was halted in 2019</li>
+<li>Issues with peformance and productivity</li>
+</ul>
+<hr>
+<h2 id="issues">Issues</h2>
+<ol>
+<li>Inefficient multi-core utilization</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// finalize. this could take a while with idle CPU usage but don&#39;t panic.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// it&#39;s not freeze;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// it&#39;s because TrailDB indexing process is not parallelized yet :(</span>
+</span></span></code></pre></div><ol start="2">
+<li>Row store data structure</li>
+<li>Use multiple language: C/C++ and Go</li>
+</ol>
+<hr>
+<h2 id="journey-for-the-migration">Journey for the migration</h2>
+<ol>
+<li>Add more tests for consistency verification</li>
+<li>Add interface for engine replacement
+<ul>
+<li>With this interface, we can easily replace the engine(partial or full)</li>
+</ul>
+</li>
+<li>Implement storage engine</li>
+<li>Peformance tuning
+<ul>
+<li>2x fater for the ingestion, 1.2 slower for the query</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="peformance-tuning">Peformance tuning</h2>
+<hr>
+<h3 id="measuring-performance">Measuring performance</h3>
+<p>Go provides great tools for measuring performance.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/c&#43;&#43;-to-go/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/go-good-reads/'> Go good reads</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2022-09-18 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h1 id="index">Index</h1>
+<ul>
+<li><a href="##performance">Performance</a></li>
+<li><a href="##concurrency">Concurrency</a></li>
+<li><a href="##generics">Generics</a></li>
+<li><a href="##reiaibility">Reiaibility</a></li>
+<li><a href="##others">Others</a></li>
+</ul>
+<h2 id="performance">Performance</h2>
+<h3 id="we-tried-go"><a href="https://www.dolthub.com/blog/2025-09-26-greentea-gc-with-dolt/">We tried Go&rsquo;s experimental Green Tea garbage collector and it didn&rsquo;t help performance by Zach Musgrave</a></h3>
+<h3 id="parsing-protobuf-like-never-before-by-mcyoung"><a href="https://mcyoung.xyz/2025/07/16/hyperpb/">Parsing Protobuf Like Never Before by mcyoung</a></h3>
+<h3 id="deep-dive-into-a-go-binary-by-jesús-espino"><a href="https://youtu.be/5VkYXgUqxcE?list=PLDWZ5uzn69ewrYyHTNrXlrWVDjLiOX0Yb">Deep dive into a go binary by Jesús Espino</a></h3>
+<h3 id="if-you-want-to-know-how-high-performance-systems-written-in-go-were-built-read-victorialogs--httpsgithubcomvictoriametricsvictorialogs-by-phuong-le"><a href="https://x.com/func25/status/1950115605484552333">If you want to know how high performance systems written in Go were built, read VictoriaLogs:  https://github.com/VictoriaMetrics/VictoriaLogs by Phuong Le</a></h3>
+<blockquote>
+<ol>
+<li>Custom bloom filters to reduce disk I/O and CPU cycles for redundant logs.</li>
+<li>Column-oriented block storage for better compression ratio and cache locality.</li>
+<li>Memory-mapped files with automatic pread fallback for zero-copy reads.</li>
+<li>Lock-free object pools and arena allocators to reduce heap allocations.</li>
+<li>Reflection-free JSON parsers for streaming at hundreds of MB/s per core.</li>
+<li>Compile-time templates replace text/html parsing with near-printf speed.</li>
+<li>Dictionary-aware Zstd compression balancing CPU cost against bandwidth savings.</li>
+<li>Multi-core parallelism everywhere with adaptive concurrency limits.</li>
+<li>Scatter-gather fan-out writes with adaptive concurrency for network saturation.</li>
+<li>Fast hashing and lock-free randomization for minimal contention.</li>
+</ol>
+</blockquote>
+<h3 id="how-go-124"><a href="https://www.datadoghq.com/blog/engineering/go-swiss-tables/">How Go 1.24&rsquo;s Swiss Tables saved us hundreds of gigabytes by Nayef Ghattas</a></h3>
+<h3 id="finding-performance-problems-by-diffing-two-go-profiles-by-zach-musgrave"><a href="https://www.dolthub.com/blog/2025-06-20-go-pprof-diffing/">Finding performance problems by diffing two Go profiles by Zach Musgrave</a></h3>
+<h3 id="optimising-and-visualising-go-tests-parallelism-why-more-cores-don"><a href="https://threedots.tech/post/go-test-parallelism/">Optimising and Visualising Go Tests Parallelism: Why more cores don&rsquo;t speed up your Go tests</a></h3>
+<h3 id="leveraging-benchstat-projections-in-go-benchmark-analysis"><a href="https://www.bwplotka.dev/2024/go-microbenchmarks-benchstat/">Leveraging benchstat Projections in Go Benchmark Analysis!</a></h3>
+<h3 id="benchmarks-and-performance-testing"><a href="https://www.willem.dev/articles/benchmarks-performance-testing/">Benchmarks and performance testing</a></h3>
+<h3 id="new-unique-package-by-michael-knyszek"><a href="https://go.dev/blog/unique">New unique package by Michael Knyszek</a></h3>
+<blockquote>
+<p>This work also led us to reexamine finalizers, resulting in another proposal for an easier-to-use and more efficient replacement for finalizers. With a hash function for comparable values on the way as well, the future of building memory-efficient caches in Go is bright!</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/go-good-reads/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/cockroachdb/'> CockroachDB</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-04-26 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p><a href="/cockroachdb-introducing-pebble">페블(Pebble): RocksDB에서 영감을 받은 키밸류 저장소</a></p>
+<p><a href="/cockroachdb-livestream-bugfix-and-chill">(Guide) Jordan Lewis&rsquo;s LARGE DATA BANK livestream: Bugfix and Chill(버그를 수정하자!)</a></p>
+<p><a href="/cockroachdb-livestream-issue-41522">(Guide) Jordan Lewis&rsquo;s LARGE DATA BANK livestream: CockroachDB is learning the secret technique LISTEN/NOTIFY</a></p>
+<p><a href="/cockroachdb-with-peter-mattis-sedaily">피터 매티스와의 인터뷰 - Software Engineering Daily</a></p>
+<p><a href="/sprintseoul-cockroachdb">스프린트서울 참가자분들을 위한 카크로치디비(CockroachDB)</a></p>
+<p><a href="/cockroachdb-column-families">카크로치디비의 컬럼 패밀리</a></p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/cockroachdb/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/the-zen-of-go/'> Go의 철학</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-04-05 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p><a href="https://twitter.com/davecheney">Dave Cheney</a>의 <a href="https://the-zen-of-go.netlify.com/">The Zen of Go</a>를 번역했습니다. 좀 더 알고 싶으신 분은 <a href="https://www.youtube.com/watch?v=yd_rtwYaXps">발표 영상</a>과 <a href="https://dave.cheney.net/2020/02/23/the-zen-of-go">블로그 글</a>을 함께 참고해 주십시오.</p>
+<hr>
+<h2 id="go의-철학">Go의 철학</h2>
+<p>쉽고, 읽기 좋으며, 유지가능한 Go 코드 작성을 위한 10가지 엔지니어링 가치. <a href="https://www.gophercon.org.il/">고퍼콘 이스라엘 2020</a>에 발표하였음.</p>
+<h4 id="패키지는-하나의-목적만을-달성합니다">패키지는 하나의 목적만을 달성합니다</h4>
+<p>잘 디자인된 Go 패키지는 단 하나의 아이디어와 관련 동작을 제공합니다. 좋은 Go 패키지를 위해 좋은 이름을 먼저 정해야 합니다. 엘리베이터 피치라고 생각하며 패키지 이름을 정해보십시오.</p>
+<h4 id="에러는-명시적으로-처리합니다">에러는 명시적으로 처리합니다</h4>
+<p>단단한 프로그램은 문제가 생기기 전에 실패처리를 하는 요소들로 이루어져 있습니다. 실패를 발생지점에서 의도적으로 처리할 수 있다는 것은 <code>if err != nil { return err }</code> 의 장황함마저 대수롭지 않아 보이게 합니다. <code>panic</code>과 <code>recover</code>는 예외가 아니며, 그런 식으로 사용되게 의도되지 않았습니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/the-zen-of-go/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/go-headless-test-with-xvfb/'> xvfb를 이용한 Go headless 테스트</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-04-02 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>Go에서 <a href="https://github.com/go-gl/glfw">GLFW</a> 등을 이용해 그래픽스 관련 작업을 할 때에도 자동화
+테스트 구성이 가능합니다. 하지만 <a href="https://github.com/features/actions">GitHub Actions</a>과 같이
+디스플레이가 없는 환경에서는 의존성을 가지고 있다는 이유만으로 그래픽스 관련 테스트가 실패합니다.</p>
+<p>xvfb는 메뉴얼에서 <code>virtual framebuffer X server for X Version</code> 라고 소개되고 있으며, 서버 사이드
+테스트를 위해 주로 사용됩니다.</p>
+<p>Ubuntu 기준으로 <code>sudo apt install xvfb</code>로 설치하고 <code>xvfb-run</code>에 이어서 테스트 명령어를 추가하여
+테스트할 수 있습니다. 실제 GitHub Actions에 적용한 <a href="https://github.com/hueypark/marsettler/blob/dadbd044b1c2c6ce29ace6924b7bee5180660e9e/.github/workflows/benchmark.yml#L29">예시</a>를
+공유드립니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/go-headless-test-with-xvfb/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/go/'> Go</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-03-29 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p><a href="/go/go-headless-test-with-xvfb">xvfb를 이용한 Go headless 테스트</a></p>
+<p><a href="/go/the-zen-of-go">Go의 철학</a></p>
+<p><a href="/go/using-go-module-with-github-private-repository">Go module에서 GitHub private repository 사용</a></p>
+<p><a href="/go/good-reads">좋은 읽을거리</a></p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/go/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/using-go-module-with-github-private-repository/'> Go module에서 GitHub private 저장소 사용</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-03-29 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>Go module에서 GitHub private 저장소를 사용하는 방법입니다.</p>
+<hr>
+<h3 id="git-설정에서-github-접근을-계정과-토큰을-사용하게-변경">git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global url.<span style="color:#e6db74">&#34;https://</span><span style="color:#e6db74">${</span>GITHUB_USER<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>{GITHUB_TOKEN<span style="color:#e6db74">}</span><span style="color:#e6db74">}@github.com&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com&#34;</span>
+</span></span></code></pre></div><h3 id="goprivate-환경변수에-private-저장소-등록"><a href="https://golang.org/cmd/go/#hdr-Module_configuration_for_non_public_modules">GOPRIVATE</a> 환경변수에 private 저장소 등록</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>GOPRIVATE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;github.com/hueypark/asset&#34;</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/using-go-module-with-github-private-repository/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/'> sql: COMMENT ON INDEX 지원(CockroachDB issue #41316)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2019-10-20 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/sprint">#sprint</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>이슈: <a href="https://github.com/cockroachdb/cockroach/issues/41316">sql: add support for COMMENT ON INDEX #41316</a></p>
+<p>sql: COMMENT ON INDEX 지원 작업을 했습니다. 이번에는 이슈 등록자가 저에게 먼저 연락을 하는 새로운 경험을 했습니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2019-10-20-cockroach-issue-41316/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2019-10-15-pebble-issue-284/'> 삭제될 WAL, MANIFEST, sstable을 보관하는 기능 제공 (Pebble issue #284)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2019-10-13 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/sprint">#sprint</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h2 id="개요">개요</h2>
+<p>이슈: <a href="https://github.com/cockroachdb/pebble/issues/284">https://github.com/cockroachdb/pebble/issues/284</a></p>
+<p>이번에는 Pebble에서 아무에게도 할당되지 않은 이슈를 선택해 수정했습니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2019-10-15-pebble-issue-284/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/'> 초보다 정밀한 단위에 대한 `EXTRACT` 명령이 postgres와 다르게 동작함(CockroachDB issue #40683)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2019-10-13 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/sprint">#sprint</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h2 id="개요">개요</h2>
+<p>이번에는 간단하게 해결할 수 있는 이슈를 수정했습니다. 이 정도의 이슈는 처음 스프린트에 참여하는 분도 해결할 수 있을 것으로 기대합니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2019-10-13-cockroach-issue-40683/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2019-08-19-pebble-issue-222/'> db: SingleDelete 구현(Pebble issue #222)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2019-08-19 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/pebble">#pebble</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/sprint">#sprint</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h2 id="개요">개요</h2>
+<p><a href="https://github.com/cockroachdb/pebble">Pebble</a>은 LevelDB/RocksDB에서 영감을 받은 카크로치디비용 키-밸류 저장소입니다. 현재(2019년 8월)는 개발 진행중인 상태이며, 2020년 카크로치디비 적용을 <a href="https://github.com/petermattis/pebble/issues/233">계획</a>하고 있습니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2019-08-19-pebble-issue-222/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-12-08-scheduling-in-go-part3/'> (번역) Go 스케줄링 파트 3</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2018-12-08 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/multithread">#multithread</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>원문: <a href="https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html">https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html</a></p>
+<hr>
+<h3 id="프렐류드">프렐류드</h3>
+<p>Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 동시성에 중점을 둡니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2018-12-08-scheduling-in-go-part3/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-10-26-the-cost-and-complexity-of-cgo/'> (번역) 카크로치디비(CockroachDB) 블로그 / cgo의 비용과 복잡성</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2018-10-26 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>원문: <a href="https://www.cockroachlabs.com/blog/the-cost-and-complexity-of-cgo/">https://www.cockroachlabs.com/blog/the-cost-and-complexity-of-cgo/</a></p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2018-10-26-the-cost-and-complexity-of-cgo/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-10-23-how-to-optimize-garbage-collection-in-go/'> (번역) 카크로치디비(CockroachDB) 블로그 / Go에서 가비지 컬렉션을 최적화하는 방법</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2018-10-23 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>원문: <a href="https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/">https://www.cockroachlabs.com/blog/how-to-optimize-garbage-collection-in-go/</a></p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2018-10-23-how-to-optimize-garbage-collection-in-go/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/'> (번역) 카크로치디비(CockroachDB) 블로그 / 왜 Go가 CockroachDB에 올바른 선택인가</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2018-10-21 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/cockroachdb">#cockroachdb</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>원문: <a href="https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/">https://www.cockroachlabs.com/blog/why-go-was-the-right-choice-for-cockroachdb/</a></p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2018-10-21-why-go-was-the-right-choice-for-cockroachdb/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-10-13-go-work-stealing-scheduler/'> (번역) Go 작업훔치기 스케줄러</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2018-10-13 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/scheduler">#scheduler</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>원문: <a href="https://rakyll.org/scheduler/">https://rakyll.org/scheduler/</a></p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2018-10-13-go-work-stealing-scheduler/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-10-03-scheduling-in-go-part2/'> (번역) Go 스케줄링 파트 2</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2018-10-03 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/multithread">#multithread</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>원문: <a href="https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html">https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html</a></p>
+<hr>
+<h3 id="프렐류드">프렐류드</h3>
+<p>Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 Go 스케줄러에 중점을 둡니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2018-10-03-scheduling-in-go-part2/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-10-02-scheduling-in-go-part1/'> (번역) Go 스케줄링 파트 1</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2018-10-02 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/multithread">#multithread</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>원문: <a href="https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html">https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html</a></p>
+<hr>
+<h3 id="프렐류드">프렐류드</h3>
+<p>Go 스케줄러의 구조와 의미 이해를 제공하는 3부작의 세 번째 글입니다. 이 글은 OS 스케줄러에 중점을 둡니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2018-10-02-scheduling-in-go-part1/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/'> Visual Studio Code debug speed up on Windows</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2018-05-14 | updated: 2025-12-21</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/vscode">#vscode</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/windows">#windows</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>On <code>Visual Studio Code</code>, <code>Go</code> debugging is very slow because that always rebuild everything.</p>
+<p>If you set following settings on your <code>.vscode</code> folder <code>Visual Studio Code</code> will only build when changed.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/posts/2018-05-14-vscode-go-debug-speed-up-on-windows/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:jaewan.huey.park@gmail.com"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/hueypark" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/jaewanHueyPark" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  
+  <div class="social-link">
+  <a href="/tags/go/index.xml" target="_blank">RSS</a>
+  </div>
+  
+
+</div>
+
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+  <div class="copyright">  </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+<script async src="/js/mermaid/mermaid.min.js"></script>
+
+</body>
+</html>
+

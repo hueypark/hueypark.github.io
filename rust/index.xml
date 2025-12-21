@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rusts on Marsettler</title>
+    <link>https://marsettler.com/rust/</link>
+    <description>Recent content in Rusts on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust good reads</title>
+      <link>https://marsettler.com/rust/rust-reads/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/rust/rust-reads/</guid>
+      <description>&lt;h1 id=&#34;rust-good-reads&#34;&gt;Rust good reads&lt;/h1&gt;&#xA;&lt;h2 id=&#34;two-years-of-rust-by-fernando-borretti&#34;&gt;&lt;a href=&#34;https://borretti.me/article/two-years-of-rust&#34;&gt;Two Years of Rust by Fernando Borretti&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The way I would summarize Rust is: it’s a better Go, or a faster Python.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;where-is-rust-being-used-by-let&#34;&gt;&lt;a href=&#34;https://youtu.be/42FhQWQ6SVA&#34;&gt;Where is Rust being used? by Let&amp;rsquo;s Get Rusty&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;People say learning rust is the hardest thing in the world.&lt;/p&gt;&#xA;&lt;p&gt;But that&amp;rsquo;s not true.&lt;/p&gt;&#xA;&lt;p&gt;The hardest thing in the world is finding a rust job position.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;ragnar-groot-koerkamp&#34;&gt;&lt;a href=&#34;https://curiouscoding.nl/&#34;&gt;Ragnar {Groot Koerkamp}&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;PhD High Throughput Bioinformatics @BMI ETH Zurich&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

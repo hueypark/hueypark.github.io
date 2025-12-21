@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database on Marsettler</title>
+    <link>https://marsettler.com/tags/database/</link>
+    <description>Recent content in Database on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OLAP database query optimizer and performance</title>
+      <link>https://marsettler.com/performance/olap-query-optimizer-and-performance/</link>
+      <pubDate>Fri, 23 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/performance/olap-query-optimizer-and-performance/</guid>
+      <description>&lt;h1 id=&#34;olap-database-query-optimizer-and-performance&#34;&gt;OLAP database query optimizer and performance&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;olap-workloads&#34;&gt;OLAP workloads&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Online analytical processing, or OLAP, is an approach to answer multi-dimensional analytical queries swiftly in computing.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Online_analytical_processing&#34;&gt;https://en.wikipedia.org/wiki/Online_analytical_processing&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;olap-vs-oltp-the-differences&#34;&gt;OLAP VS. OLTP: THE DIFFERENCES&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;OLAP is used for complex data analysis, while OLTP is used for real-time processing of online transactions at scale.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.snowflake.com/guides/olap-vs-oltp/&#34;&gt;https://www.snowflake.com/guides/olap-vs-oltp/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;luft-olap-database-for-airbridge&#34;&gt;Luft: OLAP database for Airbridge&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://engineering.ab180.co/stories/introducing-luft&#34;&gt;https://engineering.ab180.co/stories/introducing-luft&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;airbridge-dashboard-demo&#34;&gt;Airbridge dashboard demo&lt;/h2&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s take a look at what you&amp;rsquo;d do if you implemented.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>어떻게 코호트 분석을 하나요?</title>
+      <link>https://marsettler.com/analytics/how-to-do-cohort-analysis/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/analytics/how-to-do-cohort-analysis/</guid>
+      <description>&lt;h1 id=&#34;코호트-분석&#34;&gt;코호트 분석&lt;/h1&gt;&#xA;&lt;p&gt;원하는 유저군(코호트)을 잡아서 해당 유저들의 행동을 분석하는 기법&lt;/p&gt;&#xA;&lt;p&gt;예: &amp;ldquo;지난 6개월간 우리 앱에서 한달에 10만원 이상 소비한 30대 여성&amp;quot;이란 유저군을 잡은 후,&#xA;해당 유저군의 리텐션 (재방문률)을 분석&lt;/p&gt;&#xA;&lt;h1 id=&#34;분석방법&#34;&gt;분석방법&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Amplitude, Google Analytics 등의 외부 솔루션 사용&#xA;&lt;ul&gt;&#xA;&lt;li&gt;장점: 개발 비용이 없음&lt;/li&gt;&#xA;&lt;li&gt;단점:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;솔루션 비용 발생&lt;/li&gt;&#xA;&lt;li&gt;솔루션에 의존하게 됨&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;RDB(OLTP) 사용&#xA;&lt;ul&gt;&#xA;&lt;li&gt;장점: 익숙함&lt;/li&gt;&#xA;&lt;li&gt;단점: 일정 규모를 넘어가면 성능문제로 문제해결 불가능함&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;데이터 파이프라인을 구축(Snowflake, Apache Kafka 등 활용)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;장점: 익숙함&lt;/li&gt;&#xA;&lt;li&gt;단점: 생각보다 많은 비용&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;코호트 분석용 OALP 데이터베이스를 직접 개발: &lt;a href=&#34;https://engineering.ab180.co/stories/introducing-luft&#34;&gt;https://engineering.ab180.co/stories/introducing-luft&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;장점: 고성능의 입맛대로 동작하는 데이터베이스를 가질 수도 있음&lt;/li&gt;&#xA;&lt;li&gt;단점: 직접 개발해야 함&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Write Ahead Logging</title>
+      <link>https://marsettler.com/write-ahead-logging/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/write-ahead-logging/</guid>
+      <description>&lt;p&gt;Write Ahead Logging(WAL)은 데이터베이스 시스템에서 ACID의 특성 가운데 원자성과 내구성을 제공하는 기술입니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>데이터베이스</title>
+      <link>https://marsettler.com/database/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/database/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://marsettler.com/write-ahead-logging&#34;&gt;Write Ahead Logging&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.vldb.org/&#34;&gt;Very Large Data Bases Endowment Inc.&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sigmod.org/&#34;&gt;SIGMOD&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ieee-icde.org/2025/&#34;&gt;ICDE 2025&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

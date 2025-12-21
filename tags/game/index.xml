@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game on Marsettler</title>
+    <link>https://marsettler.com/tags/game/</link>
+    <description>Recent content in Game on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust Game Dev Reads</title>
+      <link>https://marsettler.com/marsettler/rust-game-dev-reads/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/marsettler/rust-game-dev-reads/</guid>
+      <description>&lt;h1 id=&#34;news&#34;&gt;News&lt;/h1&gt;&#xA;&lt;h2 id=&#34;vleuevleue_&#34;&gt;&lt;a href=&#34;https://github.com/vleue/vleue_navigator&#34;&gt;vleue/vleue_navigator&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Navigation for Bevy with NavMesh&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;avian-physics-03-by-joona-aalto&#34;&gt;&lt;a href=&#34;https://joonaa.dev/blog/08/avian-0-3&#34;&gt;Avian Physics 0.3 by Joona Aalto&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;My highlights:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Additionally, a new tangent_velocity property is provided to emulate the artificial movement of contact surfaces, making it possible to simulate scenarios such as &lt;code&gt;conveyor belts&lt;/code&gt; or speed pads.&lt;/li&gt;&#xA;&lt;li&gt;Physics Picking Filter&lt;/li&gt;&#xA;&lt;li&gt;Physics Diagnostics&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;development-environment&#34;&gt;Development Environment&lt;/h1&gt;&#xA;&lt;h2 id=&#34;fixing-rust-memory-allocation-slowdown-in-vs-code-on-windows&#34;&gt;&lt;a href=&#34;https://zaynar.co.uk/posts/vs-code-debug-heap/&#34;&gt;Fixing Rust memory allocation slowdown in VS Code on Windows&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>배틀그라운드, 새로운 전장으로 (크래프톤웨이 두 번째 이야기) 를 읽고</title>
+      <link>https://marsettler.com/posts/2025-04-26-battleground-into-the-new-arena/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/posts/2025-04-26-battleground-into-the-new-arena/</guid>
+      <description>&lt;h2 id=&#34;배틀그라운드-새로운-전장으로&#34;&gt;배틀그라운드, 새로운 전장으로&lt;/h2&gt;&#xA;&lt;h2 id=&#34;크래프톤웨이-두-번째-이야기-를-읽고&#34;&gt;(크래프톤웨이 두 번째 이야기) 를 읽고&lt;/h2&gt;&#xA;&lt;p&gt;발표자: 박재완&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;순서&#34;&gt;순서&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;읽은 이유&lt;/li&gt;&#xA;&lt;li&gt;책 소개&lt;/li&gt;&#xA;&lt;li&gt;Quiz!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-읽은-이유&#34;&gt;1. 읽은 이유&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;크래프톤이 넥슨의 자리도 위협하고 있다.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;1황! 1황!&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://youtu.be/7mqCUaB0-6U?t=1272&#34;&gt;중년게이머 김실장 방송 중 크래프톤 실적발표&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;빵빵 뜨고 난 이후에 사그러드는 게임이 얼마나 많습니까?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;오랫동안 성장하는 IP를 만들기 위해서 어떻게 해야 되는가?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;김창한 대표님 미친 사람(?) 이더라고요.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=7mqCUaB0-6U&amp;amp;t=1460&#34;&gt;중년게이머 김실장 방송 중 책 이야기&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-책-소개&#34;&gt;2. 책 소개&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;목차&#34;&gt;목차&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2017 일시정지 버튼 없음: 배틀그라운드 출시 이후&lt;/li&gt;&#xA;&lt;li&gt;2018 게임맵을 위한 로드맵: 빨랐고 다양했던 시도들 끝에 얻은 것&lt;/li&gt;&#xA;&lt;li&gt;2019 다시 기본으로: 배틀그라운드만의 재미를 위하여&lt;/li&gt;&#xA;&lt;li&gt;2020 허들 삭제: 베스트 시나리오와 워스트 시나리오 사이&lt;/li&gt;&#xA;&lt;li&gt;2021 크래프톤의 길: &amp;lsquo;우리&amp;rsquo;라는 단어를 새롭게 정의하며&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;구성&#34;&gt;구성&lt;/h3&gt;&#xA;&lt;p&gt;김효섭 전 대표의 이메일을 통째로 받고,&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Awesome graphic games</title>
+      <link>https://marsettler.com/game-design/graphis/</link>
+      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/game-design/graphis/</guid>
+      <description>&lt;h2 id=&#34;destructible-textures-by-pybounce&#34;&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=1XetFP-jzYY&amp;amp;t=301s&#34;&gt;Destructible Textures by Pybounce&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;I&amp;rsquo;m bad at art so I tried making textures break up in to their pixels when hit. It still looks pretty meh butit&amp;rsquo;s neat&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>Bevy 101 - ECS 부터 itch.io 배포까지</title>
+      <link>https://marsettler.com/marsettler/bevy-101-from-ecs-to-itch-io-deployment/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/marsettler/bevy-101-from-ecs-to-itch-io-deployment/</guid>
+      <description>&lt;h1 id=&#34;bevy-101---ecs-부터-itchio-배포까지&#34;&gt;Bevy 101 - ECS 부터 itch.io 배포까지&lt;/h1&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;박재완&#34;&gt;박재완&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;여러 게임회사를 다닌 후&lt;/li&gt;&#xA;&lt;li&gt;지금은 &lt;a href=&#34;http://abit.ly/luft&#34;&gt;OLAP 데이터베이스&lt;/a&gt; 개발하고 있음&lt;/li&gt;&#xA;&lt;li&gt;Bevy 로 캐주얼 게임 만들기 시도 중&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bevy Game Engine 기초&lt;/li&gt;&#xA;&lt;li&gt;itch.io 에 게임 배포하기&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;bevy&#34;&gt;Bevy&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A refreshingly simple data-driven game engine built in Rust&lt;/li&gt;&#xA;&lt;li&gt;Free and Open Source Forever!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://bevyengine.org/&#34;&gt;https://bevyengine.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;bevy-주요-기능&#34;&gt;Bevy 주요 기능&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Data Driven&lt;/li&gt;&#xA;&lt;li&gt;2D, 3D Renderer, Render Graph, Animation&lt;/li&gt;&#xA;&lt;li&gt;Cross Platform&lt;/li&gt;&#xA;&lt;li&gt;Bevy UI&lt;/li&gt;&#xA;&lt;li&gt;Scenes&lt;/li&gt;&#xA;&lt;li&gt;Sound&lt;/li&gt;&#xA;&lt;li&gt;Hot Reloading&lt;/li&gt;&#xA;&lt;li&gt;Productive Compile Times&lt;/li&gt;&#xA;&lt;li&gt;Free and Open Source&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;data-driven&#34;&gt;Data Driven&lt;/h3&gt;&#xA;&lt;p&gt;All engine and game logic uses Bevy ECS, a custom Entity Component System&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Book) 0년차 게임개발</title>
+      <link>https://marsettler.com/book/game-development-for-0-years/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/book/game-development-for-0-years/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;지은이: 김다훈, 박소연, 이재호, 주진영&lt;/li&gt;&#xA;&lt;li&gt;ISBN: 979-11-971861-0-3&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>경제</title>
+      <link>https://marsettler.com/the-game-i-want-to-make/economy/</link>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/the-game-i-want-to-make/economy/</guid>
+      <description>&lt;h3 id=&#34;아직-작성중입니다&#34;&gt;아직 작성중입니다.&lt;/h3&gt;&#xA;&lt;p&gt;사용자들이 서로 상호작용하는 게임에서 경제는 매우 중요합니다. 하지만 많은 경우 잘 관리되지 못하며,&#xA;심한 경우에는 패치가 진행될 때마다 극심한 인플레이션으로 재화의 가치가 바닥으로 떨어지곤 합니다.&#xA;이 글에서는 극심한 인플레이션의 문제점과 그 해결방안에 대해 이야기해보겠습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>브림스톤과 미스트: 10월 21일</title>
+      <link>https://marsettler.com/albion-online/brimstone-mist-arrives-october-21/</link>
+      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/albion-online/brimstone-mist-arrives-october-21/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://albiononline.com/en/news/brimstone-mist-arrives-october-21&#34;&gt;https://albiononline.com/en/news/brimstone-mist-arrives-october-21&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;오염된 던전에 새로운 적들을 추가되고 아발론의 길에 새로운 생선이 생기며 광범위한 전투 밸런싱을 조정하는 주요 패치가 준비되었습니다.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://assets.albiononline.com/uploads/media/default/media/3ad3aca6b7325fc257ec6368a446bbc287b147af.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>내가 만들고 싶은 게임</title>
+      <link>https://marsettler.com/the-game-i-want-to-make/the-game-i-want-to-make/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/the-game-i-want-to-make/the-game-i-want-to-make/</guid>
+      <description>&lt;h3 id=&#34;내가-만들고-싶은-게임&#34;&gt;내가 만들고 싶은 게임&lt;/h3&gt;&#xA;&lt;p&gt;게임 서버 프로그래머로 수 년 간 일했지만, 업무의 대부분의 시간은 디자이너가 제공해 주는 아이디어의 구현에 치중되어 있었습니다. 이 글에서는 스스로 만들고 싶은 게임에 대해 이야기 합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Single Server MMORPG: Technology stacks</title>
+      <link>https://marsettler.com/single-server-mmorpg/technology-stacks/</link>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/single-server-mmorpg/technology-stacks/</guid>
+      <description>&lt;h2 id=&#34;technology-stacks&#34;&gt;Technology stacks&lt;/h2&gt;&#xA;&lt;p&gt;This technology stack is not consistently enforced for all MMORPGs. However, it will be the basis for technical decisions, so that I will mention it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Single Server MMORPG: What is single server MMORPG?</title>
+      <link>https://marsettler.com/single-server-mmorpg/what-is-single-server-mmorpg/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/single-server-mmorpg/what-is-single-server-mmorpg/</guid>
+      <description>&lt;p&gt;What is a single server MMORPG?&lt;/p&gt;&#xA;&lt;p&gt;Before I begin, let&amp;rsquo;s clarify the concept of what we&amp;rsquo;re going to talk.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Single Server MMORPG: Introduction</title>
+      <link>https://marsettler.com/single-server-mmorpg/introduction/</link>
+      <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/single-server-mmorpg/introduction/</guid>
+      <description>&lt;p&gt;This post is the first of the Single Server MMORPG server series.&lt;/p&gt;&#xA;&lt;p&gt;Single Server MMORPG server uses one logically server instead of using multiple separate sharded servers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>게임 서버 아키텍처</title>
+      <link>https://marsettler.com/game-server-architecture/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/game-server-architecture/</guid>
+      <description>&lt;p&gt;아직 작성중입니다.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;게임 서버 아키텍처에 관한 이야기를 합니다. 대부분의 내용은 MMORPG에 특화되어 있습니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>거대한 단일 MMORPG 서버</title>
+      <link>https://marsettler.com/huge-single-mmorpg-server/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/huge-single-mmorpg-server/</guid>
+      <description>&lt;p&gt;2019년 9월 21일에 &lt;a href=&#34;https://cafe.naver.com/devrookie/9621&#34;&gt;데브루키 521회&lt;/a&gt;에서 발표한 자료입니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(번역) 의사결정을 위한 게임 프로듀서의 도움말</title>
+      <link>https://marsettler.com/posts/2018-07-08-a-producers-guide-to-decisionmaking/</link>
+      <pubDate>Sun, 08 Jul 2018 00:00:00 +0900</pubDate>
+      <guid>https://marsettler.com/posts/2018-07-08-a-producers-guide-to-decisionmaking/</guid>
+      <description>&lt;p&gt;원문: &lt;a href=&#34;https://gamasutra.com/view/news/320800/A_producers_guide_to_decisionmaking.php&#34;&gt;https://gamasutra.com/view/news/320800/A_producers_guide_to_decisionmaking.php&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

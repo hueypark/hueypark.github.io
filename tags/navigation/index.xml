@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Navigation on Marsettler</title>
+    <link>https://marsettler.com/tags/navigation/</link>
+    <description>Recent content in Navigation on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/navigation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>언리얼 엔진 4 커스텀 네비게이션 시스템</title>
+      <link>https://marsettler.com/unreal-engine/custom-navigation-system/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/unreal-engine/custom-navigation-system/</guid>
+      <description>&lt;h2 id=&#34;언리얼-엔진-4&#34;&gt;언리얼 엔진 4&lt;/h2&gt;&#xA;&lt;h2 id=&#34;커스텀-네비게이션-시스템&#34;&gt;커스텀 네비게이션 시스템&lt;/h2&gt;&#xA;&lt;p&gt;박재완&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:jaewan.huey.park@gmail.com&#34;&gt;jaewan.huey.park@gmail.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;네비게이션 시스템 개요&lt;/li&gt;&#xA;&lt;li&gt;왜 커스텀이 필요한가?&lt;/li&gt;&#xA;&lt;li&gt;커스텀 네비게이션 데이터 구현 맛보기&lt;/li&gt;&#xA;&lt;li&gt;참고자료&lt;/li&gt;&#xA;&lt;li&gt;Q &amp;amp; A&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;네비게이션-시스템&#34;&gt;네비게이션 시스템&lt;/h2&gt;&#xA;&lt;p&gt;인공지능 에이전트가 경로 찾기를 사용하여&lt;/p&gt;&#xA;&lt;p&gt;레벨을 탐색하는 기능을 제공&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://marsettler.com/unreal-engine/custom-navigation-system/level.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;벽을 피해 목적지로 가고 싶다면?&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://marsettler.com/unreal-engine/custom-navigation-system/level-with-navigation.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;그냥 사용하시면 됩니다&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;왜-커스텀이-필요한가&#34;&gt;왜 커스텀이 필요한가?&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;이유-1&#34;&gt;이유 1.&lt;/h3&gt;&#xA;&lt;p&gt;특별한 연출&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;언리얼 엔진 4 에 내장 네비게이션은&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/recastnavigation/recastnavigation&#34;&gt;recastnavigation&lt;/a&gt; 기반&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;일반적인 상황에서 잘 작동하지만&lt;/p&gt;&#xA;&lt;p&gt;특별한 연출을 보여주기엔 아쉬운 부분들이 있음&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
