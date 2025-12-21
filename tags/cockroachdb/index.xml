@@ -6,7 +6,7 @@
     <description>Recent content in Cockroachdb on Marsettler</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Dec 2025 15:10:18 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 21 Dec 2025 15:17:14 +0900</lastBuildDate>
     <atom:link href="https://marsettler.com/tags/cockroachdb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>페블(Pebble): RocksDB에서 영감을 받은 키밸류 저장소</title>
