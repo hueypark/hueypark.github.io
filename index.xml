@@ -6,8 +6,15 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Dec 2025 16:02:39 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 26 Dec 2025 17:42:54 +0900</lastBuildDate>
     <atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go interesting bugs</title>
+      <link>https://marsettler.com/go/go-interesting-bugs/</link>
+      <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/go/go-interesting-bugs/</guid>
+      <description>&lt;h2 id=&#34;how-we-found-a-bug-in-go&#34;&gt;&lt;a href=&#34;https://blog.cloudflare.com/how-we-found-a-bug-in-gos-arm64-compiler/&#34;&gt;How we found a bug in Go&amp;rsquo;s arm64 compiler by Thea Heinen&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A release? Infrastructure changes? The position of Mars?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Our investigation stalled for a while at this point – making guesses, testing guesses, trying to infer if the panic rate went up or down, or if nothing changed.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A reproducible crash with standard library only? This felt like conclusive evidence that our problem was a runtime bug.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/golang/go/commit/f7cc61e7d7f77521e073137c6045ba73f66ef902&#34;&gt;https://github.com/golang/go/commit/f7cc61e7d7f77521e073137c6045ba73f66ef902&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Rocket Lab</title>
       <link>https://marsettler.com/rklb/</link>
