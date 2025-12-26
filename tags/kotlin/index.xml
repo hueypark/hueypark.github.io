@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kotlin on Marsettler</title>
+    <link>https://marsettler.com/tags/kotlin/</link>
+    <description>Recent content in Kotlin on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Dec 2025 13:52:58 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spring Framework</title>
+      <link>https://marsettler.com/spring/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/spring/</guid>
+      <description>&lt;h2 id=&#34;in-the-ai-era-focusing-on-essentials-instead-of-jpa-complexity-by-백명석-translated-from-korean&#34;&gt;&lt;a href=&#34;https://brunch.co.kr/@cleancode/95?fbclid=IwY2xjawO0h2lleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA80MDk5NjI2MjMwODU2MDkAAR6yw-bfxigDcnRoHTzK-u4BX8SSj6NVIGaPj8bR4m6gX9It81jgfEUS42zJiQ_aem_5mu4NdVHjgrFrivSAgp9Iw&#34;&gt;In the AI Era, Focusing on Essentials Instead of JPA Complexity by 백명석 (Translated from Korean)&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The bigger problem was that JPA&amp;rsquo;s relationship mapping feature was too good.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;JPA is overkill.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The problem of domain logic becoming dependent on JPA&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>

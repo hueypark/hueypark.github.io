@@ -23,7 +23,7 @@
 
   <meta itemprop="name" content="Marsettler">
   <meta itemprop="datePublished" content="2025-11-09T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-12-26T10:52:44+09:00">
+  <meta itemprop="dateModified" content="2025-12-26T13:52:58+09:00">
 
 <link rel="stylesheet" href="/css/layout.css" />
 
@@ -108,6 +108,45 @@ airbridge.init({
 
 
   
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/using-go-module-with-github-private-repository/'> Go module에서 GitHub private 저장소 사용</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2020-03-29 | updated: 2022-09-18</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>Go module에서 GitHub private 저장소를 사용하는 방법입니다.</p>
+<hr>
+<h3 id="git-설정에서-github-접근을-계정과-토큰을-사용하게-변경">git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global url.<span style="color:#e6db74">&#34;https://</span><span style="color:#e6db74">${</span>GITHUB_USER<span style="color:#e6db74">}</span><span style="color:#e6db74">:</span><span style="color:#e6db74">${</span>{GITHUB_TOKEN<span style="color:#e6db74">}</span><span style="color:#e6db74">}@github.com&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com&#34;</span>
+</span></span></code></pre></div><h3 id="goprivate-환경변수에-private-저장소-등록"><a href="https://golang.org/cmd/go/#hdr-Module_configuration_for_non_public_modules">GOPRIVATE</a> 환경변수에 private 저장소 등록</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>GOPRIVATE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;github.com/hueypark/asset&#34;</span>
+</span></span></code></pre></div>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/using-go-module-with-github-private-repository/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
     <article class="post-preview">
 
   <header>
@@ -530,76 +569,6 @@ airbridge.init({
 
   <div class="rmore">
     <a href='https://marsettler.com/unreal-engine/compile_time_log_validate/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/unreal-engine/custom-navigation-system/'> 언리얼 엔진 4 커스텀 네비게이션 시스템</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2022-02-03 | updated: 2022-02-05</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/unreal-engine-4">#Unreal Engine 4</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/navigation">#navigation</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <h2 id="언리얼-엔진-4">언리얼 엔진 4</h2>
-<h2 id="커스텀-네비게이션-시스템">커스텀 네비게이션 시스템</h2>
-<p>박재완</p>
-<p><a href="mailto:jaewan.huey.park@gmail.com">jaewan.huey.park@gmail.com</a></p>
-<hr>
-<h2 id="목차">목차</h2>
-<ul>
-<li>네비게이션 시스템 개요</li>
-<li>왜 커스텀이 필요한가?</li>
-<li>커스텀 네비게이션 데이터 구현 맛보기</li>
-<li>참고자료</li>
-<li>Q &amp; A</li>
-</ul>
-<hr>
-<h2 id="네비게이션-시스템">네비게이션 시스템</h2>
-<p>인공지능 에이전트가 경로 찾기를 사용하여</p>
-<p>레벨을 탐색하는 기능을 제공</p>
-<hr>
-<p><img src="/unreal-engine/custom-navigation-system/level.png" alt=""></p>
-<p>벽을 피해 목적지로 가고 싶다면?</p>
-<hr>
-<p><img src="/unreal-engine/custom-navigation-system/level-with-navigation.png" alt=""></p>
-<p>그냥 사용하시면 됩니다</p>
-<hr>
-<h2 id="왜-커스텀이-필요한가">왜 커스텀이 필요한가?</h2>
-<hr>
-<h3 id="이유-1">이유 1.</h3>
-<p>특별한 연출</p>
-<hr>
-<p>언리얼 엔진 4 에 내장 네비게이션은</p>
-<p><a href="https://github.com/recastnavigation/recastnavigation">recastnavigation</a> 기반</p>
-<hr>
-<p>일반적인 상황에서 잘 작동하지만</p>
-<p>특별한 연출을 보여주기엔 아쉬운 부분들이 있음</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/unreal-engine/custom-navigation-system/' class="rmore">Read more</a>
   </div>
 
 

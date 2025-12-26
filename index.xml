@@ -6,7 +6,7 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Dec 2025 10:52:44 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 26 Dec 2025 13:52:58 +0900</lastBuildDate>
     <atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rocket Lab</title>
@@ -693,6 +693,13 @@
       <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
       <guid>https://marsettler.com/go/using-go-module-with-github-private-repository/</guid>
       <description>&lt;p&gt;Go module에서 GitHub private 저장소를 사용하는 방법입니다.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;git-설정에서-github-접근을-계정과-토큰을-사용하게-변경&#34;&gt;git 설정에서 GitHub 접근을 계정과 토큰을 사용하게 변경&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git config --global url.&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;GITHUB_USER&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;{GITHUB_TOKEN&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}@github.com&amp;#34;&lt;/span&gt;.insteadOf &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://github.com&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;goprivate-환경변수에-private-저장소-등록&#34;&gt;&lt;a href=&#34;https://golang.org/cmd/go/#hdr-Module_configuration_for_non_public_modules&#34;&gt;GOPRIVATE&lt;/a&gt; 환경변수에 private 저장소 등록&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GOPRIVATE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;github.com/hueypark/asset&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Spring Framework</title>
+      <link>https://marsettler.com/spring/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/spring/</guid>
+      <description>&lt;h2 id=&#34;in-the-ai-era-focusing-on-essentials-instead-of-jpa-complexity-by-백명석-translated-from-korean&#34;&gt;&lt;a href=&#34;https://brunch.co.kr/@cleancode/95?fbclid=IwY2xjawO0h2lleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA80MDk5NjI2MjMwODU2MDkAAR6yw-bfxigDcnRoHTzK-u4BX8SSj6NVIGaPj8bR4m6gX9It81jgfEUS42zJiQ_aem_5mu4NdVHjgrFrivSAgp9Iw&#34;&gt;In the AI Era, Focusing on Essentials Instead of JPA Complexity by 백명석 (Translated from Korean)&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The bigger problem was that JPA&amp;rsquo;s relationship mapping feature was too good.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;JPA is overkill.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The problem of domain logic becoming dependent on JPA&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Wiki</title>
