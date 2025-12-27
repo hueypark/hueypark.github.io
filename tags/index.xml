@@ -6,8 +6,22 @@
     <description>Recent content in Tags on Marsettler</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Dec 2025 17:42:54 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 27 Dec 2025 13:24:16 +0900</lastBuildDate>
     <atom:link href="https://marsettler.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Devlog</title>
+      <link>https://marsettler.com/tags/devlog/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/tags/devlog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Marsettler</title>
+      <link>https://marsettler.com/tags/marsettler/</link>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/tags/marsettler/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Bug</title>
       <link>https://marsettler.com/tags/bug/</link>
@@ -216,13 +230,6 @@
       <link>https://marsettler.com/tags/itchio/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://marsettler.com/tags/itchio/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Marsettler</title>
-      <link>https://marsettler.com/tags/marsettler/</link>
-      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://marsettler.com/tags/marsettler/</guid>
       <description></description>
     </item>
     <item>
