@@ -6,14 +6,14 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Dec 2025 13:24:16 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 27 Dec 2025 14:47:53 +0900</lastBuildDate>
     <atom:link href="https://marsettler.com/tags/marsettler/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Marsettler v0.0.0</title>
       <link>https://marsettler.com/marsettler/devlog/marsettler-v0.0.0/</link>
       <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://marsettler.com/marsettler/devlog/marsettler-v0.0.0/</guid>
-      <description>&lt;p&gt;A catastrophic accident has struck the Mars outpost. Communication with Earth is completely severed. Only a handful of survivors remain.&lt;/p&gt;&#xA;&lt;p&gt;Marsettler is a simulation where players shape the story of these survivors. Your journey becomes a narrative—a story worth sharing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;whats-in-v000&#34;&gt;What&amp;rsquo;s in v0.0.0&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Autonomous AI: Characters find iron mines, extract ore, and haul it to the warehouse on their own&lt;/li&gt;&#xA;&lt;li&gt;Behavior Tree System: The architecture powering AI decision-making&lt;/li&gt;&#xA;&lt;li&gt;Resource Management: Mines deplete and disappear when exhausted&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://marsettler.com/marsettler/devlog/v0.0.0.png&#34; alt=&#34;Marsettler v0.0.0&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A catastrophic accident has struck the Mars outpost. Communication with Earth is completely severed. Only a handful of survivors remain.&lt;/p&gt;&#xA;&lt;p&gt;Marsettler is a simulation where players shape the story of these survivors. Your journey becomes a narrative—a story worth sharing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;whats-in-v000&#34;&gt;What&amp;rsquo;s in v0.0.0&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Autonomous AI: Characters find iron mines, extract ore, and haul it to the warehouse on their own&lt;/li&gt;&#xA;&lt;li&gt;Behavior Tree System: The architecture powering AI decision-making&lt;/li&gt;&#xA;&lt;li&gt;Resource Management: Mines deplete and disappear when exhausted&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://marsettler.com/marsettler/simulation/&#34;&gt;Run Simulation&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bevy 101 - ECS 부터 itch.io 배포까지</title>
