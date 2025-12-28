@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>S3 on Marsettler</title>
+    <link>https://marsettler.com/tags/s3/</link>
+    <description>Recent content in S3 on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Dec 2025 11:20:47 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/s3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazon S3</title>
+      <link>https://marsettler.com/aws/amazon-s3/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/aws/amazon-s3/</guid>
+      <description>&lt;h2 id=&#34;amazon-s3-quietly-became-a-concurrency-control-system-by-raul-junco&#34;&gt;&lt;a href=&#34;https://x.com/RaulJuncoV/status/1994391699603562689&#34;&gt;Amazon S3 quietly became a concurrency control system. by Raul Junco&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>
