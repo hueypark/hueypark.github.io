@@ -22,8 +22,8 @@
 
 
   <meta itemprop="name" content="Marsettler">
-  <meta itemprop="datePublished" content="2025-12-27T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-12-28T10:21:53+09:00">
+  <meta itemprop="datePublished" content="2025-12-28T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-28T10:34:34+09:00">
 
 <link rel="stylesheet" href="/css/layout.css" />
 
@@ -108,6 +108,65 @@ airbridge.init({
 
 
   
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-1/'> MongoDB 스터디 1주차(MongoDB 기초)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2021-01-10 | updated: 2021-01-13</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h3 id="들어가며">들어가며</h3>
+<p>지금까지 필요 없는 로그성 데이터를 MongoDB에 저장한 경험이 있으며, 대부분은 RDBMS를 사용했습니다. MongoDB도 많이 발전하였고(트랜잭션, 컨시스턴시 관련) 우리의 MongoDB 운영능력도 증가했기 떄문에 애플리케이션에서 스케일아웃을 핸들링하지 않고 MongoDB를 사용해 개발속도를 향상시키고 싶습니다.</p>
+<h3 id="mongodb란">MongoDB란</h3>
+<p>도큐먼트를 기본 자료형으로 사용하는 NoSQL 데이터베이스</p>
+<h3 id="도큐먼트와-컬렉션">도큐먼트와 컬렉션</h3>
+<ul>
+<li>도큐먼트
+<ul>
+<li>도큐먼트는 field와 value의 쌍으로 데이터를 저장하고 관리</li>
+<li>JSON 형태로 사용되며 실제로는 BSON으로 시리얼라이즈되어 저장됨</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;hueypark&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;title&#34;</span> : <span style="color:#e6db74">&#34;software engineer&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
+<li>컬렉션
+<ul>
+<li>도큐먼트들이 모여있는 집합</li>
+<li>일반적으로 한 컬렉션에 있는 도큐먼트들은 공통된 필드를 가지고 있음</li>
+</ul>
+</li>
+</ul>
+<h3 id="bson">BSON</h3>
+<p>BSON은 바이너리로 시리얼라이즈 된 JSON</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/mongodb/mongodb-study-week-1/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
     <article class="post-preview">
 
   <header>
@@ -460,52 +519,6 @@ airbridge.init({
 
   <div class="rmore">
     <a href='https://marsettler.com/distributed-system/raft-consensus-algorithm/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/single-server-mmorpg/technology-stacks/'> Single Server MMORPG: Technology stacks</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-09-22 | updated: 2020-09-22</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/game">#game</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/mmorpg">#mmorpg</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/server">#server</a>
-      </div>
-    
-      <div class="tag">
-        <a href="/tags/single-server-mmorpg">#single server mmorpg</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <h2 id="technology-stacks">Technology stacks</h2>
-<p>This technology stack is not consistently enforced for all MMORPGs. However, it will be the basis for technical decisions, so that I will mention it.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/single-server-mmorpg/technology-stacks/' class="rmore">Read more</a>
   </div>
 
 

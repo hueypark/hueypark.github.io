@@ -6,8 +6,15 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Dec 2025 10:21:53 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 10:34:34 +0900</lastBuildDate>
     <atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Speed and Quality in Software Engineering</title>
+      <link>https://marsettler.com/speed/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/speed/</guid>
+      <description>&lt;h2 id=&#34;people-often-ask-how-we-balance-speed-and-quality-at-tryramp-by-eric-glyman&#34;&gt;&lt;a href=&#34;https://x.com/eglyman/status/1996604079930331253&#34;&gt;People often ask how we balance speed and quality at @tryramp. by Eric Glyman&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;We don’t. Because speed is how you get to quality.&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
     <item>
       <title>Marsettler v0.0.0</title>
       <link>https://marsettler.com/marsettler/devlog/marsettler-v0.0.0/</link>

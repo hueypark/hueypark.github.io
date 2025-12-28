@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quality on Marsettler</title>
+    <link>https://marsettler.com/tags/quality/</link>
+    <description>Recent content in Quality on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Dec 2025 10:34:34 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/quality/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Speed and Quality in Software Engineering</title>
+      <link>https://marsettler.com/speed/</link>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/speed/</guid>
+      <description>&lt;h2 id=&#34;people-often-ask-how-we-balance-speed-and-quality-at-tryramp-by-eric-glyman&#34;&gt;&lt;a href=&#34;https://x.com/eglyman/status/1996604079930331253&#34;&gt;People often ask how we balance speed and quality at @tryramp. by Eric Glyman&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;We don’t. Because speed is how you get to quality.&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>
