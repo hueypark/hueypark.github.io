@@ -6,14 +6,14 @@
     <description>Recent content in Newsfeed on Marsettler</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Dec 2025 15:20:02 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 10:21:53 +0900</lastBuildDate>
     <atom:link href="https://marsettler.com/tags/newsfeed/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Newsfeed 2025</title>
       <link>https://marsettler.com/newsfeed/newsfeed-2025/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://marsettler.com/newsfeed/newsfeed-2025/</guid>
-      <description>&lt;h1 id=&#34;december-2025&#34;&gt;December 2025&lt;/h1&gt;&#xA;&lt;h2 id=&#34;if-there&#34;&gt;&lt;a href=&#34;https://www.linkedin.com/feed/update/urn:li:share:7394945294662209538/&#34;&gt;If there&amp;rsquo;s a benevolent God, why do we still have reorgs? by Jay Gengelbach&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Q: We just reorged 6 months ago. Why do we need another one?&lt;/p&gt;&#xA;&lt;p&gt;A: You deleted code you wrote 6 months ago. Why didn&amp;rsquo;t you write it better?&#xA;There is no perfect org. Only &amp;ldquo;good enough for now.&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;please-don&#34;&gt;&lt;a href=&#34;https://www.linkedin.com/posts/kyuhannam_pm-po-syotfnsxbtbs-activity-7401929146559561728-xXGR&#34;&gt;Please Don&amp;rsquo;t Say &amp;ldquo;Please Clarify the R&amp;amp;R&amp;rdquo; by Kyuhan Nam (Translated from Korean)&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Gray areas don&amp;rsquo;t disappear with documentation&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;december-2025&#34;&gt;December 2025&lt;/h1&gt;&#xA;&lt;h2 id=&#34;on-metastable-failures-and-interactions-between-systems-by-aleksey-charapko&#34;&gt;&lt;a href=&#34;https://charap.co/on-metastable-failures-and-interactions-between-systems/&#34;&gt;On Metastable Failures and Interactions Between Systems by Aleksey Charapko&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Fault-tolerance is hard, and in the case of metastable failures, maybe next-to-impossible and/or expensive. I have a hunch that we may not be able to avoid metastable failures entirely in large, non-trivial systems that are also economical to operate, because of these “forced” actions that systems sometimes have to take. However, the three strategies above remain effective mitigation approaches. Just replace “avoid” with “avoid as much as possible.”&lt;/p&gt;</description>
     </item>
     <item>
       <title>Newsfeed 2024</title>
