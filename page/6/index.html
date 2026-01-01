@@ -22,8 +22,8 @@
 
 
   <meta itemprop="name" content="Marsettler">
-  <meta itemprop="datePublished" content="2025-12-28T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-12-28T11:23:10+09:00">
+  <meta itemprop="datePublished" content="2026-01-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-01-01T13:30:35+09:00">
 
 <link rel="stylesheet" href="/css/layout.css" />
 
@@ -108,6 +108,109 @@ airbridge.init({
 
 
   
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/go/c&#43;&#43;-to-go/'> C&#43;&#43; to Go</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2022-12-04 | updated: 2022-12-10</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/c&#43;&#43;">#c&#43;&#43;</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/go">#go</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h1 id="c-to-go">C++ to Go</h1>
+<h2 id="introducing-ziegel">Introducing Ziegel</h2>
+<p>박재완</p>
+<hr>
+<h2 id="luft">Luft</h2>
+<ul>
+<li>Ziegel and TrailDB</li>
+</ul>
+<hr>
+<h2 id="luft-1"><a href="https://engineering.ab180.co/stories/introducing-luft">Luft</a></h2>
+<ul>
+<li>OLAP database for analize the analyzing user behavior in real-time</li>
+<li>Use TrailDB as a storage</li>
+<li>Written in C/C++ and Go</li>
+</ul>
+<hr>
+<h2 id="traildb"><a href="https://traildb.io/">TrailDB</a></h2>
+<ul>
+<li>TrailDB is an efficient tool for storing and querying series of events</li>
+<li>Written in C</li>
+</ul>
+<hr>
+<h2 id="ziegel"><a href="https://engineering.ab180.co/stories/traildb-to-ziegel">Ziegel</a></h2>
+<ul>
+<li>New storage engine for the Luft</li>
+<li>Written in Go</li>
+</ul>
+<hr>
+<h2 id="why">Why?</h2>
+<ul>
+<li>TrailDB has been a suitable solution for the Luft</li>
+<li>But development was halted in 2019</li>
+<li>Issues with peformance and productivity</li>
+</ul>
+<hr>
+<h2 id="issues">Issues</h2>
+<ol>
+<li>Inefficient multi-core utilization</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// finalize. this could take a while with idle CPU usage but don&#39;t panic.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// it&#39;s not freeze;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// it&#39;s because TrailDB indexing process is not parallelized yet :(</span>
+</span></span></code></pre></div><ol start="2">
+<li>Row store data structure</li>
+<li>Use multiple language: C/C++ and Go</li>
+</ol>
+<hr>
+<h2 id="journey-for-the-migration">Journey for the migration</h2>
+<ol>
+<li>Add more tests for consistency verification</li>
+<li>Add interface for engine replacement
+<ul>
+<li>With this interface, we can easily replace the engine(partial or full)</li>
+</ul>
+</li>
+<li>Implement storage engine</li>
+<li>Peformance tuning
+<ul>
+<li>2x fater for the ingestion, 1.2 slower for the query</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="peformance-tuning">Peformance tuning</h2>
+<hr>
+<h3 id="measuring-performance">Measuring performance</h3>
+<p>Go provides great tools for measuring performance.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/go/c&#43;&#43;-to-go/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
     <article class="post-preview">
 
   <header>
@@ -530,57 +633,6 @@ airbridge.init({
 
   <div class="rmore">
     <a href='https://marsettler.com/book/the-pragmatic-programmer-20th-anniversary-edition/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/outage/2021-01-25-cookierun-kingdom-server-fault/'> 2020년 1월 25일 쿠키런: 킹덤 장기 점검</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2021-01-28 | updated: 2022-02-06</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/outage">#outage</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <h2 id="개요">개요</h2>
-<p>쿠키런: 킹덤이 오픈 후 알 수 없는 이유로 오랜 시간 점검하였음</p>
-<p>총 점검 시간: 39시간 40분(2021-01-25 16:50:00 ~ 2021-01-25 03:30:00)</p>
-<h2 id="원인">원인</h2>
-<p>기술적인 원인은 공개하지 않았음</p>
-<p>나중에라도 데브시스터즈에서 공유해주시면 흥미로울 것 같음</p>
-<blockquote>
-<p>여러분께 &lt;쿠키런: 킹덤&gt;을 선보이며 여러 가지 상황에 대비할 준비를 해왔지만 이번에 발생한 오류는 예상치 못한 치명적인 문제였고, 킹덤팀에서도 오랜 시간을 들여 수정하게 되었습니다.</p>
-</blockquote>
-<h2 id="점검-보상">점검 보상</h2>
-<ul>
-<li>크리스탈 12,000개</li>
-<li>스태미너 젤리 50개</li>
-<li>킹덤 아레나 티켓 30개</li>
-<li>코인 50,000개</li>
-<li>가속원 30분 5개</li>
-<li>경험의 별사탕 레벨 4 100개</li>
-</ul>
-<p>긴급 점검 보상은 2021년 1월 25일(월) 점검 전까지 생성된 계정에 한하여 지급됩니다.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/outage/2021-01-25-cookierun-kingdom-server-fault/' class="rmore">Read more</a>
   </div>
 
 

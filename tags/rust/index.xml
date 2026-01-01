@@ -6,8 +6,15 @@
     <description>Recent content in Rust on Marsettler</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Oct 2025 06:45:55 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jan 2026 13:30:35 +0900</lastBuildDate>
     <atom:link href="https://marsettler.com/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust performance</title>
+      <link>https://marsettler.com/rust/rust-performance/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/rust/rust-performance/</guid>
+      <description>&lt;h2 id=&#34;why-is-calling-my-asm-function-from-rust-slower-than-calling-it-from-c-by-ohad-ravid&#34;&gt;&lt;a href=&#34;https://ohadravid.github.io/posts/2025-12-rav1d-faster-asm/&#34;&gt;Why is calling my asm function from Rust slower than calling it from C? by Ohad Ravid&lt;/a&gt;&lt;/h2&gt;</description>
+    </item>
     <item>
       <title>Apache DataFusion</title>
       <link>https://marsettler.com/apache-datafusion/</link>

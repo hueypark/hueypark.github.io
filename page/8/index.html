@@ -22,8 +22,8 @@
 
 
   <meta itemprop="name" content="Marsettler">
-  <meta itemprop="datePublished" content="2025-12-28T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-12-28T11:23:10+09:00">
+  <meta itemprop="datePublished" content="2026-01-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-01-01T13:30:35+09:00">
 
 <link rel="stylesheet" href="/css/layout.css" />
 
@@ -108,6 +108,50 @@ airbridge.init({
 
 
   
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-10/'> MongoDB 스터디 10주차(트랜잭션)</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2021-03-26 | updated: 2021-04-01</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/mongodb">#MongoDB</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <h1 id="트랜잭션">트랜잭션</h1>
+<p>몽고디비는 4.0버전(2018년)부터 여러 도큐먼트에 대한 트랜잭션을, 4.2버전(2019년) 부터는 샤딩된 컬렉션에 대한
+분산 트랜잭션을 지원하고 있습니다.</p>
+<p>여러 도큐먼트에 대한 ACID 트랜잭션 지원은 다양한 상황에서 개발자가 쉽게 대응할 수 있게 합니다. 스냅샷 격리수준과
+아토믹한 실행은 샤딩된 클러스터에서도 트랜잭션이 필요한 워크로드를 제어할 수 있게 합니다.</p>
+<ul>
+<li>In version 4.0, MongoDB supports multi-document transactions on replica sets.</li>
+<li>In version 4.2, MongoDB introduces distributed transactions, which adds support for multi-document transactions on sharded clusters and incorporates the existing support for multi-document transactions on replica sets.</li>
+</ul>
+<blockquote>
+<p>IMPORTANT: 대부분의 경우 멀티 도큐먼트 트랜잭션은 큰 부하를 일으키며, 효율적인 스키마를 대체하지 않아야 합니다.
+대부분의 시나리오에서 비정규화된 데이터 모델(임베디드 도큐먼트 또는 배열)로 최적화 가능합니다.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/mongodb/mongodb-study-week-10/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
     <article class="post-preview">
 
   <header>
@@ -756,78 +800,6 @@ airbridge.init({
 
   <div class="rmore">
     <a href='https://marsettler.com/wine-diary/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/mongodb/mongodb-study-week-3/'> MongoDB 스터디 3주차(샤딩을 통한 시스템 확장)</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2021-01-24 | updated: 2021-01-28</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/mongodb">#MongoDB</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <h2 id="샤딩">샤딩</h2>
-<p>샤딩은 여러 물리장비에 데이터를 분산하는 방법
-MongoDB 는 샤딩을 이용해 매우 큰 데이터에 대해 높은 처리량을 제공</p>
-<h3 id="시스템을-확장하는-두-가지-방법">시스템을 확장하는 두 가지 방법</h3>
-<ul>
-<li>스케일업</li>
-<li>스케일아웃(MongoDB 는 샤딩 통해 스케일아웃을 지원)</li>
-</ul>
-<h3 id="대상이-되는-자원">대상이 되는 자원</h3>
-<ul>
-<li>CPU</li>
-<li>네트워크</li>
-<li>메모리</li>
-<li>디스크</li>
-</ul>
-<h3 id="고려사항">고려사항</h3>
-<p>경제적으로 이득인가?</p>
-<p>실현가능한가?</p>
-<h4 id="예-1">예 1)</h4>
-<ul>
-<li>서버의 CPU 자원에 한계가 다가오고 필요한 CPU 자원은 2배로 예상됨</li>
-<li>다음으로 좋은 CPU는 처리량이 10배이고 비용도 10배임</li>
-<li>스케일업을 한다면 10배의 비용으로 2배의 CPU만 사용</li>
-<li>스케일아웃을 한다면 2배의 비용으로 2배의 CPU 사용가능</li>
-</ul>
-<h4 id="예-2">예 2)</h4>
-<ul>
-<li>현재 사용가능한 가장 좋은 CPU를 사용 중 자원에 한계가 다가옴</li>
-<li>스케일업으로 해결불가</li>
-<li>스케일아웃으로 해결가능</li>
-</ul>
-<h4 id="예-3">예 3)</h4>
-<ul>
-<li>디스크를 1TB 에서 20TB 로 20배 스케일업</li>
-<li>백업, 복구, resync 에 20배의 시간이 듬</li>
-<li>스케일아웃한다면 병렬화의 장점을 사용해 시간을 절약할 수 있음</li>
-<li>또 MongoDB의 경우 큰 데이터는 큰 인덱스를 만들기 때문에 메모리 사용량도 함께 증가함</li>
-</ul>
-<h3 id="기타-장점">기타 장점</h3>
-<p>분산처리에 용이하기 때문에 MongoDB 에서 제공하는 존 샤딩, 어그리게이션 등의 기능을 효과적으로 사용가능</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/mongodb/mongodb-study-week-3/' class="rmore">Read more</a>
   </div>
 
 
