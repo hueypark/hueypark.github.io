@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Release on Marsettler</title>
+    <link>https://marsettler.com/tags/release/</link>
+    <description>Recent content in Release on Marsettler</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Jan 2026 21:48:34 +0900</lastBuildDate>
+    <atom:link href="https://marsettler.com/tags/release/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go releases</title>
+      <link>https://marsettler.com/go/go-release/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/go/go-release/</guid>
+      <description>&lt;h2 id=&#34;go-126-interactive-tour-by-anton-zhiyanov&#34;&gt;&lt;a href=&#34;https://antonz.org/go-1-26/&#34;&gt;Go 1.26 interactive tour by Anton Zhiyanov&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;My highights&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://antonz.org/go-1-26/#simd&#34;&gt;Vectorized operations (experimental)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://antonz.org/go-1-26/#pprof-goroutineleak&#34;&gt;Goroutine leak profile (experimental)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
