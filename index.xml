@@ -6,8 +6,15 @@
     <description>Recent content on Marsettler</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Jan 2026 06:31:51 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 18 Jan 2026 20:13:28 +0900</lastBuildDate>
     <atom:link href="https://marsettler.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raw Chicken Price Tracking</title>
+      <link>https://marsettler.com/raw-chicken-prices/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://marsettler.com/raw-chicken-prices/</guid>
+      <description>&lt;h1 id=&#34;raw-chicken-price-history&#34;&gt;Raw Chicken Price History&lt;/h1&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Date&lt;/th&gt;&#xA;          &lt;th&gt;Name&lt;/th&gt;&#xA;          &lt;th&gt;Store&lt;/th&gt;&#xA;          &lt;th&gt;Price per 100g&lt;/th&gt;&#xA;          &lt;th&gt;Total Weight&lt;/th&gt;&#xA;          &lt;th&gt;Total Price&lt;/th&gt;&#xA;          &lt;th&gt;Notes&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2026-01-18&lt;/td&gt;&#xA;          &lt;td&gt;(냉동) 하림 IFF 닭안심&lt;/td&gt;&#xA;          &lt;td&gt;롯데마트 제타플렉스 서울역점&lt;/td&gt;&#xA;          &lt;td&gt;989 원&lt;/td&gt;&#xA;          &lt;td&gt;900g&lt;/td&gt;&#xA;          &lt;td&gt;8,900 원&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
+    </item>
     <item>
       <title>Go releases</title>
       <link>https://marsettler.com/go/go-release/</link>
