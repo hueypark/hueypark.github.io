@@ -22,8 +22,8 @@
 
 
   <meta itemprop="name" content="Marsettler">
-  <meta itemprop="datePublished" content="2026-01-18T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2026-03-15T16:50:52+09:00">
+  <meta itemprop="datePublished" content="2026-03-21T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-03-21T11:07:28+09:00">
 
 <link rel="stylesheet" href="/css/layout.css" />
 
@@ -108,6 +108,51 @@ airbridge.init({
 
 
   
+    <article class="post-preview">
+
+  <header>
+    <h2 class="title"> <a href='https://marsettler.com/infra/using_helm/'> Using Helm</a> </h2>
+    <div class="meta">
+      <div class="date">created: 2023-01-24 | updated: 2023-01-24</div>
+      
+<div class="tags">
+  
+    
+      <div class="tag">
+        <a href="/tags/helm">#helm</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/infra">#infra</a>
+      </div>
+    
+      <div class="tag">
+        <a href="/tags/kubernetes">#kubernetes</a>
+      </div>
+    
+  
+</div>
+
+    </div>
+
+  </header>
+
+  <div class="summary">
+    <p>This page based on <a href="https://helm.sh/docs/intro/using_helm/">Using Helm</a> for personal notes. If you want to learn more, please visit the official website.</p>
+<hr>
+<h1 id="theree-big-concepts">Theree Big Concepts</h1>
+<p>A <code>Chart</code> is a Helm package. It contains all of the resource definitions necessary to run an application, tool, or service inside of a Kubernetes cluster. Think of it like the Kubernetes equivalent of a Homebrew formula, an Apt dpkg, or a Yum RPM file.</p>
+<p>A <code>Repository</code> is the place where charts can be collected and shared. It&rsquo;s like Perl&rsquo;s CPAN archive or the Fedora Package Database, but for Kubernetes packages.</p>
+  </div>
+
+  <div class="rmore">
+    <a href='https://marsettler.com/infra/using_helm/' class="rmore">Read more</a>
+  </div>
+
+
+</article>
+
+
     <article class="post-preview">
 
   <header>
@@ -559,46 +604,6 @@ airbridge.init({
 
   <div class="rmore">
     <a href='https://marsettler.com/go/using-go-module-with-github-private-repository/' class="rmore">Read more</a>
-  </div>
-
-
-</article>
-
-
-    <article class="post-preview">
-
-  <header>
-    <h2 class="title"> <a href='https://marsettler.com/go/go-headless-test-with-xvfb/'> xvfb를 이용한 Go headless 테스트</a> </h2>
-    <div class="meta">
-      <div class="date">created: 2020-04-02 | updated: 2022-09-18</div>
-      
-<div class="tags">
-  
-    
-      <div class="tag">
-        <a href="/tags/go">#go</a>
-      </div>
-    
-  
-</div>
-
-    </div>
-
-  </header>
-
-  <div class="summary">
-    <p>Go에서 <a href="https://github.com/go-gl/glfw">GLFW</a> 등을 이용해 그래픽스 관련 작업을 할 때에도 자동화
-테스트 구성이 가능합니다. 하지만 <a href="https://github.com/features/actions">GitHub Actions</a>과 같이
-디스플레이가 없는 환경에서는 의존성을 가지고 있다는 이유만으로 그래픽스 관련 테스트가 실패합니다.</p>
-<p>xvfb는 메뉴얼에서 <code>virtual framebuffer X server for X Version</code> 라고 소개되고 있으며, 서버 사이드
-테스트를 위해 주로 사용됩니다.</p>
-<p>Ubuntu 기준으로 <code>sudo apt install xvfb</code>로 설치하고 <code>xvfb-run</code>에 이어서 테스트 명령어를 추가하여
-테스트할 수 있습니다. 실제 GitHub Actions에 적용한 <a href="https://github.com/hueypark/marsettler/blob/dadbd044b1c2c6ce29ace6924b7bee5180660e9e/.github/workflows/benchmark.yml#L29">예시</a>를
-공유드립니다.</p>
-  </div>
-
-  <div class="rmore">
-    <a href='https://marsettler.com/go/go-headless-test-with-xvfb/' class="rmore">Read more</a>
   </div>
 
 
